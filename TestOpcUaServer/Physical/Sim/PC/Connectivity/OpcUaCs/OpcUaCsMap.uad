@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="6.0"?>
+<OpcUaSource FileVersion="10">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Admin" Access="0x10ED" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <Module AclInherit="2" Name="&lt;Default&gt;">
+    <GlobalVariables Name="Global Variables">
+      <Variable Name="SimpleStruct_1" RecursiveEnable="2" />
+    </GlobalVariables>
+  </Module>
+</OpcUaSource>
