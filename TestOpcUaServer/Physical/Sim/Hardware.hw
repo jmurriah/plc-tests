@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio WorkingVersion="6.5" FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="5LS189.6-1" Type="5LS189.6-1" Version="1.6.0.0">
+    <Connection Connector="SL" TargetModule="PC" TargetConnector="SL1" />
+  </Module>
   <Module Name="PC" Type="PC_any" Version="1.1.2.0" OrderNumber="PC">
+    <Parameter ID="ConfigurationID" Value="TestOpcUaServer_Sim" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="USER" />
     <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+  </Module>
+  <Module Name="X67DI1372" Type="X67DI1372" Version="1.1.1.0">
+    <Connection Connector="X2X1" TargetModule="5LS189.6-1" TargetConnector="IF1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
   </Module>
 </Hardware>

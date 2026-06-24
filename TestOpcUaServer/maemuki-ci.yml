@@ -1,0 +1,8 @@
+project:
+  name: TestOpcUaServer
+
+configurations:
+  - { name: Sim, target: ARsim }
+
+pipeline:
+  steps: [ build, package, deploy, test, report ]
