@@ -1,0 +1,2120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="Dryer.HELLO_WORLD">
+      <tuv xml:lang="es">
+        <seg>Hola Mundo!</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Servus Welt!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello world!</seg>
+      </tuv>
+    </tu>
+  <tu tuid="Dryer.Alarm.GenCritical"><tuv xml:lang="en"><seg>Dryer Critical Alarm</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Alarms Critical General</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.GenStop"><tuv xml:lang="en"><seg>Dryer Stop Alarm</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Alarma Paro General</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.GenStopDrying"><tuv xml:lang="en"><seg>Dryer Stop Drying  Alarm</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Alarma Paro Secado General</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.FanBreakers"><tuv xml:lang="en"><seg>Fan Breakers error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo Proteccion ventiladores</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.FansPsu"><tuv xml:lang="en"><seg>Fan PSU error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo Fuente ventiladores</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.MainPsu"><tuv xml:lang="en"><seg>Main PSU error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo Fuente principal</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.MountedMedia"><tuv xml:lang="en"><seg>Mounted Media</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Pieza montada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.EstopFront"><tuv xml:lang="en"><seg>Emergency Stop Front </seg>
+</tuv>
+<tuv xml:lang="es"><seg>Seta Delantera</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.EstopRear"><tuv xml:lang="en"><seg>Emergency Stop Rear </seg>
+</tuv>
+<tuv xml:lang="es"><seg>Seta Trasera Entrada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.EstopRemote"><tuv xml:lang="en"><seg>Emergency Stop Remote</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Seta Externa</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.WrongPhysConfig"><tuv xml:lang="en"><seg>Wrong physical configuration</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion fisica erronea</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.OvertorqueBelt"><tuv xml:lang="en"><seg>Overtorque in Belt. Break risk</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sobrepar en banda. Riesgo de rotura</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.OverTempBeltFast"><tuv xml:lang="en"><seg>Overtemp in Belt. Break risk. Fast</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sobretemp en banda. Riesgo de rotura. Rapido</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.OverTempBeltSlow"><tuv xml:lang="en"><seg>Overtemp in Belt. Break risk. Slow</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sobretemp en banda. Riesgo de rotura. Lento</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.FansPsu80"><tuv xml:lang="en"><seg>Fan PSU &gt;80%</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fuente ventiladores &gt;80%</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.MountedMediaInside"><tuv xml:lang="en"><seg>Mounted Media inside Dryer</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sustrato montado dentro maquina</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.BeltTempSensError"><tuv xml:lang="en"><seg>Belt Temp Sensor Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Temp Banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.BoardInTempSensError"><tuv xml:lang="en"><seg>Board Input Temp Sensor Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Entrada Sustrato</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.BoardOutTempSensError"><tuv xml:lang="en"><seg>Board Output Temp Sensor Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Salida Sustrato</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.AirBlowerInTempSensError"><tuv xml:lang="en"><seg>Air Blower Temp Input Sensor Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Aire Entrada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.AirBlowerOutTempSensError"><tuv xml:lang="en"><seg>Air Blower Temp Output Sensor Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Aire Salida</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.FrontDoorOpened"><tuv xml:lang="en"><seg>Front door opened</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Porton delantero abierto</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.RearDoorOpened"><tuv xml:lang="en"><seg>Rear door opened</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Porton trasero abierto</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.BentMedia"><tuv xml:lang="en"><seg>Bent Media detected</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Detectado sustrato doblado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.NotMovementEnabled"><tuv xml:lang="en"><seg>Not movement enabled. Safety information</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Movimientos no habilitados. Informacion de seguridad</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.KeyMantenance"><tuv xml:lang="en"><seg>Key Mantenance active. No movements</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Llave Mantenimiento activa. No Movimientos</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Warning.JamLowCrash"><tuv xml:lang="en"><seg>Abnormal vibration level detected on NIRs</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Vibración anormal detectada en NIRs</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltAnyDriveAlarm"><tuv xml:lang="en"><seg>Belt AnyDriveAlarm</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Belt AnyDriveAlarm</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltAlrPowerBeltError"><tuv xml:lang="en"><seg>Belt Drive Power Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error potencia servo banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltAlrComDrive"><tuv xml:lang="en"><seg>Belt Drive Communication error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error comunicacion servo banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltAlrProtDrive"><tuv xml:lang="en"><seg>Belt Drive Protection Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Proteccion servo banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltAlrOverTorque"><tuv xml:lang="en"><seg>Belt Motor OverTorque</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sobrepar en motor banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltBeltMotorTemp"><tuv xml:lang="en"><seg>Belt Motor Temperature</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Motor banda elevada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltBeltDriverTemp"><tuv xml:lang="en"><seg>Belt Driver Temperature</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Servo banda elevada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltNoPerimeter"><tuv xml:lang="en"><seg>Not Perimeter defined in Belt</seg>
+</tuv>
+<tuv xml:lang="es"><seg>El Perímetro de la banda no está definido</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BeltNoGearBox"><tuv xml:lang="en"><seg>Not GearBox defined in Belt</seg>
+</tuv>
+<tuv xml:lang="es"><seg>El Reductor de la banda no está definido</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.xWarningOvertoque"><tuv xml:lang="en"><seg>Warning Over torque</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Aviso sobrepar</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockNotReferenced"><tuv xml:lang="en"><seg>Vertical motor not referenced</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Motor Vertical no referenciado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockNotCommsDrive"><tuv xml:lang="en"><seg>Comms Error Vertical motor</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo comunicacion Motor Vertical</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockDriveBreaker"><tuv xml:lang="en"><seg>Breaker Vertical motor</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Proteccion Motor Vertical</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockHomeSensorError"><tuv xml:lang="en"><seg>Home Sensor Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor referenciado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockCheckHomeSensor"><tuv xml:lang="en"><seg>Check home sensor</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Chequear sensor referenciado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockMotorTemp"><tuv xml:lang="en"><seg>Overtemperature in vertical motor</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sobretemperatura en Motor Vertical</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.SblockDriveTemp"><tuv xml:lang="en"><seg>Overtemperature in vertical drive</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sobretemperatura en Drive Vertical</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.SimpleBlock.ConfirmHoming"><tuv xml:lang="en"><seg>Are you sure to send the homing order?</seg>
+</tuv>
+<tuv xml:lang="es"><seg>¿Esta seguro de querer lanzar la orden de referenciado?</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccSensor"><tuv xml:lang="en"><seg>Vacuum sensor error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error sensor presion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerComsInput"><tuv xml:lang="en"><seg>Comms Error Blower Vacuum Input</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo comunicacion Blower Vacio Entrada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerComsOutput"><tuv xml:lang="en"><seg>Comms Error Blower Vacuum Output</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo comunicacion Blower Vacio Salida</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerProtInput"><tuv xml:lang="en"><seg>Breaker Blower Vacuum Input</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Proteccion Blower Vacio Entrada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerProtOutput"><tuv xml:lang="en"><seg>Breaker Blower Vacuum Output</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Proteccion Blower Vacio Salida</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerErrorInput"><tuv xml:lang="en"><seg>Error Blower Vacuum Input</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Blower Vacio Entrada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerErrorOutput"><tuv xml:lang="en"><seg>Error Blower Vacuum Output</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Blower Vacio Salida</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerNotRunningInput"><tuv xml:lang="en"><seg>Error Blower Input Not running</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Blower Vacio Entrada sin mover</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.VaccBlowerNotRunningOutput"><tuv xml:lang="en"><seg>Error Blower Output Not running</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Blower Vacio Salida sin mover</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Adphos.Power"><tuv xml:lang="en"><seg>Adphos Power</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Potencia Adphos</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Adphos.Speed"><tuv xml:lang="en"><seg>Adphos Speed</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Velocidad Adphos</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRSafetyError"><tuv xml:lang="en"><seg>NIR Safety Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo Seguridad NIR</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRFault"><tuv xml:lang="en"><seg>NIR Fault</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR en Fallo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRComsError"><tuv xml:lang="en"><seg>NIR Comms Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo comunicacion NIR</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRInletHumiditySensError"><tuv xml:lang="en"><seg>NIR Humidity Sensor error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error sensor humedad NIR</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRInletTempSensError"><tuv xml:lang="en"><seg>NIR Temperature Sensor error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error sensor temperatura NIR</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamInputNIR1"><tuv xml:lang="en"><seg>Jam Input NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Frontal NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamOutputNIR1"><tuv xml:lang="en"><seg>Jam Output NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Frontal NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamInputNIR2"><tuv xml:lang="en"><seg>Jam Input NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Delantero NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamOutputNIR2"><tuv xml:lang="en"><seg>Jam Output NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Delantero NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamRearNIR1"><tuv xml:lang="en"><seg>Jam Rear NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Trasero NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamRearNIR2"><tuv xml:lang="en"><seg>Jam Rear NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Trasero NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamMechCrossNIR1"><tuv xml:lang="en"><seg>Jam Mech Cross NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Frontal Meanico NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.JamMechCrossNIR2"><tuv xml:lang="en"><seg>Jam Mech Cross NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco Frontal Meanico NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRSurfaceTemp1"><tuv xml:lang="en"><seg>Max Surface Temp NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Maxima Temp superficie NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRSurfaceTemp2"><tuv xml:lang="en"><seg>Max Surface Temp NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Maxima Temp superficie NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRSurfaceTempSensErr1"><tuv xml:lang="en"><seg>Surface Temp Sensor error NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Temp superficie NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.NIRSurfaceTempSensErr2"><tuv xml:lang="en"><seg>Surface Temp Sensor error NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Sensor Temp superficie NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan1Nir1"><tuv xml:lang="en"><seg>Blocked Fan 1 NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 1 NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan2Nir1"><tuv xml:lang="en"><seg>Blocked Fan 2 NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 2 NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan3Nir1"><tuv xml:lang="en"><seg>Blocked Fan 3 NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 3 NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan4Nir1"><tuv xml:lang="en"><seg>Blocked Fan 4 NIR 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 4 NIR 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan1Nir2"><tuv xml:lang="en"><seg>Blocked Fan 1 NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 1 NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan2Nir2"><tuv xml:lang="en"><seg>Blocked Fan 2 NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 2 NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan3Nir2"><tuv xml:lang="en"><seg>Blocked Fan 3 NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 3 NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.BlockedFan4Nir2"><tuv xml:lang="en"><seg>Blocked Fan 4 NIR 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloque Ventilador 4 NIR 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.ArcLampComsError"><tuv xml:lang="en"><seg>ArcLamp Comms Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo comunicacion ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.ArcLampCredentialsError"><tuv xml:lang="en"><seg>ArcLamp Credentials Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo Credenciales ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.ArcLampInternalError"><tuv xml:lang="en"><seg>ArcLamp Internal Server Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fallo Interno Servidor ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.ArcLampJam"><tuv xml:lang="en"><seg>ArcLamp Jam</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Atasco ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.ArcLampAlarmLamp1"><tuv xml:lang="en"><seg>ArcLamp Alarm Lamp 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp Fallo Lampara 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.ArcLampAlarmLamp2"><tuv xml:lang="en"><seg>ArcLamp Alarm Lamp 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp Fallo Lampara 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.CheckMediaExit1"><tuv xml:lang="en"><seg>Not detected exit media L1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Pieza no detectada a la salida L1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alarm.CheckMediaExit2"><tuv xml:lang="en"><seg>Not detected exit media L2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Pieza no detectada a la salida L2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.ArcLampSN"><tuv xml:lang="en"><seg>Serial Number</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Numer Serie</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.ArcLampPin"><tuv xml:lang="en"><seg>Pin</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Pin</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Current"><tuv xml:lang="en"><seg>Current Alarms</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Alarmas Actuales</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.History"><tuv xml:lang="en"><seg>Alarms History</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Historico Alarmas</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Code"><tuv xml:lang="en"><seg>Code</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Codigo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Description"><tuv xml:lang="en"><seg>Description</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Descripcion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Timestamp"><tuv xml:lang="en"><seg>Date and hour</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fecha y hora</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Severity"><tuv xml:lang="en"><seg>Severity</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Gravedad</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.State"><tuv xml:lang="en"><seg>State</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Estado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Mute"><tuv xml:lang="en"><seg>Mute</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Silenciar</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Reset"><tuv xml:lang="en"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Resetear</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.CriticalType"><tuv xml:lang="en"><seg>Type</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Tipo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Alarms.Page"><tuv xml:lang="en"><seg>Alarms</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Alarmas</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MountedMedia"><tuv xml:lang="en"><seg>Mounted Media</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sustrato Montado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.Reset"><tuv xml:lang="en"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.FanBreak80"><tuv xml:lang="en"><seg>Fan Breakers 80%</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Protecc. ventiladores 80%</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.ArcLampRef"><tuv xml:lang="en"><seg>ArcLamp Ref Sensor</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sensor ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.24VFansPsuOk"><tuv xml:lang="en"><seg>24V Fans PSU OK</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fuente 24V ventiladores OK</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf1"><tuv xml:lang="en"><seg>Machine Configuration 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf2"><tuv xml:lang="en"><seg>Machine Configuration 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf3"><tuv xml:lang="en"><seg>Machine Configuration 3</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 3</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf4"><tuv xml:lang="en"><seg>Machine Configuration 4</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 4</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf5"><tuv xml:lang="en"><seg>Machine Configuration 5</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 5</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf6"><tuv xml:lang="en"><seg>Machine Configuration 6</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 6</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf7"><tuv xml:lang="en"><seg>Machine Configuration 7</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 7</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf8"><tuv xml:lang="en"><seg>Machine Configuration 8</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 8</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.MachConf9"><tuv xml:lang="en"><seg>Machine Configuration 9</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Configuracion maquina 9</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.Stop"><tuv xml:lang="en"><seg>Stop</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Stop</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.FanBreakOk"><tuv xml:lang="en"><seg>Fan Breakers Ok</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Protecc. ventiladores Ok</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.SafetyKey"><tuv xml:lang="en"><seg>Safety Key</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Llave seguridad</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.ArcLampCorrLaser"><tuv xml:lang="en"><seg>ArcLamp Correction Laser</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp Laser Correccion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.24VMainPsuOk"><tuv xml:lang="en"><seg>24V Main PSU OK</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Fuente principal 24V OK</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.NirReady"><tuv xml:lang="en"><seg>NIR Ready</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR Listo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.NirError"><tuv xml:lang="en"><seg>NIR Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR Error</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.NirProcess"><tuv xml:lang="en"><seg>NIR Process</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR En Proceso</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.ArclLampReady"><tuv xml:lang="en"><seg>ArcLamp Ready</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp Listo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.ArclLampFault"><tuv xml:lang="en"><seg>ArcLamp Fault</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp Error</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.DetectionMediaL1"><tuv xml:lang="en"><seg>Media L1. Front</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sustrato. Delantero</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.DetectionMediaL2"><tuv xml:lang="en"><seg>Media L2. Rear</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sustrato. Trasero</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir1Fan1"><tuv xml:lang="en"><seg>Lock Nir1 Fan1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir1 Vent1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir1Fan2"><tuv xml:lang="en"><seg>Lock Nir1 Fan2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir1 Vent2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir1Fan3"><tuv xml:lang="en"><seg>Lock Nir1 Fan3</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir1 Vent3</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir1Fan4"><tuv xml:lang="en"><seg>Lock Nir1 Fan4</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir1 Vent4</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir2Fan1"><tuv xml:lang="en"><seg>Lock Nir2 Fan1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir2 Vent1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir2Fan2"><tuv xml:lang="en"><seg>Lock Nir2 Fan2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir2 Vent2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir2Fan3"><tuv xml:lang="en"><seg>Lock Nir2 Fan3</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir2 Vent3</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.LockNir2Fan4"><tuv xml:lang="en"><seg>Lock Nir2 Fan4</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Nir2 Vent4</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.JamNir1Cross"><tuv xml:lang="en"><seg>Jam Nir1 Cross</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jamp Nir1 Frontal</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.JamNir1Front"><tuv xml:lang="en"><seg>Jam Nir1 Front</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jamp Nir1 Delante</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.JamNir1Rear"><tuv xml:lang="en"><seg>Jam Nir1 Rear</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jamp Nir1 Detras</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.JamNir2Cross"><tuv xml:lang="en"><seg>Jam Nir2 Cross</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jamp Nir2 Frontal</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.JamNir2Front"><tuv xml:lang="en"><seg>Jam Nir2 Front</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jamp Nir2 Delante</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.JamNir2Rear"><tuv xml:lang="en"><seg>Jam Nir2 Rear</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jamp Nir2 Detras</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inputs.ArcLampJam"><tuv xml:lang="en"><seg>Jam ArcLamp</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Jam ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.NirOn"><tuv xml:lang="en"><seg>NIR ON</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR ON</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.NirProcess"><tuv xml:lang="en"><seg>NIR Process</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR Process</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.NirWebBreak"><tuv xml:lang="en"><seg>NIR Web break</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR Web break</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.ArcLampImpression"><tuv xml:lang="en"><seg>ArcLamp Impression</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp Imprimir</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.LockDoorFront"><tuv xml:lang="en"><seg>Lock Front Door</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Porton delantero</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.LockDoorBack"><tuv xml:lang="en"><seg>Lock Back Door</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Bloqueo Porton trasero</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.ResetFanBreakers"><tuv xml:lang="en"><seg>Reset Fan Breakers</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset Vetilador seccionad.</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.ResetHub"><tuv xml:lang="en"><seg>Reset Hub</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset Hub</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.ResetSwitch"><tuv xml:lang="en"><seg>Reset Switch</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reiniciar Switch</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outputs.CriticalError"><tuv xml:lang="en"><seg>Critical Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error Crítico</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.AlarmSound"><tuv xml:lang="en"><seg>Alarm Sound</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Alarma sonora</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.YellowLight"><tuv xml:lang="en"><seg>Yellow light</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Luz amarilla</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.BlueLight"><tuv xml:lang="en"><seg>Blue light</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Luz azul</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.RedLight"><tuv xml:lang="en"><seg>Red light</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Luz roja</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.WhiteLight"><tuv xml:lang="en"><seg>White light</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Luz blanca</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Outpus.ResetBlueLight"><tuv xml:lang="en"><seg>Reset Blue light</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Luz azul reset</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.BoardTempIn"><tuv xml:lang="en"><seg>Board Temp In</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Carton entrada</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.BoardTempOut"><tuv xml:lang="en"><seg>Board Temp Out</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Carton salida</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.BeltTempOut"><tuv xml:lang="en"><seg>Belt Temp Out</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Salida Banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.Humidity"><tuv xml:lang="en"><seg>Humidity</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Humedad</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.VacuumPressure"><tuv xml:lang="en"><seg>Vacuum pressure</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Presion vacio</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.VacuumTemp2"><tuv xml:lang="en"><seg>Vacuum Temperature 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temperatura Vacio 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnInputs.VacuumTemp1"><tuv xml:lang="en"><seg>Vacuum Temperature 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temperatura Vacio 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnOuts.SpeedNir"><tuv xml:lang="en"><seg>Speed Nir</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Velocidad Nir</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="AnOuts.SpeedArcLamp"><tuv xml:lang="en"><seg>Speed Arc Lamp</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Velocidad Arc Lamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="TempInputs.SurfaceNir1"><tuv xml:lang="en"><seg>Surface Nir 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Superficie Nir 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="TempInputs.SurfaceNir2"><tuv xml:lang="en"><seg>Surface Nir 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temp. Superficie Nir 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dialog.Confirmation"><tuv xml:lang="en"><seg>Confirmation</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Confirmacion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Start"><tuv xml:lang="en"><seg>Start</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Arrancar</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Lab"><tuv xml:lang="en"><seg>Laboratory</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Laboratorio</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.ByPass"><tuv xml:lang="en"><seg>ByPass</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ByPass</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Stop"><tuv xml:lang="en"><seg>Stop</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Parar</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Manual"><tuv xml:lang="en"><seg>Manual</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Manual</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Auto"><tuv xml:lang="en"><seg>Auto</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Auto</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Zero"><tuv xml:lang="en"><seg>Zero</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Cero</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Reset"><tuv xml:lang="en"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Versions"><tuv xml:lang="en"><seg>Versions</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Versiones</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Hardware"><tuv xml:lang="en"><seg>Hardware</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Hardware</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Interface"><tuv xml:lang="en"><seg>Interface</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Interfaz</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Software"><tuv xml:lang="en"><seg>Software</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Software</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.HMI"><tuv xml:lang="en"><seg>HMI</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Terminal</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Thickness"><tuv xml:lang="en"><seg>Thickness</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Espesor</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Margin"><tuv xml:lang="en"><seg>Margin</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Margen</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Length"><tuv xml:lang="en"><seg>Length</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Longitud</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Width"><tuv xml:lang="en"><seg>Width</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ancho</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Gap"><tuv xml:lang="en"><seg>Gap</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Separacion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Offset"><tuv xml:lang="en"><seg>Offset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Desplazamiento</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.DocLength"><tuv xml:lang="en"><seg>Doc Length</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Longitud Doc.</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.DocWidth"><tuv xml:lang="en"><seg>Doc Width</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ancho Doc.</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.DocOffset"><tuv xml:lang="en"><seg>Doc Offset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Desplaz. Doc.</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.AirConditions"><tuv xml:lang="en"><seg>Air Conditions</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Estado aire</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Pressure"><tuv xml:lang="en"><seg>Pressure</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Presion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.DutyCycle"><tuv xml:lang="en"><seg>Duty Cycle</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ciclo Trabajo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Position"><tuv xml:lang="en"><seg>Position</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Posicion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.PositionOffset"><tuv xml:lang="en"><seg>Position Offset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ajuste posicion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.SetPointPower"><tuv xml:lang="en"><seg>SetPoint Power</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Referencia Potencia</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.Module1"><tuv xml:lang="en"><seg>Module 1</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Modulo 1</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.Module2"><tuv xml:lang="en"><seg>Module 2</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Modulo 2</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.EnableModule"><tuv xml:lang="en"><seg>Enable Module</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Habilitar Modulo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.Adjust"><tuv xml:lang="en"><seg>Power Adjust</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ajuste Potencia</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.Power"><tuv xml:lang="en"><seg>Power</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Potencia</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.PowerStart"><tuv xml:lang="en"><seg>Power Start</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Potencia Inicial</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.PowerEnd"><tuv xml:lang="en"><seg>Power End</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Potencia Final</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.SpeedStart"><tuv xml:lang="en"><seg>Speed Start</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Velocidad Inicial</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.SpeedEnd"><tuv xml:lang="en"><seg>Speed End</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Velocidad Final</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.AirTemperature"><tuv xml:lang="en"><seg>Air Temperature</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temperatura Aire</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.MediaTemperature"><tuv xml:lang="en"><seg>Media Temperature</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Temperatura Sustrato</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.WebWidth"><tuv xml:lang="en"><seg>Drying width</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ancho secado</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Nir.DocWidth"><tuv xml:lang="en"><seg>Dry with image width</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Secado con ancho de imagen</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alamp.EnableLamp"><tuv xml:lang="en"><seg>Enable Lamp</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Habilitar Lámpara</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alamp.SerialNumber"><tuv xml:lang="en"><seg>Serial Number</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Número Serie</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Alamp.Pin"><tuv xml:lang="en"><seg>Pin</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Pin</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Diag.CommsDevices"><tuv xml:lang="en"><seg>Comms Devices</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Dispositivos Comunicacion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Diag.ResetSwitch"><tuv xml:lang="en"><seg>Reset Switch</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset Switch</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Diag.ResetHub"><tuv xml:lang="en"><seg>Reset Hub</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset Hub</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Diag.ResetFanBreaker"><tuv xml:lang="en"><seg>Reset Fan Breaker</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset Proteccion Ventiladores</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Blow.DutyCycleSetPoint"><tuv xml:lang="en"><seg>DutyCycle SetPoint</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Consigna Velocidad</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Blow.PressureSetPoint"><tuv xml:lang="en"><seg>Pressure SetPoint</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Consigna Presion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Belt.Perimeter"><tuv xml:lang="en"><seg>Perimeter</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Perímetro</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Belt.GearBox"><tuv xml:lang="en"><seg>GearBox</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reductora</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Belt.Speed"><tuv xml:lang="en"><seg>Speed</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Velocidad</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Belt.Torque"><tuv xml:lang="en"><seg>Torque</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Par</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Dryer.Belt.Error"><tuv xml:lang="en"><seg>Error</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Error</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.Home"><tuv xml:lang="en"><seg>Home</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Inicio</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.Diagnosis"><tuv xml:lang="en"><seg>Diagnosis</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Diagnostico</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.Blowers"><tuv xml:lang="en"><seg>Blowers</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ventiladores</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.Belt"><tuv xml:lang="en"><seg>Belt</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Banda</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.NIR"><tuv xml:lang="en"><seg>NIR</seg>
+</tuv>
+<tuv xml:lang="es"><seg>NIR</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.ArcLamp"><tuv xml:lang="en"><seg>ArcLamp</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ArcLamp</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Page.Sensors"><tuv xml:lang="en"><seg>Sensors</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Sensores</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+</body>
+</tmx>

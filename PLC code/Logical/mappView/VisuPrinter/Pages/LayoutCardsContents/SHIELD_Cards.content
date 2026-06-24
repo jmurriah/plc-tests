@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SHIELD_Cards_content" height="230" width="550" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="25" left="1" width="107" height="175" zIndex="0" image="Media/EFI/BrCards/X20CP1382.jpg" imageAlign="bottom" imageHeight="175" imageWidth="110" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button2" top="25" left="107" width="28" height="175" zIndex="1" image="Media/EFI/BrCards/X20X1.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button3" top="25" left="133" width="28" height="175" zIndex="2" image="Media/EFI/BrCards/X20X2.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button4" top="25" left="159" width="28" height="175" zIndex="3" image="Media/EFI/BrCards/X20X3.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button5" top="25" left="185" width="28" height="175" zIndex="4" image="Media/EFI/BrCards/X20DIF371.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button6" top="25" left="212" width="28" height="175" zIndex="5" image="Media/EFI/BrCards/X20DIF371.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button7" top="25" left="237" width="28" height="175" zIndex="6" image="Media/EFI/BrCards/X20DIF371.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button8" top="25" left="262" width="28" height="175" zIndex="7" image="Media/EFI/BrCards/X20DIF371.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button9" top="25" left="287" width="28" height="175" zIndex="8" image="Media/EFI/BrCards/X20DOF322.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button10" top="25" left="312" width="28" height="175" zIndex="9" image="Media/EFI/BrCards/X20DOF322.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button11" top="25" left="337" width="28" height="175" zIndex="10" image="Media/EFI/BrCards/X20PS3300.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button12" top="25" left="362" width="26" height="175" zIndex="11" image="Media/EFI/BrCards/X20AI8321.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button13" top="25" left="387" width="28" height="175" zIndex="12" image="Media/EFI/BrCards/X20AO4622.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button14" top="25" left="412" width="28" height="175" zIndex="13" image="Media/EFI/BrCards/X20AT4222.jpg" imageAlign="bottom" imageHeight="175" imageWidth="25" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button15" top="25" left="440" width="50" height="175" zIndex="14" image="Media/EFI/BrCards/X20SM1436.jpg" imageAlign="bottom" imageHeight="175" imageWidth="50" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button16" top="25" left="490" width="50" height="175" zIndex="15" image="Media/EFI/BrCards/X20SM1436.jpg" imageAlign="bottom" imageHeight="175" imageWidth="50" cornerRadius="0px" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider1" top="1" left="79" width="423" height="3" zIndex="16" changeOnMove="false" image="Media/Icons/32x32/Arrows/3dowarrow.png" maxValue="16" showValueDisplay="true" thumbSize="20px" trackSize="0px" thumbColor="rgba(255, 255, 255, 1)" fillColor="rgba(255, 255, 255, 0)" enable="false" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider2" top="204" left="79" width="423" height="3" zIndex="17" image="Media/Icons/32x32/Arrows/agt_uninstall-product.png" maxValue="16" showValueDisplay="true" thumbSize="20px" trackSize="0px" thumbColor="rgba(224, 224, 224, 1)" trackColor="rgba(128, 128, 128, 1)" fillColor="rgba(192, 192, 192, 1)" />
+  </Widgets>
+</Content>

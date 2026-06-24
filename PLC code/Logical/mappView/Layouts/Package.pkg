@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="Layouts" PackageType="Layouts" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Landscape1SideLeft_1280x800.layout</Object>
+    <Object Type="File">LandscapeSideLeft_1800x900.layout</Object>
+    <Object Type="File">Landscape1SideLeft_1566x800.layout</Object>
+    <Object Type="File">LandscapeFull_1280x800.layout</Object>
+  </Objects>
+</Package>

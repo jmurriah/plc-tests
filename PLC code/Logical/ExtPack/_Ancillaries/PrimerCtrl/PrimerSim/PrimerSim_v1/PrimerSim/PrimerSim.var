@@ -1,0 +1,10 @@
+VAR
+	SimPrimer : REFERENCE TO PrimerSim_typ;
+	Primer : REFERENCE TO Primer_typ;
+	tonTransport : TON;
+	tonReady : TON;
+	tonPrime : TON;
+	tonBeltEmpty : TON;
+	tonDry : TON;
+	PrimerInputsReseted : {REDUND_UNREPLICABLE} PrimerInputs_typ;
+END_VAR

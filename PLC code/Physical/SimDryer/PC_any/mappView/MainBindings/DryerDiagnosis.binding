@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="DryerDiagnosis_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.commands.xResetSwitch" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="btnResetSwitch" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.commands.xResetHub" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="btnResetHub" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20DIF371_201"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="inCard201" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20DIF371_202"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="inCard202" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20DIF371_203"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="inCard203" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20DIF371_201.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA201" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20DIF371_202.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA202" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20DIF371_203.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA203" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20DOF322_206"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="outCard206" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20DOF322_205"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="outCard205" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20AT4222_209.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA209" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20AO4622_208.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA208" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20AI8321_207.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA207" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20DOF322_206.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA206" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:X20DOF322_205.ShowTexts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="flxA205" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20AO4622_208"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="AnalogOutputCardWidget1" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20AI8321_207"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="anInCard207" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:X20AT4222_209"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="TempInputCardWidget1" attribute="PlcCardMapping"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.commands.xResetFanBreaker" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerDiagnosis_Content" widgetRefId="btnResetFanBreaker" attribute="value"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

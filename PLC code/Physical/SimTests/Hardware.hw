@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.12.5.95 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="5LS182.6-1" Type="5LS182.6-1" Version="1.5.0.0">
+    <Connection Connector="SL" TargetModule="PC_any" TargetConnector="SL1" />
+    <Connector Name="IF1">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
+  </Module>
+  <Module Name="5LS197.6" Type="5LS197.6" Version="1.1.0.0">
+    <Connection Connector="SL" TargetModule="PC_any" TargetConnector="SL2" />
+  </Module>
+  <Module Name="8AC114.60-2" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1045.00-2_BELT" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="5LS182.6-1" TargetConnector="IF1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8AC114.60-2a" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="8AC114.60-2a" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1016.50-2_BK1" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="8AC114.60-2" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8AC114.60-2b" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="8AC114.60-2b" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1016.50-2_BK2" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="8AC114.60-2a" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8AC114.60-2c" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="8AC114.60-2c" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1045.00-2_NCrash1" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="8AC114.60-2b" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8I66xxxxxxx.0P-xxx1" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="8AC122.60-3" Type="8AC122.60-3" Version="2.2.0.0">
+    <Connection Connector="SS" TargetModule="8V1016.50-2_BK1" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8AC122.60-3a" Type="8AC122.60-3" Version="2.2.0.0">
+    <Connection Connector="SS" TargetModule="8V1016.50-2_BK2" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8AC126.60-1" Type="8AC126.60-1" Version="2.2.0.0">
+    <Connection Connector="SS" TargetModule="8V1045.00-2_BELT" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8AC126.60-1a" Type="8AC126.60-1" Version="2.2.0.0">
+    <Connection Connector="SS" TargetModule="8V1045.00-2_NCrash1" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8I66xxxxxxx.0P-xxx1" Type="8I66xxxxxxx.0P-xxx" Version="2.5.1.0">
+    <Connection Connector="PLK1" TargetModule="8AC114.60-2c" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+    <Parameter ID="IOM_AIDP1" Value="LFT" />
+    <Parameter ID="IOM_AIDP2" Value="LCR" />
+    <Parameter ID="IOM_AIDP3" Value="OTRN" />
+    <Parameter ID="IOM_AIDP4" Value="IL1R" />
+    <Parameter ID="IOM_AIDP5" Value="AI1R" />
+    <Parameter ID="IOM_AIDP6" Value="AI2R" />
+    <Parameter ID="IOM_AIDP7" Value="AI3R" />
+    <Parameter ID="IOM_AIDP8" Value="OL1I" />
+    <Parameter ID="IOM_AIDP9" Value="AO1I" />
+    <Parameter ID="IOM_R1ctrl" Value="mapped" />
+    <Parameter ID="IOM_R2ctrl" Value="mapped" />
+    <Parameter ID="IOM_LO1ctrl" Value="mapped" />
+    <Parameter ID="IOM_AO1ctrl" Value="mapped" />
+    <Parameter ID="Sel_AO1T" Value="0A" />
+    <Parameter ID="Sel_NameplateMask" Value="MANU" />
+    <Parameter ID="Cfg_NSP" Value="1400" />
+    <Parameter ID="Cfg_UNS" Value="230" />
+    <Parameter ID="Cfg_NCR" Value="19" />
+    <Parameter ID="Cfg_COS" Value="71" />
+    <Parameter ID="Cfg_NPR" Value="37" />
+  </Module>
+  <Module Name="8LSA44.R2060D300-3" Type="8LSA44.R2060D300-3" Version="2.2.0.0">
+    <Connection Connector="EC" TargetModule="8AC122.60-3" TargetConnector="EC" />
+    <Connection Connector="MT" TargetModule="8V1016.50-2_BK1" TargetConnector="MT1" />
+  </Module>
+  <Module Name="8LSA44.R2060D300-3a" Type="8LSA44.R2060D300-3" Version="2.2.0.0">
+    <Connection Connector="EC" TargetModule="8AC122.60-3a" TargetConnector="EC" />
+    <Connection Connector="MT" TargetModule="8V1016.50-2_BK2" TargetConnector="MT1" />
+  </Module>
+  <Module Name="8V1016.50-2_BK1" Type="8V1016.50-2" Version="2.2.0.0">
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+  </Module>
+  <Module Name="8V1016.50-2_BK2" Type="8V1016.50-2" Version="2.2.0.0">
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+  </Module>
+  <Module Name="8V1045.00-2_BELT" Type="8V1045.00-2" Version="2.2.0.0">
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+  </Module>
+  <Module Name="8V1045.00-2_NCrash1" Type="8V1045.00-2" Version="2.2.0.0">
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+  </Module>
+  <Module Name="ModbusFeeder" Type="ModbusTcp_any" Version="1.1.0.0" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="PC_any" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="ModbusPrimer" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="IpAddress" Value="192.168.125.175" />
+    <Parameter ID="UnitId" Value="1" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="4" />
+    <Parameter ID="Cb_1_NumItems" Value="25" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="readFeederBk1_1" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="readFeederBk1_2" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="readFeederBk1_3" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="readFeederBk1_4" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_1_C_5" />
+    <Parameter ID="Cb_1_C_5_Name" Value="readFeederBk1_5" />
+    <Parameter ID="Cb_1_C_5_Datatype" Value="6" />
+    <Group ID="Cb_1_C_6" />
+    <Parameter ID="Cb_1_C_6_Name" Value="readFeederBk1_6" />
+    <Parameter ID="Cb_1_C_6_Datatype" Value="6" />
+    <Group ID="Cb_1_C_7" />
+    <Parameter ID="Cb_1_C_7_Name" Value="readFeederBk1_7" />
+    <Parameter ID="Cb_1_C_7_Datatype" Value="6" />
+    <Group ID="Cb_1_C_8" />
+    <Parameter ID="Cb_1_C_8_Name" Value="readFeederBk1_8" />
+    <Parameter ID="Cb_1_C_8_Datatype" Value="6" />
+    <Group ID="Cb_1_C_9" />
+    <Parameter ID="Cb_1_C_9_Name" Value="readFeederBk1_9" />
+    <Parameter ID="Cb_1_C_9_Datatype" Value="6" />
+    <Group ID="Cb_1_C_10" />
+    <Parameter ID="Cb_1_C_10_Name" Value="readFeederBk1_10" />
+    <Parameter ID="Cb_1_C_10_Datatype" Value="6" />
+    <Group ID="Cb_1_C_11" />
+    <Parameter ID="Cb_1_C_11_Name" Value="readFeederBk1_11" />
+    <Parameter ID="Cb_1_C_11_Datatype" Value="6" />
+    <Group ID="Cb_1_C_12" />
+    <Parameter ID="Cb_1_C_12_Name" Value="readFeederBk1_12" />
+    <Parameter ID="Cb_1_C_12_Datatype" Value="6" />
+    <Group ID="Cb_1_C_13" />
+    <Parameter ID="Cb_1_C_13_Name" Value="readFeederBk1_13" />
+    <Parameter ID="Cb_1_C_13_Datatype" Value="6" />
+    <Group ID="Cb_1_C_14" />
+    <Parameter ID="Cb_1_C_14_Name" Value="readFeederBk1_14" />
+    <Parameter ID="Cb_1_C_14_Datatype" Value="6" />
+    <Group ID="Cb_1_C_15" />
+    <Parameter ID="Cb_1_C_15_Name" Value="readFeederBk1_15" />
+    <Parameter ID="Cb_1_C_15_Datatype" Value="6" />
+    <Group ID="Cb_1_C_16" />
+    <Parameter ID="Cb_1_C_16_Name" Value="readFeederBk1_16" />
+    <Parameter ID="Cb_1_C_16_Datatype" Value="6" />
+    <Group ID="Cb_1_C_17" />
+    <Parameter ID="Cb_1_C_17_Name" Value="readFeederBk1_17" />
+    <Parameter ID="Cb_1_C_17_Datatype" Value="6" />
+    <Group ID="Cb_1_C_18" />
+    <Parameter ID="Cb_1_C_18_Name" Value="readFeederBk1_18" />
+    <Parameter ID="Cb_1_C_18_Datatype" Value="6" />
+    <Group ID="Cb_1_C_19" />
+    <Parameter ID="Cb_1_C_19_Name" Value="readFeederBk1_19" />
+    <Parameter ID="Cb_1_C_19_Datatype" Value="6" />
+    <Group ID="Cb_1_C_20" />
+    <Parameter ID="Cb_1_C_20_Name" Value="readFeederBk1_20" />
+    <Parameter ID="Cb_1_C_20_Datatype" Value="6" />
+    <Group ID="Cb_1_C_21" />
+    <Parameter ID="Cb_1_C_21_Name" Value="readFeederBk1_21" />
+    <Parameter ID="Cb_1_C_21_Datatype" Value="6" />
+    <Group ID="Cb_1_C_22" />
+    <Parameter ID="Cb_1_C_22_Name" Value="readFeederBk1_22" />
+    <Parameter ID="Cb_1_C_22_Datatype" Value="6" />
+    <Group ID="Cb_1_C_23" />
+    <Parameter ID="Cb_1_C_23_Name" Value="readFeederBk1_23" />
+    <Parameter ID="Cb_1_C_23_Datatype" Value="6" />
+    <Group ID="Cb_1_C_24" />
+    <Parameter ID="Cb_1_C_24_Name" Value="readFeederBk1_24" />
+    <Parameter ID="Cb_1_C_24_Datatype" Value="6" />
+    <Group ID="Cb_1_C_25" />
+    <Parameter ID="Cb_1_C_25_Name" Value="readFeederBk1_25" />
+    <Parameter ID="Cb_1_C_25_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="16" />
+    <Parameter ID="Cb_2_NumItemsExt" Value="25" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="writeFeederBk2_1" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+    <Group ID="Cb_2_C_2" />
+    <Parameter ID="Cb_2_C_2_Name" Value="writeFeederBk2_2" />
+    <Parameter ID="Cb_2_C_2_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_2_Dir" Value="1" />
+    <Group ID="Cb_2_C_3" />
+    <Parameter ID="Cb_2_C_3_Name" Value="writeFeederBk2_3" />
+    <Parameter ID="Cb_2_C_3_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_3_Dir" Value="1" />
+    <Group ID="Cb_2_C_4" />
+    <Parameter ID="Cb_2_C_4_Name" Value="writeFeederBk2_4" />
+    <Parameter ID="Cb_2_C_4_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_4_Dir" Value="1" />
+    <Group ID="Cb_2_C_5" />
+    <Parameter ID="Cb_2_C_5_Name" Value="writeFeederBk2_5" />
+    <Parameter ID="Cb_2_C_5_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_5_Dir" Value="1" />
+    <Group ID="Cb_2_C_6" />
+    <Parameter ID="Cb_2_C_6_Name" Value="writeFeederBk2_6" />
+    <Parameter ID="Cb_2_C_6_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_6_Dir" Value="1" />
+    <Group ID="Cb_2_C_7" />
+    <Parameter ID="Cb_2_C_7_Name" Value="writeFeederBk2_7" />
+    <Parameter ID="Cb_2_C_7_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_7_Dir" Value="1" />
+    <Group ID="Cb_2_C_8" />
+    <Parameter ID="Cb_2_C_8_Name" Value="writeFeederBk2_8" />
+    <Parameter ID="Cb_2_C_8_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_8_Dir" Value="1" />
+    <Group ID="Cb_2_C_9" />
+    <Parameter ID="Cb_2_C_9_Name" Value="writeFeederBk2_9" />
+    <Parameter ID="Cb_2_C_9_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_9_Dir" Value="1" />
+    <Group ID="Cb_2_C_10" />
+    <Parameter ID="Cb_2_C_10_Name" Value="writeFeederBk2_10" />
+    <Parameter ID="Cb_2_C_10_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_10_Dir" Value="1" />
+    <Group ID="Cb_2_C_11" />
+    <Parameter ID="Cb_2_C_11_Name" Value="writeFeederBk2_11" />
+    <Parameter ID="Cb_2_C_11_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_11_Dir" Value="1" />
+    <Group ID="Cb_2_C_12" />
+    <Parameter ID="Cb_2_C_12_Name" Value="writeFeederBk2_12" />
+    <Parameter ID="Cb_2_C_12_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_12_Dir" Value="1" />
+    <Group ID="Cb_2_C_13" />
+    <Parameter ID="Cb_2_C_13_Name" Value="writeFeederBk2_13" />
+    <Parameter ID="Cb_2_C_13_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_13_Dir" Value="1" />
+    <Group ID="Cb_2_C_14" />
+    <Parameter ID="Cb_2_C_14_Name" Value="writeFeederBk2_14" />
+    <Parameter ID="Cb_2_C_14_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_14_Dir" Value="1" />
+    <Group ID="Cb_2_C_15" />
+    <Parameter ID="Cb_2_C_15_Name" Value="writeFeederBk2_15" />
+    <Parameter ID="Cb_2_C_15_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_15_Dir" Value="1" />
+    <Group ID="Cb_2_C_16" />
+    <Parameter ID="Cb_2_C_16_Name" Value="writeFeederBk2_16" />
+    <Parameter ID="Cb_2_C_16_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_16_Dir" Value="1" />
+    <Group ID="Cb_2_C_17" />
+    <Parameter ID="Cb_2_C_17_Name" Value="writeFeederBk2_17" />
+    <Parameter ID="Cb_2_C_17_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_17_Dir" Value="1" />
+    <Group ID="Cb_2_C_18" />
+    <Parameter ID="Cb_2_C_18_Name" Value="writeFeederBk2_18" />
+    <Parameter ID="Cb_2_C_18_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_18_Dir" Value="1" />
+    <Group ID="Cb_2_C_19" />
+    <Parameter ID="Cb_2_C_19_Name" Value="writeFeederBk2_19" />
+    <Parameter ID="Cb_2_C_19_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_19_Dir" Value="1" />
+    <Group ID="Cb_2_C_20" />
+    <Parameter ID="Cb_2_C_20_Name" Value="writeFeederBk2_20" />
+    <Parameter ID="Cb_2_C_20_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_20_Dir" Value="1" />
+    <Group ID="Cb_2_C_21" />
+    <Parameter ID="Cb_2_C_21_Name" Value="writeFeederBk2_21" />
+    <Parameter ID="Cb_2_C_21_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_21_Dir" Value="1" />
+    <Group ID="Cb_2_C_22" />
+    <Parameter ID="Cb_2_C_22_Name" Value="writeFeederBk2_22" />
+    <Parameter ID="Cb_2_C_22_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_22_Dir" Value="1" />
+    <Group ID="Cb_2_C_23" />
+    <Parameter ID="Cb_2_C_23_Name" Value="writeFeederBk2_23" />
+    <Parameter ID="Cb_2_C_23_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_23_Dir" Value="1" />
+    <Group ID="Cb_2_C_24" />
+    <Parameter ID="Cb_2_C_24_Name" Value="writeFeederBk2_24" />
+    <Parameter ID="Cb_2_C_24_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_24_Dir" Value="1" />
+    <Group ID="Cb_2_C_25" />
+    <Parameter ID="Cb_2_C_25_Name" Value="writeFeederBk2_25" />
+    <Parameter ID="Cb_2_C_25_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_25_Dir" Value="1" />
+  </Module>
+  <Module Name="ModbusPowerMeter" Type="ModbusTcp_any" Version="1.1.0.0" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="ModbusSafety" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="OpcUaDryer" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="IpAddress" Value="192.168.125.210" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="3" />
+    <Parameter ID="Cb_1_Addr" Value="12000" />
+    <Parameter ID="Cb_1_NumItems" Value="0" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="readPowerMeterBk1_1" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="readPowerMeterBk1_2" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="readPowerMeterBk1_3" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="readPowerMeterBk1_4" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_1_C_5" />
+    <Parameter ID="Cb_1_C_5_Name" Value="readPowerMeterBk1_5" />
+    <Parameter ID="Cb_1_C_5_Datatype" Value="6" />
+    <Group ID="Cb_1_C_6" />
+    <Parameter ID="Cb_1_C_6_Name" Value="readPowerMeterBk1_6" />
+    <Parameter ID="Cb_1_C_6_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="3" />
+    <Parameter ID="Cb_2_Addr" Value="12016" />
+    <Parameter ID="Cb_2_NumItems" Value="0" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="readPowerMeterBk2_1" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Group ID="Cb_2_C_2" />
+    <Parameter ID="Cb_2_C_2_Name" Value="readPowerMeterBk2_2" />
+    <Parameter ID="Cb_2_C_2_Datatype" Value="6" />
+    <Group ID="Cb_2_C_3" />
+    <Parameter ID="Cb_2_C_3_Name" Value="readPowerMeterBk2_3" />
+    <Parameter ID="Cb_2_C_3_Datatype" Value="6" />
+    <Group ID="Cb_2_C_4" />
+    <Parameter ID="Cb_2_C_4_Name" Value="readPowerMeterBk2_4" />
+    <Parameter ID="Cb_2_C_4_Datatype" Value="6" />
+    <Group ID="Cb_2_C_5" />
+    <Parameter ID="Cb_2_C_5_Name" Value="readPowerMeterBk2_5" />
+    <Parameter ID="Cb_2_C_5_Datatype" Value="6" />
+    <Group ID="Cb_2_C_6" />
+    <Parameter ID="Cb_2_C_6_Name" Value="readPowerMeterBk2_6" />
+    <Parameter ID="Cb_2_C_6_Datatype" Value="6" />
+    <Group ID="Cb_2_C_7" />
+    <Parameter ID="Cb_2_C_7_Name" Value="readPowerMeterBk2_7" />
+    <Parameter ID="Cb_2_C_7_Datatype" Value="6" />
+    <Group ID="Cb_2_C_8" />
+    <Parameter ID="Cb_2_C_8_Name" Value="readPowerMeterBk2_8" />
+    <Parameter ID="Cb_2_C_8_Datatype" Value="6" />
+    <Group ID="Cb_2_C_9" />
+    <Parameter ID="Cb_2_C_9_Name" Value="readPowerMeterBk2_9" />
+    <Parameter ID="Cb_2_C_9_Datatype" Value="6" />
+    <Group ID="Cb_2_C_10" />
+    <Parameter ID="Cb_2_C_10_Name" Value="readPowerMeterBk2_10" />
+    <Parameter ID="Cb_2_C_10_Datatype" Value="6" />
+    <Group ID="Cb_2_C_11" />
+    <Parameter ID="Cb_2_C_11_Name" Value="readPowerMeterBk2_11" />
+    <Parameter ID="Cb_2_C_11_Datatype" Value="6" />
+    <Group ID="Cb_2_C_12" />
+    <Parameter ID="Cb_2_C_12_Name" Value="readPowerMeterBk2_12" />
+    <Parameter ID="Cb_2_C_12_Datatype" Value="6" />
+    <Group ID="Cb_2_C_13" />
+    <Parameter ID="Cb_2_C_13_Name" Value="readPowerMeterBk2_13" />
+    <Parameter ID="Cb_2_C_13_Datatype" Value="6" />
+    <Group ID="Cb_2_C_14" />
+    <Parameter ID="Cb_2_C_14_Name" Value="readPowerMeterBk2_14" />
+    <Parameter ID="Cb_2_C_14_Datatype" Value="6" />
+    <Group ID="Cb_2_C_15" />
+    <Parameter ID="Cb_2_C_15_Name" Value="readPowerMeterBk2_15" />
+    <Parameter ID="Cb_2_C_15_Datatype" Value="6" />
+    <Group ID="Cb_2_C_16" />
+    <Parameter ID="Cb_2_C_16_Name" Value="readPowerMeterBk2_16" />
+    <Parameter ID="Cb_2_C_16_Datatype" Value="6" />
+    <Group ID="Cb_2_C_17" />
+    <Parameter ID="Cb_2_C_17_Name" Value="readPowerMeterBk2_17" />
+    <Parameter ID="Cb_2_C_17_Datatype" Value="6" />
+    <Group ID="Cb_2_C_18" />
+    <Parameter ID="Cb_2_C_18_Name" Value="readPowerMeterBk2_18" />
+    <Parameter ID="Cb_2_C_18_Datatype" Value="6" />
+    <Group ID="Cb_2_C_19" />
+    <Parameter ID="Cb_2_C_19_Name" Value="readPowerMeterBk2_19" />
+    <Parameter ID="Cb_2_C_19_Datatype" Value="6" />
+    <Group ID="Cb_2_C_20" />
+    <Parameter ID="Cb_2_C_20_Name" Value="readPowerMeterBk2_20" />
+    <Parameter ID="Cb_2_C_20_Datatype" Value="6" />
+    <Group ID="Cb_2_C_21" />
+    <Parameter ID="Cb_2_C_21_Name" Value="readPowerMeterBk2_21" />
+    <Parameter ID="Cb_2_C_21_Datatype" Value="6" />
+    <Group ID="Cb_2_C_22" />
+    <Parameter ID="Cb_2_C_22_Name" Value="readPowerMeterBk2_22" />
+    <Parameter ID="Cb_2_C_22_Datatype" Value="6" />
+    <Group ID="Cb_2_C_23" />
+    <Parameter ID="Cb_2_C_23_Name" Value="readPowerMeterBk2_23" />
+    <Parameter ID="Cb_2_C_23_Datatype" Value="6" />
+    <Group ID="Cb_2_C_24" />
+    <Parameter ID="Cb_2_C_24_Name" Value="readPowerMeterBk2_24" />
+    <Parameter ID="Cb_2_C_24_Datatype" Value="6" />
+    <Group ID="Cb_2_C_25" />
+    <Parameter ID="Cb_2_C_25_Name" Value="readPowerMeterBk2_25" />
+    <Parameter ID="Cb_2_C_25_Datatype" Value="6" />
+    <Group ID="Cb_2_C_26" />
+    <Parameter ID="Cb_2_C_26_Name" Value="readPowerMeterBk2_26" />
+    <Parameter ID="Cb_2_C_26_Datatype" Value="6" />
+    <Group ID="Cb_2_C_27" />
+    <Parameter ID="Cb_2_C_27_Name" Value="readPowerMeterBk2_27" />
+    <Parameter ID="Cb_2_C_27_Datatype" Value="6" />
+    <Group ID="Cb_2_C_28" />
+    <Parameter ID="Cb_2_C_28_Name" Value="readPowerMeterBk2_28" />
+    <Parameter ID="Cb_2_C_28_Datatype" Value="6" />
+    <Group ID="Cb_2_C_29" />
+    <Parameter ID="Cb_2_C_29_Name" Value="readPowerMeterBk2_29" />
+    <Parameter ID="Cb_2_C_29_Datatype" Value="6" />
+    <Group ID="Cb_2_C_30" />
+    <Parameter ID="Cb_2_C_30_Name" Value="readPowerMeterBk2_30" />
+    <Parameter ID="Cb_2_C_30_Datatype" Value="6" />
+    <Group ID="Cb_2_C_31" />
+    <Parameter ID="Cb_2_C_31_Name" Value="readPowerMeterBk2_31" />
+    <Parameter ID="Cb_2_C_31_Datatype" Value="6" />
+    <Group ID="Cb_2_C_32" />
+    <Parameter ID="Cb_2_C_32_Name" Value="readPowerMeterBk2_32" />
+    <Parameter ID="Cb_2_C_32_Datatype" Value="6" />
+    <Group ID="Cb_2_C_33" />
+    <Parameter ID="Cb_2_C_33_Name" Value="readPowerMeterBk2_33" />
+    <Parameter ID="Cb_2_C_33_Datatype" Value="6" />
+    <Group ID="Cb_2_C_34" />
+    <Parameter ID="Cb_2_C_34_Name" Value="readPowerMeterBk2_34" />
+    <Parameter ID="Cb_2_C_34_Datatype" Value="6" />
+    <Group ID="Cb_2_C_35" />
+    <Parameter ID="Cb_2_C_35_Name" Value="readPowerMeterBk2_35" />
+    <Parameter ID="Cb_2_C_35_Datatype" Value="6" />
+    <Group ID="Cb_3" />
+    <Parameter ID="Cb_3_FunCode" Value="3" />
+    <Parameter ID="Cb_3_Addr" Value="12104" />
+    <Parameter ID="Cb_3_NumItems" Value="0" />
+    <Group ID="Cb_3_C_1" />
+    <Parameter ID="Cb_3_C_1_Name" Value="readPowerMeterBk3_1" />
+    <Parameter ID="Cb_3_C_1_Datatype" Value="6" />
+    <Group ID="Cb_3_C_2" />
+    <Parameter ID="Cb_3_C_2_Name" Value="readPowerMeterBk3_2" />
+    <Parameter ID="Cb_3_C_2_Datatype" Value="6" />
+    <Group ID="Cb_3_C_3" />
+    <Parameter ID="Cb_3_C_3_Name" Value="readPowerMeterBk3_3" />
+    <Parameter ID="Cb_3_C_3_Datatype" Value="6" />
+    <Group ID="Cb_3_C_4" />
+    <Parameter ID="Cb_3_C_4_Name" Value="readPowerMeterBk3_4" />
+    <Parameter ID="Cb_3_C_4_Datatype" Value="6" />
+    <Group ID="Cb_3_C_5" />
+    <Parameter ID="Cb_3_C_5_Name" Value="readPowerMeterBk3_5" />
+    <Parameter ID="Cb_3_C_5_Datatype" Value="6" />
+    <Group ID="Cb_3_C_6" />
+    <Parameter ID="Cb_3_C_6_Name" Value="readPowerMeterBk3_6" />
+    <Parameter ID="Cb_3_C_6_Datatype" Value="6" />
+    <Group ID="Cb_3_C_7" />
+    <Parameter ID="Cb_3_C_7_Name" Value="readPowerMeterBk3_7" />
+    <Parameter ID="Cb_3_C_7_Datatype" Value="6" />
+    <Group ID="Cb_3_C_8" />
+    <Parameter ID="Cb_3_C_8_Name" Value="readPowerMeterBk3_8" />
+    <Parameter ID="Cb_3_C_8_Datatype" Value="6" />
+    <Group ID="Cb_3_C_9" />
+    <Parameter ID="Cb_3_C_9_Name" Value="readPowerMeterBk3_9" />
+    <Parameter ID="Cb_3_C_9_Datatype" Value="6" />
+    <Group ID="Cb_3_C_10" />
+    <Parameter ID="Cb_3_C_10_Name" Value="readPowerMeterBk3_10" />
+    <Parameter ID="Cb_3_C_10_Datatype" Value="6" />
+  </Module>
+  <Module Name="ModbusPrimer" Type="ModbusTcp_any" Version="1.1.0.0" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="ModbusFeeder" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="ModbusStacker" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="IpAddress" Value="192.168.125.130" />
+    <Parameter ID="UnitId" Value="1" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="4" />
+    <Parameter ID="Cb_1_NumItems" Value="25" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="readCoaterBk1_1" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="readCoaterBk1_2" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="readCoaterBk1_3" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="readCoaterBk1_4" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_1_C_5" />
+    <Parameter ID="Cb_1_C_5_Name" Value="readCoaterBk1_5" />
+    <Parameter ID="Cb_1_C_5_Datatype" Value="6" />
+    <Group ID="Cb_1_C_6" />
+    <Parameter ID="Cb_1_C_6_Name" Value="readCoaterBk1_6" />
+    <Parameter ID="Cb_1_C_6_Datatype" Value="6" />
+    <Group ID="Cb_1_C_7" />
+    <Parameter ID="Cb_1_C_7_Name" Value="readCoaterBk1_7" />
+    <Parameter ID="Cb_1_C_7_Datatype" Value="6" />
+    <Group ID="Cb_1_C_8" />
+    <Parameter ID="Cb_1_C_8_Name" Value="readCoaterBk1_8" />
+    <Parameter ID="Cb_1_C_8_Datatype" Value="6" />
+    <Group ID="Cb_1_C_9" />
+    <Parameter ID="Cb_1_C_9_Name" Value="readCoaterBk1_9" />
+    <Parameter ID="Cb_1_C_9_Datatype" Value="6" />
+    <Group ID="Cb_1_C_10" />
+    <Parameter ID="Cb_1_C_10_Name" Value="readCoaterBk1_10" />
+    <Parameter ID="Cb_1_C_10_Datatype" Value="6" />
+    <Group ID="Cb_1_C_11" />
+    <Parameter ID="Cb_1_C_11_Name" Value="readCoaterBk1_11" />
+    <Parameter ID="Cb_1_C_11_Datatype" Value="6" />
+    <Group ID="Cb_1_C_12" />
+    <Parameter ID="Cb_1_C_12_Name" Value="readCoaterBk1_12" />
+    <Parameter ID="Cb_1_C_12_Datatype" Value="6" />
+    <Group ID="Cb_1_C_13" />
+    <Parameter ID="Cb_1_C_13_Name" Value="readCoaterBk1_13" />
+    <Parameter ID="Cb_1_C_13_Datatype" Value="6" />
+    <Group ID="Cb_1_C_14" />
+    <Parameter ID="Cb_1_C_14_Name" Value="readCoaterBk1_14" />
+    <Parameter ID="Cb_1_C_14_Datatype" Value="6" />
+    <Group ID="Cb_1_C_15" />
+    <Parameter ID="Cb_1_C_15_Name" Value="readCoaterBk1_15" />
+    <Parameter ID="Cb_1_C_15_Datatype" Value="6" />
+    <Group ID="Cb_1_C_16" />
+    <Parameter ID="Cb_1_C_16_Name" Value="readCoaterBk1_16" />
+    <Parameter ID="Cb_1_C_16_Datatype" Value="6" />
+    <Group ID="Cb_1_C_17" />
+    <Parameter ID="Cb_1_C_17_Name" Value="readCoaterBk1_17" />
+    <Parameter ID="Cb_1_C_17_Datatype" Value="6" />
+    <Group ID="Cb_1_C_18" />
+    <Parameter ID="Cb_1_C_18_Name" Value="readCoaterBk1_18" />
+    <Parameter ID="Cb_1_C_18_Datatype" Value="6" />
+    <Group ID="Cb_1_C_19" />
+    <Parameter ID="Cb_1_C_19_Name" Value="readCoaterBk1_19" />
+    <Parameter ID="Cb_1_C_19_Datatype" Value="6" />
+    <Group ID="Cb_1_C_20" />
+    <Parameter ID="Cb_1_C_20_Name" Value="readCoaterBk1_20" />
+    <Parameter ID="Cb_1_C_20_Datatype" Value="6" />
+    <Group ID="Cb_1_C_21" />
+    <Parameter ID="Cb_1_C_21_Name" Value="readCoaterBk1_21" />
+    <Parameter ID="Cb_1_C_21_Datatype" Value="6" />
+    <Group ID="Cb_1_C_22" />
+    <Parameter ID="Cb_1_C_22_Name" Value="readCoaterBk1_22" />
+    <Parameter ID="Cb_1_C_22_Datatype" Value="6" />
+    <Group ID="Cb_1_C_23" />
+    <Parameter ID="Cb_1_C_23_Name" Value="readCoaterBk1_23" />
+    <Parameter ID="Cb_1_C_23_Datatype" Value="6" />
+    <Group ID="Cb_1_C_24" />
+    <Parameter ID="Cb_1_C_24_Name" Value="readCoaterBk1_24" />
+    <Parameter ID="Cb_1_C_24_Datatype" Value="6" />
+    <Group ID="Cb_1_C_25" />
+    <Parameter ID="Cb_1_C_25_Name" Value="readCoaterBk1_25" />
+    <Parameter ID="Cb_1_C_25_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="16" />
+    <Parameter ID="Cb_2_NumItemsExt" Value="25" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="writeCoaterBk2_1" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+    <Group ID="Cb_2_C_2" />
+    <Parameter ID="Cb_2_C_2_Name" Value="writeCoaterBk2_2" />
+    <Parameter ID="Cb_2_C_2_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_2_Dir" Value="1" />
+    <Group ID="Cb_2_C_3" />
+    <Parameter ID="Cb_2_C_3_Name" Value="writeCoaterBk2_3" />
+    <Parameter ID="Cb_2_C_3_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_3_Dir" Value="1" />
+    <Group ID="Cb_2_C_4" />
+    <Parameter ID="Cb_2_C_4_Name" Value="writeCoaterBk2_4" />
+    <Parameter ID="Cb_2_C_4_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_4_Dir" Value="1" />
+    <Group ID="Cb_2_C_5" />
+    <Parameter ID="Cb_2_C_5_Name" Value="writeCoaterBk2_5" />
+    <Parameter ID="Cb_2_C_5_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_5_Dir" Value="1" />
+    <Group ID="Cb_2_C_6" />
+    <Parameter ID="Cb_2_C_6_Name" Value="writeCoaterBk2_6" />
+    <Parameter ID="Cb_2_C_6_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_6_Dir" Value="1" />
+    <Group ID="Cb_2_C_7" />
+    <Parameter ID="Cb_2_C_7_Name" Value="writeCoaterBk2_7" />
+    <Parameter ID="Cb_2_C_7_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_7_Dir" Value="1" />
+    <Group ID="Cb_2_C_8" />
+    <Parameter ID="Cb_2_C_8_Name" Value="writeCoaterBk2_8" />
+    <Parameter ID="Cb_2_C_8_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_8_Dir" Value="1" />
+    <Group ID="Cb_2_C_9" />
+    <Parameter ID="Cb_2_C_9_Name" Value="writeCoaterBk2_9" />
+    <Parameter ID="Cb_2_C_9_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_9_Dir" Value="1" />
+    <Group ID="Cb_2_C_10" />
+    <Parameter ID="Cb_2_C_10_Name" Value="writeCoaterBk2_10" />
+    <Parameter ID="Cb_2_C_10_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_10_Dir" Value="1" />
+    <Group ID="Cb_2_C_11" />
+    <Parameter ID="Cb_2_C_11_Name" Value="writeCoaterBk2_11" />
+    <Parameter ID="Cb_2_C_11_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_11_Dir" Value="1" />
+    <Group ID="Cb_2_C_12" />
+    <Parameter ID="Cb_2_C_12_Name" Value="writeCoaterBk2_12" />
+    <Parameter ID="Cb_2_C_12_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_12_Dir" Value="1" />
+    <Group ID="Cb_2_C_13" />
+    <Parameter ID="Cb_2_C_13_Name" Value="writeCoaterBk2_13" />
+    <Parameter ID="Cb_2_C_13_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_13_Dir" Value="1" />
+    <Group ID="Cb_2_C_14" />
+    <Parameter ID="Cb_2_C_14_Name" Value="writeCoaterBk2_14" />
+    <Parameter ID="Cb_2_C_14_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_14_Dir" Value="1" />
+    <Group ID="Cb_2_C_15" />
+    <Parameter ID="Cb_2_C_15_Name" Value="writeCoaterBk2_15" />
+    <Parameter ID="Cb_2_C_15_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_15_Dir" Value="1" />
+    <Group ID="Cb_2_C_16" />
+    <Parameter ID="Cb_2_C_16_Name" Value="writeCoaterBk2_16" />
+    <Parameter ID="Cb_2_C_16_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_16_Dir" Value="1" />
+    <Group ID="Cb_2_C_17" />
+    <Parameter ID="Cb_2_C_17_Name" Value="writeCoaterBk2_17" />
+    <Parameter ID="Cb_2_C_17_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_17_Dir" Value="1" />
+    <Group ID="Cb_2_C_18" />
+    <Parameter ID="Cb_2_C_18_Name" Value="writeCoaterBk2_18" />
+    <Parameter ID="Cb_2_C_18_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_18_Dir" Value="1" />
+    <Group ID="Cb_2_C_19" />
+    <Parameter ID="Cb_2_C_19_Name" Value="writeCoaterBk2_19" />
+    <Parameter ID="Cb_2_C_19_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_19_Dir" Value="1" />
+    <Group ID="Cb_2_C_20" />
+    <Parameter ID="Cb_2_C_20_Name" Value="writeCoaterBk2_20" />
+    <Parameter ID="Cb_2_C_20_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_20_Dir" Value="1" />
+    <Group ID="Cb_2_C_21" />
+    <Parameter ID="Cb_2_C_21_Name" Value="writeCoaterBk2_21" />
+    <Parameter ID="Cb_2_C_21_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_21_Dir" Value="1" />
+    <Group ID="Cb_2_C_22" />
+    <Parameter ID="Cb_2_C_22_Name" Value="writeCoaterBk2_22" />
+    <Parameter ID="Cb_2_C_22_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_22_Dir" Value="1" />
+    <Group ID="Cb_2_C_23" />
+    <Parameter ID="Cb_2_C_23_Name" Value="writeCoaterBk2_23" />
+    <Parameter ID="Cb_2_C_23_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_23_Dir" Value="1" />
+    <Group ID="Cb_2_C_24" />
+    <Parameter ID="Cb_2_C_24_Name" Value="writeCoaterBk2_24" />
+    <Parameter ID="Cb_2_C_24_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_24_Dir" Value="1" />
+    <Group ID="Cb_2_C_25" />
+    <Parameter ID="Cb_2_C_25_Name" Value="writeCoaterBk2_25" />
+    <Parameter ID="Cb_2_C_25_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_25_Dir" Value="1" />
+  </Module>
+  <Module Name="ModbusSafety" Type="ModbusTcp_any" Version="1.1.0.0" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="ModbusStacker" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="ModbusPowerMeter" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="IpAddress" Value="192.168.125.50" />
+    <Parameter ID="UnitId" Value="1" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="3" />
+    <Parameter ID="Cb_1_Addr" Value="30001" />
+    <Parameter ID="Cb_1_NumItems" Value="12" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="readSafetyBk1_1" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="readSafetyBk1_2" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="readSafetyBk1_3" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="readSafetyBk1_4" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_1_C_5" />
+    <Parameter ID="Cb_1_C_5_Name" Value="readSafetyBk1_5" />
+    <Parameter ID="Cb_1_C_5_Datatype" Value="6" />
+    <Group ID="Cb_1_C_6" />
+    <Parameter ID="Cb_1_C_6_Name" Value="readSafetyBk1_6" />
+    <Parameter ID="Cb_1_C_6_Datatype" Value="6" />
+    <Group ID="Cb_1_C_7" />
+    <Parameter ID="Cb_1_C_7_Name" Value="readSafetyBk1_7" />
+    <Parameter ID="Cb_1_C_7_Datatype" Value="6" />
+    <Group ID="Cb_1_C_8" />
+    <Parameter ID="Cb_1_C_8_Name" Value="readSafetyBk1_8" />
+    <Parameter ID="Cb_1_C_8_Datatype" Value="6" />
+    <Group ID="Cb_1_C_9" />
+    <Parameter ID="Cb_1_C_9_Name" Value="readSafetyBk1_9" />
+    <Parameter ID="Cb_1_C_9_Datatype" Value="6" />
+    <Group ID="Cb_1_C_10" />
+    <Parameter ID="Cb_1_C_10_Name" Value="readSafetyBk1_10" />
+    <Parameter ID="Cb_1_C_10_Datatype" Value="6" />
+    <Group ID="Cb_1_C_11" />
+    <Parameter ID="Cb_1_C_11_Name" Value="readSafetyBk1_11" />
+    <Parameter ID="Cb_1_C_11_Datatype" Value="6" />
+    <Group ID="Cb_1_C_12" />
+    <Parameter ID="Cb_1_C_12_Name" Value="readSafetyBk1_12" />
+    <Parameter ID="Cb_1_C_12_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="16" />
+    <Parameter ID="Cb_2_AddrExt" Value="40001" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="writeSafetyBk2_1" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+  </Module>
+  <Module Name="ModbusStacker" Type="ModbusTcp_any" Version="1.1.0.0" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="ModbusPrimer" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="ModbusSafety" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="IpAddress" Value="192.168.125.185" />
+    <Parameter ID="UnitId" Value="1" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="4" />
+    <Parameter ID="Cb_1_NumItems" Value="25" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="readStackerBk1_1" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="readStackerBk1_2" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="readStackerBk1_3" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="readStackerBk1_4" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_1_C_5" />
+    <Parameter ID="Cb_1_C_5_Name" Value="readStackerBk1_5" />
+    <Parameter ID="Cb_1_C_5_Datatype" Value="6" />
+    <Group ID="Cb_1_C_6" />
+    <Parameter ID="Cb_1_C_6_Name" Value="readStackerBk1_6" />
+    <Parameter ID="Cb_1_C_6_Datatype" Value="6" />
+    <Group ID="Cb_1_C_7" />
+    <Parameter ID="Cb_1_C_7_Name" Value="readStackerBk1_7" />
+    <Parameter ID="Cb_1_C_7_Datatype" Value="6" />
+    <Group ID="Cb_1_C_8" />
+    <Parameter ID="Cb_1_C_8_Name" Value="readStackerBk1_8" />
+    <Parameter ID="Cb_1_C_8_Datatype" Value="6" />
+    <Group ID="Cb_1_C_9" />
+    <Parameter ID="Cb_1_C_9_Name" Value="readStackerBk1_9" />
+    <Parameter ID="Cb_1_C_9_Datatype" Value="6" />
+    <Group ID="Cb_1_C_10" />
+    <Parameter ID="Cb_1_C_10_Name" Value="readStackerBk1_10" />
+    <Parameter ID="Cb_1_C_10_Datatype" Value="6" />
+    <Group ID="Cb_1_C_11" />
+    <Parameter ID="Cb_1_C_11_Name" Value="readStackerBk1_11" />
+    <Parameter ID="Cb_1_C_11_Datatype" Value="6" />
+    <Group ID="Cb_1_C_12" />
+    <Parameter ID="Cb_1_C_12_Name" Value="readStackerBk1_12" />
+    <Parameter ID="Cb_1_C_12_Datatype" Value="6" />
+    <Group ID="Cb_1_C_13" />
+    <Parameter ID="Cb_1_C_13_Name" Value="readStackerBk1_13" />
+    <Parameter ID="Cb_1_C_13_Datatype" Value="6" />
+    <Group ID="Cb_1_C_14" />
+    <Parameter ID="Cb_1_C_14_Name" Value="readStackerBk1_14" />
+    <Parameter ID="Cb_1_C_14_Datatype" Value="6" />
+    <Group ID="Cb_1_C_15" />
+    <Parameter ID="Cb_1_C_15_Name" Value="readStackerBk1_15" />
+    <Parameter ID="Cb_1_C_15_Datatype" Value="6" />
+    <Group ID="Cb_1_C_16" />
+    <Parameter ID="Cb_1_C_16_Name" Value="readStackerBk1_16" />
+    <Parameter ID="Cb_1_C_16_Datatype" Value="6" />
+    <Group ID="Cb_1_C_17" />
+    <Parameter ID="Cb_1_C_17_Name" Value="readStackerBk1_17" />
+    <Parameter ID="Cb_1_C_17_Datatype" Value="6" />
+    <Group ID="Cb_1_C_18" />
+    <Parameter ID="Cb_1_C_18_Name" Value="readStackerBk1_18" />
+    <Parameter ID="Cb_1_C_18_Datatype" Value="6" />
+    <Group ID="Cb_1_C_19" />
+    <Parameter ID="Cb_1_C_19_Name" Value="readStackerBk1_19" />
+    <Parameter ID="Cb_1_C_19_Datatype" Value="6" />
+    <Group ID="Cb_1_C_20" />
+    <Parameter ID="Cb_1_C_20_Name" Value="readStackerBk1_20" />
+    <Parameter ID="Cb_1_C_20_Datatype" Value="6" />
+    <Group ID="Cb_1_C_21" />
+    <Parameter ID="Cb_1_C_21_Name" Value="readStackerBk1_21" />
+    <Parameter ID="Cb_1_C_21_Datatype" Value="6" />
+    <Group ID="Cb_1_C_22" />
+    <Parameter ID="Cb_1_C_22_Name" Value="readStackerBk1_22" />
+    <Parameter ID="Cb_1_C_22_Datatype" Value="6" />
+    <Group ID="Cb_1_C_23" />
+    <Parameter ID="Cb_1_C_23_Name" Value="readStackerBk1_23" />
+    <Parameter ID="Cb_1_C_23_Datatype" Value="6" />
+    <Group ID="Cb_1_C_24" />
+    <Parameter ID="Cb_1_C_24_Name" Value="readStackerBk1_24" />
+    <Parameter ID="Cb_1_C_24_Datatype" Value="6" />
+    <Group ID="Cb_1_C_25" />
+    <Parameter ID="Cb_1_C_25_Name" Value="readStackerBk1_25" />
+    <Parameter ID="Cb_1_C_25_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="16" />
+    <Parameter ID="Cb_2_NumItemsExt" Value="25" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="writeStackerBk2_1" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+    <Group ID="Cb_2_C_2" />
+    <Parameter ID="Cb_2_C_2_Name" Value="writeStackerBk2_2" />
+    <Parameter ID="Cb_2_C_2_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_2_Dir" Value="1" />
+    <Group ID="Cb_2_C_3" />
+    <Parameter ID="Cb_2_C_3_Name" Value="writeStackerBk2_3" />
+    <Parameter ID="Cb_2_C_3_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_3_Dir" Value="1" />
+    <Group ID="Cb_2_C_4" />
+    <Parameter ID="Cb_2_C_4_Name" Value="writeStackerBk2_4" />
+    <Parameter ID="Cb_2_C_4_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_4_Dir" Value="1" />
+    <Group ID="Cb_2_C_5" />
+    <Parameter ID="Cb_2_C_5_Name" Value="writeStackerBk2_5" />
+    <Parameter ID="Cb_2_C_5_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_5_Dir" Value="1" />
+    <Group ID="Cb_2_C_6" />
+    <Parameter ID="Cb_2_C_6_Name" Value="writeStackerBk2_6" />
+    <Parameter ID="Cb_2_C_6_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_6_Dir" Value="1" />
+    <Group ID="Cb_2_C_7" />
+    <Parameter ID="Cb_2_C_7_Name" Value="writeStackerBk2_7" />
+    <Parameter ID="Cb_2_C_7_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_7_Dir" Value="1" />
+    <Group ID="Cb_2_C_8" />
+    <Parameter ID="Cb_2_C_8_Name" Value="writeStackerBk2_8" />
+    <Parameter ID="Cb_2_C_8_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_8_Dir" Value="1" />
+    <Group ID="Cb_2_C_9" />
+    <Parameter ID="Cb_2_C_9_Name" Value="writeStackerBk2_9" />
+    <Parameter ID="Cb_2_C_9_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_9_Dir" Value="1" />
+    <Group ID="Cb_2_C_10" />
+    <Parameter ID="Cb_2_C_10_Name" Value="writeStackerBk2_10" />
+    <Parameter ID="Cb_2_C_10_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_10_Dir" Value="1" />
+    <Group ID="Cb_2_C_11" />
+    <Parameter ID="Cb_2_C_11_Name" Value="writeStackerBk2_11" />
+    <Parameter ID="Cb_2_C_11_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_11_Dir" Value="1" />
+    <Group ID="Cb_2_C_12" />
+    <Parameter ID="Cb_2_C_12_Name" Value="writeStackerBk2_12" />
+    <Parameter ID="Cb_2_C_12_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_12_Dir" Value="1" />
+    <Group ID="Cb_2_C_13" />
+    <Parameter ID="Cb_2_C_13_Name" Value="writeStackerBk2_13" />
+    <Parameter ID="Cb_2_C_13_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_13_Dir" Value="1" />
+    <Group ID="Cb_2_C_14" />
+    <Parameter ID="Cb_2_C_14_Name" Value="writeStackerBk2_14" />
+    <Parameter ID="Cb_2_C_14_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_14_Dir" Value="1" />
+    <Group ID="Cb_2_C_15" />
+    <Parameter ID="Cb_2_C_15_Name" Value="writeStackerBk2_15" />
+    <Parameter ID="Cb_2_C_15_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_15_Dir" Value="1" />
+    <Group ID="Cb_2_C_16" />
+    <Parameter ID="Cb_2_C_16_Name" Value="writeStackerBk2_16" />
+    <Parameter ID="Cb_2_C_16_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_16_Dir" Value="1" />
+    <Group ID="Cb_2_C_17" />
+    <Parameter ID="Cb_2_C_17_Name" Value="writeStackerBk2_17" />
+    <Parameter ID="Cb_2_C_17_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_17_Dir" Value="1" />
+    <Group ID="Cb_2_C_18" />
+    <Parameter ID="Cb_2_C_18_Name" Value="writeStackerBk2_18" />
+    <Parameter ID="Cb_2_C_18_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_18_Dir" Value="1" />
+    <Group ID="Cb_2_C_19" />
+    <Parameter ID="Cb_2_C_19_Name" Value="writeStackerBk2_19" />
+    <Parameter ID="Cb_2_C_19_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_19_Dir" Value="1" />
+    <Group ID="Cb_2_C_20" />
+    <Parameter ID="Cb_2_C_20_Name" Value="writeStackerBk2_20" />
+    <Parameter ID="Cb_2_C_20_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_20_Dir" Value="1" />
+    <Group ID="Cb_2_C_21" />
+    <Parameter ID="Cb_2_C_21_Name" Value="writeStackerBk2_21" />
+    <Parameter ID="Cb_2_C_21_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_21_Dir" Value="1" />
+    <Group ID="Cb_2_C_22" />
+    <Parameter ID="Cb_2_C_22_Name" Value="writeStackerBk2_22" />
+    <Parameter ID="Cb_2_C_22_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_22_Dir" Value="1" />
+    <Group ID="Cb_2_C_23" />
+    <Parameter ID="Cb_2_C_23_Name" Value="writeStackerBk2_23" />
+    <Parameter ID="Cb_2_C_23_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_23_Dir" Value="1" />
+    <Group ID="Cb_2_C_24" />
+    <Parameter ID="Cb_2_C_24_Name" Value="writeStackerBk2_24" />
+    <Parameter ID="Cb_2_C_24_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_24_Dir" Value="1" />
+    <Group ID="Cb_2_C_25" />
+    <Parameter ID="Cb_2_C_25_Name" Value="writeStackerBk2_25" />
+    <Parameter ID="Cb_2_C_25_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_25_Dir" Value="1" />
+  </Module>
+  <Module Name="OpcUaDryer" Type="OpcUa_any" Version="1.0.0.1" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="ModbusPowerMeter" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="ServerEndpointUrl" Value="opc.tcp://192.168.125.47:4840" />
+    <Parameter ID="UserIdentifyToken" Value="1" />
+    <Parameter ID="Username" Value="Printer_user" />
+    <Parameter ID="Password" Value="h98o76" />
+    <Group ID="Channel1" />
+    <Parameter ID="ChannelID1" Value="xError" />
+    <Parameter ID="ChannelBrowsePath1" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerLocalData/6:xError" />
+    <Group ID="Channel2" />
+    <Parameter ID="ChannelID2" Value="xDrying" />
+    <Parameter ID="ChannelBrowsePath2" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerLocalData/6:xDrying" />
+    <Group ID="Channel3" />
+    <Parameter ID="ChannelID3" Value="xReadyToDry" />
+    <Parameter ID="ChannelBrowsePath3" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerLocalData/6:xReadyToDry" />
+    <Group ID="Channel4" />
+    <Parameter ID="ChannelID4" Value="xJamDetection" />
+    <Parameter ID="ChannelBrowsePath4" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerLocalData/6:xJamDetection" />
+    <Group ID="Channel5" />
+    <Parameter ID="ChannelID5" Value="xTransportMoving" />
+    <Parameter ID="ChannelBrowsePath5" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerLocalData/6:xTransportMoving" />
+    <Group ID="Channel6" />
+    <Parameter ID="ChannelID6" Value="xInRemote" />
+    <Parameter ID="ChannelBrowsePath6" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerLocalData/6:xInRemote" />
+  </Module>
+  <Module Name="PC_any" Type="PC_any" Version="1.1.1.0" OrderNumber="PC">
+    <Connector Name="IF3">
+      <Parameter ID="ActivateIna" Value="0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="SimVis" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncPortNumber1" Value="5901" />
+      <Parameter ID="VncMaxConnections1" Value="4" />
+      <Parameter ID="VncRefreshRate1" Value="250" />
+      <Parameter ID="VncTitle1" Value="EFI_printer_Sim" />
+      <Group ID="Vnc2" />
+      <Parameter ID="VncKeyMappingFile2" Value="VC\PS2-Keyboard1.dis" />
+      <Parameter ID="VncMaxConnections2" Value="4" />
+      <Parameter ID="VncRefreshRate2" Value="250" />
+      <Parameter ID="VncTitle2" Value="EFI_printer_Inks" />
+      <Group ID="Vnc3" />
+      <Parameter ID="VncVcObjectName3" Value="Panel" />
+      <Parameter ID="VncKeyMappingFile3" Value="VC\PS2-Keyboard2.dis" />
+      <Parameter ID="VncPortNumber3" Value="5903" />
+      <Parameter ID="VncMaxConnections3" Value="2" />
+      <Parameter ID="VncRefreshRate3" Value="500" />
+      <Parameter ID="VncTitle3" Value="EFI_Safety_Transfer" />
+      <Group ID="Vnc4" />
+      <Parameter ID="VncKeyMappingFile4" Value="VC\PS2-Keyboard3.dis" />
+      <Parameter ID="VncPortNumber4" Value="5902" />
+      <Parameter ID="VncRefreshRate4" Value="300" />
+      <Parameter ID="VncTitle4" Value="Diagnostic Screen" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="SimTests" />
+    <Parameter ID="PermanentPvSize" Value="24000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="10000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="1600000" />
+    <Parameter ID="SystemTick" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic1Stack" Value="32768" />
+    <Parameter ID="Cyclic2Duration" Value="8000" />
+    <Parameter ID="Cyclic2Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Stack" Value="32768" />
+    <Parameter ID="Cyclic3Duration" Value="16000" />
+    <Parameter ID="Cyclic3Tolerance" Value="16000" />
+    <Parameter ID="Cyclic3Stack" Value="32768" />
+    <Parameter ID="Cyclic4Duration" Value="32000" />
+    <Parameter ID="Cyclic4Tolerance" Value="32000" />
+    <Parameter ID="Cyclic4Stack" Value="32768" />
+    <Parameter ID="Cyclic5Duration" Value="80000" />
+    <Parameter ID="Cyclic5Tolerance" Value="80000" />
+    <Parameter ID="Cyclic5Stack" Value="32768" />
+    <Parameter ID="Cyclic6Duration" Value="88000" />
+    <Parameter ID="Cyclic6Tolerance" Value="88000" />
+    <Parameter ID="Cyclic6Stack" Value="32768" />
+    <Parameter ID="Cyclic7Duration" Value="44000" />
+    <Parameter ID="Cyclic7Tolerance" Value="88000" />
+    <Parameter ID="Cyclic7Stack" Value="32768" />
+    <Parameter ID="Cyclic8Duration" Value="16000" />
+    <Parameter ID="Cyclic8Tolerance" Value="16000" />
+    <Parameter ID="Cyclic8Stack" Value="32768" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="USER" />
+    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="P4" Description="P4" />
+    <Parameter ID="FtpUserPassword1" Value="LclxNYuP61nqo0LTZcDXp7yBDKZw4k3sO5UoQKFs6g8=" Description="efi" />
+    <Parameter ID="FtpUserSalt1" Value="Ni00Nvek" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="WebServerPort" Value="82" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUa_Limits_MonitoredItemsPerSubscription" Value="2500" />
+    <Parameter ID="OpcUaMaxSubsEventQueueSize" Value="2500" />
+    <Parameter ID="OpcUa_Limits_MinPublishingIntervall" Value="100" />
+    <Parameter ID="OpcUa_Limits_MinKeepAlive" Value="200" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="2" />
+    <Parameter ID="OpcUaInformationModel_Facet" Value="0" />
+    <Parameter ID="OpcUaInformationModel_TypeInformation" Value="0" />
+    <Parameter ID="OpcUaInformationModel_BaseObjectTypeForStructures" Value="0" />
+  </Module>
+  <Module Name="X67SM2436" Type="X67SM2436" Version="2.3.0.0">
+    <Connection Connector="X2X1" TargetModule="5LS197.6" TargetConnector="IF2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+</Hardware>

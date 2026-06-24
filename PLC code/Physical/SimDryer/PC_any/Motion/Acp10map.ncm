@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<NcMapping NcSwId="Acp10" DisabledNodesAreHidden="False">
+  <NcObject Name="gAxis01" ModuleId="8V1045.00-2_BELT" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="BeltS1400i" AcoposParameter="BeltS1400a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1045.00-2_ncV_AXIS1" ModuleId="8V1045.00-2_BELT" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis02" ModuleId="8V1016.50-2_BK1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="BK1_i" AcoposParameter="BK_sim_a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1016.50-2_ncV_AXIS1" ModuleId="8V1016.50-2_BK1" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+</NcMapping>

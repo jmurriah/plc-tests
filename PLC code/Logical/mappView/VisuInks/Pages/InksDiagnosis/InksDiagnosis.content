@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="InksDiagnosis_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lblTitle" top="0" left="0" width="1080" zIndex="2" text="$IAT/Page.Diagnosis" backColor="rgba(192, 192, 192, 1)" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.FlexBox" id="FlexBox1" top="25" left="-10" width="600" height="445" zIndex="3" alignment="horizontal">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem1" zIndex="0" text="101">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.InputCardWidget" id="inCard101" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem2" zIndex="1" text="102">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.AnalogInput08CardWidget" id="anInCard102" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem3" zIndex="2" text="103">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TempInputCardWidget" id="TempInputCard103" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem4" zIndex="3" text="104">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.OutputCardWidget" id="outCard104" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem5" zIndex="4" text="105">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.AnalogOutput04CardWidget" id="AnalogOutputCard105" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem6" zIndex="5" text="TR">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="0" width="46" height="374" zIndex="0" image="Media/EFI/BrCards/X20DIF371.jpg" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem7" zIndex="6" text="201">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.InputCardWidget" id="inCard201" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem8" zIndex="7" text="202">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.AnalogInput08CardWidget" id="anInCard202" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem9" zIndex="8" text="203">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TempInputCardWidget" id="TempInputCard203" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem10" zIndex="9" text="204">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.OutputCardWidget" id="outCard204" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem11" zIndex="10" text="205">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.AnalogOutput04CardWidget" id="AnalogOutputCard205" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem12" zIndex="11" text="TR">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Image" id="Image2" top="0" left="0" width="46" height="374" zIndex="0" image="Media/EFI/BrCards/X20DIF371.jpg" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.FlexBox" id="flexBoxTexts" top="30" left="575" width="495" height="755" zIndex="15">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA101" zIndex="0" text="A101" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA101" top="0" left="0" width="470" zIndex="0" TextInput01="xPrintHeadsPsuOK_1" TextInput02="xPrintHeadsPsuOK_2" TextInput03="xKlixonTriggered_1" TextInput04="xKlixonTriggered_2" TextInput05="xOverpressure_1" TextInput06="xOverpressure_2" TextInput07="xMaxLevel_1" TextInput08="xMaxLevel_2" TextInput09="xMinLevel_1" TextInput10="xMinLevel_2" TextInput13="$IAT/Inputs.MachConf1" TextInput14="$IAT/Inputs.MachConf2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA102" zIndex="1" text="A102" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA102" top="0" left="0" width="470" zIndex="0" TextInput01="iVacuum1Raw_1" TextInput02="iVacuum1Raw_2" TextInput03="iVacuum2Raw_1" TextInput04="iVacuum2Raw_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA103" zIndex="2" text="A103" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA103" top="0" left="0" width="470" zIndex="0" TextInput01="iTemperatureRaw_1" TextInput02="iTemperatureRaw_2" TextInput03="iTemperatureTankRaw_1" TextInput04="iTemperatureTankRaw_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA104" zIndex="3" text="A104" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA104" top="0" left="0" width="470" zIndex="0" TextInput01="" TextInput02="" TextInput03="xOutBarResistance_1" TextInput04="xOutBarResistance_2" TextInput05="xOutPowPrintHead_1" TextInput06="xOutPowPrintHead_2" TextInput07="xReliefValve_1" TextInput08="xReliefValve_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA105" zIndex="4" text="A105" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA105" top="0" left="0" width="470" zIndex="0" TextInput01="iDutyCycleNegative_1" TextInput02="iDutyCycleNegative_2" TextInput03="iDutyCycleFilling_1" TextInput04="iDutyCycleFilling_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA201" zIndex="5" text="A201" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA201" top="0" left="0" width="470" zIndex="0" TextInput01="xPrintHeadsPsuOK_1" TextInput02="xPrintHeadsPsuOK_2" TextInput03="xKlixonTriggered_1" TextInput04="xKlixonTriggered_2" TextInput05="xOverpressure_1" TextInput06="xOverpressure_2" TextInput07="xMaxLevel_1" TextInput08="xMaxLevel_2" TextInput09="xMinLevel_1" TextInput10="xMinLevel_2" TextInput13="$IAT/Inputs.MachConf1" TextInput14="$IAT/Inputs.MachConf2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA202" zIndex="6" sizeFactor="0.8" text="A202" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA202" top="0" left="0" width="470" zIndex="0" TextInput01="iVacuum1Raw_1" TextInput02="iVacuum1Raw_2" TextInput03="iVacuum2Raw_1" TextInput04="iVacuum2Raw_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA203" zIndex="7" sizeFactor="0.8" text="A203" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA203" top="0" left="0" width="470" zIndex="0" TextInput01="iTemperatureRaw_1" TextInput02="iTemperatureRaw_2" TextInput03="iTemperatureTankRaw_1" TextInput04="iTemperatureTankRaw_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA204" zIndex="8" text="A204" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA204" top="0" left="0" width="470" zIndex="0" TextInput01="" TextInput02="" TextInput03="xOutBarResistance_1" TextInput04="xOutBarResistance_2" TextInput05="xOutPowPrintHead_1" TextInput06="xOutPowPrintHead_2" TextInput07="xReliefValve_1" TextInput08="xReliefValve_2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA205" zIndex="9" text="A205" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA205" top="0" left="0" width="470" zIndex="0" TextInput01="iDutyCycleNegative_1" TextInput02="iDutyCycleNegative_2" TextInput03="iDutyCycleFilling_1" TextInput04="iDutyCycleFilling_2" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

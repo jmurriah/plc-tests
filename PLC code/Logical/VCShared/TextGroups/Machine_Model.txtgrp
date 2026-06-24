@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.12.4.107 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Machine_Model">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="9"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="139093" Value="P4_12Bar"/>
+    <Text ID="139094" Value="P4_6Bar"/>
+    <Text ID="139098" Value="P5_Hybrid"/>
+    <Text ID="139100" Value="SHIELD"/>
+    <Text ID="139102" Value="S1400_vac Can"/>
+    <Text ID="139111" Value="Noz2 AQ"/>
+    <Text ID="139120" Value="None"/>
+    <Text ID="146882" Value="Noz2 UV"/>
+    <Text ID="150875" Value="Noz2 UV W"/>
+    <Text ID="154045" Value="S1400_vac Pwl"/>
+    <Text ID="154046" Value="P4 Cubik"/>
+    <Text ID="156440" Value="Cube"/>
+    <Text ID="158855" Value="Cube Gulliver"/>
+    <Text ID="158856" Value="Mecano_UV_W"/>
+    <Text ID="158857" Value="Mecano_UV_OPV"/>
+    <Text ID="158858" Value="Mecano_UV_W_OPV"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="139093" Value=""/>
+    <Text ID="139094" Value=""/>
+    <Text ID="139098" Value=""/>
+    <Text ID="139100" Value=""/>
+    <Text ID="139102" Value=""/>
+    <Text ID="139111" Value=""/>
+    <Text ID="139120" Value=""/>
+    <Text ID="146882" Value=""/>
+    <Text ID="150875" Value=""/>
+    <Text ID="154045" Value=""/>
+    <Text ID="154046" Value=""/>
+    <Text ID="156440" Value=""/>
+    <Text ID="158855" Value=""/>
+    <Text ID="158856" Value=""/>
+    <Text ID="158857" Value=""/>
+    <Text ID="158858" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="en-ES">
+    <Text ID="139093" Value=""/>
+    <Text ID="139094" Value=""/>
+    <Text ID="139098" Value=""/>
+    <Text ID="139100" Value=""/>
+    <Text ID="139102" Value=""/>
+    <Text ID="139111" Value=""/>
+    <Text ID="139120" Value=""/>
+    <Text ID="146882" Value=""/>
+    <Text ID="150875" Value=""/>
+    <Text ID="154045" Value=""/>
+    <Text ID="154046" Value=""/>
+    <Text ID="156440" Value=""/>
+    <Text ID="158855" Value=""/>
+    <Text ID="158856" Value=""/>
+    <Text ID="158857" Value=""/>
+    <Text ID="158858" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh-CN">
+    <Text ID="139093" Value=""/>
+    <Text ID="139094" Value=""/>
+    <Text ID="139098" Value=""/>
+    <Text ID="139100" Value=""/>
+    <Text ID="139102" Value=""/>
+    <Text ID="139111" Value=""/>
+    <Text ID="139120" Value=""/>
+    <Text ID="146882" Value=""/>
+    <Text ID="150875" Value=""/>
+    <Text ID="154045" Value=""/>
+    <Text ID="154046" Value=""/>
+    <Text ID="156440" Value=""/>
+    <Text ID="158855" Value=""/>
+    <Text ID="158856" Value=""/>
+    <Text ID="158857" Value=""/>
+    <Text ID="158858" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="139093" Value="1"/>
+    <Index ID="139094" Value="2"/>
+    <Index ID="139098" Value="4"/>
+    <Index ID="139100" Value="3"/>
+    <Index ID="139102" Value="7"/>
+    <Index ID="139111" Value="8"/>
+    <Index ID="139120" Value="0"/>
+    <Index ID="146882" Value="9"/>
+    <Index ID="150875" Value="10"/>
+    <Index ID="154045" Value="6"/>
+    <Index ID="154046" Value="5"/>
+    <Index ID="156440" Value="11"/>
+    <Index ID="158855" Value="12"/>
+    <Index ID="158856" Value="13"/>
+    <Index ID="158857" Value="14"/>
+    <Index ID="158858" Value="15"/>
+  </IndexMap>
+</TextGroup>

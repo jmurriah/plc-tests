@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="1.21.1" SubType="ANSIC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">BRSE_MBT.typ</File>
+    <File Description="Exported constants">BRSE_MBT.var</File>
+    <File Description="Exported functions and function blocks">BRSE_MBT.fun</File>
+    <File>Version_History.c</File>
+    <File>BRSE_MBT_Main.h</File>
+    <File>BRSE_MBT_Server.c</File>
+    <File>MBT_Client.c</File>
+    <File>Example_Server.c</File>
+    <File>Example_Client.c</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="BRSE_MB" />
+    <Dependency ObjectName="astcp" />
+    <Dependency ObjectName="sys_lib" />
+    <Dependency ObjectName="AsString" />
+    <Dependency ObjectName="brsystem" />
+    <Dependency ObjectName="AsIecCon" />
+    <Dependency ObjectName="standard" />
+  </Dependencies>
+</Library>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.12.5.95 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="24PortHub" Type="24PortHub" Version="1.0.0.1">
+    <Connection Connector="ETH1" TargetModule="6PPT50.101E-16B" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH12" TargetModule="PC_any" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="5LS182.6-1" Type="5LS182.6-1" Version="1.5.0.0">
+    <Connection Connector="SL" TargetModule="PC_any" TargetConnector="SL1" />
+    <Connector Name="IF1">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
+  </Module>
+  <Module Name="6PPT50.101E-16B" Type="6PPT50.101E-16B" Version="1.3.8.0">
+    <Connection Connector="ETH1" TargetModule="24PortHub" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="Printer" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Terminal" Value="true" />
+  </Module>
+  <Module Name="8AC114.60-2" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1045.00-2_BELT" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="5LS182.6-1" TargetConnector="IF1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8AC114.60-2a" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="8AC114.60-2a" Type="8AC114.60-2" Version="1.0.0.8">
+    <Connection Connector="SS" TargetModule="8V1016.50-2_BK1" TargetConnector="SS1" />
+    <Connection Connector="PLK1" TargetModule="8AC114.60-2" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8I66xxxxxxx.0P-81" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="8AC122.60-3" Type="8AC122.60-3" Version="2.2.0.0">
+    <Connection Connector="SS" TargetModule="8V1016.50-2_BK1" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8AC126.60-1" Type="8AC126.60-1" Version="2.2.0.0">
+    <Connection Connector="SS" TargetModule="8V1045.00-2_BELT" TargetConnector="SS2" />
+  </Module>
+  <Module Name="8I66xxxxxxx.0P-81" Type="8I66xxxxxxx.0P-xxx" Version="2.5.1.0">
+    <Connection Connector="PLK1" TargetModule="8AC114.60-2a" TargetConnector="PLK2" NodeNumber="81">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8I66xxxxxxx.0P-82" TargetConnector="PLK1" NodeNumber="81">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+    <Parameter ID="Sel_AO1T" Value="0A" />
+    <Parameter ID="Sel_NameplateMask" Value="8Ix6T401500_IEC" />
+    <Parameter ID="Cfg_NSP" Value="2940" />
+    <Parameter ID="Cfg_NCR" Value="277" />
+    <Parameter ID="Cfg_COS" Value="82" />
+    <Parameter ID="Sel_TUN" Value="AUTO" />
+  </Module>
+  <Module Name="8I66xxxxxxx.0P-82" Type="8I66xxxxxxx.0P-xxx" Version="2.5.1.0">
+    <Connection Connector="PLK1" TargetModule="8I66xxxxxxx.0P-81" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+    <Parameter ID="Sel_AO1T" Value="0A" />
+    <Parameter ID="Sel_NameplateMask" Value="8Ix6T401500_IEC" />
+    <Parameter ID="Cfg_NSP" Value="2940" />
+    <Parameter ID="Cfg_NCR" Value="277" />
+    <Parameter ID="Cfg_COS" Value="82" />
+    <Parameter ID="Sel_TUN" Value="AUTO" />
+  </Module>
+  <Module Name="8LSA44.R2060D300-3" Type="8LSA44.R2060D300-3" Version="2.2.0.0">
+    <Connection Connector="EC" TargetModule="8AC122.60-3" TargetConnector="EC" />
+    <Connection Connector="MT" TargetModule="8V1016.50-2_BK1" TargetConnector="MT1" />
+  </Module>
+  <Module Name="8V1016.50-2_BK1" Type="8V1016.50-2" Version="2.2.0.0">
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+  </Module>
+  <Module Name="8V1045.00-2_BELT" Type="8V1045.00-2" Version="2.2.0.0">
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+  </Module>
+  <Module Name="PC_any" Type="PC_any" Version="1.1.1.0" OrderNumber="PC">
+    <Connector Name="IF3">
+      <Parameter ID="ActivateIna" Value="0" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="SimDryer" />
+    <Parameter ID="PermanentPvSize" Value="24000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="10000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="2000000" />
+    <Parameter ID="SystemTick" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="4000" />
+    <Parameter ID="Cyclic1Stack" Value="32768" />
+    <Parameter ID="Cyclic2Duration" Value="8000" />
+    <Parameter ID="Cyclic2Tolerance" Value="8000" />
+    <Parameter ID="Cyclic2Stack" Value="32768" />
+    <Parameter ID="Cyclic3Duration" Value="12000" />
+    <Parameter ID="Cyclic3Tolerance" Value="12000" />
+    <Parameter ID="Cyclic3Stack" Value="32768" />
+    <Parameter ID="Cyclic4Duration" Value="32000" />
+    <Parameter ID="Cyclic4Tolerance" Value="32000" />
+    <Parameter ID="Cyclic4Stack" Value="32768" />
+    <Parameter ID="Cyclic5Duration" Value="80000" />
+    <Parameter ID="Cyclic5Tolerance" Value="80000" />
+    <Parameter ID="Cyclic5Stack" Value="32768" />
+    <Parameter ID="Cyclic6Duration" Value="88000" />
+    <Parameter ID="Cyclic6Tolerance" Value="88000" />
+    <Parameter ID="Cyclic6Stack" Value="32768" />
+    <Parameter ID="Cyclic7Duration" Value="44000" />
+    <Parameter ID="Cyclic7Tolerance" Value="88000" />
+    <Parameter ID="Cyclic7Stack" Value="32768" />
+    <Parameter ID="Cyclic8Duration" Value="16000" />
+    <Parameter ID="Cyclic8Tolerance" Value="16000" />
+    <Parameter ID="Cyclic8Stack" Value="32768" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="USER" />
+    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Parameter ID="AnslPort" Value="11170" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="P4" Description="P4" />
+    <Parameter ID="FtpUserPassword1" Value="LclxNYuP61nqo0LTZcDXp7yBDKZw4k3sO5UoQKFs6g8=" Description="efi" />
+    <Parameter ID="FtpUserSalt1" Value="Ni00Nvek" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="WebServerPort" Value="83" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaPort" Value="4850" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="2" />
+    <Parameter ID="OpcUaInformationModel_Facet" Value="0" />
+    <Parameter ID="OpcUaInformationModel_TypeInformation" Value="0" />
+    <Parameter ID="OpcUaInformationModel_BaseObjectTypeForStructures" Value="0" />
+  </Module>
+  <Module Name="Printer" Type="OpcUa_any" Version="1.0.0.1" Disabled="true">
+    <Connection Connector="ETH1" TargetModule="6PPT50.101E-16B" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connector Name="ETH2" Disabled="true" />
+    <Parameter ID="ServerEndpointUrl" Value="opc.tcp://192.168.125.10:4840" />
+    <Group ID="Channel1" />
+    <Parameter ID="ChannelID1" Value="xRunTransport" />
+    <Parameter ID="ChannelBrowsePath1" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xRunTransport" />
+    <Group ID="Channel2" />
+    <Parameter ID="ChannelID2" Value="xPrepareToDry" />
+    <Parameter ID="ChannelBrowsePath2" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xPrepareToDry" />
+    <Group ID="Channel3" />
+    <Parameter ID="ChannelID3" Value="xStartDrying" />
+    <Parameter ID="ChannelBrowsePath3" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xStartDrying" />
+    <Group ID="Channel4" />
+    <Parameter ID="ChannelID4" Value="xEnableNirDrying" />
+    <Parameter ID="ChannelBrowsePath4" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xEnableNirDrying" />
+    <Group ID="Channel5" />
+    <Parameter ID="ChannelID5" Value="xEnableArcLampDrying" />
+    <Parameter ID="ChannelBrowsePath5" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xEnableArcLampDrying" />
+    <Group ID="Channel6" />
+    <Parameter ID="ChannelID6" Value="rBeltSpeedSetPoint" />
+    <Parameter ID="ChannelBrowsePath6" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:rBeltSpeedSetPoint" />
+    <Parameter ID="ChannelType6" Value="REAL" />
+    <Group ID="Channel7" />
+    <Parameter ID="ChannelID7" Value="rBoardLength" />
+    <Parameter ID="ChannelBrowsePath7" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rLength" />
+    <Parameter ID="ChannelType7" Value="REAL" />
+    <Group ID="Channel8" />
+    <Parameter ID="ChannelID8" Value="rBoardWidth" />
+    <Parameter ID="ChannelBrowsePath8" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rWidth" />
+    <Parameter ID="ChannelType8" Value="REAL" />
+    <Group ID="Channel9" />
+    <Parameter ID="ChannelID9" Value="rBoardThickness" />
+    <Parameter ID="ChannelBrowsePath9" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rThickness" />
+    <Parameter ID="ChannelType9" Value="REAL" />
+    <Group ID="Channel10" />
+    <Parameter ID="ChannelID10" Value="rBoardGap" />
+    <Parameter ID="ChannelBrowsePath10" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rGap" />
+    <Parameter ID="ChannelType10" Value="REAL" />
+    <Group ID="Channel11" />
+    <Parameter ID="ChannelID11" Value="Signals_xMediaPresent" />
+    <Parameter ID="ChannelBrowsePath11" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:xMediaPresent" />
+    <Group ID="Channel12" />
+    <Parameter ID="ChannelID12" Value="Signals_xBreakerOKBlowerInput" />
+    <Parameter ID="ChannelBrowsePath12" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:xBreakerOKBlowerInput" />
+    <Group ID="Channel13" />
+    <Parameter ID="ChannelID13" Value="Signals_xBreakerOKBlowerOutput" />
+    <Parameter ID="ChannelBrowsePath13" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:xBreakerOKBlowerOutput" />
+    <Group ID="Channel14" />
+    <Parameter ID="ChannelID14" Value="Signals_Safety_xMovementsEnabled" />
+    <Parameter ID="ChannelBrowsePath14" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xMovementsEnabled" />
+    <Group ID="Channel15" />
+    <Parameter ID="ChannelID15" Value="Signals_Safety_xRemoteEStopOK" />
+    <Parameter ID="ChannelBrowsePath15" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xRemoteEStopOK" />
+    <Group ID="Channel16" />
+    <Parameter ID="ChannelID16" Value="Signals_Safety_xEStopFrontOK" />
+    <Parameter ID="ChannelBrowsePath16" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xEStopFrontOK" />
+    <Group ID="Channel17" />
+    <Parameter ID="ChannelID17" Value="Signals_Safety_xEStopRearOK" />
+    <Parameter ID="ChannelBrowsePath17" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xEStopRearOK" />
+    <Group ID="Channel18" />
+    <Parameter ID="ChannelID18" Value="Signals_Safety_xClosedFrontIn" />
+    <Parameter ID="ChannelBrowsePath18" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedFrontInput" />
+    <Group ID="Channel19" />
+    <Parameter ID="ChannelID19" Value="Signals_Safety_xClosedFrontOut" />
+    <Parameter ID="ChannelBrowsePath19" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedFrontOutput" />
+    <Group ID="Channel20" />
+    <Parameter ID="ChannelID20" Value="Signals_Safety_xClosedRearIn" />
+    <Parameter ID="ChannelBrowsePath20" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedRearInput" />
+    <Group ID="Channel21" />
+    <Parameter ID="ChannelID21" Value="Signals_Safety_xClosedRearOut" />
+    <Parameter ID="ChannelBrowsePath21" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedRearOutput" />
+    <Group ID="Channel22" />
+    <Parameter ID="ChannelID22" Value="rDocumentWidth" />
+    <Parameter ID="ChannelBrowsePath22" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Document/6:rWidth" />
+    <Parameter ID="ChannelSamplingInterval22" Value="200" />
+    <Parameter ID="ChannelPublishingInterval22" Value="400" />
+    <Parameter ID="ChannelType22" Value="REAL" />
+    <Group ID="Channel23" />
+    <Parameter ID="ChannelID23" Value="rDocumentLength" />
+    <Parameter ID="ChannelBrowsePath23" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Document/6:rLength" />
+    <Parameter ID="ChannelSamplingInterval23" Value="200" />
+    <Parameter ID="ChannelPublishingInterval23" Value="400" />
+    <Parameter ID="ChannelType23" Value="REAL" />
+    <Group ID="Channel24" />
+    <Parameter ID="ChannelID24" Value="xLineEmptyingBelt" />
+    <Parameter ID="ChannelBrowsePath24" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xLineEmptyingBelt" />
+    <Parameter ID="ChannelSamplingInterval24" Value="200" />
+    <Parameter ID="ChannelPublishingInterval24" Value="400" />
+    <Group ID="Channel25" />
+    <Parameter ID="ChannelID25" Value="xPrepareToEmptyBelt" />
+    <Parameter ID="ChannelBrowsePath25" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;amp;:&amp;amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xPrepareToEmptyBelt" />
+    <Parameter ID="ChannelSamplingInterval25" Value="200" />
+    <Parameter ID="ChannelPublishingInterval25" Value="400" />
+    <Group ID="Channel26" />
+    <Parameter ID="ChannelID26" Value="xPrinterBeltRuning" />
+    <Parameter ID="ChannelBrowsePath26" Value="/0:Root/0:Objects/4:PLC/6:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xPrinterBeltRuning" />
+    <Parameter ID="ChannelSamplingInterval26" Value="200" />
+    <Parameter ID="ChannelPublishingInterval26" Value="400" />
+  </Module>
+</Hardware>

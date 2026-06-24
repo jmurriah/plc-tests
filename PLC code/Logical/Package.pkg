@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package Version="1.00.0" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Global libraries">Libraries</Object>
+    <Object Type="Package" Description="External Packages">ExtPack</Object>
+    <Object Type="Package" Description="Global Types">GStructs</Object>
+    <Object Type="Package" Description="Gloval Vars">GVars</Object>
+    <Object Type="Package">LineCtrl</Object>
+    <Object Type="Package" Description="Main project P4 based on refactoring">Printer</Object>
+    <Object Type="Package">Dryer</Object>
+    <Object Type="Package" Description="Axis table configuration">AxisTables</Object>
+    <Object Type="Package" Description="Project Ink box external">InkBox</Object>
+    <Object Type="Package" Description="AsSafety design sample">AsSafetySolution</Object>
+    <Object Type="Package">UnitTest</Object>
+    <Object Type="Package">mappView</Object>
+    <Object Type="File">Project.language</Object>
+    <Object Type="File">BatchCompile.bat</Object>
+    <Object Type="File">JsonCheck.bat</Object>
+    <Object Type="Package">Links_And_Simulators</Object>
+  </Objects>
+</Package>

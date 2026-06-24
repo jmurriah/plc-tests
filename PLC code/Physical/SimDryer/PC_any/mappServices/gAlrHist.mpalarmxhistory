@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlrHist" Type="mpalarmxhistory">
+    <Group ID="mapp.AlarmX.History">
+      <Group ID="Memory">
+        <Property ID="MemorySize" Value="600" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

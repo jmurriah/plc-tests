@@ -1,0 +1,44 @@
+VAR
+	Icla : REFERENCE TO stIcla;
+	PDO4 : REFERENCE TO IclaNetData_typ;
+	StepIcla : stepAXISILE_enum := AXISILE_INIT;
+	CANopenSDORead8_0 : CANopenSDORead8;
+	CANopenSDORead8_1 : CANopenSDORead8; (*CANopenSDOWrite8_0 : CANopenSDOWrite8;*)
+	CANopenSDORead8_2 : CANopenSDORead8;
+	CANopenSDOWrite8_0 : CANopenSDOWrite8;
+	CANopenSDOWrite8_2 : CANopenSDOWrite8;
+	xOldInPosition : BOOL;
+	xDebugIcla1 : BOOL := FALSE;
+	xDebugIcla : BOOL := FALSE;
+	iOutJogNoOrder : UINT;
+	iOutJogOrderStop : UINT;
+	uiCountJogOrders : UINT;
+	xReadSpeed : BOOL;
+	iPrevAcceleration : UINT;
+	iPrevVeloSlow : UINT;
+	iPrevVeloFast : UINT;
+	StepComs : stepCOMSILE_enum;
+	xEnabledReadComs : BOOL;
+	xEnabledWriteComs : BOOL;
+	xJogPauseSent : BOOL;
+	uiValueToWrite : UINT; (*Value to write during debug in a register of datalen=2*)
+	CanGetState : CANopenGetState;
+	tonNotComms : TON;
+	tonCommsErrorResetting : TON;
+	CanResetState : CanOpenResetCommsState_enum;
+	CanResetState_copy : CanOpenResetCommsState_enum;
+	CANopenReset : CANopenNMT;
+	iReasonNotComms : UINT;
+	xChangedResetCommsState : BOOL;
+	lastResetingState : UINT;
+	lastFbResetStatus : UINT;
+	lastCanOpenResetError : UINT;
+	iTimesTryToReset : UINT;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	StateHistory : ARRAY[0..iHistoryLines] OF stepAXISILE_enum;
+	iIndexHistory : USINT;
+END_VAR

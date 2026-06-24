@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mappViewControl" PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">MainVisu.vis</Object>
+    <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="Package">MainBindings</Object>
+    <Object Type="Package">LayoutCardsBindings</Object>
+    <Object Type="Package">MainEvents</Object>
+    <Object Type="File">OpcUaServer.uaserver</Object>
+  </Objects>
+</Package>

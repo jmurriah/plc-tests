@@ -1,0 +1,206 @@
+VAR
+	iMediaHeight : UINT;
+	dataHeigh : REFERENCE TO stThicknessCtrl_typ;
+	RTInfo_0 : RTInfo;
+	rPeriode : REAL := 0; (*Cycle time in microseconds. Read just in INIT. NEVER Write over it!!!*)
+	iIndexArray : UINT;
+	iIndexNewMediaArray : UINT;
+	iIndexEnteringMedia : UINT;
+	iIndexFinishEnteringMedia : UINT;
+	iIndexExitingMedia : UINT;
+	rAccumAdvBelt : REAL;
+	iMediaFilter : UINT; (*Cm to consider that pd signal has detected a board*)
+	iIndexCuringTrackingMatrix : UINT;
+	xCuringTracking : ARRAY[0..iMAXTRACKINGARRAY] OF USINT; (*Matrix with the information about media that need to be cured. Each position corresponds to a cm. Bit 0: L1 Color, Bit 1 L1 White, Bit 2 L2 Color, Bit 3 L2 White*)
+	ValidMedia : ARRAY[0..iMAXTRACKINGARRAY] OF SINT; (*Array with the information about valid media. -1 means no information about media so HoldReject, 0 means invalid media, 1 means valid media. Each position corresponds to a cm*)
+	xMediaTracking : ARRAY[0..iMAXTRACKINGARRAY] OF USINT; (*Matrix with the information about if there is Media in the position. Each position corresponds to a cm. Bit 0: L1 , Bit 1 L2*)
+	xMediaPresentAnalog : ARRAY[0..iMAXMEDIAPRESENTARRAY] OF BOOL; (*Matrix with the information about if there is Media detected from the ARRAY sensor in the position. Each position corresponds to a cm*)
+	xMediaPresentArray : ARRAY[0..iMAXMEDIAPRESENTARRAY] OF BOOL; (*Matrix with the information about if there is Media detected from the ARRAY sensor in the position. Each position corresponds to a cm*)
+	xMediaPresentBasic : ARRAY[0..iMAXMEDIAPRESENTARRAY] OF BOOL; (*Matrix with the information about if there is Media detected from the ARRAY sensor in the position. Each position corresponds to a cm*)
+	iHeightArray : ARRAY[0..iMAXHEIGHTARRAY] OF UINT;
+	iDistanceBeltTurn : UINT; (*Distance to know when a belt cycle has been run*)
+	iDistanceWorkEmptyBelt : UINT;
+	iDistanceMountPieceOut : UINT;
+	iDistanceMediaInside : UINT;
+	iDistanceVirtualMediaInside : UINT;
+	iDistanceMediaToRejectInside : UINT;
+	iDistanceTrackingEmpty : UINT;
+	iIndexSection : USINT;
+	iIndexCheck : USINT;
+	CheckMediaWork : REFERENCE TO stThicknessCtrl_CheckMediaParams; (*Variable inside the FOR to work with*)
+	iLastMaxHeigh : ARRAY[0..TOTAL_THICKNESS_SECTIONS] OF UINT;
+	iMaxHeigh : ARRAY[0..TOTAL_THICKNESS_SECTIONS] OF UINT;
+	iCountIncrease : ARRAY[0..TOTAL_THICKNESS_SECTIONS] OF UINT;
+	iTotalBlocksLengh : UINT; (*Value in cm. Max is 600*)
+END_VAR
+VAR CONSTANT
+	MM_PERPOSITION_IN_ARRAY : REAL := 10.0;
+END_VAR
+VAR
+	iTotalSections : USINT; (*Sections configured in the machine*)
+	rMinBeltSpeedToStart : REAL;
+	iPositionsToRunArray : UINT;
+	iRushProofCounter : INT;
+	tonResetRushProofCounterTimer : TON;
+	xResetRejectRushProofCounter : BOOL;
+	xRushProof : BOOL;
+	xCameraRejectSignal : BOOL;
+	xReject : BOOL;
+	xReviewRejectOrder : BOOL;
+	xHoldReject : BOOL;
+	tp_Reject : TP;
+	tp_RejectLongTime : TP;
+	ton_PhysicalHoldReject : TON;
+	iProductDetectSensorPosition : UINT; (*Position of the sensor in X direction in cm*)
+	iArraySensorPosition : INT; (*Position of the sensor in X direction in cm*)
+	iAnalogSensorPosition : INT; (*Position of the sensor in X direction in cm*)
+	iDetectionMediaSensorPosition : INT;
+	iLastPosition : INT;
+	iHoldRejectLengthAdjustment : UINT;
+	iRejectLengthAdjustment : UINT;
+	iMaxTrackingPosition : UINT;
+	iIndex : UINT;
+	iStartCuringWindow : INT; (*Distance in cm*)
+	iEndCuringWindow : INT; (*Distance in cm*)
+	iIndexWindow : UINT;
+	iReasonMediaBelow : USINT;
+	iIndexPositionToReviewMedia : UINT;
+	iBoardsBelowBlockL1 : UINT;
+	iBoardsBelowBlockL2 : UINT;
+	iIndexMediaPresent : UINT;
+	rValuesPerPosition : REAL;
+	iNumberOfPositionsToBeUpdated : UINT; (*Matrix's number of positions to update*)
+	xFilteredProductDetectMediaL1 : BOOL;
+	xFilteredProductDetectMediaL2 : BOOL;
+	xFilteredAnalogSensorMedia : BOOL;
+	xFilteredArraySensorMedia : BOOL;
+	xFilteredBasicDetectionMedia : BOOL;
+	iNewValidMedia : SINT;
+	iCurrentMediaHeight : UINT;
+	xFrontEdgeBoardInChekMedia : BOOL;
+	xRearEdgeBoardInChekMedia : BOOL;
+	ars_CheckMedia : ARRAY[0..MAX_LAST_CHECKMEDIA] OF AutoResetSound;
+	ars_NoThicknessSystemInstalled : AutoResetSound;
+	iReasonSound : UINT;
+	stAlarmsReseted : stThicknessCtrl_Alarms_typ;
+	stAlarmsSummaryReseted : stEFI_AlarmSummary;
+	iReasonStop : UINT;
+	iReasonCritical : UINT;
+	xMountedMedia : BOOL; (*Previously as an input, now ThicknessCtrl reads the value from AnalogCtrl and ArrayCtrl*)
+	LoadNewMedia_MethodOperate : UaSrv_MethodOperate;
+	LoadNewMedia_Step : USINT;
+	LoadNewMedia_Media : stThicknessCtrl_MediaConfig;
+	LoadNewMedia_Result : UDINT;
+	LoadNewMedia_ErrorID : UDINT;
+	LoadNewMedia_ReviewResult : UDINT;
+	InsertNewMedia_MethodOperate : UaSrv_MethodOperate;
+	InsertNewMedia_Step : USINT;
+	InsertNewMedia_Id : DINT;
+	InsertNewMedia_Media : stThicknessCtrl_MediaConfig;
+	InsertNewMedia_Result : UDINT;
+	InsertNewMedia_ErrorID : UDINT;
+	InsertNewMedia_ReviewResult : UDINT;
+	InsertNewMedia_Position : UINT;
+	RemoveNewMedia_MethodOperate : UaSrv_MethodOperate;
+	RemoveNewMedia_Step : USINT;
+	RemoveNewMedia_Line : USINT;
+	RemoveNewMedia_Id : DINT;
+	RemoveNewMedia_Result : UDINT;
+	RemoveNewMedia_ErrorID : UDINT;
+	RemoveNewMedia_ReviewResult : UDINT;
+	RemoveNewMedia_Position : UINT;
+	LoadNewMediaEnergy_MethodOperate : UaSrv_MethodOperate;
+	LoadNewMediaEnergy_Step : USINT;
+	LoadNewMediaEnergy_Media : stThickCtrl_EnergyMedia;
+	LoadNewMediaEnergy_Result : UDINT;
+	LoadNewMediaEnergy_ErrorID : UDINT;
+	LoadNewMediaEnergy_ReviewResult : UDINT;
+	LoadNewMediaEnergy_Position : UINT;
+	InsertNewMediaEn_MethodOperate : UaSrv_MethodOperate;
+	InsertNewMediaEn_Step : USINT;
+	InsertNewMediaEn_Id : DINT;
+	InsertNewMediaEn_Media : stThickCtrl_EnergyMedia;
+	InsertNewMediaEn_Result : UDINT;
+	InsertNewMediaEn_ErrorID : UDINT;
+	InsertNewMediaEn_ReviewResult : UDINT;
+	InsertNewMediaEn_Position : UINT;
+	LoadNewMediaEnergyCont_MethodOp : UaSrv_MethodOperate;
+	LoadNewMediaEnergyCont_Step : USINT;
+	LoadNewMediaEnergyCont_Media : stThickCtrl_EnergyMedia;
+	LoadNewMediaEnergyCont_Result : UDINT;
+	LoadNewMediaEnergyCont_ErrorID : UDINT;
+	LoadNewMediaEnergyCont_ReviewRes : UDINT;
+	iIndexCleanMediaArray : UINT;
+	iProdDetectFilterStartIndex : UINT;
+	iSensorFilterStartIndex : UINT;
+	iPositionAdjusted : UINT;
+	NewMediaStackL1 : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA] OF stThicknessCtrl_MediaPosStatus; (*FIFO Stack. Elements enter at the end, and go to First while exiting elements*)
+	NewMediaStackL2 : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA] OF stThicknessCtrl_MediaPosStatus; (*FIFO Stack. Elements enter at the end, and go to First while exiting elements*)
+	MediaTrackingInsideL1 : REFERENCE TO ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA] OF stThicknessCtrl_MediaPosStatus; (*FIFO. Elements enter at the end, and go to First while exiting elements*)
+	MediaTrackingInsideL2 : REFERENCE TO ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA] OF stThicknessCtrl_MediaPosStatus; (*FIFO. Elements enter at the end, and go to First while exiting elements*)
+	MediaEnergyRackL1 : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA_x2] OF stThickCtrl_Energy; (*Need the memory area for NewMedia and for MediaInside with full data*)
+	MediaEnergyRackL2 : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA_x2] OF stThickCtrl_Energy; (*Need the memory area for NewMedia and for MediaInside with full data*)
+	Stack_iTotalNewMediaL1 : UINT;
+	Stack_iTotalNewMediaL2 : UINT;
+	MediaTracking_iTotalInsideL1 : UINT;
+	MediaTracking_iTotalInsideL2 : UINT;
+	MediaTracking_iTotalInsideL1_cp : UINT;
+	MediaTracking_iTotalInsideL2_cp : UINT;
+	MediaTracking_xEnteringMachineL1 : BOOL;
+	MediaTracking_xEnteringMachineL2 : BOOL;
+	EnergyRack_iIndexL1 : USINT; (*Index of the next free rack in array*)
+	EnergyRack_iIndexL2 : USINT; (*Index of the next free rack in array*)
+	xDetectedGap_L1 : BOOL;
+	xDetectedGap_L2 : BOOL;
+	EnteringMediaL1 : REFERENCE TO stThicknessCtrl_MediaPosStatus; (*Current media entering in the machine*)
+	EnteringMediaL2 : REFERENCE TO stThicknessCtrl_MediaPosStatus; (*Current media entering in the machine*)
+	EnteringMediaContinuous : stThicknessCtrl_MediaPosStatus; (*Current media entering in the machine*)
+	xMediaInLedPositionWhiteL1 : BOOL;
+	xMediaInLedPositionWhiteL2 : BOOL;
+	xMediaInLedPositionPrimerL1 : BOOL;
+	xMediaInLedPositionPrimerL2 : BOOL;
+	xMediaInLedPositionColorL1 : BOOL;
+	xMediaInLedPositionColorL2 : BOOL;
+	CureLampParams : REFERENCE TO stThicknessCtrl_CureLampParams;
+	CommandsReseted : stThicknessCtrl_Commands_typ;
+	iSafetyMarginToHeight : UINT;
+	xAddedSafetyMarginToHeight : BOOL;
+	iIndexReviewArray : UINT;
+	iFirstIndex : UINT;
+	iLastIndex : UINT;
+	xDetectionSystemIncoherenceL1 : BOOL; (*There is no media detection consistensy between PD an the array sensor . L1*)
+	xDetectionSystemIncoherenceL2 : BOOL; (*There is no media detection consistensy between PD an the array sensor . L2*)
+	EnergyTest : stThickCtrl_EnergyMedia;
+	iIndexDryer : USINT;
+	DryerInfo : REFERENCE TO stThicknessCtrl_NirDryerParams;
+	iDistanceDelay : UINT; (*Distance in cm*)
+	iDistanceWindow : UINT; (*Distance in cm*)
+	MaxLampIntensityL1 : ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT;
+	MaxLampIntensityL2 : ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT;
+	LampIntensityL2 : ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT;
+	xReturningFromReject : BOOL;
+	rMediaThicknessMargin : REAL;
+	rMediaThickness : REAL;
+	rSubstratePowerReduction : REAL; (*Iternal variable for Substrate power reduction. From 1.0 (default) to 0.3 is allowed*)
+	rThermalInerciaReduction : REAL;
+	rPowerReduction : REAL; (*Iternal variable for power reduction. Joining all power reductions*)
+	diTotalCmBelt : UDINT;
+	TrackingEventsArray : ARRAY[0..THICK_MAX_TRACKING_EVENTS] OF stThicknessCtrl_TrackingEvent;
+	GetTOD : DTStructureGetTime;
+	tiTimeOfDay : DTStructure;
+	stEventLogEndRejecting : EventLog_typ;
+	stEventLogResetRushProofCounter : EventLog_typ;
+	stEventLogRushProof : EventLog_typ;
+	strAuxEventDesc : STRING[129];
+	iTotalCheckMediaTrackingBoards : UINT;
+	iTotalCheckMediaTrackBoardsFilt : UINT;
+	iTotalCheckMediaBoards : UINT;
+	tofNewCheckBoardTracking : TOF;
+	tonFilterCheckMediaSensor : ARRAY[0..MAX_LAST_CHECKMEDIA] OF TON;
+	ExternalMediaConfig : REFERENCE TO stThicknessCtrl_MediaConfig;
+	xExitingMediaL1 : BOOL;
+	xExitingMediaL2 : BOOL;
+	iForcedMovedOutMediaL1 : UDINT;
+	iForcedMovedOutMediaL2 : UDINT;
+	xMarkLastBoardBelowBlock : BOOL; (*TRUE when the ValidMedia values of the board below PD is set to UNKNOWN when marking all boards below machine as rejected*)
+END_VAR

@@ -1,0 +1,19 @@
+VAR
+	iTestState : USINT;
+	testPassedAsserts : UDINT;
+	xSometestFailedAsserts : BOOL;
+	testFailedAsserts : UDINT;
+	txTest : STRING[80];
+	txStateDesc : STRING[80];
+	exTimesPreFast : UDINT;
+	exTimesPreSlow : UDINT;
+	diffExecFast : UDINT;
+	iIndexBlock : USINT;
+	iIndex : USINT;
+	iIndexPrepareCuring : USINT;
+	iInksChillerIndex : USINT;
+	iIndexPsuOk : USINT;
+	iCheckInkStartedIndex : USINT;
+	rPreviousVacPressureSp : REAL;
+	rPreviousBlockMotorPosition : REAL;
+END_VAR

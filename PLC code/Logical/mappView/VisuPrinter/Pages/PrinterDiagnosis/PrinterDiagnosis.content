@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="PrinterDiagnosis_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lblTitle" top="0" left="0" width="1080" zIndex="2" text="Diagnosis" backColor="rgba(192, 192, 192, 1)" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.ContentCarousel" id="ContentCarousel1" top="165" left="155" width="920" height="620" zIndex="3" contentList="['DiagCP0484_content','DiagCP1382_content','DiagID16_content','DiagOD16_content','DiagAI8_content','DiagAI4_content','DiagAO4_content','DiagAT4_content','DiagPS_content','DiagSL81_content','DiagX1_content','DiagX2_content','DiagX3_content','DiagSM_content','DiagSC_content','DiagSI_content','DiagSO_content']" selectedValue="DiagCP0484_content" />
+    <Widget xsi:type="widgets.brease.Button" id="btnCardForward" top="45" left="835" zIndex="4" text="Forward" />
+    <Widget xsi:type="widgets.brease.Button" id="btnCardBackward" top="45" left="165" zIndex="5" breakWord="true" text="Back" />
+    <Widget xsi:type="widgets.brease.Label" id="CarNumberLabel" top="40" left="445" width="200" height="40" zIndex="6" text="Card Position" borderWidth="2px" cornerRadius="5px" backColor="rgba(255, 255, 255, 0)" borderColor="rgba(0, 0, 0, 1)" borderStyle="solid" style="Description" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CardNumberOutput" top="45" left="580" width="60" zIndex="7" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" useDigitGrouping="true" borderStyle="double" textAlign="center" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="180" left="445" width="200" zIndex="8" textAlign="center" />
+  </Widgets>
+</Content>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">MainPage.binding</Object>
+    <Object Type="File">Nav900x200_Content.binding</Object>
+    <Object Type="File">TestsDialog.binding</Object>
+    <Object Type="File">PrinterDiagnosis.binding</Object>
+    <Object Type="File">Tracking.binding</Object>
+  </Objects>
+</Package>

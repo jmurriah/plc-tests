@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">SimpleBlockSim</Object>
+    <Object Type="Program" Language="IEC">InitSimpleBlockSim</Object>
+    <Object Type="File" Private="true">SimpleBlockSim.var</Object>
+    <Object Type="File">BlockSim.typ</Object>
+  </Objects>
+</Package>

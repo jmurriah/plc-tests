@@ -1,0 +1,31 @@
+VAR CONSTANT
+	VALUES_TO_GET_MAX_THICKNESS : USINT := 99;
+END_VAR
+VAR
+	T_NoDigDingDetect : TON;
+	stAlarmsSummaryReseted : stEFI_AlarmSummary;
+	stThickAlarmsReseted : stThicknessAnalogAlarms;
+	stEventLogCal : EventLog_typ;
+	stEventLog : EventLog_typ;
+	stEventLogReject : EventLog_typ;
+	stEventLogEndReject : EventLog_typ;
+	strAux : STRING[129];
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	CommandsReseted : stThickessAnalogCommands;
+	rMaxThicknessS1 : REAL;
+	rMaxThicknessS2 : REAL;
+	rMaxThicknessS0 : REAL;
+	rMaxThickness : REAL;
+	iModSec : USINT;
+	timeReaded : RTCtime_typ;
+	ars_AlDingConexionError : AutoResetSound;
+	ars_AlDingNotReferenced : AutoResetSound;
+	ars_AlDingDetect : AutoResetSound;
+	ars_AlNoDingDetect : AutoResetSound;
+	ars_AlDingIncoherenceValue : AutoResetSound;
+	ars_AlDingNoDigLaserSensor : AutoResetSound;
+	ars_AlMountedTile : AutoResetSound;
+	data : REFERENCE TO stThicknessAnalog_typ;
+	xRecoveredPermanentInfo : BOOL;
+END_VAR

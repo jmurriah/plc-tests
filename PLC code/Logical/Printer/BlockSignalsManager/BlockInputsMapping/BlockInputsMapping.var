@@ -1,0 +1,5 @@
+VAR
+	iIndexBlockIn : USINT;
+	iIndexJam : USINT;
+	dataJam : REFERENCE TO JamDetect_typ;
+END_VAR

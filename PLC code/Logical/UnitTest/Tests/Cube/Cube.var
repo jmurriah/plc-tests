@@ -1,0 +1,14 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: Cube
+ * Author: Jorge Murria
+ ********************************************************************
+ * Local variables of program Cube
+ * General variables - do not change
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	Testsuite : UtMgrTestSuite := (Name:='Cube',Description:='Description of the Tests',Type:=utMgrTEST_TYPE_C,MetaInformation:='Some Meta Information can be added here');
+END_VAR
+(*Variables used in the tests*)

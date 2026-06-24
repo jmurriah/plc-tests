@@ -1,0 +1,25 @@
+VAR
+	Sarm : REFERENCE TO Sarm_typ;
+	AlarmsReseted : SarmAlarms_typ;
+	ResetCommands : SarmCommands_typ;
+	CommsReset : SarmCommsInputs_typ;
+	OutputsReset : SarmOutputs_typ;
+	iSarmModel : USINT;
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF SarmCtrlStatus_enum;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	tiTimeToEmpty : TIME;
+	tonEmptyBelt : TON;
+	EraseWriteData : ARRAY[1..25] OF UINT;
+	CopyOfWriteData : ARRAY[1..25] OF UINT;
+	tonDisableWrittingOfData : TON;
+	xDisableWriteData : BOOL;
+	ton_CommsError : TON;
+END_VAR

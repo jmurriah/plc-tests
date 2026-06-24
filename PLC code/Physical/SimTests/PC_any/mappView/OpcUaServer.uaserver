@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="OpcUaServerConnections" Type="UASERVER">
+    <Group ID="DefaultOpcUaServer">
+      <Property ID="Alias" />
+      <Property ID="Hostname" />
+      <Property ID="IPAddress" Value="127.0.0.1" />
+      <Property ID="Port" Value="4840" />
+      <Property ID="EndpointUrl" />
+      <Property ID="DefaultNamespace" Value="http://br-automation.com/OpcUa/PLC/PV/" />
+      <Group ID="NamespaceAlias[1]">
+        <Property ID="Alias[1]" Value="Simulation" />
+        <Property ID="Namespace[1]" Value="http://br-automation.com/OpcUa/PLC/PV/" />
+      </Group>
+      <Selector ID="ConnectionPolicy" Value="2">
+        <Property ID="UserName" Value="PressCore" />
+        <Property ID="MVEncryptedPassword" Value="pa6FIWJmj5N9GnDxx18vWw==" />
+      </Selector>
+      <Selector ID="SecurityPolicy" Value="None" />
+      <Selector ID="MessageSecurityMode" Value="1" />
+      <Property ID="SSLConfiguration" />
+    </Group>
+  </Element>
+</Configuration>

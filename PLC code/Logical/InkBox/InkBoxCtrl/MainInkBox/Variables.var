@@ -1,0 +1,16 @@
+VAR
+	iIndex : USINT;
+	iTemp1 : BOOL;
+	dataInksInput : REFERENCE TO stInks;
+	iCabinet : USINT;
+	iInksInCabinet : USINT;
+	iInkIndex : USINT;
+	rPowerPerCabinet : REAL;
+	rCabinetReductionTempPower : REAL;
+	rMaxTempPower : REAL;
+	rTotalInksInCabinet : REAL;
+	xaExistingInks : ARRAY[0..MAX_LAST_INK] OF BOOL;
+	xaExistingInksReseted : ARRAY[0..MAX_LAST_INK] OF BOOL;
+	dataInksInParams : stInksParameters;
+	CommandsReseted : InkboxCommands;
+END_VAR

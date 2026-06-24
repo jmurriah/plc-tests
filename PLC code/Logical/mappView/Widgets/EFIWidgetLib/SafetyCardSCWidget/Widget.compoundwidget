@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="SCCardWidget" width="100" height="374" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="0" width="100" height="374" zIndex="0" image="Media/EFI/BrCards/X20SP1130.jpg" sizeMode="cover" />
+		<!--Widget xsi:type="widgets.brease.ToggleButton" id="btnViewText" top="20" left="10" width="20" height="20" zIndex="17" image="Media/UI/digi-increase-sel.svg" mouseDownImage="Media/UI/digi-increase.svg" checkedBackColor="rgba(0, 0, 255, 1)"/-->
+		<Widget xsi:type="widgets.brease.ImageList" id="imlCardOK" top="65" left="15" width="50" height="24" zIndex="1" imageList="['RedLamp01_On.png', 'GreenLamp01_On.png']" imagePrefix="Media/Lamps/" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="PlcCardMapping" type="PlcCardMapping" readOnly="true" >
+			<Description>Input Card Structure</Description>
+			<Mappings>
+				<Mapping widget="imlCardOK" type="Number" property="selectedIndex" mode="oneWay" memberPath="ModuleOk" mapToNode="false"/>
+				<!--Mapping widget="btnViewText" type="Number" property="value" mode="twoWay" memberPath="ShowTexts" mapToNode="false"/-->
+			</Mappings>
+		</Property>
+    
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

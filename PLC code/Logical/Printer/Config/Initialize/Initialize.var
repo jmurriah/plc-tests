@@ -1,0 +1,5 @@
+VAR
+	HWInfoCpu : HWInfo;
+	projectInfo : ArProjectGetInfo;
+	iInksIndex : USINT;
+END_VAR

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="SimTests.Hardware.hw" LastWriteTime="11/22/2021 13:58:40" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="8I66xxxxxxx.0P-xxx1" Type="8I66xxxxxxx.0P-xxx" X="902.4" Y="399" />
+    <Module Name="8LSA44.R2060D300-3" Type="8LSA44.R2060D300-3" X="562.7" Y="628.9" />
+    <Module Name="8LSA44.R2060D300-3a" Type="8LSA44.R2060D300-3" X="682.7" Y="628.9" />
+    <Module Name="8V1016.50-2_BK1" Type="8V1016.50-2" X="562.7" Y="399" />
+    <Module Name="8AC122.60-3" Type="8AC122.60-3" X="576.7" Y="514.5" />
+    <Module Name="8AC114.60-2a" Type="8AC114.60-2" X="565.5" Y="514.5" />
+    <Module Name="8V1016.50-2_BK2" Type="8V1016.50-2" X="682.7" Y="399" />
+    <Module Name="8AC122.60-3a" Type="8AC122.60-3" X="696.7" Y="514.5" />
+    <Module Name="8AC114.60-2b" Type="8AC114.60-2" X="685.5" Y="514.5" />
+    <Module Name="8V1045.00-2_BELT" Type="8V1045.00-2" X="463" Y="399" />
+    <Module Name="8AC126.60-1" Type="8AC126.60-1" X="477" Y="605.5" />
+    <Module Name="8AC114.60-2" Type="8AC114.60-2" X="465.8" Y="605.5" />
+    <Module Name="8V1045.00-2_NCrash1" Type="8V1045.00-2" X="802.7" Y="399" />
+    <Module Name="8AC126.60-1a" Type="8AC126.60-1" X="816.7" Y="605.5" />
+    <Module Name="8AC114.60-2c" Type="8AC114.60-2" X="805.5" Y="605.5" />
+    <Module Name="ModbusFeeder" Type="ModbusTcp_any" X="463" Y="897.9" />
+    <Module Name="ModbusPowerMeter" Type="ModbusTcp_any" X="1023" Y="897.9" />
+    <Module Name="ModbusPrimer" Type="ModbusTcp_any" X="603" Y="897.9" />
+    <Module Name="ModbusSafety" Type="ModbusTcp_any" X="883" Y="897.9" />
+    <Module Name="ModbusStacker" Type="ModbusTcp_any" X="743" Y="897.9" />
+    <Module Name="OpcUaDryer" Type="OpcUa_any" X="1163" Y="897.9" />
+    <Module Name="PC_any" Type="PC_any" X="100" Y="100" />
+    <Module Name="5LS197.6" Type="5LS197.6" X="418" Y="139" />
+    <Module Name="5LS182.6-1" Type="5LS182.6-1" X="418" Y="110" />
+    <Module Name="X67SM2436" Type="X67SM2436" X="463" Y="762.9" />
+  </Modules>
+  <Links>
+    <Link From="5LS182.6-1" To="8AC114.60-2" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="459" Y="118" />
+      <Point X="459" Y="118" />
+      <Point X="464" Y="118" />
+      <Point X="482" Y="118" />
+      <Point X="482" Y="362" />
+      <Point X="448" Y="362" />
+      <Point X="448" Y="633.3" />
+      <Point X="462.9" Y="633.3" />
+      <Point X="471.9" Y="633.3" />
+      <Point X="471.9" Y="633.3" />
+    </Link>
+    <Link From="5LS197.6" To="X67SM2436" FromPort="IF2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="459" Y="159" />
+      <Point X="459" Y="159" />
+      <Point X="464" Y="159" />
+      <Point X="475" Y="159" />
+      <Point X="475" Y="355" />
+      <Point X="441" Y="355" />
+      <Point X="441" Y="682" />
+      <Point X="473" Y="682" />
+      <Point X="473" Y="761.9" />
+      <Point X="473" Y="774.9" />
+      <Point X="473" Y="774.9" />
+    </Link>
+    <Link From="8AC114.60-2" To="8AC114.60-2a" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="471.9" Y="643.1" />
+      <Point X="471.9" Y="643.1" />
+      <Point X="462.9" Y="643.1" />
+      <Point X="455" Y="643.1" />
+      <Point X="455" Y="675" />
+      <Point X="525" Y="675" />
+      <Point X="525" Y="542.3" />
+      <Point X="562.6" Y="542.3" />
+      <Point X="571.6" Y="542.3" />
+      <Point X="571.6" Y="542.3" />
+    </Link>
+    <Link From="8AC114.60-2a" To="8AC114.60-2b" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="571.6" Y="552.1" />
+      <Point X="571.6" Y="552.1" />
+      <Point X="562.6" Y="552.1" />
+      <Point X="555" Y="552.1" />
+      <Point X="555" Y="592" />
+      <Point X="615" Y="592" />
+      <Point X="615" Y="542.3" />
+      <Point X="682.6" Y="542.3" />
+      <Point X="691.6" Y="542.3" />
+      <Point X="691.6" Y="542.3" />
+    </Link>
+    <Link From="8AC114.60-2b" To="8AC114.60-2c" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="691.6" Y="552.1" />
+      <Point X="691.6" Y="552.1" />
+      <Point X="682.6" Y="552.1" />
+      <Point X="675" Y="552.1" />
+      <Point X="675" Y="592" />
+      <Point X="765" Y="592" />
+      <Point X="765" Y="633.3" />
+      <Point X="802.6" Y="633.3" />
+      <Point X="811.6" Y="633.3" />
+      <Point X="811.6" Y="633.3" />
+    </Link>
+    <Link From="8AC114.60-2c" To="8I66xxxxxxx.0P-xxx1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="811.6" Y="643.1" />
+      <Point X="811.6" Y="643.1" />
+      <Point X="802.6" Y="643.1" />
+      <Point X="795" Y="643.1" />
+      <Point X="795" Y="675" />
+      <Point X="919.4" Y="675" />
+      <Point X="919.4" Y="499" />
+      <Point X="919.4" Y="493" />
+      <Point X="919.4" Y="493" />
+    </Link>
+    <Link From="8AC122.60-3" To="8LSA44.R2060D300-3" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="582.8" Y="554.9" />
+      <Point X="582.8" Y="554.9" />
+      <Point X="582.8" Y="579.9" />
+      <Point X="584.2" Y="579.9" />
+      <Point X="584.2" Y="628" />
+      <Point X="584.2" Y="635" />
+      <Point X="584.2" Y="635" />
+    </Link>
+    <Link From="8AC122.60-3a" To="8LSA44.R2060D300-3a" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="702.8" Y="554.9" />
+      <Point X="702.8" Y="554.9" />
+      <Point X="702.8" Y="579.9" />
+      <Point X="704.2" Y="579.9" />
+      <Point X="704.2" Y="628" />
+      <Point X="704.2" Y="635" />
+      <Point X="704.2" Y="635" />
+    </Link>
+    <Link From="8LSA44.R2060D300-3" To="8V1016.50-2_BK1" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="612.2" Y="635" />
+      <Point X="612.2" Y="635" />
+      <Point X="612.2" Y="628" />
+      <Point X="612.2" Y="615" />
+      <Point X="594" Y="615" />
+      <Point X="594" Y="579.5" />
+      <Point X="594" Y="574.5" />
+      <Point X="594" Y="574.5" />
+    </Link>
+    <Link From="8LSA44.R2060D300-3a" To="8V1016.50-2_BK2" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="732.2" Y="635" />
+      <Point X="732.2" Y="635" />
+      <Point X="732.2" Y="628" />
+      <Point X="732.2" Y="615" />
+      <Point X="714" Y="615" />
+      <Point X="714" Y="579.5" />
+      <Point X="714" Y="574.5" />
+      <Point X="714" Y="574.5" />
+    </Link>
+    <Link From="ModbusFeeder" To="PC_any" FromPort="ETH1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="497" Y="941.9" />
+      <Point X="497" Y="941.9" />
+      <Point X="497" Y="948.9" />
+      <Point X="497" Y="955" />
+      <Point X="281" Y="955" />
+      <Point X="281" Y="350" />
+      <Point X="281" Y="345" />
+      <Point X="281" Y="345" />
+    </Link>
+    <Link From="ModbusFeeder" To="ModbusPrimer" FromPort="ETH2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="522" Y="941.9" />
+      <Point X="522" Y="941.9" />
+      <Point X="522" Y="948.9" />
+      <Point X="522" Y="955" />
+      <Point X="637" Y="955" />
+      <Point X="637" Y="948.9" />
+      <Point X="637" Y="941.9" />
+      <Point X="637" Y="941.9" />
+    </Link>
+    <Link From="ModbusPowerMeter" To="ModbusSafety" FromPort="ETH1" ToPort="ETH2" IsRoutedByUser="False">
+      <Point X="1057" Y="941.9" />
+      <Point X="1057" Y="941.9" />
+      <Point X="1057" Y="948.9" />
+      <Point X="1057" Y="955" />
+      <Point X="942" Y="955" />
+      <Point X="942" Y="948.9" />
+      <Point X="942" Y="941.9" />
+      <Point X="942" Y="941.9" />
+    </Link>
+    <Link From="ModbusPowerMeter" To="OpcUaDryer" FromPort="ETH2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="1082" Y="941.9" />
+      <Point X="1082" Y="941.9" />
+      <Point X="1082" Y="948.9" />
+      <Point X="1082" Y="955" />
+      <Point X="1197" Y="955" />
+      <Point X="1197" Y="948.9" />
+      <Point X="1197" Y="941.9" />
+      <Point X="1197" Y="941.9" />
+    </Link>
+    <Link From="ModbusPrimer" To="ModbusStacker" FromPort="ETH2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="662" Y="941.9" />
+      <Point X="662" Y="941.9" />
+      <Point X="662" Y="948.9" />
+      <Point X="662" Y="955" />
+      <Point X="777" Y="955" />
+      <Point X="777" Y="948.9" />
+      <Point X="777" Y="941.9" />
+      <Point X="777" Y="941.9" />
+    </Link>
+    <Link From="ModbusSafety" To="ModbusStacker" FromPort="ETH1" ToPort="ETH2" IsRoutedByUser="False">
+      <Point X="917" Y="941.9" />
+      <Point X="917" Y="941.9" />
+      <Point X="917" Y="948.9" />
+      <Point X="917" Y="955" />
+      <Point X="802" Y="955" />
+      <Point X="802" Y="948.9" />
+      <Point X="802" Y="941.9" />
+      <Point X="802" Y="941.9" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

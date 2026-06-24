@@ -1,0 +1,20 @@
+VAR CONSTANT
+	lc_iInkMineral : INT := 1;
+	lc_iInkSolubleSalts : INT := 2;
+	lc_iInkWater : INT := 4;
+	lc_iInkUV : INT := 8;
+	lc_iPrintHeadTtec : INT := 1; (*Printhead Toshiba*)
+	lc_iPrintHeadX1003 : INT := 3; (*Printhead XSAAR*)
+	lc_iPrintHeadX1003gs40 : INT := 6; (*Printhead XSAAR*)
+	lc_iPrintHeadX2001 : INT := 7; (*Printhead XSAAR Dual Color*)
+	lc_iPrintHeadX2001gs40 : INT := 8; (*Printhead XSAAR*)
+	lc_iPrintHeadTtecXL : INT := 5; (*Printhead Toshiba L*)
+	lc_iPrintHeadDimatics : INT := 4; (*Printhead Dimatics Manufacture. It is pendig to be defined in P4*)
+	lc_iPrintHeadSK1536 : INT := 2; (*Printhead Seiko*)
+	lc_iPrintHeadSK1536L : INT := 10; (*Printhead SeikoL*)
+	lc_iPrintHeadSK1536W : INT := 9; (*Printhead Seiko Water*)
+	lc_iPrintHeadSK1536LW : INT := 12; (*Printhead SeikoL Water*)
+	INKS_DRIP_TIME_MAX : TIME := T#30S; (*Max value of DripTime in seconds*)
+	lc_iPrintHeadKatana : INT := 13; (*Printhead Kyocera Katana*)
+	lc_iPrintHeadRicoh : INT := 15;
+END_VAR

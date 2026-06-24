@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">error.svg</Object>
+    <Object Type="File">error-dis.svg</Object>
+    <Object Type="File">warning.svg</Object>
+    <Object Type="File">warning-dis.svg</Object>
+  </Objects>
+</Package>

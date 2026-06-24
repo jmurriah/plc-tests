@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.4.92 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="DiscreteSensorThickness">
+  <Property Name="Description" Value="Status of the 3SensorCtrl"/>
+  <Property Name="Index" Value="3"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="119934" Value="NOT_INIT"/>
+    <Text ID="119935" Value="POWER_ON"/>
+    <Text ID="119936" Value="HOME_DIR"/>
+    <Text ID="119937" Value="GEARING"/>
+    <Text ID="119938" Value="GEARED"/>
+    <Text ID="119939" Value="HOM_STEP1"/>
+    <Text ID="119942" Value="HOM_STEP2"/>
+    <Text ID="119943" Value="HOM_STEP3"/>
+    <Text ID="119944" Value="HOM_STEP4"/>
+    <Text ID="119945" Value="STANDSTILL"/>
+    <Text ID="119946" Value="JOGGING"/>
+    <Text ID="119947" Value="AUTO"/>
+    <Text ID="119948" Value="SET_POS"/>
+    <Text ID="119949" Value="RUNING"/>
+    <Text ID="119950" Value="ERROR"/>
+    <Text ID="120384" Value="NOT_USED"/>
+    <Text ID="141383" Value="SRCH_STEP1"/>
+    <Text ID="141384" Value="SRCH_STEP2"/>
+    <Text ID="141385" Value="SRCH_STEP3"/>
+    <Text ID="141386" Value="SRCH_STEP4"/>
+    <Text ID="141387" Value="CHK_STEP1"/>
+    <Text ID="141388" Value="CHK_STEP2"/>
+    <Text ID="142151" Value="CHK_STEP3"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="119934" Value=""/>
+    <Text ID="119935" Value=""/>
+    <Text ID="119936" Value=""/>
+    <Text ID="119937" Value=""/>
+    <Text ID="119938" Value=""/>
+    <Text ID="119939" Value=""/>
+    <Text ID="119942" Value=""/>
+    <Text ID="119943" Value=""/>
+    <Text ID="119944" Value=""/>
+    <Text ID="119945" Value=""/>
+    <Text ID="119946" Value=""/>
+    <Text ID="119947" Value=""/>
+    <Text ID="119948" Value=""/>
+    <Text ID="119949" Value=""/>
+    <Text ID="119950" Value=""/>
+    <Text ID="120384" Value=""/>
+    <Text ID="141383" Value=""/>
+    <Text ID="141384" Value=""/>
+    <Text ID="141385" Value=""/>
+    <Text ID="141386" Value=""/>
+    <Text ID="141387" Value=""/>
+    <Text ID="141388" Value=""/>
+    <Text ID="142151" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="en-ES">
+    <Text ID="119934" Value="NOT_INITALIZED"/>
+    <Text ID="119935" Value="POWER_ON"/>
+    <Text ID="119936" Value="HOME_DIR"/>
+    <Text ID="119937" Value="GEARING"/>
+    <Text ID="119938" Value="GEARED"/>
+    <Text ID="119939" Value="HOMING_STEP1"/>
+    <Text ID="119942" Value="HOMING_STEP2"/>
+    <Text ID="119943" Value="HOMING_STEP3"/>
+    <Text ID="119944" Value="HOMING_STEP4"/>
+    <Text ID="119945" Value="HOMING_STEP1"/>
+    <Text ID="119946" Value="JOGGING"/>
+    <Text ID="119947" Value="AUTO"/>
+    <Text ID="119948" Value="SET_POS"/>
+    <Text ID="119949" Value="RUNING"/>
+    <Text ID="119950" Value="ERROR"/>
+    <Text ID="120384" Value="NOT_USED"/>
+    <Text ID="141383" Value="SRCH_STEP1"/>
+    <Text ID="141384" Value="SRCH_STEP2"/>
+    <Text ID="141385" Value="SRCH_STEP3"/>
+    <Text ID="141386" Value="SRCH_STEP4"/>
+    <Text ID="141387" Value="CHK_STEP1"/>
+    <Text ID="141388" Value="CHK_STEP2"/>
+    <Text ID="142151" Value="CHK_STEP3"/>
+  </TextLayer>
+  <TextLayer LanguageId="zh-CN">
+    <Text ID="119934" Value=""/>
+    <Text ID="119935" Value=""/>
+    <Text ID="119936" Value=""/>
+    <Text ID="119937" Value=""/>
+    <Text ID="119938" Value=""/>
+    <Text ID="119939" Value=""/>
+    <Text ID="119942" Value=""/>
+    <Text ID="119943" Value=""/>
+    <Text ID="119944" Value=""/>
+    <Text ID="119945" Value=""/>
+    <Text ID="119946" Value=""/>
+    <Text ID="119947" Value=""/>
+    <Text ID="119948" Value=""/>
+    <Text ID="119949" Value=""/>
+    <Text ID="119950" Value=""/>
+    <Text ID="120384" Value=""/>
+    <Text ID="141383" Value=""/>
+    <Text ID="141384" Value=""/>
+    <Text ID="141385" Value=""/>
+    <Text ID="141386" Value=""/>
+    <Text ID="141387" Value=""/>
+    <Text ID="141388" Value=""/>
+    <Text ID="142151" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="119934" Value="1"/>
+    <Index ID="119935" Value="2"/>
+    <Index ID="119936" Value="3"/>
+    <Index ID="119937" Value="4"/>
+    <Index ID="119938" Value="5"/>
+    <Index ID="119939" Value="6"/>
+    <Index ID="119942" Value="7"/>
+    <Index ID="119943" Value="8"/>
+    <Index ID="119944" Value="9"/>
+    <Index ID="119945" Value="17"/>
+    <Index ID="119946" Value="18"/>
+    <Index ID="119947" Value="19"/>
+    <Index ID="119948" Value="20"/>
+    <Index ID="119949" Value="21"/>
+    <Index ID="119950" Value="22"/>
+    <Index ID="120384" Value="0"/>
+    <Index ID="141383" Value="10"/>
+    <Index ID="141384" Value="11"/>
+    <Index ID="141385" Value="12"/>
+    <Index ID="141386" Value="13"/>
+    <Index ID="141387" Value="14"/>
+    <Index ID="141388" Value="15"/>
+    <Index ID="142151" Value="16"/>
+  </IndexMap>
+</TextGroup>

@@ -1,0 +1,22 @@
+VAR
+	iSimIndex : USINT; (*Index for loops in simulation*)
+	simEventLog : EventLog_typ;
+	webClient : httpClient;
+	ResponseHeader : httpResponseHeader_t;
+	RequestData : STRING[3000];
+	ResponseData : STRING[3000];
+	URLHost : STRING[80];
+	URIHost : STRING[80];
+	xTestPrepareDryer : BOOL; (*This value must be used as active while pressed by the visualization*)
+	xTestBeltTests : BOOL; (*This value must be used as active while pressed by the visualization*)
+	xTestConsents : BOOL; (*This value must be used as active while pressed by the visualization*)
+	xTestLine : BOOL; (*This value must be used as active while pressed by the visualization*)
+	xTestCleaning : BOOL; (*This value must be used as active while pressed by the visualization*)
+	testMonitor : UtMgrMonitor;
+	simMachineType : INT;
+	simMachineTypeCopy : INT;
+	simMachineTypeEnumCopy : SimMachineType;
+	xSimulateMedia : BOOL;
+	tonSimMedia : TON;
+	tonSimMediaAuto : TON;
+END_VAR

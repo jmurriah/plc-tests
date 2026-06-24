@@ -1,0 +1,40 @@
+VAR CONSTANT
+	BRSE_MB_MAX_COILS : UINT := 2000;
+	BRSE_MB_MAX_DISCRETE_INPUTS : UINT := 2000;
+	BRSE_MB_MAX_HOLDING_REG_READ : USINT := 125;
+	BRSE_MB_MAX_INPUT_REG_READ : USINT := 125;
+	BRSE_MB_MAX_HOLDING_REG_WRITE : USINT := 100;
+	BRSE_MB_MAX_COILS_WRITE : UINT := 800;
+	BRSE_MB_ERR_REFERENCE : UINT := 20002;
+	BRSE_MB_ERR_UNIT_ALLOCATED : UINT := 20001;
+	BRSE_MB_ERR_ILLEGAL_FUNCTION : UINT := 1;
+	BRSE_MB_ERR_ILLEGAL_DATA_ADDRESS : USINT := 2;
+	BRSE_MB_ERR_ILLEGAL_DATA_VALUE : USINT := 3;
+	BRSE_MB_ERR_ILLEGAL_RESPONSE_LEN : UINT := 4;
+	BRSE_MB_READ_COILS : UINT := 16#01;
+	BRSE_MB_READ_DISCRETE_INPUTS : UINT := 16#02;
+	BRSE_MB_READ_HOLDING_REGISTERS : UINT := 16#03;
+	BRSE_MB_READ_HOLDING_REG_4BYTE : UINT := 16#30;
+	BRSE_MB_READ_INPUT_REGISTERS : UINT := 16#04;
+	BRSE_MB_WRITE_SINGLE_COIL : UINT := 16#05;
+	BRSE_MB_WRITE_SINGLE_REGISTER : UINT := 16#06;
+	BRSE_MB_WRITE_MULTIPLE_COILS : UINT := 16#0F;
+	BRSE_MB_WRITE_MULTIPLE_REGISTERS : UINT := 16#10;
+	BRSE_MB_WRITE_MULTIPLE_REG_4BYTE : UINT := 16#31;
+	BRSE_MB_ON : UINT := 16#FF00;
+	BRSE_MB_OFF : UINT := 16#0000;
+	BRSE_MB_MAX_UNIT_ID : USINT := 255;
+	BRSE_MB_INTEL : USINT := 0; (* The server/client uses the Intel format *)
+	BRSE_MB_MOTOROLA : USINT := 1; (* The server/client uses the Motorola format *)
+	MB_QUEUE_SIZE : UINT := 50; (*Design parameter. Number of commands that can be queued for each client. If >= number of FB (using ClientID), race conditions (starvation?) is prevented*)
+	MB_MAX_CLIENTS : USINT := 10; (*Design parameter. Maximum ClientID that can be used.*)
+	MB_ERR_CLIENT_ALLOCATED : UINT := 20003; (*Error code: Queue for this client id has already been allocated*)
+	MB_ERR_CLIENT_NOT_ALLOCATED : UINT := 20004; (*A request was requested from a client which hasn't been allocated*)
+	MB_ERR_BUFFER : UINT := 20005; (*Buffer is too small for request or buffer address is 0*)
+	MB_ERR_QUEUE_FULL : UINT := 20006;
+	MB_ERR_INTERNAL : UINT := 20007;
+	MB_ERR_PROTOCOL : UINT := 20008;
+	MB_ERR_QUANTITY : UINT := 20009; (*Input quantity error (too big or 0)*)
+	MB_ERR_CLIENT : UINT := 20010; (*Request dropped out of queue. Warm restart with remanent FUB? (Client queue is volatile)*)
+	MB_ERR_CONNECTION : UINT := 20011; (*Request could not be executed: connection error or no response from server*)
+END_VAR

@@ -1,0 +1,71 @@
+VAR
+	data : REFERENCE TO nSensors_typ;
+	stnSensorsAlarmsReseted : nSensorsAlarms;
+	stnSensorsAlarmSummaryReseted : stEFI_AlarmSummary;
+	Stepper : REFERENCE TO AxisCtrl_typ;
+	StepperGear : REFERENCE TO AxisCtrl_typ;
+	Icla : REFERENCE TO stIcla;
+	rSensorPositionAlignment : REAL; (*Pulses*)
+	rSensorPositionAlignmentMax : REAL; (*Pulses*)
+	rSensorPositionAlignmentMin : REAL; (*Pulses*)
+	rSensorPositionDesired : REAL; (*Pulses*)
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	tonAlignmentProcess : TON;
+	tonTimeOutGearing : TON;
+	tonMaxTimeJogging : TON;
+	xAnyManualMovement : BOOL;
+	xAnyErrorStepper : BOOL;
+	rPositionMotorMm : REAL;
+	ars_ComsMotorError : AutoResetSound;
+	ars_NotReferenced : AutoResetSound;
+	ars_IncoherPhotocellSystem : AutoResetSound;
+	ars_InvalidAlignmentPosition : AutoResetSound;
+	ars_CriticalPhotocellNotAligned : AutoResetSound;
+	ars_MotorError : AutoResetSound;
+	iReasonWarning : UDINT;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF nSensorsStateMotors;
+	iIndexHistory : USINT;
+	MotorDriveUnit : DriveUnitMngr;
+	rJogSpeedSetPoint : REAL;
+	TON_DelayIncoherrPhotocell : TON; (*Delay_Incoher PhotoCell System Alarm*)
+	xControllerReady : BOOL;
+	xPoweredOn : BOOL;
+	xMotorReady : BOOL;
+	xAnyManualOrder : BOOL;
+	iIndexSensor : USINT;
+	xAllSensorInactive : BOOL;
+	xAlignmentPositionSet : BOOL;
+	xAllSensorActive : BOOL;
+	IncoherenceSensor : UINT;
+	iAnyAlarm : UINT;
+	iAnyWarning : UINT;
+	iLastStateToCheckPosition : USINT;
+	iStateToCheckPosition : USINT;
+	tonMotorStopped : TON;
+	xMotorStopped : BOOL;
+	xMotorChanged : BOOL;
+	PreviousMotorType : nSensorsMotorsType;
+	stCriticalAlarmsLog : EventLog_typ;
+	stStopAlarmsLog : EventLog_typ;
+	stWarningAlarmsLog : EventLog_typ;
+	xWarpSensorActive : BOOL;
+	xWarpMediaPresent : BOOL; (*Warp media*)
+	iWarpMediaSensor : UINT; (*Sensor defined as warp sensor*)
+	iCounterWarpMedia : UINT; (*Warp media counter*)
+	iMaxWarpMedia : UINT := 2; (*Number of warp boards to raise warp media alarm*)
+	TON_ContinuousActPDPhcell : TON;
+	arsContinuousActPDPhcell : AutoResetSound;
+	iReasonCheckingAlignment : UINT;
+	iIndexSensorToPositionBelowBars : USINT;
+	rOffsetPositionCalc : REAL;
+	rOffsetPosition : REAL;
+	xSensorsPositionedRelativeToBar : BOOL;
+	xPhotoInputsPrev : ARRAY[0..MAX_LAST_NSENSOR] OF BOOL; (*Previous value of the photocells to allow EDGEPOS in a FOR*)
+	ResetCommandsSw : nSensorsCommandsSw;
+END_VAR

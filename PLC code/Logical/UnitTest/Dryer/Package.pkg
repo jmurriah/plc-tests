@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="ANSIC" Description="Prepare the Machine to Start working">PrepareDryer</Object>
+    <Object Type="Program" Language="ANSIC" Description="Belt related tests">BeltTests</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="content_0" height="400" width="1180" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_Title_L" top="0" left="20" width="190" zIndex="0" text="Parameters:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_EnablesByPosition_L" top="40" left="40" width="200" zIndex="1" text="EnablesByPosition:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_NumSLM_L" top="80" left="40" width="200" zIndex="2" text="NumSLM:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_CuringLength_L" top="120" left="40" width="200" zIndex="3" text="iCuringLength:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_SerialNumber_L" top="160" left="40" width="200" zIndex="4" text="stSerialNumber:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_SlmEnable_L" top="200" left="40" width="100" zIndex="5" text="xSlmEnable:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_FullActive_L" top="240" left="40" width="200" zIndex="6" text="xFullActive:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_SystStatusFeedB_L" top="280" left="40" width="200" zIndex="7" text="sSystemStatusFeedBack:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_FirstSlm_L" top="320" left="40" width="200" zIndex="8" text="iFirstSlm:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_P_LastSlm_L" top="360" left="40" width="200" zIndex="9" text="iLastSlm:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_I_Title_L" top="0" left="400" width="190" zIndex="10" text="Input:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_I_TempRaw_L" top="40" left="420" width="190" zIndex="11" text="TemperatureRaw:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_I_SLMFault_L" top="80" left="420" width="190" zIndex="12" text="SLMFault:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_I_ThermalFault_L" top="120" left="420" width="190" zIndex="13" text="ThermalFault:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_Title_L" top="0" left="760" width="190" zIndex="14" text="Output:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_IntensityAppl_L" top="39" left="780" width="190" zIndex="15" text="IntensityLampApplied:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_IntensityRaw_L" top="79" left="780" width="190" zIndex="16" text="IntensityLampRaw:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_EnsableLamp_L" top="119" left="780" width="190" zIndex="17" text="EnnableLamp:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_Temperature_L" top="159" left="780" width="190" zIndex="18" text="rTemperature:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_LampErrorCode_L" top="199" left="780" width="190" zIndex="19" text="LampErrorCode:" />
+    <Widget xsi:type="widgets.brease.Label" id="L1_O_SlmStatus_L" top="239" left="780" width="190" zIndex="20" text="xSlmStatus:" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_NumSLM_NO" top="79" left="259" zIndex="21" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_CuringLength_NO" top="119" left="259" zIndex="22" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_FirstSlm_NO" top="319" left="259" zIndex="23" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_LastSlm_NO" top="359" left="259" zIndex="24" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_I_TempRaw_NO" top="40" left="621" zIndex="25" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_IntensityAppl_NO" top="39" left="1020" zIndex="26" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_IntensityRaw_NO" top="79" left="1020" zIndex="27" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_Temperature_NO" top="159" left="1020" zIndex="28" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_LampErrorCode_NO" top="199" left="1020" zIndex="29" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_P_EnablesByPositionD_I" top="39" left="299" width="21" height="23" zIndex="30" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_P_FullActiveD_I" top="239" left="299" width="21" height="23" zIndex="31" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_I_SLMFaultD_I" top="80" left="661" width="21" height="23" zIndex="32" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_I_ThermalFaultD_I" top="120" left="661" width="21" height="23" zIndex="33" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_O_EnsableLampD_I" top="119" left="1060" width="23" height="23" zIndex="34" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_P_EnablesByPositionE_I" top="39" left="299" width="21" height="23" zIndex="35" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_P_FullActiveE_I" top="239" left="299" width="21" height="23" zIndex="36" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_I_SLMFaultE_I" top="80" left="661" width="21" height="23" zIndex="37" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_I_ThermalFaultE_I" top="120" left="661" width="21" height="23" zIndex="38" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L1_O_EnsableLampE_I" top="119" left="1060" width="23" height="23" zIndex="39" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="L1_P_SerialNumber_TO" top="159" left="259" width="160" zIndex="40" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="L1_P_SystStatusFeedB_TO" top="279" left="259" width="160" zIndex="41" />
+    <Widget xsi:type="widgets.brease.Image" id="L1" top="200" left="220" width="21" height="23" zIndex="42" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L2" top="200" left="220" width="21" height="23" zIndex="43" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L3" top="200" left="240" width="21" height="23" zIndex="44" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L4" top="200" left="240" width="21" height="23" zIndex="45" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L5" top="200" left="260" width="21" height="23" zIndex="46" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L6" top="200" left="260" width="21" height="23" zIndex="47" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L7" top="200" left="280" width="21" height="23" zIndex="48" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L8" top="200" left="280" width="21" height="23" zIndex="49" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L9" top="200" left="300" width="21" height="23" zIndex="50" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L10" top="200" left="300" width="21" height="23" zIndex="51" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L11" top="200" left="320" width="21" height="23" zIndex="52" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L12" top="200" left="320" width="21" height="23" zIndex="53" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L13" top="200" left="340" width="21" height="23" zIndex="54" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L14" top="200" left="340" width="21" height="23" zIndex="55" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L15" top="200" left="360" width="21" height="23" zIndex="56" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L16" top="200" left="360" width="21" height="23" zIndex="57" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L17" top="200" left="380" width="21" height="23" zIndex="58" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L18" top="200" left="380" width="21" height="23" zIndex="59" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L19" top="200" left="400" width="21" height="23" zIndex="60" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L20" top="200" left="400" width="21" height="23" zIndex="61" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L21" top="200" left="420" width="21" height="23" zIndex="62" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L22" top="200" left="420" width="21" height="23" zIndex="63" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L23" top="200" left="440" width="21" height="23" zIndex="64" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L24" top="200" left="440" width="21" height="23" zIndex="65" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L25" top="200" left="460" width="21" height="23" zIndex="66" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L26" top="200" left="460" width="21" height="23" zIndex="67" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L27" top="200" left="480" width="21" height="23" zIndex="68" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L28" top="200" left="480" width="21" height="23" zIndex="69" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L29" top="200" left="500" width="21" height="23" zIndex="70" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L30" top="200" left="500" width="21" height="23" zIndex="71" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L31" top="200" left="520" width="21" height="23" zIndex="72" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L32" top="200" left="520" width="21" height="23" zIndex="73" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L33" top="200" left="140" width="21" height="23" zIndex="74" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L34" top="200" left="140" width="21" height="23" zIndex="75" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L35" top="200" left="160" width="21" height="23" zIndex="76" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L36" top="200" left="160" width="21" height="23" zIndex="77" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L37" top="200" left="180" width="21" height="23" zIndex="78" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L38" top="200" left="180" width="21" height="23" zIndex="79" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L39" top="200" left="200" width="21" height="23" zIndex="80" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L40" top="200" left="200" width="21" height="23" zIndex="81" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L41" top="280" left="860" width="21" height="23" zIndex="82" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L42" top="280" left="860" width="21" height="23" zIndex="83" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L43" top="280" left="880" width="21" height="23" zIndex="84" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L44" top="280" left="880" width="21" height="23" zIndex="85" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L45" top="280" left="900" width="21" height="23" zIndex="86" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L46" top="280" left="900" width="21" height="23" zIndex="87" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L47" top="280" left="920" width="21" height="23" zIndex="88" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L48" top="280" left="920" width="21" height="23" zIndex="89" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L49" top="280" left="940" width="21" height="23" zIndex="90" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L50" top="280" left="940" width="21" height="23" zIndex="91" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L51" top="280" left="960" width="21" height="23" zIndex="92" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L52" top="280" left="960" width="21" height="23" zIndex="93" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L53" top="280" left="980" width="21" height="23" zIndex="94" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L54" top="280" left="980" width="21" height="23" zIndex="95" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L55" top="280" left="1000" width="21" height="23" zIndex="96" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L56" top="280" left="1000" width="21" height="23" zIndex="97" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L57" top="280" left="1020" width="21" height="23" zIndex="98" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L58" top="280" left="1020" width="21" height="23" zIndex="99" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L59" top="280" left="1040" width="21" height="23" zIndex="100" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L60" top="280" left="1040" width="21" height="23" zIndex="101" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L61" top="280" left="1060" width="21" height="23" zIndex="102" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L62" top="280" left="1060" width="21" height="23" zIndex="103" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L63" top="280" left="1080" width="21" height="23" zIndex="104" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L64" top="280" left="1080" width="21" height="23" zIndex="105" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L65" top="280" left="1100" width="21" height="23" zIndex="106" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L66" top="280" left="1100" width="21" height="23" zIndex="107" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L67" top="280" left="1120" width="21" height="23" zIndex="108" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L68" top="280" left="1120" width="21" height="23" zIndex="109" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L69" top="280" left="1140" width="21" height="23" zIndex="110" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L70" top="280" left="1140" width="21" height="23" zIndex="111" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L71" top="280" left="1160" width="21" height="23" zIndex="112" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L72" top="280" left="1160" width="21" height="23" zIndex="113" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L73" top="280" left="780" width="21" height="23" zIndex="114" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L74" top="280" left="780" width="21" height="23" zIndex="115" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L75" top="280" left="800" width="21" height="23" zIndex="116" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L76" top="280" left="800" width="21" height="23" zIndex="117" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L77" top="280" left="820" width="21" height="23" zIndex="118" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L78" top="280" left="820" width="21" height="23" zIndex="119" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L79" top="280" left="840" width="21" height="23" zIndex="120" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="L80" top="280" left="840" width="21" height="23" zIndex="121" image="Media/Lamps/GreenLamp10_On.png" />
+  </Widgets>
+</Content>

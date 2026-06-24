@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.5.113 SP?>
+<Package SubType="Layouts" PackageType="Layouts" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Landscape_1366x650.layout</Object>
+    <Object Type="File">SmallDialog_500x300.layout</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,15 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: Slave_mbus
+ * File: Slave_mbus.var
+ * Author: gimeneza
+ * Created: March 07, 2017
+ ********************************************************************
+ * Local variables of program Slave_mbus
+ ********************************************************************)
+VAR
+	FB_MBT_ServerExit : MBT_ServerExit := (0);
+	i : UINT := 0;
+	ident : USINT := 0;
+END_VAR

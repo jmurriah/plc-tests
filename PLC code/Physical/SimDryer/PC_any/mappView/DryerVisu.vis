@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="DryerMainVisu" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="DryerStart_Page" />
+	<Pages>
+		<Page refId="DryerMain_Page"/>
+		<Page refId="DryerAlarms_Page"/>
+		<Page refId="DryerDiagnosis_Page"/>
+		<Page refId="DryerNIR_Page"/>
+		<Page refId="DryerArcLamp_Page"/>
+		<Page refId="DryerBlowers_Page"/>
+		<Page refId="DryerBelt_Page"/>
+		<Page refId="DryerSensors_Page"/>
+		<Page refId="DryerStart_Page"/>
+	</Pages>
+	
+	<Navigations>
+    <!--<Navigation refId="" />-->
+	</Navigations>
+	
+	<BindingsSets>
+		<BindingsSet refId="MainPage_Binding" />
+		<BindingsSet refId="DryerBelt_Binding" />
+		<BindingsSet refId="DryerDiagnosis_Binding" />
+		<BindingsSet refId="Blowers_Binding" />
+		<BindingsSet refId="NirAdphos_Binding" />		
+		<BindingsSet refId="ArcLamp_Binding" />
+		<BindingsSet refId="DryerSensors_Binding" />
+		<!--<BindingsSet refId="TestsDialog_Binding" />-->
+	</BindingsSets>
+	
+	<EventBindingsSets>
+    	<EventBindingsSet refId="MainPage_eventbinding" />
+		<EventBindingsSet refId="Tests_Dialog_eventbinding" />
+	</EventBindingsSets>
+	
+	<Dialogs>
+		<!--<Dialog refId="Tests_Dialog" />-->
+	</Dialogs>
+	
+	<Contents preCache="all">
+		<Content refId="DryerMainPage_Content" />
+		<Content refId="DryerAlarms_Content" />
+		<Content refId="DryerNIR_Content" />
+		<Content refId="DryerArcLamp_Content" />
+		<Content refId="DryerBlowers_Content" />
+		<Content refId="DryerDiagnosis_Content" />
+		<Content refId="DryerBelt_Content" />
+		<Content refId="DryerSensors_Content" />
+		<Content refId="DryerStart_Content" />
+	</Contents>
+	
+  	<SnippetsSets>
+    	<!--<SnippetsSet refId=""/>-->
+	</SnippetsSets>
+	
+ 	<ExpressionsSets>
+    	<!--<ExpressionsSet refId=""/>-->
+	</ExpressionsSets>
+	
+	<VariablesSets>
+		<VariablesSet refId="svarDryer" />
+	</VariablesSets>
+  
+	<StartTheme themeRefId="EFITheme" />
+	<Themes>
+		<!--<Theme refId="BuRTheme1"/>
+		<Theme refId="BuRThemeFlat1"/>
+		<Theme refId="BuRThemeFlat2"/>
+		<Theme refId="BuRThemeMobileGray"/>-->
+		<Theme refId="EFITheme"/>
+	</Themes>
+  
+  <Configurations>
+	<Configuration key="activityCount" value="false" />
+	<Configuration key="bootLogo" value="Media/BackGround/Bootlogo.png" />
+	<Configuration key="bootColor" value="#FFFFFF" />
+	<Configuration key="favicon" value="Media/BackGround/Browserlogo.ico" />		
+	<Gestures>
+	 <!--<SystemGesture1 touchPoints="2" />
+	 <SystemGesture2 touchPoints="2" />
+	 <SystemGesture3 touchPoints="2" />-->
+	</Gestures>
+    <VirtualKeyboards>
+      <!--<InputProcessing onKeyDown="true" />-->
+    </VirtualKeyboards> 
+  </Configurations>
+</vdef:Visualization>

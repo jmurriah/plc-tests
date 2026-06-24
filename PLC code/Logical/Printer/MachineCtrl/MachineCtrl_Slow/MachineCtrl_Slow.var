@@ -1,0 +1,242 @@
+VAR
+	iPrimerBarMechanicalPosition : USINT; (*Position of white bar regarding mechanical assembly*)
+	iPrimerBarMapping : USINT; (*Position of white bar regarding printing definition in UI*)
+	iWhiteBarMechanicalPosition : USINT; (*Position of white bar regarding mechanical assembly*)
+	iWhiteBarMapping : USINT; (*Position of white bar regarding printing definition in UI*)
+	arNotLoadedImage : AutoResetSound;
+	arSAIFault : AutoResetSound;
+	arBentTile : AutoResetSound;
+	arPDSensorErrorL1 : AutoResetSound;
+	arPDSensorErrorL2 : AutoResetSound;
+	xAllBlocksCleaning : BOOL;
+	xInstantPrintL2 : BOOL;
+	xAllBlocksCleaningEnded : BOOL;
+	xInstantPrintL1 : BOOL; (*command bool edge*)
+	xShotLine2 : BOOL;
+	xCleanSequencially : BOOL := FALSE;
+	xShotLine1 : BOOL;
+	xOrderToGap : BOOL;
+	xCleanBeltForced : BOOL;
+	xCleaningBeltByTiles : BOOL;
+	xOutputConsentInSingleLineL1 : BOOL;
+	xOutputConsentInByPassL1 : BOOL;
+	xOutputConsentInByPassL2 : BOOL;
+	xOutputConsentInDTPL1 : BOOL;
+	xOutputConsentInDTPL2 : BOOL;
+	xDoubleLineConsent : BOOL; (*Belt Consent in DobleLine Mode*)
+	xOnPcs : BOOL;
+	xCleaningBeltByTime : BOOL;
+	xCleanBeltOrder : BOOL; (*Internal to assign cleaning belt system *)
+	arBlockCleaningEnded : ARRAY[GC_FIRST_BLOCK..MAX_LAST_BLOCK] OF BOOL;
+	enCleaningState : CleaningState_enum := CLN_NOT_CLEANING;
+	FbCleanDelayControl_1 : FbCleanDelayControl;
+	tof_ResetCB1 : TOF;
+	xSuctionTurbine : BOOL;
+	xEnableCleanBeltMotorMovement : BOOL;
+	tp_ToSwapCleanBeltMtrDirection : TP;
+	tofCleaningTrayBelt : TOF;
+	rsSuction : RS; (*Suction/Mist collector turbine*)
+	tofDelaySuction : TOF; (*tiMinutes : TIME;*)
+	tof_ResetRouter : TOF;
+	tonIntantPrintL2 : TON;
+	tonIntantPrintL1 : TON;
+	T_ExternalCleaningOrder : TON;
+	T_ShotL2Off : TON;
+	T_OnPcs : TON;
+	ResetCleanBeltCommands : StGeneral_CleanBelt;
+	tonCleaningByTime : TON; (*Belt Cleaning*)
+	T_ShotL1Off : TON;
+	T_OnPC2 : TON;
+	T_BtwnCleans : TON;
+	tonDelayConsentInput : TON;
+	T_OnPC1 : TON;
+	tonDelayConsentOutL2 : TON;
+	tonDelayConsentOutL1 : TON;
+	tonCleaningBelt : TON;
+	T_WaitPC2 : TON;
+	T_WaitPC1 : TON;
+	tonCleanBelt : TON;
+	uiSecondsToCleanStop : UDINT; (*Counter of the seconds to clean in the mode*)
+	uiSecondsToCleanProd : UDINT; (*Counter of the seconds to clean in the mode*)
+	uiSecondsToCleanTotal : UDINT; (*Counter of the seconds to clean in the mode*)
+	TP_ShotL1On : TP; (*Careful. It is a TP!!*)
+	TP_ShotL2On : TP; (*Careful. It is a TP!!*)
+	iIndexCuringLed : USINT;
+	iIndexCuringLedLamps : USINT;
+	iIndexInks : USINT; (*Inks Index to use a FOR*)
+	iIndexBlock : USINT; (*Block Index to use a FOR*)
+	xRepetitionLine1 : BOOL;
+	xRepetitionLine2 : BOOL;
+	iSPTilesToCleanBelt : INT;
+	arNoThicknessSystem : AutoResetSound;
+	xDelayCleaningOk : BOOL; (*Internal state in printer used on gap and delay line*)
+	TNotZero : TON;
+	xAnyBlockToPrint : BOOL;
+	reasonSoundGen : UDINT;
+	reasonSoundGen2 : UDINT;
+	reasonSoundInks : UDINT;
+	arSAIPowerFault : AutoResetSound;
+	arHeaterTankPsu : AutoResetSound;
+	xAnyBarLoadedInJob : BOOL; (*Some bar stopped by critical alarm*)
+	xAnyInkCriticalAlrm : BOOL; (*Some bar stopped by critical alarm*)
+	iIndex : USINT; (*FOR index*)
+	iBentTilesCounter : UINT; (*Counter of bent media. Just for the alarm of max movements*)
+	tonDecreaseMovCount : TON; (*Time to decrease the count of max movements*)
+	tonPCCabinetAlrm : TON;
+	tonWasteInkTankMaxLevelReached : TON;
+	T_AlarmAir1 : TON;
+	xAnyPrintheadsPowered : BOOL;
+	xAnyTankHeaterEnabled : BOOL;
+	tonStartSound : TON;
+	iCountStartSound : USINT;
+	xStartSound : BOOL;
+	strAux : STRING[80];
+	plcCardsOK : ARRAY[0..1] OF UDINT;
+	arAlrMountedPiece : AutoResetSound;
+	iGroup : USINT;
+	stProgramName : STRING[80];
+	identInitialize : UDINT;
+	iSuspendInit : UINT := 10;
+	identAnalogThick : UDINT;
+	iResumeAnalogThick : UINT := 10;
+	iSuspendAnalogThick : UINT := 10;
+	identAnalogFast : UDINT;
+	iResumeAnalogFast : UINT := 10;
+	iSuspendAnalogFast : UINT := 10;
+	identLaserFast : UDINT;
+	iResumeLaserFast : UINT := 10;
+	iSuspendLaserFast : UINT := 10;
+	identLaserCtrl : UDINT;
+	iResumeLaserCtrl : UINT := 10;
+	iSuspendLaserCtrl : UINT := 10;
+	identInitStepper : UDINT;
+	iResumeInitStepper : UINT := 10;
+	iSuspendInitStepper : UINT := 10;
+	identStepper1 : UDINT;
+	iResumeStepper1 : UINT := 10;
+	iSuspendStepper1 : UINT := 10;
+	identStepper2 : UDINT;
+	iResumeStepper2 : UINT := 10;
+	iSuspendStepper2 : UINT := 10;
+	identAxisStepper1 : UDINT;
+	iResumeAxisStepper1 : UINT := 10;
+	iSuspendAxisStepper1 : UINT := 10;
+	identAxisStepper2 : UDINT;
+	iResumeAxisStepper2 : UINT := 10;
+	iSuspendAxisStepper2 : UINT := 10;
+	nResumeAnalog : UDINT;
+	nSuspendAnalog : UDINT;
+	nResumeLaser : UDINT;
+	nSuspendLaser : UDINT;
+	nProgramManager : UINT;
+	iReasonToSendCleanOrder : USINT;
+	tofKeepReliefSignal : TOF;
+	iIndexLamps : INT;
+	xCleanBeltTopContinue : BOOL;
+	xCleanBeltContinue : BOOL;
+	xCleanBeltTopForced : BOOL;
+	xCleaningBeltTopByTiles : BOOL;
+	xCleaningBeltTopByTime : BOOL;
+	xCleanBeltTopOrder : BOOL; (*Internal to assign cleaning belt system *)
+	tonCleanBeltTopByTime : TON;
+	tiCleaningBeltTopByTime : TIME;
+	iSPTilesToCleanBeltTop : INT;
+	tonCleaningBeltTop : TON;
+	tonUpBarsNoConsent : TON;
+	tpStoppedMediaInsd : TP;
+	BlnkMediaInside : BlinkOnOff;
+	arsSwCriticalCondition : AutoResetSound;
+	arsWrongDingPos : AutoResetSound;
+	statusReset : UINT;
+	iPdCalibrationState : INT;
+	iPdCalibrationStep : INT;
+	iCounter : INT;
+	xTeachSignal : BOOL;
+	xMarkForTesting : BOOL;
+	xBlinkHighPulse : BOOL;
+	TON_DelayOutput : TON;
+	TON_PDSignal : TON;
+	xAvoidRaiseBarsNotConsent : BOOL;
+	tonUpsPowerFault : TON;
+	iReasonReadyToReset : UINT;
+	stEventLogWarningSize : EventLog_typ;
+	stEventLogImgLoadedL1 : EventLog_typ;
+	stEventLogImgUnLoadedL1 : EventLog_typ;
+	stEventLogAlrNotLoadedImage : EventLog_typ;
+	stLogAlrImageLoadButNoBarRelated : EventLog_typ;
+	ton_MediaValuesIncoherency : TON;
+	strAuxEventDesc : STRING[129];
+	xCleanBeltMoveFwd : BOOL; (*To move clean brushed to the contrary direction as belt movement*)
+	xCleanBeltMoveBwd : BOOL; (*To move clean brushes same direction as belt movement*)
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF CleaningBeltState_enum;
+	iSecondsNoCleaned : UDINT;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	enCleanBeltUvStep : CleaningBeltState_enum;
+	iReasonStopCleanBeltProcess : UINT;
+	tiSumTimeToCleanBelt : TIME;
+	tiTimeToCleanBelt : TIME;
+	tiTimeCounterToCleanBelt : TIME;
+	xSwapBrushesMovementDirection : BOOL;
+	xReadyToCleanBelt : BOOL;
+	xStopBrushes : BOOL;
+	iIndexPhysicalConf : USINT;
+	cardPlcConfCheck : REFERENCE TO PlcCardMapping;
+	iIndexRequirement : USINT;
+	xAnyInkBarStarted : BOOL;
+	rMaxStartedTempSetPoint : REAL;
+	rMaxStartedInkTemp : REAL;
+	rMinStartedTempSetPoint : REAL;
+	rMinStartedInkTemp : REAL;
+	xRunChiller : BOOL;
+	iIndexChillersSlow : USINT;
+	iIndexInksSlow : USINT;
+	arCommsPcPlc : AutoResetSound;
+	enStartUpStatus : StartUpStatus_enum := STRUP_NOT_STARTED;
+	iIndexStartUp : USINT;
+	UnstabInkStartUp : ARRAY[0..MAX_LAST_INK] OF BOOL; (*Inks unstable so long, so automatic startup is cancelled*)
+	xInksStoppedWhileStartUp : BOOL;
+	xStartUpAnyBarNotStable : BOOL;
+	xStartUpAnyBarNotPowered : BOOL;
+	xStartUpAnyBarUnstable : BOOL; (*One bar has been unstable for more than 5' and the startup will be cancelled*)
+	iIndexBarNotStable : USINT;
+	tonStartingInks : TON;
+	xPosibleCancel : USINT;
+	xRedLight : BOOL;
+	xGreenLight : BOOL;
+	xYellowLight : BOOL;
+	xBlueLight : BOOL;
+	xWhiteLight : BOOL;
+END_VAR
+VAR RETAIN
+	DriveUnit : DriveUnitMngr;
+END_VAR
+VAR
+	rBeltDistanceTravelledMmCopy : REAL;
+	rBeltDistanceTravelledMm : REAL;
+	stEventLogBeltDistanceTravelled : EventLog_typ;
+	rBeltPositionMmInitCopy : REAL;
+	rBeltPositionMmInit : REAL;
+	rBeltPositionMmFinalCopy : REAL;
+	rBeltPositionMmFinal : REAL;
+	rBeltSpeedInit : REAL;
+	xEdge1sec : BOOL;
+	tonWaitToCleanRemote : TON;
+	iFaultPcPlcAux : INT;
+	T_AlarmComPcPlc : TON;
+	xColorBarEnabledToPrint : BOOL;
+	xWhiteBarEnabledToPrint : BOOL;
+	xClearBarEnabledToPrint : BOOL;
+	xRunAirCleaner : BOOL;
+	tonBlowerNotRunning : TON;
+	tonCheckAlarms : TON;
+	ResetAlarms : StGeneral_AirCleaner_Alarms;
+	tiPrevToCleanWhenPrinterStopped : TIME;
+	tiPrevCleaningByTime : TIME;
+	iPrevPiecesNumberToCleanL2 : INT;
+	iPrevPiecesNumberToCleanL1 : INT;
+END_VAR

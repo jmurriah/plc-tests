@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBC.0x0100002E.1.SEILE1F_0110E" Version="1.10" OrderNumber="ILE1F">
+      <SourceFile OriginalFile="SEILE1F_0110E.eds" TranslationFile="DR2GYCJC.ext" />
+    </Module>
+    <Module ModuleID="FBC.0x00000114.0x00000003.ex250sca1a_v3.0" Version="3.0" OrderNumber="SI unit">
+      <SourceFile OriginalFile="ex250sca1a_v3.0.eds" TranslationFile="B0MQBWQH.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

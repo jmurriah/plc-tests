@@ -1,0 +1,137 @@
+VAR
+	xRunBeltNormal : BOOL;
+	xRunBeltLab : BOOL;
+	xRunBeltToBeCleaned : BOOL;
+	xStopBeltWhileCleaning : BOOL;
+	xSignalsStopBeltAuto : BOOL;
+	xAnyTankHeaterEnabled : {REDUND_UNREPLICABLE} BOOL;
+	xUserRaisesBlocks : BOOL;
+	xOrdersRunBeltNormal : BOOL;
+	xRunBeltByPass : BOOL;
+	xInCap : BOOL;
+	xGoingToCap : BOOL;
+	xGoingToPrint : BOOL;
+	xCleaning : BOOL;
+	xInPrint : BOOL;
+	xAlarmToEmpyBelt : BOOL;
+	xAlarmsStopBeltRun : BOOL;
+	enPrinterState : enumEFI_GenMachineState := PRINTERGEN_ZERO; (*PRINTERGEN_ZERO*)
+	enPrinterStatesInAuto : enumEFI_MachineState := PRINTERGEN_ZERO; (*PRINTERGEN_ZERO*)
+	rsRunBeltOrderManual : RS;
+	srStopBeltNoImage : SR;
+	srPauseMachine : {REDUND_UNREPLICABLE} RS;
+	stPrinterAlarmsSummaryReseted : stEFI_AlarmSummary; (*stDingAlarmsReseted : stPhotoCellsAlarms;*)
+	stPrinterAlarmsReseted : StGeneral_Alarms;
+	stPrinterAlarmsListReseted : StGeneral_AlarmsList;
+	tofMachineCleaning : TOF;
+	tonStartButton : TON;
+	ton_ZeroMode : TON;
+	ton_JamRecoveryIdle : TON;
+	T_AlarmPDL2 : TON;
+	T_AlarmPDL1 : TON;
+	TP_AlrBentTile : TP;
+	iIndexReviewArray : UINT;
+	iIndexCuringBar : USINT;
+	iIndexBlock : USINT;
+	iReasonOut : UDINT;
+	iReasonStopInks : UDINT;
+	iReasonStopGen : UDINT;
+	iReasonCritical : UDINT;
+	stEventLogAutoJamRec : EventLog_typ;
+	stEventLogAutoProduction : EventLog_typ;
+	stEventLogAutoStop : EventLog_typ;
+	stEventLogAuto : EventLog_typ;
+	stEventLogState : EventLog_typ;
+	stEventLogCritical : EventLog_typ;
+	stEventLog : EventLog_typ;
+	stEventLogStart : EventLog_typ;
+	stEventLogStop : EventLog_typ;
+	stEventLogPrePrint : EventLog_typ;
+	g_xRunBeltOrderManual : BOOL; (*Belt order in manual filtered*)
+	g_xRunBeltOrderAuto : BOOL; (*Belt order in auto*)
+	reasonAnyWarningInks : UINT;
+	reasonAnyWarningGen : UDINT;
+	tonResetCmd : TON;
+	xEnabledAlarmPDSensor1 : BOOL;
+	xEnabledAlarmPDSensor2 : BOOL;
+	usiIndex : USINT;
+	xForcePreprintingPos : BOOL;
+	iReasonForcePreprintingPos : USINT;
+	iPrevReasonForcePreprintingPos : USINT;
+	iReasonStopBeltAuto : USINT;
+	InputsSwReseted : stGeneral_Inputs_Sw;
+	tonDelayToSafetyPos : TON;
+	srUpBarsToSafePos : SR;
+	xMachReadyToPrint : BOOL; (*In print postion without safe offsets position*)
+	xRunBeltByLine : BOOL;
+	iReasonAutoStop : UINT;
+	iReasonAutoStop_Trigger : UINT;
+	iReasonAutoCmdStart : UINT;
+	iReasonAutoCmdStop : UINT;
+	iReasonAutoCmdStop_Trigger : UINT;
+	xOrderToCapReceived : BOOL;
+	xOrderToPrintReceived : BOOL;
+	iReasonCap : UINT;
+	iReasonPrint : UINT;
+	lastReasonCap : UINT;
+	iBlockExecutionsOrder : UDINT;
+	lastReasonPrint : UINT;
+	iBlockDelay : UDINT;
+	iReasonSetPause : UINT;
+	iReasonResetPause : UINT;
+	iLastReasonSetPause : UINT;
+	iLastReasonResetPause : UINT;
+	TOF_AlarmDingPosition : TOF;
+	iReasonSafetySystemGeneral : UINT;
+	iReasonSafetyCutAir : UINT;
+	tonResetCommandIcla : TON;
+	xStopBeltJamTesting : BOOL; (*Jam detect system is in testing proces, wait finish to start belt*)
+	xPrintShootingForced : BOOL; (*Print shoot by instantprint or continousprint active*)
+	xMediaThicknessModified : BOOL;
+	rPrevMediaThickness : REAL;
+	xMachineRaisesBlock : BOOL;
+	BoardsFeedMinGap : BlinkOnOff;
+	tiBoardTime : TIME;
+	tiGapTime : TIME;
+	rBeltSpeedMmMs : REAL; (*Belt speed in mm/ms*)
+	rPrevBoardLength : REAL;
+	rPrevBoardGap : REAL;
+	rPrevStainLength : REAL;
+	rPrevStainGap : REAL;
+	rPrevBeltSpeed : REAL;
+	xFormatChanged : BOOL;
+	xBeltSpeedChanged : BOOL;
+	tofToAutoAfterEnableSafety : TOF;
+	tofResetAfterEnableSafety : TOF;
+	tofResetFromUI : TOF;
+	TON_AlrDegasserPressure : TON;
+	iReasonRunBlowerRemote : USINT;
+	iReasonOrdersRunBeltProduction : USINT;
+	iReasonORunBeltPhoto : BOOL;
+	iDistanceMiddleDevices : INT;
+	xSensorIncoherenceDetectedL1 : BOOL;
+	xSensorIncoherenceDetectedL2 : BOOL;
+	diCountProductDetectEdgesL1 : UDINT;
+	diCountProductDetectEdgesL2 : UDINT;
+	xUseBelowSensorToApplyOffset : BOOL;
+	xUseAboveSensorToApplyOffset : BOOL;
+	xMediaInLedPosition : BOOL;
+	iReasonRunNitrogenFlow : USINT;
+	xPDSignalSensorL1 : REFERENCE TO BOOL; (*Use just in MachineInputs*)
+	xPDSignalSensorL2 : REFERENCE TO BOOL; (*Use just in MachineInputs*)
+	xPDCarriageL1 : REFERENCE TO BOOL; (*Use just in MachineInputs*)
+	xPDCarriageL2 : REFERENCE TO BOOL; (*Use just in MachineInputs*)
+	tonRaiseBarsInPause : TON;
+	tonProtecPHBlowers : TON;
+	xReasonRunVacuumProduction : USINT;
+	tonResetSendingJob : TON;
+	xStartVacuumWhileGoingDown : BOOL;
+	tonEnterSafety : TON;
+	xEdgeSafety : BOOL;
+	xCuringDesired : ARRAY[0..MAX_LAST_CURING_LED] OF BOOL;
+	tonBeltNotStopped : TON;
+	xBeltMovingPreviousToStop : BOOL;
+	strAuxEventDesc : STRING[129];
+	rMountedLimit : REAL;
+	rCoef : REAL; (*Coeficient to be applied to setpoint from SW*)
+END_VAR

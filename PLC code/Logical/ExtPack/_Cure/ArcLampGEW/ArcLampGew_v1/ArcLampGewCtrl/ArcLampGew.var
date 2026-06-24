@@ -1,0 +1,108 @@
+VAR CONSTANT
+	MAXIMUM_QUANTITY_ALERTS : USINT := 6;
+END_VAR
+VAR
+	data : REFERENCE TO ArcLampGew;
+	Client : httpClient := (enable:=FALSE,send:=FALSE,abort:=FALSE,option:=0,pHost:=0,hostPort:=0,method:=httpMETHOD_GET,pUri:=0,pRequestHeader:=0,pRequestData:=0,requestDataLen:=0,pResponseHeader:=0,pResponseData:=0,responseDataSize:=0,pStatistics:=0,pStruct:=0,status:=0,tcpStatus:=0,httpStatus:=0,responseDataLen:=0,phase:=0,_i_state:=0,_i_result:=0,_ident:=0,_oldEnable:=0,_oldAbort:=0,_oldSend:=0,_state:=0,_internal:=0);
+	ClientPost : httpClient := (enable:=FALSE,send:=FALSE,abort:=FALSE,option:=0,pHost:=0,hostPort:=0,method:=httpMETHOD_GET,pUri:=0,pRequestHeader:=0,pRequestData:=0,requestDataLen:=0,pResponseHeader:=0,pResponseData:=0,responseDataSize:=0,pStatistics:=0,pStruct:=0,status:=0,tcpStatus:=0,httpStatus:=0,responseDataLen:=0,phase:=0,_i_state:=0,_i_result:=0,_ident:=0,_oldEnable:=0,_oldAbort:=0,_oldSend:=0,_state:=0,_internal:=0);
+	Doenable : BOOL := FALSE; (*Enables FUB Instance*)
+	Dosend : BOOL := FALSE; (*Sends request on positive edge*)
+	Host : STRING[100] := 'localhost';
+	Responsedata : STRING[6000] := '';
+	Ressource : STRING[80] := '';
+	RequestHeader : httpResponseHeader_t;
+	RequestHeaderPost : httpResponseHeader_t;
+	credentialsFlat : STRING[80];
+	CredentialsEncoder : httpEncodeBase64;
+	credentialsBase64 : STRING[280];
+	authenticationBase : STRING[180];
+	strAux : STRING[80];
+	JSON_Parse_0 : JSON_Parse;
+	dataToParse : STRING[6000] := '';
+	sysResp : SystemResp;
+	LampsResp : AllLampsResp;
+	UvLampsResp : UvStatusResp;
+	alertsResp : AlertsLampResp;
+	sysRespWrk : SystemResp;
+	LampsRespWrk : AllLampsResp;
+	UvLampsRespWrk : UvStatusResp;
+	alertsRespWrk : AlertsLampResp;
+	commsStatus : ArcLampGew_Comms := ARCLG_IDLE;
+	commsStatus_copy : ArcLampGew_Comms := ARCLG_IDLE;
+	xComsStatusChanged : BOOL;
+	commsSubStatus : ArcLampGew_SubComms := ARCLGS_IDLE;
+	dataDebug : STRING[1800];
+	dataNotFound : STRING[180];
+	CurrentState : ArcLampGew_State := ARCLGEW_NOT_INITIALIZED;
+	CurrentState_copy : ArcLampGew_State := ARCLGEW_NOT_INITIALIZED;
+	xCurrentStateChanged : BOOL;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 25;
+END_VAR
+VAR
+	StateHistory : ARRAY[0..iHistoryLines] OF ArcLampGew_State;
+	iIndexHistory : USINT;
+	iLamp : USINT;
+	iAlert : USINT;
+	CommsCmdReseted : CommsCommands;
+	xAnyLampSelected : BOOL;
+	xAnyLampInError : BOOL;
+	tonErrorComms : TON;
+	tonSendReadSystem : TON;
+	tonDelaySendReadSystem : TON;
+	resetedAlarms : ArcLampGew_Alarms;
+	resetedAlarmsSummary : stEFI_AlarmSummary;
+	resetedComsAlarms : ArcLampGew_CommsAlarms;
+	xAuxVar : BOOL;
+	iLampComs : USINT; (*Variable to define the lamp communicating with. NOT to use in loops*)
+	iMaxLampSelected : USINT; (*The maximum selected lamp prepare to workwith*)
+	paramURL : httpSetParamUrl;
+	RequestDataPost : STRING[180];
+	iStatusChanges : UINT;
+	iReasonStop : UINT;
+	iReasonCritical : UINT;
+	iAnyAlarm : UINT;
+	iAnyWarning : UINT;
+	stEventLog : EventLog_typ;
+	reasonSound : UINT;
+	arCommsError : AutoResetSound;
+	arLampInError1 : AutoResetSound;
+	arLampInError2 : AutoResetSound;
+	arJam : AutoResetSound;
+	iTimesReadLamps : UINT;
+	iTimesReadLampsUv : UINT;
+	iTimesReadAlerts : UINT;
+	iTimesResetAll : UINT;
+	iTimesSelectLamp : UINT;
+	iTimesDeselectLamp : UINT;
+	iTimesStopSelected : UINT;
+	iTimesStartSelected : UINT;
+	iTimesDeselectAll : UINT;
+	iTimesSetPower : UINT;
+	iTimesReadSystem : UINT;
+	iTimesCommsError : UINT;
+	credentialsUser : STRING[80];
+	credentialsUserInternal : STRING[80];
+	strAuxCredentials : STRING[80];
+	iSendClient : UINT;
+	iSendPost : UINT;
+	lastErrorReseted : ErrorWebServiceData;
+	lastCommsError : ErrorWebServiceData;
+END_VAR
+VAR CONSTANT
+	iHistoryCommsLines : USINT := 25;
+END_VAR
+VAR
+	ErrorCommsHistory : ARRAY[0..iHistoryCommsLines] OF ErrorWebServiceData;
+	iIndexCommsHistory : USINT;
+	UvLampRespAssigWrk : REFERENCE TO UvLampResp;
+	tonParsingError : TON;
+	tonInputReady : TON;
+	tonRetryCommand : TON;
+	xResetNeeded : UINT;
+	xReadSystemDelay : BOOL;
+	iReasonToStop : USINT;
+	resetedOuts : ArcLampGew_SignalsOut;
+	resetedStatus : ArcLampGew_Status;
+END_VAR

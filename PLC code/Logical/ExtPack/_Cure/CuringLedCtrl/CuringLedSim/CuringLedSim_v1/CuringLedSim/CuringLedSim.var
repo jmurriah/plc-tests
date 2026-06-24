@@ -1,0 +1,3 @@
+VAR
+	dataLed : REFERENCE TO CuringLed_typ;
+END_VAR

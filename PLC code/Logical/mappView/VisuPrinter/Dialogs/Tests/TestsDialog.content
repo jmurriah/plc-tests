@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="TestsDialog_Content" height="300" width="500" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnPrepareMachine" top="15" left="25" width="110" zIndex="0" text="$IAT/Test.Prepare" />
+    <Widget xsi:type="widgets.brease.Button" id="btnClose" top="245" left="425" width="65" height="45" zIndex="1" image="Media/SVGsymbols/Edit/Close.svg" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListMotorReferenced" top="15" left="150" width="32" height="32" zIndex="2" imageList="['not_running.png', 'running.png']" imagePrefix="Media/Icons/32x32/Actions/" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnBeltTests" top="50" left="25" width="110" zIndex="3" text="$IAT/Test.Belt" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnConsentsTests" top="85" left="25" width="110" zIndex="4" text="$IAT/Test.Consents" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnCleanningTests" top="120" left="25" width="110" zIndex="5" text="$IAT/Test.Cleaning" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutFailedTests" top="30" left="345" width="70" zIndex="6" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutPassedTests" top="65" left="345" width="70" zIndex="7" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="30" left="420" width="32" height="32" zIndex="8" image="Media/Icons/32x32/Actions/ok.png" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="65" left="420" width="32" height="32" zIndex="9" image="Media/Icons/32x32/Actions/agt_stop.png" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="txtOutCurrentTest" top="170" left="20" width="455" zIndex="10" value="Current Test" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="txtOutCurrentStateTest" top="200" left="20" width="455" zIndex="11" value="Current State Test" />
+  </Widgets>
+</Content>

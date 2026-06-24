@@ -1,0 +1,21 @@
+(*
+T: FUNCTION_BLOCK SF_GuardMonitoring_V1_00
+FW: NO
+CI#: 87
+QSL: 37
+QVE: 37
+QVPC: 37
+QPar: 11
+QFBI: 3
+*)
+Activate	@IV 1	@TYP:1	VAR_INPUT
+DiagCode	@IV 11	@TYP:18	VAR_OUTPUT
+DiscrepancyTime	@IV 4	@TYP:12	VAR_INPUT
+Error	@IV 10	@TYP:1	VAR_OUTPUT
+Ready	@IV 8	@TYP:1	VAR_OUTPUT
+Reset	@IV 7	@TYP:1	VAR_INPUT
+S_AutoReset	@IV 6	@TYP:43	VAR_INPUT
+S_GuardMonitoring	@IV 9	@TYP:43	VAR_OUTPUT
+S_GuardSwitch1	@IV 2	@TYP:43	VAR_INPUT
+S_GuardSwitch2	@IV 3	@TYP:43	VAR_INPUT
+S_StartReset	@IV 5	@TYP:43	VAR_INPUT

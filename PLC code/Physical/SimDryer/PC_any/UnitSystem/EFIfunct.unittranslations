@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="UnitaryPercentage" Type="UnitTranslations">
+    <Group ID="InputUnit">
+      <Property ID="Namespace" Value="http://www.opcfoundation.org/UA/units/un/cefact" />
+      <Property ID="UnitID" Value="4404786" />
+    </Group>
+    <Group ID="OutputUnit">
+      <Property ID="Namespace" Value="http://www.opcfoundation.org/UA/units/un/cefact" />
+      <Property ID="UnitID" Value="20529" />
+    </Group>
+    <Property ID="Formula" Value="m * Input + n" />
+    <Property ID="Formula_RPN" Value="m Input * n +" />
+    <Property ID="Formula_INV" Value="(Output - n) / m" />
+    <Property ID="Formula_INV_RPN" Value="Output n - m /" />
+    <Group ID="Variables">
+      <Group ID="Variable_1">
+        <Property ID="VariableId" Value="m" />
+        <Property ID="ProcessVariable" Value="" />
+        <Property ID="StaticValue" Value="100" />
+      </Group>
+      <Group ID="Variable_2">
+        <Property ID="VariableId" Value="n" />
+        <Property ID="ProcessVariable" Value="" />
+        <Property ID="StaticValue" Value="0.0" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="REFERENCE_SWITCH_PARID" ID="944" Value="STAT_TRIGGER1" Description="Digital inputs: Parameter ID for reference switch" />
+  </Root>
+</AcoposParameterTable>

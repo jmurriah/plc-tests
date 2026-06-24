@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DiscreteInSensor_Content" height="800" width="1366" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="5" left="5" width="165" zIndex="0" text="Discrete Input Sensor" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="105" left="100" zIndex="1" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="310" left="545" width="75" zIndex="2" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch2" top="270" left="545" width="75" zIndex="3" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch3" top="225" left="545" width="75" zIndex="4" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="310" left="450" width="95" zIndex="5" text="Photocell 1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="270" left="450" width="95" zIndex="6" text="Photocell 2" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="225" left="450" width="95" zIndex="7" text="Photocell 3" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageList2" top="310" left="625" width="32" height="32" zIndex="8" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch4" top="60" left="440" width="75" zIndex="9" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="60" left="345" width="95" zIndex="10" text="Install" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton1" top="60" left="670" zIndex="11" text="Reference" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageList3" top="60" left="775" width="32" height="32" zIndex="12" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageList4" top="60" left="520" width="32" height="32" zIndex="13" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBox1" top="330" left="130" width="160" zIndex="14" dataProvider="[{'value':'0','text':'STP_NOT_USED'},{'value':'1','text':'STP_NOT_INITALIZED'},{'value':'2','text':'STP_POWER_ON'},{'value':'3','text':'STP_HOME_DIR'},{'value':'4','text':'STP_GEARING'},{'value':'5','text':'STP_GEARED'},{'value':'6','text':'STP_HOMING_STEP_1'},{'value':'7','text':'STP_HOMING_STEP_2'},{'value':'8','text':'STP_HOMING_STEP_3'},{'value':'9','text':'STP_HOMING_STEP_4'},{'value':'10','text':'STP_STANDSTILL'},{'value':'11','text':'STP_JOGGING'},{'value':'12','text':'STP_AUTO'},{'value':'13','text':'STP_SET_POS'},{'value':'14','text':'STP_RUNING'},{'value':'15','text':'STP_ERROR'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageList5" top="460" left="260" width="32" height="32" zIndex="15" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.Login" id="Login1" top="405" left="385" zIndex="16" />
+  </Widgets>
+</Content>

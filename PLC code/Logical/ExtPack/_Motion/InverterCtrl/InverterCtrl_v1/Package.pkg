@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Controls an P66/P76 ACOPOSinverter">InverterCtrl</Object>
+    <Object Type="Program" Language="IEC">InitInverterCtrl</Object>
+    <Object Type="File">Inverter.typ</Object>
+    <Object Type="File" Private="true">InverterGen.var</Object>
+    <Object Type="File">DocABB380.md</Object>
+  </Objects>
+</Package>

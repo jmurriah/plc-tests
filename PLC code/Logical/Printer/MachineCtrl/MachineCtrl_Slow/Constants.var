@@ -1,0 +1,8 @@
+VAR CONSTANT
+	BWMODE_OFF : UINT := 0; (*The blower never is turned on*)
+	BWMODE_ON : UINT := 1; (*The blower always is turned on*)
+	BWMODE_AUTO : UINT := 2; (*The blower is turned on while moving the belt and a configured time afterwards*)
+	SHOT_MIN_TIME_BETWEEN_SHOTS : TIME := T#300MS; (*Minimum time between Printing Shots*)
+	BEEP_START_COUNTS : USINT := 7;
+	iSetupEnterPulses : INT := 2;
+END_VAR

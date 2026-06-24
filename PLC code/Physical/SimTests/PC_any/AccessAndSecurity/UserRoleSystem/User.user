@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Anonymous" Type="User">
+    <Property ID="UserID" Value="1" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Everyone" />
+    </Group>
+  </Element>
+  <Element ID="Jorge" Type="User">
+    <Property ID="UserID" Value="2" />
+    <Property ID="Password" Value="XD4upGjh+8jWsShecPPq3cIKoG84UMj0ubpY4MqNnhElh1SDqkE=" Description="jorge" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Administrators" />
+    </Group>
+  </Element>
+  <Element ID="PressCore" Type="User">
+    <Property ID="UserID" Value="3" />
+    <Property ID="Password" Value="2iiCRl8nHn+FR2lKEQiWUKem7dGizCZEOvPpZXGaj4Ty8sO8Q7o=" Description="h98o76" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Administrators" />
+    </Group>
+  </Element>
+  <Element ID="EngTeam" Type="User">
+    <Property ID="UserID" Value="4" />
+    <Property ID="Password" Value="sv35f14ZGPSB6hyUfoaUJlfKbC1P7zM6yIsymHFuKctVVFLuZpo=" Description="h98o76" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Administrators" />
+    </Group>
+  </Element>
+</Configuration>

@@ -1,0 +1,35 @@
+VAR
+	genericMethodInput : BOOL := TRUE;
+	shareMachConf_MethodOperate : UaSrv_MethodOperate;
+	shareMachConf_Step : USINT := 0;
+	shareModuleOk_MethodOperate : UaSrv_MethodOperate;
+	shareModuleOk_Step : USINT := 0;
+	shareDI_1_MethodOperate : UaSrv_MethodOperate;
+	shareDI_1_Step : USINT := 0;
+	shareDO_1_MethodOperate : UaSrv_MethodOperate;
+	shareDO_1_Step : USINT := 0;
+	shareAI_1_MethodOperate : UaSrv_MethodOperate;
+	shareAI_1_Step : USINT := 0;
+	shareAO_1_MethodOperate : UaSrv_MethodOperate;
+	shareAO_1_Step : USINT := 0;
+	shareDI_2_MethodOperate : UaSrv_MethodOperate;
+	shareDI_2_Step : USINT := 0;
+	shareDO_2_MethodOperate : UaSrv_MethodOperate;
+	shareDO_2_Step : USINT := 0;
+	shareAI_2_MethodOperate : UaSrv_MethodOperate;
+	shareAI_2_Step : USINT := 0;
+	shareAO_2_MethodOperate : UaSrv_MethodOperate;
+	shareAO_2_Step : USINT := 0;
+	shareAT_1_MethodOperate : UaSrv_MethodOperate;
+	shareAT_1_Step : USINT := 0;
+	shareAT_2_MethodOperate : UaSrv_MethodOperate;
+	shareAT_2_Step : USINT := 0;
+	sharePhotoCells_MethodOperate : UaSrv_MethodOperate;
+	sharePhotoCells_Step : USINT := 0;
+	shareCuringBar_MethodOperate : UaSrv_MethodOperate;
+	shareCuringBar_Step : USINT := 0;
+	shareBlock_MethodOperate : UaSrv_MethodOperate;
+	shareBlock_Step : USINT := 0;
+	shareTransVacuum_MethodOperate : UaSrv_MethodOperate;
+	shareTransVacuum_Step : USINT := 0;
+END_VAR

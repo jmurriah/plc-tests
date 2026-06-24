@@ -1,0 +1,14 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: BeltTests
+ * Author: Jorge Murria
+ ********************************************************************
+ * Local variables of program BeltTests
+ * General variables - do not change
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	Testsuite : UtMgrTestSuite := (Name:='BeltTests',Description:='Tests related to the Belt and its movement',Type:=utMgrTEST_TYPE_C,MetaInformation:='Some Meta Information can be added here');
+END_VAR
+(*Variables used in the tests*)

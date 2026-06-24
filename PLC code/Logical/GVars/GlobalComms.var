@@ -1,0 +1,19 @@
+VAR
+	gToWriteDataModbSarm : ARRAY[1..25] OF UINT;
+	gReceivedDataModbSarm : ARRAY[1..25] OF UINT;
+	gToWriteDataModbFeeder : ARRAY[1..25] OF UINT;
+	gReceivedDataModbFeeder : ARRAY[1..25] OF UINT;
+	gToWriteDataModbStacker : ARRAY[1..25] OF UINT;
+	gReceivedDataModbStacker : ARRAY[1..25] OF UINT;
+	gToWriteDataModbOpv : ARRAY[1..25] OF UINT;
+	gReceivedDataModbOpv : ARRAY[1..25] OF UINT;
+	gToWriteDataModbPrimer : ARRAY[1..25] OF UINT;
+	gReceivedDataModbPrimer : ARRAY[1..25] OF UINT;
+	gToWriteDataModbTransport : ARRAY[1..25] OF INT;
+	gReceivedDataModbTransport : ARRAY[1..25] OF INT;
+	gReceivedDataModPowerMeter1 : ARRAY[0..120] OF UINT;
+	gReceivedDataModPowerMeter2 : ARRAY[0..120] OF UINT;
+	gReceivedDataModbSafety : ARRAY[0..20] OF UINT; (*0 Not used. Needed because used in the Tests*)
+	gDryerRemoteData : DryerRemoteData; (*This is the data from the Printer to the Dryer*)
+	gDryerLocalData : DryerInputs_typ; (*This is the data from the Dryer to the Printer*)
+END_VAR

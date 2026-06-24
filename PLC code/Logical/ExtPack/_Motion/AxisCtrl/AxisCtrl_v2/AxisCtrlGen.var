@@ -1,0 +1,3 @@
+VAR
+	gIndexAxisCtrl : INT := 1; (* Initialize Index*)
+END_VAR

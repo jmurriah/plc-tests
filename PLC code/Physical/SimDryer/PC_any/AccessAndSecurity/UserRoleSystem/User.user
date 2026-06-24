@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Operator" Type="User">
+    <Property ID="UserID" Value="1" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="NoUser" />
+    </Group>
+  </Element>
+  <Element ID="Jorge" Type="User">
+    <Property ID="UserID" Value="2" />
+    <Property ID="Password" Value="XD4upGjh+8jWsShecPPq3cIKoG84UMj0ubpY4MqNnhElh1SDqkE=" Description="jorge" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="HMI" />
+    </Group>
+  </Element>
+  <Element ID="Printer_user" Type="User">
+    <Property ID="UserID" Value="3" />
+    <Property ID="Password" Value="pW5vrV7TmgcRjjW8jdAPwxgvHii5gwESo5RLGbOVNqQ3uNSI+6o=" Description="h98o76. Primary" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Printer" />
+    </Group>
+  </Element>
+  <Element ID="HMI_user" Type="User">
+    <Property ID="UserID" Value="4" />
+    <Property ID="Password" Value="ug3q+ASDPdHkZi4BiaRjwVCDHKSELSfqqg+N5blHHk7P8SCRjTg=" Description="d65tr5. Sec" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="HMI" />
+    </Group>
+  </Element>
+  <Element ID="PressCore" Type="User">
+    <Property ID="UserID" Value="5" />
+    <Property ID="Password" Value="/YrgqkdoEK+WGxkost9I6eeKuFwCeCslbIsKBYW/lEIwOcYkZqY=" Description="h98o76. Primary" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Printer" />
+      <Property ID="Role[2]" Value="HMI" />
+    </Group>
+  </Element>
+  <Element ID="Manager" Type="User">
+    <Property ID="UserID" Value="6" />
+    <Property ID="Password" Value="6xR+rPZMZRHLZRGH/1seclZQk4RXUmGQvlAVyV+CjjzeiFFKfp0=" Description="PressSw.1" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="HMI" />
+    </Group>
+  </Element>
+</Configuration>

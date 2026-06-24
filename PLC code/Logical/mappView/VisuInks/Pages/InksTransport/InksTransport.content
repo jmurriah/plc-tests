@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="InksTransport_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Image" id="imbBeltStopped" top="595" left="175" width="500" height="70" zIndex="0" image="Media/EFI/BeltMoving01.png" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numInBeltSpeed" top="615" left="375" width="115" zIndex="1" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3}}" unit="{'metric':'2X','imperial':'2X','imperial-us':'2X'}" unitAlign="right" value="100" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpManual" top="45" left="325" width="400" height="190" zIndex="2" image="Media/UI/maintenance.svg" text="Blower">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInBlowersSetPointMan" top="15" left="214" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3}}" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="26" />
+        <Widget xsi:type="widgets.brease.Label" id="lblBlowersSetPointMan" top="15" left="35" width="164" zIndex="1" text="$IAT/Dryer.Blow.DutyCycleSetPoint" textAlign="right" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="btnStartBlowers" top="73" left="174" width="65" height="55" zIndex="2" image="Media/SVGsymbols/Media/Play.svg" mouseDownImage="Media/SVGsymbols/Media/Stop.svg" cornerRadius="5px" />
+        <Widget xsi:type="widgets.brease.ImageList" id="imglAlarmNir" top="83" left="324" width="32" height="32" zIndex="3" imageList="['warning-dis.svg', 'warning.svg']" imagePrefix="Media/UI/size32/" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.NumericInput" id="numInPerimeter" top="465" left="435" width="110" height="35" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="1000" minValue="200" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="lblPerimeter" top="465" left="255" width="165" height="35" zIndex="4" text="$IAT/Dryer.Belt.Perimeter" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numInGearBox" top="515" left="435" width="110" height="35" zIndex="5" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="500" minValue="1" />
+    <Widget xsi:type="widgets.brease.Label" id="lblGearBox" top="515" left="255" width="165" height="35" zIndex="6" text="$IAT/Dryer.Belt.GearBox" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="btnStartBelt" top="480" left="620" width="65" height="55" zIndex="7" image="Media/SVGsymbols/Media/Play.svg" mouseDownImage="Media/SVGsymbols/Media/Stop.svg" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imglAlarmNir1" top="495" left="745" width="32" height="32" zIndex="8" imageList="['warning-dis.svg', 'warning.svg']" imagePrefix="Media/UI/size32/" />
+  </Widgets>
+</Content>

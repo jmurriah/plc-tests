@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="I4.93">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="NoUser" Access="0x015F" />
+        <ACE RoleName="Printer" Access="0x015F" />
+        <ACE RoleName="HMI" Access="0x015F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleName="NoUser" Access="0x0117" />
+        <ACE RoleName="HMI" Access="0x01FF" />
+        <ACE RoleName="Printer" Access="0x015F" />
+      </ACL>
+      <ACL Id="7">
+        <ACE RoleName="NoUser" Access="0x0117" />
+        <ACE RoleName="HMI" Access="0x005F" />
+        <ACE RoleName="Printer" Access="0x01FF" />
+      </ACL>
+      <ACL Id="8">
+        <ACE RoleName="NoUser" Access="0x0117" />
+        <ACE RoleName="HMI" Access="0x01FF" />
+        <ACE RoleName="Printer" Access="0x01FF" />
+      </ACL>
+      <ACL Id="9">
+        <ACE RoleName="NoUser" Access="0x0117" />
+        <ACE RoleName="HMI" Access="0x00FF" />
+        <ACE RoleName="Printer" Access="0x015F" />
+      </ACL>
+      <ACL Id="10">
+        <ACE RoleName="NoUser" Access="0x0117" />
+        <ACE RoleName="HMI" Access="0x01DF" />
+        <ACE RoleName="Printer" Access="0x017F" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">0.3</Low>
+          <High ValueProvider="Const">1.0</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="4408652" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="degree Celsius" Symbol="°C" />
+      <EngineeringUnit Id="2" UnitId="4404786" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="one" Symbol="1" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <DefaultView AclId="2">
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gPLC" RecursiveEnable="1" />
+        <Variable Name="gDryer" RecursiveEnable="1">
+          <Variable Name="In" />
+          <Variable AclInherit="1" Name="St" />
+          <Variable Name="commands" />
+          <Variable AclInherit="1" Name="AutoCmd" />
+          <Variable AclInherit="1" Name="AlSummary" />
+          <Variable AclInherit="1" Name="Al" />
+          <Variable AclInherit="1" Name="Lg" />
+          <Variable AclInherit="1" Name="Out" />
+          <Variable Name="Pt">
+            <Variable Name="SW">
+              <Variable Name="rSubstratePowerReduction" EURangesId="1" EngineeringUnitId="2" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="gBelt" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="commands" />
+          <Variable AclInherit="1" Name="states" />
+          <Variable AclInherit="1" Name="AlSummary" />
+          <Variable AclInherit="1" Name="Al" />
+          <Variable AclInherit="1" Name="Log" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20DIF371_201">
+          <Variable Name="ModuleOk" />
+          <Variable Name="DInput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20DIF371_202">
+          <Variable Name="DInput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="ModuleOk" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20DIF371_203">
+          <Variable Name="ModuleOk" />
+          <Variable Name="DInput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20DOF322_205">
+          <Variable Name="ModuleOk" />
+          <Variable Name="DOutput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20DOF322_206">
+          <Variable Name="ModuleOk" />
+          <Variable Name="DOutput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20AI8321_207">
+          <Variable Name="ModuleOk" />
+          <Variable Name="AInput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20AO4622_208">
+          <Variable Name="ModuleOk" />
+          <Variable Name="AOutput" RecursiveEnable="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable AclInherit="1" Name="X20AT4222_209">
+          <Variable Name="ModuleOk" />
+          <Variable Name="TempInput" RecursiveEnable="1" EngineeringUnitId="1" />
+          <Variable AclId="2" AclInherit="2" Name="ShowTexts" />
+          <Variable Name="Status01" />
+          <Variable Name="Status02" />
+        </Variable>
+        <Variable Name="gNirAdphos" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="State" />
+          <Variable AclInherit="1" Name="Alarms">
+            <Variable Name="xMaxSurfaceTempModule" RecursiveEnable="1" />
+            <Variable Name="xSurfaceTempModuleSensorError" RecursiveEnable="1" />
+            <Variable Name="BlockedFansModule" RecursiveEnable="1" />
+            <Variable Name="Jam" RecursiveEnable="1" />
+          </Variable>
+          <Variable AclInherit="1" Name="AlSummary" />
+          <Variable AclInherit="1" Name="Commands" />
+          <Variable AclInherit="1" Name="Signals">
+            <Variable Name="In">
+              <Variable Name="BlockedFans" RecursiveEnable="1">
+                <Variable Name="BlockedFans[1]">
+                  <Variable Name="Fan" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="BlockedFans[2]">
+                  <Variable Name="Fan" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="iSurfaceTempModuleRaw" RecursiveEnable="1" />
+              <Variable Name="xSurfaceTempModuleSensorError" RecursiveEnable="1" />
+              <Variable Name="Jam" RecursiveEnable="1" />
+            </Variable>
+          </Variable>
+          <Variable AclInherit="1" Name="Status">
+            <Variable Name="Comms">
+              <Variable Name="Modules" RecursiveEnable="1" />
+            </Variable>
+            <Variable Name="rSurfaceTempModule" RecursiveEnable="1" />
+            <Variable Name="DDC" RecursiveEnable="2">
+              <Variable Name="DDC[0]" />
+              <Variable Name="DDC[1]">
+                <Variable Name="Intensity" RecursiveEnable="2" ChangedCommonProperties="1" />
+              </Variable>
+              <Variable Name="DDC[2]">
+                <Variable Name="Intensity" RecursiveEnable="2" ChangedCommonProperties="1" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Parameters">
+            <Variable Name="Comms">
+              <Variable Name="Modules" RecursiveEnable="1" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="gArcLampGew" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="State" />
+          <Variable AclInherit="1" Name="Alarms" />
+          <Variable AclInherit="1" Name="AlSummary" />
+          <Variable AclInherit="1" Name="Commands" />
+          <Variable AclInherit="1" Name="Signals" />
+          <Variable AclInherit="1" Name="Status">
+            <Variable Name="Lamps" RecursiveEnable="1">
+              <Variable Name="Lamps[1]">
+                <Variable Name="SensorEmission" RecursiveEnable="1" />
+              </Variable>
+              <Variable Name="Lamps[2]">
+                <Variable Name="SensorEmission" RecursiveEnable="1" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Parameters">
+            <Variable Name="Lamps" RecursiveEnable="1" />
+          </Variable>
+        </Variable>
+        <Variable AclId="7" AclInherit="2" Name="gDryerRemoteData" RecursiveEnable="1" />
+        <Variable Name="gTransVacuum" RecursiveEnable="1">
+          <Variable Name="gTransVacuum[1]">
+            <Variable AclInherit="1" Name="Inputs" />
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="Alarms">
+              <Variable Name="xAlrBlowerCB" RecursiveEnable="1" />
+              <Variable Name="xAlrCommsBlower" RecursiveEnable="1" />
+              <Variable Name="xAlrBlowerError" RecursiveEnable="1" />
+            </Variable>
+            <Variable AclInherit="1" Name="AlSummary" />
+            <Variable AclInherit="1" Name="Outputs" />
+          </Variable>
+        </Variable>
+        <Variable Name="gSimpleBlock" RecursiveEnable="1">
+          <Variable Name="gSimpleBlock[1]">
+            <Variable AclInherit="1" Name="In" />
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="AlSummary" />
+            <Variable AclInherit="1" Name="Al" />
+            <Variable AclInherit="1" Name="Lg" />
+            <Variable AclInherit="1" Name="Out" />
+          </Variable>
+        </Variable>
+        <Variable AclInherit="1" Name="gBasicDetectMedia" RecursiveEnable="1" />
+        <Variable AclInherit="1" Name="gDryerLocalData" RecursiveEnable="1" />
+        <Variable AclInherit="1" Name="gTestsExec" RecursiveEnable="1" />
+        <Variable AclInherit="1" Name="gThicknessCtrl" RecursiveEnable="2">
+          <Variable Name="status">
+            <Variable Name="MediaPosition">
+              <Variable Name="L1">
+                <Variable Name="NirDryer" RecursiveEnable="1">
+                  <Variable Name="NirDryer[1]">
+                    <Variable Name="Intensity" RecursiveEnable="1" />
+                  </Variable>
+                  <Variable Name="NirDryer[2]">
+                    <Variable Name="Intensity" RecursiveEnable="1" />
+                  </Variable>
+                </Variable>
+              </Variable>
+              <Variable Name="L2">
+                <Variable Name="NirDryer" RecursiveEnable="1">
+                  <Variable Name="NirDryer[1]">
+                    <Variable Name="Intensity" RecursiveEnable="1" />
+                  </Variable>
+                  <Variable Name="NirDryer[2]">
+                    <Variable Name="Intensity" RecursiveEnable="1" />
+                  </Variable>
+                </Variable>
+              </Variable>
+            </Variable>
+            <Variable Name="Dry" RecursiveEnable="1">
+              <Variable Name="Dry[1]">
+                <Variable Name="Intensity" RecursiveEnable="1" />
+              </Variable>
+              <Variable Name="Dry[2]">
+                <Variable Name="Intensity" RecursiveEnable="1" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="parameters">
+            <Variable Name="Dry">
+              <Variable AclId="8" AclInherit="2" Name="xDryStack" />
+              <Variable AclId="2" AclInherit="2" Name="rThermalInerciaReduction" EngineeringUnitId="2" />
+              <Variable AclId="9" AclInherit="2" Name="rThermalDelay" />
+              <Variable AclId="9" AclInherit="2" Name="rSubstratePowerReduction" />
+              <Variable AclId="9" AclInherit="2" Name="rCommsDelay" />
+              <Variable AclId="2" AclInherit="2" Name="iMinDryValue" />
+              <Variable AclId="2" AclInherit="2" Name="rDryExtend" />
+            </Variable>
+            <Variable Name="CheckMedia">
+              <Variable Name="CheckMedia[1]">
+                <Variable AclId="10" AclInherit="2" Name="xActive" ChangedCommonProperties="48" />
+              </Variable>
+            </Variable>
+          </Variable>
+        </Variable>
+      </GlobalVariables>
+      <Task Name="ThickCtrl">
+        <Method Name="LoadNewMedia" />
+        <Method Name="LoadNewMediaEnergy" />
+        <Method Name="LoadNewMediaEnergyCont" />
+        <Method Name="InsertNewMedia" />
+        <Method Name="InsertNewMediaEnergy" />
+        <Method Name="RemoveNewMedia" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

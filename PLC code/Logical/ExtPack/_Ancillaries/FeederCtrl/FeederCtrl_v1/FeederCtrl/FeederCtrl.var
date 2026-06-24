@@ -1,0 +1,30 @@
+VAR
+	Feeder : REFERENCE TO Feeder_typ;
+	AlarmsReseted : FeederAlarms_typ;
+	ResetCommands : FeederCommands_typ;
+	tonNotOnline : TON;
+	CommsReset : FeederCommsInputs_typ;
+	OutputsReset : FeederOutputs_typ;
+	PhysicalOutputsReset : FeederPhysicalOutputs_typ;
+	iMedia : UINT;
+	iPreviousMedia : UINT;
+	ton_NexMediaParamaters : TON;
+	xNewMediaParameters : BOOL;
+	iIndexMedia : UINT;
+	iFeederModel : USINT;
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF FeederCtrlStatus_enum;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	CopyOfWriteData : ARRAY[1..25] OF UINT;
+	tonDisableWrittingOfData : TON;
+	xDisableWriteData : BOOL;
+	ton_CommsError : TON;
+	EraseWriteData : ARRAY[1..25] OF UINT;
+END_VAR

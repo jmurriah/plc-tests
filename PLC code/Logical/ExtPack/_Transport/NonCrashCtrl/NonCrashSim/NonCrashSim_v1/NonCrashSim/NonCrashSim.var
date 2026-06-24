@@ -1,0 +1,4 @@
+VAR
+	nonCrash : REFERENCE TO NonCrash_typ;
+	nonCrashSim : REFERENCE TO SimNonCrash_typ;
+END_VAR

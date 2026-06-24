@@ -1,0 +1,190 @@
+(*
+T: FUNCTION_BLOCK SF_Equivalent_V1_00
+FW: YES	NO_VARIANT SF_Equivalent_V1_00 SKIP_NOTHING	
+CI#: 85
+QSL: 0
+QVE: 30
+QVPC: 30
+QPar: 8
+QFBI: 3
+*)
+
+Activate	1	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+S_ChannelA	2	VAR_INPUT	@TYP:43
+		     
+
+;
+PFW: VAR
+
+S_ChannelB	3	VAR_INPUT	@TYP:43
+		     
+
+;
+PFW: VAR
+
+DiscrepancyTime	4	VAR_INPUT	@TYP:12
+		     
+
+;
+PFW: CONST
+
+Ready	5	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+S_EquivalentOut	6	VAR_OUTPUT	@TYP:43
+		     
+
+;
+
+
+Error	7	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+DiagCode	8	VAR_OUTPUT	@TYP:18
+		     
+
+;
+PFW: DIA
+
+InternalS_ChannelA	9	VAR	@TYP:1
+		     
+
+;
+
+
+InternalS_ChannelB	10	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState	11	VAR	@TYP:18
+		     
+@TYP:18# 00#0000
+;
+
+
+InternalState1	12	VAR	@TYP:18
+		     
+
+;
+
+
+InternalState8004Active	13	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState8014Active	14	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState8005Active	15	VAR	@TYP:1
+		     
+
+;
+
+
+Q_TON_State8004	16	VAR	@TYP:1
+		     
+
+;
+
+
+Q_TON_State8014	17	VAR	@TYP:1
+		     
+
+;
+
+
+Q_TON_State8005	18	VAR	@TYP:1
+		     
+
+;
+
+
+TON_State8004	19	VAR	@FB:21
+		     
+
+;
+
+
+TON_State8014	20	VAR	@FB:21
+		     
+
+;
+
+
+TON_State8005	21	VAR	@FB:21
+		     
+
+;
+
+
+__Code@0	22	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@1	23	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@2	24	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@3	25	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@4	26	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@5	27	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@6	28	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@7	29	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@8	30	VAR	@TYP:1
+		     
+
+;
+

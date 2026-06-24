@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.3.144 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Borders_0">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="10"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="428" Value="Source[local].Bitmap[button_default_0]"/>
+    <BitmapRef ID="429" Value="Source[local].Bitmap[button_default_pressed_0]"/>
+    <BitmapRef ID="430" Value="Source[local].Bitmap[button_global_area_0]"/>
+    <BitmapRef ID="431" Value="Source[local].Bitmap[button_global_area_pressed_0]"/>
+    <BitmapRef ID="456" Value="None"/>
+    <BitmapRef ID="464" Value="None"/>
+    <BitmapRef ID="465" Value="None"/>
+    <BitmapRef ID="466" Value="None"/>
+    <BitmapRef ID="467" Value="Source[local].Bitmap[ProgressBorder_1]"/>
+    <BitmapRef ID="771" Value="Source[local].Bitmap[FrameDark_0]"/>
+    <BitmapRef ID="772" Value="Source[local].Bitmap[FrameLight_0]"/>
+    <BitmapRef ID="789" Value="Source[local].Bitmap[FrameInvisible_0]"/>
+    <BitmapRef ID="790" Value="None"/>
+    <BitmapRef ID="822" Value="Source[local].Bitmap[btnScollDown_0]"/>
+    <BitmapRef ID="823" Value="Source[local].Bitmap[btnScrollDown_pressed_0]"/>
+    <BitmapRef ID="824" Value="Source[local].Bitmap[btnScrollLeft_0]"/>
+    <BitmapRef ID="825" Value="Source[local].Bitmap[btnScrollLeft_pressed_0]"/>
+    <BitmapRef ID="826" Value="Source[local].Bitmap[btnScrollRight_0]"/>
+    <BitmapRef ID="827" Value="Source[local].Bitmap[btnScrollRight_pressed_0]"/>
+    <BitmapRef ID="828" Value="Source[local].Bitmap[btnScrollUp_0]"/>
+    <BitmapRef ID="829" Value="Source[local].Bitmap[btnScrollUp_pressed_0]"/>
+    <BitmapRef ID="830" Value="Source[local].Bitmap[btnScrollDownMulti_0]"/>
+    <BitmapRef ID="831" Value="Source[local].Bitmap[btnScrollDownMulti_pressed_0]"/>
+    <BitmapRef ID="832" Value="Source[local].Bitmap[btnScrollUpMulti_0]"/>
+    <BitmapRef ID="833" Value="Source[local].Bitmap[btnScrollUpMulti_pressed_0]"/>
+    <BitmapRef ID="853" Value="Source[local].Bitmap[checkbox_off_small_0]"/>
+    <BitmapRef ID="854" Value="Source[local].Bitmap[checkbox_on_small_0]"/>
+    <BitmapRef ID="894" Value="Source[local].Bitmap[radio_active_0]"/>
+    <BitmapRef ID="895" Value="Source[local].Bitmap[radio_pressed_0]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="428" Value="0"/>
+    <Index ID="429" Value="1"/>
+    <Index ID="430" Value="2"/>
+    <Index ID="431" Value="3"/>
+    <Index ID="456" Value="28"/>
+    <Index ID="464" Value="36"/>
+    <Index ID="465" Value="35"/>
+    <Index ID="466" Value="37"/>
+    <Index ID="467" Value="38"/>
+    <Index ID="771" Value="42"/>
+    <Index ID="772" Value="43"/>
+    <Index ID="789" Value="27"/>
+    <Index ID="790" Value="4"/>
+    <Index ID="822" Value="7"/>
+    <Index ID="823" Value="8"/>
+    <Index ID="824" Value="9"/>
+    <Index ID="825" Value="10"/>
+    <Index ID="826" Value="11"/>
+    <Index ID="827" Value="12"/>
+    <Index ID="828" Value="13"/>
+    <Index ID="829" Value="14"/>
+    <Index ID="830" Value="15"/>
+    <Index ID="831" Value="16"/>
+    <Index ID="832" Value="17"/>
+    <Index ID="833" Value="18"/>
+    <Index ID="853" Value="44"/>
+    <Index ID="854" Value="45"/>
+    <Index ID="894" Value="46"/>
+    <Index ID="895" Value="47"/>
+  </IndexMap>
+</BitmapGroup>

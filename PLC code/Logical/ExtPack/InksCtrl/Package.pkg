@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Inks control logic package">InksCtrl_v3</Object>
+    <Object Type="Package">InksSim</Object>
+    <Object Type="File">user manual ink heater tank .pdf</Object>
+    <Object Type="File">Ink heater tank balanced.pdf</Object>
+  </Objects>
+</Package>

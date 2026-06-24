@@ -1,0 +1,5 @@
+VAR
+	SimSarm : REFERENCE TO SarmSim_typ;
+	Sarm : REFERENCE TO Sarm_typ;
+	tonPrepare : TON;
+END_VAR

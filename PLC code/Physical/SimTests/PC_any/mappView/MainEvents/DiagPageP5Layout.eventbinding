@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="DiagPageP5Layout_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="SelectCardLayoutP5_1">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button1" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_2">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button2" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_3">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button3" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_4">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button4" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="3" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_5">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button5" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_6">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button6" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="5" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_7">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button7" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="6" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_8">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button8" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="7" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_9">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button9" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="8" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_10">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button10" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="9" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_11">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button11" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="10" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_12">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button12" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="11" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_13">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button13" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="12" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_14">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button14" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="13" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_15">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button15" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="14" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_16">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button16" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="15" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_17">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button17" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="16" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_18">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button18" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="17" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_19">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button19" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="18" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_20">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button20" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="19" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_21">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button21" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="20" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_22">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button22" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="21" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_23">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button23" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="22" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_24">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button24" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="23" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_25">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button25" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="24" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_26">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button26" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="25" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_27">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button27" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="26" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_28">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button28" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="24" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_29">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button29" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="25" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutP5_30">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button30" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="26" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_31">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="P5_S1400_content" widgetRefId="Button31" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="27" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_32">
+      <Source xsi:type="widgets.brease.BasicSlider.Event" contentRefId="P5_S1400_content" widgetRefId="BasicSlider2" event="OnDragLeave" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xRedArrowMoved">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

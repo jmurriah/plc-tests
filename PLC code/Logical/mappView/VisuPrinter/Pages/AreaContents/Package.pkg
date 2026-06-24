@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="AreaContentsPackage" PackageType="AreaContentsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Nav.content</Object>
+    <Object Type="File">Nav900x200.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagCP0484.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagCP1382.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagID16.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagOD16.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagAI8.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagAI4.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagAO4.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagAT4.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagPS.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagSL81.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagX1.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagX2.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagX3.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagSM.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagSC.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagSI.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagSO.content</Object>
+    <Object Type="File" Reference="true">\Logical\mappView\VisuResources\Pages\AreaContents\DiagBC.content</Object>
+  </Objects>
+</Package>

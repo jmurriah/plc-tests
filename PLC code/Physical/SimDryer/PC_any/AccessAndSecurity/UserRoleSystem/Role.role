@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="HMI" Type="Role">
+    <Property ID="RoleID" Value="1" />
+  </Element>
+  <Element ID="Printer" Type="Role">
+    <Property ID="RoleID" Value="2" />
+  </Element>
+  <Element ID="NoUser" Type="Role">
+    <Property ID="RoleID" Value="3" />
+  </Element>
+</Configuration>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="InksDetails_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="25" left="25" height="755" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="5" left="5" width="190" height="70" zIndex="0" text="Ink System Selection" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnBar1" top="95" left="5" width="185" height="80" zIndex="1" mouseDownText="Bar 1" text="Bar 1" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnBar2" top="185" left="5" width="185" height="80" zIndex="2" mouseDownText="Bar 2" text="Bar 2" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnBar3" top="275" left="5" width="185" height="80" zIndex="3" mouseDownText="Bar 3" text="Bar 3" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnBar4" top="365" left="5" width="185" height="80" zIndex="4" mouseDownText="Bar 4" text="Bar 4" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnBar5" top="455" left="5" width="185" height="80" zIndex="5" mouseDownText="Bar 5" text="Bar 5" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnBar6" top="545" left="5" width="185" height="80" zIndex="6" mouseDownText="Bar 6" text="Bar 6" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpManual" top="585" left="245" width="545" height="170" zIndex="1" text="Manual">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnStart1" top="48" left="34" width="170" height="42" zIndex="0" mouseDownText="Running" text="Start" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInSetPointPositiveMan" top="33" left="349" width="105" zIndex="1" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="4.5" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInSetPointNegativeMan" top="68" left="349" width="105" zIndex="2" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="10.5" />
+        <Widget xsi:type="widgets.brease.Label" id="lblPositive1" top="33" left="264" zIndex="3" text="Positive" />
+        <Widget xsi:type="widgets.brease.Label" id="lblNegative1" top="68" left="264" zIndex="4" text="Negative" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpAuto" top="200" left="245" width="545" height="360" zIndex="2" text="Auto">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInSetPointPositive" top="12" left="183" width="105" zIndex="0" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="200" minValue="-10" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" value="4.5" />
+        <Widget xsi:type="widgets.brease.Label" id="lblPositive" top="12" left="28" width="105" zIndex="1" text="Positive" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInSetPointMeniscus" top="47" left="183" width="105" zIndex="2" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50" minValue="-100" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" value="10.5" />
+        <Widget xsi:type="widgets.brease.Label" id="lblMeniscus" top="47" left="28" width="105" zIndex="3" text="Meniscus" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInSetPointTemp" top="182" left="183" width="105" zIndex="4" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':4},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="99" minValue="15" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" value="1500" />
+        <Widget xsi:type="widgets.brease.Label" id="lblTemp" top="182" left="28" width="105" zIndex="5" text="Temperature" />
+        <Widget xsi:type="widgets.brease.Button" id="bntReducePositive" top="12" left="143" width="30" zIndex="6" image="Media/SVGsymbols/Edit/Substract_small.svg" />
+        <Widget xsi:type="widgets.brease.Button" id="bntIncreasePositive" top="12" left="298" width="30" zIndex="7" image="Media/SVGsymbols/Edit/Add_small.svg" />
+        <Widget xsi:type="widgets.brease.Button" id="bntReduceMeniscus" top="47" left="143" width="30" zIndex="8" image="Media/SVGsymbols/Edit/Substract_small.svg" />
+        <Widget xsi:type="widgets.brease.Button" id="bntIncreaseMeniscus" top="47" left="298" width="30" zIndex="9" image="Media/SVGsymbols/Edit/Add_small.svg" />
+        <Widget xsi:type="widgets.brease.Button" id="bntReduceTemp" top="182" left="143" width="30" zIndex="10" image="Media/SVGsymbols/Edit/Substract_small.svg" visible="false" />
+        <Widget xsi:type="widgets.brease.Button" id="bntIncreaseTemp" top="182" left="298" width="30" zIndex="11" image="Media/SVGsymbols/Edit/Add_small.svg" visible="false" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutPresPos" top="12" left="348" width="110" zIndex="12" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" unitTextAlign="right" />
+        <Widget xsi:type="widgets.brease.ImageList" id="imgListPressPosSensErr" top="17" left="458" width="20" height="20" zIndex="13" imageList="['GreenLamp01_On.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutPresNeg" top="82" left="348" width="110" zIndex="14" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" unitTextAlign="right" />
+        <Widget xsi:type="widgets.brease.ImageList" id="imgListPressNegSensErr" top="87" left="458" width="20" height="20" zIndex="15" imageList="['GreenLamp01_On.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutMeniscus" top="47" left="348" width="110" zIndex="16" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" unitTextAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutTemp" top="182" left="348" width="110" zIndex="17" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" unitTextAlign="right" />
+        <Widget xsi:type="widgets.brease.ImageList" id="imgListTempSensErr" top="187" left="458" width="20" height="20" zIndex="18" imageList="['GreenLamp01_On.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnStart" top="253" left="34" width="170" height="42" zIndex="19" mouseDownText="Running" text="Start" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnTest" top="253" left="254" width="180" height="42" zIndex="20" mouseDownText="Test Mode" text="Test Mode" />
+        <Widget xsi:type="widgets.brease.Label" id="lblNegative" top="82" left="253" width="105" zIndex="21" text="Negative" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpDutyCycle" top="30" left="815" width="245" height="545" zIndex="3" text="DutyCycle">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadialGauge" id="ggPos" top="38" left="84" width="80" height="80" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" majorTicks="0" fontSize="1px" style="Gauge1_to80_green" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="ggNeg" top="208" left="84" width="80" height="80" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" majorTicks="0" fontSize="1px" style="Gauge1_to80_green" />
+        <Widget xsi:type="widgets.brease.RadialGauge" id="ggTemp" top="378" left="84" width="80" height="80" zIndex="2" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" majorTicks="0" fontSize="1px" style="Gauge1_to80_green" />
+        <Widget xsi:type="widgets.brease.Label" id="lblPositive2" top="3" left="69" width="105" zIndex="3" text="Positive" textAlign="center" />
+        <Widget xsi:type="widgets.brease.Label" id="lblNegative2" top="173" left="69" width="105" zIndex="4" text="Negative" textAlign="center" />
+        <Widget xsi:type="widgets.brease.Label" id="lblTemp1" top="348" left="69" width="105" zIndex="5" text="Temperature" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutDutyCyclePos" top="123" left="69" width="110" zIndex="6" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutDutyCycleNeg" top="293" left="74" width="110" zIndex="7" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="numOutDutyCycleTemp" top="463" left="74" width="110" zIndex="8" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpConfig" top="30" left="245" width="545" height="145" zIndex="4" text="Config">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.DropDownBox" id="drpdInkType" top="13" left="154" width="176" zIndex="0" dataProvider="[{'value':'1','text':'Mineral'},{'value':'2','text':'Soluble Salts'},{'value':'4','text':'Water'},{'value':'8','text':'UV'}]" listWidth="190" maxVisibleEntries="9" selectedValue="1" />
+        <Widget xsi:type="widgets.brease.Label" id="lblInkType" top="13" left="14" width="126" zIndex="1" text="Ink Type" />
+        <Widget xsi:type="widgets.brease.DropDownBox" id="drpdPrintHeadType" top="58" left="154" width="176" zIndex="2" dataProvider="[{'value':'1','text':'Toshiba'},{'value':'3','text':'Xaar 1003'},{'value':'6','text':'Xaar 1003 GS40'},{'value':'7','text':'Xaar 2001'},{'value':'8','text':'Xaar 2001 GS40'},{'value':'5','text':'Toshiba XL'},{'value':'4','text':'Dimatics'},{'value':'2','text':'Seiko 1536'},{'value':'10','text':'Seiko 1536 L'},{'value':'9','text':'Seiko 1536 Water'},{'value':'12','text':'Seiko 1536 Water L'},{'value':'13','text':'Kyocera Katana'}]" listWidth="190" maxVisibleEntries="9" selectedValue="1" />
+        <Widget xsi:type="widgets.brease.Label" id="lblIPrintHeadType" top="58" left="14" width="126" zIndex="3" text="Print Head Type" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpPrintHeads" top="595" left="820" width="240" height="160" zIndex="5" text="PrintHeads">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="btnPowPrintHeads" top="40" left="12" width="213" height="42" zIndex="0" mouseDownText="Power Down" text="Power Up" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

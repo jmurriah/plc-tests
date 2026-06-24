@@ -1,0 +1,50 @@
+﻿FUNCTION_BLOCK MOVE_UINT
+{ VariableWorksheet := 'Variables' }
+﻿{GroupDefinition(0,'NewGroup')}
+
+VAR_INPUT {Group(0)}
+    {LINE(1)}
+    IN1 : INT;
+    {LINE(2)}
+    IN2 : INT;
+    {LINE(3)}
+    IN3 : INT;
+    {LINE(4)}
+    IN4 : INT;
+    {LINE(5)}
+    IN5 : INT;
+    {LINE(6)}
+    IN6 : INT;
+    {LINE(7)}
+    IN7 : INT;
+END_VAR
+
+VAR_OUTPUT {Group(0)}
+    {LINE(8)}
+    OUT : INT;
+END_VAR
+
+VAR {Group(0)}
+END_VAR
+
+{ CodeWorksheet := 'MOVE_UINT', Type := '.st' }
+﻿IF (IN1 > 16#C000) THEN
+    OUT := IN1 - 16#C000 + 1000;
+ELSIF (IN2 > 16#C000) THEN
+    OUT := IN2 - 16#C000 + 2000;  
+ELSIF (IN3 > 16#C000) THEN
+    OUT := IN3 - 16#C000 + 3000; 
+ELSIF (IN4 > 16#C000) THEN
+    OUT := IN4 - 16#C000 + 4000; 
+ELSIF (IN5 > 16#C000) THEN
+    OUT := IN5 - 16#C000 + 5000;  
+ELSIF (IN6 > 16#C000) THEN
+    OUT := IN6 - 16#C000 + 6000;    
+ELSIF (IN7 > 16#C000) THEN
+    OUT := IN7 - 16#C000 + 7000;   
+ELSE
+    OUT := 0;                   
+END_IF;
+
+
+END_FUNCTION_BLOCK

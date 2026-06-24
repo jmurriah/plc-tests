@@ -1,0 +1,6 @@
+VAR
+	JamDetectData : REFERENCE TO JamDetect_typ;
+	JamDataSim : REFERENCE TO JamDetectSim_typ;
+	usiIndexTest : USINT;
+	tonTestDelay : TON;
+END_VAR

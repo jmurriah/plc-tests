@@ -1,0 +1,3 @@
+VAR
+	iInksIndex : USINT;
+END_VAR

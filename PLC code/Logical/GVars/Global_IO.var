@@ -1,0 +1,206 @@
+VAR
+	X20CPUData : PlcCardMapping; (*Map: P4&EBRO*)
+	X1 : PlcCardMapping; (*Map: P4&EBRO*)
+	X2 : PlcCardMapping; (*Map: P4&EBRO*)
+	X3 : PlcCardMapping; (*Map: P4&EBRO*)
+	X20DOF322_001 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_001 : PlcCardMapping; (*Map: EBRO&S1400*)
+	X20DIF371_002 : PlcCardMapping; (*Map: P4&EBRO&S1400*)
+	X20DIF371_003 : PlcCardMapping; (*Map: P4&EBRO$S1400*)
+	X20DOF322_004 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_004 : PlcCardMapping; (*Map: EBRO*)
+	X20DIF371_005 : PlcCardMapping; (*Map: S1400*)
+	X20DIF371_006 : PlcCardMapping; (*Map: S1400*)
+	X20AI2636_005 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_005 : PlcCardMapping; (*Map: EBRO*)
+	X20SLX402_006 : PlcCardMapping; (*	X20SI2100_010 : PlcCardMapping; Map: P4*)
+	X20DOF322_006 : PlcCardMapping; (*Map: EBRO*)
+	X20AI4322_008 : PlcCardMapping; (*Map: EBRO*)
+	X20AI4322_102 : PlcCardMapping; (*Map: InkBox*)
+	X20AI4322_202 : PlcCardMapping; (*Map: InkBox*)
+	X20AI4322_302 : PlcCardMapping; (*Map: InkBox*)
+	X20AT2222_103 : PlcCardMapping; (*Map: InkBox*)
+	X20AT2222_203 : PlcCardMapping; (*Map: InkBox*)
+	X20AT2222_303 : PlcCardMapping; (*Map: InkBox*)
+	X20DOF322_104 : PlcCardMapping; (*Map: InkBox*)
+	X20DOF322_204 : PlcCardMapping; (*Map: InkBox*)
+	X20DOF322_304 : PlcCardMapping; (*Map: InkBox*)
+	X20AO4622_105 : PlcCardMapping; (*Map: InkBox*)
+	X20AO4622_205 : PlcCardMapping; (*Map: InkBox*)
+	X20AO4622_305 : PlcCardMapping; (*Map: InkBox*)
+	X20DI9372_008 : PlcCardMapping; (*Map: S1400*)
+	X20AO4622_009 : PlcCardMapping; (*Map: EBRO*)
+	X20DOF322_009 : PlcCardMapping; (*Map:S1400*)
+	X20DOF322_010 : PlcCardMapping; (*Map:S1400*)
+	X20AT4222_010 : PlcCardMapping; (*Map: EBRO*)
+	X20DOF322_011 : PlcCardMapping; (*Map:S1400*)
+	X20DOF322_012 : PlcCardMapping; (*Map:S1400*)
+	X20DOF322_013 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_015 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_016 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_111 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_112 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_113 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_114 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_018 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_019 : PlcCardMapping; (*Map:S1400*)
+	X20AO4622_017 : PlcCardMapping; (*Map:S1400*)
+	X20AO4622_018 : PlcCardMapping; (*Map:S1400*)
+	X20AO4622_019 : PlcCardMapping; (*Map:S1400*)
+	X20AO4622_020 : PlcCardMapping; (*Map:S1400*)
+	X20AT4222_022 : PlcCardMapping; (*Map:S1400*)
+	X20AT4222_023 : PlcCardMapping; (*Map:S1400*)
+	X20AI2636_024 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_025 : PlcCardMapping;
+	X20AI8321_024 : PlcCardMapping;
+	X20DIF371_024 : PlcCardMapping; (*Map:S1400*)
+	X20AI8321_026 : PlcCardMapping; (*Map:S1400*)
+	X20AT4222_027 : PlcCardMapping;
+	X20AT4222_028 : PlcCardMapping;
+	X20AT4222_029 : PlcCardMapping; (*Map:S1400*)
+	X20AT4222_030 : PlcCardMapping; (*Map:S1400*)
+	X20DIF371_030 : PlcCardMapping; (*Map: P4*)
+	X20AI2636_100 : PlcCardMapping;
+	X20DIF371_101 : PlcCardMapping; (*Map: P4 & Map: InkBox*)
+	X20DIF371_102 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_103 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_104 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_105 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_106 : PlcCardMapping; (*Map: P4*)
+	X20DI9372_107 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_107 : PlcCardMapping; (*Map: P4*)
+	X20DC4395_104 : PlcCardMapping; (*Map: P4*)
+	X20DC4395_105 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_106 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_107 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_108 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_109 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_110 : PlcCardMapping; (*Map: P4*)
+	X20AI8321_109 : PlcCardMapping; (*Map: P4*)
+	X20AI8321_110 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_111 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_112 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_113 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_114 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_115 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_116 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_117 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_114 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_115 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_116 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_117 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_118 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_119 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_120 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_121 : PlcCardMapping; (*Map: P4*)
+	X20CS1030_150 : PlcCardMapping; (*Map: P4*)
+	X20CS1030_151 : PlcCardMapping; (*Map: P4*)
+	X20CS1030_121 : PlcCardMapping; (*Map: P4*)
+	X20CS1030_180 : PlcCardMapping; (*Map: P4*)
+	X20CS1030_181 : PlcCardMapping; (*Map: P4*)
+	X20CS1030_162 : PlcCardMapping; (*Map: P4*)
+	X20PS3300_114 : PlcCardMapping; (*Map: P4*)
+	Pdc_X20DOF322_024 : PlcCardMapping;
+	Pdc_X20DOF322_025 : PlcCardMapping;
+	Pdc_X20DIF371_023 : PlcCardMapping;
+	X20PS3300_106 : PlcCardMapping; (*Map: P4*)
+	X20PS3300_020 : PlcCardMapping;
+	X20PS3300_008 : PlcCardMapping;
+	X20PS3300_157 : PlcCardMapping;
+	X20PS3300_150 : PlcCardMapping;
+	X20PS3300_115 : PlcCardMapping;
+	X20PS3300_107 : PlcCardMapping;
+	X20PS3300_152 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_151 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_152 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_153 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_154 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_155 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_156 : PlcCardMapping; (*Map: P4*)
+	X20AI8221_156 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_157 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_158 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_159 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_160 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_161 : PlcCardMapping; (*Map: P4*)
+	X20SI8110_117 : PlcCardMapping; (*Map: P4*)
+	X20SO2110_118 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_201 : PlcCardMapping; (*Map: P4 & InkBox*)
+	X20DIF371_202 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_203 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_301 : PlcCardMapping; (*Map: InkBox*)
+	X20DC4395_204 : PlcCardMapping; (*Map: P4*)
+	X20DC4395_205 : PlcCardMapping; (*Map: P4*)
+	X20DIF371_180 : PlcCardMapping; (*Map: P4*)
+	X20AI8321_181 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_205 : PlcCardMapping; (*Map: Dryer*)
+	X20DOF322_206 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_207 : PlcCardMapping; (*Map: P4*)
+	X20DOF322_208 : PlcCardMapping; (*Map: P4*)
+	X20AI8321_207 : PlcCardMapping; (*Map: P4*)
+	X20AI8321_209 : PlcCardMapping; (*Map: P4*)
+	X20AI8321_210 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_208 : PlcCardMapping; (*Map: Dryer*)
+	X20AO4622_211 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_212 : PlcCardMapping; (*Map: P4*)
+	X20AO4622_213 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_209 : PlcCardMapping; (*Map: Dryer*)
+	X20AT4222_214 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_215 : PlcCardMapping; (*Map: P4*)
+	X20AT4222_216 : PlcCardMapping; (*Map: P4*)
+	X20SI8110_217 : PlcCardMapping; (*Map: P4*)
+	X20SO2110_218 : PlcCardMapping; (*Map: P4*)
+	Reserve01 : PlcCardMapping;
+	SiUnitBK1 : StSiUnit;
+	SiUnitBK2 : StSiUnit;
+	SiUnitPwrLnkBK1 : StSiUnitPwrLnk;
+	Pdc_X20DIF371_001 : PlcCardMapping;
+	Pdc_X20DIF371_002 : PlcCardMapping;
+	Pdc_X20DIF371_003 : PlcCardMapping;
+	Pdc_X20DIF371_004 : PlcCardMapping;
+	Pdc_X20DIF371_005 : PlcCardMapping;
+	Pdc_X20DIF371_006 : PlcCardMapping;
+	Pdc_X20DIF371_007 : PlcCardMapping;
+	Pdc_X20DIF371_009 : PlcCardMapping;
+	Pdc_X20DIF371_030 : PlcCardMapping;
+	Pdc_X20AI2636_050 : PlcCardMapping;
+	Pdc_X20DIF371_060 : PlcCardMapping;
+	Pdc_X20DIF371_070 : PlcCardMapping;
+	X20PS3300_007 : PlcCardMapping;
+	Pdc_X20DIF371_024 : PlcCardMapping;
+	Pdc_X20DIF371_022 : PlcCardMapping;
+	Pdc_X20DIF371_020 : PlcCardMapping;
+	Pdc_X20DIF371_021 : PlcCardMapping;
+	X20PS3300_006 : PlcCardMapping;
+	X20PS3300_022 : PlcCardMapping;
+	Pdc_X20DOF322_023 : PlcCardMapping;
+	Pdc_X20DIF371_1 : PlcCardMapping;
+	Pdc_X20DIF371_2 : PlcCardMapping;
+	Pdc_X20DIF371_3 : PlcCardMapping;
+	Pdc_X20DOF322_008 : PlcCardMapping;
+	Pdc_X20DOF322_009 : PlcCardMapping;
+	Pdc_X20DOF322_010 : PlcCardMapping;
+	Pdc_X20DOF322_1 : PlcCardMapping;
+	Pdc_X20DIF371_050 : PlcCardMapping;
+	Pdc_X20DIF371_040 : PlcCardMapping;
+	Pdc_X20DOF322_051 : PlcCardMapping;
+	Pdc_X20DOF322_011 : PlcCardMapping;
+	Pdc_X20DOF322_007 : PlcCardMapping;
+	Pdc_X20DOF322_005 : PlcCardMapping;
+	X20AO4622_119 : PlcCardMapping;
+	X20AO4622_118 : PlcCardMapping;
+	X20IF1072_SS1 : PlcCardMapping;
+	X20IF1072_SS2 : PlcCardMapping;
+	X20IF1072_SS3 : PlcCardMapping;
+	X20SM1436_007 : PlcCardMapping;
+	X20SM1436_008 : PlcCardMapping;
+	X20SM1436_011 : PlcCardMapping;
+	X20SM1436_012 : PlcCardMapping;
+	X20SM1436_111 : PlcCardMapping;
+	X20SM1436_112 : PlcCardMapping;
+	X20PS3300_014 : PlcCardMapping;
+	X20PS3300_021 : PlcCardMapping;
+	X20BC0083 : PlcCardMapping;
+	X20PS9400 : PlcCardMapping;
+	FakeBoolInput : BOOL;
+END_VAR

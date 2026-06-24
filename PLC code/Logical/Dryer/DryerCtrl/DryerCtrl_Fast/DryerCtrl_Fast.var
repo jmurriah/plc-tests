@@ -1,0 +1,89 @@
+VAR
+	xRunBeltNormal : BOOL;
+	xRunBeltLab : BOOL;
+	xStopBeltWhileCleaning : BOOL;
+	xSignalsStopBeltAuto : BOOL;
+	xUserRaisesBlocks : BOOL;
+	xOrdersRunBeltProduction : BOOL;
+	xRunBeltByPass : BOOL;
+	xAlarmsStopBeltRun : BOOL;
+	enPrinterState : enumEFI_GenMachineState := PRINTERGEN_MANUAL; (*PRINTERGEN_ZERO*)
+	enPrinterStatesInAuto : enumEFI_MachineState := PRINTERGEN_ZERO; (*PRINTERGEN_ZERO*)
+	rsRunBeltOrderManual : RS;
+	srPauseMachine : {REDUND_UNREPLICABLE} RS;
+	stDryerAlarmsSummaryReseted : stEFI_AlarmSummary; (*stDingAlarmsReseted : stPhotoCellsAlarms;*)
+	stDryerAlarmsReseted : Dryer_Alarms;
+	tonStartButton : TON;
+	ton_ZeroMode : TON;
+	tpAlrBentMedia : TP;
+	iIndexBlock : USINT;
+	iReasonOut : UDINT;
+	iReasonStopGen : UDINT;
+	iReasonCritical : UDINT;
+	stEventLogState : EventLog_typ;
+	stEventLogOutAuto : EventLog_typ;
+	stEventLog : EventLog_typ;
+	stEventLogStopDrying : EventLog_typ;
+	stEventLogCritical : EventLog_typ;
+	g_xRunBeltOrderManual : BOOL; (*Belt order in manual filtered*)
+	g_xRunBeltOrderAuto : BOOL; (*Belt order in auto*)
+	reasonAnyWarningGen : UDINT;
+	xEnabledAlarmPDSensor1 : BOOL;
+	xEnabledAlarmPDSensor2 : BOOL;
+	usiIndex : USINT;
+	trgMountedTile : RF_TRIG;
+	AutoLocationPrevious : MachineAutoLocation_enum;
+	AutoLocationReseted : MachineAutoLocation_enum := MACHLOC_UNDEFINED;
+	DryerCommandsReseted : {REDUND_UNREPLICABLE} Dryer_commands_Auto; (*Local parameters*)
+	DryerSignalsAuto : REFERENCE TO DryerRemoteData; (*Local parameters*)
+	DryerParams : REFERENCE TO Dryer_SwParameters; (*Local parameters*)
+	iLastReasonStop : USINT;
+	iReasonStop : USINT;
+	iReasonSetPause : USINT;
+	iReasonResetPause : USINT;
+	DryerStatus : DryerMachineStatus_enum;
+	DryerStatus_copy : DryerMachineStatus_enum;
+	iReasonReadyToDry : USINT;
+	xStartedAutoMan : BOOL;
+	InputsSwReseted : Dryer_Inputs_Sw;
+	tonMovingBeltAfterStop : TON;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 25;
+END_VAR
+VAR
+	StateHistory : ARRAY[0..iHistoryLines] OF DryerMachineStatus_enum;
+	iIndexHistory : USINT;
+	xNirReady : BOOL;
+	xArcLampReady : BOOL;
+	xAllDryersReady : BOOL;
+	xNirStopped : BOOL;
+	xArcLampStopped : BOOL;
+	xAllDryersStopped : BOOL;
+	xNirDrying : BOOL;
+	xArcLampDrying : BOOL;
+	xAllDryersDrying : BOOL;
+	xChangeState : BOOL;
+	iReasonSafetyEStop : UINT;
+	tonStop : TON;
+	xAnyDeviceEnabled : BOOL;
+	iReasonJam : UINT;
+	iReasonNotEnterAuto : UINT;
+	xEdgeStop : BOOL;
+	xOrderToCapReceived : BOOL;
+	xOrderToPrintReceived : BOOL;
+	iReasonCap : UINT;
+	iReasonPrint : UINT;
+	lastReasonCap : UINT;
+	iBlockExecutionsOrder : UDINT;
+	lastReasonPrint : UINT;
+	iBlockDelay : UDINT;
+	gDryerLocalSignalsReseted : DryerRemoteData;
+	iReasonStopDrying : UINT;
+	tonPreparingEmptyBelt : TON;
+	iReasonKeepBlowersOn : UINT;
+	xKeepBlowersOn : BOOL; (*To keep blowers running due to certain conditions*)
+	xPDCarriageSignalL1 : REFERENCE TO BOOL; (*Use just in MachineInputs*)
+	xPDCarriageSignalL2 : REFERENCE TO BOOL; (*Use just in MachineInputs*)
+	ton_EmptyBelt : TON;
+END_VAR

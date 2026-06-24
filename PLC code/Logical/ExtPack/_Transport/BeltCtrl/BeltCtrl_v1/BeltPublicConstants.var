@@ -1,0 +1,9 @@
+VAR CONSTANT
+	MIN_DURATION_CLEANING_BELT : TIME := T#10S; (*Min time for clean belt duration*)
+	MIN_TIME_FOR_CLEANING_TOP_BELT : TIME := T#1M; (*Min time for belt cleaning*)
+	MIN_TIME_FOR_CLEANING_BELT : TIME := T#1M; (*Min time for belt cleaning*)
+	MIN_TILES_FOR_CLEANING_BELT : UINT := 1; (*min nr tile for clean belt*)
+	MIN_DURATION_CLEANING_BELT_TOP : TIME := T#10S; (*Min time for clean belt duration*)
+	MIN_TIME_FOR_CLEANING_BELT_TOP : TIME := T#1M; (*Min time for belt cleaning*)
+	MIN_TILES_FOR_CLEANING_BELT_TOP : UINT := 1; (*min nr tile for clean belt*)
+END_VAR

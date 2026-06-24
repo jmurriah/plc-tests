@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="P5_S1400_content_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.status.xInstalled" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="Button28" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.status.xInstalled" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="Button29" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.St.Blocks.xAnyTankHeaterEnabled" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="Button31" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.St.Blocks.xAnyTankHeaterEnabled" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="Button30" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::mappHMI:xShowBlueArrow1" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="BasicSlider1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::mappHMI:PlcCardSelected_Full_L" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="BasicSlider1" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::mappHMI:PlcCardSelected_Full_R" attribute="value" />
+<Target xsi:type="brease" contentRefId="P5_S1400_content" widgetRefId="BasicSlider2" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

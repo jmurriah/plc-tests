@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">EventLog_v1</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="ArEventLog" />
+    <Dependency ObjectName="AsIecCon" />
+    <Dependency ObjectName="AsBrStr" />
+  </Dependencies>
+</Package>

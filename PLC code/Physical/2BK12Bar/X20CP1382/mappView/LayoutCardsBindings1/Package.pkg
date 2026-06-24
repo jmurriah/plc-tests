@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">P4_PDC_content.binding</Object>
+    <Object Type="File">P4_Block1_content.binding</Object>
+    <Object Type="File">P4_Block2_content.binding</Object>
+  </Objects>
+</Package>

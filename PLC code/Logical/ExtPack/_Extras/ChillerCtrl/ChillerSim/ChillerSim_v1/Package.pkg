@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">ChillerSim</Object>
+    <Object Type="Program" Language="IEC">InitChillerSim</Object>
+    <Object Type="File" Description="Local data types">ChillerSim.typ</Object>
+    <Object Type="File" Description="Local variables" Private="true">ChillerSimGen.var</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testconfiguration>
+<tests />
+<config-def id="AS_Test_Configuration">
+<test timeout="60" name="PrepareMachine" />
+<test timeout="260" name="BeltTests" />
+<test timeout="280" name="ConsentTests" />
+<test timeout="280" name="CleaningTests" />
+<test timeout="60" name="TrVacuumTests" />
+<test timeout="280" name="BlockTests" />
+<test timeout="280" name="LineTests" /></config-def>
+<settings id="AS_Test_Setting" timeout="60" communication-protocol="http" port="82" host="http://127.0.0.1" />
+<run StartTestsAfterTransfer="false" setting="AS_Test_Setting" configuration="AS_Test_Configuration" />
+</testconfiguration>

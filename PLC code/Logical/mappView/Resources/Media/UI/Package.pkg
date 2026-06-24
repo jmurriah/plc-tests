@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">maintenance.svg</Object>
+    <Object Type="File">maintenance-dis.svg</Object>
+    <Object Type="File">error.svg</Object>
+    <Object Type="File">error.20.svg</Object>
+    <Object Type="File">error-dis.svg</Object>
+    <Object Type="File">idle.svg</Object>
+    <Object Type="File">idle-dis.svg</Object>
+    <Object Type="File">mute.svg</Object>
+    <Object Type="File">printing.svg</Object>
+    <Object Type="File">printing-dis.svg</Object>
+    <Object Type="File">printing-sel.svg</Object>
+    <Object Type="File">reset-all.svg</Object>
+    <Object Type="File">warning.svg</Object>
+    <Object Type="File">warning.20.svg</Object>
+    <Object Type="File">warning-dis.svg</Object>
+    <Object Type="File">home-dis.svg</Object>
+    <Object Type="File">home-sel.svg</Object>
+    <Object Type="File">fan.svg</Object>
+    <Object Type="File">movedown-def.svg</Object>
+    <Object Type="File">moveup-def.svg</Object>
+    <Object Type="File">start-def.svg</Object>
+    <Object Type="File">stop-dif.svg</Object>
+    <Object Type="File">hw-check.svg</Object>
+    <Object Type="File">hw-check-dis.svg</Object>
+    <Object Type="File">digi-increase.svg</Object>
+    <Object Type="File">digi-increase-sel.svg</Object>
+    <Object Type="File">wind.svg</Object>
+    <Object Type="File">wind40.svg</Object>
+    <Object Type="Package">size32</Object>
+    <Object Type="File">error-stop-sel.svg</Object>
+    <Object Type="File">ref-def.svg</Object>
+  </Objects>
+</Package>

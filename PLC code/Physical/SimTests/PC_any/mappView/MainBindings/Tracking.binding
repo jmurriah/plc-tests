@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="Tracking_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[0]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia0" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia2" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[3]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia3" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[4]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia4" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[5]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia5" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[6]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia6" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[7]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia7" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[8]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia8" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[9]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia9" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[10]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia10" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[11]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia11" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[12]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia12" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[13]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia13" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[14]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia14" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[15]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia15" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[16]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia16" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[17]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia17" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[18]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia18" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[19]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia19" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[20]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia20" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[21]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia21" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[22]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia22" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[23]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia23" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[24]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia24" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[25]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia25" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[26]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia26" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[27]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia27" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[28]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia28" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[29]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia29" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[30]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia30" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[31]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia31" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[32]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia32" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[33]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia33" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[34]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia34" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[35]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia35" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[36]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia36" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[37]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia37" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[38]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia38" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[39]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia39" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[40]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia40" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[41]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia41" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[42]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia42" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[43]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia43" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[44]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia44" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[45]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia45" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[46]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia46" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[47]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia47" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[48]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia48" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[49]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia49" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[50]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia50" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[51]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia51" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[52]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia52" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[53]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia53" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[54]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia54" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[55]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia55" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[56]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia56" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[57]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia57" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[58]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia58" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[59]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia59" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[60]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia60" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[61]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia61" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[62]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia62" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[63]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia63" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[64]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia64" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[65]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia65" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[66]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia66" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[67]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia67" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[68]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia68" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[69]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia69" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[70]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia70" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[71]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia71" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[72]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia72" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[73]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia73" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[74]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia74" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[75]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia75" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[76]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia76" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[77]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia77" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[78]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia78" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[79]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia79" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[80]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia80" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[81]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia81" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[82]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia82" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[83]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia83" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[84]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia84" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[85]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia85" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[86]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia86" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[87]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia87" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[88]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia88" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[89]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia89" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[90]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia90" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[91]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia91" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[92]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia92" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[93]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia93" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[94]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia94" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[95]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia95" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[96]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia96" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[97]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia97" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[98]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia98" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaPresent[99]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnMedia99" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[0]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed0" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed2" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[3]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed3" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[4]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed4" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[5]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed5" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[6]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed6" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[7]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed7" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[8]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed8" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[9]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed9" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[10]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed10" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[11]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed11" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[12]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed12" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[13]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed13" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[14]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed14" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[15]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed15" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[16]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed16" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[17]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed17" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[18]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed18" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[19]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed19" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[20]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed20" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[21]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed21" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[22]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed22" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[23]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed23" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[24]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed24" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[25]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed25" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[26]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed26" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[27]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed27" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[28]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed28" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[29]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed29" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[30]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed30" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[31]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed31" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[32]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed32" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[33]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed33" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[34]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed34" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[35]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed35" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[36]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed36" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[37]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed37" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[38]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed38" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[39]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed39" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[40]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed40" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[41]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed41" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[42]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed42" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[43]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed43" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[44]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed44" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[45]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed45" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[46]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed46" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[47]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed47" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[48]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed48" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[49]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed49" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[50]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed50" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[51]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed51" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[52]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed52" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[53]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed53" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[54]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed54" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[55]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed55" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[56]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed56" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[57]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed57" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[58]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed58" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[59]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed59" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[60]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed60" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[61]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed61" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[62]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed62" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[63]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed63" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[64]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed64" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[65]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed65" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[66]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed66" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[67]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed67" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[68]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed68" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[69]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed69" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[70]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed70" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[71]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed71" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[72]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed72" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[73]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed73" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[74]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed74" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[75]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed75" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[76]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed76" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[77]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed77" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[78]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed78" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[79]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed79" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[80]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed80" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[81]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed81" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[82]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed82" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[83]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed83" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[84]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed84" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[85]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed85" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[86]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed86" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[87]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed87" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[88]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed88" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[89]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed89" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[90]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed90" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[91]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed91" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[92]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed92" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[93]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed93" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[94]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed94" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[95]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed95" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[96]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed96" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[97]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed97" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[98]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed98" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:MediaCuring[99]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLed99" attribute="visible"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

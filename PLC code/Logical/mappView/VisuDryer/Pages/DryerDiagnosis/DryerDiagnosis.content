@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DryerDiagnosis_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lblTitle" top="0" left="0" width="1080" zIndex="2" text="$IAT/Page.Diagnosis" backColor="rgba(192, 192, 192, 1)" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.FlexBox" id="FlexBox1" top="25" left="0" width="470" height="445" zIndex="3" alignment="horizontal">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem1" zIndex="0" text="201">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.InputCardWidget" id="inCard201" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem2" zIndex="1" text="202">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.InputCardWidget" id="inCard202" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem3" zIndex="2" text="203">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.InputCardWidget" id="inCard203" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem4" zIndex="3" text="204">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="0" width="46" height="374" zIndex="0" image="Media/EFI/BrCards/X20DIF371.jpg" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem5" zIndex="4" text="205">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.OutputCardWidget" id="outCard205" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem6" zIndex="5" text="206">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.OutputCardWidget" id="outCard206" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem7" zIndex="6" text="207">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.AnalogInput08CardWidget" id="anInCard207" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem8" zIndex="7" text="208">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.AnalogOutput04CardWidget" id="AnalogOutputCardWidget1" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem9" zIndex="8" text="209">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TempInputCardWidget" id="TempInputCardWidget1" top="0" left="0" zIndex="0" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.FlexBox" id="flexBoxTexts" top="30" left="650" width="420" height="755" zIndex="15">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA201" zIndex="0" text="A201" margin="0px 0px 0px 0px">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA201" top="0" left="0" zIndex="0" TextInput01="$IAT/Inputs.LaserIn" TextInput02="$IAT/Inputs.Stop" TextInput03="$IAT/Inputs.Reset" TextInput04="$IAT/Inputs.FanBreakOk" TextInput05="$IAT/Inputs.FanBreak80" TextInput06="$IAT/Inputs.SafetyKey" TextInput07="$IAT/Inputs.ArcLampRef" TextInput08="$IAT/Inputs.ArcLampCorrLaser" TextInput09="$IAT/Inputs.24VFansPsuOk" TextInput10="$IAT/Inputs.24VMainPsuOk" TextInput13="$IAT/Inputs.MachConf1" TextInput14="$IAT/Inputs.MachConf2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA202" zIndex="1" text="A202">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA202" top="0" left="0" zIndex="0" TextInput01="$IAT/Inputs.MountedMedia" TextInput02="$IAT/Inputs.NirProcess" TextInput03="$IAT/Inputs.NirError" TextInput05="$IAT/Inputs.ArclLampReady" TextInput06="$IAT/Inputs.ArclLampFault" TextInput13="$IAT/Inputs.DetectionMediaL1" TextInput14="$IAT/Inputs.DetectionMediaL2" TextInput15="$IAT/Dryer.Alarm.JamMechCrossNIR1" TextInput16="$IAT/Dryer.Alarm.JamMechCrossNIR2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA203" zIndex="2" text="A203">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="TextArray3" top="0" left="0" zIndex="0" TextInput01="$IAT/Inputs.LockNir1Fan1" TextInput02="$IAT/Inputs.LockNir1Fan2" TextInput03="$IAT/Inputs.LockNir1Fan3" TextInput04="$IAT/Inputs.LockNir1Fan4" TextInput05="$IAT/Inputs.LockNir2Fan1" TextInput06="$IAT/Inputs.LockNir2Fan2" TextInput07="$IAT/Inputs.LockNir2Fan3" TextInput08="$IAT/Inputs.LockNir2Fan4" TextInput09="$IAT/Inputs.JamNir1Cross" TextInput10="$IAT/Inputs.JamNir1Front" TextInput11="$IAT/Inputs.JamNir1Rear" TextInput12="$IAT/Inputs.JamNir2Cross" TextInput13="$IAT/Inputs.JamNir2Front" TextInput14="$IAT/Inputs.JamNir2Rear" TextInput15="$IAT/Inputs.ArcLampJam" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA205" zIndex="3" text="A205">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA205" top="0" left="0" zIndex="0" TextInput01="$IAT/Outputs.NirOn" TextInput02="$IAT/Outputs.NirProcess" TextInput03="$IAT/Outputs.NirWebBreak" TextInput04="$IAT/Outpus.ArcLampImpression" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA206" zIndex="4" text="A206">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray16Widget" id="textArrayA206" top="0" left="0" zIndex="0" TextInput01="$IAT/Outputs.LockDoorFront" TextInput02="$IAT/Outputs.LockDoorBack" TextInput03="$IAT/Outputs.ResetFanBreakers" TextInput04="$IAT/Outputs.ResetHub" TextInput05="$IAT/Outputs.ResetSwitch" TextInput06="$IAT/Outputs.CriticalError" TextInput11="$IAT/Outpus.AlarmSound" TextInput12="$IAT/Outpus.YellowLight" TextInput13="$IAT/Outpus.BlueLight" TextInput14="$IAT/Outpus.RedLight" TextInput15="$IAT/Outpus.WhiteLight" TextInput16="$IAT/Outpus.ResetBlueLight" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA207" zIndex="5" text="A207">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray08Widget" id="textArrayA207" top="0" left="0" zIndex="0" TextInput01="$IAT/AnInputs.BoardTempIn" TextInput02="$IAT/AnInputs.BoardTempOut" TextInput03="$IAT/AnInputs.BeltTempOut" TextInput04="$IAT/AnInputs.BeltTempOut" TextInput05="$IAT/AnInputs.Humidity" TextInput06="$IAT/AnInputs.VacuumPressure" TextInput07="$IAT/AnInputs.VacuumTemp2" TextInput08="$IAT/AnInputs.VacuumTemp1" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA208" zIndex="6" sizeFactor="0.8" text="A208">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray08Widget" id="textArrayA208" top="0" left="0" zIndex="0" TextInput01="$IAT/AnOuts.SpeedNir" TextInput02="$IAT/AnOuts.SpeedArcLamp" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="flxA209" zIndex="7" sizeFactor="0.8" text="A209">
+          <Widgets>
+            <Widget xsi:type="widgets.EFIWidgetLib.TextArray08Widget" id="textArrayA209" top="0" left="0" zIndex="0" TextInput01="$IAT/TempInputs.SurfaceNir1" TextInput02="$IAT/TempInputs.SurfaceNir2" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gboxReset" top="470" left="45" width="190" height="180" zIndex="16" text="$IAT/Dryer.Diag.CommsDevices">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.PushButton" id="btnResetSwitch" top="5" left="9" width="166" zIndex="0" text="$IAT/Dryer.Diag.ResetSwitch" permissionOperate="['HMI']" />
+        <Widget xsi:type="widgets.brease.PushButton" id="btnResetHub" top="50" left="9" width="166" zIndex="1" text="$IAT/Dryer.Diag.ResetHub" permissionOperate="['HMI']" />
+        <Widget xsi:type="widgets.brease.PushButton" id="btnResetFanBreaker" top="98" left="9" width="166" zIndex="2" text="$IAT/Dryer.Diag.ResetFanBreaker" permissionOperate="['HMI']" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

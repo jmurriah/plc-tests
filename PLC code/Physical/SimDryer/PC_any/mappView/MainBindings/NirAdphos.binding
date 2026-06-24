@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="NirAdphos_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Pend" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInPowerEnd" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Pstart" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInPowerStart" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Vstart" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInSpeedStart" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Vend" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInSpeedEnd" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.AdjPos" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInNirPosition" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rPowerSetPoint" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoSetPointPower" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[1].EnableMod" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableLamp1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerLocalStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableLamp1" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[1].EnableMod" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imlEnabledLamp1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].error" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imglModuleError1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].Power" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoPower1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rSurfaceTempModule[1]" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirSurfaceTemp1" attribute="node"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[1].Adjust" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInNirPowerLamp1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].AirPressIn" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirAirPresIn1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].SpeedIn" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirSpeedIn1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].AirFilter" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirFilter1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].SuppAirRunning" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imglBlowerIn1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].SpeedOut" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirSpeedOut1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].AirPressOut" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirAirPresOut1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].ExtAirRunning" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imglBlowerOut1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[2].EnableMod" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableLamp2" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerLocalStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableLamp2" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[2].EnableMod" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imlEnabledLamp2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].error" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imglModuleError2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].Power" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoPower2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rSurfaceTempModule[2]" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirSurfaceTemp2" attribute="node"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[2].Adjust" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numInNirPowerLamp2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].AirPressIn" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirAirPresIn2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].SpeedIn" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirSpeedIn2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].AirFilter" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirFilter2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].SuppAirRunning" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imglBlowerIn2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].SpeedOut" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirSpeedOut2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].AirPressOut" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutNirAirPresOut2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].ExtAirRunning" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imglBlowerOut2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.xEnabledNir" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="recEnableNir" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.xEnableNir" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableNir" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerLocalStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableNir" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Version.Software" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoSoftware" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.xEnableDryDocWidth" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableDryDocWidth" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xRemote" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableDryDocWidth" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.WebWidth" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutDryWidth" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Version.Hardware" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoHardware" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Version.Interface" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoInterface" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Version.HMI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numoHMI" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rAirBlowerInput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutBlowerInTemp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rAirBlowerOutput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutBlowerOutTemp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xAirBlowerInputSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imgListAirBlowerInSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xAirBlowerOutputSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imgListAirBlowerOutSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBelt" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutBeltTemp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBeltSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imgListBeltTempSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBoardIn" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutBoardTempIn" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBoardOut" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="numOutBoardTempOut" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBoardInSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imgListBoardTempInSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBoardOutSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imgListBoardTempOutSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="drpdNirState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].NirStatus" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="drpdNirStatusModule1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].NirStatus" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="drpdNirStatusModule2" attribute="selectedIndex"/>
+		</Binding>
+		<!--		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[0]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower_0" attribute="value"/>
+		</Binding>-->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[3]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_3" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[4]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_4" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[5]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_5" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[6]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_6" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[7]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_7" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[8]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_8" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[9]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_9" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[10]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_10" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[11]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_11" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[12]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_12" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[13]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_13" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[14]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_14" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[15]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_15" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[16]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_16" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[17]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_17" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[18]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_18" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[19]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_19" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[20]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_20" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[21]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_21" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[22]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_22" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[23]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_23" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[24]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_24" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[25]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_25" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[26]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_26" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[27]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_27" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[28]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_28" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[29]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_29" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[30]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_30" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[31]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_31" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[32]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_32" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[33]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_33" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[34]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_34" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[35]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_35" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[36]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_36" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[37]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_37" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[38]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_38" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[39]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_39" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[40]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_40" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[41]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_41" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[42]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_42" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[43]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_43" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[44]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_44" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[45]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_45" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[46]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_46" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[47]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_47" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[1].Intensity[48]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower1_48" attribute="value"/>
+		</Binding>
+		<!-- SPLITTING FILE. NOW DATA FOR SECOND DRYER -->
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[3]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_3" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[4]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_4" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[5]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_5" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[6]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_6" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[7]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_7" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[8]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_8" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[9]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_9" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[10]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_10" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[11]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_11" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[12]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_12" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[13]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_13" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[14]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_14" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[15]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_15" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[16]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_16" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[17]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_17" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[18]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_18" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[19]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_19" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[20]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_20" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[21]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_21" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[22]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_22" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[23]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_23" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[24]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_24" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[25]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_25" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[26]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_26" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[27]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_27" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[28]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_28" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[29]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_29" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[30]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_30" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[31]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_31" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[32]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_32" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[33]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_33" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[34]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_34" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[35]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_35" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[36]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_36" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[37]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_37" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[38]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_38" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[39]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_39" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[40]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_40" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[41]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_41" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[42]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_42" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[43]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_43" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[44]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_44" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[45]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_45" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[46]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_46" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[47]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_47" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.DDC[2].Intensity[48]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="sliderPower2_48" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.xEnableDDC" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnEnableDDC" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBasicDetectMedia.Inputs.xMediaPresentL1" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imgMediaL1" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.DDC.xEnableDDC" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imlEnabledDDC" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.xLocalDisableDDC" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="imlDisableDDC" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.xLocalDisableDDC" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerNIR_Content" widgetRefId="btnLocalDisableDDC" attribute="value"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

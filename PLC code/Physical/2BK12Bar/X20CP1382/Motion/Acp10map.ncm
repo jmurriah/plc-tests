@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<NcMapping NcSwId="Acp10" DisabledNodesAreHidden="False">
+  <NcObject Name="gAxis01" ModuleId="8V1045.00-2_BELT" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="BeltI" AcoposParameter="BeltA" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1045.00-2_ncV_AXIS1" ModuleId="8V1045.00-2_BELT" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis21" ModuleId="8V1016.50-2_BK1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="BK1_i" AcoposParameter="BK1_a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis121" ModuleId="8V1016.50-2_BK2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="BK1_i" AcoposParameter="BK1_a" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1016.50-2_ncV_AXIS1" ModuleId="8V1016.50-2_BK2" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="8V1016.50-2_ncV_AXIS1" ModuleId="8V1016.50-2_BK1" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxisStp01" ModuleId="X20SM1436_007" ModuleAddress="SDC_IF1.ST1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="SM_i" AcoposParameter="SM_a" AdditionalData="SDC_AX_HwPv=&quot;gAxisStepper[1].HW&quot;" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxisStp02" ModuleId="X20SM1436_008" ModuleAddress="SDC_IF1.ST2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="SM_i" AcoposParameter="SM_a" AdditionalData="SDC_AX_HwPv=&quot;gAxisStepper[2].HW&quot;" Disabled="FALSE" ModuleDisabled="FALSE" />
+</NcMapping>

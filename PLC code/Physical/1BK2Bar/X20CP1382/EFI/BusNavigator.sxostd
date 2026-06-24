@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osdd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ethernet-powerlink.org/osdd osdd.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" Version="1.6" xmlns="http://www.ethernet-powerlink.org/osdd">
+  <Topology SafetyDomain="1">
+    <GeneratorDescription Name="AutomationStudio" Version="4.3.8.58 SP" LanguageID="1">
+      <Info Name="ARVersion" Value="43411" />
+      <Info Name="SafetyRelease" Value="1.10" />
+      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.127.10 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000" />
+    </GeneratorDescription>
+    <SafetyConfigurationManager TransportSAddr="1">
+      <DeviceDescription Module="X20SL81XX_110.SCM" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SL81XX_SCM_R1104.xosdd]]></DeviceDescription>
+      <NodeDescription />
+    </SafetyConfigurationManager>
+    <SafetyNode SAddr="1">
+      <DeviceDescription Module="X20SL8100_110.MainSN" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SL8100.xosdd]]></DeviceDescription>
+      <DesignConfiguration>
+        <ModuleSettings>
+          <SettingsGroup id="DataFromAs">
+            <Setting id="SafeDesigner" Value="4.3.4.4" />
+          </SettingsGroup>
+        </ModuleSettings>
+      </DesignConfiguration>
+      <NodeDescription>
+        <Classification Type="PLC" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Info Name="Interface" Value="IF3.ST10" />
+        <Info Name="HWC_Revision" Value="1.10.7.0" />
+        <Info Name="HWC_LastEdit" Value="17/10/2018 10:18:06" />
+        <Info Name="AS_Name" Value="X20SL8100" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
+        <Info Name="ProjectSL" Value="1" />
+        <Info Name="Description-de" Value="X20 SafeLOGIC, POWERLINK V2, 24V, univ." />
+        <Info Name="Description-en" Value="X20 SafeLOGIC, POWERLINK V2, 24V, univ." />
+      </NodeDescription>
+      <ChannelConfiguration>
+        <DataTransport>
+          <GenericTransport Name="DataExFromCpu" Direction="Input" OctetSize="132" IsSafe="false" />
+          <GenericTransport Name="DataExToCpu" Direction="Output" OctetSize="132" IsSafe="false" />
+        </DataTransport>
+        <ChannelGroup id="ToCPU_BOOL">
+          <Channel id="BOOL0">
+            <DataValue Type="Boolean">
+              <Transport Name="DataExToCpu" Index="0x00" />
+              <SODPosition Index="0x0" SubIndex="0x00" />
+            </DataValue>
+            <Repetition RangeMax="8" NrOfDigits="2" />
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="ToCPU_INT">
+          <Channel id="INT0">
+            <DataValue Type="Int16">
+              <Transport Name="DataExToCpu" Index="0x00" />
+              <SODPosition Index="0x0" SubIndex="0x00" />
+            </DataValue>
+            <Repetition RangeMax="2" NrOfDigits="2" />
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="FromCPU_BOOL">
+          <Channel id="BOOL1">
+            <DataValue Type="Boolean">
+              <Transport Name="DataExFromCpu" Index="0x00" />
+              <SODPosition Index="0x0" SubIndex="0x00" />
+            </DataValue>
+            <Repetition RangeMax="8" NrOfDigits="2" />
+          </Channel>
+        </ChannelGroup>
+      </ChannelConfiguration>
+    </SafetyNode>
+    <SafetyNode SAddr="2">
+      <DeviceDescription Module="X20SC0402_110" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SC0402_1_10_9_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Input" />
+        <Classification Type="Output" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF6.ST6" />
+        <Info Name="HWC_Revision" Value="1.10.9.0" />
+        <Info Name="HWC_LastEdit" Value="17/10/2018 08:38:46" />
+        <Info Name="AS_Name" Value="X20SC0402" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
+        <Info Name="Description-de" Value="X20 Safe Mischmodul, 4xE 24V, 2xA 24V 0.2A" />
+        <Info Name="Description-en" Value="X20 Safe Combined Module, 4xI 24V, 2xO 24V 0.2A" />
+        <Info Name="AsVariable" Value="SafeDigitalInput01,Cyclic#1.::X20SLX402_006.DInput[1]" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel01,Cyclic#1.::X20SLX402_006.DInput[10]" />
+        <Info Name="AsVariable" Value="DigitalOutput01,Cyclic#1.::X20SLX402_006.DOutput[1]" />
+      </NodeDescription>
+      <ChannelConfiguration>
+        <DataTransport>
+          <GenericTransport Name="PDOo" Direction="Output" OctetSize="1" IsSafe="false" />
+          <GenericTransport Name="PDOi" Direction="Input" OctetSize="1" IsSafe="false" />
+        </DataTransport>
+        <ChannelGroup id="General">
+          <Channel id="PhysicalStateChannel01">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="PhysicalStateChannel02">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+      </ChannelConfiguration>
+    </SafetyNode>
+    <SafetyNode SAddr="3">
+      <DeviceDescription Module="X20SI8110_110" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SI8110_1_10_9_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Input" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF6.ST117" />
+        <Info Name="HWC_Revision" Value="1.10.9.0" />
+        <Info Name="HWC_LastEdit" Value="17/10/2018 08:38:46" />
+        <Info Name="AS_Name" Value="X20SI8110_117" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
+        <Info Name="Description-de" Value="X20 Safe Digital In, 8xE, 24V" />
+        <Info Name="Description-en" Value="X20 Safe Digital In, 8xI, 24V" />
+        <Info Name="AsVariable" Value="SafeDigitalInput01,Cyclic#1.::X20SI8110_117.DInput[1]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput07,Cyclic#1.::X20SI8110_117.DInput[7]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput06,Cyclic#1.::X20SI8110_117.DInput[6]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput05,Cyclic#1.::X20SI8110_117.DInput[5]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput04,Cyclic#1.::X20SI8110_117.DInput[4]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput03,Cyclic#1.::X20SI8110_117.DInput[3]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput02,Cyclic#1.::X20SI8110_117.DInput[2]" />
+      </NodeDescription>
+      <ChannelConfiguration />
+    </SafetyNode>
+    <SafetyNode SAddr="4">
+      <DeviceDescription Module="X20SO2110_110" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SO2110_1_10_9_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Output" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF6.ST118" />
+        <Info Name="HWC_Revision" Value="1.10.9.0" />
+        <Info Name="HWC_LastEdit" Value="17/10/2018 08:50:42" />
+        <Info Name="AS_Name" Value="X20SO2110_118" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
+        <Info Name="Description-de" Value="X20 Safe Digital Out, 2xA, 24 V, 0.5 A" />
+        <Info Name="Description-en" Value="X20 Safe Digital Out, 2xO, 24 V, 0.5 A" />
+        <Info Name="AsVariable" Value="DigitalOutput02,Cyclic#1.::X20SO2110_118.DOutput[2]" />
+        <Info Name="AsVariable" Value="DigitalOutput01,Cyclic#1.::X20SO2110_118.DOutput[1]" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel1,Cyclic#1.::X20SO2110_118.DInput[1]" />
+      </NodeDescription>
+      <ChannelConfiguration>
+        <DataTransport>
+          <GenericTransport Name="PDOo" Direction="Output" OctetSize="1" IsSafe="false" />
+          <GenericTransport Name="PDOi" Direction="Input" OctetSize="1" IsSafe="false" />
+        </DataTransport>
+        <ChannelGroup id="General">
+          <Channel id="PhysicalStateChannel1">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="PhysicalStateChannel2">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="PhysicalStateChannel3_placeholder">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+            <VendorInfo>NotVisible="true"</VendorInfo>
+          </Channel>
+          <Channel id="PhysicalStateChannel4_placeholder">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+            <VendorInfo>NotVisible="true"</VendorInfo>
+          </Channel>
+          <Channel id="CurrentOK01">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="CurrentOK02">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+      </ChannelConfiguration>
+    </SafetyNode>
+    <SafetyNode SAddr="5">
+      <DeviceDescription Module="X20SI8110_110" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SI8110_1_10_9_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Input" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF6.ST217" />
+        <Info Name="HWC_Revision" Value="1.10.9.0" />
+        <Info Name="HWC_LastEdit" Value="17/10/2018 08:38:46" />
+        <Info Name="AS_Name" Value="X20SI8110_217" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
+        <Info Name="Description-de" Value="X20 Safe Digital In, 8xE, 24V" />
+        <Info Name="Description-en" Value="X20 Safe Digital In, 8xI, 24V" />
+        <Info Name="AsVariable" Value="SafeDigitalInput01,Cyclic#1.::X20SI8110_217.DInput[1]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput08,Cyclic#1.::X20SI8110_217.DInput[8]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput07,Cyclic#1.::X20SI8110_217.DInput[7]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput06,Cyclic#1.::X20SI8110_217.DInput[6]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput05,Cyclic#1.::X20SI8110_217.DInput[5]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput04,Cyclic#1.::X20SI8110_217.DInput[4]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput03,Cyclic#1.::X20SI8110_217.DInput[3]" />
+        <Info Name="AsVariable" Value="SafeDigitalInput02,Cyclic#1.::X20SI8110_217.DInput[2]" />
+      </NodeDescription>
+      <ChannelConfiguration />
+    </SafetyNode>
+    <SafetyNode SAddr="6">
+      <DeviceDescription Module="X20SO2110_110" minOpenSafetyRelease="1.5"><![CDATA[C:\_Git\PLC_P4\PLC code\AS\FrozenHardware\OSDD\X20SO2110_1_10_9_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Output" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF6.ST218" />
+        <Info Name="HWC_Revision" Value="1.10.9.0" />
+        <Info Name="HWC_LastEdit" Value="17/10/2018 08:50:42" />
+        <Info Name="AS_Name" Value="X20SO2110_218" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
+        <Info Name="Description-de" Value="X20 Safe Digital Out, 2xA, 24 V, 0.5 A" />
+        <Info Name="Description-en" Value="X20 Safe Digital Out, 2xO, 24 V, 0.5 A" />
+        <Info Name="AsVariable" Value="DigitalOutput02,Cyclic#1.::X20SO2110_218.DOutput[2]" />
+        <Info Name="AsVariable" Value="DigitalOutput01,Cyclic#1.::X20SO2110_218.DOutput[1]" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel1,Cyclic#1.::X20SO2110_218.DInput[1]" />
+      </NodeDescription>
+      <ChannelConfiguration>
+        <DataTransport>
+          <GenericTransport Name="PDOo" Direction="Output" OctetSize="1" IsSafe="false" />
+          <GenericTransport Name="PDOi" Direction="Input" OctetSize="1" IsSafe="false" />
+        </DataTransport>
+        <ChannelGroup id="General">
+          <Channel id="PhysicalStateChannel1">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="PhysicalStateChannel2">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="PhysicalStateChannel3_placeholder">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+            <VendorInfo>NotVisible="true"</VendorInfo>
+          </Channel>
+          <Channel id="PhysicalStateChannel4_placeholder">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+            <VendorInfo>NotVisible="true"</VendorInfo>
+          </Channel>
+          <Channel id="CurrentOK01">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+          <Channel id="CurrentOK02">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+      </ChannelConfiguration>
+    </SafetyNode>
+  </Topology>
+</osdd>

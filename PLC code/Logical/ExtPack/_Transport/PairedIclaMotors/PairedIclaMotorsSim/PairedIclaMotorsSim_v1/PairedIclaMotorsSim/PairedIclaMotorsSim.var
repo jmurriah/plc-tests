@@ -1,0 +1,4 @@
+VAR
+	data : REFERENCE TO PairedIclaMotors_typ;
+	tonHoming : TON;
+END_VAR

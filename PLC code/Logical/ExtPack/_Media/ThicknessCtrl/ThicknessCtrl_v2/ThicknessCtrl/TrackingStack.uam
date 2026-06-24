@@ -1,0 +1,58 @@
+(*######  Methods for sending media information to track*)
+
+OPCUA_METHOD LoadNewMedia (*Load Media for Stack functionality. No Energy data. Just for printer*)
+	ARG_INPUT
+		MediaData : stThicknessCtrl_MediaConfig := LoadNewMedia_Media; (*Media Params structure*)
+	END_ARG
+	ARG_OUTPUT
+		Result : UInt32 := LoadNewMedia_Result; (*THE Result ;-)*)
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD InsertNewMedia (*Load Media for Stack functionality. No Energy data. Just for printer*)
+	ARG_INPUT
+		IdToInsertAfter : Int32 := InsertNewMedia_Id;
+		MediaData : stThicknessCtrl_MediaConfig := InsertNewMedia_Media; (*Media Params structure*)
+	END_ARG
+	ARG_OUTPUT
+		Result : UInt32 := InsertNewMedia_Result; (*THE Result ;-)*)
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD RemoveNewMedia (*Load Media for Stack functionality. No Energy data. Just for printer*)
+	ARG_INPUT
+		iLine : Byte := RemoveNewMedia_Line;
+		IdToRemove : Int32 := RemoveNewMedia_Id;
+	END_ARG
+	ARG_OUTPUT
+		Result : UInt32 := RemoveNewMedia_Result; (*THE Result ;-)*)
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD LoadNewMediaEnergy (*Load Media Energy for Stack functionality. For Dryer*)
+	ARG_INPUT
+		MediaData : stThickCtrl_EnergyMedia := LoadNewMediaEnergy_Media; (*Media Params structure*)
+	END_ARG
+	ARG_OUTPUT
+		Result : UInt32 := LoadNewMediaEnergy_Result; (*THE Result ;-)*)
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD InsertNewMediaEnergy (*Load Media for Stack functionality. No Energy data. Just for printer*)
+	ARG_INPUT
+		IdToInsertAfter : Int32 := InsertNewMediaEn_Id;
+		MediaData : stThickCtrl_EnergyMedia := InsertNewMediaEn_Media; (*Media Params structure*)
+	END_ARG
+	ARG_OUTPUT
+		Result : UInt32 := InsertNewMediaEn_Result; (*THE Result ;-)*)
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD LoadNewMediaEnergyCont (*Load Media Energy for Continuous Media. For Dryer*)
+	ARG_INPUT
+		MediaData : stThickCtrl_EnergyMedia := LoadNewMediaEnergyCont_Media; (*Media Params structure*)
+	END_ARG
+	ARG_OUTPUT
+		Result : UInt32 := LoadNewMediaEnergyCont_Result; (*THE Result ;-)*)
+	END_ARG
+END_OPCUA_METHOD

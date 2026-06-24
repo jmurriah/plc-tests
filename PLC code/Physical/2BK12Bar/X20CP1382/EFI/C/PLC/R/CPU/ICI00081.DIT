@@ -1,0 +1,34 @@
+(*
+T: FUNCTION SEL
+FW: YES	INLINE SEL SKIP_IMAGE
+CI#: 81
+QSL: 0
+QVE: 4
+QPar: 4
+QFBI: 0
+*)
+
+C	1	VAR_INPUT	@TYP:1	
+	
+
+;
+PFW: 
+
+AT	2	VAR_INPUT	@TYP:30	
+	
+
+;
+PFW: 
+
+AF	3	VAR_INPUT	@TYP:30	
+	
+
+;
+PFW: CF#2
+
+SEL	4	VAR_OUTPUT	@TYP:30	
+	
+
+;
+PFW: CF#2
+

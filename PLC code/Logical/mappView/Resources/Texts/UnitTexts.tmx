@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">Localization/Units/User</prop>
+  </header>
+  <body>
+    <tu tuid="4543793.Name">
+      <tuv xml:lang="es">
+        <seg>Tarjeta Temperatura</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temperature Card</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Temperature Card</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature Card</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4543793.Sym">
+      <tuv xml:lang="es">
+        <seg>º</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>º</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>º</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>º</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4543793.Desc">
+      <tuv xml:lang="es">
+        <seg>Temperatura tarjeta entradas temperatura</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Temperature of TempCard</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Temperature of TempCard</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of TempCard</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4543794.Name">
+      <tuv xml:lang="es">
+        <seg>Porcentaje unitario</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Unit percentage</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Unit percentage</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unit percentage</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4543794.Sym">
+      <tuv xml:lang="es">
+        <seg>%</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>%</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>%</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>%</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4543794.Desc">
+      <tuv xml:lang="es">
+        <seg>Porcentaje unitario</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Unit percentage</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Unit percentage</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unit percentage</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

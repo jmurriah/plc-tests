@@ -1,0 +1,4 @@
+VAR
+	HWInfoCpu : HWInfo;
+	projectInfo : ArProjectGetInfo;
+END_VAR

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.5.113 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">network_local.png</Object>
+    <Object Type="File">services.png</Object>
+    <Object Type="File">socket.png</Object>
+    <Object Type="File">trashcan_empty.png</Object>
+    <Object Type="File">trashcan_full.png</Object>
+    <Object Type="File">www.png</Object>
+    <Object Type="File">zip.png</Object>
+    <Object Type="File">blockdevice.png</Object>
+    <Object Type="File">chardevice.png</Object>
+    <Object Type="File">connect_to_network.png</Object>
+    <Object Type="File">database.png</Object>
+    <Object Type="File">desktop.png</Object>
+    <Object Type="File">desktop22.png</Object>
+    <Object Type="File">exec.png</Object>
+    <Object Type="File">favorites.png</Object>
+    <Object Type="File">file.png</Object>
+    <Object Type="File">file_alert.png</Object>
+    <Object Type="File">file_broken.png</Object>
+    <Object Type="File">file_doc.png</Object>
+    <Object Type="File">file_locked.png</Object>
+    <Object Type="File">file_temporary.png</Object>
+    <Object Type="File">folder.png</Object>
+    <Object Type="File">folder_blue.png</Object>
+    <Object Type="File">folder_documents.png</Object>
+    <Object Type="File">folder_favorites.png</Object>
+    <Object Type="File">folder_green.png</Object>
+    <Object Type="File">folder_grey.png</Object>
+    <Object Type="File">folder_home.png</Object>
+    <Object Type="File">folder_html.png</Object>
+    <Object Type="File">folder_image.png</Object>
+    <Object Type="File">folder_images.png</Object>
+    <Object Type="File">folder_inbox.png</Object>
+    <Object Type="File">folder_locked.png</Object>
+    <Object Type="File">folder_music.png</Object>
+    <Object Type="File">folder_outbox.png</Object>
+    <Object Type="File">folder_print.png</Object>
+    <Object Type="File">folder_public.png</Object>
+    <Object Type="File">folder_red.png</Object>
+    <Object Type="File">folder_sound.png</Object>
+    <Object Type="File">folder_tar.png</Object>
+    <Object Type="File">folder_video.png</Object>
+    <Object Type="File">folder_yellow.png</Object>
+    <Object Type="File">ftp.png</Object>
+    <Object Type="File">Globe.png</Object>
+    <Object Type="File">Globe2.png</Object>
+    <Object Type="File">image.png</Object>
+    <Object Type="File">link.png</Object>
+    <Object Type="File">lockoverlay.png</Object>
+    <Object Type="File">network.png</Object>
+  </Objects>
+</Package>

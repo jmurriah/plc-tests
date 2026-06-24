@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="MainPage_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SimMachine:simMachineType" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="DropDownBox1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SimMachine:simMachineType" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="NumericInput1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.signals.In.xPhotoCell_1" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ToggleSwitch1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.signals.In.xPhotoCell_2" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ToggleSwitch2" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.signals.In.xPhotoCell_3" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ToggleSwitch3" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.signals.In.xPhotoCell_1" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ImageList2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.parameters.xInstall" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ToggleSwitch4" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.status.xReferenced" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ImageList3" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.status.xInstalled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ImageList4" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.commands.xReference" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="PushButton1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPhotoCells.status.iSystemState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="DropDownBox1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBlock[0].parameters.iFirstBlock" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DiscreteInSensor_Content" widgetRefId="ImageList5" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.In.Buttons.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="ToggleButton1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.In.Buttons.xZero" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="ToggleButton2" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.In.Buttons.xAuto" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="ToggleButton3" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.St.Mode.xAuto" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="Image3" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.St.Mode.xZero" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="Image2" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="Image1" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xToNormal_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnStart" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xToLaboratory_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnLaboratory" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xToByPass_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnBypass" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xStop_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnModeStop" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xPause_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnPause" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xToStop_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnStop" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commandsSw.xStart_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnPlay" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.parSw.Clean.xStartCleaningBK1" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnCleanBK1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commands.xAllToPrint" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnToPrint" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.commands.xAllToCap" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnToCap" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.parSw.rMarginPrint" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="NumericInput3" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.In.Buttons.xReset" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="MomentaryPushButton1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:gBlock[1]"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="Block1" attribute="StBlock"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:gBlock[2]"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="Block2" attribute="StBlock"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SimMachine:xTestPrepareMachine" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnPrepareMachine" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.parSw.Media.rThickness" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="NumericInput2" attribute="node"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.In.Buttons.xStart" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnPhysicalStart" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.In.Buttons.xStop" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="btnPhysicalStop" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.AlSummary.xAlarmStop" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="imgListStopAlarm" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.AlSummary.xAlarmCritical" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="imgListCriticalAlarm" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.xRuningBelt" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="imgBeltMoving" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:gInks[1]"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="InksSimpleWidget1" attribute="stInks"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:gInks[2]"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="InksSimpleWidget2" attribute="stInks"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:gInks[3]"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="InksSimpleWidget3" attribute="stInks"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUaComplexObject" refId="::AsGlobalPV:gInks[4]"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="InksSimpleWidget4" attribute="stInks"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.Out.xYellowLight" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="imgListYellowLight" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.Out.xRedLight" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="imgListRedLight" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.Out.xBuzzerButtonPanel" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="imgListBuzzer" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SimMachine:xBlockExists2" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="Block2" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.parSw.rBeltSpeedSetPoint" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="MainPage_Content" widgetRefId="numInBeltSpeed" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="currentTheme" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="Nav_Content" widgetRefId="DropDownBox1" attribute="selectedValue"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

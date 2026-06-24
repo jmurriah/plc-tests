@@ -1,0 +1,35 @@
+<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient y2="0.13379" y1="1.11703" xlink:href="#linearGradient6506" x2="0.50013" x1="0.50013" id="linearGradient18568"/>
+  <linearGradient id="linearGradient6688">
+   <stop stop-color="#ff3333" offset="0" id="stop6690"/>
+   <stop stop-color="#ff3333" offset="1" id="stop6692"/>
+  </linearGradient>
+  <linearGradient y2="1" y1="-0.0087" xlink:href="#linearGradient6688" x2="0.5" x1="0.50227" id="linearGradient18571"/>
+  <linearGradient y2="1" y1="0" xlink:href="#linearGradient5756" x2="0.78421" x1="0.35456" id="linearGradient18574"/>
+  <linearGradient y2="1" y1="-0.00544" xlink:href="#linearGradient5742" x2="0.5" x1="0.5" id="linearGradient18577"/>
+  <linearGradient id="linearGradient6506">
+   <stop stop-color="#ffffff" stop-opacity="0" offset="0" id="stop6508"/>
+   <stop stop-color="#ffffff" stop-opacity="0.87451" offset="1" id="stop6510"/>
+  </linearGradient>
+  <linearGradient id="linearGradient5756">
+   <stop stop-color="#828282" offset="0" id="stop5758"/>
+   <stop stop-color="#929292" stop-opacity="0.35294" offset="1" id="stop5760"/>
+  </linearGradient>
+  <linearGradient id="linearGradient5742">
+   <stop stop-color="#adadad" offset="0" id="stop5744"/>
+   <stop stop-color="#f0f0f0" offset="1" id="stop5746"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <g transform="matrix(31.25,0,0,31.25,-1125,-1250) " id="g18645">
+    <path fill="url(#linearGradient18577)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path18429" d="m36,40l3.2,0l0,1.6l-3.2,0l0,-1.6z"/>
+    <path fill="url(#linearGradient18574)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path18431" d="m36.15625,40.15625l0,1.28125l2.875,0l0,-1.28125l-2.875,0z"/>
+    <path fill="url(#linearGradient18571)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path18433" d="m36.21875,40.21875l0,1.15625l2.75,0l0,-1.15625l-2.75,0z"/>
+    <path fill="url(#linearGradient18568)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path18435" d="m36.83711,40.27012c-0.6466,0.00085 -0.57172,-0.05183 -0.57172,0.34768c0,0.19522 0.26761,0.367 0.57172,0.36699l1.53464,0c0.30412,0 0.54164,-0.16511 0.54164,-0.36699c0,-0.40281 0.06402,-0.35104 -0.54164,-0.34768l-1.53464,0z"/>
+   </g>
+  </g>
+ </g>
+</svg>

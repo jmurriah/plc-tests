@@ -1,0 +1,18 @@
+(*
+T: FUNCTION_BLOCK SF_Equivalent_V1_00
+FW: NO
+CI#: 85
+QSL: 30
+QVE: 30
+QVPC: 30
+QPar: 8
+QFBI: 3
+*)
+Activate	@IV 1	@TYP:1	VAR_INPUT
+DiagCode	@IV 8	@TYP:18	VAR_OUTPUT
+DiscrepancyTime	@IV 4	@TYP:12	VAR_INPUT
+Error	@IV 7	@TYP:1	VAR_OUTPUT
+Ready	@IV 5	@TYP:1	VAR_OUTPUT
+S_ChannelA	@IV 2	@TYP:43	VAR_INPUT
+S_ChannelB	@IV 3	@TYP:43	VAR_INPUT
+S_EquivalentOut	@IV 6	@TYP:43	VAR_OUTPUT

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="Nav900x200_Content_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gPLC.sVersion" attribute="value" />
+		<Target xsi:type="brease" contentRefId="Nav900x200_Content" widgetRefId="TextOutput1" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gMachine.Pt.ConfigName" attribute="value" />
+		<Target xsi:type="brease" contentRefId="Nav900x200_Content" widgetRefId="TextOutput2" attribute="value" />
+	</Binding>						
+</Bindings>
+</BindingsSet>

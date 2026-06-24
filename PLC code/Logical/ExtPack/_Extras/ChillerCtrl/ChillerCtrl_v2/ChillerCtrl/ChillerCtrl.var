@@ -1,0 +1,36 @@
+VAR
+	stChillerAlarmsReseted : StChillerAlarms;
+	stChillerAlarmsSummaryReseted : stEFI_AlarmSummary;
+	tonChillerOFF : TON;
+	tonChillerON : TON;
+	xNeedCold : BOOL;
+	dataChill : REFERENCE TO StChiller;
+	xEnoughCold : BOOL;
+	TON_DelayChillerStopped : TON;
+	TON_DelayChillerNotRun : TON;
+END_VAR
+VAR CONSTANT
+	LC_OFFSET_TEMP_TO_START_STOP : REAL := 2.0; (*Temperature Offset to Start Chiller*)
+END_VAR
+VAR
+	TON_DelayCheckChiller : TON; (*Time to delay check chiller message*)
+	TON_DelayChillerEnvSensError : TON;
+	TON_DelayChillerWatSensError : TON;
+	TON_DelayChillerInAlarm : TON;
+	tonEstabCheck : TON;
+	ChillerState : ChillerStatus_enum;
+	tonChillerRunning : TON;
+	iReasonRunning : UINT;
+	xManifoldRunOrder : BOOL;
+	xRunOrder : BOOL;
+	iReasonAlarm : USINT;
+	iReasonSound : USINT;
+	iReasonCritical : UDINT;
+	iReasonWarning : UDINT;
+	iReasonStop : UDINT;
+	stEventLog : EventLog_typ;
+	stEventLogCritical : EventLog_typ;
+	ars_AlrWarning : AutoResetSound;
+	ars_AlrStop : AutoResetSound;
+	ars_AlrCritical : AutoResetSound;
+END_VAR

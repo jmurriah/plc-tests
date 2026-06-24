@@ -1,0 +1,3 @@
+VAR
+	gIndexSimpleBlock : USINT;
+END_VAR

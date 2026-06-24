@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="PrinterDiagnosis_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Bindings>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardDataW_L.stCardName" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="TextOutput1" attribute="value" />
+	</Binding>	
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardSelected_L" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="NumericInput1" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardDataW_L.Status.Content" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel1" attribute="selectedValue" />
+	</Binding>
+		
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardDataW_R.stCardName" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="TextOutput2" attribute="value" />
+	</Binding>	
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardSelected_R" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="NumericInput2" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardDataW_R.Status.Content" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel5" attribute="selectedValue" />
+	</Binding>
+
+	<!--Layouts-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:stConfigToShow_Lyout1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel2" attribute="selectedValue" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:xShowSecondLayout" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel3" attribute="visible" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:stConfigToShow_Lyout2" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel3" attribute="selectedValue" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:stConfigToShow_Lyout3" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel4" attribute="selectedValue" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:xShowThirdLayout" attribute="value" />
+		<Target xsi:type="brease" contentRefId="PrinterDiagnosis1600x900_content" widgetRefId="ContentCarousel4" attribute="visible" />
+	</Binding>
+		
+<!--******LEFT CARD******-->
+	<!--Card Widget-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagID16_content" widgetRefId="InputCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagOD16_content" widgetRefId="OutputCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAI4_content" widgetRefId="AnalogInput04CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAO4_content" widgetRefId="AnalogOutput04CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAT4_content" widgetRefId="TempInputCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagX1_content" widgetRefId="X1CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagX2_content" widgetRefId="X2CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagX3_content" widgetRefId="X3CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagPS_content" widgetRefId="PSCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAI8_content" widgetRefId="AnalogInput08CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagSM_content" widgetRefId="SMCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagSC_content" widgetRefId="SCCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagSI_content" widgetRefId="SICardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_L" />
+		<Target xsi:type="brease" contentRefId="DiagSO_content" widgetRefId="SOCardWidget1" attribute="PlcCardMapping" />
+	</Binding>	
+	
+	<!--Text Widget-->
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagID16_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+			<Target xsi:type="brease" contentRefId="DiagOD16_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAI4_content" widgetRefId="TextArray04CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAO4_content" widgetRefId="TextArray04CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAT4_content" widgetRefId="TextArray04CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagX1_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagX2_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagX3_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagAI8_content" widgetRefId="TextArray08CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagSI_content" widgetRefId="TextArray12CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_L" />
+		<Target xsi:type="brease" contentRefId="DiagSO_content" widgetRefId="TextArray02CardDoubWidget1" attribute="PLCCardData" />
+	</Binding>
+		
+<!--******LEFT CARD******-->
+	<!--Card Widget-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagID16_2_content" widgetRefId="InputCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagOD16_2_content" widgetRefId="OutputCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAI4_2_content" widgetRefId="AnalogInput04CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAO4_2_content" widgetRefId="AnalogOutput04CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAT4_2_content" widgetRefId="TempInputCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagX1_2_content" widgetRefId="X1CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagX2_2_content" widgetRefId="X2CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagX3_2_content" widgetRefId="X3CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagPS_2_content" widgetRefId="PSCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAI8_2_content" widgetRefId="AnalogInput08CardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagSM_2_content" widgetRefId="SMCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagSC_2_content" widgetRefId="SCCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagSI_2_content" widgetRefId="SICardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardW_R" />
+		<Target xsi:type="brease" contentRefId="DiagSO_2_content" widgetRefId="SOCardWidget1" attribute="PlcCardMapping" />
+	</Binding>
+	
+	<!--Text Widget-->
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagID16_2_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagOD16_2_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAI4_2_content" widgetRefId="TextArray04CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAO4_2_content" widgetRefId="TextArray04CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAT4_2_content" widgetRefId="TextArray04CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagX1_2_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagX2_2_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagX3_2_content" widgetRefId="TextArray16CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagAI8_2_content" widgetRefId="TextArray08CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagSI_2_content" widgetRefId="TextArray12CardWidget1" attribute="PLCCardData" />
+	</Binding>
+	<Binding mode="oneWay">
+		<Source xsi:type="opcUaComplexObject" refId="::mappHMI:PlcCardDataW_R" />
+		<Target xsi:type="brease" contentRefId="DiagSO_2_content" widgetRefId="TextArray02CardDoubWidget1" attribute="PLCCardData" />
+	</Binding>	
+</Bindings>
+</BindingsSet>

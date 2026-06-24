@@ -1,0 +1,3 @@
+VAR
+	iTransVacummSimIndex : USINT;
+END_VAR

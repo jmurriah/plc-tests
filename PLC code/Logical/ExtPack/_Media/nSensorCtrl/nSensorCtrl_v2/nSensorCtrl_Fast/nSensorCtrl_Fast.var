@@ -1,0 +1,28 @@
+VAR
+	data : REFERENCE TO nSensors_typ;
+	rMaxPosition : REAL;
+	rBarPosition : REAL;
+	iFirstSensorToCheck : USINT;
+	iIndexSensor : USINT;
+	xRecordMaxPosition : BOOL; (*Variable to allow to record the max position*)
+	iStatusCheckMounted : UINT;
+	xMountedMediaDetected : BOOL;
+	xMediaToRejectDetected : BOOL;
+	iIndexCheckSensor : USINT;
+	pointerValue : REFERENCE TO BOOL;
+	stRaiseSensor1 : EventLog_typ;
+	stLowerSensor1 : EventLog_typ;
+	stRaiseSensor2 : EventLog_typ;
+	stLowerSensor2 : EventLog_typ;
+	stRaiseSensor3 : EventLog_typ;
+	stLowerSensor3 : EventLog_typ;
+	stRaiseSensor4 : EventLog_typ;
+	stLowerSensor4 : EventLog_typ;
+	stRaiseSensor5 : EventLog_typ;
+	stLowerSensor5 : EventLog_typ;
+	stRaiseSensor6 : EventLog_typ;
+	stLowerSensor6 : EventLog_typ;
+	stRaiseSensor7 : EventLog_typ;
+	stLowerSensor7 : EventLog_typ;
+
+END_VAR

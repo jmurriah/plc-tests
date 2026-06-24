@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DiagSI_2_content" height="500" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="2" x1="20" x2="580" y1="245" y2="245" />
+    <Widget xsi:type="widgets.brease.Line" id="Line2" zIndex="3" x1="20" x2="580" y1="285" y2="285" />
+    <Widget xsi:type="widgets.brease.Line" id="Line4" zIndex="4" x1="20" x2="580" y1="330" y2="330" />
+    <Widget xsi:type="widgets.brease.Line" id="Line5" zIndex="5" x1="20" x2="580" y1="370" y2="370" />
+    <Widget xsi:type="widgets.brease.Line" id="Line7" zIndex="6" x1="20" x2="580" y1="405" y2="405" />
+    <Widget xsi:type="widgets.brease.Line" id="Line8" zIndex="7" x1="20" x2="580" y1="450" y2="450" />
+    <Widget xsi:type="widgets.EFIWidgetLib.SICardWidget" id="SICardWidget1" top="80" left="270" height="380" zIndex="0" />
+    <Widget xsi:type="widgets.EFIWidgetLib.TextArray12CardWidget" id="TextArray12CardWidget1" top="230" left="0" width="600" zIndex="1" />
+  </Widgets>
+</Content>

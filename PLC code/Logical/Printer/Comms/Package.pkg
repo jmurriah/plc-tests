@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="PLC to Kernel">PLC2Kernel</Object>
+    <Object Type="Program" Language="IEC" Description="Kernel to PLC">Kernel2PLC</Object>
+    <Object Type="File" Description="Local variables">Comms.var</Object>
+  </Objects>
+</Package>

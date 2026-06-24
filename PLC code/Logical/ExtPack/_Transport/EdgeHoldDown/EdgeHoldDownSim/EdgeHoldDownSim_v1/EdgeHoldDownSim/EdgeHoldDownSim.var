@@ -1,0 +1,3 @@
+VAR
+	data : REFERENCE TO EdgeHoldDown_typ;
+END_VAR

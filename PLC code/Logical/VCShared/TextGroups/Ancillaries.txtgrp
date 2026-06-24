@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.4.92 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Ancillaries">
+  <Property Name="Description" Value="Status of the ancillaries"/>
+  <Property Name="Index" Value="2"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="117660" Value="STOPPED"/>
+    <Text ID="117661" Value="STOPPING"/>
+    <Text ID="117662" Value="PREPARING"/>
+    <Text ID="117663" Value="PREPARED"/>
+    <Text ID="117664" Value="PAUSING"/>
+    <Text ID="117665" Value="PAUSED"/>
+    <Text ID="117666" Value="STARTING"/>
+    <Text ID="117667" Value="WORKING"/>
+    <Text ID="117668" Value="CONTROLSTOPPING"/>
+    <Text ID="142920" Value="PREP.MOVE"/>
+    <Text ID="142921" Value="MOVING"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="117660" Value=""/>
+    <Text ID="117661" Value=""/>
+    <Text ID="117662" Value=""/>
+    <Text ID="117663" Value=""/>
+    <Text ID="117664" Value=""/>
+    <Text ID="117665" Value=""/>
+    <Text ID="117666" Value=""/>
+    <Text ID="117667" Value=""/>
+    <Text ID="117668" Value=""/>
+    <Text ID="142920" Value=""/>
+    <Text ID="142921" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="en-ES">
+    <Text ID="117660" Value="STOPPED"/>
+    <Text ID="117661" Value="STOPPING"/>
+    <Text ID="117662" Value="PREPARING"/>
+    <Text ID="117663" Value="PREPARED"/>
+    <Text ID="117664" Value="PAUSING"/>
+    <Text ID="117665" Value="PAUSED"/>
+    <Text ID="117666" Value="STARTING"/>
+    <Text ID="117667" Value="WORKING"/>
+    <Text ID="117668" Value="CONTROLSTOPPING"/>
+    <Text ID="142920" Value="PREP.MOVE"/>
+    <Text ID="142921" Value="MOVIENDO"/>
+  </TextLayer>
+  <TextLayer LanguageId="zh-CN">
+    <Text ID="117660" Value=""/>
+    <Text ID="117661" Value=""/>
+    <Text ID="117662" Value=""/>
+    <Text ID="117663" Value=""/>
+    <Text ID="117664" Value=""/>
+    <Text ID="117665" Value=""/>
+    <Text ID="117666" Value=""/>
+    <Text ID="117667" Value=""/>
+    <Text ID="117668" Value=""/>
+    <Text ID="142920" Value=""/>
+    <Text ID="142921" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="117660" Value="0"/>
+    <Index ID="117661" Value="1"/>
+    <Index ID="117662" Value="2"/>
+    <Index ID="117663" Value="3"/>
+    <Index ID="117664" Value="4"/>
+    <Index ID="117665" Value="5"/>
+    <Index ID="117666" Value="6"/>
+    <Index ID="117667" Value="7"/>
+    <Index ID="117668" Value="8"/>
+    <Index ID="142920" Value="9"/>
+    <Index ID="142921" Value="10"/>
+  </IndexMap>
+</TextGroup>

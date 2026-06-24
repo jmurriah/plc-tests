@@ -1,0 +1,46 @@
+VAR CONSTANT
+	iIndexConstant_Nir1 : USINT := 1;
+END_VAR
+VAR
+	ExecuteConnect_Nir1 : BOOL;
+	SessionConnectInfo_Nir1 : UASessionConnectInfo;
+	ConnectionHdl_Nir1 : DWORD;
+	UA_Connect_Nir1 : UA_Connect;
+	ExecuteGetnamespaceindex_Nir1 : BOOL;
+	NamespaceIndex_Nir1 : UINT;
+	UA_GetNamespaceIndex_Nir1 : UA_GetNamespaceIndex;
+	ExecuteMethodGetHandle_Nir1 : BOOL;
+	ObjectNodeID_Nir1 : UANodeID;
+	NodeHdl_Nir1 : DWORD;
+	NodeAddInfo_Nir1 : UANodeAdditionalInfo;
+	IndexRange_Nir1 : UAIndexRange;
+	InputArguments_Nir1 : ARRAY[0..9] OF UAMethodArgument;
+	OutputArguments_Nir1 : ARRAY[0..9] OF UAMethodArgument;
+	UA_NodeGetHandle_Nir1 : UA_NodeGetHandle;
+	ExecuteMethodCall_Nir1 : BOOL;
+	UA_Write_Nir1 : UA_Write;
+	MethodResult_Nir1 : UDINT;
+	NewMediaData_Nir1 : stThicknessCtrl_MediaConfig;
+	tonNotCallingMethod_Nir1 : TON;
+	UA_NodeReleaseHandle_Nir1 : UA_NodeReleaseHandle;
+	ExecuteNodeReleaseHandle_Nir1 : BOOL;
+	UA_Disconnect_Nir1 : UA_Disconnect;
+	ExecuteDisconnect_Nir1 : BOOL;
+	iValues_Nir1 : ARRAY[0..47] OF INT; (*Data starting in index 0*)
+	iTimes_Nir1 : UDINT;
+	CommsState_Nir1 : OpcUaCommsState;
+	iIndexValue_Nir1 : USINT;
+	tonNextComms_Nir1 : TON;
+	iGoodComms_Nir1 : UINT;
+	tonCalculateUpdate_Nir1 : TON;
+	iPartialGoodTimes_Nir1 : UINT;
+	rUpdateRatio_Nir1 : REAL; (*milliseconds per update*)
+	tonWaitExitFault_Nir1 : TON;
+	xAnyCommsError_Nir1 : BOOL;
+	StateHistory_Nir1 : ARRAY[0..iHistoryLines] OF OpcUaCommsState;
+	iIndex_Nir1 : USINT;
+	Intensity_Nir1 : REFERENCE TO ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT; (*Data starting in index 1*)
+	IntensityExtend_Nir1 : {REDUND_UNREPLICABLE} ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT; (*Data starting in index 1*)
+	IntensityReseted_Nir1 : {REDUND_UNREPLICABLE} ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT;
+	iIndexExtend_Nir1 : USINT;
+END_VAR

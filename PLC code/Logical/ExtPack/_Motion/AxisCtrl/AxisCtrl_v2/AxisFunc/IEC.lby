@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library SubType="IEC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Global Motion data types">MotionBasis.typ</File>
+    <File Description="Exported functions and function blocks">AxisFunc.fun</File>
+    <File>Drives.st</File>
+  </Files>
+</Library>

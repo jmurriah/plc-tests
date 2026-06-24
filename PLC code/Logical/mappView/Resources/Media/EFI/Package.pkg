@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">Dryer</Object>
+    <Object Type="Package">BrCards</Object>
+    <Object Type="Package">Sources</Object>
+    <Object Type="File">Block.svg</Object>
+    <Object Type="File">BoxTracking.svg</Object>
+    <Object Type="File">BlockBars.png</Object>
+    <Object Type="File">BlockCleaningPH.png</Object>
+    <Object Type="File">BlockStruct.png</Object>
+    <Object Type="File">BlockTrayIn.png</Object>
+    <Object Type="File">BlockTrayOut.png</Object>
+    <Object Type="File">BlockBarsSquare.png</Object>
+    <Object Type="File">Archimedes01.gif</Object>
+    <Object Type="File">BeltMoving.gif</Object>
+    <Object Type="File">BeltMoving01.png</Object>
+    <Object Type="File">Drop.svg</Object>
+    <Object Type="File">DropGrey.svg</Object>
+    <Object Type="File">MotorReferencing.svg</Object>
+    <Object Type="File">Shaft01.svg</Object>
+    <Object Type="File">Shaft02.svg</Object>
+    <Object Type="File">ShaftMoving.gif</Object>
+    <Object Type="File">ShaftMoving01.png</Object>
+  </Objects>
+</Package>

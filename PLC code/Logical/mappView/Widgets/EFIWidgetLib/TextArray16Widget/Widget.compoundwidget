@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="TextArray16Widget" width="380" height="155" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText1" top="0" left="0" width="185" height="15" zIndex="17" value="Label1" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText2" top="0" left="195" width="185" height="15" zIndex="18" value="Label2" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText3" top="20" left="0" width="185" height="15" zIndex="19" value="Label3" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText4" top="20" left="195" width="185" height="15" zIndex="20" value="Label4" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText5" top="40" left="0" width="185" height="15" zIndex="21" value="Label5" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText6" top="40" left="195" width="185" height="15" zIndex="22" value="Label6" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText7" top="60" left="0" width="185" height="15" zIndex="23" value="Label7" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText8" top="60" left="195" width="185" height="15" zIndex="24" value="Label8" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText9" top="80" left="0" width="185" height="15" zIndex="25" value="Label9" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText10" top="80" left="195" width="185" height="15" zIndex="26" value="Label10" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText11" top="100" left="0" width="185" height="15" zIndex="27" value="Label11" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText12" top="100" left="195" width="185" height="15" zIndex="28" value="Label12" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText13" top="120" left="0" width="185" height="15" zIndex="29" value="Label13" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText14" top="120" left="195" width="185" height="15" zIndex="30" value="Label14" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText15" top="140" left="0" width="185" height="15" zIndex="31" value="Label15" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText16" top="140" left="195" width="185" height="15" zIndex="32" value="Label16" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Simple bindable property:-->
+		<Property xsi:type="BindableProperty" name="TextInput01" type="String" defaultValue="Text01" category="Data" required="false">
+			<Description>Description of Input 01</Description>
+			<Mappings>
+			<Mapping widget="lblText1" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput02" type="String" defaultValue="Text02" category="Data" required="false">
+			<Description>Description of Input 02</Description>
+			<Mappings>
+				<Mapping widget="lblText2" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput03" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 03</Description>
+			<Mappings>
+				<Mapping widget="lblText3" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput04" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 04</Description>
+			<Mappings>
+				<Mapping widget="lblText4" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput05" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 05</Description>
+			<Mappings>
+				<Mapping widget="lblText5" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput06" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 06</Description>
+			<Mappings>
+				<Mapping widget="lblText6" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput07" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 07</Description>
+			<Mappings>
+				<Mapping widget="lblText7" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput08" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 08</Description>
+			<Mappings>
+				<Mapping widget="lblText8" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput09" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 09</Description>
+			<Mappings>
+				<Mapping widget="lblText9" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput10" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 10</Description>
+			<Mappings>
+				<Mapping widget="lblText10" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput11" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 11</Description>
+			<Mappings>
+				<Mapping widget="lblText11" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput12" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 12</Description>
+			<Mappings>
+				<Mapping widget="lblText12" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>		
+		<Property xsi:type="BindableProperty" name="TextInput13" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 13</Description>
+			<Mappings>
+				<Mapping widget="lblText13" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>		
+		<Property xsi:type="BindableProperty" name="TextInput14" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 14</Description>
+			<Mappings>
+				<Mapping widget="lblText14" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>		
+		<Property xsi:type="BindableProperty" name="TextInput15" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 15</Description>
+			<Mappings>
+				<Mapping widget="lblText15" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>		
+		<Property xsi:type="BindableProperty" name="TextInput16" type="String" defaultValue="" category="Data" required="false">
+			<Description>Description of Input 16</Description>
+			<Mappings>
+				<Mapping widget="lblText16" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>		
+
+		
+		<!--Structure bindable property:-->
+    
+	</Properties>
+
+	<Events>
+		<!--
+    <Event name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" event="" />
+      </Mappings>
+    </Event>
+    -->
+  </Events>
+
+  <Actions>
+    <!--
+    <Action name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" action="" />
+      </Mappings>
+    </Action>
+    -->
+  </Actions>
+
+  <EventBindings>
+
+   
+  </EventBindings>
+
+</CompoundWidget>

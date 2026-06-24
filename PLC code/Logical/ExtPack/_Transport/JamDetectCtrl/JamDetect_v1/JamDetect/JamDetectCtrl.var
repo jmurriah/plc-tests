@@ -1,0 +1,35 @@
+VAR
+	JamDetect : REFERENCE TO JamDetect_typ;
+	AlarmsReseted : JamDetectAlarms_typ;
+	CommandsReseted : JamDetectCommands_typ;
+	tonTestTimeOut : TON; (*Time to consider the test is wrong without an OK signal of the test*)
+	tonTestsWaitAnswer : TON; (*Time to Start checking the result of the test*)
+	tonNextTest : TON; (*Time to Wait for testing next device*)
+	usiTestNum : USINT; (*Test number active*)
+	iIndexSensor : USINT;
+	ars_AlrJamDetectionSound : AutoResetSound;
+	StatusPrevious : JamVibrationStatus_enum;
+	xStatusChanged : BOOL;
+	xTestFinished : BOOL;
+	TestingStatus : JamTestingStatus_enum;
+	xAnyCrashAlarm : BOOL;
+	xAnyTestAlarm : BOOL;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	StateHistory : ARRAY[0..iHistoryLines] OF JamVibrationStatus_enum;
+	iIndexHistory : USINT;
+END_VAR
+VAR CONSTANT
+	iTestingHistoryLines : USINT := 20;
+END_VAR
+VAR
+	TestingStateHistory : ARRAY[0..iHistoryLines] OF JamTestingStatus_enum;
+	iTestingIndexHistory : USINT;
+	ctuConsecutiveLowJamDetected : ARRAY[0..1] OF CTU; (*Counter to check consecutive low jam detections*)
+	tofConsecutiveLowJamDetected : ARRAY[0..1] OF TOF; (*Time to check consecutive low jam detections*)
+	stWarningAlarmsLog : EventLog_typ;
+	strAuxEventDesc : STRING[129];
+END_VAR

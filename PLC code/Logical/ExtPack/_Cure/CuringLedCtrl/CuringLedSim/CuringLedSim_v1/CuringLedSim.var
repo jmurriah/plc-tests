@@ -1,0 +1,3 @@
+VAR
+	iIndexCuringLedSim : USINT;
+END_VAR

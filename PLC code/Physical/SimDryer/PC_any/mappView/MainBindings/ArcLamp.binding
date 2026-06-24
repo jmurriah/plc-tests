@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ArcLamp_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="drpdArcLamState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="drpdLamp1State" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="drpdLamp2State" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].Enabled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="imlEnabled1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].Enabled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="imlEnabled2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].InAlarm" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="imglAlarm1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].InAlarm" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="imglAlarm2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.Lamps[1].Enable" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="btnEnableLamp1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.Lamps[2].Enable" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="btnEnableLamp2" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].LampPowerPercent" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="numoPower1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].LampPowerPercent" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="numoPower2" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.iPowerPerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="numInArcLampPower" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.CommsStatus" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="drpdArcLampComms" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.SerialNumber" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="txtInSerialNumber" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.PIN" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="txtInPin" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.xEnableArcLamp" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="recArcLamp" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.xEnableArcLamp" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="btnEnableArcLamp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerLocalStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="btnEnableArcLamp" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].UnitInternalState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="txtOutStateLamp1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].UnitInternalState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerArcLamp_Content" widgetRefId="txtOutStateLamp2" attribute="value"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

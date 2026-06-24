@@ -1,0 +1,127 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: I66Ctrl
+ * File: I66Ctrl.var
+ * Author: tresensa
+ * Created: May 09, 2014
+ ********************************************************************
+ * Local variables of program I66Ctrl
+ ********************************************************************)
+(* *******************************************************************
+ * data Reference
+ ********************************************************************)
+VAR
+	dataInv : REFERENCE TO AxisP66_typ; (*I/O Mapping for the ACOPOSinverter*)
+END_VAR
+(* *******************************************************************
+ * IO Mapping
+ ********************************************************************)
+VAR
+	ioMap : REFERENCE TO AxisP66_Signals_typ; (*I/O Mapping for the ACOPOSinverter*)
+END_VAR
+(* *******************************************************************
+ * State Machine
+ ********************************************************************)
+VAR
+	axisStep : UINT;
+END_VAR
+VAR CONSTANT
+	STATE_NOT_READY_TO_SWITCH_ON : USINT := 1;
+	STATE_SWITCH_ON_DISABLED : USINT := 2;
+	STATE_READY_TO_SWITCH_ON : USINT := 3;
+	STATE_SWITCHED_ON : USINT := 4;
+	STATE_OPERATION_ENABLED : USINT := 5;
+	STATE_QUICK_STOP_ACTIVE : USINT := 6;
+	STATE_FAULT_REACTION_ACTIVE : USINT := 7;
+	STATE_FAULT : USINT := 8;
+	STATE_ERROR : USINT := 100;
+END_VAR
+(* *******************************************************************
+ * Error Texts
+ ********************************************************************)
+VAR
+	ERROR_TEXT : ARRAY[0..109] OF STRING[19]; (*Table of error descriptions*)
+	Error : ARRAY[0..199] OF Errors_type;
+END_VAR
+(* *******************************************************************
+ * Temp
+ ********************************************************************)
+VAR
+	resetCount : UINT;
+	partialCount : UINT;
+	direction : SINT;
+END_VAR
+(* *******************************************************************
+ * Control Modes
+ ********************************************************************)
+VAR CONSTANT
+	CONTROL_MODE_VECTOR : UINT := 0;
+	CONTROL_MODE_SCALAR : UINT := 1;
+	RAMP_MAX_SPEED_VALUE : DINT := 2000000;
+END_VAR
+VAR
+	ErrMessage_FUB : ErrMessage;
+END_VAR
+VAR CONSTANT
+	RAMP_MAX_HZ_VALUE : UDINT := 20000;
+END_VAR
+(* *******************************************************************
+ * Parameter Transfer
+ ********************************************************************)
+VAR
+	PL_device : STRING[39]; (*Physical address of the Powerlink IF*)
+	HW_node : USINT; (*Inverter's Powerlink node*)
+END_VAR
+VAR CONSTANT
+	ACC_min : REAL := 0.1; (*(From datasheet)*)
+	ACC_max : REAL := 999.9; (*(From datasheet)*)
+	DEC_min : REAL := 0.1; (*(From datasheet)*)
+	DEC_max : REAL := 999.9; (*(From datasheet)*)
+END_VAR
+VAR
+	stepTransferACC : USINT := 0;
+	stepTransferDEC : USINT := 0;
+	AccTime_actual : UINT;
+	DecTime_actual : UINT;
+	AccTime_set : UINT;
+	DecTime_set : UINT;
+	ACC_Ok : BOOL;
+	DEC_Ok : BOOL;
+	paramOk : BOOL;
+	invalidHwAddress : BOOL;
+	EplSDORead_ACC : EplSDORead;
+	EplSDOWrite_ACC : EplSDOWrite;
+	EplSDORead_DEC : EplSDORead;
+	EplSDOWrite_DEC : EplSDOWrite;
+	connectionErrorNotAck : BOOL;
+END_VAR
+(* *******************************************************************
+ * Parameter Simulation
+ ********************************************************************)
+VAR
+	StepSim : USINT := 1; (*State machine for simulation*)
+	SimNominalSpeed : UINT := 3000; (*Motor nominal speed [rpm]*)
+	SimCycleTime : REAL := 0.002; (*Cycle time of the task [s]*)
+	SimVelocity : REAL;
+	SimInitialVelocity : REAL;
+	SimAcceleration : REAL;
+	SimDecceleration : REAL;
+	RTInfo_0 : RTInfo;
+	xForceSim : BOOL; (*Local variable to enable simulation with REAL PLC*)
+	uiTimesCommandStop : UINT;
+	uiTimesCommandPositive : UINT;
+	uiTimesCommandNegative : UINT;
+	CanGetState : CANopenGetState;
+	tonNotComms : TON;
+	tonCommsErrorResetting : TON;
+	CanResetState : CanOpenResetCommsState_enum;
+	CanResetState_copy : CanOpenResetCommsState_enum;
+	CANopenReset : CANopenNMT;
+	iReasonNotComms : UINT;
+	xChangedResetCommsState : BOOL;
+	lastResetingState : UINT;
+	lastFbResetStatus : UINT;
+	lastCanOpenResetError : UINT;
+	iTimesTryToReset : UINT;
+END_VAR

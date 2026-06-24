@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mappViewPackage" PackageType="mappViewPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Layouts">Layouts</Object>
+    <Object Type="Package" Description="Widgets">Widgets</Object>
+    <Object Type="Package" Description="Resources">Resources</Object>
+    <Object Type="Package">VisuPrinter</Object>
+    <Object Type="Package">VisuDryer</Object>
+    <Object Type="Package">VisuInks</Object>
+    <Object Type="Package">VisuResources</Object>
+    <Object Type="Package">VisuDiagnosis</Object>
+    <Object Type="File">MappView training.pptx</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Library" Language="IEC">ThickLib</Object>
+    <Object Type="Package" Description="Heigt detection and empty belt logic">ThicknessCtrl_v2</Object>
+    <Object Type="Package">ThicknessCtrlSim</Object>
+  </Objects>
+</Package>

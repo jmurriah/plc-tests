@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="REFERENCE_SWITCH_PARID" ID="944" Value="STAT_TRIGGER1" Description="Digital inputs: Parameter ID for reference switch" />
+    <Parameter Name="R_BLEEDER_EXT" ID="10" Value="47" Unit="Ohm" Description="Bleeder: External: Resistance" />
+    <Parameter Name="TEMP_MAX_BLEEDER_EXT" ID="11" Value="300" Unit="°C" Description="Bleeder: External: Limit temperature" />
+    <Parameter Name="RTH_BLEEDER_AMB_EXT" ID="12" Value="1.4" Unit="K/W" Description="Bleeder: External: Thermal resistance" />
+    <Parameter Name="CTH_BLEEDER_EXT" ID="13" Value="30.82" Unit="Ws/K" Description="Bleeder: External: Thermal capacity" />
+    <Parameter Name="BLEEDER_SELECTOR_EXT" ID="398" Value="1" Description="Bleeder: Selector" />
+  </Root>
+</AcoposParameterTable>

@@ -1,0 +1,3 @@
+VAR CONSTANT
+	NAN_VALUE_UDINT : UDINT := 16#FFC00000; (*16#FFC00000 is the bit pattern of the NaN value for a REAL variable. It must be copied to a REAL variable using the memcpy FB*)
+END_VAR

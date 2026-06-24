@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">MainPage.binding</Object>
+    <Object Type="File">DryerDiagnosis.binding</Object>
+    <Object Type="File">Blowers.binding</Object>
+    <Object Type="File">NirAdphos.binding</Object>
+    <Object Type="File">ArcLamp.binding</Object>
+    <Object Type="File">DryerBelt.binding</Object>
+    <Object Type="File">DryerSensors.binding</Object>
+    <Object Type="File">TestsDialog.binding</Object>
+  </Objects>
+</Package>

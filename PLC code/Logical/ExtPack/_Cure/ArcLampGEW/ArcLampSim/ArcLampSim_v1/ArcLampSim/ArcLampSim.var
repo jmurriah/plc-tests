@@ -1,0 +1,12 @@
+VAR
+	SimArcLamp : REFERENCE TO ArcLampSim_typ;
+	dataArcLamp : REFERENCE TO ArcLampGew;
+	tonTransport : TON;
+	tonReady : TON;
+	tonDry : TON;
+	CommsCmdReseted : CommsCommands;
+	tonCommand : TON;
+	iIndexLamp : USINT;
+	xSimulatingCommand : UINT;
+	iSetLampTimes : UINT;
+END_VAR

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="DryerBelt_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.parSw.rAxisLength" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numInPerimeter" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.parSw.rGearBox" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numInGearBox" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.xRuningBelt" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="imgBeltMoving" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.rCurrentTorque" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutTorque" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.rCurrentSpeed" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutSpeed" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.ErrorId" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutError" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.rCurrentSpeed" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="ggBeltSpeed" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.rCurrentTorque" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="ggBeltTorque" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].commands.Manual.xManBarsUp" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnBlockUp" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].commands.Manual.xManBarsDown" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnBlockDown" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.rMotorPosition" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="sldBlock1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.rMotorPosition" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="sldBlock2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.Motor.xBarsHomed" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="imgListHomed" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.Motor.xBarsHoming" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="imgListHoming" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.Motor.ErrorID" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutErrorVert" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numInBeltSpeed" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.rBeltSpeedSetPoint" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numInBeltSpeed" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.Motor.rSpeed" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutSpeedVert" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.Motor.rTorque" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutTorqueVert" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.rMotorPosition" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutSpeedVert1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnConfirmHomeBar" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnBlockUp" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnBlockDown" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="lblTorque1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="Button8" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="lblSpeed1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnBlockUp" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="lblPosition" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="Image1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutErrorVert" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnConfirmHomeBar" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutSpeedVert1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="imgListHomed" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="imgListHoming" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutSpeedVert" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="sldBlock2" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="sldBlock1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="lblError1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="Image2" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="btnBlockDown" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBelt_Content" widgetRefId="numOutTorqueVert" attribute="visible"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

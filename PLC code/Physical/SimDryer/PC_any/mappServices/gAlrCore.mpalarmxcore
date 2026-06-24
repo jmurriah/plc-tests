@@ -1,0 +1,1403 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Configuration>
+	<Element ID="gAlrCore" Type="mpalarmxcore">
+		<Group ID="mapp.AlarmX.Core.Configuration">
+			<Group ID="[0]"><Property ID="Name" Value="Dryer.Alarm.GenCritical" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.GenCritical}" />
+<Property ID="Code" Value="10001" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[1]"><Property ID="Name" Value="Dryer.Alarm.GenStop" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.GenStop}" />
+<Property ID="Code" Value="10002" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[2]"><Property ID="Name" Value="Dryer.Alarm.GenStopDrying" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.GenStopDrying}" />
+<Property ID="Code" Value="10003" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[3]"><Property ID="Name" Value="Dryer.Alarm.FanBreakers" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.FanBreakers}" />
+<Property ID="Code" Value="10004" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[4]"><Property ID="Name" Value="Dryer.Alarm.FansPsu" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.FansPsu}" />
+<Property ID="Code" Value="10005" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[5]"><Property ID="Name" Value="Dryer.Alarm.MainPsu" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.MainPsu}" />
+<Property ID="Code" Value="10006" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[6]"><Property ID="Name" Value="Dryer.Alarm.MountedMedia" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.MountedMedia}" />
+<Property ID="Code" Value="10007" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[7]"><Property ID="Name" Value="Dryer.Alarm.EstopFront" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.EstopFront}" />
+<Property ID="Code" Value="10008" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[8]"><Property ID="Name" Value="Dryer.Alarm.EstopRear" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.EstopRear}" />
+<Property ID="Code" Value="10009" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[9]"><Property ID="Name" Value="Dryer.Alarm.EstopRemote" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.EstopRemote}" />
+<Property ID="Code" Value="10011" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[10]"><Property ID="Name" Value="Dryer.Alarm.WrongPhysConfig" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.WrongPhysConfig}" />
+<Property ID="Code" Value="10012" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[11]"><Property ID="Name" Value="Dryer.Alarm.OvertorqueBelt" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.OvertorqueBelt}" />
+<Property ID="Code" Value="10013" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[12]"><Property ID="Name" Value="Dryer.Alarm.OverTempBeltFast" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.OverTempBeltFast}" />
+<Property ID="Code" Value="10014" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[13]"><Property ID="Name" Value="Dryer.Alarm.OverTempBeltSlow" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.OverTempBeltSlow}" />
+<Property ID="Code" Value="10015" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[14]"><Property ID="Name" Value="Dryer.Alarm.FansPsu80" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.FansPsu80}" />
+<Property ID="Code" Value="15001" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[15]"><Property ID="Name" Value="Dryer.Warning.MountedMediaInside" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.MountedMediaInside}" />
+<Property ID="Code" Value="15002" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[16]"><Property ID="Name" Value="Dryer.Warning.BeltTempSensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.BeltTempSensError}" />
+<Property ID="Code" Value="15003" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[17]"><Property ID="Name" Value="Dryer.Warning.BoardInTempSensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.BoardInTempSensError}" />
+<Property ID="Code" Value="15004" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[18]"><Property ID="Name" Value="Dryer.Warning.BoardOutTempSensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.BoardOutTempSensError}" />
+<Property ID="Code" Value="15005" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[19]"><Property ID="Name" Value="Dryer.Warning.AirBlowerInTempSensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.AirBlowerInTempSensError}" />
+<Property ID="Code" Value="15006" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[20]"><Property ID="Name" Value="Dryer.Warning.AirBlowerOutTempSensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.AirBlowerOutTempSensError}" />
+<Property ID="Code" Value="15007" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[21]"><Property ID="Name" Value="Dryer.Warning.FrontDoorOpened" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.FrontDoorOpened}" />
+<Property ID="Code" Value="15008" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[22]"><Property ID="Name" Value="Dryer.Warning.RearDoorOpened" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.RearDoorOpened}" />
+<Property ID="Code" Value="15009" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[23]"><Property ID="Name" Value="Dryer.Warning.BentMedia" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.BentMedia}" />
+<Property ID="Code" Value="15010" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[24]"><Property ID="Name" Value="Dryer.Warning.NotMovementEnabled" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.NotMovementEnabled}" />
+<Property ID="Code" Value="15011" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[25]"><Property ID="Name" Value="Dryer.Warning.KeyMantenance" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.KeyMantenance}" />
+<Property ID="Code" Value="15013" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[26]"><Property ID="Name" Value="Dryer.Warning.JamLowCrash" />
+<Property ID="Message" Value="{$IAT/Dryer.Warning.JamLowCrash}" />
+<Property ID="Code" Value="15014" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[27]"><Property ID="Name" Value="Dryer.Alarm.BeltAnyDriveAlarm" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltAnyDriveAlarm}" />
+<Property ID="Code" Value="30002" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[28]"><Property ID="Name" Value="Dryer.Alarm.BeltAlrPowerBeltError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltAlrPowerBeltError}" />
+<Property ID="Code" Value="30003" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[29]"><Property ID="Name" Value="Dryer.Alarm.BeltAlrComDrive" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltAlrComDrive}" />
+<Property ID="Code" Value="30004" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[30]"><Property ID="Name" Value="Dryer.Alarm.BeltAlrProtDrive" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltAlrProtDrive}" />
+<Property ID="Code" Value="30005" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[31]"><Property ID="Name" Value="Dryer.Alarm.BeltAlrOverTorque" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltAlrOverTorque}" />
+<Property ID="Code" Value="30006" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[32]"><Property ID="Name" Value="Dryer.Alarm.BeltBeltMotorTemp" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltBeltMotorTemp}" />
+<Property ID="Code" Value="30007" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[33]"><Property ID="Name" Value="Dryer.Alarm.BeltBeltDriverTemp" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltBeltDriverTemp}" />
+<Property ID="Code" Value="30008" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[34]"><Property ID="Name" Value="Dryer.Alarm.BeltNoPerimeter" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltNoPerimeter}" />
+<Property ID="Code" Value="30009" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[35]"><Property ID="Name" Value="Dryer.Alarm.BeltNoGearBox" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BeltNoGearBox}" />
+<Property ID="Code" Value="30010" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[36]"><Property ID="Name" Value="Dryer.Alarm.xWarningOvertoque" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.xWarningOvertoque}" />
+<Property ID="Code" Value="30102" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[37]"><Property ID="Name" Value="Dryer.Alarm.SblockNotReferenced" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockNotReferenced}" />
+<Property ID="Code" Value="40001" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[38]"><Property ID="Name" Value="Dryer.Alarm.SblockNotCommsDrive" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockNotCommsDrive}" />
+<Property ID="Code" Value="40002" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[39]"><Property ID="Name" Value="Dryer.Alarm.SblockDriveBreaker" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockDriveBreaker}" />
+<Property ID="Code" Value="40003" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[40]"><Property ID="Name" Value="Dryer.Alarm.SblockHomeSensorError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockHomeSensorError}" />
+<Property ID="Code" Value="40004" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[41]"><Property ID="Name" Value="Dryer.Alarm.SblockCheckHomeSensor" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockCheckHomeSensor}" />
+<Property ID="Code" Value="40051" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[42]"><Property ID="Name" Value="Dryer.Alarm.SblockMotorTemp" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockMotorTemp}" />
+<Property ID="Code" Value="40052" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[43]"><Property ID="Name" Value="Dryer.Alarm.SblockDriveTemp" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.SblockDriveTemp}" />
+<Property ID="Code" Value="40053" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[44]"><Property ID="Name" Value="Dryer.Alarm.VaccSensor" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccSensor}" />
+<Property ID="Code" Value="50001" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[45]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerComsInput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerComsInput}" />
+<Property ID="Code" Value="50051" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[46]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerComsOutput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerComsOutput}" />
+<Property ID="Code" Value="50052" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[47]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerProtInput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerProtInput}" />
+<Property ID="Code" Value="50061" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[48]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerProtOutput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerProtOutput}" />
+<Property ID="Code" Value="50062" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[49]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerErrorInput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerErrorInput}" />
+<Property ID="Code" Value="50071" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[50]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerErrorOutput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerErrorOutput}" />
+<Property ID="Code" Value="50072" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[51]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerNotRunningInput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerNotRunningInput}" />
+<Property ID="Code" Value="50081" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[52]"><Property ID="Name" Value="Dryer.Alarm.VaccBlowerNotRunningOutput" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.VaccBlowerNotRunningOutput}" />
+<Property ID="Code" Value="50082" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[53]"><Property ID="Name" Value="Dryer.Alarm.NIRSafetyError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRSafetyError}" />
+<Property ID="Code" Value="60001" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[54]"><Property ID="Name" Value="Dryer.Alarm.NIRFault" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRFault}" />
+<Property ID="Code" Value="60002" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[55]"><Property ID="Name" Value="Dryer.Alarm.NIRComsError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRComsError}" />
+<Property ID="Code" Value="60003" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[56]"><Property ID="Name" Value="Dryer.Alarm.NIRInletHumiditySensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRInletHumiditySensError}" />
+<Property ID="Code" Value="60021" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[57]"><Property ID="Name" Value="Dryer.Alarm.NIRInletTempSensError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRInletTempSensError}" />
+<Property ID="Code" Value="60022" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[58]"><Property ID="Name" Value="Dryer.Alarm.JamInputNIR1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamInputNIR1}" />
+<Property ID="Code" Value="60051" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[59]"><Property ID="Name" Value="Dryer.Alarm.JamOutputNIR1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamOutputNIR1}" />
+<Property ID="Code" Value="60052" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[60]"><Property ID="Name" Value="Dryer.Alarm.JamInputNIR2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamInputNIR2}" />
+<Property ID="Code" Value="60061" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[61]"><Property ID="Name" Value="Dryer.Alarm.JamOutputNIR2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamOutputNIR2}" />
+<Property ID="Code" Value="60062" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[62]"><Property ID="Name" Value="Dryer.Alarm.JamRearNIR1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamRearNIR1}" />
+<Property ID="Code" Value="60071" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[63]"><Property ID="Name" Value="Dryer.Alarm.JamRearNIR2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamRearNIR2}" />
+<Property ID="Code" Value="60072" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[64]"><Property ID="Name" Value="Dryer.Alarm.JamMechCrossNIR1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamMechCrossNIR1}" />
+<Property ID="Code" Value="60081" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[65]"><Property ID="Name" Value="Dryer.Alarm.JamMechCrossNIR2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.JamMechCrossNIR2}" />
+<Property ID="Code" Value="60082" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[66]"><Property ID="Name" Value="Dryer.Alarm.NIRSurfaceTemp1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRSurfaceTemp1}" />
+<Property ID="Code" Value="60101" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[67]"><Property ID="Name" Value="Dryer.Alarm.NIRSurfaceTemp2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRSurfaceTemp2}" />
+<Property ID="Code" Value="60102" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[68]"><Property ID="Name" Value="Dryer.Alarm.NIRSurfaceTempSensErr1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRSurfaceTempSensErr1}" />
+<Property ID="Code" Value="60111" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[69]"><Property ID="Name" Value="Dryer.Alarm.NIRSurfaceTempSensErr2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.NIRSurfaceTempSensErr2}" />
+<Property ID="Code" Value="60112" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[70]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan1Nir1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan1Nir1}" />
+<Property ID="Code" Value="60201" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[71]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan2Nir1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan2Nir1}" />
+<Property ID="Code" Value="60202" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[72]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan3Nir1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan3Nir1}" />
+<Property ID="Code" Value="60203" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[73]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan4Nir1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan4Nir1}" />
+<Property ID="Code" Value="60204" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[74]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan1Nir2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan1Nir2}" />
+<Property ID="Code" Value="60211" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[75]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan2Nir2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan2Nir2}" />
+<Property ID="Code" Value="60212" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[76]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan3Nir2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan3Nir2}" />
+<Property ID="Code" Value="60213" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[77]"><Property ID="Name" Value="Dryer.Alarm.BlockedFan4Nir2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.BlockedFan4Nir2}" />
+<Property ID="Code" Value="60214" />
+<Property ID="Severity" Value="2" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[78]"><Property ID="Name" Value="Dryer.Alarm.ArcLampComsError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.ArcLampComsError}" />
+<Property ID="Code" Value="70001" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[79]"><Property ID="Name" Value="Dryer.Alarm.ArcLampCredentialsError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.ArcLampCredentialsError}" />
+<Property ID="Code" Value="70002" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[80]"><Property ID="Name" Value="Dryer.Alarm.ArcLampInternalError" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.ArcLampInternalError}" />
+<Property ID="Code" Value="70003" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[81]"><Property ID="Name" Value="Dryer.Alarm.ArcLampJam" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.ArcLampJam}" />
+<Property ID="Code" Value="70004" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[82]"><Property ID="Name" Value="Dryer.Alarm.ArcLampAlarmLamp1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.ArcLampAlarmLamp1}" />
+<Property ID="Code" Value="70051" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[83]"><Property ID="Name" Value="Dryer.Alarm.ArcLampAlarmLamp2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.ArcLampAlarmLamp2}" />
+<Property ID="Code" Value="70052" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[84]"><Property ID="Name" Value="Dryer.Alarm.CheckMediaExit1" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.CheckMediaExit1}" />
+<Property ID="Code" Value="80001" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+<Group ID="[85]"><Property ID="Name" Value="Dryer.Alarm.CheckMediaExit2" />
+<Property ID="Message" Value="{$IAT/Dryer.Alarm.CheckMediaExit2}" />
+<Property ID="Code" Value="80002" />
+<Property ID="Severity" Value="1" />
+<Selector ID="Behavior" Value="PersistentAlarm"><Property ID="Acknowledge" Value="0" />
+<Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+<Group ID="DataUpdate"><Group ID="Activation"><Property ID="TimeStamp" Value="TRUE" />
+<Property ID="Snippets" Value="TRUE" />
+</Group>
+</Group>
+<Group ID="Recording"><Property ID="ActiveToInactive" Value="TRUE" />
+<Property ID="UnacknowledgedToAcknowledged" Value="FALSE" />
+<Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+</Group>
+</Selector>
+</Group>
+</Group>
+<Group ID="mapp.AlarmX.Core.Categories">
+<Group ID="[0]">
+<Property ID="Name" Value="Critical" />
+<Selector ID="SourceProperty">
+<Property ID="Severity" Value="1" />
+</Selector>
+</Group>
+<Group ID="[1]">
+<Property ID="Name" Value="Warning" />
+<Selector ID="SourceProperty">
+<Property ID="Severity" Value="2" />
+</Selector>
+</Group>
+<Group ID="[2]">
+<Property ID="Name" Value="Message" />
+<Selector ID="SourceProperty">
+<Property ID="Severity" Value="3" />
+</Selector>
+</Group>
+</Group>
+</Element>
+</Configuration>

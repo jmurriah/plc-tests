@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="Lamp_Numeric_Display" width="1190" height="400" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_Title_L" top="0" left="20" width="190" zIndex="0" text="Parameters:" style="Title2" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_EnablesByPosition_L" top="40" left="40" width="200" zIndex="1" text="EnablesByPosition:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_NumSLM_L" top="80" left="40" width="200" zIndex="2" text="NumSLM:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_CuringLength_L" top="120" left="40" width="200" zIndex="3" text="iCuringLength:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_SerialNumber_L" top="160" left="40" width="200" zIndex="4" text="stSerialNumber:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_FullActive_L" top="200" left="40" width="200" zIndex="6" text="xFullActive:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_FirstSlm_L" top="240" left="40" width="200" zIndex="8" text="iFirstSlm:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_P_LastSlm_L" top="280" left="40" width="200" zIndex="9" text="iLastSlm:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_I_Title_L" top="0" left="400" width="190" zIndex="10" text="Input:" style="Title2" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_I_TempRaw_L" top="40" left="420" width="190" zIndex="11" text="TemperatureRaw:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_I_SLMFault_L" top="80" left="420" width="190" zIndex="12" text="SLMFault:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_I_ThermalFault_L" top="120" left="420" width="190" zIndex="13" text="ThermalFault:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_O_Title_L" top="0" left="760" width="190" zIndex="14" text="Output:" style="Title2" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_O_IntensityAppl_L" top="39" left="780" width="190" zIndex="15" text="IntensityLampApplied:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_O_IntensityRaw_L" top="79" left="780" width="190" zIndex="16" text="IntensityLampRaw:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_O_EnsableLamp_L" top="119" left="780" width="190" zIndex="17" text="EnableLamp:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_O_Temperature_L" top="159" left="780" width="190" zIndex="18" text="rTemperature:" />
+		<Widget xsi:type="widgets.brease.Label" id="L1_O_LampErrorCode_L" top="199" left="780" width="190" zIndex="19" text="LampErrorCode:" />
+		
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_NumSLM_NO" top="79" left="240" width="140" height="30" zIndex="21" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}"/>
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_CuringLength_NO" top="119" left="240" width="140" height="30" zIndex="22" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right"  />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_FirstSlm_NO" top="240" left="240" width="140" height="30" zIndex="23" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_P_LastSlm_NO" top="280" left="240" width="140" height="30" zIndex="24" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}"/>
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_I_TempRaw_NO" top="40" left="600" width="140" height="30" zIndex="25" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_IntensityAppl_NO" top="39" left="1000" width="140" height="30" zIndex="26" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right"/>
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_IntensityRaw_NO" top="79" left="1000" width="140" height="30" zIndex="27"  unitAlign="right"/>
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_Temperature_NO" top="159" left="1000" width="140" height="30" zIndex="28" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right"/>
+		<Widget xsi:type="widgets.brease.NumericOutput" id="L1_O_LampErrorCode_NO" top="199" left="1000" width="140" height="30" zIndex="29" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}"/>
+		
+		<Widget xsi:type="widgets.brease.Image" id="L1_P_EnablesByPositionD_I" top="39" left="299" width="21" height="23" zIndex="30" image="Media/Lamps/RedLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_P_FullActiveD_I" top="200" left="299" width="21" height="23" zIndex="31" image="Media/Lamps/RedLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_I_SLMFaultD_I" top="80" left="661" width="21" height="23" zIndex="32" image="Media/Lamps/RedLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_I_ThermalFaultD_I" top="120" left="661" width="21" height="23" zIndex="33" image="Media/Lamps/RedLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_O_EnsableLampD_I" top="119" left="1060" width="23" height="23" zIndex="34" image="Media/Lamps/RedLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_P_EnablesByPositionE_I" top="39" left="299" width="21" height="23" zIndex="35" image="Media/Lamps/GreenLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_P_FullActiveE_I" top="200" left="299" width="21" height="23" zIndex="36" image="Media/Lamps/GreenLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_I_SLMFaultE_I" top="80" left="661" width="21" height="23" zIndex="37" image="Media/Lamps/GreenLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_I_ThermalFaultE_I" top="120" left="661" width="21" height="23" zIndex="38" image="Media/Lamps/GreenLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.Image" id="L1_O_EnsableLampE_I" top="119" left="1060" width="23" height="23" zIndex="39" image="Media/Lamps/GreenLamp10_On.png" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="L1_P_SerialNumber_TO" top="159" left="259" width="320" zIndex="40" />
+		
+
+  </Widgets>
+  <Properties>
+     
+    <!--Simple non bindable property:
+    Property Attributes
+    xsi:type: NonBindableProperty
+    name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+    <Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" property=""/>
+        <Mapping widget="" property=""/>
+      </Mappings>
+    </Property>
+    
+    Simple bindable property:
+    <Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" property="" mode=""/>
+        <Mapping widget="" property="" mode=""/>
+      </Mappings>
+    </Property>
+
+
+    Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="CuringLed_Lamp_typ" type="CuringLed_Lamp_typ" readOnly="true" >
+			<Description></Description>
+			<Mappings>
+				<Mapping widget="L1_P_NumSLM_NO" type="Number" property="value" mode="oneWay" memberPath="Parameters.iNumSLM" mapToNode="false"/>
+				<Mapping widget="L1_P_CuringLength_NO" type="Number" property="value" mode="oneWay" memberPath="Parameters.iCuringLength" mapToNode="false"/>
+				<Mapping widget="L1_P_FirstSlm_NO" type="Number" property="value" mode="oneWay" memberPath="Parameters.iFirstSlm" mapToNode="false"/>
+				<Mapping widget="L1_P_LastSlm_NO" type="Number" property="value" mode="oneWay" memberPath="Parameters.iLastSlm" mapToNode="false"/>
+				<Mapping widget="L1_I_TempRaw_NO" type="Number" property="value" mode="oneWay" memberPath="Inputs.TemperatureRaw" mapToNode="false"/>
+				<Mapping widget="L1_O_IntensityAppl_NO" type="Number" property="value" mode="oneWay" memberPath="Outputs.IntensityLampApplied" mapToNode="false"/>
+				<Mapping widget="L1_O_IntensityRaw_NO" type="Number" property="value" mode="oneWay" memberPath="Outputs.IntensityLampRaw" mapToNode="false"/>
+				<Mapping widget="L1_O_Temperature_NO" type="Number" property="value" mode="oneWay" memberPath="Outputs.rTemperature" mapToNode="false"/>
+				
+				<Mapping widget="L1_P_EnablesByPositionE_I" type="Boolean" property="visible" mode="oneWay" memberPath="Parameters.EnabledByPosition" mapToNode="false"/>
+				<Mapping widget="L1_P_FullActiveE_I" type="Boolean" property="visible" mode="oneWay" memberPath="Parameters.xFullActive" mapToNode="false"/>
+				<Mapping widget="L1_I_SLMFaultE_I" type="Boolean" property="visible" mode="oneWay" memberPath="Inputs.SLMFault" mapToNode="false"/>
+				<Mapping widget="L1_I_ThermalFaultE_I" type="Boolean" property="visible" mode="oneWay" memberPath="Inputs.ThermalFault" mapToNode="false"/>
+				<Mapping widget="L1_O_EnsableLampE_I" type="Boolean" property="visible" mode="oneWay" memberPath="Outputs.EnableLamp" mapToNode="false"/>
+				
+				<Mapping widget="L1_P_SerialNumber_TO" type="String" property="value" mode="oneWay" memberPath="Parameters.stSerialNumber" mapToNode="false"/>
+				
+				
+				
+			</Mappings>
+		</Property>
+    
+  </Properties>
+
+  <Events>
+    <!--
+    <Event name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" event="" />
+      </Mappings>
+    </Event>
+    -->
+  </Events>
+
+  <Actions>
+    <!--
+    <Action name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" action="" />
+      </Mappings>
+    </Action>
+    -->
+  </Actions>
+
+  <EventBindings>
+    <!-- source and target can only be widgets within the compound widget.
+    <EventBinding id="">
+      <Source xsi:type="widget.Event" widgetRefId="" event="" />
+      <EventHandler condition="">
+        <Action>
+          <Target xsi:type="widget.Action" widgetRefId="">
+            <Method name="" value="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    -->
+  </EventBindings>
+
+</CompoundWidget>

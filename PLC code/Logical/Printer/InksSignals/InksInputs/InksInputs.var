@@ -1,0 +1,8 @@
+VAR
+	iIndexInksIn : USINT;
+	dataInksInput : REFERENCE TO stInks;
+	dataInksInParams : stInksParameters;
+	iIndexInksSlow : USINT;
+	copyInkParamsToDebug : ARRAY[0..MAX_LAST_INK] OF BOOL;
+	inksDebugMode_copy : ARRAY[0..MAX_LAST_INK] OF BOOL; (*Copy of the previous value of xDebug to allow detect Edges*)
+END_VAR

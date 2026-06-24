@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DryerBelt_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lblTitle" top="0" left="0" width="1080" zIndex="2" text="$IAT/Page.Belt" backColor="rgba(192, 192, 192, 1)" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Image" id="imgBeltMoving" top="310" left="570" width="500" height="70" zIndex="4" image="Media/EFI/BeltMoving.gif" />
+    <Widget xsi:type="widgets.brease.Image" id="imbBeltStopped" top="310" left="570" width="500" height="70" zIndex="3" image="Media/EFI/BeltMoving01.png" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numInPerimeter" top="65" left="205" width="135" height="35" zIndex="5" maxValue="1000" minValue="200" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" permissionOperate="['HMI']" />
+    <Widget xsi:type="widgets.brease.Label" id="lblPerimeter" top="65" left="25" width="165" height="35" zIndex="6" text="$IAT/Dryer.Belt.Perimeter" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numInGearBox" top="115" left="205" width="135" height="35" zIndex="7" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1,'maximumIntegerDigits':2},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="50" minValue="1" permissionOperate="['HMI']" />
+    <Widget xsi:type="widgets.brease.Label" id="lblGearBox" top="115" left="25" width="165" height="35" zIndex="8" text="$IAT/Dryer.Belt.GearBox" />
+    <Widget xsi:type="widgets.brease.Label" id="lblSpeed" top="185" left="25" width="165" zIndex="9" text="$IAT/Dryer.Belt.Speed" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutSpeed" top="185" left="205" width="135" zIndex="10" unit="{'metric':'2X','imperial':'2X','imperial-us':'2X'}" unitAlign="right" unitTextAlign="right" unitWidth="30" />
+    <Widget xsi:type="widgets.brease.Label" id="lblTorque" top="220" left="25" width="165" zIndex="11" text="$IAT/Dryer.Belt.Torque" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutTorque" top="220" left="205" width="135" zIndex="12" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="lblError" top="255" left="25" width="165" zIndex="13" text="$IAT/Dryer.Belt.Error" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutError" top="255" left="205" width="135" zIndex="14" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="ggBeltSpeed" top="55" left="635" zIndex="15" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" text="m/min" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="ggBeltTorque" top="55" left="855" zIndex="16" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" text="N·m" fontSize="14px" />
+    <Widget xsi:type="widgets.brease.Button" id="btnConfirmHomeBar" top="515" left="50" width="65" height="55" zIndex="17" image="Media/UI/ref-def.svg" disabledBackColor="rgba(152, 152, 152, 1)" />
+    <Widget xsi:type="widgets.brease.PushButton" id="btnBlockUp" top="600" left="50" width="65" height="55" zIndex="18" image="Media/UI/moveup-def.svg" disabledBackColor="rgba(152, 152, 152, 1)" />
+    <Widget xsi:type="widgets.brease.PushButton" id="btnBlockDown" top="670" left="50" width="65" height="55" zIndex="19" image="Media/UI/movedown-def.svg" disabledBackColor="rgba(152, 152, 152, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="Button8" top="520" left="190" width="437" height="210" zIndex="20" cornerRadius="10px" disabledBackGroundGradient="linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)" enable="false" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="sldBlock1" top="530" left="450" width="50" height="175" zIndex="21" image="Media/SVGsymbols/Symbols/Server.svg" maxValue="160" orientation="BottomToTop" thumbSize="60px" thumbColor="rgba(255, 255, 255, 0)" thumbGradient="none" trackColor="rgba(200, 200, 200, 0)" trackGradient="none" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="sldBlock2" top="530" left="520" width="50" height="175" zIndex="22" image="Media/SVGsymbols/Symbols/Server.svg" maxValue="160" orientation="BottomToTop" thumbSize="60px" thumbColor="rgba(255, 255, 255, 0)" thumbGradient="none" trackColor="rgba(200, 200, 200, 0)" trackGradient="none" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="545" left="220" width="100" height="155" zIndex="23" image="Media/SVGsymbols/Symbols/Server.svg" sizeMode="fill" enable="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="545" left="330" width="100" height="155" zIndex="24" image="Media/SVGsymbols/Symbols/Server.svg" sizeMode="fill" enable="false" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListHomed" top="515" left="120" width="20" height="20" zIndex="25" imageList="['GreenLamp01_Off.png', 'GreenLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.Label" id="lblSpeed1" top="605" left="670" width="210" zIndex="26" text="$IAT/Dryer.Belt.Speed" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutSpeedVert" top="605" left="890" width="120" zIndex="27" unit="{'metric':'2X','imperial':'2X','imperial-us':'2X'}" unitAlign="right" unitTextAlign="right" unitWidth="30" />
+    <Widget xsi:type="widgets.brease.Label" id="lblTorque1" top="640" left="670" width="210" zIndex="28" text="$IAT/Dryer.Belt.Torque" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutTorqueVert" top="640" left="890" width="120" zIndex="29" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="lblError1" top="675" left="670" width="210" zIndex="30" text="$IAT/Dryer.Belt.Error" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutErrorVert" top="675" left="890" width="120" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListHoming" top="540" left="120" width="20" height="20" zIndex="32" imageList="['YellowLamp01_Off.png', 'YellowLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="numInBeltSpeed" top="330" left="770" width="115" zIndex="33" format="{'metric':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1,'maximumIntegerDigits':3}}" unit="{'metric':'2X','imperial':'2X','imperial-us':'2X'}" unitAlign="right" value="100" />
+    <Widget xsi:type="widgets.brease.Label" id="lblPosition" top="570" left="670" width="210" zIndex="34" text="$IAT/Dryer.Position" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutSpeedVert1" top="570" left="890" width="120" zIndex="35" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" unitTextAlign="right" unitWidth="30" />
+    <Widget xsi:type="widgets.brease.Label" id="lblSpeed2" top="255" left="655" width="165" zIndex="36" text="$IAT/Dryer.Belt.Speed" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Label" id="lblTorque2" top="255" left="875" width="165" zIndex="37" text="$IAT/Dryer.Belt.Torque" textAlign="center" />
+  </Widgets>
+</Content>

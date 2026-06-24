@@ -1,0 +1,16 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: EventLog
+ * File: EventLog.var
+ * Author: Bernecker + Rainer
+ * Created: June, 2015
+ ********************************************************************
+ * Local variables of program EventLog
+ ********************************************************************)
+VAR
+	EventLog : GenEventLog_typ; (*Event handling.*)
+	SemFifoCreate : SemCreate; (*SemCreate Functionblock*)
+	SemFifoGetInfo : SemGetInfo; (*SemGetInfo Functionblock*)
+	SemIdent : UDINT;
+END_VAR

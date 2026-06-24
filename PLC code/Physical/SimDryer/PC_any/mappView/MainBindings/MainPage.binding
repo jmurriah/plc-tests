@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="MainPage_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="mapp" refId="gAlrCore" attribute="link"/>
+			<Target xsi:type="brease" contentRefId="DryerAlarms_Content" widgetRefId="AlarmList1" attribute="mpLink"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="mapp" refId="gAlrHist" attribute="link"/>
+			<Target xsi:type="brease" contentRefId="DryerAlarms_Content" widgetRefId="AlarmHistory1" attribute="mpLink"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.xManual_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnManual" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.xZero_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnZero" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.xAuto_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnAuto" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Sw.xReset_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnReset" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Sw.xReset_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerAlarms_Content" widgetRefId="btnReset" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.xMute" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerAlarms_Content" widgetRefId="btnMute" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recManual" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xAuto" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recAuto" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xAuto" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnRemote" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xAuto" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnLocal" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xRemote" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recLocal" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocal" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recRemote" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.commands.xToLocal" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnLocal" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.commands.xToRemote" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnRemote" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.rBeltSpeedSetPoint" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInBeltSpeed" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInBeltSpeed" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Sw.xStart_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="btnStart" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Sw.xStop_GI" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="btnStop" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.xRuningBelt" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgBeltMoving" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xBuzzer" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListBuzzer" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.DryerState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdDryerState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdBeltState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdVaccumState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdNirState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBelt.states.rCurrentSpeed" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="ggBeltSpeed" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.AlSummary.xAlarmCritical" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListCriticalAlarm" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.AlSummary.xAlarmStop" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListStopAlarm" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xZero" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListZero" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListMan" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xAuto" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListAuto" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xZero" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recZero" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rMargin" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInMargin" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInThickness" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rLength" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInLength" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInLength" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rWidth" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInWidth" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInWidth" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rGap" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInGap" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBoardIn" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBoardTempIn" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBoardOut" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBoardTempOut" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBelt" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBeltTemp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rInletTemperature" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBoardTempInletNir" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rInletHumidity" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBoardHumidityInletNir" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rSurfaceTempModule[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutSurfaceTempNir2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.rSurfaceTempModule[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutSurfaceTempNir1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rAirBlowerInput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBlowerInTemp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rAirBlowerOutput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutBlowerOutTemp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gPLC.sVersion" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="txtOutPlcVersion" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[1].EnableMod" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imlEnabledNir1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.Comms.Modules[2].EnableMod" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imlEnabledNir2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.State" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdArcLampState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].xDrying" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglDryingArcLamp1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].InAlarm" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglAlarmArcLamp1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].Enabled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imlEnabledArcLamp1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].xDrying" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglDryingArcLamp2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].InAlarm" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglAlarmArcLamp2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].Enabled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imlEnabledArcLamp2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.xDrying" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglDryingNir" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.xDrying" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglDryingArcLamp" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.DryerState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="drpdDryerState" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryerRemoteData.Commands.xRunTransport" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListRunTransport" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryerRemoteData.Commands.xPrepareToDry" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListPrepare" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryerRemoteData.Commands.xStartDrying" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgListStratDrying" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.xMute" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnMute" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.CommsStatus" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdArcLampComms" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBeltSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListBeltTempSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBoardInSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListBoardTempInSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBoardOutSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListBoardTempOutSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Alarms.xInletHumiditySensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListInletHumiditySensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Alarms.xInletTempSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListInletTempSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xAirBlowerInputSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListAirBlowerInSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xAirBlowerOutputSensorError" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListAirBlowerOutSensErr" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Alarms.xSurfaceTempModuleSensorError[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListSurfaceTempSensErrNir1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Alarms.xSurfaceTempModuleSensorError[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListSurfaceTempSensErrNir2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedFrontInput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListClosedFrontInput" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedFrontOutput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListClosedFrontOutput" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedRearInput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListClosedRearInput" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedRearOutput" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListClosedRearOutput" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Alarm.Safety.xEStopFront" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListStopFront" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Alarm.Safety.xEStopRear" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListStopRear" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnRemote" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnLocal" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.xEnabledNir" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recEnableNir" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.xEnableNir" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnEnableNir" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerLocalStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnEnableNir" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Parameters.xEnableArcLamp" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="recArcLamp" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.xEnableArcLamp" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnEnableArcLamp" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xDryerLocalStopped" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnEnableArcLamp" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xRemote" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="imgRemote" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="btnStart" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="btnStop" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.rMotorPosition" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutPosVert" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.rPressurePerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="ggPressureBlower" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.Blower.rDutyCycle" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="ggDutyCycleBlower" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].parSw.rVacPressureSetPointPerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInBlowersSetPoint" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.Blower.xMoving" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgBlowerMoving" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gSimpleBlock[1].Status.Motor.xBarsHomed" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListHomed" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.rPressurePerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutPressureVacc" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xLockFrontDoor" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListBlockedFront" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xLockRearDoor" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListBlockedRear" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Alarms.xFault" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglAlarmNir" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="bntIncreaseSpeedSetPoint" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="bntReduceSpeedSetPoint" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBasicDetectMedia.Inputs.xMediaPresentL1" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgMedia1" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBasicDetectMedia.Inputs.xMediaPresentL2" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgMedia2" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[1].UnitInternalState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="txtOutStateLamp1" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.Lamps[2].UnitInternalState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="txtOutStateLamp2" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xSimMachine" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="grpTests" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.TestStateDesctiption" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="txtOutDescTest" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.TestName" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="txtOutTest" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.iTestState" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numStepTest" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.testFailedAsserts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutFailAsserts" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.testPassedAsserts" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numOutPassedAsserts" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xAnyTestActive" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgListExecutingTest" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.Out.xProcess" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgNirImpression" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Signals.Out.xImpression" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgArcLampImpression" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.xNotAutoPossible" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imgNotEnterAuto" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[1].NirStatus" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdNirStatusModule1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Status.Comms.Modules[2].NirStatus" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdNirStatusModule2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="NoHMIUser" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerStart_Content" widgetRefId="LoginAuto" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.xInstalled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="grpArcLamp" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.xInstalled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainSide_Content" widgetRefId="NavigationButton8" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="bntIncreaseMargin" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="lblThickness" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="bntIncreaseThickness" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInThickness" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInMargin" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="bntReduceThickness" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="bntReduceMargin" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.HMI.xShowThickness" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="lblMargin" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.xInstalled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdArcLampState" attribute="visible"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gArcLampGew.Status.xInstalled" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="drpdArcLampComms" attribute="visible"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.AutoLocation.xLocalORManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInPowerBySubstrate" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.rSubstratePowerReduction" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInPowerBySubstrate" attribute="node"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gThicknessCtrl.parameters.Dry.rThermalInerciaReduction" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="numInPowerByThInertia" attribute="node"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Pt.SW.xEnableDDC" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnEnableDDC" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xSimMachine" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnManual" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xSimMachine" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnZero" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xSimMachine" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnAuto" attribute="enable"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::SimDryer:xTestPrepareDryer" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="btnTest" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Parameters.DDC.xEnableDDC" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imlEnabledDDC" attribute="selectedIndex"/>
+		</Binding>
+	</Bindings>
+</BindingsSet>

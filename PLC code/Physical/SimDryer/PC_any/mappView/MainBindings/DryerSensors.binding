@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="DryerSensors_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gBasicDetectMedia.Inputs.xMountedMedia" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListMountedMedia" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[1].Fan[1]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan1_1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[1].Fan[2]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan2_1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[1].Fan[3]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan3_1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[1].Fan[4]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan4_1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[2].Fan[1]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan1_2" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[2].Fan[2]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan2_2" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[2].Fan[3]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan3_2" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.BlockedFans[2].Fan[4]" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFan4_2" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Alarm.Safety.xEStopFront" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListStopFront" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Alarm.Safety.xEStopRear" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListStopRear" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedFrontInput" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListClosedFrontInput" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedFrontOutput" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListClosedFrontOutput" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedRearInput" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListClosedRearInput" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Safety.xClosedRearOutput" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListClosedRearOutput" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.xOpenDoorsKey" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerMainPage_Content" widgetRefId="imglActiveKey" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xLockFrontDoor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFront" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xLockFrontDoor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedFront1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xLockRearDoor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedRear" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Out.xLockRearDoor" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBlockedRear1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rAirBlowerInput" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="numOutBlowerInTemp" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rAirBlowerOutput" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="numOutBlowerOutTemp" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xAirBlowerInputSensorError" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListAirBlowerInSensErr" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xAirBlowerOutputSensorError" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListAirBlowerOutSensErr" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBelt" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="numOutBeltTemp" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBeltSensorError" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBeltTempSensErr" attribute="selectedIndex" />
+		</Binding>		
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBoardIn" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="numOutBoardTempIn" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Temp.rBoardOut" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="numOutBoardTempOut" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBoardInSensorError" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBoardTempInSensErr" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.Al.Warning.xBoardOutSensorError" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListBoardTempOutSensErr" attribute="selectedIndex" />
+		</Binding>		
+	
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.Jam[2].xMechCross" attribute="value" />
+<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListJamCrossNir2" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gNirAdphos.Signals.In.Jam[1].xMechCross" attribute="value" />
+<Target xsi:type="brease" contentRefId="DryerSensors_Content" widgetRefId="imgListJamCrossNir1" attribute="selectedIndex" />
+</Binding>
+</Bindings>
+</BindingsSet>

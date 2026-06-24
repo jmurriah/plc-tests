@@ -1,0 +1,4 @@
+VAR
+	gDryerLocalParams : Dryer_SwParameters; (*Local parameters*)
+	gDryerLocalSignals : DryerRemoteData;
+END_VAR

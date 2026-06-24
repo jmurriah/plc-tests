@@ -1,0 +1,16 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: NwSNTPClient
+ * File: NwSNTPClient.var
+ * Author: Bernecker + Rainer
+ * Created: April 21, 2009
+ ********************************************************************
+ * Local variables of program NwSNTPClient
+ ********************************************************************)
+VAR
+	Network : {REDUND_UNREPLICABLE} SNTP_Network_typ; (*Global structure*)
+	Time : REFERENCE TO TimeMachine;
+	TimeZoneId_copy : UINT;
+	xNeedToResedTimeZoneId : BOOL;
+END_VAR

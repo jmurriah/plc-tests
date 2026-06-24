@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="I4.93">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Everyone" Access="0x015F" />
+        <ACE RoleName="Administrators" Access="0x017F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleName="Administrators" Access="0x01FF" />
+        <ACE RoleName="Everyone" Access="0x01FF" />
+      </ACL>
+      <ACL Id="3">
+        <ACE RoleName="Administrators" Access="0x01FF" />
+        <ACE RoleName="Everyone" Access="0x01DF" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="5066068" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="millimetre" Symbol="mm" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <DefaultView AclId="2">
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gMachine" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="Pt" RecursiveEnable="1">
+            <Variable Name="CT" />
+          </Variable>
+          <Variable Name="In" RecursiveEnable="1">
+            <Variable AclInherit="1" Name="xConsentL1Ok" />
+            <Variable AclInherit="1" Name="xConsentL2Ok" />
+            <Variable AclInherit="1" Name="iRelieve1" />
+            <Variable AclInherit="1" Name="iRelieve2" />
+            <Variable AclId="2" AclInherit="2" Name="Buttons">
+              <Variable Name="xStart" />
+              <Variable Name="xStop" />
+              <Variable Name="xManual" />
+              <Variable Name="xZero" />
+              <Variable Name="xAuto" />
+              <Variable Name="xReset" />
+              <Variable Name="xMute" />
+            </Variable>
+            <Variable AclInherit="1" Name="x24Vdc" />
+            <Variable AclInherit="1" Name="x230V" />
+            <Variable AclInherit="1" Name="UPSs" />
+            <Variable AclInherit="1" Name="xExternalCleaningOrder" />
+            <Variable AclInherit="1" Name="xPC1Ok" />
+            <Variable AclInherit="1" Name="xPC2Ok" />
+            <Variable AclInherit="1" Name="xAirSupply" />
+            <Variable AclInherit="1" Name="iMachineModelCode" />
+            <Variable AclInherit="1" Name="xPbfCardOK" />
+            <Variable AclInherit="1" Name="xTankHeaterPsuOK" />
+            <Variable AclInherit="1" Name="xCoolingPCSensorAlrm" />
+            <Variable AclInherit="1" Name="xCameraDefectDetected" />
+            <Variable AclInherit="1" Name="ProductDetect" />
+            <Variable AclInherit="1" Name="xSafetyEnabled" />
+          </Variable>
+          <Variable AclInherit="1" Name="St" RecursiveEnable="1">
+            <Variable Name="Position" />
+            <Variable Name="Mode" RecursiveEnable="1" />
+            <Variable Name="xBeltRunPrevToClean" />
+            <Variable Name="iAutoModeSW" />
+            <Variable Name="iMachineModelCodeSW" />
+            <Variable Name="StateMode" />
+            <Variable Name="AutoMode" />
+            <Variable Name="uiLicenseCounter" />
+            <Variable Name="exec" />
+            <Variable Name="HwData" />
+            <Variable Name="iFaultRunPlc" />
+            <Variable Name="xMediaDetected" />
+            <Variable Name="iJamDevices" />
+            <Variable Name="Clear">
+              <Variable Name="xInstalled" />
+              <Variable AclId="3" AclInherit="2" Name="xDebugMode" />
+              <Variable AclId="3" AclInherit="2" Name="xEnableToPrint" />
+            </Variable>
+            <Variable Name="Color">
+              <Variable AclId="3" AclInherit="2" Name="xDebugMode" />
+              <Variable AclId="3" AclInherit="2" Name="xEnableToPrint" />
+            </Variable>
+            <Variable Name="White">
+              <Variable AclId="3" AclInherit="2" Name="xDebugMode" />
+              <Variable AclId="3" AclInherit="2" Name="xEnableToPrint" />
+            </Variable>
+          </Variable>
+          <Variable AclInherit="1" Name="Out" RecursiveEnable="1" />
+          <Variable Name="commands" RecursiveEnable="1" />
+          <Variable AclInherit="1" Name="AutoCmd" RecursiveEnable="1" />
+          <Variable AclInherit="1" Name="AlSummary" RecursiveEnable="1">
+            <Variable Name="iReasonStop" RecursiveEnable="1" />
+          </Variable>
+          <Variable AclInherit="1" Name="Al" RecursiveEnable="1" />
+          <Variable AclInherit="1" Name="Lg" RecursiveEnable="1" />
+          <Variable Name="parSw" RecursiveEnable="1" />
+          <Variable Name="commandsSw" RecursiveEnable="1" />
+        </Variable>
+        <Variable Name="gSimMachine" RecursiveEnable="1">
+          <Variable Name="Parameters">
+            <Variable Name="MachineType" />
+          </Variable>
+          <Variable Name="Commands" />
+        </Variable>
+        <Variable AclInherit="1" Name="gPLC">
+          <Variable Name="sVersion" />
+          <Variable Name="iVersion0" />
+          <Variable Name="iVersion1" />
+          <Variable Name="iVersion2" />
+          <Variable Name="iVersion3" />
+          <Variable Name="iVarsVersion0" />
+          <Variable Name="iVarsVersion1" />
+          <Variable Name="iVarsVersion2" />
+          <Variable Name="iVarsVersion3" />
+        </Variable>
+        <Variable Name="gPhotoCells">
+          <Variable Name="commands" />
+          <Variable Name="parameters" RecursiveEnable="1">
+            <Variable Name="Sensors" RecursiveEnable="1" />
+          </Variable>
+          <Variable AclInherit="1" Name="Alarms" RecursiveEnable="2">
+            <Variable Name="xNotReferenced" />
+            <Variable Name="xNotInstalled" />
+            <Variable Name="xComsMotorError" />
+            <Variable Name="xMountedTile" />
+            <Variable Name="xMotorError" />
+            <Variable Name="xNoDigSignalLaserSensor" />
+            <Variable Name="xContinuousActPDPhcell" />
+            <Variable Name="xIncoherPhotocellSystem" />
+            <Variable Name="xAlrCriticalPhotocellNotAligned" />
+            <Variable Name="xAlrInvalidAlignmentPosition" />
+            <Variable Name="xPhotoCellsNotAlignedWarning" RecursiveEnable="1" />
+            <Variable Name="xPhotoCellsNotAlignedError" RecursiveEnable="1" />
+            <Variable Name="xPositionOutOfRange" />
+            <Variable Name="xAlrWarpMedia" />
+            <Variable Name="xPhotoCellsDetectionIncoherence" RecursiveEnable="2" />
+          </Variable>
+          <Variable Name="parSw" RecursiveEnable="1">
+            <Variable Name="Sensors" RecursiveEnable="1" />
+          </Variable>
+          <Variable AclInherit="1" Name="status" RecursiveEnable="1">
+            <Variable Name="xPhotoCellsNotAligned" RecursiveEnable="1" />
+          </Variable>
+          <Variable Name="AlSummary" />
+          <Variable Name="Inputs">
+            <Variable Name="Signals">
+              <Variable Name="xPhotoCells" RecursiveEnable="1" />
+            </Variable>
+          </Variable>
+          <Variable Name="commandsSw">
+            <Variable Name="xReference" />
+          </Variable>
+          <Variable Name="ordersSw">
+            <Variable Name="xMoveUp" />
+            <Variable Name="xMoveDown" />
+          </Variable>
+        </Variable>
+        <Variable Name="gBlock" RecursiveEnable="1">
+          <Variable Name="gBlock[1]">
+            <Variable AclInherit="1" Name="Status">
+              <Variable Name="rMotorPosition" EngineeringUnitId="1" />
+              <Variable Name="Icla">
+                <Variable Name="rCurrentPosition" EngineeringUnitId="1" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="gBlock[2]">
+            <Variable AclInherit="1" Name="Status">
+              <Variable Name="rMotorPosition" EngineeringUnitId="1" />
+              <Variable Name="Icla">
+                <Variable Name="rCurrentPosition" EngineeringUnitId="1" />
+              </Variable>
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable AclInherit="1" Name="testFailedAsserts" />
+        <Variable AclInherit="1" Name="testPassedAsserts" />
+        <Variable AclInherit="1" Name="xSometestFailedAsserts" />
+        <Variable AclInherit="1" Name="iTestState" />
+        <Variable AclInherit="1" Name="txStateDesc" />
+        <Variable AclInherit="1" Name="txTest" />
+        <Variable Name="gInks" RecursiveEnable="1">
+          <Variable Name="gInks[1]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[2]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[3]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[4]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[5]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[6]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[7]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[8]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[9]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[10]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[11]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+          <Variable Name="gInks[12]">
+            <Variable AclInherit="1" Name="status" />
+          </Variable>
+        </Variable>
+        <Variable Name="gJamPerInk" RecursiveEnable="1" />
+        <Variable Name="gDing">
+          <Variable Name="In">
+            <Variable Name="xDingChannelFault" />
+            <Variable Name="rHighDingMm" />
+            <Variable Name="xDingHigh" />
+            <Variable Name="xDingLow" />
+          </Variable>
+          <Variable Name="Parameters">
+            <Variable Name="xDingInstalled" />
+          </Variable>
+          <Variable Name="Alarms">
+            <Variable Name="xMountedTile" />
+            <Variable Name="xAlDingDetect" />
+            <Variable Name="xAlNoDingDetect" />
+            <Variable Name="xAlDingNotReferenced" />
+            <Variable Name="xAlDingIncoherenceValue" />
+            <Variable Name="xAlDingConexionError" />
+            <Variable Name="xAlDingNoMediaToCalibrate" />
+            <Variable Name="xAlDingNoDigLaserSensor" />
+          </Variable>
+          <Variable Name="State">
+            <Variable Name="xDingLowPieceDetect" />
+            <Variable Name="rCurrentHigh" />
+            <Variable Name="rCurrentThicknessStable" />
+            <Variable Name="xDingReferenced" />
+            <Variable Name="xDingInstalled" />
+            <Variable Name="xSensorCovered" />
+            <Variable Name="diLgLowPieceCounter" />
+            <Variable Name="rOffsetCalibration" />
+          </Variable>
+          <Variable Name="Commands">
+            <Variable Name="xCalibrateThickness" />
+          </Variable>
+          <Variable Name="parSw">
+            <Variable Name="rCalibrationValue" />
+          </Variable>
+        </Variable>
+        <Variable AclInherit="1" Name="gInksConstants">
+          <Variable Name="tiDripTimeMin" />
+          <Variable Name="tiDripTimeMax" />
+        </Variable>
+        <Variable Name="gTransVacuum" RecursiveEnable="1">
+          <Variable Name="gTransVacuum[1]">
+            <Variable AclInherit="1" Name="Status" />
+            <Variable Name="Commands" />
+            <Variable AclInherit="1" Name="Alarms">
+              <Variable Name="xAlrBlowerCB" RecursiveEnable="1" />
+              <Variable Name="xAlrCommsBlower" RecursiveEnable="1" />
+              <Variable Name="xAlrBlowerError" RecursiveEnable="1" />
+              <Variable Name="xAlrBlowerNotRunning" RecursiveEnable="1" />
+            </Variable>
+            <Variable AclInherit="1" Name="AlSummary" />
+            <Variable AclInherit="1" Name="Outputs" />
+          </Variable>
+          <Variable Name="gTransVacuum[2]">
+            <Variable AclInherit="1" Name="Status" />
+            <Variable Name="Commands" />
+            <Variable AclInherit="1" Name="Alarms">
+              <Variable Name="xAlrBlowerCB" RecursiveEnable="1" />
+              <Variable Name="xAlrCommsBlower" RecursiveEnable="1" />
+              <Variable Name="xAlrBlowerError" RecursiveEnable="1" />
+              <Variable Name="xAlrBlowerNotRunning" RecursiveEnable="1" />
+            </Variable>
+            <Variable AclInherit="1" Name="AlSummary" />
+            <Variable AclInherit="1" Name="Outputs" />
+          </Variable>
+        </Variable>
+        <Variable Name="gNonCrash" RecursiveEnable="1">
+          <Variable Name="gNonCrash[1]">
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="Alarms" />
+            <Variable AclInherit="1" Name="AlSummary" />
+          </Variable>
+          <Variable Name="gNonCrash[2]">
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="Alarms" />
+            <Variable AclInherit="1" Name="AlSummary" />
+          </Variable>
+        </Variable>
+        <Variable Name="gJamDetect" RecursiveEnable="1">
+          <Variable Name="gJamDetect[1]">
+            <Variable AclInherit="1" Name="Alarms" />
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="AlSummary" />
+          </Variable>
+          <Variable Name="gJamDetect[2]">
+            <Variable AclInherit="1" Name="Alarms" />
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="AlSummary" />
+          </Variable>
+        </Variable>
+        <Variable Name="gLine" RecursiveEnable="1">
+          <Variable Name="Commands" />
+          <Variable AclInherit="1" Name="Status" />
+          <Variable AclInherit="1" Name="Alarms" />
+          <Variable Name="Parameters" />
+          <Variable AclInherit="1" Name="Outputs" />
+          <Variable AclInherit="1" Name="Inputs">
+            <Variable Name="Customer" RecursiveEnable="1" />
+          </Variable>
+          <Variable AclInherit="1" Name="StatusSw" />
+          <Variable AclInherit="1" Name="SubStatus" />
+          <Variable AclInherit="1" Name="StatusSummary" />
+        </Variable>
+        <Variable Name="gStacker" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="Inputs">
+            <Variable Name="Comms">
+              <Variable Name="xCommsOK" />
+              <Variable Name="xErrorActive" />
+              <Variable Name="xWarningActive" />
+              <Variable Name="xBeltsEmpty" />
+              <Variable Name="xEmergencyStopNotAcknowledged" />
+              <Variable Name="xInWorkingPosition" />
+              <Variable Name="xStackExit" />
+              <Variable Name="xStopDemand" />
+              <Variable Name="xStackerEmpty" />
+              <Variable Name="xStackReady" />
+              <Variable Name="iVersion1" />
+              <Variable Name="iVersion2" />
+              <Variable Name="iVersion3" />
+              <Variable Name="iVersion4" />
+              <Variable Name="iStatus" />
+              <Variable Name="iAlarmWord1" />
+              <Variable Name="iAlarmWord2" />
+              <Variable Name="iAlarmWord3" />
+              <Variable Name="iAlarmWord4" />
+              <Variable Name="iAlarmWord5" />
+              <Variable Name="iAlarmWord6" />
+              <Variable Name="iAlarmWord7" />
+              <Variable Name="iAlarmWord8" />
+              <Variable Name="iAlarmWord9" />
+              <Variable Name="iAlarmWord10" />
+              <Variable Name="uiTransportSpeed" />
+              <Variable Name="uiNumBoardsInCurrentPile" />
+              <Variable Name="uiCurrentPileHeigh" />
+            </Variable>
+          </Variable>
+          <Variable AclInherit="1" Name="Outputs" />
+          <Variable AclInherit="1" Name="Alarms" />
+          <Variable Name="Parameters" />
+          <Variable Name="Commands" />
+          <Variable AclInherit="1" Name="Status" />
+        </Variable>
+        <Variable Name="gPrimer" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="Inputs" />
+          <Variable AclInherit="1" Name="Outputs" />
+          <Variable AclInherit="1" Name="Alarms" />
+          <Variable Name="Commands" />
+          <Variable AclInherit="1" Name="Status" />
+        </Variable>
+        <Variable Name="gDryerAnc" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="Inputs" />
+          <Variable AclInherit="1" Name="Outputs" />
+          <Variable AclInherit="1" Name="Alarms" />
+          <Variable Name="Commands" />
+          <Variable AclInherit="1" Name="Status" />
+        </Variable>
+        <Variable Name="gFeeder" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="Inputs">
+            <Variable Name="xOnline" />
+            <Variable Name="xError" />
+            <Variable Name="xFeeding" />
+            <Variable Name="xMultiPick" />
+            <Variable Name="xTrayEmpty" />
+            <Variable Name="xFeederPresent" />
+            <Variable Name="xMediaThickness" />
+            <Variable Name="xReadyToFeed" />
+            <Variable Name="xMediaLowL1" />
+            <Variable Name="xMediaLowL2" />
+            <Variable Name="xJamDetection" />
+            <Variable Name="xTrayEmptyL1" />
+            <Variable Name="xTrayEmptyL2" />
+            <Variable Name="xModelInput" />
+            <Variable Name="Comms">
+              <Variable Name="iNumBoardsRemainingL1" />
+              <Variable Name="iNumBoardsRemainingL2" />
+              <Variable Name="iNumFedBoards" />
+              <Variable Name="xOnline" />
+              <Variable Name="xEnableFeeding" />
+              <Variable Name="xMinimumStackLevelL1" />
+              <Variable Name="xMinimumStackLevelL2" />
+              <Variable Name="xOrderEnd" />
+              <Variable Name="xPositionReady" />
+              <Variable Name="xAlarmPresent" />
+              <Variable Name="xRemote" />
+              <Variable Name="iVersion1" />
+              <Variable Name="iVersion2" />
+              <Variable Name="iVersion3" />
+              <Variable Name="iVersion4" />
+              <Variable Name="iStatus" />
+              <Variable Name="iAlarmWord1" />
+              <Variable Name="iAlarmWord2" />
+              <Variable Name="iAlarmWord3" />
+              <Variable Name="iAlarmWord4" />
+              <Variable Name="iAlarmWord5" />
+              <Variable Name="iAlarmWord6" />
+              <Variable Name="iAlarmWord7" />
+              <Variable Name="iAlarmWord8" />
+              <Variable Name="iAlarmWord9" />
+              <Variable Name="iAlarmWord10" />
+              <Variable Name="iAlarmWord11" />
+              <Variable Name="iAlarmWord12" />
+              <Variable Name="iAlarmWord13" />
+              <Variable Name="iAlarmWord14" />
+              <Variable Name="iAlarmWord15" />
+            </Variable>
+          </Variable>
+          <Variable AclInherit="1" Name="Outputs">
+            <Variable Name="Comms">
+              <Variable Name="iControl" />
+            </Variable>
+          </Variable>
+          <Variable AclInherit="1" Name="Alarms">
+            <Variable Name="xError" />
+            <Variable Name="xNotOnline" />
+            <Variable Name="xNotRemote" />
+            <Variable Name="xNoFeederPresent" />
+            <Variable Name="xAnyAlarm" />
+            <Variable Name="xMediaLowL1" />
+            <Variable Name="xMediaLowL2" />
+            <Variable Name="xTrayEmptyL1" />
+            <Variable Name="xTrayEmptyL2" />
+            <Variable Name="xCriticalAlarm" />
+            <Variable Name="xWarningAlarm" />
+            <Variable Name="xCommsError" />
+          </Variable>
+          <Variable Name="Parameters">
+            <Variable Name="xCommsOK" />
+            <Variable Name="xAlrPresent" />
+            <Variable Name="LineState" />
+            <Variable Name="xLineInAuto" />
+          </Variable>
+          <Variable Name="Commands">
+            <Variable Name="xBelEmpty" />
+            <Variable Name="xStart" />
+            <Variable Name="xPrepare" />
+            <Variable Name="xPause" />
+            <Variable Name="xStop" />
+            <Variable Name="xStartTransport" />
+            <Variable Name="xThereIsFeeder" />
+          </Variable>
+          <Variable AclInherit="1" Name="Status">
+            <Variable Name="iModel" />
+            <Variable Name="Version">
+              <Variable Name="iVersion0" />
+              <Variable Name="iVersion1" />
+              <Variable Name="iVersion2" />
+              <Variable Name="iVersion3" />
+            </Variable>
+            <Variable Name="CtrlStatus" />
+            <Variable Name="DeviceStatus" />
+            <Variable Name="Device">
+              <Variable Name="xTurnedOff" />
+              <Variable Name="xInit" />
+              <Variable Name="xReadyToFeed" />
+              <Variable Name="xFeeding" />
+              <Variable Name="xFaulted" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="gBelt" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="states" />
+          <Variable AclInherit="1" Name="AlSummary" />
+          <Variable AclInherit="1" Name="Al" />
+          <Variable AclInherit="1" Name="Log" />
+          <Variable AclInherit="1" Name="parameters" />
+        </Variable>
+        <Variable AclInherit="1" Name="gSafetyController" RecursiveEnable="1" />
+        <Variable AclInherit="1" Name="gDryerRemoteData" RecursiveEnable="1" />
+        <Variable Name="gCuringLed" RecursiveEnable="1">
+          <Variable Name="gCuringLed[1]">
+            <Variable AclInherit="1" Name="Signals">
+              <Variable Name="Inputs">
+                <Variable Name="xPsuDcOk" RecursiveEnable="2" ChangedCommonProperties="1" />
+                <Variable Name="xPsuAcOk" RecursiveEnable="2" ChangedCommonProperties="1" />
+              </Variable>
+            </Variable>
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="Alarms">
+              <Variable Name="Lamps" RecursiveEnable="1" />
+            </Variable>
+            <Variable AclInherit="1" Name="AlSummary" />
+            <Variable Name="Lamp" RecursiveEnable="2" ChangedCommonProperties="1">
+              <Variable Name="Lamp[1]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[2]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[3]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[4]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[5]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[6]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[7]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[8]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[9]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[10]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[11]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[12]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[13]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[14]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[15]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[16]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+            </Variable>
+            <Variable Name="Parameters">
+              <Variable AclId="2" AclInherit="2" Name="iChillerIndex" ChangedCommonProperties="20" />
+            </Variable>
+          </Variable>
+          <Variable Name="gCuringLed[2]">
+            <Variable AclInherit="1" Name="Signals">
+              <Variable Name="Inputs">
+                <Variable Name="xPsuDcOk" RecursiveEnable="2" ChangedCommonProperties="1" />
+                <Variable Name="xPsuAcOk" RecursiveEnable="2" ChangedCommonProperties="1" />
+              </Variable>
+            </Variable>
+            <Variable AclInherit="1" Name="Status" />
+            <Variable AclInherit="1" Name="Alarms">
+              <Variable Name="Lamps" RecursiveEnable="1" />
+            </Variable>
+            <Variable AclInherit="1" Name="AlSummary" />
+            <Variable Name="Lamp" RecursiveEnable="2" ChangedCommonProperties="1">
+              <Variable Name="Lamp[1]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[2]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[3]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[4]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[5]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[6]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[7]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[8]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[9]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[10]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[11]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[12]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[13]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[14]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[15]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[16]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="1" />
+                </Variable>
+              </Variable>
+            </Variable>
+            <Variable Name="Parameters">
+              <Variable AclId="2" AclInherit="2" Name="iChillerIndex" ChangedCommonProperties="16" />
+            </Variable>
+          </Variable>
+          <Variable Name="gCuringLed[0]">
+            <Variable Name="Lamp" RecursiveEnable="1" />
+          </Variable>
+          <Variable Name="gCuringLed[3]">
+            <Variable Name="Lamp" RecursiveEnable="1" ChangedCommonProperties="1">
+              <Variable Name="Lamp[16]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[15]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[14]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[13]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[12]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[11]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[10]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[9]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[8]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[1]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[2]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[3]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[4]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[5]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[6]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+              <Variable Name="Lamp[7]">
+                <Variable Name="Outputs">
+                  <Variable Name="xSlmStatus" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+                <Variable Name="Parameters">
+                  <Variable Name="xSlmEnable" RecursiveEnable="2" ChangedCommonProperties="1" />
+                </Variable>
+              </Variable>
+            </Variable>
+            <Variable Name="Alarms">
+              <Variable Name="Lamps" RecursiveEnable="1" ChangedCommonProperties="1" />
+            </Variable>
+            <Variable Name="Parameters">
+              <Variable AclId="2" AclInherit="2" Name="iChillerIndex" ChangedCommonProperties="16" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="gInksPermanentParBar" RecursiveEnable="1" />
+        <Variable Name="gSimInks" RecursiveEnable="1" />
+        <Variable Name="gSimFeeder" RecursiveEnable="1" />
+        <Variable Name="gSimDryer" RecursiveEnable="1" />
+        <Variable Name="gSimPrimer" RecursiveEnable="1" />
+        <Variable Name="gSimStacker" RecursiveEnable="1" />
+        <Variable Name="gSimNonCrash" RecursiveEnable="1" />
+        <Variable Name="gTime" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="State" />
+          <Variable AclInherit="1" Name="Status" />
+        </Variable>
+        <Variable AclInherit="1" Name="gThicknessCtrl" RecursiveEnable="2">
+          <Variable Name="status">
+            <Variable Name="MediaPosition">
+              <Variable Name="L1">
+                <Variable Name="InsideMedia" RecursiveEnable="1" />
+              </Variable>
+              <Variable Name="L2">
+                <Variable Name="InsideMedia" RecursiveEnable="1" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Alarms">
+            <Variable Name="CheckMedia" RecursiveEnable="2" />
+          </Variable>
+        </Variable>
+        <Variable Name="gOverVarnish" RecursiveEnable="1">
+          <Variable AclInherit="1" Name="Outputs" />
+          <Variable AclInherit="1" Name="Alarms" />
+          <Variable AclInherit="1" Name="Parameters" />
+          <Variable AclInherit="1" Name="Status" />
+        </Variable>
+        <Variable Name="X20DOF322_001" RecursiveEnable="1" />
+        <Variable Name="X20DIF371_001" RecursiveEnable="1" />
+        <Variable Name="xShowSecondLayout" />
+        <Variable Name="stConfigToShow_Lyout1" />
+        <Variable Name="stConfigToShow_Lyout2" />
+        <Variable Name="xShowThirdLayout" />
+        <Variable Name="stConfigToShow_Lyout3" />
+        <Variable Name="gJamPerCuringLed" RecursiveEnable="1" />
+        <Variable Name="gJamCamera" RecursiveEnable="1" />
+        <Variable Name="gEdgeHoldDown">
+          <Variable Name="commandsSw" RecursiveEnable="1" />
+          <Variable Name="commands" RecursiveEnable="1" />
+          <Variable Name="orders" RecursiveEnable="1" />
+          <Variable Name="parameters" RecursiveEnable="1" />
+          <Variable Name="parSw" RecursiveEnable="1" />
+          <Variable Name="status" RecursiveEnable="1" />
+          <Variable Name="Alarms" RecursiveEnable="1" />
+          <Variable Name="AlSummary" RecursiveEnable="1" />
+          <Variable Name="inputs" RecursiveEnable="1" />
+          <Variable Name="Hw" RecursiveEnable="1" />
+          <Variable Name="ordersSw" RecursiveEnable="2" />
+        </Variable>
+        <Variable Name="gPairedMotors" RecursiveEnable="1">
+          <Variable Name="gPairedMotors[1]">
+            <Variable Name="Motor" RecursiveEnable="1" />
+          </Variable>
+          <Variable Name="gPairedMotors[2]">
+            <Variable Name="Motor" RecursiveEnable="1" />
+          </Variable>
+        </Variable>
+        <Variable Name="gCamera" RecursiveEnable="1" />
+        <Variable Name="gSarm">
+          <Variable Name="Inputs">
+            <Variable Name="xRunning" />
+            <Variable Name="xError" />
+            <Variable Name="xModelInput" />
+            <Variable Name="xPowered" />
+            <Variable Name="Comms">
+              <Variable Name="xSafetyOnline" />
+              <Variable Name="xOnline" />
+              <Variable Name="xPositionReady" />
+              <Variable Name="xWarningPresent" />
+              <Variable Name="xAlarmPresent" />
+              <Variable Name="xRemote" />
+              <Variable Name="iVersion1" />
+              <Variable Name="iVersion2" />
+              <Variable Name="iVersion3" />
+              <Variable Name="iVersion4" />
+              <Variable Name="iStatus" />
+              <Variable Name="iAlarmWord1" />
+              <Variable Name="iAlarmWord2" />
+              <Variable Name="iAlarmWord3" />
+            </Variable>
+          </Variable>
+          <Variable Name="Outputs">
+            <Variable Name="xFastStop" />
+            <Variable Name="xStartTransport" />
+            <Variable Name="Comms">
+              <Variable Name="iControl" />
+            </Variable>
+          </Variable>
+          <Variable Name="Alarms">
+            <Variable Name="xError" />
+            <Variable Name="xNotRemote" />
+            <Variable Name="xAnyAlarm" />
+            <Variable Name="xNoPowered" />
+            <Variable Name="xCriticalAlarm" />
+            <Variable Name="xWarningAlarm" />
+            <Variable Name="xCommsError" />
+          </Variable>
+          <Variable Name="ParSw">
+            <Variable Name="xEnabled" />
+            <Variable Name="xBatchFeeding" />
+            <Variable Name="iCentralOffset" />
+          </Variable>
+          <Variable Name="Parameters">
+            <Variable Name="xInstalled" />
+            <Variable Name="xSimulationMode" />
+            <Variable Name="xCommsOK" />
+            <Variable Name="LineState" />
+            <Variable Name="xLineInAuto" />
+            <Variable Name="Media">
+              <Variable Name="rThickness" />
+              <Variable Name="rWidth" />
+              <Variable Name="rGap" />
+              <Variable Name="rLength" />
+              <Variable Name="rOffsetRegisterL1" />
+              <Variable Name="rOffsetRegisterL2" />
+            </Variable>
+            <Variable Name="xDoubleLine" />
+            <Variable Name="Hw">
+              <Variable Name="iMaxMediaWidth" />
+              <Variable Name="iMinMediaWidth" />
+              <Variable Name="iMinMediaLength" />
+              <Variable Name="iMaxMediaLength" />
+              <Variable Name="iMaxOffset" />
+              <Variable Name="iMinOffset" />
+              <Variable Name="iMinMediaThickness" />
+              <Variable Name="iMaxMediaThickness" />
+              <Variable Name="rSarmLength" />
+            </Variable>
+            <Variable Name="xActiveSlaveDiagnosis" />
+            <Variable Name="xPreviousDeviceEmpty" />
+            <Variable Name="rMediaLength" />
+            <Variable Name="rSpeedSetPoint" />
+            <Variable Name="iLineConfig" />
+          </Variable>
+          <Variable Name="Commands">
+            <Variable Name="xBelEmpty" />
+            <Variable Name="xStart" />
+            <Variable Name="xPause" />
+            <Variable Name="xControlStop" />
+            <Variable Name="xStop" />
+            <Variable Name="xResetAlarms" />
+            <Variable Name="xNewBoardParameters" />
+            <Variable Name="xNewOrder" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="iModel" />
+            <Variable Name="Version">
+              <Variable Name="iVersion0" />
+              <Variable Name="iVersion1" />
+              <Variable Name="iVersion2" />
+              <Variable Name="iVersion3" />
+            </Variable>
+            <Variable Name="CtrlStatus" />
+            <Variable Name="DeviceStatus" />
+            <Variable Name="Device">
+              <Variable Name="xTurnedOff" />
+              <Variable Name="xInit" />
+              <Variable Name="xPreparing" />
+              <Variable Name="xReady" />
+              <Variable Name="xFaulted" />
+            </Variable>
+            <Variable Name="SarmType" />
+            <Variable Name="Comms">
+              <Variable Name="xModuleOk" />
+              <Variable Name="ModSlaveState" />
+              <Variable Name="LastError" />
+              <Variable Name="LastErrorBlockNum" />
+              <Variable Name="xStopButtonPressed" />
+              <Variable Name="ActOverloadError" />
+              <Variable Name="ActModbusError" />
+              <Variable Name="ActSlvConError" />
+              <Variable Name="ActRefreshError" />
+              <Variable Name="ActInternalError" />
+              <Variable Name="ActConfError" />
+              <Variable Name="HistOverloadError" />
+              <Variable Name="HistModbusError" />
+              <Variable Name="HistSlvConError" />
+              <Variable Name="HistRefreshError" />
+              <Variable Name="HistInternalError" />
+              <Variable Name="HistConfError" />
+              <Variable Name="ModbusErrorCnt" />
+              <Variable Name="ModbusConErrorCnt" />
+              <Variable Name="ModbusPktRefreshTimeoutCnt" />
+              <Variable Name="ModbusPktPendPerSec" />
+              <Variable Name="ModbusMeanResponseTime" />
+              <Variable Name="xBeltEmpty" />
+            </Variable>
+            <Variable Name="xInstalled" />
+            <Variable Name="xBeltEmpty" />
+          </Variable>
+          <Variable Name="Orders">
+            <Variable Name="xDisableReadBlock" />
+            <Variable Name="xDisableWriteBlock" />
+          </Variable>
+        </Variable>
+        <Variable AclInherit="1" Name="gPowermeters" RecursiveEnable="2" />
+        <Variable Name="gChiller" RecursiveEnable="1" />
+        <Variable Name="gBeltClean" RecursiveEnable="2" />
+        <Variable Name="gSimSafetyController" RecursiveEnable="2">
+          <Variable Name="Commands" />
+          <Variable Name="Inputs" />
+          <Variable Name="Outputs" />
+        </Variable>
+      </GlobalVariables>
+      <Task Name="SimMachine">
+        <Variable Name="simMachineType" />
+        <Variable Name="xTestBeltTests" />
+        <Variable Name="xTestCleaning" />
+        <Variable Name="xTestConsents" />
+        <Variable Name="xTestPrepareMachine" />
+        <Variable Name="testMonitor">
+          <Variable AclInherit="1" Name="TestActive" />
+        </Variable>
+        <Variable AclInherit="1" Name="ctrlBlock2" />
+        <Variable AclInherit="1" Name="xBlockExists2" />
+      </Task>
+      <Task Name="InksInputs">
+        <Variable Name="copyInkParamsToDebug" RecursiveEnable="1" />
+      </Task>
+      <Task Name="ThickPos">
+        <Method Name="LoadNewMedia" />
+        <Method Name="LoadNewMediaEnergy" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

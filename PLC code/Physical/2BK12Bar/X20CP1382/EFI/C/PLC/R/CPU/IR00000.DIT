@@ -1,0 +1,184 @@
+(*
+T: RESOURCE CPU
+FW: NO
+CI#: 0
+QSL: 29
+QVE: 29
+QVPC: 29
+QPar: 0
+QFBI: 0
+*)
+@V 1 3 0
+ErrorCodeArea1	1	VAR_GLOBAL	@TYP:3
+%NSQW 2		     
+
+;
+
+@V 1 4 0
+Rear01EStopBK1	2	VAR_GLOBAL	@TYP:43
+%SIX 62.0		     
+
+;
+
+@V 1 5 0
+Rear02EStopBK1	3	VAR_GLOBAL	@TYP:43
+%SIX 62.1		     
+
+;
+
+@V 1 6 0
+Front01EStopBK1	4	VAR_GLOBAL	@TYP:43
+%SIX 62.2		     
+
+;
+
+@V 1 7 0
+Front02EStopBK1	5	VAR_GLOBAL	@TYP:43
+%SIX 62.3		     
+
+;
+
+@V 1 8 0
+GuardSwitchBK1	6	VAR_GLOBAL	@TYP:43
+%SIX 62.5		     
+
+;
+
+@V 1 9 0
+LightCurtain01BK1	7	VAR_GLOBAL	@TYP:43
+%SIX 62.4		     
+
+;
+
+@V 1 10 0
+LightCurtain02BK1	8	VAR_GLOBAL	@TYP:43
+%SIX 62.6		     
+
+;
+
+@V 1 11 0
+UpDownBK1Enable	9	VAR_GLOBAL	@TYP:43
+%SQX 14.0		     
+
+;
+
+@V 1 12 0
+IclaBK1Enable	10	VAR_GLOBAL	@TYP:43
+%SQX 14.1		     
+
+;
+
+@V 1 13 0
+TransportEnable	11	VAR_GLOBAL	@TYP:43
+%SQX 16.0		     
+
+;
+
+@V 1 14 0
+InputReset	12	VAR_GLOBAL	@TYP:43
+%SIX 20.0		     
+
+;
+
+@V 1 15 0
+ReleaseTransport	13	VAR_GLOBAL	@TYP:1
+%NSQX 132.0		     
+
+;
+
+@V 1 16 0
+ReleaseUpDownBK1	14	VAR_GLOBAL	@TYP:1
+%NSQX 133.0		     
+
+;
+
+@V 1 17 0
+ReleaseIclaBK1	15	VAR_GLOBAL	@TYP:1
+%NSQX 133.1		     
+
+;
+
+@V 1 18 0
+Front01EStopBK2	16	VAR_GLOBAL	@TYP:43
+%SIX 66.2		     
+
+;
+
+@V 1 19 0
+Front02EStopBK2	17	VAR_GLOBAL	@TYP:43
+%SIX 66.3		     
+
+;
+
+@V 1 20 0
+Rear01EStopBK2	18	VAR_GLOBAL	@TYP:43
+%SIX 66.0		     
+
+;
+
+@V 1 21 0
+Rear02EStopBK2	19	VAR_GLOBAL	@TYP:43
+%SIX 66.1		     
+
+;
+
+@V 1 22 0
+GuardSwitchBK2	20	VAR_GLOBAL	@TYP:43
+%SIX 66.5		     
+
+;
+
+@V 1 23 0
+LightCurtain01BK2	21	VAR_GLOBAL	@TYP:43
+%SIX 66.4		     
+
+;
+
+@V 1 24 0
+LightCurtain02BK2	22	VAR_GLOBAL	@TYP:43
+%SIX 66.6		     
+
+;
+
+@V 1 25 0
+UpDownBK2Enable	23	VAR_GLOBAL	@TYP:43
+%SQX 15.0		     
+
+;
+
+@V 1 26 0
+IclaBK2Enable	24	VAR_GLOBAL	@TYP:43
+%SQX 15.1		     
+
+;
+
+@V 1 27 0
+ReleaseUpDownBK2	25	VAR_GLOBAL	@TYP:1
+%NSQX 134.0		     
+
+;
+
+@V 1 28 0
+ReleaseIclaBK2	26	VAR_GLOBAL	@TYP:1
+%NSQX 134.1		     
+
+;
+
+@V 1 29 0
+ErrorCodeArea2	27	VAR_GLOBAL	@TYP:3
+%NSQW 4		     
+
+;
+
+@V 1 30 0
+SelectMachine	28	VAR_GLOBAL	@TYP:43
+%SIX 69.0		     
+
+;
+
+@V 1 31 0
+g_xInputSelectMachine	29	VAR_GLOBAL	@TYP:1
+%NSQX 0.0		     
+
+;
+

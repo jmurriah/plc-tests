@@ -1,0 +1,36 @@
+(********************************************************************
+ * COPYRIGHT - B&R Spain
+ ********************************************************************
+ * Package: MotionBasis
+ * File: MotionBasis.var
+ * Author: jorgemur
+ * Created: September 19, 2018
+ ********************************************************************
+ * Variables of Motion
+ ********************************************************************)
+VAR
+	gAxis : ARRAY[0..8] OF AxisCtrl_typ; (*Axis control structure. 1.Belt,2.Bk1,3.Bk2,4.SM1,5.SM2,6.NonCrash1,7.NonCrash28.Bk3*)
+END_VAR
+VAR RETAIN
+	gAxisPermanEncData : ARRAY[0..8] OF MC_ENDLESS_POSITION; (*Permanent variable where encoder data is stored*) (*	gPermanentEncData2 : MC_ENDLESS_POSITION; *) (*Permanent variable where encoder data is stored*)
+END_VAR
+VAR
+	gIcla : ARRAY[0..MAX_LAST_ICLA_MOTOR] OF stIcla; (*Physical array of Icla. index1>>Icla_A index2>>Icla_B*)
+	gIclaNetData : ARRAY[0..MAX_LAST_ICLA_MOTOR] OF IclaNetData_typ; (*Physical array of IclaNetData. index1>>Icla_A index2>>Icla_B*)
+	gAxisInverter : ARRAY[0..MAX_LAST_INVERTER] OF AxisP66_typ; (*Axis of the Inverters of the system of the family P66 & P67*)
+END_VAR
+VAR RETAIN
+	gISQRippleData : ARRAY[0..8] OF MC_ISQ_RippleData_typ;
+END_VAR
+(* ********************************************************************
+ * Identification of the Axis
+ *******************************************************************
+ #1. Belt
+ #2. Vertical Block 1
+ #3. Vertical Block 2
+ #4. StepperMotor1 (3 Sensors)
+ #5. StepperMotor2 (3 Sensors)
+ #6. NonCrash 1
+ #7. NonCrash 2
+ #8. Vertical Block 3
+ ********************************************************************)

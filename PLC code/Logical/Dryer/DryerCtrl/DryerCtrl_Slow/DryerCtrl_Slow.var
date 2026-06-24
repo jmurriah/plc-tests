@@ -1,0 +1,85 @@
+VAR
+	arAnyStopAlarmMuted : AutoResetSound;
+	arFanBreakers : AutoResetSound;
+	arFan24Vdc : AutoResetSound;
+	arMain24Vdc : AutoResetSound;
+	arBentTile : AutoResetSound;
+	arWrongPhysConf : AutoResetSound;
+	arAnyJam : AutoResetSound;
+	arBentMedia : AutoResetSound;
+	arPDSensorErrorL1 : AutoResetSound;
+	arPDSensorErrorL2 : AutoResetSound;
+	Blink_1s : Blink;
+	Blink_2s : Blink;
+	Blink_5s : Blink;
+	Blink_100ms : Blink;
+	Blink_200ms : Blink;
+	Blink_500ms : Blink;
+	xAllBlocksCleaning : BOOL;
+	xInstantPrintL2 : BOOL;
+	xAllBlocksCleaningEnded : BOOL;
+	xInstantPrintL1 : BOOL; (*command bool edge*)
+	xCleanOrderBK2 : BOOL := FALSE;
+	xShotLine2 : BOOL;
+	xRobotReadyToPrint : BOOL;
+	xCleanOrderBK1 : BOOL := FALSE;
+	xCleanSequencially : BOOL := FALSE;
+	testCanOpen : BOOL;
+	xShotLine1 : BOOL;
+	xOrderToGap : BOOL;
+	xCleanBeltForced : BOOL;
+	xCleaningBeltByTiles : BOOL;
+	xOutputConsentInSingleLineL1 : BOOL;
+	xOutputConsentInByPassL1 : BOOL;
+	xOutputConsentInByPassL2 : BOOL;
+	xOnPcs : BOOL;
+	xCleaningBeltByTime : BOOL;
+	xCleanBeltOrder : BOOL; (*Internal to assign cleaning belt system *)
+	FbCleanDelayControl_1 : FbCleanDelayControl;
+	RTInfo_0 : RTInfo;
+	tof_ResetHub : TOF;
+	tof_ResetFanBreaker : TOF;
+	tofCleaningTrayBelt : TOF;
+	tofDelaySuction : TOF; (*tiMinutes : TIME;*)
+	tof_ResetSwitch : TOF;
+	T_OnPcs : TON;
+	tonCleaningByTime : TON;
+	T_BtwnCleans : TON;
+	tonDelayConsentInput : TON;
+	tonCleanbyTime : TON;
+	tonDelayConsentOutL2 : TON;
+	tonDelayConsentOutL1 : TON;
+	tonCleaningBelt : TON;
+	tonCleanBelt : TON;
+	iIndexInks : USINT; (*Inks Index to use a FOR*)
+	iIndexBlock : USINT; (*Block Index to use a FOR*)
+	tiCleaningBeltByTime : TIME;
+	iSPTilesToCleanBelt : INT;
+	xAnyBlockToPrint : BOOL;
+	reasonSoundGen : UDINT;
+	reasonBuzzer : UDINT;
+	iIndex : USINT; (*FOR index*)
+	iBentMediaCounter : UINT; (*Counter of bent media. Just for the alarm of max movements*)
+	tonDecreaseMovCount : TON; (*Time to decrease the count of max movements*)
+	tonStartSound : TON;
+	iCountStartSound : USINT;
+	xStartSound : BOOL;
+	strAux : STRING[80];
+	plcCardsOK : UDINT;
+	iReasonLockDoors : UINT;
+	iReasonReleaseDoors : UINT;
+	iReasonRedLight : UINT;
+	iReasonBlinkYellowLight : UINT;
+	iReasonSolidYellowLight : UINT;
+	iReasonBlueLight : UINT;
+	iReasonWhiteLight : UINT;
+	xReleaseDoors : BOOL;
+	xLockDoors : BOOL;
+	tonBeltOvertorque : TON;
+	tonBeltOverTempFast : TON;
+	tonBeltOverTempSlow : TON;
+	rThermalInerciaReduction : REAL;
+	rThermalInerciaStepReduction : REAL;
+	iBoardsAtStartDryingL1 : UDINT;
+	iBoardsFromStartL1 : UDINT;
+END_VAR

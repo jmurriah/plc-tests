@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="NZ2_PDC_content_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Bindings>
+	<!--Hide Cards-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gCuringLed[2].Parameters.xInstalled" attribute="value" />
+		<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="Button11" attribute="visible" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gCuringLed[2].Parameters.xInstalled" attribute="value" />
+		<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="Button12" attribute="visible" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gCuringLed[2].Parameters.xInstalled" attribute="value" />
+		<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="Button14" attribute="visible" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:gCuringLed[2].Parameters.xInstalled" attribute="value" />
+		<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="Button13" attribute="visible" />
+	</Binding>
+	
+	<!--Blue Arrows-->	
+	<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::mappHMI:xShowBlueArrow1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="BasicSlider1" attribute="visible" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::mappHMI:PlcCardSelected_Full_L" attribute="value" />
+		<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="BasicSlider1" attribute="value" />
+		</Binding>
+		
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::mappHMI:xShowRedArrow1" attribute="value" />
+<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="BasicSlider2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::mappHMI:PlcCardSelected_Full_R" attribute="value" />
+<Target xsi:type="brease" contentRefId="NZ2_PDC_content" widgetRefId="BasicSlider2" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="VaccumContent" height="900" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="TV_Title_L" top="20" left="440" width="211" height="31" zIndex="0" text="TransVaccum" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_Inputs_L" top="60" left="460" width="211" height="31" zIndex="1" text="Inputs:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xPressureSensorError_L" top="100" left="480" width="211" height="31" zIndex="2" text="xPressureSensorError:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_iPressureRaw_L" top="140" left="480" width="211" height="31" zIndex="3" text="iPressureRaw:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xJointSystemPressure_L" top="180" left="480" width="211" height="31" zIndex="4" text="xJointSystemPressure:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xBlowersAnyCB_L" top="220" left="480" width="211" height="31" zIndex="5" text="xBlowersAnyCB:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xVaccAirFlow_L" top="260" left="480" width="211" height="31" zIndex="6" text="xVaccAirFlow:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_Parameters_L" top="300" left="460" width="211" height="31" zIndex="7" text="Parameters:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rMaxSpeed_L" top="340" left="480" width="211" height="31" zIndex="8" text="rMaxSpeed:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rMaxSystemVacuum_L" top="380" left="480" width="211" height="31" zIndex="9" text="rMaxSystemVacuum:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rStartUpDutyCycle_L" top="420" left="480" width="211" height="31" zIndex="10" text="rStartUpDutyCycle:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xStartUpEnable_L" top="460" left="480" width="211" height="31" zIndex="11" text="xStartUpEnable:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rVacPressureSetPointPercP_L" top="500" left="480" width="211" height="31" zIndex="12" text="rVacPressureSetPointPerc:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_parSw_L" top="560" left="460" width="211" height="31" zIndex="13" text="parSw:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xActiveOutOfProduction_L" top="600" left="480" width="211" height="31" zIndex="14" text="xActiveOutOfProduction:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rManSetPoint_L" top="640" left="480" width="211" height="31" zIndex="15" text="rManSetPoint:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rVacPressureSetPointPercPS_L" top="680" left="480" width="211" height="31" zIndex="16" text="rVacPressureSetPointPerc:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_Status_L" top="540" left="60" width="211" height="31" zIndex="17" text="Status:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_State_L" top="580" left="80" width="211" height="31" zIndex="18" text="State:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xInstalled_L" top="620" left="80" width="211" height="31" zIndex="19" text="xInstalled:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rPressurePerc_L" top="660" left="80" width="211" height="31" zIndex="20" text="rPressurePerc:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_rVacPressure_L" top="700" left="80" width="211" height="31" zIndex="21" text="rVacPressure:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_xStartedMan_L" top="740" left="80" width="211" height="31" zIndex="22" text="xStartedMan:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_VacuumValvesS_L" top="780" left="80" width="211" height="31" zIndex="23" text="VacuumValves:" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_Outputs_L" top="740" left="460" width="211" height="31" zIndex="24" text="Outputs:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="TV_VacuumValvesO_L" top="780" left="480" width="211" height="31" zIndex="25" text="VacuumValves:" />
+    <Widget xsi:type="widgets.brease.Image" id="xPressureSensorErrorD_I" top="100" left="760" width="21" height="21" zIndex="26" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xPressureSensorErrorE_I" top="100" left="760" width="21" height="21" zIndex="27" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iPressureRaw_NO" top="140" left="700" width="140" height="31" zIndex="28" />
+    <Widget xsi:type="widgets.brease.Image" id="xJointSystemPressureD_I" top="180" left="760" width="21" height="21" zIndex="29" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xJointSystemPressureE_I" top="180" left="760" width="21" height="21" zIndex="30" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xBlowersAnyCBD_I" top="220" left="760" width="21" height="21" zIndex="31" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xBlowersAnyCBE_I" top="220" left="760" width="21" height="21" zIndex="32" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xVaccAirFlowD_I" top="260" left="760" width="21" height="21" zIndex="33" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xVaccAirFlowE_I" top="260" left="760" width="21" height="21" zIndex="34" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rMaxSpeed_NO" top="340" left="700" width="140" height="31" zIndex="35" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rMaxSystemVacuum_NO" top="380" left="700" width="140" height="31" zIndex="36" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rStartUpDutyCycle_NO" top="420" left="700" width="140" height="31" zIndex="37" />
+    <Widget xsi:type="widgets.brease.Image" id="xStartUpEnableD_I" top="460" left="760" width="21" height="21" zIndex="38" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xStartUpEnableE_I" top="460" left="760" width="21" height="21" zIndex="39" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rVacPressureSetPointPercP_NO" top="500" left="700" width="140" height="31" zIndex="40" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Image" id="xActiveOutOfProductionD_I" top="600" left="760" width="22" height="22" zIndex="41" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xActiveOutOfProductionE_I" top="600" left="760" width="22" height="22" zIndex="42" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rManSetPoint_NO" top="640" left="700" width="140" height="32" zIndex="43" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rVacPressureSetPointPercPS_NO" top="680" left="700" width="140" height="32" zIndex="44" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="State_NO" top="580" left="240" width="140" height="31" zIndex="45" />
+    <Widget xsi:type="widgets.brease.Image" id="xInstalledD_I" top="620" left="300" width="21" height="21" zIndex="46" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xInstalledE_I" top="620" left="300" width="21" height="21" zIndex="47" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rPressurePerc_NO" top="660" left="240" width="140" height="31" zIndex="48" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="rVacPressure_NO" top="700" left="240" width="140" height="31" zIndex="49" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Image" id="xStartedManD_I" top="740" left="300" width="21" height="21" zIndex="50" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xStartedManE_I" top="740" left="300" width="21" height="21" zIndex="51" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="VacuumValvesS_NO" top="780" left="240" width="140" height="31" zIndex="52" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="VacuumValvesO_NO" top="780" left="700" width="140" height="31" zIndex="53" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Commands_L" top="60" left="900" width="140" height="32" zIndex="54" text="Commands:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_MovePositive_L" top="100" left="920" width="140" height="32" zIndex="55" text="MovePositive:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_MoveNegative_L" top="140" left="920" width="140" height="32" zIndex="56" text="MoveNegative:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Stop_L" top="180" left="920" width="140" height="32" zIndex="57" text="Stop:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Reset_L" top="220" left="920" width="140" height="32" zIndex="58" text="Reset:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Orders_L" top="460" left="900" width="180" height="33" zIndex="59" text="Orders (Power on):" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Parameters_L" top="260" left="900" width="140" height="32" zIndex="60" text="Parameters:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_CommsType_L" top="300" left="920" width="140" height="32" zIndex="61" text="CommsType :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Velocity_L" top="340" left="920" width="140" height="32" zIndex="62" text="Velocity :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_AccelerationTime_L" top="380" left="920" width="140" height="32" zIndex="63" text="AccelerationTime:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DecelerationTime_L" top="420" left="920" width="140" height="32" zIndex="64" text="DecelerationTime:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Status_L" top="20" left="1240" width="140" height="32" zIndex="65" text="Status:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ActVelocity_L" top="60" left="1260" width="140" height="32" zIndex="66" text="ActVelocity:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ActCurrent_L" top="100" left="1260" width="140" height="32" zIndex="67" text="ActCurrent :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ActTorque_L" top="140" left="1260" width="140" height="32" zIndex="68" text="ActTorque:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ErrorID_L" top="180" left="1260" width="140" height="32" zIndex="69" text="ErrorID:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ErrorText_L" top="220" left="1260" width="140" height="32" zIndex="70" text="ErrorText:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ErrorComms_L" top="260" left="1260" width="140" height="32" zIndex="71" text="ErrorComms:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_StatusDisabled_L" top="300" left="1260" width="140" height="32" zIndex="72" text="StatusDisabled:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_StatusReady_L" top="340" left="1260" width="140" height="32" zIndex="73" text="StatusReady:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_StatusOperation_L" top="380" left="1260" width="180" height="32" zIndex="74" text="StatusOperation:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_StatusErrorStop_L" top="420" left="1260" width="140" height="32" zIndex="75" text="StatusErrorStop:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_ReadyForOrders_L" top="460" left="1260" width="140" height="32" zIndex="76" text="ReadyForOrders:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput_L" top="500" left="1240" width="140" height="32" zIndex="77" text="DigitalInput:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput0_L" top="540" left="1260" width="140" height="32" zIndex="78" text="DigitalInput0:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput1_L" top="580" left="1260" width="140" height="32" zIndex="79" text="DigitalInput1:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput2_L" top="620" left="1260" width="140" height="32" zIndex="80" text="DigitalInput2:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput3_L" top="660" left="1260" width="140" height="32" zIndex="81" text="DigitalInput3:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput4_L" top="700" left="1260" width="140" height="32" zIndex="82" text="DigitalInput4:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput5_L" top="740" left="1260" width="140" height="32" zIndex="83" text="DigitalInput5 :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput6_L" top="780" left="1260" width="140" height="32" zIndex="84" text="DigitalInput6:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalInput7_L" top="820" left="1260" width="140" height="32" zIndex="85" text="DigitalInput7 :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_AnalogOutput_L" top="820" left="900" width="140" height="32" zIndex="86" text="AnalogOutput:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_Title_L" top="20" left="880" width="211" height="31" zIndex="87" text="Blower" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="TransVacuum_I" top="80" left="0" width="440" height="460" zIndex="88" image="Media/Printer_Realisrtic_images/Vaccum.png" borderWidth="0px" borderColor="rgba(51, 51, 51, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_MovePositiveD_I" top="100" left="1140" width="21" height="21" zIndex="89" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_MovePositiveE_I" top="100" left="1140" width="21" height="21" zIndex="90" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_MoveNegativeD_I" top="140" left="1140" width="21" height="21" zIndex="91" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_MoveNegativeE_I" top="140" left="1140" width="21" height="21" zIndex="92" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StopD_I" top="180" left="1140" width="21" height="21" zIndex="93" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StopE_I" top="180" left="1140" width="21" height="21" zIndex="94" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_ResetD_I" top="220" left="1140" width="21" height="21" zIndex="95" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_ResetE_I" top="220" left="1140" width="21" height="21" zIndex="96" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_PowerOnD_I" top="460" left="1140" width="21" height="21" zIndex="97" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_PowerOnE_I" top="460" left="1140" width="21" height="21" zIndex="98" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_CommsType_NO" top="300" left="1080" width="140" height="31" zIndex="99" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_Velocity_NO" top="340" left="1080" width="140" height="31" zIndex="100" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RMP'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_AccelerationTime_NO" top="380" left="1080" width="140" height="31" zIndex="101" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_DecelerationTime_NO" top="420" left="1080" width="140" height="31" zIndex="102" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_ActVelocity_NO" top="60" left="1420" width="140" height="31" zIndex="103" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_ActCurrent_NO" top="100" left="1420" width="140" height="31" zIndex="104" unit="{'metric':'AMP','imperial':'AMP','imperial-us':'AMP'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_ActTorque_NO" top="140" left="1420" width="140" height="31" zIndex="105" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_ErrorID_NO" top="180" left="1420" width="140" height="31" zIndex="106" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="AI_ErrorText_TO" top="220" left="1340" width="220" height="31" zIndex="107" value="" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_ErrorCommsD_I" top="260" left="1480" width="21" height="21" zIndex="108" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_ErrorCommsE_I" top="260" left="1480" width="21" height="21" zIndex="109" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusDisabledD_I" top="300" left="1480" width="21" height="21" zIndex="110" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusDisabledE_I" top="300" left="1480" width="21" height="21" zIndex="111" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusReadyD_I" top="340" left="1480" width="21" height="21" zIndex="112" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusReadyE_I" top="340" left="1480" width="21" height="21" zIndex="113" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusOperationD_I" top="380" left="1480" width="21" height="21" zIndex="114" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusOperationE_I" top="380" left="1480" width="21" height="21" zIndex="115" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusErrorStopD_I" top="420" left="1480" width="21" height="21" zIndex="116" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_StatusErrorStopE_I" top="420" left="1480" width="21" height="21" zIndex="117" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_ReadyForOrdersD_I" top="460" left="1480" width="21" height="21" zIndex="118" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_ReadyForOrdersE_I" top="460" left="1480" width="21" height="21" zIndex="119" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput0D_I" top="540" left="1480" width="21" height="21" zIndex="120" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput1D_I" top="580" left="1480" width="21" height="21" zIndex="121" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput2D_I" top="620" left="1480" width="21" height="21" zIndex="122" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput3D_I" top="660" left="1480" width="21" height="21" zIndex="123" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput4D_I" top="700" left="1480" width="21" height="21" zIndex="124" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput5D_I" top="740" left="1480" width="21" height="21" zIndex="125" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput6D_I" top="780" left="1480" width="21" height="21" zIndex="126" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput7D_I" top="820" left="1480" width="21" height="21" zIndex="127" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput0E_I" top="540" left="1480" width="21" height="21" zIndex="128" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput1E_I" top="580" left="1480" width="21" height="21" zIndex="129" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput2E_I" top="620" left="1480" width="21" height="21" zIndex="130" image="Media/Lamps/GreenLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput3E_I" top="660" left="1480" width="21" height="21" zIndex="131" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput4E_I" top="700" left="1480" width="21" height="21" zIndex="132" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput5E_I" top="740" left="1480" width="21" height="21" zIndex="133" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput6E_I" top="780" left="1480" width="21" height="21" zIndex="134" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalInput7E_I" top="820" left="1480" width="21" height="21" zIndex="135" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_AnalogOutput_NO" top="820" left="1060" width="140" height="31" zIndex="136" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalOutput_L" top="500" left="900" width="140" height="32" zIndex="137" text="DigitalOutput :" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalOutput0_L" top="540" left="920" width="140" height="32" zIndex="138" text="DigitalOutput0 :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalOutput1_L" top="580" left="920" width="140" height="32" zIndex="139" text="DigitalOutput1 :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_DigitalOutput2_L" top="620" left="920" width="140" height="32" zIndex="140" text="DigitalOutput2:" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_AnalogInput_L" top="660" left="900" width="140" height="32" zIndex="141" text="AnalogInput :" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_AnalogInput0_L" top="700" left="920" width="140" height="32" zIndex="142" text="AnalogInput0 :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_AnalogInput1_L" top="740" left="920" width="140" height="32" zIndex="143" text="AnalogInput1 :" />
+    <Widget xsi:type="widgets.brease.Label" id="AI_AnalogInput2_L" top="780" left="920" width="140" height="32" zIndex="144" text="AnalogInput2:" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalOutput0D_I" top="540" left="1140" width="21" height="21" zIndex="145" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalOutput1D_I" top="580" left="1140" width="21" height="21" zIndex="147" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalOutput2D_I" top="620" left="1140" width="21" height="21" zIndex="146" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalOutput0E_I" top="540" left="1140" width="21" height="21" zIndex="148" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalOutput1E_I" top="580" left="1140" width="21" height="21" zIndex="150" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="AI_DigitalOutput2E_I" top="620" left="1140" width="21" height="21" zIndex="149" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_AnalogInput0_NO" top="700" left="1060" width="140" height="31" zIndex="151" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_AnalogInput1_NO" top="740" left="1060" width="140" height="31" zIndex="152" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="AI_AnalogInput2_NO" top="780" left="1060" width="140" height="31" zIndex="153" />
+    <Widget xsi:type="widgets.brease.Label" id="NB_Title_L" top="20" left="20" width="210" height="31" zIndex="154" text="Navigation Bar:" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="Blower81_NB" top="80" left="60" width="100" height="80" zIndex="155" text="" />
+    <Widget xsi:type="widgets.brease.Label" id="Blower84_NB" top="80" left="280" width="100" height="80" zIndex="156" text="" />
+    <Widget xsi:type="widgets.brease.Label" id="Blower82_NB" top="200" left="120" height="60" zIndex="157" text="" />
+    <Widget xsi:type="widgets.brease.Label" id="Blower83_NB" top="200" left="240" height="60" zIndex="158" text="" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Blower81Sel_R" top="80" left="80" width="60" height="80" zIndex="159" borderWidth="5px" lineColor="rgba(40, 200, 40, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Blower84Sel_R" top="80" left="300" width="60" height="80" zIndex="160" borderWidth="5px" lineColor="rgba(40, 200, 40, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Blower82Sel_R" top="200" left="140" width="80" height="60" zIndex="161" borderWidth="5px" lineColor="rgba(40, 200, 40, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Blower83Sel_R" top="200" left="240" width="80" height="60" zIndex="162" borderWidth="5px" lineColor="rgba(40, 200, 40, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Label" id="TV2_NB" top="381" left="20" width="400" height="80" zIndex="163" text="" />
+    <Widget xsi:type="widgets.brease.Label" id="TV1_NB" top="460" left="20" width="400" height="80" zIndex="164" text="" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="TV2Sel_R" top="370" left="20" width="400" height="90" zIndex="165" borderWidth="5px" lineColor="rgba(40, 200, 40, 1)" visible="false" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="TV1Sel_R" top="460" left="20" width="400" height="80" zIndex="166" borderWidth="5px" lineColor="rgba(40, 200, 40, 1)" visible="false" />
+  </Widgets>
+</Content>

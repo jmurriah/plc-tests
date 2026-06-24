@@ -1,0 +1,70 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: B+R
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	::gInverterSignalsPowerLink[1].In.ModuleOk AT %IX."8I66xxxxxxx.0P-81".ModuleOk;
+	::gInverterSignalsPowerLink[1].In.StatusWord AT %IW."8I66xxxxxxx.0P-81".ETAD_Input;
+	::gInverterSignalsPowerLink[1].Out.ControlWord AT %QW."8I66xxxxxxx.0P-81".CMDD_Output;
+	::gInverterSignalsPowerLink[1].Out.SetSpeed AT %QW."8I66xxxxxxx.0P-81".LFRD_Output;
+	::gInverterSignalsPowerLink[2].In.ModuleOk AT %IX."8I66xxxxxxx.0P-82".ModuleOk;
+	::gInverterSignalsPowerLink[2].In.StatusWord AT %IW."8I66xxxxxxx.0P-82".ETAD_Input;
+	::gInverterSignalsPowerLink[2].Out.ControlWord AT %QW."8I66xxxxxxx.0P-82".CMDD_Output;
+	::gInverterSignalsPowerLink[2].Out.SetSpeed AT %QW."8I66xxxxxxx.0P-82".LFRD_Output;
+	::gDryerAnc.Inputs.xTransportMoving AT %IX."Printer".xRuningBelt;
+	::gDryerAnc.Outputs.xRunTransport AT %QX."Printer".xRunTransport;
+	::gDryerAnc.Outputs.xPrepareToDry AT %QX."Printer".xPrepareToDry;
+	::gDryerAnc.Outputs.xStartDrying AT %QX."Printer".xStartDrying;
+	::gDryerAnc.Inputs.xDrying AT %IX."Printer".xDrying;
+	::gDryerAnc.Inputs.xReadyToDry AT %IX."Printer".xReadyToDry;
+	::gDryerAnc.Inputs.xReadyToEmptyBelt AT %IX."Printer".xReadyToEmptyBelt;
+	::gDryerAnc.Inputs.xJamDetection AT %IX."Printer".xJamDetection;
+	::gDryerAnc.Inputs.xTransportMoving AT %IX."Printer".xTransportMoving;
+	::gDryerAnc.Inputs.xInRemote AT %IX."Printer".xInRemote;
+	::gDryerAnc.Parameters.rSpeedSetPoint AT %QD."Printer".rBeltSpeedSetPoint;
+	::gDryerAnc.Parameters.rMediaLength AT %QD."Printer".rBoardLength;
+	::gDryerAnc.Parameters.rMediaWidth AT %QD."Printer".rBoardWidth;
+	::gDryerAnc.Parameters.rMediaThickness AT %QD."Printer".rBoardThickness;
+	::gDryerAnc.Parameters.rMediaGap AT %QD."Printer".rBoardGap;
+	::gDryerRemoteData.Signals.xMediaPresent AT %QX."Printer".Signals_xMediaPresent;
+	::gDryerRemoteData.Signals.xBreakerOKBlowerInput AT %QX."Printer".Signals_xBreakerOKBlowerInput;
+	::gDryerRemoteData.Signals.xBreakerOKBlowerOutput AT %QX."Printer".Signals_xBreakerOKBlowerOutput;
+	::gDryerRemoteData.Signals.Safety.xMovementsEnabled AT %QX."Printer".Signals_Safety_xMovementsEnabled;
+	::gDryerRemoteData.Signals.Safety.xRemoteEStopOK AT %QX."Printer".Signals_Safety_xRemoteEStopOK;
+	::gDryerRemoteData.Signals.Safety.xEStopFrontOK AT %QX."Printer".Signals_Safety_xEStopFrontOK;
+	::gDryerRemoteData.Signals.Safety.xEStopRearOK AT %QX."Printer".Signals_Safety_xEStopRearOK;
+	::gDryerRemoteData.Signals.Safety.xClosedFrontInput AT %QX."Printer".Signals_Safety_xClosedFrontIn;
+	::gDryerRemoteData.Signals.Safety.xClosedFrontOutput AT %QX."Printer".Signals_Safety_xClosedFrontOut;
+	::gDryerRemoteData.Signals.Safety.xClosedRearInput AT %QX."Printer".Signals_Safety_xClosedRearIn;
+	::gDryerRemoteData.Signals.Safety.xClosedRearOutput AT %QX."Printer".Signals_Safety_xClosedRearOut;
+	::gDryerRemoteData.Signals.xMediaPresent AT %IX."Printer".Signals_xMediaPresent;
+	::gDryerRemoteData.Signals.xBreakerOKBlowerInput AT %IX."Printer".Signals_xBreakerOKBlowerInput;
+	::gDryerRemoteData.Signals.xBreakerOKBlowerOutput AT %IX."Printer".Signals_xBreakerOKBlowerOutput;
+	::gDryerRemoteData.Signals.Safety.xMovementsEnabled AT %IX."Printer".Signals_Safety_xMovementsEnabled;
+	::gDryerRemoteData.Signals.Safety.xRemoteEStopOK AT %IX."Printer".Signals_Safety_xRemoteEStopOK;
+	::gDryerRemoteData.Signals.Safety.xEStopFrontOK AT %IX."Printer".Signals_Safety_xEStopFrontOK;
+	::gDryerRemoteData.Signals.Safety.xEStopRearOK AT %IX."Printer".Signals_Safety_xEStopRearOK;
+	::gDryerRemoteData.Signals.Safety.xClosedFrontInput AT %IX."Printer".Signals_Safety_xClosedFrontIn;
+	::gDryerRemoteData.Signals.Safety.xClosedFrontOutput AT %IX."Printer".Signals_Safety_xClosedFrontOut;
+	::gDryerRemoteData.Signals.Safety.xClosedRearInput AT %IX."Printer".Signals_Safety_xClosedRearIn;
+	::gDryerRemoteData.Signals.Safety.xClosedRearOutput AT %IX."Printer".Signals_Safety_xClosedRearOut;
+	::gDryerRemoteData.Commands.xRunTransport AT %IX."Printer".xRunTransport;
+	::gDryerRemoteData.Commands.xPrepareToDry AT %IX."Printer".xPrepareToDry;
+	::gDryerRemoteData.Commands.xStartDrying AT %IX."Printer".xStartDrying;
+	::gDryerRemoteData.Commands.xPrepareToEmptyBelt AT %IX."Printer".xPrepareToEmptyBelt;
+	::gDryerRemoteData.Parameters.rBeltSpeedSetPoint AT %ID."Printer".rBeltSpeedSetPoint;
+	::gDryerRemoteData.Parameters.Media.rLength AT %ID."Printer".rBoardLength;
+	::gDryerRemoteData.Parameters.Media.rWidth AT %ID."Printer".rBoardWidth;
+	::gDryerRemoteData.Parameters.Media.rThickness AT %ID."Printer".rBoardThickness;
+	::gDryerRemoteData.Parameters.xEnableNir AT %IX."Printer".xEnableNirDrying;
+	::gDryerRemoteData.Parameters.xEnableArcLamp AT %IX."Printer".xEnableArcLampDrying;
+	::gDryerRemoteData.xCommsOK AT %IX."Printer".ModuleOk;
+	::gDryerRemoteData.Parameters.Media.rDocWidth AT %ID."Printer".rDocumentWidth; (*Insert your comment here...*)
+	::gDryerRemoteData.Parameters.Media.rDocLength AT %ID."Printer".rDocumentLength; (*Insert your comment here...*)
+	::gDryerRemoteData.Parameters.xLineEmptyingBelt AT %IX."Printer".xLineEmptyingBelt;
+	::gDryerRemoteData.Parameters.xPrinterBeltRuning AT %IX."Printer".xPrinterBeltRuning;
+END_VAR

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.12.5.95 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="LineStatus">
+  <Property Name="Description" Value="Status of the line"/>
+  <Property Name="Index" Value="10"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="146045" Value="NOT POWERED"/>
+    <Text ID="146056" Value="ERROR"/>
+    <Text ID="146057" Value="INITIALIZING"/>
+    <Text ID="146058" Value="STOPPED"/>
+    <Text ID="146059" Value="IDLE"/>
+    <Text ID="146060" Value="PREP.EMPTY"/>
+    <Text ID="146061" Value="START.EMPY"/>
+    <Text ID="146062" Value="EMPTYBELT"/>
+    <Text ID="146063" Value="PREP.PRINT"/>
+    <Text ID="146064" Value="START.PRINT"/>
+    <Text ID="146065" Value="PRINTING"/>
+    <Text ID="146066" Value="PAUSING"/>
+    <Text ID="146067" Value="PAUSED"/>
+    <Text ID="146068" Value="PREP.CLEAN.PH"/>
+    <Text ID="146069" Value="START.CLEAN.PH"/>
+    <Text ID="146070" Value="CLEANING.PH"/>
+    <Text ID="146071" Value="CLEANED"/>
+    <Text ID="146072" Value="CTRL.STOP"/>
+    <Text ID="154840" Value="NOT INIT"/>
+    <Text ID="159672" Value="START.CLEAN.BELT"/>
+    <Text ID="159673" Value="PREP.CLEAN.BELT"/>
+    <Text ID="160488" Value="CLEANING.BELT"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="146045" Value=""/>
+    <Text ID="146056" Value=""/>
+    <Text ID="146057" Value=""/>
+    <Text ID="146058" Value=""/>
+    <Text ID="146059" Value=""/>
+    <Text ID="146060" Value=""/>
+    <Text ID="146061" Value=""/>
+    <Text ID="146062" Value=""/>
+    <Text ID="146063" Value=""/>
+    <Text ID="146064" Value=""/>
+    <Text ID="146065" Value=""/>
+    <Text ID="146066" Value=""/>
+    <Text ID="146067" Value=""/>
+    <Text ID="146068" Value=""/>
+    <Text ID="146069" Value=""/>
+    <Text ID="146070" Value=""/>
+    <Text ID="146071" Value=""/>
+    <Text ID="146072" Value=""/>
+    <Text ID="154840" Value=""/>
+    <Text ID="159672" Value=""/>
+    <Text ID="159673" Value=""/>
+    <Text ID="160488" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="en-ES">
+    <Text ID="146045" Value="NOT POWERED"/>
+    <Text ID="146056" Value="ERROR"/>
+    <Text ID="146057" Value="INITIALIZING"/>
+    <Text ID="146058" Value="STOPPED"/>
+    <Text ID="146059" Value=""/>
+    <Text ID="146060" Value=""/>
+    <Text ID="146061" Value=""/>
+    <Text ID="146062" Value=""/>
+    <Text ID="146063" Value=""/>
+    <Text ID="146064" Value=""/>
+    <Text ID="146065" Value=""/>
+    <Text ID="146066" Value=""/>
+    <Text ID="146067" Value=""/>
+    <Text ID="146068" Value=""/>
+    <Text ID="146069" Value=""/>
+    <Text ID="146070" Value=""/>
+    <Text ID="146071" Value=""/>
+    <Text ID="146072" Value=""/>
+    <Text ID="154840" Value="NOT INIT"/>
+    <Text ID="159672" Value=""/>
+    <Text ID="159673" Value=""/>
+    <Text ID="160488" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh-CN">
+    <Text ID="146045" Value=""/>
+    <Text ID="146056" Value=""/>
+    <Text ID="146057" Value=""/>
+    <Text ID="146058" Value=""/>
+    <Text ID="146059" Value=""/>
+    <Text ID="146060" Value=""/>
+    <Text ID="146061" Value=""/>
+    <Text ID="146062" Value=""/>
+    <Text ID="146063" Value=""/>
+    <Text ID="146064" Value=""/>
+    <Text ID="146065" Value=""/>
+    <Text ID="146066" Value=""/>
+    <Text ID="146067" Value=""/>
+    <Text ID="146068" Value=""/>
+    <Text ID="146069" Value=""/>
+    <Text ID="146070" Value=""/>
+    <Text ID="146071" Value=""/>
+    <Text ID="146072" Value=""/>
+    <Text ID="154840" Value=""/>
+    <Text ID="159672" Value=""/>
+    <Text ID="159673" Value=""/>
+    <Text ID="160488" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="146045" Value="0"/>
+    <Index ID="146056" Value="1"/>
+    <Index ID="146057" Value="21"/>
+    <Index ID="146058" Value="19"/>
+    <Index ID="146059" Value="12"/>
+    <Index ID="146060" Value="2"/>
+    <Index ID="146061" Value="11"/>
+    <Index ID="146062" Value="9"/>
+    <Index ID="146063" Value="3"/>
+    <Index ID="146064" Value="6"/>
+    <Index ID="146065" Value="13"/>
+    <Index ID="146066" Value="14"/>
+    <Index ID="146067" Value="15"/>
+    <Index ID="146068" Value="4"/>
+    <Index ID="146069" Value="7"/>
+    <Index ID="146070" Value="16"/>
+    <Index ID="146071" Value="10"/>
+    <Index ID="146072" Value="18"/>
+    <Index ID="154840" Value="20"/>
+    <Index ID="159672" Value="8"/>
+    <Index ID="159673" Value="5"/>
+    <Index ID="160488" Value="17"/>
+  </IndexMap>
+</TextGroup>

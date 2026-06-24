@@ -1,0 +1,35 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: FileHandling
+ * File: FileHandling.var
+ * Author: Bernecker + Rainer
+ * Created: April 16, 2009
+ ********************************************************************
+ * Local variables of program FileHandling
+ ********************************************************************)
+VAR
+	Handling : FileHandling_typ; (*Handlingdata for this fileio example*)
+	Error : UINT; (*return value from FileIoGetSysError()*)
+	FolderHandling : DirHandling_typ; (*Handlingdata for this fileio example*)
+	FolderError : UINT; (*return value from FileIoGetSysError()*)
+	FolderCounter : USINT; (*counter-variable for command bDirRead*)
+	ReadData : fiDIR_READ_DATA; (*data-structure for command bDirRead*)
+END_VAR
+VAR CONSTANT
+	FOLDER_SIM_REG : STRING[32] := 'SimRegister';
+END_VAR
+VAR
+	FileNameReg : {REDUND_UNREPLICABLE} STRING[32];
+	iYear : UINT;
+	strYear : STRING[6];
+	getTime : DTStructureGetTime;
+	TimeValue : DTStructure;
+	SimRegState : SimRegisterState := SIMR_STOPPED;
+	FileNameAux : {REDUND_UNREPLICABLE} STRING[32];
+	FileNameAuxPre : {REDUND_UNREPLICABLE} STRING[32];
+	iDigits : UINT;
+	xFunctionEnded : BOOL;
+	xStepManaged : BOOL;
+	lastHour : UINT := 99;
+END_VAR

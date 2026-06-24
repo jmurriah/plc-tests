@@ -1,0 +1,64 @@
+﻿{GroupDefinition(0,'NewGroup')}
+
+VAR_GLOBAL {Group(0)}
+    {LINE(1)}
+    C000 : INT := -16384;
+    {LINE(2)}
+    ErrorCodeArea1 AT %QW2 : INT {Custom('SL1.SM1.INT001')};
+    {LINE(3)}
+    Rear01EStopBK1 AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput01')};
+    {LINE(4)}
+    Rear02EStopBK1 AT %IX62.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput02')};
+    {LINE(5)}
+    Front01EStopBK1 AT %IX62.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput03')};
+    {LINE(6)}
+    Front02EStopBK1 AT %IX62.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput04')};
+    {LINE(7)}
+    GuardSwitchBK1 AT %IX62.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput06')};
+    {LINE(8)}
+    LightCurtain01BK1 AT %IX62.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput05')};
+    {LINE(9)}
+    LightCurtain02BK1 AT %IX62.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput07')};
+    {LINE(10)}
+    UpDownBK1Enable AT %QX14.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput01')};
+    {LINE(11)}
+    IclaBK1Enable AT %QX14.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput02')};
+    {LINE(12)}
+    TransportEnable AT %QX16.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalOutput01')};
+    {LINE(13)}
+    InputReset AT %IX20.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput01')};
+    {LINE(14)}
+    ReleaseTransport AT %QX132.0 : BOOL {Custom('SL1.SM2.ReleaseOutput01')};
+    {LINE(15)}
+    ReleaseUpDownBK1 AT %QX133.0 : BOOL {Custom('SL1.SM4.ReleaseOutput01')};
+    {LINE(16)}
+    ReleaseIclaBK1 AT %QX133.1 : BOOL {Custom('SL1.SM4.ReleaseOutput02')};
+    {LINE(17)}
+    Front01EStopBK2 AT %IX66.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput03')};
+    {LINE(18)}
+    Front02EStopBK2 AT %IX66.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput04')};
+    {LINE(19)}
+    Rear01EStopBK2 AT %IX66.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput01')};
+    {LINE(20)}
+    Rear02EStopBK2 AT %IX66.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput02')};
+    {LINE(21)}
+    GuardSwitchBK2 AT %IX66.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput06')};
+    {LINE(22)}
+    LightCurtain01BK2 AT %IX66.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput05')};
+    {LINE(23)}
+    LightCurtain02BK2 AT %IX66.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalInput07')};
+    {LINE(24)}
+    UpDownBK2Enable AT %QX15.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
+    {LINE(25)}
+    IclaBK2Enable AT %QX15.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
+    {LINE(26)}
+    ReleaseUpDownBK2 AT %QX134.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
+    {LINE(27)}
+    ReleaseIclaBK2 AT %QX134.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
+    {LINE(28)}
+    ErrorCodeArea2 AT %QW4 : INT {Custom('SL1.SM1.INT002')};
+    {LINE(29)}
+    SelectMachine AT %IX69.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.ExternalMachineOption000')};
+    {LINE(30)}
+    g_xInputSelectMachine AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+END_VAR

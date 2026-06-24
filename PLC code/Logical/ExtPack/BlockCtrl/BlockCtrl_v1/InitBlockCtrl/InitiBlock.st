@@ -1,0 +1,3 @@
+PROGRAM _CYCLIC
+	gIndexBlock:= 1;	
+END_PROGRAM

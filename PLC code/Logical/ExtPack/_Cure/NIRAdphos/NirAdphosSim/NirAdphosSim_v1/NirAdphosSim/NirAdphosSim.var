@@ -1,0 +1,25 @@
+VAR
+	SimNirAdphos : REFERENCE TO NirAdphosSim_typ;
+	dataNir : REFERENCE TO NIRAdphos;
+	tonPowerOn : TON;
+	tonReady : TON;
+	tonBeltRunning : TON;
+	tonDry : TON;
+	StatusCommsReseted : NIRAdphos_CommsIn;
+	tonCommand : TON;
+	iIndexLamp : USINT;
+	iIndexModule : USINT;
+	xSimulatingCommand : UINT;
+	iSetLampTimes : UINT;
+	iReasonBeltRunning : USINT;
+	tonDelayTemp : TON;
+	iMaxTemperature : INT; (*Value x 10 of Celsius*)
+	iMinTemperature : INT; (*Value x 10 of Celsius*)
+	rModulePower : ARRAY[0..2] OF REAL;
+END_VAR
+VAR CONSTANT
+	POWER_VARIATION : REAL := 0.2;
+END_VAR
+VAR
+	rModulePowerSetPoint : REAL;
+END_VAR

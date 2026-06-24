@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="DiagPageNZ2Layout_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="SelectCardLayoutNoz2_1">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button1" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_2">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button2" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_3">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button3" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_4">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button4" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="3" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_5">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button5" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_6">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button6" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="5" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_7">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button7" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="6" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_8">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button8" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="7" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_9">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button9" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="8" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_10">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button10" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="9" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_11">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button11" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="10" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_12">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button12" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="11" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_13">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button13" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="12" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_14">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_PDC_content" widgetRefId="Button14" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="13" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_15">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button15" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="14" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_16">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button16" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="15" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_17">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button17" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="16" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_18">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button18" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="17" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_19">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button19" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="18" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_20">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button20" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="19" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_21">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button21" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="20" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_22">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button22" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="21" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_23">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button23" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="22" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_24">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button24" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="23" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_25">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button25" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="24" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_26">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button26" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="25" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_27">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button27" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="26" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_28">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button28" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="27" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_29">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button29" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="28" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_30">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button30" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="29" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_31">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button31" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="30" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_32">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button32" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="31" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_33">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button33" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="32" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_34">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button34" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="33" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_35">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button35" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="34" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_36">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button36" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="35" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_37">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button37" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="36" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_38">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button38" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="37" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_39">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button39" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="38" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_40">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button40" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="39" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_41">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button41" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="40" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_42">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button42" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="41" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_43">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button43" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="42" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="SelectCardLayoutNoz2_44">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="NZ2_Printer_content" widgetRefId="Button44" event="Click" />
+      <EventHandler>
+		<Sequence>
+			<Step order="0">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:PlcCardSelected_L">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="43" />
+					</Target>
+				</Action>
+			</Step>
+			<Step order="1">
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::mappHMI:xTrigIncremCard">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</Step>
+		</Sequence>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

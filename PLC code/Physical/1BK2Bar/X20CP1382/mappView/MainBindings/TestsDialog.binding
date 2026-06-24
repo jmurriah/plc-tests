@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="TestsDialog_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SimMachine:testMonitor.TestActive" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="imgListMotorReferenced" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:txTest" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="txtOutCurrentTest" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:txStateDesc" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="txtOutCurrentStateTest" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SimMachine:xTestBeltTests" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="btnBeltTests" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SimMachine:xTestPrepareMachine" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="btnPrepareMachine" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SimMachine:xTestConsents" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="btnConsentsTests" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SimMachine:xTestCleaning" attribute="value" />
+<Target xsi:type="brease" contentRefId="TestsDialog_Content" widgetRefId="btnCleanningTests" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

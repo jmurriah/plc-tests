@@ -1,0 +1,1203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.12.5.95 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="0AC808.9" Type="0AC808.9" Version="1.0.0.0">
+    <Connection Connector="ETH1" TargetModule="X20CP0483" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH5" TargetModule="8EI044HWS10.xxxx-1_BELT" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH6" TargetModule="8EI2X2MWS10.xxxx-1" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH7" TargetModule="8I66xxxxxxx.0P-81" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="24PortHub" Type="24PortHub" Version="1.0.0.1">
+    <Connection Connector="ETH7" TargetModule="X20CP0483" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH13" TargetModule="6PPT50.101E-16B" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH19" TargetModule="NirAdphos1" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH20" TargetModule="X20cHB2880" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH24" TargetModule="24PortHub1" TargetConnector="ETH3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="24PortHub1" Type="24PortHub" Version="1.0.0.1">
+    <Connection Connector="ETH3" TargetModule="24PortHub" TargetConnector="ETH24">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="6PPT50.101E-16B" Type="6PPT50.101E-16B" Version="1.3.8.0">
+    <Connection Connector="ETH1" TargetModule="24PortHub" TargetConnector="ETH13">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="Startmode" Value="2" />
+    <Parameter ID="ShowBootlogoWeb" Value="1" />
+    <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="InternetAddress" Value="192.168.125.48" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
+    <Parameter ID="Hostname" Value="efi_dryer_hmi" />
+    <Parameter ID="Screensaver" Value="1" />
+    <Parameter ID="Screensavertype" Value="0" />
+    <Parameter ID="ActivateBuzzer" Value="1" />
+    <Parameter ID="PasswordVNC" Value="" />
+    <Parameter ID="SelectedFavoriteWeb" Value="192.168.125.47:81/index.html" />
+    <Parameter ID="Favorites_Web1" Value="" />
+    <Parameter ID="BrowserVKeyboard" Value="0" />
+    <Parameter ID="PasswordCIFS" Value="" />
+    <Parameter ID="PasswordService" Value="" />
+    <Parameter ID="ANSLAuthUserName" Value="" />
+  </Module>
+  <Module Name="8EI044HWS10.xxxx-1_BELT" Type="8EI044HWS10.xxxx-1" Version="2.3.1.1">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH5">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+    <Parameter ID="Ax1Interface" Value="Ax1EnDat" />
+  </Module>
+  <Module Name="8EI2X2MWS10.xxxx-1" Type="8EI2X2MWS10.xxxx-1" Version="2.3.1.1">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH6" NodeNumber="21">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="EC1" TargetModule="8LSA44.DA060S300-3" TargetConnector="EC" />
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+    <Parameter ID="Ax1Interface" Value="Ax1EnDat" />
+  </Module>
+  <Module Name="8I66xxxxxxx.0P-81" Type="8I66xxxxxxx.0P-xxx" Version="2.5.1.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH7" NodeNumber="81">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8I66xxxxxxx.0P-82" TargetConnector="PLK1" NodeNumber="81">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+    <Parameter ID="IOM_AIDP1" Value="LFT" />
+    <Parameter ID="IOM_AIDP2" Value="LCR" />
+    <Parameter ID="IOM_AIDP3" Value="OTRN" />
+    <Parameter ID="IOM_AIDP4" Value="IL1R" />
+    <Parameter ID="IOM_AIDP5" Value="AI1R" />
+    <Parameter ID="IOM_AIDP6" Value="AI2R" />
+    <Parameter ID="IOM_AIDP7" Value="AI3R" />
+    <Parameter ID="IOM_AIDP8" Value="OL1I" />
+    <Parameter ID="IOM_AIDP9" Value="AO1I" />
+    <Parameter ID="IOM_R1ctrl" Value="mapped" />
+    <Parameter ID="IOM_R2ctrl" Value="mapped" />
+    <Parameter ID="IOM_LO1ctrl" Value="mapped" />
+    <Parameter ID="IOM_AO1ctrl" Value="mapped" />
+    <Parameter ID="Sel_AO1T" Value="0A" />
+    <Parameter ID="Sel_NameplateMask" Value="8Ix6T401500_IEC" />
+    <Parameter ID="Cfg_NSP" Value="2940" />
+    <Parameter ID="Cfg_NCR" Value="277" />
+    <Parameter ID="Cfg_COS" Value="82" />
+    <Parameter ID="Sel_TUN" Value="AUTO" />
+  </Module>
+  <Module Name="8I66xxxxxxx.0P-82" Type="8I66xxxxxxx.0P-xxx" Version="2.5.1.0">
+    <Connection Connector="PLK1" TargetModule="8I66xxxxxxx.0P-81" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+    <Parameter ID="IOM_AIDP1" Value="LFT" />
+    <Parameter ID="IOM_AIDP2" Value="LCR" />
+    <Parameter ID="IOM_AIDP3" Value="OTRN" />
+    <Parameter ID="IOM_AIDP4" Value="IL1R" />
+    <Parameter ID="IOM_AIDP5" Value="AI1R" />
+    <Parameter ID="IOM_AIDP6" Value="AI2R" />
+    <Parameter ID="IOM_AIDP7" Value="AI3R" />
+    <Parameter ID="IOM_AIDP8" Value="OL1I" />
+    <Parameter ID="IOM_AIDP9" Value="AO1I" />
+    <Parameter ID="IOM_R1ctrl" Value="mapped" />
+    <Parameter ID="IOM_R2ctrl" Value="mapped" />
+    <Parameter ID="IOM_LO1ctrl" Value="mapped" />
+    <Parameter ID="IOM_AO1ctrl" Value="mapped" />
+    <Parameter ID="Sel_AO1T" Value="0A" />
+    <Parameter ID="Sel_NameplateMask" Value="8Ix6T401500_IEC" />
+    <Parameter ID="Cfg_NSP" Value="2940" />
+    <Parameter ID="Cfg_NCR" Value="277" />
+    <Parameter ID="Cfg_COS" Value="82" />
+    <Parameter ID="Sel_TUN" Value="AUTO" />
+  </Module>
+  <Module Name="8LSA44.DA060S300-3" Type="8LSA44.DA060S300-3" Version="1.0.10.37">
+    <Connection Connector="EC" TargetModule="8EI2X2MWS10.xxxx-1" TargetConnector="EC1" />
+    <Connection Connector="MT" TargetModule="8EI2X2MWS10.xxxx-1" TargetConnector="MT1" />
+  </Module>
+  <Module Name="ACPi_P66.01" Type="FBC.0x0200005A.320.ACPi_P66_P76" Version="1.3" OrderNumber="ACPi_P66_P76">
+    <Connection Connector="CAN1" TargetModule="X20BB57" TargetConnector="IF7" NodeNumber="81" />
+    <Parameter ID="p2002sub5_connecttomaster" Value="2" />
+    <Parameter ID="p2016sub3_connecttomaster" Value="1" />
+    <Parameter ID="p2016subd_connecttomaster" Value="5" />
+    <Parameter ID="p2016sub21_connecttomaster" Value="1" />
+    <Parameter ID="p2016sub22_connecttomaster" Value="1" />
+    <Parameter ID="p2016sub3e_connecttomaster" Value="5" />
+    <Parameter ID="p2029sub16_connecttomaster" Value="2" />
+    <Parameter ID="p2038sub2_connecttomaster" Value="4" />
+    <Parameter ID="p2038sub3_connecttomaster" Value="4" />
+    <Parameter ID="p2038sub4_connecttomaster" Value="2" />
+    <Parameter ID="p2038sub5_connecttomaster" Value="2" />
+    <Parameter ID="p203csub2_connecttomaster" Value="5" />
+    <Parameter ID="p203csub3_connecttomaster" Value="5" />
+    <Parameter ID="p6040_connecttomaster" Value="0" />
+    <Parameter ID="p6041_connecttomaster" Value="0" />
+    <Parameter ID="p6042_connecttomaster" Value="0" />
+    <Parameter ID="p6044_connecttomaster" Value="0" />
+    <Parameter ID="p6077_connecttomaster" Value="1" />
+    <Parameter ID="p1800_transmissionselection" Value="2" />
+    <Parameter ID="p1801_transmissionselection" Value="2" />
+    <Parameter ID="p1802_transmissionselection" Value="2" />
+  </Module>
+  <Module Name="ACPi_P66.02" Type="FBC.0x0200005A.320.ACPi_P66_P76" Version="1.3" OrderNumber="ACPi_P66_P76">
+    <Connection Connector="CAN1" TargetModule="ACPi_P66.01" TargetConnector="CAN2" />
+    <Parameter ID="p2002sub5_connecttomaster" Value="2" />
+    <Parameter ID="p2016sub3_connecttomaster" Value="1" />
+    <Parameter ID="p2016subd_connecttomaster" Value="5" />
+    <Parameter ID="p2016sub21_connecttomaster" Value="1" />
+    <Parameter ID="p2016sub22_connecttomaster" Value="1" />
+    <Parameter ID="p2016sub3e_connecttomaster" Value="5" />
+    <Parameter ID="p2029sub16_connecttomaster" Value="2" />
+    <Parameter ID="p2038sub2_connecttomaster" Value="4" />
+    <Parameter ID="p2038sub3_connecttomaster" Value="4" />
+    <Parameter ID="p2038sub4_connecttomaster" Value="2" />
+    <Parameter ID="p2038sub5_connecttomaster" Value="2" />
+    <Parameter ID="p203csub2_connecttomaster" Value="5" />
+    <Parameter ID="p203csub3_connecttomaster" Value="5" />
+    <Parameter ID="p6040_connecttomaster" Value="0" />
+    <Parameter ID="p6041_connecttomaster" Value="0" />
+    <Parameter ID="p6042_connecttomaster" Value="0" />
+    <Parameter ID="p6044_connecttomaster" Value="0" />
+    <Parameter ID="p6077_connecttomaster" Value="1" />
+    <Parameter ID="p1800_transmissionselection" Value="2" />
+    <Parameter ID="p1801_transmissionselection" Value="2" />
+    <Parameter ID="p1802_transmissionselection" Value="2" />
+  </Module>
+  <Module Name="NirAdphos1" Type="OpcUa_any" Version="1.0.0.1">
+    <Connection Connector="ETH1" TargetModule="24PortHub" TargetConnector="ETH19">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="NirAdphos2" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="ServerDiagnostics" Value="on" />
+    <Parameter ID="ServerEndpointUrl" Value="opc.tcp://192.168.125.91:4840" />
+    <Parameter ID="PnPTimeout" Value="2500" />
+    <Parameter ID="SecurityMsgMode" Value="0" />
+    <Group ID="Channel1" />
+    <Parameter ID="ChannelID1" Value="HMI" />
+    <Parameter ID="ChannelBrowsePath1" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:HMI" />
+    <Parameter ID="ChannelType1" Value="INT" />
+    <Group ID="Channel2" />
+    <Parameter ID="ChannelID2" Value="Hardware" />
+    <Parameter ID="ChannelBrowsePath2" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:Hardware" />
+    <Parameter ID="ChannelType2" Value="INT" />
+    <Group ID="Channel3" />
+    <Parameter ID="ChannelID3" Value="Software" />
+    <Parameter ID="ChannelBrowsePath3" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:Software" />
+    <Parameter ID="ChannelType3" Value="INT" />
+    <Group ID="Channel4" />
+    <Parameter ID="ChannelID4" Value="Interface" />
+    <Parameter ID="ChannelBrowsePath4" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:interface" />
+    <Parameter ID="ChannelType4" Value="INT" />
+    <Group ID="Channel5" />
+    <Parameter ID="ChannelID5" Value="NIRno" />
+    <Parameter ID="ChannelBrowsePath5" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:general/4:NIRno" />
+    <Parameter ID="ChannelType5" Value="INT" />
+    <Group ID="Channel6" />
+    <Parameter ID="ChannelID6" Value="NIRwidth" />
+    <Parameter ID="ChannelBrowsePath6" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:general/4:NIRwidth" />
+    <Parameter ID="ChannelType6" Value="INT" />
+    <Group ID="Channel7" />
+    <Parameter ID="ChannelID7" Value="calPower" />
+    <Parameter ID="ChannelBrowsePath7" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:general/4:calPower" />
+    <Parameter ID="ChannelType7" Value="INT" />
+    <Group ID="Channel8" />
+    <Parameter ID="ChannelID8" Value="speed" />
+    <Parameter ID="ChannelBrowsePath8" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:general/4:speed" />
+    <Parameter ID="ChannelType8" Value="REAL" />
+    <Group ID="Channel9" />
+    <Parameter ID="ChannelID9" Value="Watchdog1" />
+    <Parameter ID="ChannelBrowsePath9" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:general/4:Watchdog" />
+    <Group ID="Channel10" />
+    <Parameter ID="ChannelID10" Value="EmFailNo_1" />
+    <Parameter ID="ChannelBrowsePath10" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:EmFailNo" />
+    <Parameter ID="ChannelType10" Value="USINT" />
+    <Group ID="Channel11" />
+    <Parameter ID="ChannelID11" Value="EmFailNo_2" />
+    <Parameter ID="ChannelBrowsePath11" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:EmFailNo" />
+    <Parameter ID="ChannelType11" Value="USINT" />
+    <Group ID="Channel12" />
+    <Parameter ID="ChannelID12" Value="ExhAirRunning_1" />
+    <Parameter ID="ChannelBrowsePath12" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:ExhAirRunning" />
+    <Group ID="Channel13" />
+    <Parameter ID="ChannelID13" Value="ExhAirRunning_2" />
+    <Parameter ID="ChannelBrowsePath13" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:ExhAirRunning" />
+    <Group ID="Channel14" />
+    <Parameter ID="ChannelID14" Value="NIRstatus_1" />
+    <Parameter ID="ChannelBrowsePath14" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:NIRstatus" />
+    <Parameter ID="ChannelType14" Value="INT" />
+    <Group ID="Channel15" />
+    <Parameter ID="ChannelID15" Value="NIRstatus_2" />
+    <Parameter ID="ChannelBrowsePath15" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:NIRstatus" />
+    <Parameter ID="ChannelType15" Value="INT" />
+    <Group ID="Channel16" />
+    <Parameter ID="ChannelID16" Value="airPressIn_1" />
+    <Parameter ID="ChannelBrowsePath16" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:airPressIn" />
+    <Parameter ID="ChannelType16" Value="REAL" />
+    <Group ID="Channel17" />
+    <Parameter ID="ChannelID17" Value="airPressIn_2" />
+    <Parameter ID="ChannelBrowsePath17" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:airPressIn" />
+    <Parameter ID="ChannelType17" Value="REAL" />
+    <Group ID="Channel18" />
+    <Parameter ID="ChannelID18" Value="airPressOut_1" />
+    <Parameter ID="ChannelBrowsePath18" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:airPressOut" />
+    <Parameter ID="ChannelType18" Value="REAL" />
+    <Group ID="Channel19" />
+    <Parameter ID="ChannelID19" Value="airPressOut_2" />
+    <Parameter ID="ChannelBrowsePath19" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:airPressOut" />
+    <Parameter ID="ChannelType19" Value="REAL" />
+    <Group ID="Channel20" />
+    <Parameter ID="ChannelID20" Value="airFilter_1" />
+    <Parameter ID="ChannelBrowsePath20" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:airFilter" />
+    <Parameter ID="ChannelType20" Value="INT" />
+    <Group ID="Channel21" />
+    <Parameter ID="ChannelID21" Value="airFilter_2" />
+    <Parameter ID="ChannelBrowsePath21" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:airFilter" />
+    <Parameter ID="ChannelType21" Value="INT" />
+    <Group ID="Channel22" />
+    <Parameter ID="ChannelID22" Value="actSpeedIn_1" />
+    <Parameter ID="ChannelBrowsePath22" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:actSpeedIn" />
+    <Parameter ID="ChannelType22" Value="INT" />
+    <Group ID="Channel23" />
+    <Parameter ID="ChannelID23" Value="actSpeedIn_2" />
+    <Parameter ID="ChannelBrowsePath23" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:actSpeedIn" />
+    <Parameter ID="ChannelType23" Value="INT" />
+    <Group ID="Channel24" />
+    <Parameter ID="ChannelID24" Value="actSpeedOut_1" />
+    <Parameter ID="ChannelBrowsePath24" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:actSpeedOut" />
+    <Parameter ID="ChannelType24" Value="INT" />
+    <Group ID="Channel25" />
+    <Parameter ID="ChannelID25" Value="actSpeedOut_2" />
+    <Parameter ID="ChannelBrowsePath25" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:actSpeedOut" />
+    <Parameter ID="ChannelType25" Value="INT" />
+    <Group ID="Channel26" />
+    <Parameter ID="ChannelID26" Value="actPower_1" />
+    <Parameter ID="ChannelBrowsePath26" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[1]/4:actPower" />
+    <Parameter ID="ChannelType26" Value="INT" />
+    <Group ID="Channel27" />
+    <Parameter ID="ChannelID27" Value="actPower_2" />
+    <Parameter ID="ChannelBrowsePath27" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:module/4:[2]/4:actPower" />
+    <Parameter ID="ChannelType27" Value="INT" />
+    <Group ID="Channel28" />
+    <Parameter ID="ChannelID28" Value="Watchdog2" />
+    <Parameter ID="ChannelBrowsePath28" Value="/0:Root/0:Objects/3:ServerInterfaces/4:SendData/4:DB11_HMI_out/4:general/4:Watchdog" />
+    <Group ID="Channel29" />
+    <Parameter ID="ChannelID29" Value="Reset" />
+    <Parameter ID="ChannelBrowsePath29" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:reset" />
+    <Parameter ID="ChannelDirection29" Value="OUT" />
+    <Group ID="Channel30" />
+    <Parameter ID="ChannelID30" Value="Pend" />
+    <Parameter ID="ChannelBrowsePath30" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:product/5:Pend" />
+    <Parameter ID="ChannelDirection30" Value="OUT" />
+    <Parameter ID="ChannelType30" Value="REAL" />
+    <Group ID="Channel31" />
+    <Parameter ID="ChannelID31" Value="Pstart" />
+    <Parameter ID="ChannelBrowsePath31" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:product/5:Pstart" />
+    <Parameter ID="ChannelDirection31" Value="OUT" />
+    <Parameter ID="ChannelType31" Value="REAL" />
+    <Group ID="Channel32" />
+    <Parameter ID="ChannelID32" Value="Vend" />
+    <Parameter ID="ChannelBrowsePath32" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:product/5:Vend" />
+    <Parameter ID="ChannelDirection32" Value="OUT" />
+    <Parameter ID="ChannelType32" Value="REAL" />
+    <Group ID="Channel33" />
+    <Parameter ID="ChannelID33" Value="Vstart" />
+    <Parameter ID="ChannelBrowsePath33" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:product/5:Vstart" />
+    <Parameter ID="ChannelDirection33" Value="OUT" />
+    <Parameter ID="ChannelType33" Value="REAL" />
+    <Group ID="Channel34" />
+    <Parameter ID="ChannelID34" Value="AdjPos" />
+    <Parameter ID="ChannelBrowsePath34" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:product/5:adjPos" />
+    <Parameter ID="ChannelDirection34" Value="OUT" />
+    <Parameter ID="ChannelType34" Value="INT" />
+    <Group ID="Channel35" />
+    <Parameter ID="ChannelID35" Value="WebWidth" />
+    <Parameter ID="ChannelBrowsePath35" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:product/5:webWidth" />
+    <Parameter ID="ChannelDirection35" Value="OUT" />
+    <Parameter ID="ChannelType35" Value="INT" />
+    <Group ID="Channel36" />
+    <Parameter ID="ChannelID36" Value="Adjust_1" />
+    <Parameter ID="ChannelBrowsePath36" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:module/5:[1]/5:adjust" />
+    <Parameter ID="ChannelDirection36" Value="OUT" />
+    <Parameter ID="ChannelType36" Value="INT" />
+    <Group ID="Channel37" />
+    <Parameter ID="ChannelID37" Value="Adjust_2" />
+    <Parameter ID="ChannelBrowsePath37" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:module/5:[2]/5:adjust" />
+    <Parameter ID="ChannelDirection37" Value="OUT" />
+    <Parameter ID="ChannelType37" Value="INT" />
+    <Group ID="Channel38" />
+    <Parameter ID="ChannelID38" Value="EnableMod_1" />
+    <Parameter ID="ChannelBrowsePath38" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:module/5:[1]/5:enableMod" />
+    <Parameter ID="ChannelDirection38" Value="OUT" />
+    <Group ID="Channel39" />
+    <Parameter ID="ChannelID39" Value="EnableMod_2" />
+    <Parameter ID="ChannelBrowsePath39" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:module/5:[2]/5:enableMod" />
+    <Parameter ID="ChannelDirection39" Value="OUT" />
+    <Group ID="Channel40" />
+    <Parameter ID="ChannelID40" Value="WatchdogOut" />
+    <Parameter ID="ChannelBrowsePath40" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:Watchdog" />
+    <Parameter ID="ChannelDirection40" Value="OUT" />
+    <Group ID="Channel41" />
+    <Parameter ID="ChannelID41" Value="Enable_DDC" />
+    <Parameter ID="ChannelBrowsePath41" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:DDCon" />
+    <Parameter ID="ChannelDirection41" Value="OUT" />
+    <Group ID="Channel42" />
+    <Parameter ID="ChannelID42" Value="NIR1_Int1" />
+    <Parameter ID="ChannelBrowsePath42" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[1]" />
+    <Parameter ID="ChannelDirection42" Value="OUT" />
+    <Parameter ID="ChannelType42" Value="INT" />
+    <Group ID="Channel43" />
+    <Parameter ID="ChannelID43" Value="NIR1_Int2" />
+    <Parameter ID="ChannelBrowsePath43" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[2]" />
+    <Parameter ID="ChannelDirection43" Value="OUT" />
+    <Parameter ID="ChannelType43" Value="INT" />
+    <Group ID="Channel44" />
+    <Parameter ID="ChannelID44" Value="NIR1_Int3" />
+    <Parameter ID="ChannelBrowsePath44" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[3]" />
+    <Parameter ID="ChannelDirection44" Value="OUT" />
+    <Parameter ID="ChannelType44" Value="INT" />
+    <Group ID="Channel45" />
+    <Parameter ID="ChannelID45" Value="NIR1_Int4" />
+    <Parameter ID="ChannelBrowsePath45" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[4]" />
+    <Parameter ID="ChannelDirection45" Value="OUT" />
+    <Parameter ID="ChannelType45" Value="INT" />
+    <Group ID="Channel46" />
+    <Parameter ID="ChannelID46" Value="NIR1_Int5" />
+    <Parameter ID="ChannelBrowsePath46" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[5]" />
+    <Parameter ID="ChannelDirection46" Value="OUT" />
+    <Parameter ID="ChannelType46" Value="INT" />
+    <Group ID="Channel47" />
+    <Parameter ID="ChannelID47" Value="NIR1_Int6" />
+    <Parameter ID="ChannelBrowsePath47" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[6]" />
+    <Parameter ID="ChannelDirection47" Value="OUT" />
+    <Parameter ID="ChannelType47" Value="INT" />
+    <Group ID="Channel48" />
+    <Parameter ID="ChannelID48" Value="NIR1_Int7" />
+    <Parameter ID="ChannelBrowsePath48" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[7]" />
+    <Parameter ID="ChannelDirection48" Value="OUT" />
+    <Parameter ID="ChannelType48" Value="INT" />
+    <Group ID="Channel49" />
+    <Parameter ID="ChannelID49" Value="NIR1_Int8" />
+    <Parameter ID="ChannelBrowsePath49" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[8]" />
+    <Parameter ID="ChannelDirection49" Value="OUT" />
+    <Parameter ID="ChannelType49" Value="INT" />
+    <Group ID="Channel50" />
+    <Parameter ID="ChannelID50" Value="NIR1_Int9" />
+    <Parameter ID="ChannelBrowsePath50" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[9]" />
+    <Parameter ID="ChannelDirection50" Value="OUT" />
+    <Parameter ID="ChannelType50" Value="INT" />
+    <Group ID="Channel51" />
+    <Parameter ID="ChannelID51" Value="NIR1_Int10" />
+    <Parameter ID="ChannelBrowsePath51" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[10]" />
+    <Parameter ID="ChannelDirection51" Value="OUT" />
+    <Parameter ID="ChannelType51" Value="INT" />
+    <Group ID="Channel52" />
+    <Parameter ID="ChannelID52" Value="NIR1_Int11" />
+    <Parameter ID="ChannelBrowsePath52" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[11]" />
+    <Parameter ID="ChannelDirection52" Value="OUT" />
+    <Parameter ID="ChannelType52" Value="INT" />
+    <Group ID="Channel53" />
+    <Parameter ID="ChannelID53" Value="NIR1_Int12" />
+    <Parameter ID="ChannelBrowsePath53" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[12]" />
+    <Parameter ID="ChannelDirection53" Value="OUT" />
+    <Parameter ID="ChannelType53" Value="INT" />
+    <Group ID="Channel54" />
+    <Parameter ID="ChannelID54" Value="NIR1_Int13" />
+    <Parameter ID="ChannelBrowsePath54" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[13]" />
+    <Parameter ID="ChannelDirection54" Value="OUT" />
+    <Parameter ID="ChannelType54" Value="INT" />
+    <Group ID="Channel55" />
+    <Parameter ID="ChannelID55" Value="NIR1_Int14" />
+    <Parameter ID="ChannelBrowsePath55" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[14]" />
+    <Parameter ID="ChannelDirection55" Value="OUT" />
+    <Parameter ID="ChannelType55" Value="INT" />
+    <Group ID="Channel56" />
+    <Parameter ID="ChannelID56" Value="NIR1_Int15" />
+    <Parameter ID="ChannelBrowsePath56" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[15]" />
+    <Parameter ID="ChannelDirection56" Value="OUT" />
+    <Parameter ID="ChannelType56" Value="INT" />
+    <Group ID="Channel57" />
+    <Parameter ID="ChannelID57" Value="NIR1_Int16" />
+    <Parameter ID="ChannelBrowsePath57" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[16]" />
+    <Parameter ID="ChannelDirection57" Value="OUT" />
+    <Parameter ID="ChannelType57" Value="INT" />
+    <Group ID="Channel58" />
+    <Parameter ID="ChannelID58" Value="NIR1_Int17" />
+    <Parameter ID="ChannelBrowsePath58" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[17]" />
+    <Parameter ID="ChannelDirection58" Value="OUT" />
+    <Parameter ID="ChannelType58" Value="INT" />
+    <Group ID="Channel59" />
+    <Parameter ID="ChannelID59" Value="NIR1_Int18" />
+    <Parameter ID="ChannelBrowsePath59" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[18]" />
+    <Parameter ID="ChannelDirection59" Value="OUT" />
+    <Parameter ID="ChannelType59" Value="INT" />
+    <Group ID="Channel60" />
+    <Parameter ID="ChannelID60" Value="NIR1_Int19" />
+    <Parameter ID="ChannelBrowsePath60" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[19]" />
+    <Parameter ID="ChannelDirection60" Value="OUT" />
+    <Parameter ID="ChannelType60" Value="INT" />
+    <Group ID="Channel61" />
+    <Parameter ID="ChannelID61" Value="NIR1_Int20" />
+    <Parameter ID="ChannelBrowsePath61" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[20]" />
+    <Parameter ID="ChannelDirection61" Value="OUT" />
+    <Parameter ID="ChannelType61" Value="INT" />
+    <Group ID="Channel62" />
+    <Parameter ID="ChannelID62" Value="NIR1_Int21" />
+    <Parameter ID="ChannelBrowsePath62" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[21]" />
+    <Parameter ID="ChannelDirection62" Value="OUT" />
+    <Parameter ID="ChannelType62" Value="INT" />
+    <Group ID="Channel63" />
+    <Parameter ID="ChannelID63" Value="NIR1_Int22" />
+    <Parameter ID="ChannelBrowsePath63" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[22]" />
+    <Parameter ID="ChannelDirection63" Value="OUT" />
+    <Parameter ID="ChannelType63" Value="INT" />
+    <Group ID="Channel64" />
+    <Parameter ID="ChannelID64" Value="NIR1_Int23" />
+    <Parameter ID="ChannelBrowsePath64" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[23]" />
+    <Parameter ID="ChannelDirection64" Value="OUT" />
+    <Parameter ID="ChannelType64" Value="INT" />
+    <Group ID="Channel65" />
+    <Parameter ID="ChannelID65" Value="NIR1_Int24" />
+    <Parameter ID="ChannelBrowsePath65" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[24]" />
+    <Parameter ID="ChannelDirection65" Value="OUT" />
+    <Parameter ID="ChannelType65" Value="INT" />
+    <Group ID="Channel66" />
+    <Parameter ID="ChannelID66" Value="NIR1_Int25" />
+    <Parameter ID="ChannelBrowsePath66" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[25]" />
+    <Parameter ID="ChannelDirection66" Value="OUT" />
+    <Parameter ID="ChannelType66" Value="INT" />
+    <Group ID="Channel67" />
+    <Parameter ID="ChannelID67" Value="NIR1_Int26" />
+    <Parameter ID="ChannelBrowsePath67" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[26]" />
+    <Parameter ID="ChannelDirection67" Value="OUT" />
+    <Parameter ID="ChannelType67" Value="INT" />
+    <Group ID="Channel68" />
+    <Parameter ID="ChannelID68" Value="NIR1_Int27" />
+    <Parameter ID="ChannelBrowsePath68" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[27]" />
+    <Parameter ID="ChannelDirection68" Value="OUT" />
+    <Parameter ID="ChannelType68" Value="INT" />
+    <Group ID="Channel69" />
+    <Parameter ID="ChannelID69" Value="NIR1_Int28" />
+    <Parameter ID="ChannelBrowsePath69" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[28]" />
+    <Parameter ID="ChannelDirection69" Value="OUT" />
+    <Parameter ID="ChannelType69" Value="INT" />
+    <Group ID="Channel70" />
+    <Parameter ID="ChannelID70" Value="NIR1_Int29" />
+    <Parameter ID="ChannelBrowsePath70" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[29]" />
+    <Parameter ID="ChannelDirection70" Value="OUT" />
+    <Parameter ID="ChannelType70" Value="INT" />
+    <Group ID="Channel71" />
+    <Parameter ID="ChannelID71" Value="NIR1_Int30" />
+    <Parameter ID="ChannelBrowsePath71" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[30]" />
+    <Parameter ID="ChannelDirection71" Value="OUT" />
+    <Parameter ID="ChannelType71" Value="INT" />
+    <Group ID="Channel72" />
+    <Parameter ID="ChannelID72" Value="NIR1_Int31" />
+    <Parameter ID="ChannelBrowsePath72" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[31]" />
+    <Parameter ID="ChannelDirection72" Value="OUT" />
+    <Parameter ID="ChannelType72" Value="INT" />
+    <Group ID="Channel73" />
+    <Parameter ID="ChannelID73" Value="NIR1_Int32" />
+    <Parameter ID="ChannelBrowsePath73" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[32]" />
+    <Parameter ID="ChannelDirection73" Value="OUT" />
+    <Parameter ID="ChannelType73" Value="INT" />
+    <Group ID="Channel74" />
+    <Parameter ID="ChannelID74" Value="NIR1_Int33" />
+    <Parameter ID="ChannelBrowsePath74" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[33]" />
+    <Parameter ID="ChannelDirection74" Value="OUT" />
+    <Parameter ID="ChannelType74" Value="INT" />
+    <Group ID="Channel75" />
+    <Parameter ID="ChannelID75" Value="NIR1_Int34" />
+    <Parameter ID="ChannelBrowsePath75" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[34]" />
+    <Parameter ID="ChannelDirection75" Value="OUT" />
+    <Parameter ID="ChannelType75" Value="INT" />
+    <Group ID="Channel76" />
+    <Parameter ID="ChannelID76" Value="NIR1_Int35" />
+    <Parameter ID="ChannelBrowsePath76" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[35]" />
+    <Parameter ID="ChannelDirection76" Value="OUT" />
+    <Parameter ID="ChannelType76" Value="INT" />
+    <Group ID="Channel77" />
+    <Parameter ID="ChannelID77" Value="NIR1_Int36" />
+    <Parameter ID="ChannelBrowsePath77" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[36]" />
+    <Parameter ID="ChannelDirection77" Value="OUT" />
+    <Parameter ID="ChannelType77" Value="INT" />
+    <Group ID="Channel78" />
+    <Parameter ID="ChannelID78" Value="NIR1_Int37" />
+    <Parameter ID="ChannelBrowsePath78" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[37]" />
+    <Parameter ID="ChannelDirection78" Value="OUT" />
+    <Parameter ID="ChannelType78" Value="INT" />
+    <Group ID="Channel79" />
+    <Parameter ID="ChannelID79" Value="NIR1_Int38" />
+    <Parameter ID="ChannelBrowsePath79" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[38]" />
+    <Parameter ID="ChannelDirection79" Value="OUT" />
+    <Parameter ID="ChannelType79" Value="INT" />
+    <Group ID="Channel80" />
+    <Parameter ID="ChannelID80" Value="NIR1_Int39" />
+    <Parameter ID="ChannelBrowsePath80" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[39]" />
+    <Parameter ID="ChannelDirection80" Value="OUT" />
+    <Parameter ID="ChannelType80" Value="INT" />
+    <Group ID="Channel81" />
+    <Parameter ID="ChannelID81" Value="NIR1_Int40" />
+    <Parameter ID="ChannelBrowsePath81" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[40]" />
+    <Parameter ID="ChannelDirection81" Value="OUT" />
+    <Parameter ID="ChannelType81" Value="INT" />
+    <Group ID="Channel82" />
+    <Parameter ID="ChannelID82" Value="NIR1_Int41" />
+    <Parameter ID="ChannelBrowsePath82" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[41]" />
+    <Parameter ID="ChannelDirection82" Value="OUT" />
+    <Parameter ID="ChannelType82" Value="INT" />
+    <Group ID="Channel83" />
+    <Parameter ID="ChannelID83" Value="NIR1_Int42" />
+    <Parameter ID="ChannelBrowsePath83" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[42]" />
+    <Parameter ID="ChannelDirection83" Value="OUT" />
+    <Parameter ID="ChannelType83" Value="INT" />
+    <Group ID="Channel84" />
+    <Parameter ID="ChannelID84" Value="NIR1_Int43" />
+    <Parameter ID="ChannelBrowsePath84" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[43]" />
+    <Parameter ID="ChannelDirection84" Value="OUT" />
+    <Parameter ID="ChannelType84" Value="INT" />
+    <Group ID="Channel85" />
+    <Parameter ID="ChannelID85" Value="NIR1_Int44" />
+    <Parameter ID="ChannelBrowsePath85" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[44]" />
+    <Parameter ID="ChannelDirection85" Value="OUT" />
+    <Parameter ID="ChannelType85" Value="INT" />
+    <Group ID="Channel86" />
+    <Parameter ID="ChannelID86" Value="NIR1_Int45" />
+    <Parameter ID="ChannelBrowsePath86" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[45]" />
+    <Parameter ID="ChannelDirection86" Value="OUT" />
+    <Parameter ID="ChannelType86" Value="INT" />
+    <Group ID="Channel87" />
+    <Parameter ID="ChannelID87" Value="NIR1_Int46" />
+    <Parameter ID="ChannelBrowsePath87" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[46]" />
+    <Parameter ID="ChannelDirection87" Value="OUT" />
+    <Parameter ID="ChannelType87" Value="INT" />
+    <Group ID="Channel88" />
+    <Parameter ID="ChannelID88" Value="NIR1_Int47" />
+    <Parameter ID="ChannelBrowsePath88" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[47]" />
+    <Parameter ID="ChannelDirection88" Value="OUT" />
+    <Parameter ID="ChannelType88" Value="INT" />
+    <Group ID="Channel89" />
+    <Parameter ID="ChannelID89" Value="NIR1_Int48" />
+    <Parameter ID="ChannelBrowsePath89" Value="/0:Root/0:Objects/3:ServerInterfaces/5:RecData/5:DB10_HMI_in/5:intensity/5:intensity/5:[48]" />
+    <Parameter ID="ChannelDirection89" Value="OUT" />
+    <Parameter ID="ChannelType89" Value="INT" />
+  </Module>
+  <Module Name="NirAdphos2" Type="OpcUa_any" Version="1.0.0.1">
+    <Connection Connector="ETH1" TargetModule="NirAdphos1" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="Printer" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="ServerDiagnostics" Value="on" />
+    <Parameter ID="ServerEndpointUrl" Value="opc.tcp://192.168.125.92:4840" />
+    <Parameter ID="PnPTimeout" Value="2500" />
+    <Parameter ID="SecurityMsgMode" Value="0" />
+    <Group ID="Channel1" />
+    <Parameter ID="ChannelID1" Value="NIR2_Int1" />
+    <Parameter ID="ChannelBrowsePath1" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[1]" />
+    <Parameter ID="ChannelDirection1" Value="OUT" />
+    <Parameter ID="ChannelType1" Value="INT" />
+    <Group ID="Channel2" />
+    <Parameter ID="ChannelID2" Value="NIR2_Int2" />
+    <Parameter ID="ChannelBrowsePath2" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[2]" />
+    <Parameter ID="ChannelDirection2" Value="OUT" />
+    <Parameter ID="ChannelType2" Value="INT" />
+    <Group ID="Channel3" />
+    <Parameter ID="ChannelID3" Value="NIR2_Int3" />
+    <Parameter ID="ChannelBrowsePath3" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[3]" />
+    <Parameter ID="ChannelDirection3" Value="OUT" />
+    <Parameter ID="ChannelType3" Value="INT" />
+    <Group ID="Channel4" />
+    <Parameter ID="ChannelID4" Value="NIR2_Int4" />
+    <Parameter ID="ChannelBrowsePath4" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[4]" />
+    <Parameter ID="ChannelDirection4" Value="OUT" />
+    <Parameter ID="ChannelType4" Value="INT" />
+    <Group ID="Channel5" />
+    <Parameter ID="ChannelID5" Value="NIR2_Int5" />
+    <Parameter ID="ChannelBrowsePath5" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[5]" />
+    <Parameter ID="ChannelDirection5" Value="OUT" />
+    <Parameter ID="ChannelType5" Value="INT" />
+    <Group ID="Channel6" />
+    <Parameter ID="ChannelID6" Value="NIR2_Int6" />
+    <Parameter ID="ChannelBrowsePath6" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[6]" />
+    <Parameter ID="ChannelDirection6" Value="OUT" />
+    <Parameter ID="ChannelType6" Value="INT" />
+    <Group ID="Channel7" />
+    <Parameter ID="ChannelID7" Value="NIR2_Int7" />
+    <Parameter ID="ChannelBrowsePath7" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[7]" />
+    <Parameter ID="ChannelDirection7" Value="OUT" />
+    <Parameter ID="ChannelType7" Value="INT" />
+    <Group ID="Channel8" />
+    <Parameter ID="ChannelID8" Value="NIR2_Int8" />
+    <Parameter ID="ChannelBrowsePath8" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[8]" />
+    <Parameter ID="ChannelDirection8" Value="OUT" />
+    <Parameter ID="ChannelType8" Value="INT" />
+    <Group ID="Channel9" />
+    <Parameter ID="ChannelID9" Value="NIR2_Int9" />
+    <Parameter ID="ChannelBrowsePath9" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[9]" />
+    <Parameter ID="ChannelDirection9" Value="OUT" />
+    <Parameter ID="ChannelType9" Value="INT" />
+    <Group ID="Channel10" />
+    <Parameter ID="ChannelID10" Value="NIR2_Int10" />
+    <Parameter ID="ChannelBrowsePath10" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[10]" />
+    <Parameter ID="ChannelDirection10" Value="OUT" />
+    <Parameter ID="ChannelType10" Value="INT" />
+    <Group ID="Channel11" />
+    <Parameter ID="ChannelID11" Value="NIR2_Int11" />
+    <Parameter ID="ChannelBrowsePath11" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[11]" />
+    <Parameter ID="ChannelDirection11" Value="OUT" />
+    <Parameter ID="ChannelType11" Value="INT" />
+    <Group ID="Channel12" />
+    <Parameter ID="ChannelID12" Value="NIR2_Int12" />
+    <Parameter ID="ChannelBrowsePath12" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[12]" />
+    <Parameter ID="ChannelDirection12" Value="OUT" />
+    <Parameter ID="ChannelType12" Value="INT" />
+    <Group ID="Channel13" />
+    <Parameter ID="ChannelID13" Value="NIR2_Int13" />
+    <Parameter ID="ChannelBrowsePath13" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[13]" />
+    <Parameter ID="ChannelDirection13" Value="OUT" />
+    <Parameter ID="ChannelType13" Value="INT" />
+    <Group ID="Channel14" />
+    <Parameter ID="ChannelID14" Value="NIR2_Int14" />
+    <Parameter ID="ChannelBrowsePath14" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[14]" />
+    <Parameter ID="ChannelDirection14" Value="OUT" />
+    <Parameter ID="ChannelType14" Value="INT" />
+    <Group ID="Channel15" />
+    <Parameter ID="ChannelID15" Value="NIR2_Int15" />
+    <Parameter ID="ChannelBrowsePath15" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[15]" />
+    <Parameter ID="ChannelDirection15" Value="OUT" />
+    <Parameter ID="ChannelType15" Value="INT" />
+    <Group ID="Channel16" />
+    <Parameter ID="ChannelID16" Value="NIR2_Int16" />
+    <Parameter ID="ChannelBrowsePath16" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[16]" />
+    <Parameter ID="ChannelDirection16" Value="OUT" />
+    <Parameter ID="ChannelType16" Value="INT" />
+    <Group ID="Channel17" />
+    <Parameter ID="ChannelID17" Value="NIR2_Int17" />
+    <Parameter ID="ChannelBrowsePath17" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[17]" />
+    <Parameter ID="ChannelDirection17" Value="OUT" />
+    <Parameter ID="ChannelType17" Value="INT" />
+    <Group ID="Channel18" />
+    <Parameter ID="ChannelID18" Value="NIR2_Int18" />
+    <Parameter ID="ChannelBrowsePath18" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[18]" />
+    <Parameter ID="ChannelDirection18" Value="OUT" />
+    <Parameter ID="ChannelType18" Value="INT" />
+    <Group ID="Channel19" />
+    <Parameter ID="ChannelID19" Value="NIR2_Int19" />
+    <Parameter ID="ChannelBrowsePath19" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[19]" />
+    <Parameter ID="ChannelDirection19" Value="OUT" />
+    <Parameter ID="ChannelType19" Value="INT" />
+    <Group ID="Channel20" />
+    <Parameter ID="ChannelID20" Value="NIR2_Int20" />
+    <Parameter ID="ChannelBrowsePath20" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[20]" />
+    <Parameter ID="ChannelDirection20" Value="OUT" />
+    <Parameter ID="ChannelType20" Value="INT" />
+    <Group ID="Channel21" />
+    <Parameter ID="ChannelID21" Value="NIR2_Int21" />
+    <Parameter ID="ChannelBrowsePath21" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[21]" />
+    <Parameter ID="ChannelDirection21" Value="OUT" />
+    <Parameter ID="ChannelType21" Value="INT" />
+    <Group ID="Channel22" />
+    <Parameter ID="ChannelID22" Value="NIR2_Int22" />
+    <Parameter ID="ChannelBrowsePath22" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[22]" />
+    <Parameter ID="ChannelDirection22" Value="OUT" />
+    <Parameter ID="ChannelType22" Value="INT" />
+    <Group ID="Channel23" />
+    <Parameter ID="ChannelID23" Value="NIR2_Int23" />
+    <Parameter ID="ChannelBrowsePath23" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[23]" />
+    <Parameter ID="ChannelDirection23" Value="OUT" />
+    <Parameter ID="ChannelType23" Value="INT" />
+    <Group ID="Channel24" />
+    <Parameter ID="ChannelID24" Value="NIR2_Int24" />
+    <Parameter ID="ChannelBrowsePath24" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[24]" />
+    <Parameter ID="ChannelDirection24" Value="OUT" />
+    <Parameter ID="ChannelType24" Value="INT" />
+    <Group ID="Channel25" />
+    <Parameter ID="ChannelID25" Value="NIR2_Int25" />
+    <Parameter ID="ChannelBrowsePath25" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[25]" />
+    <Parameter ID="ChannelDirection25" Value="OUT" />
+    <Parameter ID="ChannelType25" Value="INT" />
+    <Group ID="Channel26" />
+    <Parameter ID="ChannelID26" Value="NIR2_Int26" />
+    <Parameter ID="ChannelBrowsePath26" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[26]" />
+    <Parameter ID="ChannelDirection26" Value="OUT" />
+    <Parameter ID="ChannelType26" Value="INT" />
+    <Group ID="Channel27" />
+    <Parameter ID="ChannelID27" Value="NIR2_Int27" />
+    <Parameter ID="ChannelBrowsePath27" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[27]" />
+    <Parameter ID="ChannelDirection27" Value="OUT" />
+    <Parameter ID="ChannelType27" Value="INT" />
+    <Group ID="Channel28" />
+    <Parameter ID="ChannelID28" Value="NIR2_Int28" />
+    <Parameter ID="ChannelBrowsePath28" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[28]" />
+    <Parameter ID="ChannelDirection28" Value="OUT" />
+    <Parameter ID="ChannelType28" Value="INT" />
+    <Group ID="Channel29" />
+    <Parameter ID="ChannelID29" Value="NIR2_Int29" />
+    <Parameter ID="ChannelBrowsePath29" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[29]" />
+    <Parameter ID="ChannelDirection29" Value="OUT" />
+    <Parameter ID="ChannelType29" Value="INT" />
+    <Group ID="Channel30" />
+    <Parameter ID="ChannelID30" Value="NIR2_Int30" />
+    <Parameter ID="ChannelBrowsePath30" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[30]" />
+    <Parameter ID="ChannelDirection30" Value="OUT" />
+    <Parameter ID="ChannelType30" Value="INT" />
+    <Group ID="Channel31" />
+    <Parameter ID="ChannelID31" Value="NIR2_Int31" />
+    <Parameter ID="ChannelBrowsePath31" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[31]" />
+    <Parameter ID="ChannelDirection31" Value="OUT" />
+    <Parameter ID="ChannelType31" Value="INT" />
+    <Group ID="Channel32" />
+    <Parameter ID="ChannelID32" Value="NIR2_Int32" />
+    <Parameter ID="ChannelBrowsePath32" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[32]" />
+    <Parameter ID="ChannelDirection32" Value="OUT" />
+    <Parameter ID="ChannelType32" Value="INT" />
+    <Group ID="Channel33" />
+    <Parameter ID="ChannelID33" Value="NIR2_Int33" />
+    <Parameter ID="ChannelBrowsePath33" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[33]" />
+    <Parameter ID="ChannelDirection33" Value="OUT" />
+    <Parameter ID="ChannelType33" Value="INT" />
+    <Group ID="Channel34" />
+    <Parameter ID="ChannelID34" Value="NIR2_Int34" />
+    <Parameter ID="ChannelBrowsePath34" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[34]" />
+    <Parameter ID="ChannelDirection34" Value="OUT" />
+    <Parameter ID="ChannelType34" Value="INT" />
+    <Group ID="Channel35" />
+    <Parameter ID="ChannelID35" Value="NIR2_Int35" />
+    <Parameter ID="ChannelBrowsePath35" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[35]" />
+    <Parameter ID="ChannelDirection35" Value="OUT" />
+    <Parameter ID="ChannelType35" Value="INT" />
+    <Group ID="Channel36" />
+    <Parameter ID="ChannelID36" Value="NIR2_Int36" />
+    <Parameter ID="ChannelBrowsePath36" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[36]" />
+    <Parameter ID="ChannelDirection36" Value="OUT" />
+    <Parameter ID="ChannelType36" Value="INT" />
+    <Group ID="Channel37" />
+    <Parameter ID="ChannelID37" Value="NIR2_Int37" />
+    <Parameter ID="ChannelBrowsePath37" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[37]" />
+    <Parameter ID="ChannelDirection37" Value="OUT" />
+    <Parameter ID="ChannelType37" Value="INT" />
+    <Group ID="Channel38" />
+    <Parameter ID="ChannelID38" Value="NIR2_Int38" />
+    <Parameter ID="ChannelBrowsePath38" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[38]" />
+    <Parameter ID="ChannelDirection38" Value="OUT" />
+    <Parameter ID="ChannelType38" Value="INT" />
+    <Group ID="Channel39" />
+    <Parameter ID="ChannelID39" Value="NIR2_Int39" />
+    <Parameter ID="ChannelBrowsePath39" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[39]" />
+    <Parameter ID="ChannelDirection39" Value="OUT" />
+    <Parameter ID="ChannelType39" Value="INT" />
+    <Group ID="Channel40" />
+    <Parameter ID="ChannelID40" Value="NIR2_Int40" />
+    <Parameter ID="ChannelBrowsePath40" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[40]" />
+    <Parameter ID="ChannelDirection40" Value="OUT" />
+    <Parameter ID="ChannelType40" Value="INT" />
+    <Group ID="Channel41" />
+    <Parameter ID="ChannelID41" Value="NIR2_Int41" />
+    <Parameter ID="ChannelBrowsePath41" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[41]" />
+    <Parameter ID="ChannelDirection41" Value="OUT" />
+    <Parameter ID="ChannelType41" Value="INT" />
+    <Group ID="Channel42" />
+    <Parameter ID="ChannelID42" Value="NIR2_Int42" />
+    <Parameter ID="ChannelBrowsePath42" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[42]" />
+    <Parameter ID="ChannelDirection42" Value="OUT" />
+    <Parameter ID="ChannelType42" Value="INT" />
+    <Group ID="Channel43" />
+    <Parameter ID="ChannelID43" Value="NIR2_Int43" />
+    <Parameter ID="ChannelBrowsePath43" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[43]" />
+    <Parameter ID="ChannelDirection43" Value="OUT" />
+    <Parameter ID="ChannelType43" Value="INT" />
+    <Group ID="Channel44" />
+    <Parameter ID="ChannelID44" Value="NIR2_Int44" />
+    <Parameter ID="ChannelBrowsePath44" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[44]" />
+    <Parameter ID="ChannelDirection44" Value="OUT" />
+    <Parameter ID="ChannelType44" Value="INT" />
+    <Group ID="Channel45" />
+    <Parameter ID="ChannelID45" Value="NIR2_Int45" />
+    <Parameter ID="ChannelBrowsePath45" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[45]" />
+    <Parameter ID="ChannelDirection45" Value="OUT" />
+    <Parameter ID="ChannelType45" Value="INT" />
+    <Group ID="Channel46" />
+    <Parameter ID="ChannelID46" Value="NIR2_Int46" />
+    <Parameter ID="ChannelBrowsePath46" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[46]" />
+    <Parameter ID="ChannelDirection46" Value="OUT" />
+    <Parameter ID="ChannelType46" Value="INT" />
+    <Group ID="Channel47" />
+    <Parameter ID="ChannelID47" Value="NIR2_Int47" />
+    <Parameter ID="ChannelBrowsePath47" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[47]" />
+    <Parameter ID="ChannelDirection47" Value="OUT" />
+    <Parameter ID="ChannelType47" Value="INT" />
+    <Group ID="Channel48" />
+    <Parameter ID="ChannelID48" Value="NIR2_Int48" />
+    <Parameter ID="ChannelBrowsePath48" Value="/0:Root/0:Objects/3:ServerInterfaces/0:RecData/4:DB10_HMI_in/4:intensity/4:[48]" />
+    <Parameter ID="ChannelDirection48" Value="OUT" />
+    <Parameter ID="ChannelType48" Value="INT" />
+  </Module>
+  <Module Name="Printer" Type="OpcUa_any" Version="1.0.0.1">
+    <Connection Connector="ETH1" TargetModule="NirAdphos2" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="ServerDiagnostics" Value="on" />
+    <Parameter ID="ServerEndpointUrl" Value="opc.tcp://192.168.125.10:4840" />
+    <Parameter ID="UserIdentifyToken" Value="1" />
+    <Parameter ID="Username" Value="PressCore" />
+    <Parameter ID="Password" Value="h98o76" />
+    <Group ID="Channel1" />
+    <Parameter ID="ChannelID1" Value="xRunTransport" />
+    <Parameter ID="ChannelBrowsePath1" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xRunTransport" />
+    <Group ID="Channel2" />
+    <Parameter ID="ChannelID2" Value="xPrepareToDry" />
+    <Parameter ID="ChannelBrowsePath2" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xPrepareToDry" />
+    <Parameter ID="ChannelSamplingInterval2" Value="200" />
+    <Parameter ID="ChannelPublishingInterval2" Value="400" />
+    <Group ID="Channel3" />
+    <Parameter ID="ChannelID3" Value="xStartDrying" />
+    <Parameter ID="ChannelBrowsePath3" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xStartDrying" />
+    <Parameter ID="ChannelSamplingInterval3" Value="200" />
+    <Parameter ID="ChannelPublishingInterval3" Value="400" />
+    <Group ID="Channel4" />
+    <Parameter ID="ChannelID4" Value="xEnableNir" />
+    <Parameter ID="ChannelBrowsePath4" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xEnableNir" />
+    <Parameter ID="ChannelSamplingInterval4" Value="200" />
+    <Parameter ID="ChannelPublishingInterval4" Value="400" />
+    <Group ID="Channel5" />
+    <Parameter ID="ChannelID5" Value="xEnableArcLampDrying" />
+    <Parameter ID="ChannelBrowsePath5" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xEnableArcLamp" />
+    <Parameter ID="ChannelSamplingInterval5" Value="200" />
+    <Parameter ID="ChannelPublishingInterval5" Value="400" />
+    <Group ID="Channel6" />
+    <Parameter ID="ChannelID6" Value="rBeltSpeedSetPoint" />
+    <Parameter ID="ChannelBrowsePath6" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:rBeltSpeedSetPoint" />
+    <Parameter ID="ChannelType6" Value="REAL" />
+    <Group ID="Channel7" />
+    <Parameter ID="ChannelID7" Value="rBoardLength" />
+    <Parameter ID="ChannelBrowsePath7" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rLength" />
+    <Parameter ID="ChannelSamplingInterval7" Value="200" />
+    <Parameter ID="ChannelPublishingInterval7" Value="400" />
+    <Parameter ID="ChannelType7" Value="REAL" />
+    <Group ID="Channel8" />
+    <Parameter ID="ChannelID8" Value="rBoardWidth" />
+    <Parameter ID="ChannelBrowsePath8" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rWidth" />
+    <Parameter ID="ChannelSamplingInterval8" Value="200" />
+    <Parameter ID="ChannelPublishingInterval8" Value="400" />
+    <Parameter ID="ChannelType8" Value="REAL" />
+    <Group ID="Channel9" />
+    <Parameter ID="ChannelID9" Value="rBoardThickness" />
+    <Parameter ID="ChannelBrowsePath9" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rThickness" />
+    <Parameter ID="ChannelSamplingInterval9" Value="200" />
+    <Parameter ID="ChannelPublishingInterval9" Value="400" />
+    <Parameter ID="ChannelType9" Value="REAL" />
+    <Group ID="Channel10" />
+    <Parameter ID="ChannelID10" Value="rBoardGap" />
+    <Parameter ID="ChannelBrowsePath10" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rGap" />
+    <Parameter ID="ChannelSamplingInterval10" Value="200" />
+    <Parameter ID="ChannelPublishingInterval10" Value="400" />
+    <Parameter ID="ChannelType10" Value="REAL" />
+    <Group ID="Channel11" />
+    <Parameter ID="ChannelID11" Value="Signals_xMediaPresent" />
+    <Parameter ID="ChannelBrowsePath11" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:xMediaPresent" />
+    <Parameter ID="ChannelSamplingInterval11" Value="200" />
+    <Parameter ID="ChannelPublishingInterval11" Value="400" />
+    <Group ID="Channel12" />
+    <Parameter ID="ChannelID12" Value="Signals_xBreakerOKBlowerInput" />
+    <Parameter ID="ChannelBrowsePath12" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:xBreakerOKBlowerInput" />
+    <Parameter ID="ChannelSamplingInterval12" Value="200" />
+    <Parameter ID="ChannelPublishingInterval12" Value="400" />
+    <Group ID="Channel13" />
+    <Parameter ID="ChannelID13" Value="Signals_xBreakerOKBlowerOutput" />
+    <Parameter ID="ChannelBrowsePath13" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:xBreakerOKBlowerOutput" />
+    <Parameter ID="ChannelSamplingInterval13" Value="200" />
+    <Parameter ID="ChannelPublishingInterval13" Value="400" />
+    <Group ID="Channel14" />
+    <Parameter ID="ChannelID14" Value="Signals_Safety_xMovementsEnabled" />
+    <Parameter ID="ChannelBrowsePath14" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xMovementsEnabled" />
+    <Parameter ID="ChannelSamplingInterval14" Value="200" />
+    <Parameter ID="ChannelPublishingInterval14" Value="400" />
+    <Group ID="Channel15" />
+    <Parameter ID="ChannelID15" Value="Signals_Safety_xRemoteEStopOK" />
+    <Parameter ID="ChannelBrowsePath15" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xRemoteEStopOK" />
+    <Parameter ID="ChannelSamplingInterval15" Value="200" />
+    <Parameter ID="ChannelPublishingInterval15" Value="400" />
+    <Group ID="Channel16" />
+    <Parameter ID="ChannelID16" Value="Signals_Safety_xEStopFrontOK" />
+    <Parameter ID="ChannelBrowsePath16" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xEStopFrontOK" />
+    <Parameter ID="ChannelSamplingInterval16" Value="200" />
+    <Parameter ID="ChannelPublishingInterval16" Value="400" />
+    <Group ID="Channel17" />
+    <Parameter ID="ChannelID17" Value="Signals_Safety_xEStopRearOK" />
+    <Parameter ID="ChannelBrowsePath17" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xEStopRearOK" />
+    <Parameter ID="ChannelSamplingInterval17" Value="200" />
+    <Parameter ID="ChannelPublishingInterval17" Value="400" />
+    <Group ID="Channel18" />
+    <Parameter ID="ChannelID18" Value="Signals_Safety_xClosedFrontIn" />
+    <Parameter ID="ChannelBrowsePath18" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedFrontInput" />
+    <Parameter ID="ChannelSamplingInterval18" Value="200" />
+    <Parameter ID="ChannelPublishingInterval18" Value="400" />
+    <Group ID="Channel19" />
+    <Parameter ID="ChannelID19" Value="Signals_Safety_xClosedFrontOut" />
+    <Parameter ID="ChannelBrowsePath19" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedFrontOutput" />
+    <Parameter ID="ChannelSamplingInterval19" Value="200" />
+    <Parameter ID="ChannelPublishingInterval19" Value="400" />
+    <Group ID="Channel20" />
+    <Parameter ID="ChannelID20" Value="Signals_Safety_xClosedRearIn" />
+    <Parameter ID="ChannelBrowsePath20" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedRearInput" />
+    <Parameter ID="ChannelSamplingInterval20" Value="200" />
+    <Parameter ID="ChannelPublishingInterval20" Value="400" />
+    <Group ID="Channel21" />
+    <Parameter ID="ChannelID21" Value="Signals_Safety_xClosedRearOut" />
+    <Parameter ID="ChannelBrowsePath21" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Signals/6:Safety/6:xClosedRearOutput" />
+    <Parameter ID="ChannelSamplingInterval21" Value="200" />
+    <Parameter ID="ChannelPublishingInterval21" Value="400" />
+    <Group ID="Channel22" />
+    <Parameter ID="ChannelID22" Value="rDocumentWidth" />
+    <Parameter ID="ChannelBrowsePath22" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rDocWidth" />
+    <Parameter ID="ChannelSamplingInterval22" Value="200" />
+    <Parameter ID="ChannelPublishingInterval22" Value="400" />
+    <Parameter ID="ChannelType22" Value="REAL" />
+    <Group ID="Channel23" />
+    <Parameter ID="ChannelID23" Value="rDocumentLength" />
+    <Parameter ID="ChannelBrowsePath23" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rDocLength" />
+    <Parameter ID="ChannelSamplingInterval23" Value="200" />
+    <Parameter ID="ChannelPublishingInterval23" Value="400" />
+    <Parameter ID="ChannelType23" Value="REAL" />
+    <Group ID="Channel24" />
+    <Parameter ID="ChannelID24" Value="xLineEmptyingBelt" />
+    <Parameter ID="ChannelBrowsePath24" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xLineEmptyingBelt" />
+    <Parameter ID="ChannelSamplingInterval24" Value="200" />
+    <Parameter ID="ChannelPublishingInterval24" Value="400" />
+    <Group ID="Channel25" />
+    <Parameter ID="ChannelID25" Value="xPrepareToEmptyBelt" />
+    <Parameter ID="ChannelBrowsePath25" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Commands/6:xPrepareToEmptyBelt" />
+    <Parameter ID="ChannelSamplingInterval25" Value="200" />
+    <Parameter ID="ChannelPublishingInterval25" Value="400" />
+    <Group ID="Channel26" />
+    <Parameter ID="ChannelID26" Value="rDocumentOffset" />
+    <Parameter ID="ChannelBrowsePath26" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rDocCrossOffset" />
+    <Parameter ID="ChannelSamplingInterval26" Value="200" />
+    <Parameter ID="ChannelPublishingInterval26" Value="400" />
+    <Parameter ID="ChannelType26" Value="REAL" />
+    <Group ID="Channel27" />
+    <Parameter ID="ChannelID27" Value="rCrossOffset" />
+    <Parameter ID="ChannelBrowsePath27" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:Media/6:rCrossOffset" />
+    <Parameter ID="ChannelSamplingInterval27" Value="200" />
+    <Parameter ID="ChannelPublishingInterval27" Value="400" />
+    <Parameter ID="ChannelType27" Value="REAL" />
+    <Group ID="Channel28" />
+    <Parameter ID="ChannelID28" Value="rSubstratePowerReduction" />
+    <Parameter ID="ChannelBrowsePath28" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:rSubstratePowerReduction" />
+    <Parameter ID="ChannelSamplingInterval28" Value="200" />
+    <Parameter ID="ChannelPublishingInterval28" Value="400" />
+    <Parameter ID="ChannelType28" Value="REAL" />
+    <Group ID="Channel29" />
+    <Parameter ID="ChannelID29" Value="xEnableDDC" />
+    <Parameter ID="ChannelBrowsePath29" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xEnableDDC" />
+    <Parameter ID="ChannelSamplingInterval29" Value="200" />
+    <Parameter ID="ChannelPublishingInterval29" Value="400" />
+    <Group ID="Channel30" />
+    <Parameter ID="ChannelID30" Value="xPrinterBeltRuning" />
+    <Parameter ID="ChannelBrowsePath30" Value="/0:Root/0:Objects/4:PLC/4:Modules/6:&amp;:&amp;:/6:Global PV/6:gDryerRemoteData/6:Parameters/6:xPrinterBeltRuning" />
+    <Parameter ID="ChannelSamplingInterval30" Value="200" />
+    <Parameter ID="ChannelPublishingInterval30" Value="400" />
+  </Module>
+  <Module Name="X20AI8321_207" Type="X20AI8321" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F5" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="LowerLimit" Value="-8192" />
+    <Parameter ID="ChannelType01" Value="4 to 20mA" />
+    <Parameter ID="ChannelType02" Value="4 to 20mA" />
+    <Parameter ID="ChannelType03" Value="4 to 20mA" />
+    <Parameter ID="ChannelType04" Value="4 to 20mA" />
+    <Parameter ID="ChannelType05" Value="4 to 20mA" />
+    <Parameter ID="ChannelType06" Value="4 to 20mA" />
+    <Parameter ID="ChannelType07" Value="4 to 20mA" />
+    <Parameter ID="ChannelType08" Value="4 to 20mA" />
+  </Module>
+  <Module Name="X20AO4622_208" Type="X20AO4622" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11f" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20AT4222_209" Type="X20AT4222" Version="1.4.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11g" TargetConnector="SL1" />
+    <Parameter ID="FunctionModel" Value="FunctionModel001" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SensorType03" Value="off" />
+    <Parameter ID="SensorType04" Value="off" />
+  </Module>
+  <Module Name="X20BB57" Type="X20BB57" Version="1.2.0.0">
+    <Connector Name="IF7">
+      <Parameter ID="Baudrate" Value="250000" />
+      <Parameter ID="ActivateCanOpen" Value="1" />
+      <Parameter ID="p100c_parametervalue" Value="1000" />
+      <Parameter ID="p100d_parametervalue" Value="3" />
+    </Connector>
+  </Module>
+  <Module Name="X20BM01" Type="X20BM01" Version="2.2.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11b" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BB57" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20BM11a" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11b" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11c" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM01" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11d" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11c" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11e" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11d" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11f" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11e" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11g" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11f" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20CP0483" Type="X20CP0483" Version="1.6.0.0">
+    <Connection Connector="SL" TargetModule="X20BB57" TargetConnector="SL1" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="HostName" Value="efi_dryer" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.125.47" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Parameter ID="InaNodeNumber" Value="0" />
+      <Parameter ID="ActivateSnmp" Value="2" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+      <Parameter ID="EplNatSubnet" Value="192.168.102.0" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="Dryer" />
+    <Parameter ID="UserPartitionSize" Value="0" />
+    <Parameter ID="SimulationIPAddress" Value="192.168.0.138" />
+    <Parameter ID="SimulationModeOpcUa" Value="off" />
+    <Parameter ID="PermanentPvSize" Value="5000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="10000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="1500000" />
+    <Parameter ID="UserLoggerSize" Value="4096000" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Parameter ID="EnableCfRemoteInstall" Value="1" />
+    <Parameter ID="RebootReset" Value="1" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP0483.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="4000" />
+    <Parameter ID="CyclicTaskClassCount" Value="6" />
+    <Parameter ID="Cyclic1Duration" Value="8000" />
+    <Parameter ID="Cyclic1Tolerance" Value="8000" />
+    <Parameter ID="Cyclic1Stack" Value="16384" />
+    <Parameter ID="Cyclic1Output" Value="1" />
+    <Parameter ID="Cyclic2Duration" Value="12000" />
+    <Parameter ID="Cyclic2Tolerance" Value="24000" />
+    <Parameter ID="Cyclic2Stack" Value="16384" />
+    <Parameter ID="Cyclic3Duration" Value="16000" />
+    <Parameter ID="Cyclic3Tolerance" Value="48000" />
+    <Parameter ID="Cyclic3Stack" Value="16384" />
+    <Parameter ID="Cyclic4Duration" Value="32000" />
+    <Parameter ID="Cyclic4Tolerance" Value="96000" />
+    <Parameter ID="Cyclic4Stack" Value="16384" />
+    <Parameter ID="Cyclic5Duration" Value="80000" />
+    <Parameter ID="Cyclic5Tolerance" Value="160000" />
+    <Parameter ID="Cyclic5Stack" Value="16384" />
+    <Parameter ID="Cyclic6Duration" Value="88000" />
+    <Parameter ID="Cyclic6Tolerance" Value="528000" />
+    <Parameter ID="Cyclic7Duration" Value="1000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic8Duration" Value="800000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30400000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="USER" />
+    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="EFI" Description="EFI" />
+    <Parameter ID="FtpUserPassword1" Value="7G5n+wCoc8AAtJwOeMqQrBZ1Z+2KeIxeQkt+7Ofj72s=" Description="Castellon" />
+    <Parameter ID="FtpUserSalt1" Value="xa1UK9Qk" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="2" />
+    <Parameter ID="OpcUaInformationModel_Facet" Value="0" />
+    <Parameter ID="OpcUaInformationModel_TypeInformation" Value="0" />
+    <Parameter ID="OpcUaInformationModel_BaseObjectTypeForStructures" Value="0" />
+  </Module>
+  <Module Name="X20DIF371_201" Type="X20DIF371" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DIF371_202" Type="X20DIF371" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DIF371_203" Type="X20DIF371" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DOF322_205" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F3" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DOF322_206" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F4" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11d" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20PS3300_204" Type="X20PS3300" Version="1.4.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM01" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20PS9600" Type="X20PS9600" Version="1.6.0.0">
+    <Connection Connector="PS" TargetModule="X20BB57" TargetConnector="PS1" />
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12b" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12c" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F3" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F4" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F5" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20cHB2880" Type="X20cHB2880" Version="1.2.0.0">
+    <Connection Connector="ETH1" TargetModule="24PortHub" TargetConnector="ETH20">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+</Hardware>

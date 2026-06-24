@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="Blowers_Binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].parSw.rManSetPoint" attribute="node"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="numInBlowersSetPointMan" attribute="node"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.rPressurePerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="ggPressureBlower1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.Blower.rDutyCycle" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="ggDutyCycleBlower" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].parSw.rVacPressureSetPointPerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="numInBlowersSetPointMan1" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].OrdersSw.xRunManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="btnStartBlowers" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.St.Mode.xManual" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="btnStartBlowers" attribute="enable"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Alarms.xAlrBlowerCB[1]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="imglBreakerBlower1" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Alarms.xAlrBlowerCB[2]" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="imglBreakerBlower2" attribute="selectedIndex"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.rPressurePerc" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="numOutPressureVacc" attribute="value"/>
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTransVacuum[1].Status.Blower.rDutyCycle" attribute="value"/>
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="numOutDutyCycleVacc" attribute="value"/>
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gThicknessCtrl.status.MediaPosition.xMediaInside" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="imglDryingArcLamp1" attribute="selectedIndex" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gDryer.In.Sw.xStopBlowers_GI" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="PushButton1" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xSimMachine" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="PushButton1" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTestsExec.xSimMachine" attribute="value" />
+			<Target xsi:type="brease" contentRefId="DryerBlowers_Content" widgetRefId="PushButton1" attribute="enable" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

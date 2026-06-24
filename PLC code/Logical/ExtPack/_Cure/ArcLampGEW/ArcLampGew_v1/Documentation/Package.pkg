@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">API Read Write. DOC7037-EN RHINO-RLT System Installation Manual - RHINO.pdf</Object>
+    <Object Type="File">mUVm Insert EN.pdf</Object>
+    <Object Type="File">Rhino API - Read-Write.postman_collection.json</Object>
+  </Objects>
+</Package>

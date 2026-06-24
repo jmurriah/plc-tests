@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
+    <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
+    <Object Type="Package">mapp</Object>
+    <Object Type="Package">Connectivity</Object>
+    <Object Type="Package">TextSystem</Object>
+    <Object Type="Package">AccessAndSecurity</Object>
+    <Object Type="Package">Motion</Object>
+    <Object Type="Package">VC</Object>
+    <Object Type="File" Description="SafeDESIGNER project">EFI.swt</Object>
+    <Object Type="Package">ExternalHardware</Object>
+    <Object Type="Package">mappView</Object>
+  </Objects>
+  <Configuration ModuleId="X20CP1382">
+    <AutomationRuntime Version="B4.83" />
+    <Build GccVersion="4.1.2" IgnoredObjectNamesForBuildWarnings=".images;.gitignore;" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Safety SafetyRelease="1.10" />
+    <Transfer AddToUserPart="False" AdditionalUserDir="" AllowDowngrade="False" AllowInitialTransfer="True" AllowPartitioning="True" AllowWarmRestart="true" ExecuteInitExitProgram="True" ForceInitialTransfer="False" IdentificationTypeValue="" IgnoreVersion="True" KeepNonVolatileMemory="False" ModuleSystemForPip="SAFE + User partition" PreserveVariableValues="True" ProjectConsistent="True" RebootDuringTransfer="False" SavedOfflineInstallationFolder="" SavedPipDestinationFolder="C:\Develop\Git\Nozomi2_UV\PLC code\Release 5.2\2BK12Bar" SavedRuntimeUtilityCenterPackagePath="" TargetIdentificationType="Always" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
+    <Vc FirmwareVersion="V4.72.6" />
+    <TechnologyPackages>
+      <SafetyRelease Version="1.10.0" />
+    </TechnologyPackages>
+    <OnlineConfiguration Name="NewTCPIPConnection" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=192.168.127.10 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
+  </Configuration>
+</Cpu>

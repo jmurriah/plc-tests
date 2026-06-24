@@ -1,0 +1,56 @@
+VAR
+	data : REFERENCE TO PairedIclaMotors_typ;
+	IclaMaster : REFERENCE TO stIcla;
+	IclaGear : REFERENCE TO stIcla;
+	IclaMotors : ARRAY[0..2] OF stIcla;
+	stAlarmsReseted : PairedIclaMotorsAlarms;
+	stAlarmSummaryReseted : stEFI_AlarmSummary;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	IndexIclaMaster : USINT;
+	IndexIclaGear : USINT;
+	xAnyManualMovement : BOOL;
+	rCopyPositionDesired : REAL;
+	rPositionDesired : REAL;
+	rPositionMotorMm : REAL;
+	ars_AlrStop : AutoResetSound;
+	ars_AlrCritical : AutoResetSound;
+	ars_AlrWarning  : AutoResetSound;
+	iReasonWarning : UDINT;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF PairedIclaMotorsState;
+	iIndexHistory : USINT;
+	MotorDriveUnit : DriveUnitMngr;
+	rJogSpeedSetPoint : REAL;
+	xControllerReady : BOOL;
+	xMotorsReferenced : BOOL;
+	xMotorsInPosition : BOOL;
+	xManualMovementEnabled : BOOL;
+	xPoweredOn : BOOL;
+	xMotorReady : BOOL;
+	xAnyMotorError : BOOL;
+	xAnyManualOrder : BOOL;
+	iAnyAlarm : UINT;
+	iAnyWarning : UINT;
+	tonMotorStopped : TON;
+	xReferencePositionReached : BOOL;
+	xMotorStopped : BOOL;
+	stCriticalAlarmsLog : EventLog_typ;
+	stStopAlarmsLog : EventLog_typ;
+	stWarningAlarmsLog : EventLog_typ;
+	iIndexIclaMotor : USINT;
+	iSystemState : PairedIclaMotorsState;
+	iNumIclaMotors : USINT;
+	iMisalignmentTolerance : USINT;
+	rInterceptAnalogSensor : REAL := 58.0;
+	rSlopeAnalogSensor : REAL := 0.0183;
+	iPositionMeasuredInconsistency : USINT;
+	rMeasuredDistanceMetalStraps : ARRAY[0..MAX_EHD_MOTORS_PER_ADJUST_SYS] OF REAL;
+	rAnalogSensorTolerance : REAL := 0.4;
+	rOutputMeasuredDifference : REAL;
+	rInputMeasuredDifference : REAL;
+END_VAR

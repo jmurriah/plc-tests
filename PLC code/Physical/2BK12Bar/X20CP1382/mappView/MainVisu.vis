@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="MainVisu" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="PrinterDiagnosis_Page" />
+	<Pages>
+		<Page refId="Main_Page"/>
+		<Page refId="DiscreteInSensor_Page"/>
+		<Page refId="PrinterDiagnosis_Page"/>
+	</Pages>
+	
+	<Navigations>
+    <!--<Navigation refId="" />-->
+	</Navigations>
+	
+	<BindingsSets>
+		<BindingsSet refId="MainPage_Binding" />
+		<BindingsSet refId="TestsDialog_Binding" />
+		<BindingsSet refId="PrinterDiagnosis_binding" />
+		<BindingsSet refId="Nav900x200_Content_binding" />
+		<BindingsSet refId="P4_PDC_content_binding" />
+		<BindingsSet refId="P4_Block1_content_binding" />		
+		<BindingsSet refId="P4_Block2_content_binding" />
+	</BindingsSets>
+	
+	<EventBindingsSets>
+    	<EventBindingsSet refId="MainPage_eventbinding" />
+		<EventBindingsSet refId="Tests_Dialog_eventbinding" />
+		<EventBindingsSet refId="DiagPageP4Layout_eventbinding" />
+		<EventBindingsSet refId="Diagnosis_eventbinding" />
+	</EventBindingsSets>
+	
+	<Dialogs>
+		<Dialog refId="Tests_Dialog" />
+	</Dialogs>
+	
+	<Contents>
+		<!--<Content refId="" />-->
+		
+		<!--Cards Contents-->
+		<Content refId="DiagCP0484_content" />
+		<Content refId="DiagCP1382_content" />
+		<Content refId="DiagID16_content" />
+		<Content refId="DiagOD16_content" />
+		<Content refId="DiagAI8_content" />
+		<Content refId="DiagAI4_content" />
+		<Content refId="DiagAO4_content" />
+		<Content refId="DiagAT4_content" />
+		<Content refId="DiagPS_content" />
+		<Content refId="DiagSL81_content" />
+		<Content refId="DiagX1_content" />
+		<Content refId="DiagX2_content" />
+		<Content refId="DiagX3_content" />
+		<Content refId="DiagSM_content" />
+		<Content refId="DiagSC_content" />
+		<Content refId="DiagSI_content" />
+		<Content refId="DiagSO_content" />
+		<Content refId="DiagBC_content" />
+		
+		
+		<Content refId="DiagCP0484_2_content" />
+		<Content refId="DiagCP1382_2_content" />
+		<Content refId="DiagID16_2_content" />
+		<Content refId="DiagOD16_2_content" />
+		<Content refId="DiagAI8_2_content" />
+		<Content refId="DiagAI4_2_content" />
+		<Content refId="DiagAO4_2_content" />
+		<Content refId="DiagAT4_2_content" />
+		<Content refId="DiagPS_2_content" />
+		<Content refId="DiagSL81_2_content" />
+		<Content refId="DiagX1_2_content" />
+		<Content refId="DiagX2_2_content" />
+		<Content refId="DiagX3_2_content" />
+		<Content refId="DiagSM_2_content" />
+		<Content refId="DiagSC_2_content" />
+		<Content refId="DiagSI_2_content" />
+		<Content refId="DiagSO_2_content" />
+		<Content refId="DiagBC_2_content" />
+		
+		<!--Cards Layout Contents-->
+		<Content refId="P4_PDC_content" />
+		<Content refId="P4_Block1_content" />
+		<Content refId="P4_Block2_content" />
+		
+	</Contents>
+	
+  	<SnippetsSets>
+    	<!--<SnippetsSet refId=""/>-->
+	</SnippetsSets>
+	
+ 	<ExpressionsSets>
+    	<!--<ExpressionsSet refId=""/>-->
+	</ExpressionsSets>
+	
+	<VariablesSets>
+		<VariablesSet refId="sessionVars" />
+	</VariablesSets>
+  
+	<StartTheme themeRefId="EFITheme" />
+	<Themes>
+		<Theme refId="EFITheme"/>
+	</Themes>
+  
+	<Configurations>
+		<Configuration key="activityCount" value="false" />
+	<Configuration key="bootLogo" value="Media/BackGround/Bootlogo.png" />
+	<Configuration key="bootColor" value="#FFFFFF" />
+	<Configuration key="favicon" value="Media/BackGround/Browserlogo.ico" />		
+	<Gestures>
+	 <!--<SystemGesture1 touchPoints="2" />
+	 <SystemGesture2 touchPoints="2" />
+	 <SystemGesture3 touchPoints="2" />-->
+	</Gestures>
+    <VirtualKeyboards>
+      <!--<InputProcessing onKeyDown="true" />-->
+    </VirtualKeyboards> 
+  </Configurations>
+</vdef:Visualization>

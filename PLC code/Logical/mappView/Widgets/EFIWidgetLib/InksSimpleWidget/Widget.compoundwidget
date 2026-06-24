@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="InksSimpleWidget" width="400" height="400" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.ImageList" id="imgListInkAlarm" top="3" left="70" width="20" height="20" zIndex="0" imageList="['not_alarm.png', 'alarm.png']" imagePrefix="Media/Icons/32x32/Actions/" sizeMode="fill" tooltip="Critical Alarm" />
+		<Widget xsi:type="widgets.brease.Image" id="imgPrinting" top="2" left="118" width="20" height="20" zIndex="1" image="Media/Icons/32x32/Apps/lphoto.png" sizeMode="fill" tooltip="Enabled to Print" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="numOutPos" top="0" left="140" width="70" height="25" zIndex="2" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" value="100" borderWidth="2px" textAlign="right" fontSize="14px" padding="0px 0px 0px 0px" tooltip="Duty Cycle Positive Pump" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="numOutNeg" top="0" left="210" width="70" height="25" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" value="100" borderWidth="2px" textAlign="center" fontSize="14px" padding="0px 0px 0px 0px" tooltip="Duty Cycle Negative Pump" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgListInkStarted" top="2" left="48" width="20" height="20" zIndex="4" imageList="['no_ok.png', 'ok.png']" imagePrefix="Media/Icons/32x32/Actions/" sizeMode="fill" tooltip="Ink system Running" />
+		<Widget xsi:type="widgets.brease.ToggleButton" id="btnStart" top="0" left="0" width="40" height="25" zIndex="5" image="Media/SVGsymbols/Media/Play.svg" fontSize="40px" permissionOperate="['Administrators', 'Everyone']" tooltip="Start/Stop Ink system" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgDrip" top="0" left="90" width="25" height="30" zIndex="6" imageList="['DropGrey.svg', 'Drop.svg']" imagePrefix="Media/EFI/" sizeMode="fill" tooltip="Critical Alarm" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Simple bindable property:
+		<Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property="" mode=""/>
+		<Mapping widget="" property="" mode=""/>
+		</Mappings>
+		</Property>-->
+
+
+		<!--Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="stInks" type="stInks" readOnly="false" >
+			<Description>Inks structure</Description>
+			<Mappings>
+				<Mapping widget="imgListInkAlarm" type="Number" property="selectedIndex" mode="oneWay" memberPath="AlSummary.xAlarmCritical" mapToNode="false"/>
+				<Mapping widget="imgDrip" type="Number" property="selectedIndex" mode="oneWay" memberPath="status.xDripping" mapToNode="false"/>
+				<Mapping widget="imgPrinting" type="Number" property="visible" mode="oneWay" memberPath="status.xEnabledBarToPrint" mapToNode="false"/>
+				<Mapping widget="numOutPos" type="Number" property="value" mode="oneWay" memberPath="status.PosPump.rDutyCycleFilling" mapToNode="false"/>
+				<Mapping widget="numOutNeg" type="Number" property="value" mode="oneWay" memberPath="status.NegPump.rDutyCycleNegative" mapToNode="false"/>
+				<Mapping widget="imgListInkStarted" type="Number" property="selectedIndex" mode="oneWay" memberPath="status.xInksRunning" mapToNode="false"/>
+				<Mapping widget="btnStart" type="Boolean" property="value" mode="twoWay" memberPath="ordersSw.xStartInks" mapToNode="false"/>
+			</Mappings>
+		</Property>
+    
+	</Properties>
+
+	<Events>
+		<!--
+    <Event name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" event="" />
+      </Mappings>
+    </Event>
+    -->
+  </Events>
+
+  <Actions>
+    <!--
+    <Action name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" action="" />
+      </Mappings>
+    </Action>
+    -->
+  </Actions>
+
+  <EventBindings>
+    <!-- source and target can only be widgets within the compound widget.
+    <EventBinding id="">
+      <Source xsi:type="widget.Event" widgetRefId="" event="" />
+      <EventHandler condition="">
+        <Action>
+          <Target xsi:type="widget.Action" widgetRefId="">
+            <Method name="" value="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    -->
+  </EventBindings>
+
+</CompoundWidget>

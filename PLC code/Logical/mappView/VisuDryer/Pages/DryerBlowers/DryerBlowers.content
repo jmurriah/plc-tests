@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DryerBlowers_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lblTitle" top="0" left="0" width="1080" zIndex="2" text=" Blowers" backColor="rgba(192, 192, 192, 1)" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="ggPressureBlower1" top="85" left="865" width="160" height="160" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" text="$IAT/Dryer.Pressure" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="ggDutyCycleBlower" top="345" left="865" width="160" height="160" zIndex="4" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" text="$IAT/Dryer.DutyCycle" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imglBreakerBlower1" top="365" left="155" width="32" height="32" zIndex="7" imageList="['button_ok.png', 'no_ok.png']" imagePrefix="Media/Icons/32x32/Actions/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imglBreakerBlower2" top="425" left="155" width="32" height="32" zIndex="8" imageList="['button_ok.png', 'no_ok.png']" imagePrefix="Media/Icons/32x32/Actions/" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutPressureVacc" top="255" left="900" width="90" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpManual" top="60" left="35" width="310" height="190" zIndex="10" image="Media/UI/maintenance.svg" text="$IAT/Mach.Manual">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInBlowersSetPointMan" top="15" left="169" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3}}" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="26" />
+        <Widget xsi:type="widgets.brease.Label" id="lblBlowersSetPointMan" top="15" left="14" width="146" zIndex="1" text="$IAT/Dryer.Blow.DutyCycleSetPoint" textAlign="right" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="btnStartBlowers" top="75" left="114" width="65" height="55" zIndex="2" image="Media/SVGsymbols/Media/Play.svg" mouseDownImage="Media/SVGsymbols/Media/Stop.svg" cornerRadius="5px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpAuto" top="60" left="370" width="310" height="190" zIndex="11" image="Media/UI/printing.svg" text="$IAT/Mach.Auto">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericInput" id="numInBlowersSetPointMan1" top="20" left="174" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':3}}" minValue="20" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="26" permissionOperate="['HMI']" />
+        <Widget xsi:type="widgets.brease.Label" id="lblBlowersSetPointMan1" top="20" left="19" width="140" zIndex="1" text="$IAT/Dryer.Blow.PressureSetPoint" textAlign="right" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Image" id="imgBreaker1" top="355" left="95" width="48" height="48" zIndex="12" image="Media/Icons/48x48/Apps/package_settings.png" />
+    <Widget xsi:type="widgets.brease.Image" id="imgBreaker2" top="420" left="95" width="48" height="48" zIndex="13" image="Media/Icons/48x48/Apps/package_settings.png" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="numOutDutyCycleVacc" top="515" left="900" width="90" zIndex="14" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" unitTextAlign="right" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imglDryingArcLamp1" top="440" left="420" width="32" height="32" zIndex="16" imageList="['YellowLamp01_Off.png', 'YellowLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.PushButton" id="PushButton1" top="400" left="400" width="160" zIndex="15" text="Stop Blowers" permissionOperate="['HMI']" />
+    <Widget xsi:type="widgets.brease.Label" id="lblBlowersSetPointMan2" top="440" left="460" width="140" zIndex="17" text="Media inside" textAlign="left" />
+  </Widgets>
+</Content>

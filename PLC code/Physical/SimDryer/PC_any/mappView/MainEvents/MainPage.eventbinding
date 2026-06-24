@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="MainPage_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="eventbinding_0">
+      <Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.userId" event="ValueChanged" />
+      <Operand datatype="ANY_STRING" name="userName">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.userId">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="userName&lt;&gt;&quot;Anonymous&quot;">
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Navigate" pageId="DryerMain_Page" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="IncreaseSpeedSetPointClick">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainPage_Content" widgetRefId="bntIncreaseSpeedSetPoint" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDryer.Pt.SW.rBeltSpeedSetPoint">
+            <Method xsi:type="opcUa.NodeAction.AddValue" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReduceSpeedSetPointClick">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainPage_Content" widgetRefId="bntReduceSpeedSetPoint" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDryer.Pt.SW.rBeltSpeedSetPoint">
+            <Method xsi:type="opcUa.NodeAction.AddValue" value="-1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="IncreaseThickness">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainPage_Content" widgetRefId="bntIncreaseThickness" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rThickness">
+            <Method xsi:type="opcUa.NodeAction.AddValue" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReduceThickness">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainPage_Content" widgetRefId="bntReduceThickness" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rThickness">
+            <Method xsi:type="opcUa.NodeAction.AddValue" value="-1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="IncreaseMargin">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainPage_Content" widgetRefId="bntIncreaseMargin" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rMargin">
+            <Method xsi:type="opcUa.NodeAction.AddValue" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ReduceMargin">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainPage_Content" widgetRefId="bntReduceMargin" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gDryer.Pt.SW.Media.rMargin">
+            <Method xsi:type="opcUa.NodeAction.AddValue" value="-1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Timer1sec_Event">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gPLC.xBlk_2s" event="ValueChanged" />
+      <Operand datatype="ANY_STRING" name="op1">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.userId">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="op1=&quot;HMI_user&quot;">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="ValidUser">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="NoHMIUser">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="SessionUser">
+                <Method xsi:type="session.VariableAction.SetValueString" value="=op1" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="op1&lt;&gt;&quot;HMI_user&quot;">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="ValidUser">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="NoHMIUser">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="SessionUser">
+                <Method xsi:type="session.VariableAction.SetValueString" value="&quot;Undefined&quot;" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_1" comment="Logout and navigate to Start">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="DryerMainSide_Content" widgetRefId="BtnLogout" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.Logout" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.Navigate" pageId="DryerStart_Page" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

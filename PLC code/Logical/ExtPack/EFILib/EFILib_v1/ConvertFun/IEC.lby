@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.4.123 SP?>
+<Library SubType="IEC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported functions and function blocks">ConvertFun.fun</File>
+    <File Description="Exported data types">Types.typ</File>
+    <File Description="Exported constants">Constants.var</File>
+    <File>SECONDS_TO_MILLIS.st</File>
+    <File>MINUTES_TO_MILLIS.st</File>
+    <File>MILLISECONDS_TO_TIME.st</File>
+    <File>SECONDS_TO_TIME.st</File>
+    <File>MINUTES_TO_TIME.st</File>
+    <File>TIME_TO.st</File>
+  </Files>
+</Library>

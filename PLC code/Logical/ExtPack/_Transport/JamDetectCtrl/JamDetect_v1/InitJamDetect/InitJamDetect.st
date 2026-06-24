@@ -1,0 +1,4 @@
+
+PROGRAM _CYCLIC
+	iIndexJam:=1;	 
+END_PROGRAM

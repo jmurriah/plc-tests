@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">nSensorCtrl</Object>
+    <Object Type="Program" Language="IEC">nSensorCtrl_Fast</Object>
+    <Object Type="File">nSensorCtrl.typ</Object>
+    <Object Type="File" Description="Photocell states ctrl">PhotoCellStates.graphml</Object>
+    <Object Type="File" Description="Block package document">3PhotoSens Docu.txt</Object>
+  </Objects>
+</Package>

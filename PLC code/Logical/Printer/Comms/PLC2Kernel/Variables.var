@@ -1,0 +1,14 @@
+VAR
+	xStarted : BOOL := FALSE;
+	xClenanCommsArray : BOOL;
+	iIndexCommsArray : UINT;
+	iClient : USINT;
+	status_adr : UINT;
+	data_len : UDINT;
+	nameVar : STRING[180] := '::FB_BRSE_MBT_Server.Clients[0].State';
+	pv_adr : UDINT;
+	theValue : UINT;
+	iClientsConnected : USINT;
+	strAux : STRING[10];
+	strSerialName : REFERENCE TO STRING[80];
+END_VAR

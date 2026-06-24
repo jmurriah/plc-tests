@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="TextArray16CardWidget" width="450" height="270" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText1" top="0" left="0" width="255" height="15" zIndex="17" value="Label1" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText2" top="0" left="335" width="255" height="15" zIndex="18" value="Label2" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText3" top="30" left="0" width="255" height="15" zIndex="19" value="Label3" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText4" top="30" left="335" width="255" height="15" zIndex="20" value="Label4" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText5" top="60" left="0" width="255" height="15" zIndex="21" value="Label5" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText6" top="60" left="335" width="255" height="15" zIndex="22" value="Label6" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText7" top="90" left="0" width="255" height="15" zIndex="23" value="Label7" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText8" top="90" left="335" width="255" height="15" zIndex="24" value="Label8" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText9" top="120" left="0" width="255" height="15" zIndex="25" value="Label9" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText10" top="120" left="335" width="255" height="15" zIndex="26" value="Label10" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText11" top="150" left="0" width="255" height="15" zIndex="27" value="Label11" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText12" top="150" left="335" width="255" height="15" zIndex="28" value="Label12" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText13" top="180" left="0" width="255" height="15" zIndex="29" value="Label13" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText14" top="180" left="335" width="255" height="15" zIndex="30" value="Label14" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText15" top="210" left="0" width="255" height="15" zIndex="31" value="Label15" textAlign="right" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText16" top="210" left="335" width="272" height="15" zIndex="32" value="Label16" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber1" top="0" left="235" width="85" height="15" zIndex="33" text=":01" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber2" top="0" left="318" width="85" height="15" zIndex="34" text="02:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber3" top="30" left="235" width="85" height="15" zIndex="35" text=":03" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber4" top="30" left="318" width="85" height="15" zIndex="36" text="04:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber5" top="60" left="235" width="85" height="15" zIndex="37" text=":05" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber6" top="60" left="318" width="85" height="15" zIndex="38" text="06:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber7" top="90" left="235" width="85" height="15" zIndex="39" text=":07" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber8" top="90" left="318" width="85" height="15" zIndex="40" text="08:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber9" top="120" left="235" width="85" height="15" zIndex="41" text=":09" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber10" top="120" left="318" width="85" height="15" zIndex="42" text="10:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber11" top="150" left="235" width="85" height="15" zIndex="43" text=":11" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber12" top="150" left="318" width="85" height="15" zIndex="44" text="12:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber13" top="180" left="235" width="85" height="15" zIndex="45" text=":13" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber14" top="180" left="318" width="85" height="15" zIndex="46" text="14:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber15" top="210" left="235" width="85" height="15" zIndex="47" text=":15" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber16" top="210" left="318" width="85" height="15" zIndex="48" text="16:" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Simple bindable property:-->
+
+		
+		<!--Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="PLCCardData" type="PLCCardData" readOnly="true" >
+			<Description>Texts in Card</Description>
+			<Mappings>
+				<Mapping widget="lblText1" type="String" property="value" mode="oneWay" memberPath="Texts[1].Details" mapToNode="false"/>
+				<Mapping widget="lblText2" type="String" property="value" mode="oneWay" memberPath="Texts[2].Details" mapToNode="false"/>
+				<Mapping widget="lblText3" type="String" property="value" mode="oneWay" memberPath="Texts[3].Details" mapToNode="false"/>
+				<Mapping widget="lblText4" type="String" property="value" mode="oneWay" memberPath="Texts[4].Details" mapToNode="false"/>
+				<Mapping widget="lblText5" type="String" property="value" mode="oneWay" memberPath="Texts[5].Details" mapToNode="false"/>
+				<Mapping widget="lblText6" type="String" property="value" mode="oneWay" memberPath="Texts[6].Details" mapToNode="false"/>
+				<Mapping widget="lblText7" type="String" property="value" mode="oneWay" memberPath="Texts[7].Details" mapToNode="false"/>
+				<Mapping widget="lblText8" type="String" property="value" mode="oneWay" memberPath="Texts[8].Details" mapToNode="false"/>
+				<Mapping widget="lblText9" type="String" property="value" mode="oneWay" memberPath="Texts[9].Details" mapToNode="false"/>
+				<Mapping widget="lblText10" type="String" property="value" mode="oneWay" memberPath="Texts[10].Details" mapToNode="false"/>
+				<Mapping widget="lblText11" type="String" property="value" mode="oneWay" memberPath="Texts[11].Details" mapToNode="false"/>
+				<Mapping widget="lblText12" type="String" property="value" mode="oneWay" memberPath="Texts[12].Details" mapToNode="false"/>
+				<Mapping widget="lblText13" type="String" property="value" mode="oneWay" memberPath="Texts[13].Details" mapToNode="false"/>
+				<Mapping widget="lblText14" type="String" property="value" mode="oneWay" memberPath="Texts[14].Details" mapToNode="false"/>
+				<Mapping widget="lblText15" type="String" property="value" mode="oneWay" memberPath="Texts[15].Details" mapToNode="false"/>
+				<Mapping widget="lblText16" type="String" property="value" mode="oneWay" memberPath="Texts[16].Details" mapToNode="false"/>
+				
+				<Mapping widget="lblText1" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[1]" mapToNode="false"/>
+				<Mapping widget="lblText2" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[2]" mapToNode="false"/>
+				<Mapping widget="lblText3" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[3]" mapToNode="false"/>
+				<Mapping widget="lblText4" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[4]" mapToNode="false"/>
+				<Mapping widget="lblText5" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[5]" mapToNode="false"/>
+				<Mapping widget="lblText6" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[6]" mapToNode="false"/>
+				<Mapping widget="lblText7" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[7]" mapToNode="false"/>
+				<Mapping widget="lblText8" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[8]" mapToNode="false"/>
+				<Mapping widget="lblText9" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[9]" mapToNode="false"/>
+				<Mapping widget="lblText10" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[10]" mapToNode="false"/>
+				<Mapping widget="lblText11" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[11]" mapToNode="false"/>
+				<Mapping widget="lblText12" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[12]" mapToNode="false"/>
+				<Mapping widget="lblText13" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[13]" mapToNode="false"/>
+				<Mapping widget="lblText14" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[14]" mapToNode="false"/>
+				<Mapping widget="lblText15" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[15]" mapToNode="false"/>
+				<Mapping widget="lblText16" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[16]" mapToNode="false"/>
+				
+				<Mapping widget="lblNumber1" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[1]" mapToNode="false"/>
+				<Mapping widget="lblNumber2" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[2]" mapToNode="false"/>
+				<Mapping widget="lblNumber3" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[3]" mapToNode="false"/>
+				<Mapping widget="lblNumber4" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[4]" mapToNode="false"/>
+				<Mapping widget="lblNumber5" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[5]" mapToNode="false"/>
+				<Mapping widget="lblNumber6" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[6]" mapToNode="false"/>
+				<Mapping widget="lblNumber7" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[7]" mapToNode="false"/>
+				<Mapping widget="lblNumber8" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[8]" mapToNode="false"/>
+				<Mapping widget="lblNumber9" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[9]" mapToNode="false"/>
+				<Mapping widget="lblNumber10" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[10]" mapToNode="false"/>
+				<Mapping widget="lblNumber11" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[11]" mapToNode="false"/>
+				<Mapping widget="lblNumber12" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[12]" mapToNode="false"/>
+				<Mapping widget="lblNumber13" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[13]" mapToNode="false"/>
+				<Mapping widget="lblNumber14" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[14]" mapToNode="false"/>
+				<Mapping widget="lblNumber15" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[15]" mapToNode="false"/>
+				<Mapping widget="lblNumber16" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[16]" mapToNode="false"/>
+			</Mappings>
+		</Property>
+    
+	</Properties>
+
+	<Events>
+		<!--
+    <Event name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" event="" />
+      </Mappings>
+    </Event>
+    -->
+  </Events>
+
+  <Actions>
+    <!--
+    <Action name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" action="" />
+      </Mappings>
+    </Action>
+    -->
+  </Actions>
+
+  <EventBindings>
+
+   
+  </EventBindings>
+
+</CompoundWidget>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mySvg" height="100%" width="100%" viewBox="0 0 500 10" version="1.1">
+    <path id="platform_lift" d="M 18.518519,5.2706553 H 140.31339" stroke="black" style="fill: none; stroke-width: 1px; stroke-dasharray: 2px, 2px;" />
+	<rect id="box_10" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="10.0" height="10.0" fill="orangered"/>
+	<rect id="box_20" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="20.0" height="10.0" fill="orangered"/>
+	<rect id="box_30" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="30.0" height="10.0" fill="orangered"/>
+	<rect id="box_40" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="40.0" height="10.0" fill="orangered"/>
+	<rect id="box_50" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="50.0" height="10.0" fill="orangered"/>
+	<rect id="box_60" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="60.0" height="10.0" fill="orangered"/>
+	<rect id="box_70" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="70.0" height="10.0" fill="orangered"/>
+	<rect id="box_80" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="80.0" height="10.0" fill="orangered"/>
+	<rect id="box_90" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="90.0" height="10.0" fill="orangered"/>
+	<rect id="box_100" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="100.0" height="10.0" fill="orangered"/>
+	<rect id="box_110" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="110.0" height="10.0" fill="orangered"/>
+	<rect id="box_120" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="120.0" height="10.0" fill="orangered"/>
+	<rect id="box_130" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="130.0" height="10.0" fill="orangered"/>
+	<rect id="box_140" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="140.0" height="10.0" fill="orangered"/>
+	<rect id="box_150" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="150.0" height="10.0" fill="orangered"/>
+	<rect id="box_160" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="160.0" height="10.0" fill="orangered"/>
+	<rect id="box_170" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="170.0" height="10.0" fill="orangered"/>
+	<rect id="box_180" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="180.0" height="10.0" fill="orangered"/>
+	<rect id="box_190" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="190.0" height="10.0" fill="orangered"/>
+	<rect id="box_200" x="0" y="0" display="none" transform="translate(0, 0)" stroke="black" style="stroke-width: 0px;" width="200.0" height="10.0" fill="orangered"/>
+</svg>

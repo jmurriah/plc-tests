@@ -1,0 +1,15 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: FileHandling
+ * File: FileHandling.var
+ * Author: Bernecker + Rainer
+ * Created: April 16, 2009
+ ********************************************************************
+ * Local variables of program FileHandling
+ ********************************************************************)
+VAR
+	Handling : FileHandling_typ := (0); (*Handlingdata for this fileio example*)
+	Select : USINT; (*variable to select the file-device*)
+	Error : UINT; (*return value from FileIoGetSysError()*)
+END_VAR

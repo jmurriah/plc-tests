@@ -1,0 +1,53 @@
+VAR
+	TNotPrinterZero : TON;
+	ars_AlrSafetySystemInBlock : AutoResetSound;
+	ars_DriveAlarm : AutoResetSound;
+	ars_AlrComBarMtr : AutoResetSound;
+	ars_BrokenReferSensor : AutoResetSound;
+	AxisBK : REFERENCE TO AxisCtrl_typ;
+	xMotorHomeOrder : BOOL;
+	xCapOrder : BOOL;
+	xMotorAbsMovOrder : BOOL; (*Just to Raise the order. It is reseted once sent the information to the Axis*)
+	xAnyManualMov : BOOL;
+	xOrderToPrint : BOOL;
+	xAnyManualMovement : BOOL;
+	xStoppedByExcessiveTimeActive : BOOL;
+	rCalcPosDesPrint : REAL;
+	rMotorAbsPosDesired : REAL; (*Position in mm*)
+	rMotorCurrentPos : REAL; (*Position in mm*)
+	iLastState : INT;
+	nState : INT := 0;
+	Block : REFERENCE TO SimpleBlock;
+	SimpleBlockAlarmsReseted : SimpleBlock_Alarms;
+	SimpleBlockAlarmsSummaryReseted : stEFI_AlarmSummary;
+	T_SafetyError : TOF;
+	TON_excessiveBlockActivated : TON;
+	T_DelayAlarmRef : TON;
+	iTimesStopMovWhileHoming : UINT;
+	iTimesStateBlockGoingToPrint : USINT;
+	iTimesStateBlockUndefined : USINT;
+	iTimesStateBlockPrinting : USINT;
+	iTimesStateBlockGoingToCap : USINT;
+	iTimesStateBlockInCap : USINT;
+	iTimesStateBlockHomingBar : USINT;
+	MotorDriveUnit : DriveUnitMngr;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	VerMotorEventLog : EventLog_typ;
+	stEventLog : EventLog_typ;
+	strAuxEventDesc : STRING[129];
+	xChangeMotorSpeedUp : BOOL; (*Signal to change motor speed in manual up movements by near limit*)
+	xChangeMotorSpeedDown : BOOL; (*Signal to change motor speed in manual down movements by near limit*)
+	TON_DelayAnyDriveAlarm : TON;
+	ars_EmergencyStop : AutoResetSound;
+	BlockStatePrevious : Block_States_enum;
+	MachineStatePrevious : enumEFI_GenMachineState;
+	BlockPositionPrevious : Block_Position_enum;
+	iReasonMovingMan : UINT;
+	xBlockPosChange : BOOL;
+	xInCap : BOOL; (*Internal var to define if the block is in this position*)
+	xInPrint : BOOL; (*Internal var to define if the block is in this position*)
+	iReasonAnyWarning : UINT;
+	iReasonSafetyGeneral : UINT;
+	iCancelHomingBar : UINT;
+END_VAR

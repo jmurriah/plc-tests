@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="TextArray04Widget" width="380" height="155" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText1" top="0" left="0" width="350" height="15" zIndex="17" value="Label1" textAlign="left" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText2" top="60" left="0" width="350" height="15" zIndex="18" value="Label2" textAlign="left" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText3" top="120" left="0" width="350" height="15" zIndex="19" value="Label3" textAlign="left" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText4" top="180" left="0" width="350" height="15" zIndex="20" value="Label4" textAlign="left" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Simple bindable property:-->
+		<Property xsi:type="BindableProperty" name="TextInput01" type="String" defaultValue="Text01" category="Data" required="false">
+			<Description>Description of Input 01</Description>
+			<Mappings>
+			<Mapping widget="lblText1" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput02" type="String" defaultValue="Text02" category="Data" required="false">
+			<Description>Description of Input 02</Description>
+			<Mappings>
+				<Mapping widget="lblText2" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput03" type="String" defaultValue="Text03" category="Data" required="false">
+			<Description>Description of Input 03</Description>
+			<Mappings>
+				<Mapping widget="lblText3" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		<Property xsi:type="BindableProperty" name="TextInput04" type="String" defaultValue="Text04" category="Data" required="false">
+			<Description>Description of Input 04</Description>
+			<Mappings>
+				<Mapping widget="lblText4" property="value" mode="oneWay"/>
+			</Mappings>
+		</Property>
+		
+		<!--Structure bindable property:-->
+    
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+
+   
+	</EventBindings>
+
+</CompoundWidget>

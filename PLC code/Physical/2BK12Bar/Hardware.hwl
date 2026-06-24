@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="2BK12Bar.Hardware.hw" LastWriteTime="06/07/2023 08:35:34" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="8LSA44.R2060D300-3" Type="8LSA44.R2060D300-3" X="651" Y="541" />
+    <Module Name="8LSA44.R2060D300-3a" Type="8LSA44.R2060D300-3" X="1042" Y="541" />
+    <Module Name="8V1016.50-2_BK1" Type="8V1016.50-2" X="651" Y="312" />
+    <Module Name="8AC122.60-3" Type="8AC122.60-3" X="665" Y="427.5" />
+    <Module Name="8AC114.60-2" Type="8AC114.60-2" X="653.8" Y="427.5" />
+    <Module Name="8V1016.50-2_BK2" Type="8V1016.50-2" X="1042" Y="312" />
+    <Module Name="8AC122.60-3a" Type="8AC122.60-3" X="1056" Y="427.5" />
+    <Module Name="8AC114.60-2b" Type="8AC114.60-2" X="1044.8" Y="427.5" />
+    <Module Name="8V1045.00-2_BELT" Type="8V1045.00-2" X="361" Y="278" />
+    <Module Name="8AC126.60-1" Type="8AC126.60-1" X="375" Y="484.5" />
+    <Module Name="8AC114.60-2a" Type="8AC114.60-2" X="363.8" Y="484.5" />
+    <Module Name="ILE1F_BK1" Type="FBC.0x0100002E.1.SEILE1F_0110E" X="525" Y="225" />
+    <Module Name="ILE1F_BK2" Type="FBC.0x0100002E.1.SEILE1F_0110E" X="824" Y="262" />
+    <Module Name="SI_unit_BK1" Type="FBC.0x00000114.0x00000003.ex250sca1a_v3.0" X="525" Y="289" />
+    <Module Name="SI_unit_BK2" Type="FBC.0x00000114.0x00000003.ex250sca1a_v3.0" X="824" Y="329" />
+    <Module Name="X20BM01" Type="X20BM01" X="501" Y="100" />
+    <Module Name="X20BR9300_100" Type="X20BR9300" X="501" Y="100" />
+    <Module Name="X20TB12a" Type="X20TB12" X="501" Y="127" />
+    <Module Name="X20BM11e" Type="X20BM11" X="514" Y="100" />
+    <Module Name="X20DIF371_101" Type="X20DIF371" X="514" Y="100" />
+    <Module Name="X20TB1F7" Type="X20TB1F" X="514" Y="127" />
+    <Module Name="X20BM11f" Type="X20BM11" X="527" Y="100" />
+    <Module Name="X20DIF371_102" Type="X20DIF371" X="527" Y="100" />
+    <Module Name="X20TB1F8" Type="X20TB1F" X="527" Y="127" />
+    <Module Name="X20BM11g" Type="X20BM11" X="540" Y="100" />
+    <Module Name="X20DIF371_103" Type="X20DIF371" X="540" Y="100" />
+    <Module Name="X20TB1F9" Type="X20TB1F" X="540" Y="127" />
+    <Module Name="X20BM11h" Type="X20BM11" X="553" Y="100" />
+    <Module Name="X20DC4395_104" Type="X20DC4395" X="553" Y="100" />
+    <Module Name="X20TB12k" Type="X20TB12" X="553" Y="127" />
+    <Module Name="X20BM11w" Type="X20BM11" X="566" Y="100" />
+    <Module Name="X20DC4395_105" Type="X20DC4395" X="566" Y="100" />
+    <Module Name="X20TB12l" Type="X20TB12" X="566" Y="127" />
+    <Module Name="X20BM11j" Type="X20BM11" X="579" Y="100" />
+    <Module Name="X20DOF322_106" Type="X20DOF322" X="579" Y="100" />
+    <Module Name="X20TB1F12" Type="X20TB1F" X="579" Y="127" />
+    <Module Name="X20BM11k" Type="X20BM11" X="592" Y="100" />
+    <Module Name="X20DOF322_107" Type="X20DOF322" X="592" Y="100" />
+    <Module Name="X20TB1F13" Type="X20TB1F" X="592" Y="127" />
+    <Module Name="X20BM11i" Type="X20BM11" X="605" Y="100" />
+    <Module Name="X20DOF322_108" Type="X20DOF322" X="605" Y="100" />
+    <Module Name="X20TB1F10" Type="X20TB1F" X="605" Y="127" />
+    <Module Name="X20BM11r" Type="X20BM11" X="618" Y="100" />
+    <Module Name="X20AI8321_109" Type="X20AI8321" X="618" Y="100" />
+    <Module Name="X20TB1F14" Type="X20TB1F" X="618" Y="127" />
+    <Module Name="X20BM11s" Type="X20BM11" X="631" Y="100" />
+    <Module Name="X20AI8321_110" Type="X20AI8321" X="631" Y="100" />
+    <Module Name="X20TB1F15" Type="X20TB1F" X="631" Y="127" />
+    <Module Name="X20BM11l" Type="X20BM11" X="644" Y="100" />
+    <Module Name="X20AO4622_111" Type="X20AO4622" X="644" Y="100" />
+    <Module Name="X20TB12b" Type="X20TB12" X="644" Y="127" />
+    <Module Name="X20BM11m" Type="X20BM11" X="657" Y="100" />
+    <Module Name="X20AO4622_112" Type="X20AO4622" X="657" Y="100" />
+    <Module Name="X20TB12c" Type="X20TB12" X="657" Y="127" />
+    <Module Name="X20BM11n" Type="X20BM11" X="670" Y="100" />
+    <Module Name="X20AO4622_113" Type="X20AO4622" X="670" Y="100" />
+    <Module Name="X20TB12d" Type="X20TB12" X="670" Y="127" />
+    <Module Name="X20BM11o" Type="X20BM11" X="683" Y="100" />
+    <Module Name="X20AT4222_114" Type="X20AT4222" X="683" Y="100" />
+    <Module Name="X20TB12e" Type="X20TB12" X="683" Y="127" />
+    <Module Name="X20BM11p" Type="X20BM11" X="696" Y="100" />
+    <Module Name="X20AT4222_115" Type="X20AT4222" X="696" Y="100" />
+    <Module Name="X20TB12f" Type="X20TB12" X="696" Y="127" />
+    <Module Name="X20BM11u" Type="X20BM11" X="709" Y="100" />
+    <Module Name="X20AT4222_116" Type="X20AT4222" X="709" Y="100" />
+    <Module Name="X20TB12i" Type="X20TB12" X="709" Y="127" />
+    <Module Name="X20BM13" Type="X20BM13" X="722" Y="100" />
+    <Module Name="X20SI8110_117" Type="X20SI8110" X="722" Y="100" />
+    <Module Name="X20TB52c" Type="X20TB52" X="722" Y="126" />
+    <Module Name="X20BM33b" Type="X20BM33" X="735" Y="100" />
+    <Module Name="X20SO2110_118" Type="X20SO2110" X="735" Y="100" />
+    <Module Name="X20TB52d" Type="X20TB52" X="748" Y="126" />
+    <Module Name="X20BM15b" Type="X20BM15" X="761" Y="100" />
+    <Module Name="X20BT9100_199" Type="X20BT9100" X="761" Y="100" />
+    <Module Name="X20TB12g" Type="X20TB12" X="761" Y="127" />
+    <Module Name="X20BM01a" Type="X20BM01" X="824" Y="100" />
+    <Module Name="X20BR9300_200" Type="X20BR9300" X="824" Y="100" />
+    <Module Name="X20TB12h" Type="X20TB12" X="824" Y="127" />
+    <Module Name="X20BM11q" Type="X20BM11" X="837" Y="100" />
+    <Module Name="X20DIF371_201" Type="X20DIF371" X="837" Y="100" />
+    <Module Name="X20TB1F11" Type="X20TB1F" X="837" Y="127" />
+    <Module Name="X20BM11x" Type="X20BM11" X="850" Y="100" />
+    <Module Name="X20DIF371_202" Type="X20DIF371" X="850" Y="100" />
+    <Module Name="X20TB1F16" Type="X20TB1F" X="850" Y="127" />
+    <Module Name="X20BM11y" Type="X20BM11" X="863" Y="100" />
+    <Module Name="X20DIF371_203" Type="X20DIF371" X="863" Y="100" />
+    <Module Name="X20TB1F17" Type="X20TB1F" X="863" Y="127" />
+    <Module Name="X20BM11z" Type="X20BM11" X="876" Y="100" />
+    <Module Name="X20DC4395_204" Type="X20DC4395" X="876" Y="100" />
+    <Module Name="X20TB12m" Type="X20TB12" X="876" Y="127" />
+    <Module Name="X20BM11aa" Type="X20BM11" X="889" Y="100" />
+    <Module Name="X20DC4395_205" Type="X20DC4395" X="889" Y="100" />
+    <Module Name="X20TB12n" Type="X20TB12" X="889" Y="127" />
+    <Module Name="X20BM11ab" Type="X20BM11" X="902" Y="100" />
+    <Module Name="X20DOF322_206" Type="X20DOF322" X="902" Y="100" />
+    <Module Name="X20TB1F18" Type="X20TB1F" X="902" Y="127" />
+    <Module Name="X20BM11ac" Type="X20BM11" X="915" Y="100" />
+    <Module Name="X20DOF322_207" Type="X20DOF322" X="915" Y="100" />
+    <Module Name="X20TB1F19" Type="X20TB1F" X="915" Y="127" />
+    <Module Name="X20BM11ad" Type="X20BM11" X="928" Y="100" />
+    <Module Name="X20DOF322_208" Type="X20DOF322" X="928" Y="100" />
+    <Module Name="X20TB1F20" Type="X20TB1F" X="928" Y="127" />
+    <Module Name="X20BM11ae" Type="X20BM11" X="941" Y="100" />
+    <Module Name="X20AI8321_209" Type="X20AI8321" X="941" Y="100" />
+    <Module Name="X20TB1F21" Type="X20TB1F" X="941" Y="127" />
+    <Module Name="X20BM11af" Type="X20BM11" X="954" Y="100" />
+    <Module Name="X20AI8321_210" Type="X20AI8321" X="954" Y="100" />
+    <Module Name="X20TB1F22" Type="X20TB1F" X="954" Y="127" />
+    <Module Name="X20BM11ag" Type="X20BM11" X="967" Y="100" />
+    <Module Name="X20AO4622_211" Type="X20AO4622" X="967" Y="100" />
+    <Module Name="X20TB12o" Type="X20TB12" X="967" Y="127" />
+    <Module Name="X20BM11ah" Type="X20BM11" X="980" Y="100" />
+    <Module Name="X20AO4622_212" Type="X20AO4622" X="980" Y="100" />
+    <Module Name="X20TB12p" Type="X20TB12" X="980" Y="127" />
+    <Module Name="X20BM11ai" Type="X20BM11" X="993" Y="100" />
+    <Module Name="X20AO4622_213" Type="X20AO4622" X="993" Y="100" />
+    <Module Name="X20TB12q" Type="X20TB12" X="993" Y="127" />
+    <Module Name="X20BM11aj" Type="X20BM11" X="1006" Y="100" />
+    <Module Name="X20AT4222_214" Type="X20AT4222" X="1006" Y="100" />
+    <Module Name="X20TB12r" Type="X20TB12" X="1006" Y="127" />
+    <Module Name="X20BM11ak" Type="X20BM11" X="1019" Y="100" />
+    <Module Name="X20AT4222_215" Type="X20AT4222" X="1019" Y="100" />
+    <Module Name="X20TB12s" Type="X20TB12" X="1019" Y="127" />
+    <Module Name="X20BM11al" Type="X20BM11" X="1032" Y="100" />
+    <Module Name="X20AT4222_216" Type="X20AT4222" X="1032" Y="100" />
+    <Module Name="X20TB12t" Type="X20TB12" X="1032" Y="127" />
+    <Module Name="X20BM13a" Type="X20BM13" X="1045" Y="100" />
+    <Module Name="X20SI8110_217" Type="X20SI8110" X="1045" Y="100" />
+    <Module Name="X20TB52e" Type="X20TB52" X="1045" Y="126" />
+    <Module Name="X20BM33c" Type="X20BM33" X="1058" Y="100" />
+    <Module Name="X20SO2110_218" Type="X20SO2110" X="1058" Y="100" />
+    <Module Name="X20TB52f" Type="X20TB52" X="1071" Y="126" />
+    <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />
+    <Module Name="X20BM11" Type="X20BM11" X="264" Y="100" />
+    <Module Name="X20DOF322_001" Type="X20DOF322" X="264" Y="100" />
+    <Module Name="X20TB1F3" Type="X20TB1F" X="264" Y="127" />
+    <Module Name="X20BM11a" Type="X20BM11" X="277" Y="100" />
+    <Module Name="X20DIF371_002" Type="X20DIF371" X="277" Y="100" />
+    <Module Name="X20TB1F4" Type="X20TB1F" X="277" Y="127" />
+    <Module Name="X20BM11b" Type="X20BM11" X="290" Y="100" />
+    <Module Name="X20DIF371_003" Type="X20DIF371" X="290" Y="100" />
+    <Module Name="X20TB1F5" Type="X20TB1F" X="290" Y="127" />
+    <Module Name="X20BM11c" Type="X20BM11" X="303" Y="100" />
+    <Module Name="X20DOF322_004" Type="X20DOF322" X="303" Y="100" />
+    <Module Name="X20TB1F6" Type="X20TB1F" X="303" Y="127" />
+    <Module Name="X20BM11v" Type="X20BM11" X="316" Y="100" />
+    <Module Name="X20AI2636_005" Type="X20AI2636" X="316" Y="100" />
+    <Module Name="X20TB12j" Type="X20TB12" X="316" Y="127" />
+    <Module Name="X20BM33a" Type="X20BM33" X="329" Y="100" />
+    <Module Name="X20SC0402" Type="X20SC0402" X="329" Y="100" />
+    <Module Name="X20TB52b" Type="X20TB52" X="342" Y="126" />
+    <Module Name="X20TB52a" Type="X20TB52" X="329" Y="126" />
+    <Module Name="X20BM31" Type="X20BM31" X="355" Y="100" />
+    <Module Name="X20SM1436_007" Type="X20SM1436" X="355" Y="100" />
+    <Module Name="X20TB12u" Type="X20TB12" X="368" Y="126" />
+    <Module Name="X20BM31a" Type="X20BM31" X="381" Y="100" />
+    <Module Name="X20SM1436_008" Type="X20SM1436" X="381" Y="100" />
+    <Module Name="X20TB12v" Type="X20TB12" X="394" Y="126" />
+    <Module Name="X20BM15" Type="X20BM15" X="407" Y="100" />
+    <Module Name="X20DIF371_030" Type="X20DIF371" X="407" Y="100" />
+    <Module Name="X20TB1F23" Type="X20TB1F" X="407" Y="127" />
+    <Module Name="X20BM15a" Type="X20BM15" X="420" Y="100" />
+    <Module Name="X20BT9100_099" Type="X20BT9100" X="420" Y="100" />
+    <Module Name="X20TB12" Type="X20TB12" X="420" Y="127" />
+    <Module Name="X3" Type="X3" X="251" Y="103" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
+    <Module Name="X2" Type="X2" X="238" Y="103" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
+    <Module Name="X1" Type="X1" X="225" Y="103" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="X20SL8100" Type="X20SL8100" X="233" Y="440" />
+    <Module Name="X20TB52" Type="X20TB52" X="280" Y="467" />
+    <Module Name="X20MK0211" Type="X20MK0211" X="236" Y="510" />
+  </Modules>
+  <Links>
+    <Link From="8AC114.60-2" To="8AC114.60-2a" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="369.9" Y="522.6" />
+      <Point X="369.9" Y="522.6" />
+      <Point X="360.9" Y="522.6" />
+      <Point X="355" Y="522.6" />
+      <Point X="355" Y="555" />
+      <Point X="425" Y="555" />
+      <Point X="425" Y="455.3" />
+      <Point X="650.899963" Y="455.3" />
+      <Point X="659.899963" Y="455.3" />
+      <Point X="659.899963" Y="455.3" />
+    </Link>
+    <Link From="8AC114.60-2" To="8AC114.60-2b" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="659.899963" Y="465.1" />
+      <Point X="659.899963" Y="465.1" />
+      <Point X="650.899963" Y="465.1" />
+      <Point X="645" Y="465.1" />
+      <Point X="645" Y="498" />
+      <Point X="705" Y="498" />
+      <Point X="705" Y="455.3" />
+      <Point X="1042.6" Y="455.3" />
+      <Point X="1051.6" Y="455.3" />
+      <Point X="1051.6" Y="455.3" />
+    </Link>
+    <Link From="8AC114.60-2a" To="X20SL8100" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="270" Y="530" />
+      <Point X="270" Y="530" />
+      <Point X="270" Y="542" />
+      <Point X="270" Y="555" />
+      <Point X="305" Y="555" />
+      <Point X="305" Y="512.8" />
+      <Point X="360.9" Y="512.8" />
+      <Point X="369.9" Y="512.8" />
+      <Point X="369.9" Y="512.8" />
+    </Link>
+    <Link From="8AC122.60-3" To="8LSA44.R2060D300-3" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="671.1" Y="467.900024" />
+      <Point X="671.1" Y="467.900024" />
+      <Point X="671.1" Y="492.900024" />
+      <Point X="671.1" Y="505" />
+      <Point X="672.5" Y="505" />
+      <Point X="672.5" Y="540.1" />
+      <Point X="672.5" Y="547.1" />
+      <Point X="672.5" Y="547.1" />
+    </Link>
+    <Link From="8AC122.60-3a" To="8LSA44.R2060D300-3a" FromPort="EC" ToPort="EC" IsRoutedByUser="False">
+      <Point X="1063.09985" Y="467.900024" />
+      <Point X="1063.09985" Y="467.900024" />
+      <Point X="1063.09985" Y="492.900024" />
+      <Point X="1064.49988" Y="492.900024" />
+      <Point X="1064.49988" Y="541" />
+      <Point X="1064.49988" Y="548" />
+      <Point X="1064.49988" Y="548" />
+    </Link>
+    <Link From="8LSA44.R2060D300-3" To="8V1016.50-2_BK1" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="700.5" Y="547.1" />
+      <Point X="700.5" Y="547.1" />
+      <Point X="700.5" Y="540.1" />
+      <Point X="700.5" Y="535" />
+      <Point X="682.3" Y="535" />
+      <Point X="682.3" Y="492.5" />
+      <Point X="682.3" Y="487.5" />
+      <Point X="682.3" Y="487.5" />
+    </Link>
+    <Link From="8LSA44.R2060D300-3a" To="8V1016.50-2_BK2" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="1092.5" Y="548" />
+      <Point X="1092.5" Y="548" />
+      <Point X="1092.5" Y="541" />
+      <Point X="1092.5" Y="535" />
+      <Point X="1074.29993" Y="535" />
+      <Point X="1074.29993" Y="492.5" />
+      <Point X="1074.29993" Y="487.5" />
+      <Point X="1074.29993" Y="487.5" />
+    </Link>
+    <Link From="ILE1F_BK1" To="X20CP1382" FromPort="CAN1" ToPort="IF7" IsRoutedByUser="False">
+      <Point X="544" Y="244" />
+      <Point X="544" Y="244" />
+      <Point X="524" Y="244" />
+      <Point X="226" Y="244" />
+      <Point X="226" Y="203" />
+      <Point X="226" Y="184" />
+      <Point X="226" Y="184" />
+    </Link>
+    <Link From="ILE1F_BK1" To="SI_unit_BK1" FromPort="CAN2" ToPort="CAN1" IsRoutedByUser="False">
+      <Point X="544" Y="254" />
+      <Point X="544" Y="254" />
+      <Point X="544" Y="276" />
+      <Point X="544" Y="288.900024" />
+      <Point X="544" Y="308.900024" />
+      <Point X="544" Y="308.900024" />
+    </Link>
+    <Link From="ILE1F_BK2" To="SI_unit_BK1" FromPort="CAN1" ToPort="CAN2" IsRoutedByUser="False">
+      <Point X="544" Y="318.900024" />
+      <Point X="544" Y="318.900024" />
+      <Point X="524" Y="318.900024" />
+      <Point X="515" Y="318.900024" />
+      <Point X="515" Y="345" />
+      <Point X="625" Y="345" />
+      <Point X="625" Y="281" />
+      <Point X="823" Y="281" />
+      <Point X="843" Y="281" />
+      <Point X="843" Y="281" />
+    </Link>
+    <Link From="ILE1F_BK2" To="SI_unit_BK2" FromPort="CAN2" ToPort="CAN1" IsRoutedByUser="False">
+      <Point X="843" Y="291" />
+      <Point X="843" Y="291" />
+      <Point X="843" Y="313" />
+      <Point X="843" Y="328" />
+      <Point X="843" Y="348" />
+      <Point X="843" Y="348" />
+    </Link>
+    <Link From="X20BR9300_100" To="X20BT9100_099" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="507" Y="144" />
+      <Point X="507" Y="144" />
+      <Point X="500" Y="144" />
+      <Point X="434" Y="144" />
+      <Point X="427" Y="144" />
+      <Point X="427" Y="144" />
+    </Link>
+    <Link From="X20BR9300_200" To="X20BT9100_199" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="830" Y="144" />
+      <Point X="830" Y="144" />
+      <Point X="823" Y="144" />
+      <Point X="775" Y="144" />
+      <Point X="768" Y="144" />
+      <Point X="768" Y="144" />
+    </Link>
+    <Link From="X20CP1382" To="X20SL8100" FromPort="IF3" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="153" Y="188" />
+      <Point X="153" Y="188" />
+      <Point X="153" Y="203" />
+      <Point X="153" Y="555" />
+      <Point X="255" Y="555" />
+      <Point X="255" Y="542" />
+      <Point X="255" Y="515" />
+      <Point X="270" Y="515" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

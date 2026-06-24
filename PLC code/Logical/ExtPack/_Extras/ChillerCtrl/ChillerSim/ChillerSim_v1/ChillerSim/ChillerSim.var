@@ -1,0 +1,7 @@
+VAR
+	SimChiller : REFERENCE TO stChillerSim;
+	dataChill : REFERENCE TO StChiller;
+	tonSignalRun : TON;
+	xChillerStopped : BOOL;
+	simTemp : SimAnalogProcess; (*Function block to simulate the temperature of the inks*)
+END_VAR

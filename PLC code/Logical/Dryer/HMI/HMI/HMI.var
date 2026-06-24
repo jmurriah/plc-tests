@@ -1,0 +1,17 @@
+VAR
+	AlarmsHistory : MpAlarmXHistory;
+	AlarmsCore : MpAlarmXCore;
+	xTest : BOOL;
+	myValue : UDINT;
+	xNone : BOOL;
+	xActive : BOOL;
+	xInactive : BOOL;
+	xAck : BOOL;
+	xUnAck : BOOL;
+	myValue2 : DINT;
+	myValueAck : DINT;
+	xTest2 : BOOL;
+	myValueAck2 : DINT;
+	xSimulateMedia : BOOL;
+	tonSimMedia : TON;
+END_VAR

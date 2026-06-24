@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="ANSIC" Description="Prepare the Machine to Start working">PrePrepare</Object>
+    <Object Type="Program" Language="ANSIC" Description="Prepare the Machine to Start working">PrepareMachine</Object>
+    <Object Type="Program" Language="ANSIC" Description="Belt related tests">BeltTests</Object>
+    <Object Type="Program" Language="ANSIC">BlockTests</Object>
+    <Object Type="Program" Language="ANSIC" Description="Belt related tests">ConsentTests</Object>
+    <Object Type="Program" Language="ANSIC">CleaningTests</Object>
+    <Object Type="Program" Language="ANSIC">TrVacuumTests</Object>
+    <Object Type="Program" Language="ANSIC">Cube</Object>
+    <Object Type="Program" Language="ANSIC">LineTests</Object>
+    <Object Type="Program" Language="ANSIC">FunctionsTests</Object>
+    <Object Type="File">Tests.var</Object>
+    <Object Type="Program" Language="ANSIC">TemplateTests</Object>
+    <Object Type="File">ReplicateTest.py</Object>
+    <Object Type="File">ReplicateTest.bat</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="asbrstr" />
+    <Dependency ObjectName="asarcfg" />
+    <Dependency ObjectName="UtMgr" />
+  </Dependencies>
+</Package>

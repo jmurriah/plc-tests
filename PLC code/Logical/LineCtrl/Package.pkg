@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">LineCtrl</Object>
+    <Object Type="File">LineCtrl.typ</Object>
+    <Object Type="File">O1802301 EFI SIMULATOR 2.0 - User Manual_v03.pdf</Object>
+    <Object Type="File">LineStates.graphml</Object>
+    <Object Type="File">PowerOnOff Ancillaries.docx</Object>
+  </Objects>
+</Package>

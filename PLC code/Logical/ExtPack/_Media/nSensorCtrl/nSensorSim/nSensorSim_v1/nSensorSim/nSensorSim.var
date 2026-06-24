@@ -1,0 +1,7 @@
+VAR
+	data : REFERENCE TO nSensors_typ;
+	iIndexSensor : USINT;
+	rGaugeHeightTillHole : REAL;
+	tonHomingDown : TON;
+	tonHomingUp : TON;
+END_VAR

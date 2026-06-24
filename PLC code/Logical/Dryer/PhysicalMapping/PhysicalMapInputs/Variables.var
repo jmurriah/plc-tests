@@ -1,0 +1,6 @@
+VAR
+	T_Mute : TOF;
+	T_Reset : TON;
+	iIndexBlock : USINT;
+	tonNoCommsPrinter : TON;
+END_VAR
