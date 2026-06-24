@@ -1,0 +1,8 @@
+project:
+  name: EFI_v4
+
+configurations:
+  - { name: SimTests, target: ARsim }
+
+pipeline:
+  steps: [ build, package, deploy, test, report ]
