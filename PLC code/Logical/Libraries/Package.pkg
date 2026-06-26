@@ -33,18 +33,18 @@
     <Object Type="Library" Language="binary" Description="The AsOpcUas library provides interfaces to the OPC-UA server">AsOpcUas</Object>
     <Object Type="Library" Language="binary" Description="The AsOpcUac library supports communication with OPC-UA servers">AsOpcUac</Object>
     <Object Type="Library" Language="IEC">IecCheck</Object>
+    <Object Type="Library" Language="binary" Description="This mechatronics library contains basic control function blocks.">MTBasics</Object>
+    <Object Type="Library" Language="binary" Description="This mechatronics library contains function blocks for filtering and basic signal processing.">MTFilter</Object>
+    <Object Type="Library" Language="IEC">ErrACS380</Object>
     <Object Type="Library" Language="Binary" Description="Motion Control Manager">Acp10man</Object>
     <Object Type="Library" Language="Binary" Description="ACOPOS Parameters">Acp10par</Object>
     <Object Type="Library" Language="Binary" Description="Global NC functions">NcGlobal</Object>
     <Object Type="Library" Language="binary" Description="Smart Device Controller">Acp10sdc</Object>
     <Object Type="Library" Language="binary" Description="ACOPOS Simulation">Acp10sim</Object>
     <Object Type="Library" Language="binary" Description="PLCopen Motion Control function blocks">Acp10_MC</Object>
-    <Object Type="Library" Language="binary" Description="This mechatronics library contains basic control function blocks.">MTBasics</Object>
-    <Object Type="Library" Language="binary" Description="This mechatronics library contains function blocks for filtering and basic signal processing.">MTFilter</Object>
+    <Object Type="Library" Language="Binary" Description="Communication library for mappView widgets">MpServer</Object>
     <Object Type="Library" Language="Binary" Description="Advanced alarm management">MpAlarmX</Object>
     <Object Type="Library" Language="Binary" Description="Core library for mapp components">MpBase</Object>
     <Object Type="Library" Language="Binary" Description="mapp components diagnosis,hierarchy and unit handling">MpCom</Object>
-    <Object Type="Library" Language="Binary" Description="Communication library for mappView widgets">MpServer</Object>
-    <Object Type="Library" Language="IEC">ErrACS380</Object>
   </Objects>
 </Package>

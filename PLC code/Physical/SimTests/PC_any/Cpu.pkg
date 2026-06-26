@@ -15,7 +15,7 @@
     <Object Type="Package">TextSystem</Object>
   </Objects>
   <Configuration>
-    <AutomationRuntime Version="K4.93" />
+    <AutomationRuntime Version="S4.93" />
     <Build AnsicIncludeDirectories="\Logical\UnitTest\Libraries\UnitTest\,\Logical\UnitTest\Libraries\LibAssert1\,\Logical\UnitTest\Libraries\EFIAssert\" GccVersion="4.1.2" GeneratePPCode="false" PreBuildStep="" />
     <DefaultTargetMemory Tasks="UserROM" />
     <Safety SafetyRelease="0.0" />

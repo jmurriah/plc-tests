@@ -145,11 +145,10 @@
     <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="assem" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ascanopen" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="acp10man" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asopcuas" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="asopcuac" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asarcfg" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="Acp10man" Source="Libraries.Acp10man.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

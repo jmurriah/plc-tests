@@ -614,8 +614,8 @@ typedef struct MC_ACP_ENCOD_PARAM_REF
 } MC_ACP_ENCOD_PARAM_REF;
 
 typedef struct MC_ADV_INFO_MPDC_REF
-{	unsigned short DataObjectIdentPos;
-	unsigned short DataObjectIdentNeg;
+{	unsigned long DataObjectIdentPos;
+	unsigned long DataObjectIdentNeg;
 	float CamStartPosition;
 	float CamStartPositionNeg;
 	plcbit CalcDone;

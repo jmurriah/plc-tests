@@ -75,10 +75,14 @@
  1029: Parameter schreiben nicht erlaubt: Abbruch-Rampe aktiv
  1030: Funktion ist bei ACOPOS Simulation nur im Modus 'Complete' verfügbar
  1031: Lageregler Zykluszeit überschritten - CPU Auslastung zu hoch
- 1032: Internal bus error
+ 1032: Interner Datenbus: CPU Kommunikationsproblem
        Info(UDINT): Error code
  1034: Wert des Parameters in Verbindung mit Motorgebergetriebe nicht erlaubt
  1035: Parameter schreiben bei aktivem Geber nicht erlaubt.
+ 1036: Interner Datenbus: Hardware Kommunikationsproblem
+       Info(UDINT): Error code
+ 1037: Interner Datenbus: Einsteckkarte Kommunikationsproblem
+       Info(UDINT): Error code
  2001: Upload der Trace-Daten nicht erlaubt: Aufzeichnung aktiv 
  2003: Trace-Start nicht erlaubt: Aufzeichnung aktiv
  2006: Initialisierung der Trace-Parameter nicht erlaubt: Aufzeichnung aktiv
@@ -190,8 +194,6 @@
  6047: Haltebremse: Ansteuerungssignal aus und Ausgangstatus ein.
  6048: Motorhaltebremse Bewegungsüberwachung: Positionsfehler zu groß
        Info(REAL): Positionsfehler
- 6049: Wechselrichter: Ausgang: Strommessung defekt
-       Info(USINT): Phase
  6050: Parameter schreiben nicht erlaubt: Sollstromfilter oder Notchfilter aktiv
  6051: Einphasen: Geschwindigkeit zu hoch
        Info(REAL): Grenzgeschwindigkeit
@@ -235,33 +237,36 @@
  6078: Wechselrichter: Summenstrom: Analogüberwachung: Überstrom
  6079: Haltebremse: Verschleißüberwachung: Abbruchgrenze überschritten
        Info(REAL): Motor-Haltebremse: Verschleißüberwachung: Grenzwert
+ 6080: CTRL Drehzahl: Geschwindigkeitsfehler Abbruchgrenze überschritten
+       Info(REAL): Aktueller Geschwindigkeitsfehler
+ 6082: CRC-Überprüfung der Motordaten ungültig
  7000: Geber: Fehler aktiv
        Info(USINT): Geber
- 7012: Geber: Hiperface Error Bit
+ 7012: Geber: HIPERFACE Fehlerbit gesetzt
        Info(USINT): Geber
  7013: Geber: Statusmeldung
        Info(UDINT): Statuscode
- 7014: Geber: CRC Fehler beim Parameter übertragen
+ 7014: Geber: CRC-Fehler beim Übertragen der Position
        Info(USINT): Geber
- 7015: Geber: Timeout Fehler bei der Datenübertragung
+ 7015: Geber: Timeout beim Übertragen der Position
        Info(USINT): Geber
- 7017: Geber: Fehler beim Lesen der Geber-Parameter
+ 7017: Geber: Fehler beim Auswerten der Geberparameter
        Info(USINT): Geber
- 7022: Geber: Initialisierung ist aktiv
+ 7022: Geber: Initialisierung aktiv
        Info(USINT): Geber
- 7023: Geber: Parametertransfer ist aktiv
+ 7023: Geber: Parametertransfer aktiv
        Info(USINT): Geber
- 7029: Geber: Inkremental-Signalamplitude zu klein
+ 7029: Geber: Signalamplitude zu klein
        Info(USINT): Geber
- 7030: Geber: Inkremental-Signalamplitude zu groß
+ 7030: Geber: Signalamplitude zu groß
        Info(USINT): Geber
- 7031: Geber: Inkremental-Signalamplitude zu groß (Störungen)
+ 7031: Geber: Signalamplitude zu groß (Störungen)
        Info(USINT): Geber
- 7032: Geber: Inkremental-Signalamplitude zu klein (Störungen, keine Verbindung)
+ 7032: Geber: Signalamplitude zu klein (Störungen, keine Verbindung)
        Info(USINT): Geber
- 7033: Geber: Inkremental-Positonssprung zu groß
+ 7033: Geber: Positonssprung zu groß
        Info(USINT): Geber
- 7036: Geber: Einsteckkarte-ID ungültig (Steckverbindung und EEPROM-Daten prüfen)
+ 7036: Geber: Einsteckkarten-ID ungültig (Steckverbindung und EEPROM-Daten prüfen)
        Info(USINT): Geber
  7038: Geber: Position nicht synchron mit Absolutwert
        Info(USINT): Geber
@@ -275,7 +280,7 @@
        Info(USINT): Geber
  7043: Geber: Leitungsstörung Spur D
        Info(USINT): Geber
- 7044: Geber: Parity
+ 7044: Geber: Paritätsbit-Fehler
        Info(USINT): Geber
  7045: Resolver: Signalstörung (Plausibilitätsprüfung)
        Info(USINT): Geber
@@ -297,11 +302,11 @@
        Info(USINT): Geber
  7054: Geber: Position im Kanal bereits definiert
        Info(USINT): Geber
- 7055: Geber: Ungueltiger Inhalttyp 'Frameende'
+ 7055: Geber: Ungültiger Inhaltstyp 'Frame-Ende'
        Info(USINT): Geber
- 7057: Geber: Register Lese/Schreibzugriff nicht erlaubt/implementiert
+ 7057: Geber: Register Lese-/Schreibzugriff nicht erlaubt/implementiert
        Info(USINT): Geber
- 7058: Geber: Alarmbit ist gesetzt
+ 7058: Geber: Alarmbit gesetzt
        Info(USINT): Geber
  7059: Virtueller Geber: Fehlerstatus
        Info(UDINT): PARID_ENCOD0_STATUS
@@ -311,9 +316,9 @@
        Info(UDINT): PARID_ENCOD0_STATUS
  7062: Geber: SafeMOTION-Modul nicht bereit
        Info(USINT): Geber
- 7063: Geber: Fehler in der UART Kommunikation
+ 7063: Geber: Fehler in der UART-Kommunikation
        Info(USINT): Geber
- 7064: Geber: Fehler in der SafeMOTION Kommunikation
+ 7064: Geber: Fehler in der SafeMOTION-Kommunikation
        Info(USINT): Geber
  7065: Geber: Gebertyp ungültig
        Info(USINT): Geber
@@ -333,13 +338,13 @@
        Info(USINT): Geber
  7073: Geber: Multiturnfehler
        Info(USINT): Geber
- 7074: Geber: SafeMOTION Fehler
+ 7074: Geber: SafeMOTION-Fehler
        Info(USINT): Geber
- 7075: Geber: Konfiguration Gebertyp fehlerhaft
+ 7075: Geber: Konfiguration des Gebertyps ist fehlerhaft
        Info(USINT): Geber
  7076: Geber: Datenübertragung aktiv
        Info(UINT): Motor: Datensatz-Index
- 7077: Geber: Geberauswertung durch SafeMOTION Konfiguration blockiert
+ 7077: Geber: Geberauswertung durch SafeMOTION-Konfiguration blockiert
        Info(USINT): Geber
  7078: Geber: Intersegmentkommunikation ausgefallen
        Info(USINT): Seite
@@ -371,12 +376,14 @@
        Info(USINT): Geber
  7094: Geber: HIPERFACE DSL: Online Status: Bit 14: SUM: Sammelbyte Geber Status
        Info(USINT): Geber
- 7095: Geber: Gebertyp von SafeMOTION Firmware nicht unterstützt
+ 7095: Geber: Gebertyp von SafeMOTION-Firmware nicht unterstützt
        Info(USINT): Geber
  7096: Geber: Inkremente pro Geberumdrehung ungültig
        Info(USINT): Geber
  7097: Geber: Geberverschaltung: Slotauswahl ungültig
        Info(UDINT): Fehler code
+ 7098: Geber: Empfangene Daten ungültig
+       Info(USINT): Geber
  7100: Parameterfunktion wird nicht unterstützt.
  7103: Inkompatible Schnittstelle
        Info(UDINT): Schnittstelle + Zusatzinfo
@@ -419,7 +426,7 @@
  7232: Netz: Detektierte Frequenz außerhalb des Bereichs [20,200]
        Info(REAL): Detektierte Frequenz
  7233: Zwischenkreis: Balancer: Phasenströme ungültig
- 7234: Zwischenkreisregler (Kinetische Bufferung): Abbruch
+ 7234: Zwischenkreisregler (kinetische Pufferung): Abbruch
  7300: Analog/Digital IO: Ungültige IO Konfiguration
        Info(USINT): Slot
  7303: Analog/Digital IO: 24V-Spannungsversorgung fehlerhaft
@@ -555,6 +562,10 @@
        Info(USINT): Phasenindex
  9111: Motor-Temperaturmodell: Ausschaltgrenze überschritten
        Info(USINT): Phasenindex
+ 9112: Leistungsteil: Temperatursensor 6: Abbruchgrenze überschritten
+       Info(REAL): Temperatur
+ 9113: Leistungsteil: Temperatursensor 6: Ausschaltgrenze überschritten
+       Info(REAL): Temperatur
  9300: Stromregler: Überstrom
        Info(REAL): Grenzwert
  9302: Stromregler: Zykluszeit ungültig
@@ -570,7 +581,7 @@
 10103: Autotuning: Maximaler Schleppfehler überschritten
        Info(REAL): Aktueller Schleppfehler
 10104: Parameter Identifikation: Bewegung während Shuttlepositionsermittlung
-10105: Parameter Identifikation: Plausibilitätprüfung der Shuttlepositionen
+10105: Parameter Identifikation: Plausibilitätsprüfung der Shuttlepositionen
 10500: Induktionshalt wurde abgebrochen
 11000: Intersegmentkommunikation: Verkabelung: Falscher Anschluss
        Info(UDINT): Anschluss
@@ -582,6 +593,8 @@
        Info(REAL): Position
 11103: Geber: Selbstdiagnose hat einen Fehler im Gebersystem festgestellt
        Info(UDINT): Quelle
+11104: Geber: Dynamic Shuttle Capture ist fehlerhaft und wurde abgebrochen
+       Info(UDINT): Aktueller Status
 29200: Das Achsobjekt ist ungültig
        Info(UINT): PLCopen_FB
 29203: Antrieb nicht bereit
@@ -1370,6 +1383,7 @@
        Info(UDINT): EPC
 33007: Violation address
        Info(UDINT): ADDR
+33010: Watchdog-Reset wurde ausgeführt
 35000: SMC FS: Interner Fehler, Progammablauf
        Info(UDINT): Switch ID
 35001: SMC FS: Interner Fehler, NULL Pointerzugriff
@@ -1395,7 +1409,7 @@
 35012: SMC FS: Nicht sicherer Geber angeschlossen
 35013: SMC FS: ACP10 Version unterstützt nicht die aktivierten Sicherheitsfkt.
        Info(UDINT): ACPCom Version
-35014: SMC FS: Funktion wird von Hardware nicht unterstützt.
+35014: SMC FS: Feature wird von Hardware nicht unterstützt
        Info(UDINT): Zusatzinfo
 35015: SMC FS: Interner Fehler, Kreuzkommunikation Cycle F5
        Info(UDINT): Byte Offset
@@ -1436,10 +1450,15 @@
 35041: SMC FS: SLS4 - Geschwindigkeitsgrenze außerhalb des gültigen Bereichs
 35042: SMC FS: Stillstandsgeschw.-Grenze außerhalb des gültigen Bereichs
 35043: SMC FS: SLS1 - Geschwindigkeitsgrenze verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
 35044: SMC FS: SLS2 - Geschwindigkeitsgrenze verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
 35045: SMC FS: SLS3 - Geschwindigkeitsgrenze verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
 35046: SMC FS: SLS4 - Geschwindigkeitsgrenze verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
 35047: SMC FS: Stillstandsgeschw.-Grenze verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
 35048: SMC FS: Überschreitung von Parametergrenzwerten
        Info(UDINT): Zusatzinfo
 35049: SMC FS: SMP wird verwendet aber Referenzieren wurde nicht konfiguriert
@@ -1458,6 +1477,7 @@
        Info(UDINT): Zusatzinfo
 35060: SMC FS: SSO Toleranz verletzt Konfigurationsvorschrift
 35061: SMC FS: SMS - Geschwindigkeitsgrenze verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
 35062: SMC FS: SMS - Überwachung des Geschwindigkeitsschleppfehlers nicht aktiviert
 35063: SMC FS: SMS - Überwachung des Positionsschleppfehlers aktiviert
 35064: SMC FS: SMS - Referenzieren aktiviert 
@@ -1519,9 +1539,9 @@
 35104: SMC FS: Interner Fehler, FPGA Kommunikation
        Info(UDINT): Zusatzinfo
 35105: SMC FS: Interner Fehler, FPGA SinCos - Referenzspannung Kanal A
-       Info(UDINT): Zusatzinfo
+       Info(DINT): Zusatzinfo
 35106: SMC FS: Interner Fehler, FPGA SinCos - Referenzspannung Kanal B
-       Info(UDINT): Zusatzinfo
+       Info(DINT): Zusatzinfo
 35107: SMC FS: Interner Fehler, FPGA SinCos - Konfiguration
        Info(UDINT): Zusatzinfo
 35108: SMC FS: Interner Fehler, Hardware Tests - Spannungsüberwachung
@@ -1558,6 +1578,7 @@
        Info(UDINT): Zusatzinfo
 35126: SMC FS: RSP - Homing, SOS Positions Toleranz zu groß
 35127: SMC FS: Interner Fehler, Ungültiger Stromwandleroffset
+       Info(DINT): Zusatzinfo
 35128: SMC FS: Interner Fehler, Sigma delta Wandlung ist nicht plausibel
 35129: SMC FS: Interner Fehler, Gain/Offset korrigierte Stromwerte ungültig
 35130: SMC FS: Interner Fehler, Testfall
@@ -1577,8 +1598,16 @@
 35140: SMC FS: HDSL - Interner Kommunikationsfehler
        Info(UDINT): Zusatzinfo
 35141: SMC FS: Safe Maximum speed (SMS): Grenzwertüberschreitung bei aktiviertem SSO
+       Info(DINT): Zusatzinfo
 35142: SMC FS: Function Test - Zeitüberschreitung
        Info(UDINT): Zusatzinfo
+35145: SMC FS: "ES - Encoder speed filter time" ungültig
+       Info(UDINT): Zusatzinfo
+35146: SMC FS: ED3 - Interner Kommunikationsfehler
+       Info(UDINT): Zusatzinfo
+35147: SMC FS: ED3 - Konfigurationsfehler
+35148: SMC FS: "ES - Encoder movement type" - Konfigurationsfehler
+35149: SMC FS: "ES - Encoder speed filter time" in Kombination mit SSO ungültig 
 35150: SMC FS: Nachladbare Safety Parameter: Deakt. Funktion Enable Bit gesetzt
        Info(UDINT): Zusatzinfo
 35151: SMC FS: Nachladbare Safety Parameter: Platzhalter Enable Bit gesetzt
@@ -1591,6 +1620,10 @@
 35155: SMC FS: Empfangene Daten der nachladbaren Safety Parameter zu groß
        Info(UDINT): Zusatzinfo
 35156: SMC FS: CRC Prüfung der nachladbaren Safety Parameter fehlgeschlagen
+       Info(UDINT): Zusatzinfo
+35157: SMC FS: SSO Geschwindigkeitstoleranz verletzt Konfigurationsvorschrift
+       Info(UDINT): Geschwindigkeitsgrenze
+35158: SMC FS: Funktionsaktivierung nicht möglich: Parameter nicht unterstützt
        Info(UDINT): Zusatzinfo
 35161: SMC FS: Inkompatible Parameter Struktur
        Info(UDINT): Zusatzinfo
@@ -1686,7 +1719,7 @@
 35234: SMC: Gebertausch - Die Länge der Konfigurationsdaten hat sich geändert
 35235: SMC: Gebertausch - Die Serialnummer des Encoders hat sich geändert
 35236: SMC: Gebertausch - Version geändert oder Daten nicht gespeichert
-35237: SMC: Gebertausch - EnDat Master Daten oder Encoder Daten geändert
+35237: SMC: Gebertausch - Encoder Daten geändert
        Info(UDINT): Zusatzinfo
 35238: SMC: Geber - EnDat Master Status Register ist gesetzt
        Info(UDINT): Status Register
@@ -1712,7 +1745,7 @@
 35250: SMC: Geber - EnDat Master Fehler Register ist gesetzt
        Info(UDINT): Fehler Register
 35251: SMC: Geschwindigkeitsfehlergrenzwert überschritten
-       Info(DINT): Geschwindigkeitsfehler [U/s*2^16]
+       Info(DINT): Geschwindigkeitsfehler
 35252: SMC: Positionsschleppfehlergrenzwert überschritten
        Info(DINT): Schleppfehler [Einh.]
 35253: SMC: Geber - Rundungsfehler infolge gewählter Parametrierung
@@ -1720,17 +1753,22 @@
 35254: SMC: Geber - Länge des physikalischen Referenzsystems zu groß
        Info(UDINT): Zusatzinfo
 35255: SMC FS: Geber - Die Beschleunigungsgrenze wurde überschritten
-35256: SMC: Informationen im Geberfehler Statusregister ausgelesen.
+35256: SMC: Informationen im Geberfehler Statusregister ausgelesen
        Info(UDINT): Zusatzinfo
-35257: SMC: Warnung für eine schlechte Übertragungsqualität.
+35257: SMC: Warnung für eine schlechte Übertragungsqualität
        Info(UDINT): Zusatzinfo
-35258: SMC: Timeoutfehler in der HIPERFACE DSL Kommunikation.
+35258: SMC: Timeoutfehler in der HIPERFACE DSL Kommunikation
        Info(UDINT): Zusatzinfo
-35259: SMC: Geber - Fehler während des zyklischen Betriebs des Gebers.
+35259: SMC: Geber - Fehler während des zyklischen Betriebs des Gebers
        Info(UDINT): Zusatzinfo
-35260: SMC: Geber - Fehler während der Fehlerbehandlung des Gebers.
+35260: SMC: Geber - Fehler während der Fehlerbehandlung des Gebers
        Info(UDINT): Zusatzinfo
 35261: SMC: HDSL - Verbleibende Lebenszeit unter 6 Monaten
+       Info(UDINT): Zusatzinfo
+35262: SMC FS: SBC - S_Control_SBC ist verbunden aber Überwachung ist deaktiviert
+35477: SMC FFS: Interner Fehler, PWM Überwachung
+       Info(UDINT): Zusatzinfo
+35478: SMC FS: Inkompatible Parameter Struktur
        Info(UDINT): Zusatzinfo
 35481: SMC: Geber - Alarm ist aktiv
        Info(UDINT): Zusatzinfo
@@ -1752,9 +1790,9 @@
 35492: SMC: Anforderung SLS4 - Positions-/Geschwindigkeitserfassung ist nicht bereit
 35493: SMC: Funktionaler Geber in Fehlerzustand gewechselt
        Info(UDINT): Zusatzinfo
-35494: SMC: Regler-Einschalten erkannt, Status funktionaler Geber ungültig.
+35494: SMC: Regler-Einschalten erkannt, Status funktionaler Geber ungültig
        Info(UDINT): Zusatzinfo
-35495: SMC: SSO Konfigurationsfehler. Ein unzulässiger Encoder-Modus ist ausgewählt.
+35495: SMC: SSO Konfigurationsfehler, ein unzulässiger Encoder-Modus ist ausgewählt
        Info(UDINT): Zusatzinfo
 35496: SMC: Strommessung ungültig
        Info(UDINT): Zusatzinfo
@@ -1818,7 +1856,7 @@
        Info(USINT): Geber
 39001: Geber: Positionskorrektur aktiv
        Info(USINT): Geber
-39002: Resolver: Geschwindigkeitsschranke für 14Bit Auflösung überschritten
+39002: Resolver: Geschwindigkeitsschranke für 14-Bit-Auflösung überschritten
        Info(USINT): Geber
 39003: EnDat-Geber: Alarmbit ist gesetzt
        Info(USINT): Geber
@@ -1848,25 +1886,25 @@
        Info(USINT): Geber
 39016: Inkrementalgeber-Emulation: Frequenz zu hoch
        Info(USINT): Geber
-39017: Geber: CRC Fehler beim Position lesen
+39017: Geber: CRC-Fehler beim Lesen der Position
        Info(USINT): Geber
 39018: Referenzimpuls-Überwachung: Position, Auflösung od. Referenzimpuls fehlerhaft
        Info(USINT): Geber
-39019: Serielle Geberschnittstelle: Stopbit Fehler
+39019: Serielle Geberschnittstelle: Stoppbit-Fehler
        Info(USINT): Geber
 39020: Serielle Geberschnittstelle: Überlauf der Empfangsdaten
        Info(USINT): Geber
-39021: Serielle Geberschnittstelle: Sendedaten Fehler
+39021: Serielle Geberschnittstelle: Sendedaten-Fehler
        Info(USINT): Geber
 39022: EnDat-Geber: Warnungsbit ist gesetzt
        Info(USINT): Geber
-39023: EnDat-Geber: CRC Fehler bei EnDat2.2 Zusatzinformationen
+39023: EnDat-Geber: CRC Fehler bei EnDat 2.2 Zusatzinformationen
        Info(USINT): Geber
 39024: EnDat-Geber: Betriebszustandsfehlerquellen: M ALL Power down 
        Info(USINT): Geber
 39025: EnDat-Geber: Betriebszustandsfehlerquellen: M Overflow / Underflow
        Info(USINT): Geber
-39026: EnDat-Geber: Fehler Type 3 bei EnDat2.2 Zusatzinformationen
+39026: EnDat-Geber: Fehler Type 3 bei EnDat 2.2 Zusatzinformationen
        Info(USINT): Geber
 39027: Geberemulation: Spannungsversorgung fehlerhaft
        Info(USINT): Geber
@@ -1876,7 +1914,7 @@
        Info(USINT): Geber
 39030: Geber: Warnungsbit ist gesetzt
        Info(USINT): Geber
-39032: EnDat-Geber: Betriebszustandsfehlerquellen: Beleuchung
+39032: EnDat-Geber: Betriebszustandsfehlerquellen: Beleuchtung
        Info(USINT): Geber
 39033: EnDat-Geber: Betriebszustandsfehlerquellen: Signal Amplitude
        Info(USINT): Geber
@@ -1910,11 +1948,11 @@
        Info(USINT): Geber
 39048: Geber: Fehlerhafte Befehlscodequittierung
        Info(USINT): Geber
-39049: Geber: Timeout beim Parameter übertragen
+39049: Geber: Timeout beim Übertragen der Parameter
        Info(USINT): Geber
-39050: Geber: Parity
+39050: Geber: Paritätsbit-Fehler
        Info(USINT): Geber
-39051: Geber: Hiperface Error Bit
+39051: Geber: HIPERFACE Fehlerbit
        Info(USINT): Geber
 39052: Geber: Messbereich überschritten
        Info(USINT): Geber
@@ -1922,19 +1960,19 @@
        Info(USINT): Geber
 39054: Geber: Ungültige Versorgungspannung
        Info(USINT): Geber
-39055: Geber: Inkremental-Signalamplitude zu klein
+39055: Geber: Signalamplitude zu klein
        Info(USINT): Geber
-39056: Geber: Inkremental-Signalamplitude zu groß
+39056: Geber: Signalamplitude zu groß
        Info(USINT): Geber
 39059: Geber: Statusmeldung
        Info(UDINT): Statuscode
-39060: Geber: Sync-Bit Fehler
+39060: Geber: Syncbit-Fehler
        Info(USINT): Geber
-39061: Geber: UART Übertragungsfehler 
+39061: Geber: UART-Übertragungsfehler
        Info(USINT): Geber
-39086: Geber: Register Adresse
+39086: Geber: Register-Adresse
        Info(UDINT): Adresse
-39087: Geber: Register Daten
+39087: Geber: Register-Daten
        Info(UDINT): Daten
 39088: Geber: HIPERFACE DSL: Online Status: Bit 4: ANS: Falsche Antwort erkannt
        Info(USINT): Geber
@@ -1950,12 +1988,16 @@
        Info(USINT): Geber
 39094: EnDat-Geber: Warnungsbit - nicht bereit
        Info(USINT): Geber
-39095: EnDat-Geber: Warnungsbit - Diagnose Schwellwert unterschritten
+39095: EnDat-Geber: Warnungsbit - Diagnose-Schwellwert unterschritten
        Info(USINT): Geber
 39096: Geber: HIPERFACE DSL: Online Status: Bit 2: QMLW: Qualitätsüberwach. Low-Pegel
        Info(USINT): Geber
 39097: Geber: Daten stimmen nicht mit der Erwartung überein
        Info(USINT): Geber
+39098: Geber: EnDat 3: Fehlerhafte Geberdaten
+       Info(UDINT): Fehlernummer
+39099: Geber: EnDat 3: Geberfehler aufgetreten
+       Info(UDINT): Fehlernummer
 39301: Analog/Digital IO: 24V-Spannungsversorgung fehlerhaft
        Info(USINT): Slot
 39302: Digital IO 1-4: Diagnosebit aktiv (Strom, 24V Versorgung)
@@ -1994,15 +2036,15 @@
        Info(USINT): Geber
 39502: Geber: HIPERFACE: Status: Abstand Maßstab/Sensor zu hoch (21h)
        Info(USINT): Geber
-39504: Geber: HIPERFACE: Status: Linear Positionsfehler (23h)
+39504: Geber: HIPERFACE: Status: Linear-Positionsfehler (23h)
        Info(USINT): Geber
 39510: Geber: HIPERFACE: Status: Der Geber hat keinen Fehler erkannt (00h)
        Info(USINT): Geber
 39511: Geber: HIPERFACE: Status: Analogsignale außerhalb Spezifikation (01h)
        Info(USINT): Geber
-39512: Geber: HIPERFACE: Status: Fehlerhafter Interner Winkeloffset (02h)
+39512: Geber: HIPERFACE: Status: Fehlerhafter interner Winkeloffset (02h)
        Info(USINT): Geber
-39513: Geber: HIPERFACE: Status: Datenfeld Partitionstabelle zerstört (03h)
+39513: Geber: HIPERFACE: Status: Datenfeld-Partitionstabelle zerstört (03h)
        Info(USINT): Geber
 39514: Geber: HIPERFACE: Status: Analoge Grenzwerte nicht verfügbar (04h)
        Info(USINT): Geber
@@ -2022,7 +2064,7 @@
        Info(USINT): Geber
 39522: Geber: HIPERFACE: Status: Falsche Befehlslänge (0Ch)
        Info(USINT): Geber
-39523: Geber: HIPERFACE: Status: Falscher Befehlsargument (0Dh)
+39523: Geber: HIPERFACE: Status: Falsches Befehlsargument (0Dh)
        Info(USINT): Geber
 39524: Geber: HIPERFACE: Status: Schreibgeschütztes Datenfeld (0Eh)
        Info(USINT): Geber
@@ -2030,7 +2072,7 @@
        Info(USINT): Geber
 39526: Geber: HIPERFACE: Status: Ungenügend-Speicher-Fehler (10h)
        Info(USINT): Geber
-39527: Geber: HIPERFACE: Status: Falscher Datenfeld Offset (11h)
+39527: Geber: HIPERFACE: Status: Falscher Datenfeld-Offset (11h)
        Info(USINT): Geber
 39528: Geber: HIPERFACE: Status: Falsche Datenfeldnummer (12h)
        Info(USINT): Geber
@@ -2042,21 +2084,21 @@
        Info(USINT): Geber
 39541: Geber: HIPERFACE: Status: Drehzahl zu hoch (1Fh)
        Info(USINT): Geber
-39542: Geber: HIPERFACE: Status: Singleturn Position unzuverlässig (20h)
+39542: Geber: HIPERFACE: Status: Singleturn-Position unzuverlässig (20h)
        Info(USINT): Geber
-39543: Geber: HIPERFACE: Status: Multiturn Amplitudenfehler (21h)
+39543: Geber: HIPERFACE: Status: Multiturn-Amplitudenfehler (21h)
        Info(USINT): Geber
-39544: Geber: HIPERFACE: Status: Multiturn Synchronisierungsfehler (22h)
+39544: Geber: HIPERFACE: Status: Multiturn-Synchronisierungsfehler (22h)
        Info(USINT): Geber
-39545: Geber: HIPERFACE: Status: Multiturn Zeigerlängenfehler (23h)
+39545: Geber: HIPERFACE: Status: Multiturn-Zeigerlängenfehler (23h)
        Info(USINT): Geber
-39546: Geber: HIPERFACE: Status: Multiturn Zählerfehler (24h)
+39546: Geber: HIPERFACE: Status: Multiturn-Zählerfehler (24h)
        Info(USINT): Geber
 39594: Geber: HIPERFACE DSL: Geber Status: Plausibilitätsfehler (ST0:4)
        Info(USINT): Geber
 39596: Geber: HIPERFACE DSL: Geber Status: Falschkonfigurationsfehler (ST0:6)
        Info(USINT): Geber
-39597: Geber: HIPERFACE DSL: Geber Status: Crosscheck Fehler (ST0:7)
+39597: Geber: HIPERFACE DSL: Geber Status: Crosscheck-Fehler (ST0:7)
        Info(USINT): Geber
 39600: Geber: HIPERFACE DSL: Geber Status: Protokoll Reset-Anzeige (ST0:0)
        Info(USINT): Geber
@@ -2074,7 +2116,7 @@
        Info(USINT): Geber
 39607: Geber: HIPERFACE DSL: Geber Status: Positionssynchronisierungsfehler (ST0:7)
        Info(USINT): Geber
-39610: Geber: HIPERFACE DSL: Geber Status: Singleturn Fehler (ST1:0)
+39610: Geber: HIPERFACE DSL: Geber Status: Singleturn-Fehler (ST1:0)
        Info(USINT): Geber
 39611: Geber: HIPERFACE DSL: Geber Status: Multiturn-Amplitudenfehler (ST1:1)
        Info(USINT): Geber
@@ -2086,11 +2128,11 @@
        Info(USINT): Geber
 39620: Geber: HIPERFACE DSL: Geber Status: Einschalt-Selbsttest durchgeführt (ST2:0)
        Info(USINT): Geber
-39621: Geber: HIPERFACE DSL: Geber Status: Sicherheitsparameter Warnung (ST2:1)
+39621: Geber: HIPERFACE DSL: Geber Status: Sicherheitsparameter-Warnung (ST2:1)
        Info(USINT): Geber
-39622: Geber: HIPERFACE DSL: Geber Status: Sicherheitsparameter Fehler (ST2:2)
+39622: Geber: HIPERFACE DSL: Geber Status: Sicherheitsparameter-Fehler (ST2:2)
        Info(USINT): Geber
-39623: Geber: HIPERFACE DSL: Geber Status: Standard Parameter Fehler (ST2:3)
+39623: Geber: HIPERFACE DSL: Geber Status: Standard-Parameter-Fehler (ST2:3)
        Info(USINT): Geber
 39624: Geber: HIPERFACE DSL: Geber Status: Interner Kommunikationsfehler 1 (ST2:4)
        Info(USINT): Geber
@@ -2140,7 +2182,7 @@
        Info(USINT): Geber
 41001: Kühler-Temperatursensor: Warngrenze überschritten
        Info(REAL): Kühlertemperatur
-41002: Kühler-Temperatursensor: Nicht angeschlossen oder zerstört
+41002: Kühler-Temperatursensor: Temperaturmessbereich unterschritten
        Info(REAL): Grenztemperatur
 41011: Temperatursensor (Motor|Drossel|Extern): Warngrenze überschritten
        Info(REAL): Temperatur
@@ -2192,6 +2234,8 @@
        Info(UINT): Sensorindex
 41101: Leistungsteil: Temperatursensor 1: Untertemperatur: Warngrenze unterschritten
        Info(REAL): Temperatur
+41102: Leistungsteil: Temperatursensor 6: Warngrenze überschritten
+       Info(REAL): Temperatur
 64002: Wartezeit vor SW-Reset (Netzwerk mit aufsteigenden Knotennummern ?)
 64003: Wartezeit vor NC-System-Start (Netzwerk mit aufsteigenden Knotennummern ?)
 64004: Der folgende Hochlauf-Fehler könnte hier mit Verzögerung eingetragen sein
@@ -2220,4 +2264,9 @@
        Info(UINT): Testversion-Nummer
 64019: mapp Motion ACOPOS FW Testversion: SPS Datum/Zeit außerhalb Gültigkeitsperiode
 64020: NCSYS ist auf dem Zielsystem nicht vorhanden
+64021: TP ACP10/ARNC0 Testversion: SPS Datum/Zeit außerhalb Gültigkeitsperiode
+64022: TP ACP10/ARNC0 Testversion (Gültigkeitsperiode im Logger)
+       Info(UDINT): TP Patch Nummer
+64023: TP ACP10/ARNC0 Engineering Sample (Einsatz auf Serienmaschinen nicht erlaubt)
+       Info(UDINT): TP Patch Nummer
 65535: Response-Fehler

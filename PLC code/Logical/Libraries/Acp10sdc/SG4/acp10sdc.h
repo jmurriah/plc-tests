@@ -3,13 +3,16 @@
 
 #ifndef _ACP10SDC_
 #define _ACP10SDC_
+#ifdef __cplusplus
+extern "C" 
+{
+#endif
 
 #include <bur/plctypes.h>
 
-#ifndef _IEC_CONST
-#define _IEC_CONST _WEAK const
+#ifndef _BUR_PUBLIC
+#define _BUR_PUBLIC
 #endif
-
 /* Constants */
 #ifdef _REPLACE_CONST
  #define ncSDC_ENC16 100U
@@ -23,20 +26,22 @@
  #define ncSDC_TRIGDIGin 131U
  #define ncSDC_DIDO 140U
 #else
- _IEC_CONST unsigned short ncSDC_ENC16 = 100U;
- _IEC_CONST unsigned short ncSDC_ENC32 = 101U;
- _IEC_CONST unsigned short ncSDC_DRVSM16 = 110U;
- _IEC_CONST unsigned short ncSDC_DRVSM32 = 111U;
- _IEC_CONST unsigned short ncSDC_DRVSM16_CTRL = 112U;
- _IEC_CONST unsigned short ncSDC_DRVSM32_CTRL = 113U;
- _IEC_CONST unsigned short ncSDC_DRVSERVO16 = 120U;
- _IEC_CONST unsigned short ncSDC_TRIG = 130U;
- _IEC_CONST unsigned short ncSDC_TRIGDIGin = 131U;
- _IEC_CONST unsigned short ncSDC_DIDO = 140U;
+ #ifndef _GLOBAL_CONST
+   #define _GLOBAL_CONST _WEAK const
+ #endif
+ _GLOBAL_CONST unsigned short ncSDC_ENC16;
+ _GLOBAL_CONST unsigned short ncSDC_ENC32;
+ _GLOBAL_CONST unsigned short ncSDC_DRVSM16;
+ _GLOBAL_CONST unsigned short ncSDC_DRVSM32;
+ _GLOBAL_CONST unsigned short ncSDC_DRVSM16_CTRL;
+ _GLOBAL_CONST unsigned short ncSDC_DRVSM32_CTRL;
+ _GLOBAL_CONST unsigned short ncSDC_DRVSERVO16;
+ _GLOBAL_CONST unsigned short ncSDC_TRIG;
+ _GLOBAL_CONST unsigned short ncSDC_TRIGDIGin;
+ _GLOBAL_CONST unsigned short ncSDC_DIDO;
 #endif
 
 
-/* Variables */
 
 
 /* Datatypes and datatypes of function blocks */
@@ -130,13 +135,11 @@ typedef struct SdcDiDoIf_typ
 
 
 
-/* Prototyping of functions and function blocks */
 
 
-__asm__(".section \".plc\"");
 
-__asm__(".previous");
-
-
+#ifdef __cplusplus
+};
+#endif
 #endif /* _ACP10SDC_ */
 

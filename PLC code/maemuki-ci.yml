@@ -2,7 +2,68 @@ project:
   name: EFI_v4
 
 configurations:
-  - { name: SimTests, target: ARsim }
+  - name: SimTests
+    target: ARsim
+    simulation: false
+    arSimHost: localhost
+    arSimPort: 82
+    pviPort: 11169
+    arSimTimeZoom: "+2"
+    arSimStartupDelaySeconds: 6
+    variants:
+      - name: MachineModel
+        restartSimAfterWrite: true
+        sweep:
+          variable: "ns=6;s=::AsGlobalPV:gMachine.Pt.MachineModel"
+          values:
+            - { name: Type_P4_12B,                 value: 1  }
+            - { name: Type_P4_6B,                  value: 2  }
+            - { name: Type_P4_12B_L,               value: 3  }
+            - { name: Type_P4_6B_L,                value: 4  }
+            - { name: Type_SHLD,                   value: 5  }
+            - { name: Type_SHLD_L,                 value: 6  }
+            - { name: Type_S1400,                  value: 7  }
+            - { name: Type_S1400_VAC_PWRLNK,       value: 8  }
+            - { name: Type_S1400_VAC_CAN,          value: 9  }
+            - { name: Type_NOZ_2_AQ,               value: 10 }
+            - { name: Type_P5_OIL,                 value: 11 }
+            - { name: Type_P5_WTR,                 value: 12 }
+            - { name: Type_P4_CBK,                 value: 13 }
+            - { name: Type_NOZ_2_UV,               value: 14 }
+            - { name: Type_NOZ_2_UV_White,         value: 15 }
+            - { name: Type_CUBE_INSPECTION,        value: 16 }
+            - { name: Type_CUBE,                   value: 17 }
+            - { name: Type_CUBE_GULLIVER_INSPECTION, value: 18 }
+            - { name: Type_CUBE_GULLIVER,          value: 19 }
+            - { name: Type_MECANO_UV_WHITE,        value: 20 }
+            - { name: Type_MECANO_UV_OPV,          value: 21 }
+            - { name: Type_MECANO_UV_WHITE_OPV,    value: 22 }
+  # - name: SimDryer
+    # target: ARsim
+    # simulation: false
+    # arSimHost: localhost
+    # arSimPort: 83
+    # pviPort: 11170
+    # arSimTimeZoom: "+2"
+    # arSimStartupDelaySeconds: 6
+
+tests:
+  perConfiguration:
+    SimTests:
+      - FunctionsTests
+      - PrepareMachine
+      - BeltTests
+      - ConsentTests
+      - ConsentTests
+      - CleaningTests
+      - LineTests
+      - TrVacuumTests
+      - BlockTests
+      - Cube
+    SimDryer:
+      - FunctionsTests
+      - PrepareDryer
+      - BeltTests
 
 pipeline:
   steps: [ build, package, deploy, test, report ]

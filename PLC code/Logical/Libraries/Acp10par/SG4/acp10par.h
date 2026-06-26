@@ -1,4 +1,4 @@
-/* acp10par.h V5.21.2 */ 
+/* acp10par.h V5.31.1 */ 
 /* COPYRIGHT (C) B&R Industrial Automation GmbH */ 
 
 #ifndef ACP10PAR_H_ 
@@ -56,7 +56,7 @@
 #define ACP10PAR_MOTOR_CURR_MAX              58 /* (REAL) Motor: Peak current [A] */
 #define ACP10PAR_MOTOR_WIND_CROSS_SECT       59 /* (REAL) Motor: Phase cross section [mm²] */
 #define ACP10PAR_MOTOR_STATOR_RESISTANCE     60 /* (REAL) Motor: Stator resistance [Ohm] */
-#define ACP10PAR_MOTOR_STATOR_INDUCTANCE     61 /* (REAL) Motor: Stator inductance [Henry] */
+#define ACP10PAR_MOTOR_STATOR_INDUCTANCE     61 /* (REAL) Motor: Stator inductance [H] */
 #define ACP10PAR_MOTOR_INERTIA               62 /* (REAL) Motor: Moment of inertia [kgm²] */
 #define ACP10PAR_MOTOR_COMMUT_OFFSET         63 /* (REAL) Motor: Commutation offset [rad] */
 #define ACP10PAR_MOTOR_TEMPSENS_PAR1         64 /* (REAL) Temperature sensor: Parameter 1 */
@@ -100,7 +100,7 @@
 #define ACP10PAR_POS_CTRL_I_MAX             105 /* (REAL) CTRL Position controller: Maximum integral action [Units/s] */
 #define ACP10PAR_SCALE_LOAD_UNITS           106 /* (UDINT) Encoder1: Load scaling: Units per load revolution [Units] */
 #define ACP10PAR_SCALE_LOAD_MOTOR_REV       107 /* (UDINT) Encoder1: Load scaling: Encoder revolutions per load revolution */
-#define ACP10PAR_SCALE_ENCOD_MOTOR_REV      108 /* (UDINT) Encoder1: Encoder scaling: motor revolutions */
+#define ACP10PAR_SCALE_ENCOD_MOTOR_REV      108 /* (UDINT) Encoder1: Encoder scaling: Motor revolutions */
 #define ACP10PAR_SCALE_ENCOD_INCR           109 /* (UDINT) Encoder1: Encoder scaling: increments per encoder revolution */
 #define ACP10PAR_CMD_SIMULATION             110 /* (UINT) Simulation mode: Command */
 #define ACP10PAR_PCTRL_S_ACT                111 /* (DINT) CTRL Position controller: Actual position [Units] */
@@ -188,18 +188,18 @@
 #define ACP10PAR_VCTRL_I2                   210 /* (REAL) Inverter: Phase 2: Current  [A] */
 #define ACP10PAR_BRAKE_CTRL_MON_FILTER      211 /* (REAL) Motor holding brake: Control monitoring filter time  [s] */
 #define ACP10PAR_ENCOD_DIAG1                212 /* (REAL) Encoder1: Diagnosis 1 */
-#define ACP10PAR_ICTRL_ISQ_REF              213 /* (REAL) CTRL Current controller: Set stator current quadrature component [A] */
-#define ACP10PAR_ICTRL_ISQ_ACT              214 /* (REAL) CTRL Current controller: Actual stator current quadrature component [A] */
-#define ACP10PAR_ICTRL_USQ_REF              216 /* (REAL) CTRL Current controller: Stator voltage quadrature component [V] */
-#define ACP10PAR_ICTRL_ISD_REF              218 /* (REAL) CTRL Current controller: Set stator current direct component [A] */
-#define ACP10PAR_ICTRL_ISD_ACT              219 /* (REAL) CTRL Current controller: Actual stator current direct component [A] */
-#define ACP10PAR_ICTRL_USD_REF              221 /* (REAL) CTRL Current controller: Stator voltage direct component [V] */
+#define ACP10PAR_ICTRL_ISQ_REF              213 /* (REAL) CTRL Current: Set stator current quadrature component [A] */
+#define ACP10PAR_ICTRL_ISQ_ACT              214 /* (REAL) CTRL Current: Actual stator current quadrature component [A] */
+#define ACP10PAR_ICTRL_USQ_REF              216 /* (REAL) CTRL Current: Stator voltage quadrature component [V] */
+#define ACP10PAR_ICTRL_ISD_REF              218 /* (REAL) CTRL Current: Set stator current direct component [A] */
+#define ACP10PAR_ICTRL_ISD_ACT              219 /* (REAL) CTRL Current: Actual stator current direct component [A] */
+#define ACP10PAR_ICTRL_USD_REF              221 /* (REAL) CTRL Current: Stator voltage direct component [V] */
 #define ACP10PAR_FCTRL_ISD_REF              222 /* (REAL) Flux controller: Manipulated variable [A] */
-#define ACP10PAR_ICTRL_KV                   223 /* (REAL) CTRL Current controller: Proportional amplification factor [V/A] */
+#define ACP10PAR_ICTRL_KV                   223 /* (REAL) CTRL Current: Proportional amplification factor [V/A] */
 #define ACP10PAR_SAFEMC_SPEED_LIM_I4        224 /* (DINT) SafeMOTION: Speed limit [Units/s] */
-#define ACP10PAR_ICTRL_TI                   225 /* (REAL) CTRL Current controller: Integral action time [s] */
-#define ACP10PAR_SCTRL_FILTER_F0            226 /* (REAL) CTRL Speed controller: Notchfilter frequence [1/s] */
-#define ACP10PAR_SCTRL_FILTER_B             227 /* (REAL) CTRL Speed controller: Notchfilter bandwidth [1/s] */
+#define ACP10PAR_ICTRL_TI                   225 /* (REAL) CTRL Current: Integral action time [s] */
+#define ACP10PAR_SCTRL_FILTER_F0            226 /* (REAL) CTRL Speed: Notchfilter frequence [1/s] */
+#define ACP10PAR_SCTRL_FILTER_B             227 /* (REAL) CTRL Speed: Notchfilter bandwidth [1/s] */
 #define ACP10PAR_PCTRL_LAG2_ERROR           228 /* (REAL) CTRL Two encoder control: Position difference [Units] */
 #define ACP10PAR_AXLIM_DS_STOP2             229 /* (REAL) CTRL Two encoder control: Position difference limit for stop of a movement [Units] */
 #define ACP10PAR_PCTRL_S_ACT_PARID          230 /* (UINT) CTRL Position controller: Actual encoder position parameter ID */
@@ -210,22 +210,22 @@
 #define ACP10PAR_CYCLIC_FRDRV_PARID         236 /* (UINT) Cyclic communication: Parameter ID of data from drive */
 #define ACP10PAR_ENCOD_SSI_ZERO_BITS        237 /* (USINT) Encoder1: SSI Number of leading zeros */
 #define ACP10PAR_ENCOD_SSI_BITS             238 /* (USINT) Encoder1: SSI Number of data bits */
-#define ACP10PAR_ENCOD_SSI_CODE             239 /* (USINT) Encoder1: SSI, Data code */
+#define ACP10PAR_ENCOD_SSI_CODE             239 /* (USINT) Encoder1: SSI data code */
 #define ACP10PAR_ENCOD_SSI_PARITY_CHK       240 /* (USINT) Encoder1: SSI Parity check */
 #define ACP10PAR_ENCOD2_SSI_ZERO_BITS       241 /* (USINT) Encoder2: SSI Number of leading zeros */
 #define ACP10PAR_ENCOD2_SSI_BITS            242 /* (USINT) Encoder2: SSI Number of data bits */
-#define ACP10PAR_ENCOD2_SSI_CODE            243 /* (USINT) Encoder2: SSI Data code */
+#define ACP10PAR_ENCOD2_SSI_CODE            243 /* (USINT) Encoder2: SSI data code */
 #define ACP10PAR_ENCOD2_SSI_PARITY_CHK      244 /* (USINT) Encoder2: SSI Parity check */
 #define ACP10PAR_ENCOD_POS_ACT              245 /* (DINT) Encoder1: Actual position per revolution [Incr] */
 #define ACP10PAR_ENCOD2_POS_ACT             246 /* (DINT) Encoder2: Actual position per revolution [Incr] */
-#define ACP10PAR_ICTRL_ADD_TRQ              247 /* (REAL) CTRL Current controller: Additive torque [Nm] */
+#define ACP10PAR_ICTRL_ADD_TRQ              247 /* (REAL) CTRL Current: Additive torque [Nm] */
 #define ACP10PAR_LIM_T1_POS                 248 /* (REAL) CTRL Torque limiter: Maximum acceleration torque in positive direction [Nm] */
 #define ACP10PAR_LIM_T1_NEG                 249 /* (REAL) CTRL Torque limiter: Maximum acceleration torque in negative direction [Nm] */
-#define ACP10PAR_SCTRL_SPEED_REF            250 /* (REAL) CTRL Speed controller: Set speed [1/s] */
-#define ACP10PAR_SCTRL_SPEED_ACT            251 /* (REAL) CTRL Speed controller: Actual speed [1/s] */
-#define ACP10PAR_SCTRL_KV                   253 /* (REAL) CTRL Speed controller: Proportional amplification [As] */
-#define ACP10PAR_SCTRL_TN                   255 /* (REAL) CTRL Speed controller: Integral action time [s] */
-#define ACP10PAR_SCTRL_ISQ_REF              256 /* (REAL) CTRL Speed controller: Manipulated variable [A] */
+#define ACP10PAR_SCTRL_SPEED_REF            250 /* (REAL) CTRL Speed: Set speed [1/s] */
+#define ACP10PAR_SCTRL_SPEED_ACT            251 /* (REAL) CTRL Speed: Actual speed [1/s] */
+#define ACP10PAR_SCTRL_KV                   253 /* (REAL) CTRL Speed: Proportional amplification [As] */
+#define ACP10PAR_SCTRL_TN                   255 /* (REAL) CTRL Speed: Integral action time [s] */
+#define ACP10PAR_SCTRL_ISQ_REF              256 /* (REAL) CTRL Speed: Manipulated variable [A] */
 #define ACP10PAR_FCTRL_IM_REF               257 /* (REAL) CTRL Flux: Set magnetizing current [A] */
 #define ACP10PAR_FCTRL_IM_ACT               258 /* (REAL) CTRL Flux: Actual magnetizing current [A] */
 #define ACP10PAR_FCTRL_KV                   259 /* (REAL) CTRL Flux: Proportional amplification factor */
@@ -239,12 +239,12 @@
 #define ACP10PAR_ENCOD_RATIO_MOTOR_REV      280 /* (UDINT) Encoder1: Gear ratio motor revolutions */
 #define ACP10PAR_FFCTRL_ISQ                 281 /* (REAL) CTRL Feed forward: Set stator current [A] */
 #define ACP10PAR_FFCTRL_TORQ_LOAD_PARID     282 /* (UINT) CTRL Feed forward: Parameter ID load torque */
-#define ACP10PAR_SCTRL_TI_FIL               283 /* (REAL) CTRL Speed controller: Filter time constant [s] */
+#define ACP10PAR_SCTRL_TI_FIL               283 /* (REAL) CTRL Speed: Filter time constant [s] */
 #define ACP10PAR_ENCOD3_POLEPAIRS           284 /* (USINT) Encoder3: Resolver polepairs per encoder revolution */
 #define ACP10PAR_FFCTRL_INERTIA_PARID       285 /* (UINT) CTRL Feed forward: Parameter ID mass moment of inertia */
 #define ACP10PAR_ENCOD_OUT_PARID            286 /* (UINT) Encoder1: Emulation: Output parameter ID */
 #define ACP10PAR_STAT_BRAKE_CIRCUIT         287 /* (UDINT) Motor holding brake: Electrical state */
-#define ACP10PAR_SCTRL_ADD_SET_PARID        288 /* (UINT) CTRL Speed controller: Parameter ID additive set value */
+#define ACP10PAR_SCTRL_ADD_SET_PARID        288 /* (UINT) CTRL Speed: Parameter ID additive set value */
 #define ACP10PAR_SCALE_ENCOD2_INCR          289 /* (UDINT) Encoder2: Encoder scaling: Increments per encoder revolution */
 #define ACP10PAR_CONST_I4_ZERO              292 /* (DINT) Function block: Constant zero */
 #define ACP10PAR_UDC_ACT                    298 /* (REAL) CTRL DC bus: Voltage [V] */
@@ -258,11 +258,11 @@
 #define ACP10PAR_CONST_I4_ONE               310 /* (DINT) Function block: Constant one */
 #define ACP10PAR_ENABLE_CONFIG              311 /* (UDINT) ENABLE: Configuration */
 #define ACP10PAR_FCTRL_IM_LIM_MAX           312 /* (REAL) CTRL Flux:  Magnetizing current limiter: Upper limit [A] */
-#define ACP10PAR_SCTRL_SPEED_MON_LIM        313 /* (REAL) CTRL Speed controller: Monitoring: Speed limit [1/s] */
+#define ACP10PAR_SCTRL_SPEED_MON_LIM        313 /* (REAL) CTRL Speed: Monitoring: Speed limit [1/s] */
 #define ACP10PAR_CHP_DUTY_CYCLE_MIN         314 /* (REAL) CTRL Chopper: Minimum pwm duty cycle */
 #define ACP10PAR_JUNCTION_POWER_LOSS        315 /* (REAL) Inverter: Junction temperature model: Power loss [W] */
 #define ACP10PAR_BRAKE_TEST_POS_DELTA       323 /* (REAL) Motor holding brake: Maximal position error [Rev.] */
-#define ACP10PAR_ICTRL_ADD_SET_PARID        325 /* (UINT) CTRL Current controller: Additive set value parameter ID */
+#define ACP10PAR_ICTRL_ADD_SET_PARID        325 /* (UINT) CTRL Current: Additive set value parameter ID */
 #define ACP10PAR_CONTROLLER_MODE            328 /* (USINT) CTRL Controller: Mode */
 #define ACP10PAR_VCTRL_ENCOD_REV            330 /* (DINT) Motor encoder: Gear: Encoder revolutions */
 #define ACP10PAR_VCTRL_MOTOR_REV            331 /* (DINT) Motor encoder: Gear: Motor revolutions */
@@ -305,7 +305,7 @@
 #define ACP10PAR_TEMP_JUNCTION_MAX          386 /* (REAL) Inverter: Junction temperature model: Maximum temperature [°C] */
 #define ACP10PAR_TEMP_BLEEDER_MAX           387 /* (REAL) Bleeder: Temperature model: Maximum temperature [°C] */
 #define ACP10PAR_LOAD_PEAK_CURR_MAX         388 /* (REAL) Inverter: Peak current: Maximum load [%] */
-#define ACP10PAR_EPROM_SERIAL_ID_TEXT       389 /* (STR16) FB EPROM: Serial-ID */
+#define ACP10PAR_EPROM_SERIAL_ID_TEXT       389 /* (STR16) EPROM: Serial-ID */
 #define ACP10PAR_UDC_NOMINAL                390 /* (REAL) CTRL DC bus: Nominal voltage [V] */
 #define ACP10PAR_TPRED_MODE                 391 /* (USINT) Temperature prediction: Mode */
 #define ACP10PAR_TPRED_TRIG_PARID           392 /* (UINT) Temperature prediction: Trigger Parameter-ID */
@@ -464,6 +464,7 @@
 #define ACP10PAR_MA_CYCLE_TIME_FACTOR       626 /* (UDINT) Network coupling: Multiplication factor of cycle time */
 #define ACP10PAR_AUT_ST_EV_COUNT            627 /* (UDINT) Cam automat: State transition count */
 #define ACP10PAR_AUT_ST_EV_COUNT_VAX1       628 /* (UDINT) VAX Cam automat: State transition count */
+#define ACP10PAR_CONFIG_VAX1                629 /* (USINT) VAX: Configuration */
 #define ACP10PAR_ERROR_NUMBER_VAX1          630 /* (UINT) VAX Messages: Error number */
 #define ACP10PAR_ERROR_INFO_VAX1            631 /* (DINT) VAX Messages: Additional error info */
 #define ACP10PAR_ERROR_REC_VAX1             632 /* (ERROR_NUMBER_VAX1, ERROR_INFO_VAX1) VAX Messages: Error record */
@@ -514,8 +515,8 @@
 #define ACP10PAR_ENCOD_REF_INTERVAL         684 /* (UDINT) Encoder1: INC Reference pulse interval [Incr] */
 #define ACP10PAR_ENCOD2_REF_INTERVAL        685 /* (UDINT) Encoder2: INC Reference pulse interval [Incr] */
 #define ACP10PAR_ENCOD3_REF_INTERVAL        686 /* (UDINT) Encoder3: INC Reference pulse interval [Incr] */
-#define ACP10PAR_SCTRL_LIM_V_POS            687 /* (REAL) CTRL Speed controller: Speed limit positive direction [1/s] */
-#define ACP10PAR_SCTRL_LIM_V_NEG            688 /* (REAL) CTRL Speed controller: Speed limit negative direction [1/s] */
+#define ACP10PAR_SCTRL_LIM_V_POS            687 /* (REAL) CTRL Speed: Speed limit positive direction [1/s] */
+#define ACP10PAR_SCTRL_LIM_V_NEG            688 /* (REAL) CTRL Speed: Speed limit negative direction [1/s] */
 #define ACP10PAR_PCTRL_SPEED_REF_I          692 /* (REAL) CTRL Position controller: Manipulated variable of integrator [Units/s] */
 #define ACP10PAR_ENCOD3_POS_ACT             693 /* (DINT) Encoder3: Actual position per revolution [Incr] */
 #define ACP10PAR_SCALE_ENCOD3_UNITS         694 /* (UDINT) Encoder3: Load scaling: Units per load revolution [Units] */
@@ -525,7 +526,7 @@
 #define ACP10PAR_ENCOD3_STATUS              698 /* (UDINT) Encoder3: Status */
 #define ACP10PAR_ENCOD3_SSI_ZERO_BITS       699 /* (USINT) Encoder3: SSI Number of leading zeros */
 #define ACP10PAR_ENCOD3_SSI_BITS            700 /* (USINT) Encoder3: SSI Number of data bits */
-#define ACP10PAR_ENCOD3_SSI_CODE            701 /* (USINT) Encoder3: SSI Data code */
+#define ACP10PAR_ENCOD3_SSI_CODE            701 /* (USINT) Encoder3: SSI data code */
 #define ACP10PAR_ENCOD3_SSI_PARITY_CHK      702 /* (USINT) Encoder3: SSI Parity check */
 #define ACP10PAR_SCALE_ENCOD3_INCR          703 /* (UDINT) Encoder3: Encoder scaling: Increments per encoder revolution */
 #define ACP10PAR_ENCOD3_TYPE                704 /* (USINT) Encoder3: Type */
@@ -534,18 +535,18 @@
 #define ACP10PAR_ENCOD3_S_ACT_FILTER        710 /* (DINT) Encoder3: Filtered actual position [Units] */
 #define ACP10PAR_ENCOD3_OUT_PARID           711 /* (UINT) Encoder3: Emulation: Output parameter ID */
 #define ACP10PAR_ENCOD2_OUT_PARID           712 /* (UINT) Encoder2: Emulation: Output parameter ID */
-#define ACP10PAR_ICTRL_SET_PARID            713 /* (UINT) CTRL Current controller: Set value parameter ID of stator current quadrature component  */
+#define ACP10PAR_ICTRL_SET_PARID            713 /* (UINT) CTRL Current: Set value parameter ID of stator current quadrature component  */
 #define ACP10PAR_MA1_CYCLIC_ERROR_STATUS    714 /* (USINT) Network coupling: Error status for cyclic position master1 */
 #define ACP10PAR_MA2_CYCLIC_ERROR_STATUS    715 /* (USINT) Network coupling: Error status for cyclic position master2 */
 #define ACP10PAR_MA3_CYCLIC_ERROR_STATUS    716 /* (USINT) Network coupling: Error status for cyclic position master3 */
 #define ACP10PAR_CMD_CTRL_OFF_BRAKE_ON      717 /* (NIL) CTRL Controller: Power off */
 #define ACP10PAR_ENCOD_ERROR_MODE           718 /* (UINT) Encoder1: Error Mode */
 #define ACP10PAR_ENCOD_CMD                  719 /* (UDINT) Encoder1: Encoder command */
-#define ACP10PAR_VCTRL_S_ACT_PARID          722 /* (UINT) CTRL Vector controller: Actual position parameter ID */
+#define ACP10PAR_VCTRL_S_ACT_PARID          722 /* (UINT) CTRL Vector: Actual position parameter ID */
 #define ACP10PAR_ENCOD2_SSI_LINE_RES        723 /* (DINT) Encoder2: Serial resolution per sinus period */
 #define ACP10PAR_ENCOD3_SSI_LINE_RES        724 /* (DINT) Encoder3: Serial resolution per sinus period */
-#define ACP10PAR_ICTRL_ISD_SET_PARID        725 /* (UINT) CTRL Current controller: Set value parameter ID of stator current direct component  */
-#define ACP10PAR_SCTRL_ENABLE_PARID         726 /* (UINT) CTRL Speed controller: Parameter ID enable input */
+#define ACP10PAR_ICTRL_ISD_SET_PARID        725 /* (UINT) CTRL Current: Set value parameter ID of stator current direct component  */
+#define ACP10PAR_SCTRL_ENABLE_PARID         726 /* (UINT) CTRL Speed: Parameter ID enable input */
 #define ACP10PAR_ENCOD_LINE_CHK_IGNORE      727 /* (UINT) Encoder1: Ignore check */
 #define ACP10PAR_ENCOD2_LINE_CHK_IGNORE     728 /* (UINT) Encoder2: Ignore check */
 #define ACP10PAR_ENCOD3_LINE_CHK_IGNORE     729 /* (UINT) Encoder3: Ignore check */
@@ -622,12 +623,12 @@
 #define ACP10PAR_ENCOD3_ADC1                821 /* (REAL) Encoder3: ADC1 value */
 #define ACP10PAR_ENCOD3_ADC2                822 /* (REAL) Encoder3: ADC2 value */
 #define ACP10PAR_ENCOD2_DIAG1               823 /* (REAL) Encoder2: Diagnosis 1 */
-#define ACP10PAR_ISQ_FILTER1_C0_PARID       824 /* (UINT) CTRL Speed controller: Set current filter1 parameter ID for coefficient C0 */
-#define ACP10PAR_ISQ_FILTER2_C0_PARID       825 /* (UINT) CTRL Speed controller: Set current filter2 parameter ID for coefficient C0 */
-#define ACP10PAR_ISQ_FILTER3_C0_PARID       826 /* (UINT) CTRL Speed controller: Set current filter3 parameter ID for coefficient C0 */
-#define ACP10PAR_ISQ_FILTER1_C1_PARID       827 /* (UINT) CTRL Speed controller: Set current filter1 parameter ID for coefficient C1 */
-#define ACP10PAR_ISQ_FILTER2_C1_PARID       828 /* (UINT) CTRL Speed controller: Set current filter2 parameter ID for coefficient C1 */
-#define ACP10PAR_ISQ_FILTER3_C1_PARID       829 /* (UINT) CTRL Speed controller: Set current filter3 parameter ID for coefficient C1 */
+#define ACP10PAR_ISQ_FILTER1_C0_PARID       824 /* (UINT) CTRL Speed: Set current filter1 parameter ID for coefficient C0 */
+#define ACP10PAR_ISQ_FILTER2_C0_PARID       825 /* (UINT) CTRL Speed: Set current filter2 parameter ID for coefficient C0 */
+#define ACP10PAR_ISQ_FILTER3_C0_PARID       826 /* (UINT) CTRL Speed: Set current filter3 parameter ID for coefficient C0 */
+#define ACP10PAR_ISQ_FILTER1_C1_PARID       827 /* (UINT) CTRL Speed: Set current filter1 parameter ID for coefficient C1 */
+#define ACP10PAR_ISQ_FILTER2_C1_PARID       828 /* (UINT) CTRL Speed: Set current filter2 parameter ID for coefficient C1 */
+#define ACP10PAR_ISQ_FILTER3_C1_PARID       829 /* (UINT) CTRL Speed: Set current filter3 parameter ID for coefficient C1 */
 #define ACP10PAR_TPRED_TIME                 830 /* (DINT) Temperature prediction: Observation time [us] */
 #define ACP10PAR_TPRED_TIME_IV              831 /* (DINT) Temperature prediction: Observation period [us] */
 #define ACP10PAR_TPRED_CNT                  832 /* (DINT) Temperature prediction: Counter */
@@ -645,7 +646,7 @@
 #define ACP10PAR_MOTOR_TERMINAL_POWER       844 /* (REAL) Inverter: Output: Power [W] */
 #define ACP10PAR_VCTRL_USD_REF_PARID        845 /* (UINT) CTRL Voltage controller: Parameter ID of set value stator voltage direct component  */
 #define ACP10PAR_VCTRL_USQ_REF_PARID        846 /* (UINT) CTRL Voltage controller: Parameter ID of set value stator voltage quadrature component  */
-#define ACP10PAR_VCTRL_RHO_REF_PARID        847 /* (UINT) CTRL Vector controller: Parameter-ID of commutation angle */
+#define ACP10PAR_VCTRL_RHO_REF_PARID        847 /* (UINT) CTRL Vector: Parameter-ID of commutation angle */
 #define ACP10PAR_FWCTRL_TN                  848 /* (REAL) CTRL Flux weakening: Integral action time [s] */
 #define ACP10PAR_MOTOR_TAU_THERM            849 /* (REAL) Motor: Thermal time constant [s] */
 #define ACP10PAR_UCTRL_KV                   850 /* (REAL) CTRL DC bus: Proportional amplification factor [A/V] */
@@ -672,7 +673,7 @@
 #define ACP10PAR_BLEEDER_POWER_LOSS         876 /* (REAL) Bleeder: Power loss [W] */
 #define ACP10PAR_ISQ_RIPPLE_MODE            877 /* (UDINT) ISQ-Ripple compensation: Mode    */
 #define ACP10PAR_PIDENT_SPEED               878 /* (REAL) Parameter identification: Speed [Units/s] */
-#define ACP10PAR_COMMUT_CURR_FFTIME         880 /* (REAL) CTRL vector: Current feed forward time [s] */
+#define ACP10PAR_COMMUT_CURR_FFTIME         880 /* (REAL) CTRL Vector: Current feed forward time [s] */
 #define ACP10PAR_ISQ_RIPPLE                 881 /* (REAL) ISQ-Ripple compensation: Current [A] */
 #define ACP10PAR_ISQ_RIPPLE_DAT_IDX         882 /* (DINT) ISQ-Ripple compensation: Data: Index */
 #define ACP10PAR_ISQ_RIPPLE_DAT_F           883 /* (REAL) ISQ-Ripple compensation: Data: Frequency [cps] */
@@ -682,7 +683,7 @@
 #define ACP10PAR_ENCOD_RANGE_REV            887 /* (UDINT) Encoder1: Absolute measuring range [Rev.] */
 #define ACP10PAR_ENCOD2_RANGE_REV           888 /* (UDINT) Encoder2: Absolute measuring range [Rev.] */
 #define ACP10PAR_ENCOD3_RANGE_REV           889 /* (UDINT) Encoder3: Absolute measuring range [Rev.] */
-#define ACP10PAR_SCTRL_SPEED_REF_SUM        890 /* (REAL) CTRL Speed controller: Sum of the set speeds [1/s] */
+#define ACP10PAR_SCTRL_SPEED_REF_SUM        890 /* (REAL) CTRL Speed: Sum of the set speeds [1/s] */
 #define ACP10PAR_ENCOD_OUTPUT_FREQUENCY     891 /* (UDINT) Encoder1: Maximal expected output frequency [Hz] */
 #define ACP10PAR_ENCOD_OUTPUT_STAGE         892 /* (USINT) Encoder1: Output stage */
 #define ACP10PAR_ENCOD_DIAG2                893 /* (REAL) Encoder1: Diagnosis 2 */
@@ -800,24 +801,24 @@
 #define ACP10PAR_CMD_MOVE_HALT_A2_VAX1     1027 /* (REAL) VAX Basis movements: Halt [Units/s²] */
 #define ACP10PAR_CMD_V_SET_MOVE            1028 /* (NIL) Basis movements: Start movement with current speed */
 #define ACP10PAR_CMD_V_SET_MOVE_VAX1       1029 /* (NIL) VAX Basis movements: Start movement with current speed */
-#define ACP10PAR_ISQ_FILTER1_TYPE          1030 /* (UINT) CTRL Speed controller: Set current filter1 type */
-#define ACP10PAR_ISQ_FILTER2_TYPE          1031 /* (UINT) CTRL Speed controller: Set current filter2 type */
-#define ACP10PAR_ISQ_FILTER3_TYPE          1032 /* (UINT) CTRL Speed controller: Set current filter3 type */
-#define ACP10PAR_ISQ_FILTER1_A0            1033 /* (REAL) CTRL Speed controller: Set current filter1 coefficient A0 */
-#define ACP10PAR_ISQ_FILTER2_A0            1034 /* (REAL) CTRL Speed controller: Set current filter2 coefficient A0 */
-#define ACP10PAR_ISQ_FILTER3_A0            1035 /* (REAL) CTRL Speed controller: Set current filter3 coefficient A0 */
-#define ACP10PAR_ISQ_FILTER1_A1            1036 /* (REAL) CTRL Speed controller: Set current filter1 coefficient A1 */
-#define ACP10PAR_ISQ_FILTER2_A1            1037 /* (REAL) CTRL Speed controller: Set current filter2 coefficient A1 */
-#define ACP10PAR_ISQ_FILTER3_A1            1038 /* (REAL) CTRL Speed controller: Set current filter3 coefficient A1 */
-#define ACP10PAR_ISQ_FILTER1_B0            1039 /* (REAL) CTRL Speed controller: Set current filter1 coefficient B0 */
-#define ACP10PAR_ISQ_FILTER2_B0            1040 /* (REAL) CTRL Speed controller: Set current filter2 coefficient B0 */
-#define ACP10PAR_ISQ_FILTER3_B0            1041 /* (REAL) CTRL Speed controller: Set current filter3 coefficient B0 */
-#define ACP10PAR_ISQ_FILTER1_B1            1042 /* (REAL) CTRL Speed controller: Set current filter1 coefficient B1 */
-#define ACP10PAR_ISQ_FILTER2_B1            1043 /* (REAL) CTRL Speed controller: Set current filter2 coefficient B1 */
-#define ACP10PAR_ISQ_FILTER3_B1            1044 /* (REAL) CTRL Speed controller: Set current filter3 coefficient B1 */
-#define ACP10PAR_ISQ_FILTER1_B2            1045 /* (REAL) CTRL Speed controller: Set current filter1 coefficient B2 */
-#define ACP10PAR_ISQ_FILTER2_B2            1046 /* (REAL) CTRL Speed controller: Set current filter2 coefficient B2 */
-#define ACP10PAR_ISQ_FILTER3_B2            1047 /* (REAL) CTRL Speed controller: Set current filter3 coefficient B2 */
+#define ACP10PAR_ISQ_FILTER1_TYPE          1030 /* (UINT) CTRL Speed: Set current filter1 type */
+#define ACP10PAR_ISQ_FILTER2_TYPE          1031 /* (UINT) CTRL Speed: Set current filter2 type */
+#define ACP10PAR_ISQ_FILTER3_TYPE          1032 /* (UINT) CTRL Speed: Set current filter3 type */
+#define ACP10PAR_ISQ_FILTER1_A0            1033 /* (REAL) CTRL Speed: Set current filter1 coefficient A0 */
+#define ACP10PAR_ISQ_FILTER2_A0            1034 /* (REAL) CTRL Speed: Set current filter2 coefficient A0 */
+#define ACP10PAR_ISQ_FILTER3_A0            1035 /* (REAL) CTRL Speed: Set current filter3 coefficient A0 */
+#define ACP10PAR_ISQ_FILTER1_A1            1036 /* (REAL) CTRL Speed: Set current filter1 coefficient A1 */
+#define ACP10PAR_ISQ_FILTER2_A1            1037 /* (REAL) CTRL Speed: Set current filter2 coefficient A1 */
+#define ACP10PAR_ISQ_FILTER3_A1            1038 /* (REAL) CTRL Speed: Set current filter3 coefficient A1 */
+#define ACP10PAR_ISQ_FILTER1_B0            1039 /* (REAL) CTRL Speed: Set current filter1 coefficient B0 */
+#define ACP10PAR_ISQ_FILTER2_B0            1040 /* (REAL) CTRL Speed: Set current filter2 coefficient B0 */
+#define ACP10PAR_ISQ_FILTER3_B0            1041 /* (REAL) CTRL Speed: Set current filter3 coefficient B0 */
+#define ACP10PAR_ISQ_FILTER1_B1            1042 /* (REAL) CTRL Speed: Set current filter1 coefficient B1 */
+#define ACP10PAR_ISQ_FILTER2_B1            1043 /* (REAL) CTRL Speed: Set current filter2 coefficient B1 */
+#define ACP10PAR_ISQ_FILTER3_B1            1044 /* (REAL) CTRL Speed: Set current filter3 coefficient B1 */
+#define ACP10PAR_ISQ_FILTER1_B2            1045 /* (REAL) CTRL Speed: Set current filter1 coefficient B2 */
+#define ACP10PAR_ISQ_FILTER2_B2            1046 /* (REAL) CTRL Speed: Set current filter2 coefficient B2 */
+#define ACP10PAR_ISQ_FILTER3_B2            1047 /* (REAL) CTRL Speed: Set current filter3 coefficient B2 */
 #define ACP10PAR_ENCOD_TRANS_RATIO         1048 /* (REAL) Encoder1: Resolver transmission ratio */
 #define ACP10PAR_SGEN_S_SET_FRAC           1049 /* (REAL) CTRL Position controller: Input set position fractional part [Units] */
 #define ACP10PAR_CMD_SW_RESET              1050 /* (NIL) System administration: SW Reset */
@@ -876,9 +877,9 @@
 #define ACP10PAR_ISQ_RIPPLE_DAT_A_NEG      1129 /* (REAL) ISQ-Ripple compensation: Data: Amplitude for quadrant III [A] */
 #define ACP10PAR_ISQ_RIPPLE_DAT_PHI_NEG    1130 /* (REAL) ISQ-Ripple compensation: Data: Angle for quadrant III */
 #define ACP10PAR_ISQ_RIPPLE_REFSYSTEM      1131 /* (USINT) ISQ-Ripple compensation: Reference system */
-#define ACP10PAR_ISQ_RIPPLE_DAT_B          1132 /* (REAL) ISQ-Ripple compensation: Data:  Parameter B */
+#define ACP10PAR_ISQ_RIPPLE_DAT_B          1132 /* (REAL) ISQ-Ripple compensation: Data: Parameter B */
 #define ACP10PAR_ISQ_RIPPLE_POS_OFFSET     1134 /* (REAL) ISQ-Ripple compensation: Position offset [rad] */
-#define ACP10PAR_ENCOD_MODE                1135 /* (UDINT) Encoder: Mode */
+#define ACP10PAR_ENCOD_MODE                1135 /* (UDINT) Encoder1: Mode */
 #define ACP10PAR_ENCOD2_MODE               1136 /* (UDINT) Encoder2: Mode */
 #define ACP10PAR_ENCOD3_MODE               1137 /* (UDINT) Encoder3: Mode */
 #define ACP10PAR_PIDENT_ITER_CNT           1138 /* (UDINT) Parameter identification: Iteration counter */
@@ -902,7 +903,7 @@
 #define ACP10PAR_FCTRL_IM_REF_PARID        1156 /* (UINT) CTRL Flux: Parameter-ID Set magnetizing current */
 #define ACP10PAR_TEMPSENS_RESISTANCE       1157 /* (REAL) Temperature sensor: Resistance [Ohm] */
 #define ACP10PAR_TEMPSENS_PARID            1158 /* (UINT) Temperature sensor: Parameter-ID Resistance */
-#define ACP10PAR_SCTRL_SPEED_ERROR         1159 /* (REAL) CTRL Speed controller: Speed error [1/s] */
+#define ACP10PAR_SCTRL_SPEED_ERROR         1159 /* (REAL) CTRL Speed: Speed error [1/s] */
 #define ACP10PAR_POWER_STAGE_NO            1162 /* (USINT) Inverter: Number of power stages */
 #define ACP10PAR_AXLIM_DV_STOP_MODE        1163 /* (UDINT) Limit values: Speed error monitoring: Mode */
 #define ACP10PAR_PLIM_POWER_LIM            1165 /* (REAL) Power limiter: Limit value [W] */
@@ -911,7 +912,7 @@
 #define ACP10PAR_ENCOD_DIAG                1168 /* (USINT) Encoder1: Diagnosis */
 #define ACP10PAR_POWERFAIL_DETECT_RATIO    1169 /* (REAL) CTRL DC bus: Minimum-to-nominal voltage ratio */
 #define ACP10PAR_SLOT_NO                   1170 /* (USINT) Number of modul slots */
-#define ACP10PAR_EPROM_ORDERTEXT           1171 /* (STR32) Order text */
+#define ACP10PAR_EPROM_ORDERTEXT           1171 /* (STR32) EPROM: Order text */
 #define ACP10PAR_TEMP_MOTOR_MODEL_LIM      1172 /* (REAL) Motor: Temperature model: Limit temperature [°C] */
 #define ACP10PAR_ENCOD_COMP_MODE           1173 /* (UINT) Encoder1: Compensation: Mode */
 #define ACP10PAR_ENCOD_DAT_IDX             1174 /* (DINT) Encoder1: Data: Index */
@@ -925,7 +926,7 @@
 #define ACP10PAR_CYCLIC_DP_CYCLE_TIME      1183 /* (UDINT) Network coupling: Receive data point: Cycle time [us] */
 #define ACP10PAR_HOMING_RESTORE_MODE       1184 /* (UINT) Homing: Mode for saving and restoring position data */
 #define ACP10PAR_SGEN_PROF_S_SET           1186 /* (DINT) Basis movements: Profile generator set position [Units] */
-#define ACP10PAR_SGEN_PROF_VTA_SET         1187 /* (REAL) Basis-Bewegungen: Profile generator change of set position per cycle */
+#define ACP10PAR_SGEN_PROF_VTA_SET         1187 /* (REAL) Basis movements: Profile generator change of set position per cycle */
 #define ACP10PAR_HOMING_DS_BLOCK           1188 /* (REAL) Homing: Lag error for block detection [Units] */
 #define ACP10PAR_HOMING_TORQUE_LIM         1189 /* (REAL) Homing: Torque limit [Nm] */
 #define ACP10PAR_ENCOD_SSI_TRAIL_BITS      1190 /* (USINT) Encoder1: SSI Number of trailing bits */
@@ -967,15 +968,15 @@
 #define ACP10PAR_ENCOD_COMP_ID_CURR_MAX    1234 /* (REAL) Encoder1: Compensation: Maximal current for identification [A] */
 #define ACP10PAR_MTPC_ISQ_REF              1235 /* (REAL) CTRL Current: MTPC control: Torque proportional set current [A] */
 #define ACP10PAR_MTPC_ISD_REF              1236 /* (REAL) CTRL Current: MTPC control: Input direct component [A] */
-#define ACP10PAR_CMD_SCTRL_RC              1237 /* (UINT) CTRL Speed controller: Repetitive Control: Command */
-#define ACP10PAR_SCTRL_RC_T_PREDICT        1238 /* (REAL) CTRL Speed controller: Repetitive Control: Prediction time [s] */
-#define ACP10PAR_SCTRL_RC_SPEED_MIN        1239 /* (REAL) CTRL Speed controller: Repetitive Control: Minimal speed [1/s] */
-#define ACP10PAR_SCTRL_RC_FILT_CUTOFF      1240 /* (REAL) CTRL Speed controller: Repetitive Control: Cutoff frequency of filter [Hz] */
-#define ACP10PAR_SCTRL_RC_FILT_ORDER       1241 /* (USINT) CTRL Speed controller: Repetitive Control: Order of filter */
-#define ACP10PAR_SCTRL_RC_STATUS           1242 /* (USINT) CTRL Speed controller: Repetitive Control: State */
-#define ACP10PAR_SCTRL_RC_FILT_TYPE        1243 /* (USINT) CTRL Speed controller: Repetitive Control: Type of filter */
-#define ACP10PAR_SCTRL_RC_RES              1244 /* (UINT) CTRL Speed controller: Repetitive Control: Resolution */
-#define ACP10PAR_SCTRL_RC_VALUE            1245 /* (REAL) CTRL Speed controller: Repetitive Control: Output value [A] */
+#define ACP10PAR_CMD_SCTRL_RC              1237 /* (UINT) CTRL Speed: Repetitive Control: Command */
+#define ACP10PAR_SCTRL_RC_T_PREDICT        1238 /* (REAL) CTRL Speed: Repetitive Control: Prediction time [s] */
+#define ACP10PAR_SCTRL_RC_SPEED_MIN        1239 /* (REAL) CTRL Speed: Repetitive Control: Minimal speed [1/s] */
+#define ACP10PAR_SCTRL_RC_FILT_CUTOFF      1240 /* (REAL) CTRL Speed: Repetitive Control: Cutoff frequency of filter [Hz] */
+#define ACP10PAR_SCTRL_RC_FILT_ORDER       1241 /* (USINT) CTRL Speed: Repetitive Control: Order of filter */
+#define ACP10PAR_SCTRL_RC_STATUS           1242 /* (USINT) CTRL Speed: Repetitive Control: State */
+#define ACP10PAR_SCTRL_RC_FILT_TYPE        1243 /* (USINT) CTRL Speed: Repetitive Control: Type of filter */
+#define ACP10PAR_SCTRL_RC_RES              1244 /* (UINT) CTRL Speed: Repetitive Control: Resolution */
+#define ACP10PAR_SCTRL_RC_VALUE            1245 /* (REAL) CTRL Speed: Repetitive Control: Output value [A] */
 #define ACP10PAR_SCTRL_RC_PAR0             1246 /* (UDINT) CTRL Speed: Repetitive Control: Parameter 1 */
 #define ACP10PAR_SCTRL_RC_PAR1             1247 /* (UDINT) CTRL Speed: Repetitive Control: Parameter 2 */
 #define ACP10PAR_SCTRL_RC_MODE             1248 /* (UDINT) CTRL Speed: Repetitive Control: Mode */
@@ -1001,8 +1002,8 @@
 #define ACP10PAR_UDC_OFFSET                1278 /* (REAL) CTRL DC bus: Voltage offset [V] */
 #define ACP10PAR_VCTRL_I0_LIM              1279 /* (REAL) Inverter: Summation current: Limit [A] */
 #define ACP10PAR_PIDENT_THERM_TRIP_TIME    1283 /* (REAL) Parameter identification: Tripping time at thermal overload  [s] */
-#define ACP10PAR_VCTRL_RHO_ADD_PARID       1293 /* (UINT) CTRL Vector controller: Parameter ID of the additive commutation angle */
-#define ACP10PAR_VCTRL_RHO_ADD             1294 /* (REAL) CTRL Vector controller: Additive commutation angle [rad] */
+#define ACP10PAR_VCTRL_RHO_ADD_PARID       1293 /* (UINT) CTRL Vector: Parameter ID of the additive commutation angle */
+#define ACP10PAR_VCTRL_RHO_ADD             1294 /* (REAL) CTRL Vector: Additive commutation angle [rad] */
 #define ACP10PAR_OBS_VOLT_US1              1295 /* (REAL) Voltage observer: Phase voltage U [V] */
 #define ACP10PAR_OBS_VOLT_US2              1296 /* (REAL) Voltage observer: Phase voltage V [V] */
 #define ACP10PAR_OBS_VOLT_US3              1297 /* (REAL) Voltage observer: Phase voltage W [V] */
@@ -1011,9 +1012,9 @@
 #define ACP10PAR_ENCOD_OUT_OFFSET          1300 /* (DINT) Encoder1: Emulation: Offset */
 #define ACP10PAR_ENCOD2_OUT_OFFSET         1301 /* (DINT) Encoder2: Emulation: Offset */
 #define ACP10PAR_ENCOD3_OUT_OFFSET         1302 /* (DINT) Encoder3: Emulation: Offset */
-#define ACP10PAR_ENCOD_ADC1_OFFSET         1303 /* (DINT) Encoder: ADC1: Offset */
-#define ACP10PAR_ENCOD_ADC2_OFFSET         1304 /* (DINT) Encoder: ADC2: Offset */
-#define ACP10PAR_ENCOD_ADC1_GAIN           1305 /* (REAL) Encoder: ADC1: Gain */
+#define ACP10PAR_ENCOD_ADC1_OFFSET         1303 /* (DINT) Encoder1: ADC1: Offset */
+#define ACP10PAR_ENCOD_ADC2_OFFSET         1304 /* (DINT) Encoder1: ADC2: Offset */
+#define ACP10PAR_ENCOD_ADC1_GAIN           1305 /* (REAL) Encoder1: ADC1: Gain */
 #define ACP10PAR_PIDENT_S                  1306 /* (DINT) Parameter identification: Move distance [Units] */
 #define ACP10PAR_ENCOD0_POS_RANGE_LW       1308 /* (UDINT) Virtual Encoder: Range of encoder position low word [Incr] */
 #define ACP10PAR_ENCOD0_POS_RANGE_HW       1309 /* (UDINT) Virtual Encoder: Range of encoder position high word [Incr] */
@@ -1104,6 +1105,7 @@
 #define ACP10PAR_TARGET_S_ABS              1417 /* (DINT) Basis movements: Absolute target position [Units] */
 #define ACP10PAR_TARGET_S_ABS_VAX1         1418 /* (DINT) VAX Basis movements: Absolute target position [Units] */
 #define ACP10PAR_CROSSLINK_ENC1_S_ACT      1419 /* (UINT) Axis crosslink: Encoder1: Actual position */
+#define ACP10PAR_PWM_FREQBOOST_SPEED_LIM   1427 /* (REAL) PWM switching frequency boost: Speed limit [1/s] */
 #define ACP10PAR_MAINSSIM_OBS_CMD          1432 /* (UINT) Mains Simulator: Observer command */
 #define ACP10PAR_MAINSSIM_OBS_MODE         1433 /* (UINT) Mains Simulator: Observer mode */
 #define ACP10PAR_MAINSSIM_OBS_STATE        1434 /* (UINT) Mains Simulator: Observer state */
@@ -1185,13 +1187,14 @@
 #define ACP10PAR_PBC_SPEEDREF              1517 /* (REAL) Pitch error-backlash compensation: Compensation output [1/s] */
 #define ACP10PAR_UCTRL_ENABLE_THR_LO       1518 /* (REAL) CTRL DC bus: Controller: Lower enable threshold */
 #define ACP10PAR_UCTRL_ENABLE_THR_UP       1519 /* (REAL) CTRL DC bus: Controller: Upper enable threshold */
-#define ACP10PAR_ENCOD_MAX_SYNC_SPEED      1521 /* (REAL) Encoder1: Maximum speed vor serial position [1/s] */
+#define ACP10PAR_ENCOD_MAX_SYNC_SPEED      1521 /* (REAL) Encoder1: Maximum speed for serial position [1/s] */
 #define ACP10PAR_ENCOD2_DIAG2              1528 /* (REAL) Encoder2: Diagnosis 2 */
 #define ACP10PAR_ENCOD2_DIAG3              1529 /* (REAL) Encoder2: Diagnosis 3 */
 #define ACP10PAR_ENCOD3_DIAG2              1530 /* (REAL) Encoder3: Diagnosis 2 */
 #define ACP10PAR_ENCOD3_DIAG3              1531 /* (REAL) Encoder3: Diagnosis 3 */
-#define ACP10PAR_ENCOD2_MAX_SYNC_SPEED     1532 /* (REAL) Encoder2: Maximum speed vor serial position [1/s] */
-#define ACP10PAR_ENCOD3_MAX_SYNC_SPEED     1533 /* (REAL) Encoder3: Maximum speed vor serial position [1/s] */
+#define ACP10PAR_ENCOD2_MAX_SYNC_SPEED     1532 /* (REAL) Encoder2: Maximum speed for serial position [1/s] */
+#define ACP10PAR_ENCOD3_MAX_SYNC_SPEED     1533 /* (REAL) Encoder3: Maximum speed for serial position [1/s] */
+#define ACP10PAR_ENCOD_TEMP_EXT            1536 /* (REAL) Encoder1: external temperature sensor [°C] */
 #define ACP10PAR_TEMP_MODUL5               1538 /* (REAL) Power stage: Temperature sensor 5: Temperature [°C] */
 #define ACP10PAR_RECT_TEMP                 1539 /* (REAL) Power stage: Rectifier: Temperature [°C] */
 #define ACP10PAR_DCREL_TEMP                1540 /* (REAL) DC bus: Relay: Temperature [°C] */
@@ -1203,7 +1206,7 @@
 #define ACP10PAR_INVR_TPOW_PEAK_LOAD       1546 /* (REAL) Inverter: Peak total power: Load [%] */
 #define ACP10PAR_MOTOR_HWINFO_DATA         1547 /* (DATA) Motor: Data for hardware information */
 #define ACP10PAR_BASIS_TRG_STOP_S_DIFF     1549 /* (DINT) Basis movements: Target position difference for mode 'stop after trigger' [Units] */
-#define ACP10PAR_ENCOD_SUPPLY_VOLTAGE      1556 /* (REAL) Encoder1: Output voltage of the sensor supply [V] */
+#define ACP10PAR_ENCOD_SUPPLY_VOLTAGE      1556 /* (REAL) Encoder1: Output voltage of the encoder supply [V] */
 #define ACP10PAR_UCTRL_CMD                 1557 /* (UINT) CTRL DC bus: Controller: Command */
 #define ACP10PAR_INVR_TPOW                 1558 /* (REAL) Inverter: Total power [W] */
 #define ACP10PAR_INVR_TPOW_CONT_LIM        1559 /* (REAL) Inverter: Continuous total power: Limit power [W] */
@@ -1224,10 +1227,11 @@
 #define ACP10PAR_ADDRESS_MAPPER_CONFIG     1574 /* (UDINT) Address mapper: Configuration for address assignment */
 #define ACP10PAR_ADDRESS_MAPPER_INDEX      1575 /* (UDINT) Address mapper: Index of address */
 #define ACP10PAR_ENCOD2_SUPPLY_VOLTAGE     1576 /* (REAL) Encoder2: Output voltage of the encoder supply [V] */
+#define ACP10PAR_FUNCTION_BLOCK_CREATE_T   1580 /* (UINT) Function block: Create a FB instance with CTRL_CYCLE_TIME_MODE */
 #define ACP10PAR_ENCOD2_LINE_RESISTANCE    1584 /* (REAL) Encoder2: Line resistance of the encoder supply [Ohm] */
 #define ACP10PAR_FBCTRL_SPEED_KV           1585 /* (REAL) CTRL Model based: Proportional amplification for speed [As] */
 #define ACP10PAR_UFCTRL_TLIM_TN            1586 /* (REAL) CTRL U/f: Torque limiter: Integral action time [s] */
-#define ACP10PAR_VCTRL_COMMUTATION_MODE    1588 /* (UDINT) Motorgeber: Commutation mode */
+#define ACP10PAR_VCTRL_COMMUTATION_MODE    1588 /* (UDINT) Motor encoder: Commutation mode */
 #define ACP10PAR_ENCOD_DPOS_ACT            1593 /* (DINT) Encoder1: Position difference per sample [Incr] */
 #define ACP10PAR_ENCOD2_DPOS_ACT           1594 /* (DINT) Encoder2: Position difference per sample [Incr] */
 #define ACP10PAR_FFCTRL_FRICTION_C0        1595 /* (REAL) CTRL Feed forward: Friction model: Coefficient C0 */
@@ -1268,9 +1272,14 @@
 #define ACP10PAR_MOTOR_TEMPMODEL_RES3      1653 /* (REAL) Motor: Temperature model: Thermal resistance 3 [K/W] */
 #define ACP10PAR_MOTOR_TEMPMODEL_LOSS1_W   1654 /* (REAL) Motor: Winding: Speed-dependent power loss: Linear coefficient [Ws] */
 #define ACP10PAR_MOTOR_TEMPMODEL_LOSS2_W   1655 /* (REAL) Motor: Winding: Speed-dependent power loss: Quadratic coefficient [Ws²] */
+#define ACP10PAR_MA1_CYCLIC_POS_FRAC       1656 /* (REAL) Network coupling: Cyclic position fractional part master1 */
+#define ACP10PAR_MA2_CYCLIC_POS_FRAC       1657 /* (REAL) Network coupling: Cyclic position fractional part master2 */
+#define ACP10PAR_MA3_CYCLIC_POS_FRAC       1658 /* (REAL) Network coupling: Cyclic position fractional part master3 */
+#define ACP10PAR_MA4_CYCLIC_POS_FRAC       1659 /* (REAL) Network coupling: Cyclic position fractional part master4 */
+#define ACP10PAR_MA5_CYCLIC_POS_FRAC       1660 /* (REAL) Network coupling: Cyclic position fractional part master5 */
 #define ACP10PAR_PCTRL_CYC_SET_INDEX       1661 /* (UINT) CTRL Position controller: Index of parameter ID for cyclic set position */
-#define ACP10PAR_ENCOD_ERROR_TIMEOUT       1662 /* (REAL) Encoder1: Timeout for position estimation [s] */
-#define ACP10PAR_ENCOD2_ERROR_TIMEOUT      1663 /* (REAL) Encoder2: Timeout for position estimation [s] */
+#define ACP10PAR_ENCOD_ERROR_TIME          1662 /* (REAL) Encoder1: Time for error handling [s] */
+#define ACP10PAR_ENCOD2_ERROR_TIME         1663 /* (REAL) Encoder2: Time for error handling [s] */
 #define ACP10PAR_SGEN_MODE                 1664 /* (USINT) Set value generator: Mode */
 #define ACP10PAR_AXLIM_JERK                1665 /* (REAL) Limit values: Maximum jerk [Units/s³] */
 #define ACP10PAR_BASIS_MOVE_JERK           1666 /* (REAL) Basis movements: Jerk [Units/s³] */
@@ -1315,7 +1324,51 @@
 #define ACP10PAR_ENCOD_HW_SELECT           1718 /* (UDINT) Encoder1: Selection of the hardware assignment */
 #define ACP10PAR_ENCOD2_HW_SELECT          1719 /* (UDINT) Encoder2: Selection of the hardware assignment */
 #define ACP10PAR_ENCOD_LINE_RESISTANCE     1720 /* (REAL) Encoder1: Line resistance of the encoder supply [Ohm] */
-#define ACP10PAR_SCTRL_INT_SPEED           1725 /* (REAL) CTRL Speed controller: Manipulated variable of integrator [A] */
+#define ACP10PAR_SGEN_ZV_FILTER_A2         1721 /* (REAL) Set value generator: Zero vibration filter coefficient A2 */
+#define ACP10PAR_SGEN_ZV_FILTER_T2         1722 /* (REAL) Set value generator: Zero vibration filter time T2 [s] */
+#define ACP10PAR_SGEN_ZV_FILTER_A2_VAX1    1723 /* (REAL) VAX Set value generator: Zero vibration filter coefficient A2 */
+#define ACP10PAR_SGEN_ZV_FILTER_T2_VAX1    1724 /* (REAL) VAX Set value generator: Zero vibration filter time T2 [s] */
+#define ACP10PAR_SCTRL_INT_SPEED           1725 /* (REAL) CTRL Speed: Manipulated variable of integrator [A] */
+#define ACP10PAR_AXLIM_V_POS_VAX1          1737 /* (REAL) VAX Limit values: Maximum speed in positive direction [Units/s] */
+#define ACP10PAR_AXLIM_V_NEG_VAX1          1738 /* (REAL) VAX Limit values: Maximum speed in negative direction [Units/s] */
+#define ACP10PAR_AXLIM_A1_POS_VAX1         1739 /* (REAL) VAX Limit values: Maximum acceleration in positive direction [Units/s²] */
+#define ACP10PAR_AXLIM_A2_POS_VAX1         1740 /* (REAL) VAX Limit values: Maximum deceleration in positive direction [Units/s²] */
+#define ACP10PAR_AXLIM_A1_NEG_VAX1         1741 /* (REAL) VAX Limit values: Maximum acceleration in negative direction [Units/s²] */
+#define ACP10PAR_AXLIM_A2_NEG_VAX1         1742 /* (REAL) VAX Limit values: Maximum deceleration in negative direction [Units/s²] */
+#define ACP10PAR_AXLIM_POS_SW_END_VAX1     1743 /* (DINT) VAX Limit values: Positive SW end position [Units] */
+#define ACP10PAR_AXLIM_NEG_SW_END_VAX1     1744 /* (DINT) VAX Limit values: Negative SW end position [Units] */
+#define ACP10PAR_TEMP_MODUL6               1746 /* (REAL) Power stage: Temperature sensor 6: Temperature [°C] */
+#define ACP10PAR_TEMPSENS_VALUE            1747 /* (REAL) Temperature sensor: Converter value [Ohm, Inkr] */
+#define ACP10PAR_MOTOR_GEAR_VISC_FRIC      1748 /* (REAL) Motor gearbox: Viscous friction [Nms] */
+#define ACP10PAR_MOTOR_GEAR_STAT_FRIC      1749 /* (REAL) Motor gearbox: Static friction [Nm] */
+#define ACP10PAR_GEARBOX_TORQ_LIM_MODE     1750 /* (UINT) Motor gearbox: Limitation mode */
+#define ACP10PAR_ENCOD2_ERROR_MODE         1751 /* (UINT) Encoder2: Error Mode */
+#define ACP10PAR_ISQ_FILTER1_VALUE0        1752 /* (REAL) CTRL Speed: Set current filter1 value0 */
+#define ACP10PAR_ISQ_FILTER2_VALUE0        1753 /* (REAL) CTRL Speed: Set current filter2 value0 */
+#define ACP10PAR_ISQ_FILTER3_VALUE0        1754 /* (REAL) CTRL Speed: Set current filter3 value0 */
+#define ACP10PAR_SCTRL_TLIM_MODE           1755 /* (UINT) CTRL Speed: Torque limit mode */
+#define ACP10PAR_SCTRL_TLIM_POS            1756 /* (REAL) CTRL Speed: Positive torque limit [Nm] */
+#define ACP10PAR_SCTRL_TLIM_NEG            1757 /* (REAL) CTRL Speed: Negative torque limit [Nm] */
+#define ACP10PAR_SCTRL_TLIM_POS_PARID      1758 /* (UINT) CTRL Speed: Parameter-ID positive torque limit */
+#define ACP10PAR_SCTRL_TLIM_NEG_PARID      1759 /* (UINT) CTRL Speed: Parameter-ID negative torque limit */
+#define ACP10PAR_SCTRL_TLIM_STAT           1760 /* (UINT) CTRL Speed: Torque limit: Status */
+#define ACP10PAR_SCTRL_ISQ_REF_FBCTRL      1761 /* (REAL) CTRL Speed: Manipulated variable of feedback [A] */
+#define ACP10PAR_ENCOD_DATA_UI4_VAR1       1762 /* (UDINT) Encoder1: Data point variable 1 */
+#define ACP10PAR_ENCOD_DATA_UI4_VAR2       1763 /* (UDINT) Encoder1: Data point variable 2 */
+#define ACP10PAR_ENCOD_DATA_UI4_VAR3       1764 /* (UDINT) Encoder1: Data point variable 3 */
+#define ACP10PAR_ENCOD_DATA_UI4_VAR4       1765 /* (UDINT) Encoder1: Data point variable 4 */
+#define ACP10PAR_ENCOD2_DATA_UI4_VAR1      1766 /* (UDINT) Encoder2: Data point variable 1 */
+#define ACP10PAR_ENCOD2_DATA_UI4_VAR2      1767 /* (UDINT) Encoder2: Data point variable 2 */
+#define ACP10PAR_ENCOD2_DATA_UI4_VAR3      1768 /* (UDINT) Encoder2: Data point variable 3 */
+#define ACP10PAR_ENCOD2_DATA_UI4_VAR4      1769 /* (UDINT) Encoder2: Data point variable 4 */
+#define ACP10PAR_ENCOD2_TEMP_EXT           1770 /* (REAL) Encoder2: external temperature sensor [°C] */
+#define ACP10PAR_STOP_MON_FILTER_T         1771 /* (REAL) Movement stop: Monitoring: Filter time [s] */
+#define ACP10PAR_STOP_MON_V_FILTER         1772 /* (REAL) Movement stop: Monitoring: Filtered speed measurement [Units/s] */
+#define ACP10PAR_STOP_MON_A_FILTER         1773 /* (REAL) Movement stop: Monitoring: Filtered acceleration measurement [Units/s²] */
+#define ACP10PAR_TLIM_STOP_MODE            1774 /* (UINT) CTRL Torque limiter: Movement stop: Mode */
+#define ACP10PAR_TLIM_STOP_TORQUE          1775 /* (REAL) CTRL Torque limiter: Movement stop: Torque [Nm] */
+#define ACP10PAR_STOP_ERR_T_JOLT           1782 /* (REAL) Movement stop: Jolt time after drive error [s] */
+#define ACP10PAR_TCTRANS_LOCATION          1785 /* (UINT) Torque Current Transformation: Execution location in signal path */
 #define ACP10PAR_LOGIC_MODE                3072 /* (UINT) FB LOGIC: Mode */
 #define ACP10PAR_LOGIC_IN1_PARID           3080 /* (UINT) FB LOGIC: Parameter ID of input1 */
 #define ACP10PAR_LOGIC_IN2_PARID           3088 /* (UINT) FB LOGIC: Parameter ID of input2 */
@@ -1461,28 +1514,28 @@
 #define ACP10PAR_AIO_CHK                   6392 /* (UDINT) FB AIO: Checks */
 #define ACP10PAR_AIO_IN_FILTER_CONFIG      6400 /* (UDINT) FB AIO: Input: Filter: Configuration (Index) */
 #define ACP10PAR_AIO_IN_FILTER_SLEWRATE    6408 /* (REAL) FB AIO: Input: Filter: Maximal Slew Rate (Index) [V/s] */
-#define ACP10PAR_CMP_IN_PARID              6656 /* (UINT) FB CMP: parameter ID of input */
-#define ACP10PAR_CMP_THRESHOLD             6664 /* (REAL) FB CMP: threshold */
-#define ACP10PAR_CMP_WINDOW                6672 /* (REAL) FB CMP: window */
-#define ACP10PAR_CMP_HYSTERESIS            6680 /* (REAL) FB CMP: hysteresis window */
-#define ACP10PAR_CMP_MODE                  6688 /* (UINT) FB CMP: mode */
-#define ACP10PAR_CMP_VALUE                 6696 /* (USINT) FB CMP: result value */
-#define ACP10PAR_DELAY_IN_PARID            7168 /* (UINT) FB DELAY: parameter ID of input */
-#define ACP10PAR_DELAY_TIME                7176 /* (REAL) FB DELAY: time [s] */
-#define ACP10PAR_DELAY_VALUE_I4            7184 /* (DINT) FB DELAY: I4 result value */
-#define ACP10PAR_DELAY_VALUE_FRAC          7192 /* (REAL) FB DELAY: I4 result value fractional part */
-#define ACP10PAR_DELAY_VALUE_R4            7200 /* (REAL) FB DELAY: R4 result value */
-#define ACP10PAR_PID_IN_PARID              7680 /* (UINT) FB PID: parameter ID of input */
-#define ACP10PAR_PID_KP                    7688 /* (REAL) FB PID: proportional amplification factor */
-#define ACP10PAR_PID_TI                    7696 /* (REAL) FB PID: integral action time [s] */
-#define ACP10PAR_PID_I_MAX                 7704 /* (REAL) FB PID: maximum integral action */
-#define ACP10PAR_PID_TD                    7712 /* (REAL) FB PID: derivative action time [s] */
-#define ACP10PAR_PID_T1                    7720 /* (REAL) FB PID: time delay constant [s] */
-#define ACP10PAR_PID_VALUE                 7728 /* (REAL) FB PID: result value */
-#define ACP10PAR_PID_ENABLE_PARID          7736 /* (UINT) FB PID: parameter ID of enable input */
-#define ACP10PAR_PID_P_VALUE               7744 /* (REAL) FB PID: result of P part */
-#define ACP10PAR_PID_I_VALUE               7752 /* (REAL) FB PID: result of I part */
-#define ACP10PAR_PID_DT1_VALUE             7760 /* (REAL) FB PID: result of DT1 part */
+#define ACP10PAR_CMP_IN_PARID              6656 /* (UINT) FB CMP: Parameter ID of input */
+#define ACP10PAR_CMP_THRESHOLD             6664 /* (REAL) FB CMP: Threshold */
+#define ACP10PAR_CMP_WINDOW                6672 /* (REAL) FB CMP: Window */
+#define ACP10PAR_CMP_HYSTERESIS            6680 /* (REAL) FB CMP: Hysteresis window */
+#define ACP10PAR_CMP_MODE                  6688 /* (UINT) FB CMP: Mode */
+#define ACP10PAR_CMP_VALUE                 6696 /* (USINT) FB CMP: Result value */
+#define ACP10PAR_DELAY_IN_PARID            7168 /* (UINT) FB DELAY: Parameter ID of input */
+#define ACP10PAR_DELAY_TIME                7176 /* (REAL) FB DELAY: Time [s] */
+#define ACP10PAR_DELAY_VALUE_I4            7184 /* (DINT) FB DELAY: Result value I4 */
+#define ACP10PAR_DELAY_VALUE_FRAC          7192 /* (REAL) FB DELAY: Result value I4 fractional part */
+#define ACP10PAR_DELAY_VALUE_R4            7200 /* (REAL) FB DELAY: Result value R4 */
+#define ACP10PAR_PID_IN_PARID              7680 /* (UINT) FB PID: Parameter ID of input */
+#define ACP10PAR_PID_KP                    7688 /* (REAL) FB PID: Proportional amplification factor */
+#define ACP10PAR_PID_TI                    7696 /* (REAL) FB PID: Integral action time [s] */
+#define ACP10PAR_PID_I_MAX                 7704 /* (REAL) FB PID: Maximum integral action */
+#define ACP10PAR_PID_TD                    7712 /* (REAL) FB PID: Derivative action time [s] */
+#define ACP10PAR_PID_T1                    7720 /* (REAL) FB PID: Time delay constant [s] */
+#define ACP10PAR_PID_VALUE                 7728 /* (REAL) FB PID: Result value */
+#define ACP10PAR_PID_ENABLE_PARID          7736 /* (UINT) FB PID: Parameter ID of enable input */
+#define ACP10PAR_PID_P_VALUE               7744 /* (REAL) FB PID: Result of P part */
+#define ACP10PAR_PID_I_VALUE               7752 /* (REAL) FB PID: Result of I part */
+#define ACP10PAR_PID_DT1_VALUE             7760 /* (REAL) FB PID: Result of DT1 part */
 #define ACP10PAR_CURVE_MODE                8192 /* (UINT) FB CURVE: Mode */
 #define ACP10PAR_CURVE_IN_PARID            8200 /* (UINT) FB CURVE: Parameter ID of input */
 #define ACP10PAR_CURVE_AUT_DATA_INDEX      8208 /* (UINT) FB CURVE: Index of cam data */
@@ -1509,6 +1562,7 @@
 #define ACP10PAR_CURVE_COMP_RESULT         8376 /* (REAL) FB CURVE: Compensation gears command result */
 #define ACP10PAR_CURVE_X_ADD               8384 /* (DINT) FB CURVE: Additive input value */
 #define ACP10PAR_CURVE_Y_ADD               8392 /* (DINT) FB CURVE: Additive output value */
+#define ACP10PAR_CURVE_COMP_SL_JERK        8400 /* (REAL) FB CURVE: Jerk of slave axis within compensation gears [Units/s³] */
 #define ACP10PAR_IPL_MODE                  8704 /* (UINT) FB IPL: Mode */
 #define ACP10PAR_IPL_IN_PARID              8712 /* (UINT) FB IPL: Parameter ID of input */
 #define ACP10PAR_IPL_CYCLE_TIME            8720 /* (UDINT) FB IPL: Cycle time [us] */
@@ -1704,6 +1758,7 @@
 #define ACP10PAR_FILTER_VALUE_FRAC        14920 /* (REAL) FB FILTER: Result value I4 fractional part */
 #define ACP10PAR_FILTER_VALUE_R4          14928 /* (REAL) FB FILTER: Result value R4 */
 #define ACP10PAR_SHTL_INIT_POSITION_INFO  63488 /* (DINT) Parameter identification: Additional information of initial shuttle position */
+#define ACP10PAR_LLM_MAPPED_PHASES        63489 /* (UDINT) LLM: active phases mapped on axis */
 #define ACP10PAR_SHTL_INIT_POSITION_QVAL  63490 /* (REAL) Parameter identification: Quality of the initial shuttle position */
 #define ACP10PAR_UDC_MIDDLE_FILTER        63491 /* (REAL) DC-Bus: Filtered middle voltage [V] */
 #define ACP10PAR_UDC_MIDDLE_ACT           63492 /* (REAL) DC-Bus: Middle voltage [V] */
@@ -1711,149 +1766,154 @@
 #define ACP10PAR_SHTL_INIT_POSITION_IDX   63494 /* (USINT) Parameter identification: Index of the initial shuttle position */
 #define ACP10PAR_ISC_STATE                63495 /* (UDINT) Inter-segment communication: State */
 #define ACP10PAR_ISC_ERR_TOLERANCE        63496 /* (USINT) Inter-segment communication: Fault tolerance */
-#define ACP10PAR_PHASE_IS_ACT_1           63501 /* (REAL) CTRL Current controller: Actual phase current of phase 1 [A] */
-#define ACP10PAR_PHASE_IS_ACT_2           63502 /* (REAL) CTRL Current controller: Actual phase current of phase 2 [A] */
-#define ACP10PAR_PHASE_IS_ACT_3           63503 /* (REAL) CTRL Current controller: Actual phase current of phase 3 [A] */
-#define ACP10PAR_PHASE_IS_ACT_4           63504 /* (REAL) CTRL Current controller: Actual phase current of phase 4 [A] */
-#define ACP10PAR_PHASE_IS_ACT_5           63505 /* (REAL) CTRL Current controller: Actual phase current of phase 5 [A] */
-#define ACP10PAR_PHASE_IS_ACT_6           63506 /* (REAL) CTRL Current controller: Actual phase current of phase 6 [A] */
-#define ACP10PAR_PHASE_IS_ACT_7           63507 /* (REAL) CTRL Current controller: Actual phase current of phase 7 [A] */
-#define ACP10PAR_PHASE_IS_ACT_8           63508 /* (REAL) CTRL Current controller: Actual phase current of phase 8 [A] */
-#define ACP10PAR_PHASE_IS_ACT_9           63509 /* (REAL) CTRL Current controller: Actual phase current of phase 9 [A] */
-#define ACP10PAR_PHASE_IS_ACT_10          63510 /* (REAL) CTRL Current controller: Actual phase current of phase 10 [A] */
-#define ACP10PAR_PHASE_IS_ACT_11          63511 /* (REAL) CTRL Current controller: Actual phase current of phase 11 [A] */
-#define ACP10PAR_PHASE_IS_ACT_12          63512 /* (REAL) CTRL Current controller: Actual phase current of phase 12 [A] */
-#define ACP10PAR_PHASE_IS_ACT_13          63513 /* (REAL) CTRL Current controller: Actual phase current of phase 13 [A] */
-#define ACP10PAR_PHASE_IS_ACT_14          63514 /* (REAL) CTRL Current controller: Actual phase current of phase 14 [A] */
-#define ACP10PAR_PHASE_IS_ACT_15          63515 /* (REAL) CTRL Current controller: Actual phase current of phase 15 [A] */
-#define ACP10PAR_PHASE_IS_ACT_16          63516 /* (REAL) CTRL Current controller: Actual phase current of phase 16 [A] */
-#define ACP10PAR_PHASE_IS_ACT_17          63517 /* (REAL) CTRL Current controller: Actual phase current of phase 17 [A] */
-#define ACP10PAR_PHASE_IS_ACT_18          63518 /* (REAL) CTRL Current controller: Actual phase current of phase 18 [A] */
-#define ACP10PAR_PHASE_IS_ACT_19          63519 /* (REAL) CTRL Current controller: Actual phase current of phase 19 [A] */
-#define ACP10PAR_PHASE_IS_ACT_20          63520 /* (REAL) CTRL Current controller: Actual phase current of phase 20 [A] */
-#define ACP10PAR_PHASE_IS_ACT_21          63521 /* (REAL) CTRL Current controller: Actual phase current of phase 21 [A] */
-#define ACP10PAR_PHASE_IS_ACT_22          63522 /* (REAL) CTRL Current controller: Actual phase current of phase 22 [A] */
-#define ACP10PAR_PHASE_IS_ACT_23          63523 /* (REAL) CTRL Current controller: Actual phase current of phase 23 [A] */
-#define ACP10PAR_PHASE_IS_ACT_24          63524 /* (REAL) CTRL Current controller: Actual phase current of phase 24 [A] */
-#define ACP10PAR_PHASE_IS_ACT_25          63525 /* (REAL) CTRL Current controller: Actual phase current of phase 25 [A] */
-#define ACP10PAR_PHASE_IS_ACT_26          63526 /* (REAL) CTRL Current controller: Actual phase current of phase 26 [A] */
-#define ACP10PAR_PHASE_IS_ACT_27          63527 /* (REAL) CTRL Current controller: Actual phase current of phase 27 [A] */
-#define ACP10PAR_PHASE_IS_ACT_28          63528 /* (REAL) CTRL Current controller: Actual phase current of phase 28 [A] */
-#define ACP10PAR_PHASE_IS_ACT_29          63529 /* (REAL) CTRL Current controller: Actual phase current of phase 29 [A] */
-#define ACP10PAR_PHASE_IS_ACT_30          63530 /* (REAL) CTRL Current controller: Actual phase current of phase 30 [A] */
-#define ACP10PAR_PHASE_IS_ACT_31          63531 /* (REAL) CTRL Current controller: Actual phase current of phase 31 [A] */
-#define ACP10PAR_PHASE_IS_ACT_32          63532 /* (REAL) CTRL Current controller: Actual phase current of phase 32 [A] */
-#define ACP10PAR_PHASE_IS_ACT_33          63533 /* (REAL) CTRL Current controller: Actual phase current of phase 33 [A] */
-#define ACP10PAR_PHASE_IS_ACT_34          63534 /* (REAL) CTRL Current controller: Actual phase current of phase 34 [A] */
-#define ACP10PAR_PHASE_IS_ACT_35          63535 /* (REAL) CTRL Current controller: Actual phase current of phase 35 [A] */
-#define ACP10PAR_PHASE_IS_ACT_36          63536 /* (REAL) CTRL Current controller: Actual phase current of phase 36 [A] */
-#define ACP10PAR_PHASE_IS_ACT_37          63537 /* (REAL) CTRL Current controller: Actual phase current of phase 37 [A] */
-#define ACP10PAR_PHASE_IS_ACT_38          63538 /* (REAL) CTRL Current controller: Actual phase current of phase 38 [A] */
-#define ACP10PAR_PHASE_IS_ACT_39          63539 /* (REAL) CTRL Current controller: Actual phase current of phase 39 [A] */
-#define ACP10PAR_PHASE_IS_ACT_40          63540 /* (REAL) CTRL Current controller: Actual phase current of phase 40 [A] */
-#define ACP10PAR_PHASE_IS_ACT_41          63541 /* (REAL) CTRL Current controller: Actual phase current of phase 41 [A] */
-#define ACP10PAR_PHASE_IS_ACT_42          63542 /* (REAL) CTRL Current controller: Actual phase current of phase 42 [A] */
-#define ACP10PAR_PHASE_IS_ACT_43          63543 /* (REAL) CTRL Current controller: Actual phase current of phase 43 [A] */
-#define ACP10PAR_PHASE_IS_ACT_44          63544 /* (REAL) CTRL Current controller: Actual phase current of phase 44 [A] */
-#define ACP10PAR_PHASE_IS_REF_1           63551 /* (REAL) CTRL Current controller: Set phase current of phase 1 [A] */
-#define ACP10PAR_PHASE_IS_REF_2           63552 /* (REAL) CTRL Current controller: Set phase current of phase 2 [A] */
-#define ACP10PAR_PHASE_IS_REF_3           63553 /* (REAL) CTRL Current controller: Set phase current of phase 3 [A] */
-#define ACP10PAR_PHASE_IS_REF_4           63554 /* (REAL) CTRL Current controller: Set phase current of phase 4 [A] */
-#define ACP10PAR_PHASE_IS_REF_5           63555 /* (REAL) CTRL Current controller: Set phase current of phase 5 [A] */
-#define ACP10PAR_PHASE_IS_REF_6           63556 /* (REAL) CTRL Current controller: Set phase current of phase 6 [A] */
-#define ACP10PAR_PHASE_IS_REF_7           63557 /* (REAL) CTRL Current controller: Set phase current of phase 7 [A] */
-#define ACP10PAR_PHASE_IS_REF_8           63558 /* (REAL) CTRL Current controller: Set phase current of phase 8 [A] */
-#define ACP10PAR_PHASE_IS_REF_9           63559 /* (REAL) CTRL Current controller: Set phase current of phase 9 [A] */
-#define ACP10PAR_PHASE_IS_REF_10          63560 /* (REAL) CTRL Current controller: Set phase current of phase 10 [A] */
-#define ACP10PAR_PHASE_IS_REF_11          63561 /* (REAL) CTRL Current controller: Set phase current of phase 11 [A] */
-#define ACP10PAR_PHASE_IS_REF_12          63562 /* (REAL) CTRL Current controller: Set phase current of phase 12 [A] */
-#define ACP10PAR_PHASE_IS_REF_13          63563 /* (REAL) CTRL Current controller: Set phase current of phase 13 [A] */
-#define ACP10PAR_PHASE_IS_REF_14          63564 /* (REAL) CTRL Current controller: Set phase current of phase 14 [A] */
-#define ACP10PAR_PHASE_IS_REF_15          63565 /* (REAL) CTRL Current controller: Set phase current of phase 15 [A] */
-#define ACP10PAR_PHASE_IS_REF_16          63566 /* (REAL) CTRL Current controller: Set phase current of phase 16 [A] */
-#define ACP10PAR_PHASE_IS_REF_17          63567 /* (REAL) CTRL Current controller: Set phase current of phase 17 [A] */
-#define ACP10PAR_PHASE_IS_REF_18          63568 /* (REAL) CTRL Current controller: Set phase current of phase 18 [A] */
-#define ACP10PAR_PHASE_IS_REF_19          63569 /* (REAL) CTRL Current controller: Set phase current of phase 19 [A] */
-#define ACP10PAR_PHASE_IS_REF_20          63570 /* (REAL) CTRL Current controller: Set phase current of phase 20 [A] */
-#define ACP10PAR_PHASE_IS_REF_21          63571 /* (REAL) CTRL Current controller: Set phase current of phase 21 [A] */
-#define ACP10PAR_PHASE_IS_REF_22          63572 /* (REAL) CTRL Current controller: Set phase current of phase 22 [A] */
-#define ACP10PAR_PHASE_IS_REF_23          63573 /* (REAL) CTRL Current controller: Set phase current of phase 23 [A] */
-#define ACP10PAR_PHASE_IS_REF_24          63574 /* (REAL) CTRL Current controller: Set phase current of phase 24 [A] */
-#define ACP10PAR_PHASE_IS_REF_25          63575 /* (REAL) CTRL Current controller: Set phase current of phase 25 [A] */
-#define ACP10PAR_PHASE_IS_REF_26          63576 /* (REAL) CTRL Current controller: Set phase current of phase 26 [A] */
-#define ACP10PAR_PHASE_IS_REF_27          63577 /* (REAL) CTRL Current controller: Set phase current of phase 27 [A] */
-#define ACP10PAR_PHASE_IS_REF_28          63578 /* (REAL) CTRL Current controller: Set phase current of phase 28 [A] */
-#define ACP10PAR_PHASE_IS_REF_29          63579 /* (REAL) CTRL Current controller: Set phase current of phase 29 [A] */
-#define ACP10PAR_PHASE_IS_REF_30          63580 /* (REAL) CTRL Current controller: Set phase current of phase 30 [A] */
-#define ACP10PAR_PHASE_IS_REF_31          63581 /* (REAL) CTRL Current controller: Set phase current of phase 31 [A] */
-#define ACP10PAR_PHASE_IS_REF_32          63582 /* (REAL) CTRL Current controller: Set phase current of phase 32 [A] */
-#define ACP10PAR_PHASE_IS_REF_33          63583 /* (REAL) CTRL Current controller: Set phase current of phase 33 [A] */
-#define ACP10PAR_PHASE_IS_REF_34          63584 /* (REAL) CTRL Current controller: Set phase current of phase 34 [A] */
-#define ACP10PAR_PHASE_IS_REF_35          63585 /* (REAL) CTRL Current controller: Set phase current of phase 35 [A] */
-#define ACP10PAR_PHASE_IS_REF_36          63586 /* (REAL) CTRL Current controller: Set phase current of phase 36 [A] */
-#define ACP10PAR_PHASE_IS_REF_37          63587 /* (REAL) CTRL Current controller: Set phase current of phase 37 [A] */
-#define ACP10PAR_PHASE_IS_REF_38          63588 /* (REAL) CTRL Current controller: Set phase current of phase 38 [A] */
-#define ACP10PAR_PHASE_IS_REF_39          63589 /* (REAL) CTRL Current controller: Set phase current of phase 39 [A] */
-#define ACP10PAR_PHASE_IS_REF_40          63590 /* (REAL) CTRL Current controller: Set phase current of phase 40 [A] */
-#define ACP10PAR_PHASE_IS_REF_41          63591 /* (REAL) CTRL Current controller: Set phase current of phase 41 [A] */
-#define ACP10PAR_PHASE_IS_REF_42          63592 /* (REAL) CTRL Current controller: Set phase current of phase 42 [A] */
-#define ACP10PAR_PHASE_IS_REF_43          63593 /* (REAL) CTRL Current controller: Set phase current of phase 43 [A] */
-#define ACP10PAR_PHASE_IS_REF_44          63594 /* (REAL) CTRL Current controller: Set phase current of phase 44 [A] */
-#define ACP10PAR_PHASE_US_REF_1           63601 /* (REAL) CTRL Current controller: Set phase voltage of phase 1 [V] */
-#define ACP10PAR_PHASE_US_REF_2           63602 /* (REAL) CTRL Current controller: Set phase voltage of phase 2 [V] */
-#define ACP10PAR_PHASE_US_REF_3           63603 /* (REAL) CTRL Current controller: Set phase voltage of phase 3 [V] */
-#define ACP10PAR_PHASE_US_REF_4           63604 /* (REAL) CTRL Current controller: Set phase voltage of phase 4 [V] */
-#define ACP10PAR_PHASE_US_REF_5           63605 /* (REAL) CTRL Current controller: Set phase voltage of phase 5 [V] */
-#define ACP10PAR_PHASE_US_REF_6           63606 /* (REAL) CTRL Current controller: Set phase voltage of phase 6 [V] */
-#define ACP10PAR_PHASE_US_REF_7           63607 /* (REAL) CTRL Current controller: Set phase voltage of phase 7 [V] */
-#define ACP10PAR_PHASE_US_REF_8           63608 /* (REAL) CTRL Current controller: Set phase voltage of phase 8 [V] */
-#define ACP10PAR_PHASE_US_REF_9           63609 /* (REAL) CTRL Current controller: Set phase voltage of phase 9 [V] */
-#define ACP10PAR_PHASE_US_REF_10          63610 /* (REAL) CTRL Current controller: Set phase voltage of phase 10 [V] */
-#define ACP10PAR_PHASE_US_REF_11          63611 /* (REAL) CTRL Current controller: Set phase voltage of phase 11 [V] */
-#define ACP10PAR_PHASE_US_REF_12          63612 /* (REAL) CTRL Current controller: Set phase voltage of phase 12 [V] */
-#define ACP10PAR_PHASE_US_REF_13          63613 /* (REAL) CTRL Current controller: Set phase voltage of phase 13 [V] */
-#define ACP10PAR_PHASE_US_REF_14          63614 /* (REAL) CTRL Current controller: Set phase voltage of phase 14 [V] */
-#define ACP10PAR_PHASE_US_REF_15          63615 /* (REAL) CTRL Current controller: Set phase voltage of phase 15 [V] */
-#define ACP10PAR_PHASE_US_REF_16          63616 /* (REAL) CTRL Current controller: Set phase voltage of phase 16 [V] */
-#define ACP10PAR_PHASE_US_REF_17          63617 /* (REAL) CTRL Current controller: Set phase voltage of phase 17 [V] */
-#define ACP10PAR_PHASE_US_REF_18          63618 /* (REAL) CTRL Current controller: Set phase voltage of phase 18 [V] */
-#define ACP10PAR_PHASE_US_REF_19          63619 /* (REAL) CTRL Current controller: Set phase voltage of phase 19 [V] */
-#define ACP10PAR_PHASE_US_REF_20          63620 /* (REAL) CTRL Current controller: Set phase voltage of phase 20 [V] */
-#define ACP10PAR_PHASE_US_REF_21          63621 /* (REAL) CTRL Current controller: Set phase voltage of phase 21 [V] */
-#define ACP10PAR_PHASE_US_REF_22          63622 /* (REAL) CTRL Current controller: Set phase voltage of phase 22 [V] */
-#define ACP10PAR_PHASE_US_REF_23          63623 /* (REAL) CTRL Current controller: Set phase voltage of phase 23 [V] */
-#define ACP10PAR_PHASE_US_REF_24          63624 /* (REAL) CTRL Current controller: Set phase voltage of phase 24 [V] */
-#define ACP10PAR_PHASE_US_REF_25          63625 /* (REAL) CTRL Current controller: Set phase voltage of phase 25 [V] */
-#define ACP10PAR_PHASE_US_REF_26          63626 /* (REAL) CTRL Current controller: Set phase voltage of phase 26 [V] */
-#define ACP10PAR_PHASE_US_REF_27          63627 /* (REAL) CTRL Current controller: Set phase voltage of phase 27 [V] */
-#define ACP10PAR_PHASE_US_REF_28          63628 /* (REAL) CTRL Current controller: Set phase voltage of phase 28 [V] */
-#define ACP10PAR_PHASE_US_REF_29          63629 /* (REAL) CTRL Current controller: Set phase voltage of phase 29 [V] */
-#define ACP10PAR_PHASE_US_REF_30          63630 /* (REAL) CTRL Current controller: Set phase voltage of phase 30 [V] */
-#define ACP10PAR_PHASE_US_REF_31          63631 /* (REAL) CTRL Current controller: Set phase voltage of phase 31 [V] */
-#define ACP10PAR_PHASE_US_REF_32          63632 /* (REAL) CTRL Current controller: Set phase voltage of phase 32 [V] */
-#define ACP10PAR_PHASE_US_REF_33          63633 /* (REAL) CTRL Current controller: Set phase voltage of phase 33 [V] */
-#define ACP10PAR_PHASE_US_REF_34          63634 /* (REAL) CTRL Current controller: Set phase voltage of phase 34 [V] */
-#define ACP10PAR_PHASE_US_REF_35          63635 /* (REAL) CTRL Current controller: Set phase voltage of phase 35 [V] */
-#define ACP10PAR_PHASE_US_REF_36          63636 /* (REAL) CTRL Current controller: Set phase voltage of phase 36 [V] */
-#define ACP10PAR_PHASE_US_REF_37          63637 /* (REAL) CTRL Current controller: Set phase voltage of phase 37 [V] */
-#define ACP10PAR_PHASE_US_REF_38          63638 /* (REAL) CTRL Current controller: Set phase voltage of phase 38 [V] */
-#define ACP10PAR_PHASE_US_REF_39          63639 /* (REAL) CTRL Current controller: Set phase voltage of phase 39 [V] */
-#define ACP10PAR_PHASE_US_REF_40          63640 /* (REAL) CTRL Current controller: Set phase voltage of phase 40 [V] */
-#define ACP10PAR_PHASE_US_REF_41          63641 /* (REAL) CTRL Current controller: Set phase voltage of phase 41 [V] */
-#define ACP10PAR_PHASE_US_REF_42          63642 /* (REAL) CTRL Current controller: Set phase voltage of phase 42 [V] */
-#define ACP10PAR_PHASE_US_REF_43          63643 /* (REAL) CTRL Current controller: Set phase voltage of phase 43 [V] */
-#define ACP10PAR_PHASE_US_REF_44          63644 /* (REAL) CTRL Current controller: Set phase voltage of phase 44 [V] */
+#define ACP10PAR_ISC_STATUS_INTERNAL      63498 /* (UDINT) ISC: internal status */
+#define ACP10PAR_ISC_ERR_CNT_LOW          63499 /* (UDINT) ISC: error counter low-Side */
+#define ACP10PAR_ISC_ERR_CNT_HIGH         63500 /* (UDINT) ISC: error counter high-Side */
+#define ACP10PAR_PHASE_IS_ACT_1           63501 /* (REAL) CTRL Current: Actual phase current of phase 1 [A] */
+#define ACP10PAR_PHASE_IS_ACT_2           63502 /* (REAL) CTRL Current: Actual phase current of phase 2 [A] */
+#define ACP10PAR_PHASE_IS_ACT_3           63503 /* (REAL) CTRL Current: Actual phase current of phase 3 [A] */
+#define ACP10PAR_PHASE_IS_ACT_4           63504 /* (REAL) CTRL Current: Actual phase current of phase 4 [A] */
+#define ACP10PAR_PHASE_IS_ACT_5           63505 /* (REAL) CTRL Current: Actual phase current of phase 5 [A] */
+#define ACP10PAR_PHASE_IS_ACT_6           63506 /* (REAL) CTRL Current: Actual phase current of phase 6 [A] */
+#define ACP10PAR_PHASE_IS_ACT_7           63507 /* (REAL) CTRL Current: Actual phase current of phase 7 [A] */
+#define ACP10PAR_PHASE_IS_ACT_8           63508 /* (REAL) CTRL Current: Actual phase current of phase 8 [A] */
+#define ACP10PAR_PHASE_IS_ACT_9           63509 /* (REAL) CTRL Current: Actual phase current of phase 9 [A] */
+#define ACP10PAR_PHASE_IS_ACT_10          63510 /* (REAL) CTRL Current: Actual phase current of phase 10 [A] */
+#define ACP10PAR_PHASE_IS_ACT_11          63511 /* (REAL) CTRL Current: Actual phase current of phase 11 [A] */
+#define ACP10PAR_PHASE_IS_ACT_12          63512 /* (REAL) CTRL Current: Actual phase current of phase 12 [A] */
+#define ACP10PAR_PHASE_IS_ACT_13          63513 /* (REAL) CTRL Current: Actual phase current of phase 13 [A] */
+#define ACP10PAR_PHASE_IS_ACT_14          63514 /* (REAL) CTRL Current: Actual phase current of phase 14 [A] */
+#define ACP10PAR_PHASE_IS_ACT_15          63515 /* (REAL) CTRL Current: Actual phase current of phase 15 [A] */
+#define ACP10PAR_PHASE_IS_ACT_16          63516 /* (REAL) CTRL Current: Actual phase current of phase 16 [A] */
+#define ACP10PAR_PHASE_IS_ACT_17          63517 /* (REAL) CTRL Current: Actual phase current of phase 17 [A] */
+#define ACP10PAR_PHASE_IS_ACT_18          63518 /* (REAL) CTRL Current: Actual phase current of phase 18 [A] */
+#define ACP10PAR_PHASE_IS_ACT_19          63519 /* (REAL) CTRL Current: Actual phase current of phase 19 [A] */
+#define ACP10PAR_PHASE_IS_ACT_20          63520 /* (REAL) CTRL Current: Actual phase current of phase 20 [A] */
+#define ACP10PAR_PHASE_IS_ACT_21          63521 /* (REAL) CTRL Current: Actual phase current of phase 21 [A] */
+#define ACP10PAR_PHASE_IS_ACT_22          63522 /* (REAL) CTRL Current: Actual phase current of phase 22 [A] */
+#define ACP10PAR_PHASE_IS_ACT_23          63523 /* (REAL) CTRL Current: Actual phase current of phase 23 [A] */
+#define ACP10PAR_PHASE_IS_ACT_24          63524 /* (REAL) CTRL Current: Actual phase current of phase 24 [A] */
+#define ACP10PAR_PHASE_IS_ACT_25          63525 /* (REAL) CTRL Current: Actual phase current of phase 25 [A] */
+#define ACP10PAR_PHASE_IS_ACT_26          63526 /* (REAL) CTRL Current: Actual phase current of phase 26 [A] */
+#define ACP10PAR_PHASE_IS_ACT_27          63527 /* (REAL) CTRL Current: Actual phase current of phase 27 [A] */
+#define ACP10PAR_PHASE_IS_ACT_28          63528 /* (REAL) CTRL Current: Actual phase current of phase 28 [A] */
+#define ACP10PAR_PHASE_IS_ACT_29          63529 /* (REAL) CTRL Current: Actual phase current of phase 29 [A] */
+#define ACP10PAR_PHASE_IS_ACT_30          63530 /* (REAL) CTRL Current: Actual phase current of phase 30 [A] */
+#define ACP10PAR_PHASE_IS_ACT_31          63531 /* (REAL) CTRL Current: Actual phase current of phase 31 [A] */
+#define ACP10PAR_PHASE_IS_ACT_32          63532 /* (REAL) CTRL Current: Actual phase current of phase 32 [A] */
+#define ACP10PAR_PHASE_IS_ACT_33          63533 /* (REAL) CTRL Current: Actual phase current of phase 33 [A] */
+#define ACP10PAR_PHASE_IS_ACT_34          63534 /* (REAL) CTRL Current: Actual phase current of phase 34 [A] */
+#define ACP10PAR_PHASE_IS_ACT_35          63535 /* (REAL) CTRL Current: Actual phase current of phase 35 [A] */
+#define ACP10PAR_PHASE_IS_ACT_36          63536 /* (REAL) CTRL Current: Actual phase current of phase 36 [A] */
+#define ACP10PAR_PHASE_IS_ACT_37          63537 /* (REAL) CTRL Current: Actual phase current of phase 37 [A] */
+#define ACP10PAR_PHASE_IS_ACT_38          63538 /* (REAL) CTRL Current: Actual phase current of phase 38 [A] */
+#define ACP10PAR_PHASE_IS_ACT_39          63539 /* (REAL) CTRL Current: Actual phase current of phase 39 [A] */
+#define ACP10PAR_PHASE_IS_ACT_40          63540 /* (REAL) CTRL Current: Actual phase current of phase 40 [A] */
+#define ACP10PAR_PHASE_IS_ACT_41          63541 /* (REAL) CTRL Current: Actual phase current of phase 41 [A] */
+#define ACP10PAR_PHASE_IS_ACT_42          63542 /* (REAL) CTRL Current: Actual phase current of phase 42 [A] */
+#define ACP10PAR_PHASE_IS_ACT_43          63543 /* (REAL) CTRL Current: Actual phase current of phase 43 [A] */
+#define ACP10PAR_PHASE_IS_ACT_44          63544 /* (REAL) CTRL Current: Actual phase current of phase 44 [A] */
+#define ACP10PAR_PHASE_IS_REF_1           63551 /* (REAL) CTRL Current: Set phase current of phase 1 [A] */
+#define ACP10PAR_PHASE_IS_REF_2           63552 /* (REAL) CTRL Current: Set phase current of phase 2 [A] */
+#define ACP10PAR_PHASE_IS_REF_3           63553 /* (REAL) CTRL Current: Set phase current of phase 3 [A] */
+#define ACP10PAR_PHASE_IS_REF_4           63554 /* (REAL) CTRL Current: Set phase current of phase 4 [A] */
+#define ACP10PAR_PHASE_IS_REF_5           63555 /* (REAL) CTRL Current: Set phase current of phase 5 [A] */
+#define ACP10PAR_PHASE_IS_REF_6           63556 /* (REAL) CTRL Current: Set phase current of phase 6 [A] */
+#define ACP10PAR_PHASE_IS_REF_7           63557 /* (REAL) CTRL Current: Set phase current of phase 7 [A] */
+#define ACP10PAR_PHASE_IS_REF_8           63558 /* (REAL) CTRL Current: Set phase current of phase 8 [A] */
+#define ACP10PAR_PHASE_IS_REF_9           63559 /* (REAL) CTRL Current: Set phase current of phase 9 [A] */
+#define ACP10PAR_PHASE_IS_REF_10          63560 /* (REAL) CTRL Current: Set phase current of phase 10 [A] */
+#define ACP10PAR_PHASE_IS_REF_11          63561 /* (REAL) CTRL Current: Set phase current of phase 11 [A] */
+#define ACP10PAR_PHASE_IS_REF_12          63562 /* (REAL) CTRL Current: Set phase current of phase 12 [A] */
+#define ACP10PAR_PHASE_IS_REF_13          63563 /* (REAL) CTRL Current: Set phase current of phase 13 [A] */
+#define ACP10PAR_PHASE_IS_REF_14          63564 /* (REAL) CTRL Current: Set phase current of phase 14 [A] */
+#define ACP10PAR_PHASE_IS_REF_15          63565 /* (REAL) CTRL Current: Set phase current of phase 15 [A] */
+#define ACP10PAR_PHASE_IS_REF_16          63566 /* (REAL) CTRL Current: Set phase current of phase 16 [A] */
+#define ACP10PAR_PHASE_IS_REF_17          63567 /* (REAL) CTRL Current: Set phase current of phase 17 [A] */
+#define ACP10PAR_PHASE_IS_REF_18          63568 /* (REAL) CTRL Current: Set phase current of phase 18 [A] */
+#define ACP10PAR_PHASE_IS_REF_19          63569 /* (REAL) CTRL Current: Set phase current of phase 19 [A] */
+#define ACP10PAR_PHASE_IS_REF_20          63570 /* (REAL) CTRL Current: Set phase current of phase 20 [A] */
+#define ACP10PAR_PHASE_IS_REF_21          63571 /* (REAL) CTRL Current: Set phase current of phase 21 [A] */
+#define ACP10PAR_PHASE_IS_REF_22          63572 /* (REAL) CTRL Current: Set phase current of phase 22 [A] */
+#define ACP10PAR_PHASE_IS_REF_23          63573 /* (REAL) CTRL Current: Set phase current of phase 23 [A] */
+#define ACP10PAR_PHASE_IS_REF_24          63574 /* (REAL) CTRL Current: Set phase current of phase 24 [A] */
+#define ACP10PAR_PHASE_IS_REF_25          63575 /* (REAL) CTRL Current: Set phase current of phase 25 [A] */
+#define ACP10PAR_PHASE_IS_REF_26          63576 /* (REAL) CTRL Current: Set phase current of phase 26 [A] */
+#define ACP10PAR_PHASE_IS_REF_27          63577 /* (REAL) CTRL Current: Set phase current of phase 27 [A] */
+#define ACP10PAR_PHASE_IS_REF_28          63578 /* (REAL) CTRL Current: Set phase current of phase 28 [A] */
+#define ACP10PAR_PHASE_IS_REF_29          63579 /* (REAL) CTRL Current: Set phase current of phase 29 [A] */
+#define ACP10PAR_PHASE_IS_REF_30          63580 /* (REAL) CTRL Current: Set phase current of phase 30 [A] */
+#define ACP10PAR_PHASE_IS_REF_31          63581 /* (REAL) CTRL Current: Set phase current of phase 31 [A] */
+#define ACP10PAR_PHASE_IS_REF_32          63582 /* (REAL) CTRL Current: Set phase current of phase 32 [A] */
+#define ACP10PAR_PHASE_IS_REF_33          63583 /* (REAL) CTRL Current: Set phase current of phase 33 [A] */
+#define ACP10PAR_PHASE_IS_REF_34          63584 /* (REAL) CTRL Current: Set phase current of phase 34 [A] */
+#define ACP10PAR_PHASE_IS_REF_35          63585 /* (REAL) CTRL Current: Set phase current of phase 35 [A] */
+#define ACP10PAR_PHASE_IS_REF_36          63586 /* (REAL) CTRL Current: Set phase current of phase 36 [A] */
+#define ACP10PAR_PHASE_IS_REF_37          63587 /* (REAL) CTRL Current: Set phase current of phase 37 [A] */
+#define ACP10PAR_PHASE_IS_REF_38          63588 /* (REAL) CTRL Current: Set phase current of phase 38 [A] */
+#define ACP10PAR_PHASE_IS_REF_39          63589 /* (REAL) CTRL Current: Set phase current of phase 39 [A] */
+#define ACP10PAR_PHASE_IS_REF_40          63590 /* (REAL) CTRL Current: Set phase current of phase 40 [A] */
+#define ACP10PAR_PHASE_IS_REF_41          63591 /* (REAL) CTRL Current: Set phase current of phase 41 [A] */
+#define ACP10PAR_PHASE_IS_REF_42          63592 /* (REAL) CTRL Current: Set phase current of phase 42 [A] */
+#define ACP10PAR_PHASE_IS_REF_43          63593 /* (REAL) CTRL Current: Set phase current of phase 43 [A] */
+#define ACP10PAR_PHASE_IS_REF_44          63594 /* (REAL) CTRL Current: Set phase current of phase 44 [A] */
+#define ACP10PAR_PHASE_US_REF_1           63601 /* (REAL) CTRL Current: Set phase voltage of phase 1 [V] */
+#define ACP10PAR_PHASE_US_REF_2           63602 /* (REAL) CTRL Current: Set phase voltage of phase 2 [V] */
+#define ACP10PAR_PHASE_US_REF_3           63603 /* (REAL) CTRL Current: Set phase voltage of phase 3 [V] */
+#define ACP10PAR_PHASE_US_REF_4           63604 /* (REAL) CTRL Current: Set phase voltage of phase 4 [V] */
+#define ACP10PAR_PHASE_US_REF_5           63605 /* (REAL) CTRL Current: Set phase voltage of phase 5 [V] */
+#define ACP10PAR_PHASE_US_REF_6           63606 /* (REAL) CTRL Current: Set phase voltage of phase 6 [V] */
+#define ACP10PAR_PHASE_US_REF_7           63607 /* (REAL) CTRL Current: Set phase voltage of phase 7 [V] */
+#define ACP10PAR_PHASE_US_REF_8           63608 /* (REAL) CTRL Current: Set phase voltage of phase 8 [V] */
+#define ACP10PAR_PHASE_US_REF_9           63609 /* (REAL) CTRL Current: Set phase voltage of phase 9 [V] */
+#define ACP10PAR_PHASE_US_REF_10          63610 /* (REAL) CTRL Current: Set phase voltage of phase 10 [V] */
+#define ACP10PAR_PHASE_US_REF_11          63611 /* (REAL) CTRL Current: Set phase voltage of phase 11 [V] */
+#define ACP10PAR_PHASE_US_REF_12          63612 /* (REAL) CTRL Current: Set phase voltage of phase 12 [V] */
+#define ACP10PAR_PHASE_US_REF_13          63613 /* (REAL) CTRL Current: Set phase voltage of phase 13 [V] */
+#define ACP10PAR_PHASE_US_REF_14          63614 /* (REAL) CTRL Current: Set phase voltage of phase 14 [V] */
+#define ACP10PAR_PHASE_US_REF_15          63615 /* (REAL) CTRL Current: Set phase voltage of phase 15 [V] */
+#define ACP10PAR_PHASE_US_REF_16          63616 /* (REAL) CTRL Current: Set phase voltage of phase 16 [V] */
+#define ACP10PAR_PHASE_US_REF_17          63617 /* (REAL) CTRL Current: Set phase voltage of phase 17 [V] */
+#define ACP10PAR_PHASE_US_REF_18          63618 /* (REAL) CTRL Current: Set phase voltage of phase 18 [V] */
+#define ACP10PAR_PHASE_US_REF_19          63619 /* (REAL) CTRL Current: Set phase voltage of phase 19 [V] */
+#define ACP10PAR_PHASE_US_REF_20          63620 /* (REAL) CTRL Current: Set phase voltage of phase 20 [V] */
+#define ACP10PAR_PHASE_US_REF_21          63621 /* (REAL) CTRL Current: Set phase voltage of phase 21 [V] */
+#define ACP10PAR_PHASE_US_REF_22          63622 /* (REAL) CTRL Current: Set phase voltage of phase 22 [V] */
+#define ACP10PAR_PHASE_US_REF_23          63623 /* (REAL) CTRL Current: Set phase voltage of phase 23 [V] */
+#define ACP10PAR_PHASE_US_REF_24          63624 /* (REAL) CTRL Current: Set phase voltage of phase 24 [V] */
+#define ACP10PAR_PHASE_US_REF_25          63625 /* (REAL) CTRL Current: Set phase voltage of phase 25 [V] */
+#define ACP10PAR_PHASE_US_REF_26          63626 /* (REAL) CTRL Current: Set phase voltage of phase 26 [V] */
+#define ACP10PAR_PHASE_US_REF_27          63627 /* (REAL) CTRL Current: Set phase voltage of phase 27 [V] */
+#define ACP10PAR_PHASE_US_REF_28          63628 /* (REAL) CTRL Current: Set phase voltage of phase 28 [V] */
+#define ACP10PAR_PHASE_US_REF_29          63629 /* (REAL) CTRL Current: Set phase voltage of phase 29 [V] */
+#define ACP10PAR_PHASE_US_REF_30          63630 /* (REAL) CTRL Current: Set phase voltage of phase 30 [V] */
+#define ACP10PAR_PHASE_US_REF_31          63631 /* (REAL) CTRL Current: Set phase voltage of phase 31 [V] */
+#define ACP10PAR_PHASE_US_REF_32          63632 /* (REAL) CTRL Current: Set phase voltage of phase 32 [V] */
+#define ACP10PAR_PHASE_US_REF_33          63633 /* (REAL) CTRL Current: Set phase voltage of phase 33 [V] */
+#define ACP10PAR_PHASE_US_REF_34          63634 /* (REAL) CTRL Current: Set phase voltage of phase 34 [V] */
+#define ACP10PAR_PHASE_US_REF_35          63635 /* (REAL) CTRL Current: Set phase voltage of phase 35 [V] */
+#define ACP10PAR_PHASE_US_REF_36          63636 /* (REAL) CTRL Current: Set phase voltage of phase 36 [V] */
+#define ACP10PAR_PHASE_US_REF_37          63637 /* (REAL) CTRL Current: Set phase voltage of phase 37 [V] */
+#define ACP10PAR_PHASE_US_REF_38          63638 /* (REAL) CTRL Current: Set phase voltage of phase 38 [V] */
+#define ACP10PAR_PHASE_US_REF_39          63639 /* (REAL) CTRL Current: Set phase voltage of phase 39 [V] */
+#define ACP10PAR_PHASE_US_REF_40          63640 /* (REAL) CTRL Current: Set phase voltage of phase 40 [V] */
+#define ACP10PAR_PHASE_US_REF_41          63641 /* (REAL) CTRL Current: Set phase voltage of phase 41 [V] */
+#define ACP10PAR_PHASE_US_REF_42          63642 /* (REAL) CTRL Current: Set phase voltage of phase 42 [V] */
+#define ACP10PAR_PHASE_US_REF_43          63643 /* (REAL) CTRL Current: Set phase voltage of phase 43 [V] */
+#define ACP10PAR_PHASE_US_REF_44          63644 /* (REAL) CTRL Current: Set phase voltage of phase 44 [V] */
 #define ACP10PAR_TEMP_POWERSTAGE_SENS3    63645 /* (REAL) Temperature sensor: Temperature 3 [°C] */
 #define ACP10PAR_TEMP_POWERSTAGE_SENS4    63646 /* (REAL) Temperature sensor: Temperature 4 [°C] */
 #define ACP10PAR_TEMP_POWERSTAGE_AIR      63647 /* (REAL) Temperature sensor: Powerstage air [°C] */
 #define ACP10PAR_TEMP_POWERSTAGE_BAL      63648 /* (REAL) Temperature sensor: Powerstage balancer [°C] */
-#define ACP10PAR_LLM_SCTRL_SPEED_REF      63665 /* (REAL) CTRL Speed controller: Shuttle set speed [m/s] */
-#define ACP10PAR_LLM_SCTRL_SPEED_ACT      63666 /* (REAL) CTRL Speed controller: Shuttle actual speed [m/s] */
-#define ACP10PAR_LLM_SCTRL_KV             63667 /* (REAL) CTRL Speed controller: Proportional amplification [As/m] */
-#define ACP10PAR_LLM_SCTRL_TN             63668 /* (REAL) CTRL Speed controller: Integral action time [s] */
-#define ACP10PAR_LLM_SCTRL_SPEED_REF_SUM  63669 /* (REAL) CTRL Speed controller: Sum of the set speeds [m/s] */
-#define ACP10PAR_LLM_SCTRL_SPEED_ERROR    63670 /* (REAL) CTRL Speed controller: Speed error [m/s] */
-#define ACP10PAR_LLM_SCTRL_THR_FORCE_REF  63671 /* (REAL) CTRL Speed controller: Reference value of thrust force [N] */
+#define ACP10PAR_ENCOD0_POSITION          63650 /* (LREAL) Virtual Encoder: Actual position [m] */
+#define ACP10PAR_ENCOD0_D_POS             63651 /* (DINT) Virtual Encoder: Position difference per sample [Incr] */
+#define ACP10PAR_LLM_SCTRL_SPEED_REF      63665 /* (REAL) CTRL Speed: Shuttle set speed [m/s] */
+#define ACP10PAR_LLM_SCTRL_SPEED_ACT      63666 /* (REAL) CTRL Speed: Shuttle actual speed [m/s] */
+#define ACP10PAR_LLM_SCTRL_KV             63667 /* (REAL) CTRL Speed: Proportional amplification [Ns/m] */
+#define ACP10PAR_LLM_SCTRL_TN             63668 /* (REAL) CTRL Speed: Integral action time [s] */
+#define ACP10PAR_LLM_SCTRL_SPEED_REF_SUM  63669 /* (REAL) CTRL Speed: Sum of the set speeds [m/s] */
+#define ACP10PAR_LLM_SCTRL_SPEED_ERROR    63670 /* (REAL) CTRL Speed: Speed error [m/s] */
+#define ACP10PAR_LLM_SCTRL_THR_FORCE_REF  63671 /* (REAL) CTRL Speed: Reference value of thrust force [N] */
 #define ACP10PAR_TEMP_POWERSTAGE_SENS5    63673 /* (REAL) Temperature sensor: Temperature 5 [°C] */
 #define ACP10PAR_TEMP_POWERSTAGE_SENS6    63674 /* (REAL) Temperature sensor: Temperature 6 [°C] */
 #define ACP10PAR_TEMP_POWERSTAGE_SENS7    63675 /* (REAL) Temperature sensor: Temperature 7 [°C] */
@@ -1869,7 +1929,34 @@
 #define ACP10PAR_MOT_TEMPMODEL_TEMP_WRN   63692 /* (REAL) Motor: Temperature model: warning limit [°C] */
 #define ACP10PAR_MOT_TEMPMODEL_COIL_IDX   63693 /* (USINT) Motor: Temperature model: Coil index (0-based) */
 #define ACP10PAR_MOT_TEMPMODEL_COIL_TEMP  63694 /* (REAL) Motor: Temperature model: Coil temperature [°C] */
-#define ACP10PAR_PHASE_IS_ACT_SUM         63806 /* (REAL) CTRL Current controller: Sum of actual phase currents [A] */
+#define ACP10PAR_LLM_AXLIM_DV_STOP        63696 /* (REAL) Limit values: Speed error for stop of a movement [m/s] */
+#define ACP10PAR_DSC_GATE_POSITION        63697 /* (REAL) Dynamic Shuttle Capture: Gate position */
+#define ACP10PAR_DSC_STATE                63698 /* (DINT) Dynamic Shuttle Capture: Status */
+#define ACP10PAR_BALANCER_IS_ACT_1        63801 /* (REAL) LLM: balancer: current phase 1 [A] */
+#define ACP10PAR_BALANCER_IS_ACT_2        63802 /* (REAL) LLM: balancer: current phase 2 [A] */
+#define ACP10PAR_BALANCER_IS_ACT_3        63803 /* (REAL) LLM: balancer: current phase 3 [A] */
+#define ACP10PAR_SHUTTLE_STP_IDX          63804 /* (UDINT) LLM: shuttle: stereotyp index */
+#define ACP10PAR_SHUTTLE_STP              63805 /* (UDINT) LLM: shuttle: stereotyp */
+#define ACP10PAR_PHASE_IS_ACT_SUM         63806 /* (REAL) CTRL Current: Sum of actual phase currents [A] */
+#define ACP10PAR_ISC_INTERFACE_IDX        63807 /* (UDINT) Inter-segment communication: Interface index */
+#define ACP10PAR_ISC_INTERFACE_CONFIG     63808 /* (UDINT) Inter-segment communication: Interface configuration */
+#define ACP10PAR_SEGMENT_CONFIG           63810 /* (UDINT) Segment: Various (assembly) configurations */
+#define ACP10PAR_SEG_ELONG_COMP_MODE      63815 /* (USINT) Elongation compensation: Mode */
+#define ACP10PAR_FCTRL_ISD_SW_OVERRIDE    63821 /* (DINT) CTRL Flux controller: Switch release current override [%] */
+#define ACP10PAR_SEGMENT_OPTIONS          63822 /* (UDINT) Segment: Options */
+#define ACP10PAR_ACC_LIM_I_COMP           63824 /* (REAL) Asymmetric current compensation: Compensation current limit */
+#define ACP10PAR_ACC_I_COMP               63825 /* (REAL) Asymmetric current compensation: Compensation current [A] */
+#define ACP10PAR_ACC_MODE                 63826 /* (UDINT) Asymmetric current compensation: Mode */
+#define ACP10PAR_ACC_ACT_I_MIN            63828 /* (REAL) Asymmetric current compensation: Threshold of activation [A] */
+#define ACP10PAR_ACC_LIM_I_PHASE          63829 /* (REAL) Asymmetric current compensation: Additional phase current limit [A] */
+#define ACP10PAR_PIDENT_F_NORMAL          63830 /* (REAL) Parameter identification: Normal force of the shuttle [N] */
+#define ACP10PAR_PIDENT_PHASE_IDX         63831 /* (DINT) Parameter identification: Phase index */
+#define ACP10PAR_ACC_I_COMP_PHASE         63832 /* (REAL) Asymmetric current compensation: Compensation current per active phase [A] */
+#define ACP10PAR_FORCE_LIM_MODE           63874 /* (UDINT) Thrust Force Control: Mode */
+#define ACP10PAR_LIM_FORCE_POS_SPEED_POS  63875 /* (REAL) Thrust Force Control: Limit: Positive Forces at Postive Speed */
+#define ACP10PAR_LIM_FORCE_POS_SPEED_NEG  63876 /* (REAL) Thrust Force Control: Limit: Positive Forces at Negative Speed */
+#define ACP10PAR_LIM_FORCE_NEG_SPEED_NEG  63877 /* (REAL) Thrust Force Control: Limit: Negative Forces at Negative Speed */
+#define ACP10PAR_LIM_FORCE_NEG_SPEED_POS  63878 /* (REAL) Thrust Force Control: Limit: Negative Forces at Postive Speed */
 #define ACP10PAR_LLM_PAR_CONF_IDX         63879 /* (USINT) CTRL Controller: Configuration: Index of parameter record */
 #define ACP10PAR_LLM_PCTRL_S_ACT          63880 /* (LREAL) CTRL Position controller: Actual position of shuttle on segment [m] */
 #define ACP10PAR_LLM_CYC_SET_VALUE        63882 /* (LREAL) CTRL Controller: Cyclic set position of the shuttle  [m] */
@@ -1879,6 +1966,9 @@
 #define ACP10PAR_LLM_CYC_SEG_CTRL_BITS    63886 /* (USINT) CTRL Controller: Cyclic segment control bits */
 #define ACP10PAR_LLM_CYC_CH_CTRL_BITS     63887 /* (UINT) CTRL Controller: Cyclic channel control bits */
 #define ACP10PAR_LLM_CYC_SEG_STATUS_BITS  63888 /* (UDINT) CTRL Controller: Cyclic segment status bits */
+#define ACP10PAR_CC_MODE                  63900 /* (UINT) Cogging Compensation: Mode */
+#define ACP10PAR_CC_SPEED_LIMIT           63901 /* (REAL) Cogging Compensation: Application speed limit [m/s] */
+#define ACP10PAR_CC_THRUST_FORCE_ADD      63902 /* (REAL) Cogging Compensation: Applied compensation [N] */
 #define ACP10PAR_SERVO_V_MAX_OUTPUT       64201 /* (REAL) Servo drive adjustment: Velocity at maximum output value [Units/s] */
 #define ACP10PAR_ENCOD_POS_RANGE          64225 /* (UDINT) Encoder1: Range of encoder position [Incr] */
 #define ACP10PAR_SM_SCALE_STEP            64232 /* (UDINT) Stepper motor: Step scaling: Steps per motor revolution */

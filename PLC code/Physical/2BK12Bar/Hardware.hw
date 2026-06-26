@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.12.3.127 FileVersion="4.9"?>
+<?AutomationStudio Version=4.12.9.18 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="8AC114.60-2" Type="8AC114.60-2" Version="1.0.0.8">
     <Connection Connector="SS" TargetModule="8V1016.50-2_BK1" TargetConnector="SS1" />
@@ -3408,7 +3408,7 @@
   <Module Name="X20MK0211" Type="X20MK0211" Version="1.0.0.3">
     <Connection Connector="SL" TargetModule="X20SL8100" TargetConnector="SL1" />
   </Module>
-  <Module Name="X20SC0402" Type="X20SC0402" Version="1.10.9.0">
+  <Module Name="X20SC0402" Type="X20SC0402" Version="1.10.12.0">
     <Connection Connector="SS1" TargetModule="X20TB52a" TargetConnector="SS" />
     <Connection Connector="SS2" TargetModule="X20TB52b" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33a" TargetConnector="SL1" />
@@ -3416,19 +3416,19 @@
     <Parameter ID="DigitalOutput01" Description="via SafeLogic works without PLC main and Direct works with it. Enable Transport signal is controlled via Safe Logic" />
     <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" Description="via SafeLogic works without PLC main and Direct works with it" />
   </Module>
-  <Module Name="X20SI8110_117" Type="X20SI8110" Version="1.10.9.0">
+  <Module Name="X20SI8110_117" Type="X20SI8110" Version="1.10.12.0">
     <Connection Connector="SS1" TargetModule="X20TB52c" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM13" TargetConnector="SL1" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="SafeModuleID" Value="3" />
   </Module>
-  <Module Name="X20SI8110_217" Type="X20SI8110" Version="1.10.9.0">
+  <Module Name="X20SI8110_217" Type="X20SI8110" Version="1.10.12.0">
     <Connection Connector="SS1" TargetModule="X20TB52e" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM13a" TargetConnector="SL1" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="SafeModuleID" Value="5" />
   </Module>
-  <Module Name="X20SL8100" Type="X20SL8100" Version="1.10.7.0">
+  <Module Name="X20SL8100" Type="X20SL8100" Version="1.10.10.2">
     <Connection Connector="PLK1" TargetModule="X20CP1382" TargetConnector="IF3" NodeNumber="10">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
@@ -3460,13 +3460,13 @@
     <Parameter ID="MaximumCurrent" Value="110" />
     <Parameter ID="SM_SCALE_LOAD_UNITS_r1" Value="2500" />
   </Module>
-  <Module Name="X20SO2110_118" Type="X20SO2110" Version="1.10.9.0">
+  <Module Name="X20SO2110_118" Type="X20SO2110" Version="1.10.12.0">
     <Connection Connector="SS1" TargetModule="X20TB52d" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33b" TargetConnector="SL1" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="SafeModuleID" Value="4" />
   </Module>
-  <Module Name="X20SO2110_218" Type="X20SO2110" Version="1.10.9.0">
+  <Module Name="X20SO2110_218" Type="X20SO2110" Version="1.10.12.0">
     <Connection Connector="SS1" TargetModule="X20TB52f" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33c" TargetConnector="SL1" />
     <Parameter ID="Supervision" Value="off" />

@@ -19,7 +19,8 @@
     <AutomationRuntime Version="I4.93" />
     <Build AnsicIncludeDirectories="\Logical\UnitTest\Libraries\UnitTest\,\Logical\UnitTest\Libraries\LibAssert1\" GccVersion="4.1.2" GeneratePPCode="false" IgnoredObjectNamesForBuildWarnings=".images;.gitignore;" PreBuildStep="" />
     <DefaultTargetMemory Tasks="UserROM" />
+    <Safety SafetyRelease="0.0" />
     <Transfer AddToUserPart="False" AdditionalUserDir="" AllowDowngrade="False" AllowInitialTransfer="False" AllowPartitioning="False" ExecuteInitExitProgram="True" ForceInitialTransfer="False" GenerateRUCPackage="true" IdentificationTypeValue="" IgnoreVersion="False" KeepNonVolatileMemory="False" ModuleSystemForPip="" PreserveVariableValues="True" ProjectConsistent="True" RebootDuringTransfer="False" RunUnitTestsAfterTransfer="false" SavedOfflineInstallationFolder="" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" TargetIdentificationType="Always" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
-    <OnlineConfiguration Name="EFI SimDryer" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11170 /ANSL=1 /PT=11169" Description="" />
+    <OnlineConfiguration Name="EFI SimDryer" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11170 /ANSL=1" Description="" />
   </Configuration>
 </Cpu>

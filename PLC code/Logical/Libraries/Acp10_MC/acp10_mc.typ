@@ -11,8 +11,8 @@ TYPE
 		Offset : DINT; (*homing offset*)
 	END_STRUCT;
 	MC_ADV_INFO_MPDC_REF : 	STRUCT  (*structure with additional info*)
-		DataObjectIdentPos : UINT; (*ident of data object for positive direction compensation*)
-		DataObjectIdentNeg : UINT; (*ident of data object for negative direction compensation*)
+		DataObjectIdentPos : UDINT; (*ident of data object for positive direction compensation*)
+		DataObjectIdentNeg : UDINT; (*ident of data object for negative direction compensation*)
 		CamStartPosition : REAL; (*axis position the cam for positive direction starts at*)
 		CamStartPositionNeg : REAL; (*axis position the cam for negative direction starts at*)
         CalcDone : BOOL; (*calculation finished*)
