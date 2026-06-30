@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.12.5.95 FileVersion="4.9"?>
+<?AutomationStudio Version=4.12.9.18 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="5LS182.6-1" Type="5LS182.6-1" Version="1.5.0.0">
     <Connection Connector="SL" TargetModule="PC_any" TargetConnector="SL1" />

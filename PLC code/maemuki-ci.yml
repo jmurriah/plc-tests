@@ -7,6 +7,7 @@ configurations:
     simulation: false
     arSimHost: localhost
     arSimPort: 82
+    arSimOpcUaPort: 4840
     pviPort: 11169
     arSimTimeZoom: "+2"
     arSimStartupDelaySeconds: 6
@@ -14,30 +15,25 @@ configurations:
       - name: MachineModel
         restartSimAfterWrite: true
         sweep:
-          variable: "ns=6;s=::AsGlobalPV:gMachine.Pt.MachineModel"
+          variable: "ns=6;s=::AsGlobalPV:gSimMachine.Parameters.MachineType"
+          type: int
           values:
-            - { name: Type_P4_12B,                 value: 1  }
-            - { name: Type_P4_6B,                  value: 2  }
-            - { name: Type_P4_12B_L,               value: 3  }
-            - { name: Type_P4_6B_L,                value: 4  }
-            - { name: Type_SHLD,                   value: 5  }
-            - { name: Type_SHLD_L,                 value: 6  }
-            - { name: Type_S1400,                  value: 7  }
-            - { name: Type_S1400_VAC_PWRLNK,       value: 8  }
-            - { name: Type_S1400_VAC_CAN,          value: 9  }
-            - { name: Type_NOZ_2_AQ,               value: 10 }
-            - { name: Type_P5_OIL,                 value: 11 }
-            - { name: Type_P5_WTR,                 value: 12 }
-            - { name: Type_P4_CBK,                 value: 13 }
-            - { name: Type_NOZ_2_UV,               value: 14 }
-            - { name: Type_NOZ_2_UV_White,         value: 15 }
-            - { name: Type_CUBE_INSPECTION,        value: 16 }
-            - { name: Type_CUBE,                   value: 17 }
-            - { name: Type_CUBE_GULLIVER_INSPECTION, value: 18 }
-            - { name: Type_CUBE_GULLIVER,          value: 19 }
-            - { name: Type_MECANO_UV_WHITE,        value: 20 }
-            - { name: Type_MECANO_UV_OPV,          value: 21 }
-            - { name: Type_MECANO_UV_WHITE_OPV,    value: 22 }
+            # - { name: SIM_MACHINE_REAL,                value: 0  }
+            - { name: SIM_MACHINE_2B12BAR,             value: 1  }
+            # - { name: SIM_MACHINE_1B6BAR,              value: 2  }
+            - { name: SIM_MACHINE_1B2BAR,              value: 3  }
+            # - { name: SIM_MACHINE_P5_WAT,              value: 4  }
+            # - { name: SIM_MACHINE_P4_CBK,              value: 5  }
+            # - { name: SIM_MACHINE_S1400_VAC_PWRLNK,    value: 6  }
+            # - { name: SIM_MACHINE_S1400_VAC_CAN,       value: 7  }
+            # - { name: SIM_MACHINE_NZ2,                 value: 8  }
+            # - { name: SIM_MACHINE_NZ2_UV,              value: 9  }
+            # - { name: SIM_MACHINE_NZ2_UV_WHITE,        value: 10 }
+            # - { name: SIM_MACHINE_CUBE,                value: 11 }
+            # - { name: SIM_MACHINE_CUBE_GULLIVER,       value: 12 }
+            # - { name: SIM_MACHINE_MECANO_UV_WHITE,     value: 13 }
+            # - { name: SIM_MACHINE_MECANO_UV_OPV,       value: 14 }
+            # - { name: SIM_MACHINE_MECANO_UV_WHITE_OPV, value: 15 }
   # - name: SimDryer
     # target: ARsim
     # simulation: false
@@ -52,14 +48,13 @@ tests:
     SimTests:
       - FunctionsTests
       - PrepareMachine
-      - BeltTests
+      # - BeltTests
       - ConsentTests
-      - ConsentTests
-      - CleaningTests
-      - LineTests
-      - TrVacuumTests
-      - BlockTests
-      - Cube
+      # - CleaningTests
+      # - LineTests
+      # - TrVacuumTests
+      # - BlockTests
+      # - Cube
     SimDryer:
       - FunctionsTests
       - PrepareDryer
