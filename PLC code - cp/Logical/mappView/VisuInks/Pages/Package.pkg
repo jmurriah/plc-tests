@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="PagesPackage" PackageType="PagesPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="AreaContents">AreaContents</Object>
+    <Object Type="Package">InksMain</Object>
+    <Object Type="Package">InksAlarms</Object>
+    <Object Type="Package">InksDetails</Object>
+    <Object Type="Package">InksConfig</Object>
+    <Object Type="Package">InksStart</Object>
+    <Object Type="Package">InksDiagnosis</Object>
+    <Object Type="Package">InksTransport</Object>
+  </Objects>
+</Package>

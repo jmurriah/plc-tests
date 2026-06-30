@@ -1,0 +1,37 @@
+
+#################################################################################
+#################################################################################
+#
+#						GENERAL USE OF CHILLERCTRL PACKAGE
+#
+# 	To use this package unit, some general input variables are needed:
+#	dataChill as 	gChillerInks[iIndexChiller]
+#	-dataChill.In.xStopChiller: It is the signal to stop chiller, its activated when the system 
+#	to control temperature doen't need it (Inks stopped or PH without power).
+#	-dataChill.In.xChillerWorking: Chiller working feedback from physicall machine. 
+# 	-dataChill.In.iTempEnvironment: is the environment temp.measured with a gauge.
+#	-dataChill.In.iWaterCollectorTemp: temperature at the exit collector of the chiller.
+# 	-dataChill.In.xTempEnvSensError: Emperature sensor error.
+# 	-dataChill.In.xTempWatSensError: Emperature sensor error.
+# 	-dataChill.In.xNoPowered: Signal from Chiller CB for report to SW CB problem, its warning alarm.
+# 	-dataChill.In.rControledTemp: Temperature to control.
+#################################################################################
+						ON/OFF CONDITIONS AND CONTROL
+	The outputs of the package is:
+	-dataChill.Out.xStart: Its true when:
+	"dataChill.In.iTempEnvironment>(dataChill.Pt.rTempSetPoint-LC_OFFSET_TEMP_TO_START_STOP)" for 20 seconds OR
+	when we force "dataChill.commands.xCoolingNeeded" (ready but not activate by program or by SW for the moment)
+	and dont have any alarm in chiller, and its chage to false when:
+	"dataChill.In.iTempEnvironment<(dataChill.Pt.rTempSetPoint-LC_OFFSET_TEMP_TO_START_STOP)" or Stop chiller order are active
+	 if it's TRUE, the ON signal to chiller is sent.
+
+#################################################################################
+#################################################################################
+#									ALARMS:
+#	-dataChill.Al.Warning.xChillerNotWorking: set id chiller ON signal and the "dataChill.In.xChillerWorking" its nbot active.
+#	-dataChill.Warning.xCheckChiller: Is used to send a message in UI to inform that the set point
+#	must be changed manually in chiller. It is true when:
+#	"(dataChill.Pt.rTempSetPoint < dataChill.In.rControledTemp)AND dataChill.Pt.xControlledSysNotHeating AND NOT dataChill.St.xChillerInAlarm"
+#	-dataChill.Warning.xChillerInAlarm: its active when the alarm input are active
+#	-dataChill.Warning.xAlrEnvTempSensBrokn & dataChill.Warning.xAlrTempSensBrokn:its active when the temperature sensor error input are active 
+#################################################################################

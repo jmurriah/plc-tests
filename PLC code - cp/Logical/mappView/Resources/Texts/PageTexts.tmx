@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="Samples.HELLO_WORLD">
+      <tuv xml:lang="es">
+        <seg>Hola Mundo</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Servus Welt!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello world!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Navigation">
+      <tuv xml:lang="es">
+        <seg>Navegación</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Navigation</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Navigation</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Main">
+      <tuv xml:lang="es">
+        <seg>Página principal</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Start Seite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Main page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.FlyoutApps">
+      <tuv xml:lang="es">
+        <seg>Mostrar y ocultar aplicaciones</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Apps ein- und ausblenden</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Show and hide apps</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Table">
+      <tuv xml:lang="es">
+        <seg>Tabla</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Tabelle</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Table</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Docu">
+      <tuv xml:lang="es">
+        <seg>Documentación</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dokumentation</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Documentation</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Recipe">
+      <tuv xml:lang="es">
+        <seg>Receta</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rezept</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Gallery">
+      <tuv xml:lang="es">
+        <seg>Galería</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Eingebettete Visualisierung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Embedded visualization</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.User">
+      <tuv xml:lang="es">
+        <seg>Usuario actual</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktueller Benutzer:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current user:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Chart">
+      <tuv xml:lang="es">
+        <seg>Grafica</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Diagramm</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Chart</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.StyleChange">
+      <tuv xml:lang="es">
+        <seg>Cambio de estilo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Style ändern</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Style change</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Login">
+      <tuv xml:lang="es">
+        <seg>Registar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Anmelden</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Log in</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.NoLogin">
+      <tuv xml:lang="es">
+        <seg>Continuar sin registrar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Weiter ohne Anmeldung...</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Continue without authentication...</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Continue">
+      <tuv xml:lang="es">
+        <seg>Continuar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Weiter</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Continue</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.UserName">
+      <tuv xml:lang="es">
+        <seg>Usuario:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzer:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User name:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Password">
+      <tuv xml:lang="es">
+        <seg>Contraseña</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Passwort:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Rights_Roles">
+      <tuv xml:lang="es">
+        <seg>Permisos y roles</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rechte und Rollen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rights and Roles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.UserLimits">
+      <tuv xml:lang="es">
+        <seg>Limites usuario</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzer Limits</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User limits</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.ClientInfo">
+      <tuv xml:lang="es">
+        <seg>Información de cliente</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Client Information</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Client information</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Page.Styles">
+      <tuv xml:lang="es">
+        <seg>Estilos</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Styles</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Styles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Dialog.Close">
+      <tuv xml:lang="es">
+        <seg>Cerrar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Schließen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Close</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Dialog.Login">
+      <tuv xml:lang="es">
+        <seg>Por favor, registrese</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bitte anmelden</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Please log in</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Dialog.On">
+      <tuv xml:lang="es">
+        <seg>Activar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ein</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>On</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Dialog.Off">
+      <tuv xml:lang="es">
+        <seg>Desactivar</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aus</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Off</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Dialog.Event">
+      <tuv xml:lang="es">
+        <seg>Evento</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Motor starten / stoppen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start / Stop engine</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.TimeStamp">
+      <tuv xml:lang="de">
+        <seg>Zeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timestamp</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.Name">
+      <tuv xml:lang="es">
+        <seg>Nombre alarma</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alarm Name</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarm name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.Message">
+      <tuv xml:lang="es">
+        <seg>Mensaje</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Meldungstext</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Message</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.ActiveState">
+      <tuv xml:lang="es">
+        <seg>Estado</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aktiv Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Active state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.AckState">
+      <tuv xml:lang="es">
+        <seg>Reconocida</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Quittiert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledged</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.OldState">
+      <tuv xml:lang="es">
+        <seg>Estado anterior</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alter Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Old state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Row.NewState">
+      <tuv xml:lang="es">
+        <seg>Nuevo estado</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Neuer Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.Ack">
+      <tuv xml:lang="es">
+        <seg>Reconocer seleccionada</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ausgewählten quittieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge selected</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Alarm.AckAll">
+      <tuv xml:lang="es">
+        <seg>Reconocer todas</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alle quittieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge all</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MsgBox.Header">
+      <tuv xml:lang="es">
+        <seg>Información</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Information</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Information</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.Name">
+      <tuv xml:lang="es">
+        <seg>Usuario:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzername:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User name:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.Password">
+      <tuv xml:lang="es">
+        <seg>Contraseña:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Passwort:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.Role">
+      <tuv xml:lang="es">
+        <seg>Rol:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rolle:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Role:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.LimitMin">
+      <tuv xml:lang="es">
+        <seg>Límite min.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Min Limit:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Min limit:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.LimitMax">
+      <tuv xml:lang="es">
+        <seg>Límite max.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Max Limit:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Max limit:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.Access">
+      <tuv xml:lang="es">
+        <seg>Sin derechos escritura</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>keine Schreibrechte</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>no write access</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.True">
+      <tuv xml:lang="es">
+        <seg>Si</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Yes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="user.False">
+      <tuv xml:lang="es">
+        <seg>No</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nein</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LoginSuccess">
+      <tuv xml:lang="es">
+        <seg>Autentificación con éxito</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzer hat sich erfolgreich authentifiziert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User authenticated successfully</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Start">
+      <tuv xml:lang="es">
+        <seg>Arrancar</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Lab">
+      <tuv xml:lang="es">
+        <seg>Laboratorio</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Laboratory</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.ByPass">
+      <tuv xml:lang="es">
+        <seg>ByPass</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>ByPass</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Stop">
+      <tuv xml:lang="es">
+        <seg>Parar</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Stop</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Manual">
+      <tuv xml:lang="es">
+        <seg>Manual</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Auto">
+      <tuv xml:lang="es">
+        <seg>Auto</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Auto</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Zero">
+      <tuv xml:lang="es">
+        <seg>Cero</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zero</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Mach.Reset">
+      <tuv xml:lang="es">
+        <seg>Reset</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Reset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Test.Prepare">
+      <tuv xml:lang="es">
+        <seg>Preparar</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Prepare</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Test.Belt">
+      <tuv xml:lang="es">
+        <seg>Banda</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Belt</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Test.Consents">
+      <tuv xml:lang="es">
+        <seg>Consentimientos</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Consents</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Test.Cleaning">
+      <tuv xml:lang="es">
+        <seg>Limpieza</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cleaning</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

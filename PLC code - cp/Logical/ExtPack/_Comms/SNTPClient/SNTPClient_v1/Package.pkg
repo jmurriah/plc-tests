@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="SNTP client configuration">NwSNTPClient</Object>
+    <Object Type="File">SNTP Configuration. PressPC &amp; PLC.docx</Object>
+  </Objects>
+</Package>

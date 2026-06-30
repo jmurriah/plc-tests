@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="AreaContentsPackage" PackageType="AreaContentsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">DiagCP0484.content</Object>
+    <Object Type="File">DiagCP1382.content</Object>
+    <Object Type="File">DiagID16.content</Object>
+    <Object Type="File">DiagOD16.content</Object>
+    <Object Type="File">DiagAI8.content</Object>
+    <Object Type="File">DiagAI4.content</Object>
+    <Object Type="File">DiagAO4.content</Object>
+    <Object Type="File">DiagAT4.content</Object>
+    <Object Type="File">DiagPS.content</Object>
+    <Object Type="File">DiagX1.content</Object>
+    <Object Type="File">DiagX2.content</Object>
+    <Object Type="File">DiagX3.content</Object>
+    <Object Type="File">DiagSM.content</Object>
+    <Object Type="File">DiagSC.content</Object>
+    <Object Type="File">DiagSI.content</Object>
+    <Object Type="File">DiagSO.content</Object>
+    <Object Type="File">DiagBC.content</Object>
+  </Objects>
+</Package>

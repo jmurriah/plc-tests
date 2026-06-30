@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="TextArray04CardWidget" width="420" height="255" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText1" top="0" left="15" width="350" height="15" zIndex="17" value="Label1" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText2" top="60" left="15" width="350" height="15" zIndex="18" value="Label2" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText3" top="120" left="15" width="350" height="15" zIndex="19" value="Label3" />
+		<Widget xsi:type="widgets.brease.TextOutput" id="lblText4" top="180" left="15" width="350" height="15" zIndex="20" value="Label4" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber1" top="0" left="0" width="185" height="15" zIndex="33" text="01:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber2" top="60" left="0" width="185" height="15" zIndex="34" text="02:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber3" top="120" left="0" width="185" height="15" zIndex="35" text="03:" />
+		<Widget xsi:type="widgets.brease.Label" id="lblNumber4" top="180" left="0" width="185" height="15" zIndex="36" text="04:" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Simple bindable property:-->
+
+		
+		<!--Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="PLCCardData" type="PLCCardData" readOnly="true" >
+			<Description>Texts in Card</Description>
+			<Mappings>
+				<Mapping widget="lblText1" type="String" property="value" mode="oneWay" memberPath="Texts[1].Details" mapToNode="false"/>
+				<Mapping widget="lblText2" type="String" property="value" mode="oneWay" memberPath="Texts[2].Details" mapToNode="false"/>
+				<Mapping widget="lblText3" type="String" property="value" mode="oneWay" memberPath="Texts[3].Details" mapToNode="false"/>
+				<Mapping widget="lblText4" type="String" property="value" mode="oneWay" memberPath="Texts[4].Details" mapToNode="false"/>
+				<Mapping widget="lblNumber1" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[1]" mapToNode="false"/>
+				<Mapping widget="lblNumber2" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[2]" mapToNode="false"/>
+				<Mapping widget="lblNumber3" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[3]" mapToNode="false"/>
+				<Mapping widget="lblNumber4" type="Boolean" property="visible" mode="oneWay" memberPath="Status.ViewTexts[4]" mapToNode="false"/>
+			</Mappings>
+		</Property>
+    
+	</Properties>
+
+	<Events>
+		<!--
+    <Event name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" event="" />
+      </Mappings>
+    </Event>
+    -->
+  </Events>
+
+  <Actions>
+    <!--
+    <Action name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" action="" />
+      </Mappings>
+    </Action>
+    -->
+  </Actions>
+
+  <EventBindings>
+
+   
+  </EventBindings>
+
+</CompoundWidget>

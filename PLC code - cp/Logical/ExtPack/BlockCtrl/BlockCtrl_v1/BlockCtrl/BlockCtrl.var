@@ -1,0 +1,161 @@
+VAR
+	iReasonDanger : USINT;
+	PositionStateDanger : Block_Position_enum;
+	xDangerCollision : BOOL;
+	TNotPrinterZero : TON;
+	xCleanInterrupt : BOOL;
+	reasonSound : UDINT;
+	ars_AlrTempPowerSupply : AutoResetSound;
+	ars_AlrPHPowerSupply : AutoResetSound;
+	ars_AlrAirVenturi : AutoResetSound;
+	ars_AlrDif : AutoResetSound;
+	ars_AlrCritical : AutoResetSound;
+	ars_AlrStop : AutoResetSound;
+	ars_AlrWarning : AutoResetSound;
+	AxisBK : REFERENCE TO AxisCtrl_typ;
+	xMotorHomeOrder : BOOL;
+	xFinishedDrippingOrderByBlock : BOOL;
+	xIclaAbsMovDone : BOOL; (*Edge*)
+	xIclaAbsMovOrder : BOOL; (*State*)
+	xCapOrder : BOOL;
+	xMotorAbsMovOrder : BOOL; (*Just to Raise the order. It is reseted once sent the information to the Axis*)
+	xAnyManualMov : BOOL;
+	xStartToCleanOrder : BOOL;
+	xOrderToPrint : BOOL;
+	xStoppedIclaByTimeActive : BOOL;
+	xAnyManualMovement : BOOL;
+	xStoppedByExcessiveTimeActive : BOOL;
+	xIclaMoving : BOOL;
+	rOffseCleanMtr_Copy : REAL;
+	rCalcPosDesPrint : REAL; (*Bar's printing position calculation*)
+	rMotorAbsPosDesired : REAL; (*Position in mm*)
+	rIclaAbsPosDesired : REAL; (*Position desired in mm. pulses 100 pulses per 16mm*)
+	rIclaCurrentPos : REAL; (*Position of the Icla in mm*)
+	tiDripTimeMax : TIME; (*Maximum Drip time of all the bars of the block*)
+	rMotorCurrentPos : REAL; (*Position in mm*)
+	iLastState : INT;
+	nState : INT := 0;
+	iIndexInks : {REDUND_UNREPLICABLE} USINT;
+	rOffseCleanMtr : REAL;
+	rBlockReductionTempPower : REAL;
+	rPowerTempTotalBlock : REAL;
+	rsCleaning : RS;
+	Block : REFERENCE TO StBlock;
+	stBlockCommandsReseted : stBlock_commands;
+	stBlockAlarmsReseted : StBlock_Alarms;
+	stBlockAlarmsSummaryReseted : stEFI_AlarmSummary;
+	IclaBK : REFERENCE TO stIcla;
+	T_SafetyError : TOF;
+	tonStabInksAfterDrip : TON;
+	TON_StoppedIclaByTimeActive : TON;
+	TON_excessiveBlockActivated : TON;
+	T_IclaError : TON; (*TON Icla error, Error value <> 0*)
+	T_DelayAlarmRef : TON;
+	T_AlrComsCleanMotor : TON;
+	T_AlCleanSensor : TON;
+	T_DelayIncoherCleanMtr : TON;
+	T_AlrNoPressureWhenWaterPumpIsOn : TON; (*TON top delay water pump alarm when pump is on*)
+	TON_AlrTrayOut : TON;
+	TON_DRIPPING : TON;
+	TON_AlrTrayIn : TON;
+	iTimesStopMovWhileHoming : UINT;
+	iTimesStateBlockGoingToPrint : USINT;
+	iTimesStateBlockCleaning : USINT;
+	iTimesStateBlockUndefined : USINT;
+	iTimesStateBlockPrinting : USINT;
+	iTimesStateBlockGoingToCap : USINT;
+	iTimesStateBlockInCap : USINT;
+	iTimesStateBlockHomingBar : USINT;
+	iTimesStateBlockHomingIcla : USINT;
+	xEnableResetIcla : BOOL;
+	TON_TrayInSensor : TON;
+	MotorDriveUnit : DriveUnitMngr;
+	IclaDriveUnit : DriveUnitMngr;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	tonWaitingSensor : TON;
+	stIclaOrderEventLog : EventLog_typ;
+	stIclaEventLog : EventLog_typ;
+	VerMotorOrderEventLog : EventLog_typ;
+	VerMotorEventLog : EventLog_typ;
+	stEventLogCritical : EventLog_typ;
+	stEventLogStop : EventLog_typ;
+	stEventLogToCap : EventLog_typ;
+	stEventLogToPrint : EventLog_typ;
+	stEventLogToClean : EventLog_typ;
+	stEventLogIncoherence : EventLog_typ;
+	stEventLogxHeaterDcOkBusBar1 : EventLog_typ;
+	stEventLogxHeaterDcOkBusBar2 : EventLog_typ;
+	stEventLogxHeaterDcOkPsu1 : EventLog_typ;
+	stEventLogxHeaterDcOkPsu2 : EventLog_typ;
+	stEventLogxHeaterDcOkPsu3 : EventLog_typ;
+	stEventLogxHeaterAcOkPsu1 : EventLog_typ;
+	stEventLogxHeaterAcOkPsu2 : EventLog_typ;
+	stEventLogxHeaterAcOkPsu3 : EventLog_typ;
+	strAuxEventDesc : STRING[129];
+	xChangeMotorSpeedUp : BOOL; (*Signal to change motor speed in manual up movements by near limit*)
+	xChangeMotorSpeedDown : BOOL; (*Signal to change motor speed in manual down movements by near limit*)
+	TON_DelayAnyVerticalDriveAlarm : TON;
+	ars_EmergencyStop : AutoResetSound;
+	BlockStatePrevious : Block_States_enum;
+	MachineStatePrevious : enumEFI_GenMachineState;
+	iCancelHomingBar : UINT;
+	BlockPositionPreviousCleaning : Block_Position_enum;
+	BlockPositionPrevious : Block_Position_enum;
+	iSaveState : UINT;
+	iSaveReason : UINT;
+	iCancelCleaning : UINT;
+	iReasonMovingMan : UINT;
+	xAlrToAvoidCleanWithWater : BOOL;
+	xBlockPosChange : BOOL;
+	xCloseReliefValve : BOOL;
+	xInCap : BOOL; (*Internal var to define if the block is in this position*)
+	xInPrint : BOOL; (*Internal var to define if the block is in this position*)
+	xInClean : BOOL; (*Internal var to define if the block is in this position*)
+	rSafeBarPosToCarrier : REAL; (*Position in mm to block Carrier in Manual mode*)
+	TOF_CleanOffsetChng : TOF;
+	TON_WaitDepresWater : TON; (*TON to wait a few secods to depresre water circuit*)
+	TP_WaterSpurtDesactDelay : TP;
+	TON_WaitToMoveTrayOut : TON; (*TON to wait a few secods to depresre water circuit*)
+	xWaitToMoveTrayOut : BOOL;
+	rMoveAboveCapping : REAL := 10.0; (*Distance to move above capping when going to print*)
+	TON_AlrCappingWaterNotRecirc : TON; (*TON top delay water pump alarm when pump is on*)
+	TP_CappingWaterPumpDesactDelay : TP;
+	iReasonAnyWarning : UDINT;
+	iReasonSafetyGeneral : UINT;
+	iReasonSafetyCutAir : UINT;
+	xAnyUpperSafety : BOOL; (*Block.Al.xAlrFrontCurtain OR Block.Al.xAlrRearSafety OR Block.Al.xAlrFrontSafety*)
+	tonDelayTraySensorError : TON;
+	CanGetState : CANopenGetState;
+	tonNotValveComms : TON;
+	tonValveCommsErrorResetting : TON;
+	ValvesCanResetState : CanOpenResetCommsState_enum;
+	ValvesCanResetState_copy : CanOpenResetCommsState_enum;
+	CANopenResetValves : CANopenNMT;
+	iReasonNotValveComms : UINT;
+	xChangedValvesState : BOOL;
+	iTimesTryToReset : UINT;
+	lastCanOpenResetError : UINT;
+	lastResetingState : UINT;
+	lastFbResetStatus : UINT;
+	ton_TrayOut : TON;
+	nStateDanger : UINT;
+	ReasonErrorID : UINT;
+	ResetManCommands : stBlock_commandsManual;
+	ton_ControllerReady : TON;
+	xFrontDoorStatusChanged : BOOL;
+	xFrontDoorStatus : BOOL;
+	xLoggingVerMovingOrder : BOOL;
+	TON_OvertorqueWarning : TON;
+	tonOvertorqueAlarm : TON;
+	Tp_ManWastePump : TP;
+	Ton_WastedInkTankPump : TON;
+	Ton_CappingPump : TON;
+	iIndexHistory : UINT;
+	StateGenHistory : ARRAY[0..iHistoryLines] OF Block_States_enum;
+	StatePosHistory : ARRAY[0..iHistoryLines] OF Block_Position_enum;
+	rMotorAbsPosDesiredPrevious : REAL;
+	xStartWastedInkPump : BOOL;
+	iReasonRunWastedInkPump : USINT;
+	iIndexPsu : USINT;
+END_VAR

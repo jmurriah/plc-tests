@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="Efi libs package">EFILib</Object>
+    <Object Type="Package">_Motion</Object>
+    <Object Type="Package">_Media</Object>
+    <Object Type="Package">_Tools</Object>
+    <Object Type="Package">_Comms</Object>
+    <Object Type="Package">_Ancillaries</Object>
+    <Object Type="Package">_Cure</Object>
+    <Object Type="Package">_Transport</Object>
+    <Object Type="Package">_Extras</Object>
+    <Object Type="Package" Description="Inks Control Logic package">InksCtrl</Object>
+    <Object Type="Package">BlockCtrl</Object>
+    <Object Type="Package">SimpleBlockCtrl</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,34 @@
+
+#################################################################################
+#################################################################################
+#																				#
+#			GENERAL USE OF BLOCK												#
+#																				#
+# 	To use this BLOCK unit, some general variables are needed:					#
+#																				#
+# 		gBlock[1..iNumberBlocks] as StBlock										#
+#		gAxis[1..iNumberTotalAxis] as AxisCtrl_typ								#
+#		gIcla[1..iNumberTotalIclas] as stIcla									#
+#		gInks[1..iNumberInks] as stInks.										#
+#																				#
+#	There are some Libraries needed, too:										#
+#		EFILib																	#
+#		Libraries (the Global libraries)										#
+#																				#
+#	And some variables declaration sections:									#
+#		GVars: permanent vars are defined in Global.typ., they are needed.		#
+#		GStructs: StPermanentGeneral is needed, and it's defined inside it.		#
+#																				#
+#																				#
+#################################################################################
+*NOTE: we have maintained Inks as general because we want inks to be an independent functional unit.
+So, is for that reason that block needs inks to work. [SEA](06/08/19)
+
+#################################################################################
+#################################################################################
+#																				#
+#			¡¡¡IMPORTANT!!!!													#
+# 	Review gAxisCtrl and IclaCtrl for extra needs about 						#
+# 	Axis and Icla to use them													#
+#																				#
+#################################################################################

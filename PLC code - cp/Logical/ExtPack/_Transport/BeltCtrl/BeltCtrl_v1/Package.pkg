@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Belt program cyclic task">BeltCtrl</Object>
+    <Object Type="File" Description="Belt data type">Belt.Typ</Object>
+    <Object Type="File" Description="Public constants">BeltPublicConstants.var</Object>
+    <Object Type="File" Description="Belt package documentation">Belt Docu.txt</Object>
+    <Object Type="File" Description="Belt states graph">BeltStates.graphml</Object>
+  </Objects>
+</Package>

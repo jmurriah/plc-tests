@@ -1,0 +1,55 @@
+VAR
+	data : REFERENCE TO EdgeHoldDown_typ;
+	AdjustmentSystem : REFERENCE TO ARRAY[0..2] OF PairedIclaMotors_typ;
+	stAlarmsReseted : EdgeHoldDownAlarms;
+	stEhdAlarmSummaryReseted : stEFI_AlarmSummary;
+	rSensorPositionAlignment : REAL; (*Pulses*)
+	rSensorPositionAlignmentMax : REAL; (*Pulses*)
+	rSensorPositionAlignmentMin : REAL; (*Pulses*)
+	rSensorPositionDesired : REAL; (*Pulses*)
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	tonMaxTimeJogging : TON;
+	xAnyManualMovement : BOOL;
+	rPositionMotorMm : REAL;
+	ars_AlrStop : AutoResetSound;
+	ars_AlrCritical : AutoResetSound;
+	ars_AlrWarning : AutoResetSound;
+	ResetCommands : EdgeHoldDownCommands;
+	iCancelMovement : USINT;
+	iReasonWarning : UDINT;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF EdgeHoldDownState;
+	iIndexHistory : USINT;
+	MotorDriveUnit : DriveUnitMngr;
+	rJogSpeedSetPoint : REAL;
+	xControllerReady : BOOL;
+	xPoweredOn : BOOL;
+	xMotorReady : BOOL;
+	xAnyError : BOOL;
+	xAnyManualOrder : BOOL;
+	iIndexSensor : USINT;
+	iAnyWarning : UINT;
+	tonMotorStopped : TON;
+	xMotorStopped : BOOL;
+	stCriticalAlarmsLog : EventLog_typ;
+	stStopAlarmsLog : EventLog_typ;
+	stWarningAlarmsLog : EventLog_typ;
+	iIndexIclaMotor : USINT;
+	iIndexAdjustmentSystem : USINT;
+	iCancelHoming : USINT;
+	iPositionState : EdgeHoldDownPositionStates;
+	rWidthAdjustPosition : REAL;
+	rHeighAdjustPosition : REAL;
+	iSystemState : EdgeHoldDownState;
+	iSystemAutoState : EdgeHoldDownAutoState;
+	iNumIclaMotors : USINT;
+	iMisalignmentToleranceInAuto : USINT := 5;
+	iMisalignmentToleranceInManual : USINT := 10;
+	iSafetyOffset : USINT := 5;
+	ResetCommandsSw : EdgeHoldDownCommandsSw;
+END_VAR

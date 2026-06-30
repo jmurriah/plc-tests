@@ -1,0 +1,16 @@
+VAR CONSTANT
+	lc_rHighPresEnterStable : REAL := 14.0;
+	lc_rHighPresExitStable : REAL := 15.0;
+	lc_rLowPresEnterStable : REAL := 2.0;
+	lc_rLowPresExitStable : REAL := 0.0;
+	lc_rCyclePwm : REAL := 2.0; (*Time in seconds of the Cycle for the temp control*)
+	Ic_rMinDiffMinMaxCtrlVoltage : REAL := 0.5; (*for the conversion to the slope in the graph V-%DC.	*)
+	LC_MAX_MENISCUS_TO_STARTED : INT := 50; (*MAx diff between meniscus and meniscus measured for changing filling pump PID while is starting*) (*gc_rSetPointBNegativeMode8 : REAL := 25.0;*)
+	LC_MIN_MENISCUS_TO_STARTED : INT := 0; (*Min diff between meniscus and meniscus measured for changing filling pump PID while is starting*)
+	lc_tiTimeStoppingPsu : TIME := T#3S;
+	lc_rDiffBetweenPumpsDCLimit : REAL := 84.0;
+	MAX_DIFFCTRLTEMP_ALR : REAL := 2.5; (* Limit to define Error in Control temperature with the output signal. AlarmStop. Value in C degree*)
+	MAX_DIFFCTRLTEMP_WRNG : REAL := 1.0; (* Limit to define Error in Control temperature. Value in C degree*)
+	SETPOINT_MENISCUS_DRIP : REAL := -20.0; (*Sp Meniscus for dripping*)
+	MAX_DIFFCTRLTEMPHIGH_ALR : REAL := 4; (* Limit to define Error in Control temperature with the heater resistance. AlarmStop. Value in C degree*)
+END_VAR

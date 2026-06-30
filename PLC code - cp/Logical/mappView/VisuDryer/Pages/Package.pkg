@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package SubType="PagesPackage" PackageType="PagesPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" Description="AreaContents">AreaContents</Object>
+    <Object Type="Package">DryerMain</Object>
+    <Object Type="Package">DryerAlarms</Object>
+    <Object Type="Package">DryerNIR</Object>
+    <Object Type="Package">DryerArcLamp</Object>
+    <Object Type="Package">DryerBlowers</Object>
+    <Object Type="Package">DryerDiagnosis</Object>
+    <Object Type="Package">DryerBelt</Object>
+    <Object Type="Package">DryerSensors</Object>
+    <Object Type="Package">DryerStart</Object>
+  </Objects>
+</Package>

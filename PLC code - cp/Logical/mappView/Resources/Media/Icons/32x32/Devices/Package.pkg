@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.5.113 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">file_locked.png</Object>
+    <Object Type="File">file_temporary.png</Object>
+    <Object Type="File">folder.png</Object>
+    <Object Type="File">folder_blue.png</Object>
+    <Object Type="File">folder_documents.png</Object>
+    <Object Type="File">folder_home.png</Object>
+    <Object Type="File">folder_locked.png</Object>
+    <Object Type="File">keyboard.png</Object>
+    <Object Type="File">laptop.png</Object>
+    <Object Type="File">link.png</Object>
+    <Object Type="File">lockoverlay.png</Object>
+    <Object Type="File">mount.png</Object>
+    <Object Type="File">mount_overlay.png</Object>
+    <Object Type="File">printer1.png</Object>
+    <Object Type="File">printer2.png</Object>
+    <Object Type="File">scanner.png</Object>
+    <Object Type="File">smartmedia_mount.png</Object>
+    <Object Type="File">trashcan_empty.png</Object>
+    <Object Type="File">trashcan_full.png</Object>
+    <Object Type="File">unmount_overlay.png</Object>
+    <Object Type="File">3floppy_mount.png</Object>
+    <Object Type="File">3floppy_unmount.png</Object>
+    <Object Type="File">camera_unmount.png</Object>
+    <Object Type="File">cdrom_mount.png</Object>
+    <Object Type="File">cdrom_unmount.png</Object>
+    <Object Type="File">cdwriter_mount.png</Object>
+    <Object Type="File">cdwriter_unmount.png</Object>
+    <Object Type="File">chardevice.png</Object>
+    <Object Type="File">desktop.png</Object>
+    <Object Type="File">desktop22.png</Object>
+    <Object Type="File">exec.png</Object>
+    <Object Type="File">file_alert.png</Object>
+    <Object Type="File">file_broken.png</Object>
+    <Object Type="File">file_doc.png</Object>
+  </Objects>
+</Package>

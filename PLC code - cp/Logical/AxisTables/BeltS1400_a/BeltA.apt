@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="SGEN_SW_END_IGNORE" ID="128" Value="1" Description="Limit values: Ignore SW end positions" />
+  </Root>
+</AcoposParameterTable>

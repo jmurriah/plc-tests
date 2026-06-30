@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Thickness array analog sensor">ThicknessCtrl</Object>
+    <Object Type="Program" Language="IEC" Description="Manager of the thickness of the media">ThicknessCtrl_Fast</Object>
+    <Object Type="Program" Language="IEC" Description="Cyclic code">ThickReadEnergy</Object>
+    <Object Type="File" Description="local structure">ThicknessCtrl.typ</Object>
+  </Objects>
+</Package>

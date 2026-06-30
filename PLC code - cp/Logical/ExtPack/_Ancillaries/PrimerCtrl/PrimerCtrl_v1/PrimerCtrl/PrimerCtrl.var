@@ -1,0 +1,32 @@
+VAR
+	Primer : REFERENCE TO Primer_typ;
+	AlarmsReseted : PrimerAlarms_typ;
+	ResetCommands : PrimerCommands_typ;
+	xEnablePriming : BOOL; (*Active if priming is enabled from SW and from Printer/Line*)
+	tiTimeToEmpty : TIME;
+	tonEmptyBelt : TON;
+	CommsReset : PrimerCommsInputs_typ;
+	PhysicalOutputsReset : PrimerPhysicalOutputs_typ;
+	iPrimerModel : USINT;
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF PrimerCtrlStatus_enum;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	rPrevWidth : REAL;
+	rPrevGap : REAL;
+	rPrevThickness : REAL;
+	rPrevLength : REAL;
+	xBoardParametersChanged : BOOL;
+	tof_BoardParametersChanged : TOF;
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	CopyOfWriteData : ARRAY[1..25] OF UINT;
+	tonDisableWrittingOfData : TON;
+	xDisableWriteData : BOOL;
+	ton_CommsError : TON;
+	EraseWriteData : ARRAY[1..25] OF UINT;
+END_VAR

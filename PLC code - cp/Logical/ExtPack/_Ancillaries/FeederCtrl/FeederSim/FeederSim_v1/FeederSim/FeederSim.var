@@ -1,0 +1,6 @@
+VAR
+	SimFeeder : REFERENCE TO FeederSim_typ;
+	Feeder : REFERENCE TO Feeder_typ;
+	tonPrepare : TON;
+	tonFeed : TON;
+END_VAR

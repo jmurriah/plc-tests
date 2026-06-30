@@ -1,0 +1,14 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: PrepareMachine
+ * Author: Jorge Murria
+ ********************************************************************
+ * Local variables of program PrepareMachine
+ * General variables - do not change
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	Testsuite : UtMgrTestSuite := (Name:='PrePrepare',Description:='Tests Pre Prepare the Machine ',Type:=utMgrTEST_TYPE_C,MetaInformation:='Some Meta Information can be added here');
+END_VAR
+(*Variables used in the tests*)

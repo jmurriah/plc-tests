@@ -1,0 +1,963 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="Inks.Alarm.DigSensError_B01"><tuv xml:lang="en"><seg>Inks.Alarm.DigSensError_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Inks.Alarm.DigSensError_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum1_B01"><tuv xml:lang="en"><seg>xAlrVacuum1_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum1_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum2_B01"><tuv xml:lang="en"><seg>xAlrVacuum2_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum2_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor1_B01"><tuv xml:lang="en"><seg>xAlrVacuumSensor1_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor1_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor2_B01"><tuv xml:lang="en"><seg>xAlrVacuumSensor2_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor2_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffVacuum_B01"><tuv xml:lang="en"><seg>xAlrDiffVacuum_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffVacuum_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrIncoherTempHeat_B01"><tuv xml:lang="en"><seg>xAlrIncoherTempHeat_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrIncoherTempHeat_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterReachsMaxTemp_B01"><tuv xml:lang="en"><seg>xAlrHeaterReachsMaxTemp_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterReachsMaxTemp_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTempSensor_B01"><tuv xml:lang="en"><seg>xAlrTempSensor_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTempSensor_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffInCtrlTemp_B01"><tuv xml:lang="en"><seg>xAlrDiffInCtrlTemp_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffInCtrlTemp_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDifCtrlTempExcessive_B01"><tuv xml:lang="en"><seg>xAlrDifCtrlTempExcessive_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDifCtrlTempExcessive_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterOutFault_B01"><tuv xml:lang="en"><seg>xAlrHeaterOutFault_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterOutFault_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrOverPressure_B01"><tuv xml:lang="en"><seg>xAlrOverPressure_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrOverPressure_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrStopRecircNoInk_B01"><tuv xml:lang="en"><seg>xAlrStopRecircNoInk_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrStopRecircNoInk_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrBrokenMeniscus_B01"><tuv xml:lang="en"><seg>xAlrBrokenMeniscus_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrBrokenMeniscus_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrLevelSensorError_B01"><tuv xml:lang="en"><seg>xAlrLevelSensorError_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrLevelSensorError_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankEmpty_B01"><tuv xml:lang="en"><seg>xAlrTankEmpty_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankToFillIn_B01"><tuv xml:lang="en"><seg>xAlrTankToFillIn_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankToFillIn_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPumpsDCError_B01"><tuv xml:lang="en"><seg>xAlrPumpsDCError_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrPumpsDCError_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrKlixonTriggered_B01"><tuv xml:lang="en"><seg>xAlrKlixonTriggered_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrKlixonTriggered_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPrintHeadPsuFailure_B01"><tuv xml:lang="en"><seg>xAlrTankEmpty_B01</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B01</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.DigSensError_B02"><tuv xml:lang="en"><seg>Inks.Alarm.DigSensError_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Inks.Alarm.DigSensError_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum1_B02"><tuv xml:lang="en"><seg>xAlrVacuum1_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum1_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum2_B02"><tuv xml:lang="en"><seg>xAlrVacuum2_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum2_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor1_B02"><tuv xml:lang="en"><seg>xAlrVacuumSensor1_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor1_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor2_B02"><tuv xml:lang="en"><seg>xAlrVacuumSensor2_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor2_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffVacuum_B02"><tuv xml:lang="en"><seg>xAlrDiffVacuum_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffVacuum_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrIncoherTempHeat_B02"><tuv xml:lang="en"><seg>xAlrIncoherTempHeat_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrIncoherTempHeat_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterReachsMaxTemp_B02"><tuv xml:lang="en"><seg>xAlrHeaterReachsMaxTemp_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterReachsMaxTemp_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTempSensor_B02"><tuv xml:lang="en"><seg>xAlrTempSensor_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTempSensor_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffInCtrlTemp_B02"><tuv xml:lang="en"><seg>xAlrDiffInCtrlTemp_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffInCtrlTemp_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDifCtrlTempExcessive_B02"><tuv xml:lang="en"><seg>xAlrDifCtrlTempExcessive_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDifCtrlTempExcessive_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterOutFault_B02"><tuv xml:lang="en"><seg>xAlrHeaterOutFault_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterOutFault_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrOverPressure_B02"><tuv xml:lang="en"><seg>xAlrOverPressure_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrOverPressure_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrStopRecircNoInk_B02"><tuv xml:lang="en"><seg>xAlrStopRecircNoInk_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrStopRecircNoInk_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrBrokenMeniscus_B02"><tuv xml:lang="en"><seg>xAlrBrokenMeniscus_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrBrokenMeniscus_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrLevelSensorError_B02"><tuv xml:lang="en"><seg>xAlrLevelSensorError_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrLevelSensorError_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankEmpty_B02"><tuv xml:lang="en"><seg>xAlrTankEmpty_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankToFillIn_B02"><tuv xml:lang="en"><seg>xAlrTankToFillIn_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankToFillIn_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPumpsDCError_B02"><tuv xml:lang="en"><seg>xAlrPumpsDCError_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrPumpsDCError_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrKlixonTriggered_B02"><tuv xml:lang="en"><seg>xAlrKlixonTriggered_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrKlixonTriggered_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPrintHeadPsuFailure_B02"><tuv xml:lang="en"><seg>xAlrTankEmpty_B02</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B02</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.DigSensError_B03"><tuv xml:lang="en"><seg>Inks.Alarm.DigSensError_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Inks.Alarm.DigSensError_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum1_B03"><tuv xml:lang="en"><seg>xAlrVacuum1_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum1_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum2_B03"><tuv xml:lang="en"><seg>xAlrVacuum2_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum2_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor1_B03"><tuv xml:lang="en"><seg>xAlrVacuumSensor1_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor1_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor2_B03"><tuv xml:lang="en"><seg>xAlrVacuumSensor2_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor2_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffVacuum_B03"><tuv xml:lang="en"><seg>xAlrDiffVacuum_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffVacuum_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrIncoherTempHeat_B03"><tuv xml:lang="en"><seg>xAlrIncoherTempHeat_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrIncoherTempHeat_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterReachsMaxTemp_B03"><tuv xml:lang="en"><seg>xAlrHeaterReachsMaxTemp_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterReachsMaxTemp_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTempSensor_B03"><tuv xml:lang="en"><seg>xAlrTempSensor_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTempSensor_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffInCtrlTemp_B03"><tuv xml:lang="en"><seg>xAlrDiffInCtrlTemp_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffInCtrlTemp_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDifCtrlTempExcessive_B03"><tuv xml:lang="en"><seg>xAlrDifCtrlTempExcessive_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDifCtrlTempExcessive_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterOutFault_B03"><tuv xml:lang="en"><seg>xAlrHeaterOutFault_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterOutFault_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrOverPressure_B03"><tuv xml:lang="en"><seg>xAlrOverPressure_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrOverPressure_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrStopRecircNoInk_B03"><tuv xml:lang="en"><seg>xAlrStopRecircNoInk_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrStopRecircNoInk_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrBrokenMeniscus_B03"><tuv xml:lang="en"><seg>xAlrBrokenMeniscus_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrBrokenMeniscus_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrLevelSensorError_B03"><tuv xml:lang="en"><seg>xAlrLevelSensorError_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrLevelSensorError_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankEmpty_B03"><tuv xml:lang="en"><seg>xAlrTankEmpty_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankToFillIn_B03"><tuv xml:lang="en"><seg>xAlrTankToFillIn_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankToFillIn_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPumpsDCError_B03"><tuv xml:lang="en"><seg>xAlrPumpsDCError_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrPumpsDCError_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrKlixonTriggered_B03"><tuv xml:lang="en"><seg>xAlrKlixonTriggered_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrKlixonTriggered_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPrintHeadPsuFailure_B03"><tuv xml:lang="en"><seg>xAlrTankEmpty_B03</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B03</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.DigSensError_B04"><tuv xml:lang="en"><seg>Inks.Alarm.DigSensError_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Inks.Alarm.DigSensError_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum1_B04"><tuv xml:lang="en"><seg>xAlrVacuum1_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum1_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.xAlrVacuum2_B04"><tuv xml:lang="en"><seg>xAlrVacuum2_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuum2_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor1_B04"><tuv xml:lang="en"><seg>xAlrVacuumSensor1_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor1_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrVacuumSensor2_B04"><tuv xml:lang="en"><seg>xAlrVacuumSensor2_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrVacuumSensor2_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffVacuum_B04"><tuv xml:lang="en"><seg>xAlrDiffVacuum_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffVacuum_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrIncoherTempHeat_B04"><tuv xml:lang="en"><seg>xAlrIncoherTempHeat_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrIncoherTempHeat_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterReachsMaxTemp_B04"><tuv xml:lang="en"><seg>xAlrHeaterReachsMaxTemp_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterReachsMaxTemp_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTempSensor_B04"><tuv xml:lang="en"><seg>xAlrTempSensor_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTempSensor_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDiffInCtrlTemp_B04"><tuv xml:lang="en"><seg>xAlrDiffInCtrlTemp_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDiffInCtrlTemp_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrDifCtrlTempExcessive_B04"><tuv xml:lang="en"><seg>xAlrDifCtrlTempExcessive_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrDifCtrlTempExcessive_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrHeaterOutFault_B04"><tuv xml:lang="en"><seg>xAlrHeaterOutFault_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrHeaterOutFault_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrOverPressure_B04"><tuv xml:lang="en"><seg>xAlrOverPressure_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrOverPressure_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrStopRecircNoInk_B04"><tuv xml:lang="en"><seg>xAlrStopRecircNoInk_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrStopRecircNoInk_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrBrokenMeniscus_B04"><tuv xml:lang="en"><seg>xAlrBrokenMeniscus_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrBrokenMeniscus_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrLevelSensorError_B04"><tuv xml:lang="en"><seg>xAlrLevelSensorError_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrLevelSensorError_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankEmpty_B04"><tuv xml:lang="en"><seg>xAlrTankEmpty_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrTankToFillIn_B04"><tuv xml:lang="en"><seg>xAlrTankToFillIn_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankToFillIn_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPumpsDCError_B04"><tuv xml:lang="en"><seg>xAlrPumpsDCError_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrPumpsDCError_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrKlixonTriggered_B04"><tuv xml:lang="en"><seg>xAlrKlixonTriggered_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrKlixonTriggered_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Alarm.inks.Al.xAlrPrintHeadPsuFailure_B04"><tuv xml:lang="en"><seg>xAlrTankEmpty_B04</seg>
+</tuv>
+<tuv xml:lang="es"><seg>xAlrTankEmpty_B04</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Start"><tuv xml:lang="en"><seg>Start</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Arrancar</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Lab"><tuv xml:lang="en"><seg>Laboratory</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Laboratorio</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.ByPass"><tuv xml:lang="en"><seg>ByPass</seg>
+</tuv>
+<tuv xml:lang="es"><seg>ByPass</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Stop"><tuv xml:lang="en"><seg>Stop</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Parar</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Manual"><tuv xml:lang="en"><seg>Manual</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Manual</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Auto"><tuv xml:lang="en"><seg>Auto</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Auto</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Zero"><tuv xml:lang="en"><seg>Zero</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Cero</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Reset"><tuv xml:lang="en"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Reset</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Versions"><tuv xml:lang="en"><seg>Versions</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Versiones</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Hardware"><tuv xml:lang="en"><seg>Hardware</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Hardware</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Interface"><tuv xml:lang="en"><seg>Interface</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Interfaz</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Software"><tuv xml:lang="en"><seg>Software</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Software</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.HMI"><tuv xml:lang="en"><seg>HMI</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Terminal</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Thickness"><tuv xml:lang="en"><seg>Thickness</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Espesor</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Margin"><tuv xml:lang="en"><seg>Margin</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Margen</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Length"><tuv xml:lang="en"><seg>Length</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Longitud</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Width"><tuv xml:lang="en"><seg>Width</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ancho</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Gap"><tuv xml:lang="en"><seg>Gap</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Separacion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.AirConditions"><tuv xml:lang="en"><seg>Air Conditions</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Estado aire</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Pressure"><tuv xml:lang="en"><seg>Pressure</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Presion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.DutyCycle"><tuv xml:lang="en"><seg>Duty Cycle</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Ciclo Trabajo</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+<tu tuid="Inks.Position"><tuv xml:lang="en"><seg>Position</seg>
+</tuv>
+<tuv xml:lang="es"><seg>Posicion</seg>
+</tuv>
+<tuv xml:lang="de"><seg>NoValue</seg>
+</tuv>
+<tuv xml:lang="fr"><seg>NoValue</seg>
+</tuv>
+</tu>
+</body>
+</tmx>

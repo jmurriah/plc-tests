@@ -1,0 +1,175 @@
+(********************************************************************
+ * COPYRIGHT - B&R Spain
+ ********************************************************************
+ * Program: AxisCtrl
+ * File: AxisCtrl.var
+ * Author: B&R Spain
+ * Created: September 19, 2013
+ ********************************************************************
+ * Local variables of program AxisCtrl
+ ********************************************************************)
+(********************************************************************
+ * Configuration of StateSupervisor
+********************************************************************)
+VAR CONSTANT
+	TIMEOUT_SWITCH_ON_OFF : TIME := T#10s; (*Maximum time that the axis is allowed to wait for switch on or off. It must be at least 7s in order to be able to get the 4005 error*)
+	TIMEOUT_STATE_EXCEPTION : TIME := T#500ms; (*Maximum time that the axis is allowed to have an unexpected state*)
+END_VAR
+(********************************************************************
+ * References
+********************************************************************)
+VAR
+	AdrEncoderData : UDINT; (*Address of the permanent variable where the encoder data is stored*)
+	pAxisCtrl : REFERENCE TO AxisCtrl_typ; (*Axis control structure (local reference to avoid doing a find & replace)*)
+	isqRippleData : REFERENCE TO MC_ISQ_RippleData_typ;
+	AxisRef : UDINT; (*Axis reference (address of ACP10 structure)*)
+	MasterRef : UDINT; (*Axis reference (address of ACP10 structure)*)
+	AxisName : STRING[12];
+	MasterName : STRING[12];
+END_VAR
+(********************************************************************
+ * Sequences
+********************************************************************)
+VAR
+	InitStep : USINT; (*Current step in the init step sequence*)
+	AxisState : AxisState_typ; (*Current step in the step sequence*)
+	AxisErrorState : AxisErrorState_typ; (*Current step in the error handling step sequence*)
+END_VAR
+(********************************************************************
+ * FBKs
+********************************************************************)
+VAR
+	MC_ReadStatus_0 : MC_ReadStatus; (*Function Block*)
+	MC_BR_ReadDriveStatus_0 : MC_BR_ReadDriveStatus; (*Function Block*)
+	MC_ReadAxisError_0 : MC_ReadAxisError; (*Function Block*)
+	MC_ReadActualPosition_0 : MC_ReadActualPosition; (*Function Block *)
+	MC_ReadActualVelocity_0 : MC_ReadActualVelocity; (*Function Block*)
+	MC_ReadActualTorque_0 : MC_ReadActualTorque; (*Function Block *)
+	MC_Power_0 : MC_Power; (*Function Block*)
+	MC_Home_0 : MC_Home; (*Function Block*)
+	MC_MoveAbsolute_0 : MC_MoveAbsolute; (*Function Block*)
+	MC_MoveAbsolute_1 : MC_MoveAbsolute; (*Function Block*)
+	MC_MoveAdditive_0 : MC_MoveAdditive; (*Function Block*)
+	MC_MoveAdditive_1 : MC_MoveAdditive; (*Function Block*)
+	MC_MoveVelocity_0 : MC_MoveVelocity; (*Function Block*)
+	MC_MoveVelocity_1 : MC_MoveVelocity; (*Function Block*)
+	MC_GearIn_0 : MC_GearIn; (*Function Block*)
+	MC_GearIn_1 : MC_GearIn; (*Function Block*)
+	MC_GearOut_x : MC_GearOut; (*Function Block*)
+	MC_Halt_0 : MC_Halt; (*Function Block*)
+	MC_Halt_1 : MC_Halt; (*Function Block*)
+	MC_Stop_0 : MC_Stop; (*Function Block*)
+	MC_Reset_0 : MC_Reset; (*Function Block*)
+	MC_SetOverride_0 : MC_SetOverride; (*Function Block*)
+	MC_BR_InitEndlessPosition_0 : MC_BR_InitEndlessPosition; (*Function Block*)
+	MC_ReadMotorTemp : MC_BR_CyclicRead;
+	MC_ReadAmbTemp : MC_BR_ReadParID;
+	MC_BR_WriteParIDText_EncReset : MC_BR_WriteParIDText; (*Function Block*)
+END_VAR
+(********************************************************************
+ * Temp Variables
+********************************************************************)
+VAR
+	StatusNcAccess : UINT;
+	AxisRefDone : BOOL;
+	pACP10VAXIS : REFERENCE TO ACP10VAXIS_typ;
+	pACP10AXIS : REFERENCE TO ACP10AXIS_typ;
+	AxisIsVirtual : BOOL;
+	MasterRefDone : BOOL;
+	InitDone : BOOL;
+	InPosition : BOOL;
+	InGear : BOOL;
+	HomeValid : BOOL;
+	ErrorTextFB : ARRAY[0..3] OF STRING[79];
+	DriveStatusFB : MC_DRIVESTATUS_TYP;
+	InitErrorText : ARRAY[0..3] OF STRING[79];
+	InitErrorID : UINT;
+	InitErrorSource : AxisCtrl_errorSource_enu;
+	ErrorText : ARRAY[0..3] OF STRING[79];
+	ErrorAux : STRING[79];
+	ErrorFB : STRING[79];
+	ErrorID : UINT;
+	ErrorSource : AxisCtrl_errorSource_enu;
+	TON_Exception : TON;
+	R_TRIG_JogStepByStepPos : R_TRIG;
+	R_TRIG_JogStepByStepNeg : R_TRIG;
+	iActualCommandsCounter : USINT;
+	MC_BR_WriteParID_31 : MC_BR_WriteParID;
+	MC_BR_ReadParID_11 : MC_BR_ReadParID; (*Read Max Temperature of Drivers*)
+	MC_BR_CyclicRead_10 : MC_BR_ReadParID; (*Read Actual Temperature of Driver*)
+	MC_BR_CyclicRead_20 : MC_BR_ReadParID; (*Read Actual Temperature of Motors*)
+	MC_BR_ReadParID_51 : MC_BR_ReadParID; (*Read Max speed of Motors*)
+	MC_BR_ReadParID_21 : MC_BR_ReadParID; (*Read Max Temperature of Motors*)
+	MC_BR_ReadParID_913 : MC_BR_ReadParID;
+	MC_BR_ReadParID_914 : MC_BR_ReadParID;
+	MC_BR_ReadParID_915 : MC_BR_ReadParID;
+	MC_BR_ReadParID_916 : MC_BR_ReadParID;
+	MC_BR_WriteParID_30 : MC_BR_WriteParID;
+	MC_BR_WriteParID_32 : MC_BR_WriteParID;
+	MC_BR_WriteParID_33 : MC_BR_WriteParID;
+	MC_BR_WriteParID_34 : MC_BR_WriteParID;
+	MC_BR_WriteParID_35 : MC_BR_WriteParID;
+	MC_BR_WriteParID_36 : MC_BR_WriteParID;
+	MC_BR_WriteParID_37 : MC_BR_WriteParID;
+	MC_BR_WriteParID_38 : MC_BR_WriteParID;
+	MC_BR_WriteParID_39 : MC_BR_WriteParID;
+	MC_BR_WriteParID_40 : MC_BR_WriteParID;
+	MC_BR_WriteParID_41 : MC_BR_WriteParID;
+	MC_BR_WriteParID_42 : MC_BR_WriteParID;
+	MC_BR_WriteParID_43 : MC_BR_WriteParID;
+	MC_BR_WriteParID_44 : MC_BR_WriteParID;
+	MC_BR_WriteParID_45 : MC_BR_WriteParID;
+	MC_BR_ReadParID_112 : MC_BR_ReadParID; (*To read param Id acceleration*)
+	MC_BR_ReadParID_214 : MC_BR_ReadParID; (*To read param Id acceleration*)
+	MC_BR_ReadParID_53 : MC_BR_ReadParID; (*To read param Id acceleration*)
+	MC_BR_ReadParID_54 : MC_BR_ReadParID; (*To read param Id acceleration*)
+	PowerStatusOld : BOOL; (*MC_BR_WriteParID_0 : MC_BR_WriteParID;
+	MC_BR_WriteParID_1 : MC_BR_WriteParID;
+	MC_BR_WriteParID_2 : MC_BR_WriteParID;
+	MC_BR_WriteParID_3 : MC_BR_WriteParID;
+	MC_BR_WriteParID_4 : MC_BR_WriteParID;
+	MC_BR_WriteParID_5 : MC_BR_WriteParID;
+	MC_BR_WriteParID_6 : MC_BR_WriteParID;
+	MC_BR_WriteParID_7 : MC_BR_WriteParID;
+	MC_BR_WriteParID_8 : MC_BR_WriteParID;
+	MC_BR_WriteParID_9 : MC_BR_WriteParID;
+	MC_BR_WriteParID_10 : MC_BR_WriteParID;
+	MC_BR_WriteParID_11 : MC_BR_WriteParID;
+	MC_BR_WriteParID_14 : MC_BR_WriteParID;
+	MC_BR_WriteParID_15 : MC_BR_WriteParID;*)
+	MasterUsed : BOOL; (*Master-Slave Function is Used in Axis Control*)
+END_VAR
+(********************************************************************
+ * ISQ RIPPLE Variables
+********************************************************************)
+VAR
+	isqRippleDataEmpty : MC_ISQ_RippleData_typ;
+	urISQdataValue : REAL;
+	udiISQdataValue : UDINT;
+	udiISQdataAddres : UDINT;
+	uiISQparId : UINT;
+	iISQTimesInReadUpload : USINT;
+	iISQTimesInWriteUpload : USINT;
+	xISQOrderWriteUploadCount : UINT;
+	xISQOrderWriteUpload : BOOL;
+	xISQOrderReadUploadCount : UINT;
+	xISQOrderReadUpload : BOOL;
+	fbISQWriteParUpload : MC_BR_WriteParID;
+	fbISQReadParUpload : MC_BR_ReadParID;
+	iISQUploadindex : USINT := 100; (*This value to 90 is the start order*)
+	iISQUploadsubindex : USINT := 100;
+	xISQUploadnext : BOOL := FALSE;
+	iISQTimesInReadDownload : USINT;
+	iISQTimesInWriteDownload : USINT;
+	xISQOrderWriteDownloadCount : UINT;
+	xISQOrderWriteDownload : BOOL;
+	xISQOrderWriteSingleDownloadCnt : UINT;
+	xISQOrderWriteSingleDownload : BOOL;
+	fbISQWriteParDownload : MC_BR_WriteParID;
+	fbISQWriteSingleParDownload : MC_BR_WriteParID;
+	iISQDownloadindex : USINT := 100; (*This value to 90 is the start order*)
+	iISQDownloadsubindex : USINT := 100;
+	xISQDownloadnext : BOOL := FALSE;
+	iCommandsError : DINT;
+	rActualCurrent : REAL; (*Value to assign the reading of the FB*)
+END_VAR

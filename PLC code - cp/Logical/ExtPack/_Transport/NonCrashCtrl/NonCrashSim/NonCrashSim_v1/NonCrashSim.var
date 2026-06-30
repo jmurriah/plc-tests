@@ -1,0 +1,3 @@
+VAR
+	iNonCrashSimIndex : USINT;
+END_VAR

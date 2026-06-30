@@ -1,0 +1,5 @@
+VAR
+	xMediaTracking : REFERENCE TO ARRAY[0..iMAXTRACKINGARRAY] OF USINT; (*Matrix with the information about if there is Media in the position. Each position corresponds to a cm. Bit 0: L1 , Bit 1 L2*)
+	iDistanceWorkEmptyBelt : REFERENCE TO UINT;
+	iIndexMediaTrack : UINT;
+END_VAR

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="MediaPackage" PackageType="MediaPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">BackGround</Object>
+    <Object Type="Package">Videos</Object>
+    <Object Type="Package">PDF</Object>
+    <Object Type="Package">EFI</Object>
+    <Object Type="Package">ImageList</Object>
+    <Object Type="Package">Lamps</Object>
+    <Object Type="Package">Favorite</Object>
+    <Object Type="Package">Animation</Object>
+    <Object Type="Package">Sounds</Object>
+    <Object Type="Package">SVGsymbols</Object>
+    <Object Type="Package">Icons</Object>
+    <Object Type="Package">CategoryPictures</Object>
+    <Object Type="Package">UI</Object>
+    <Object Type="File">Press Icons - Font Awesome.url</Object>
+    <Object Type="File">SVG Coordinates.jpg</Object>
+    <Object Type="Package">Printer_Realisrtic_images</Object>
+  </Objects>
+</Package>

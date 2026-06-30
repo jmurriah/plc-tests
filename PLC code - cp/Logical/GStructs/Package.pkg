@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Global General data types">General.typ</Object>
+    <Object Type="File" Description="Global General Machine data types">GeneralMachine.typ</Object>
+    <Object Type="File" Description="Global General Machine data types">Dryer.typ</Object>
+    <Object Type="File">InksBox.typ</Object>
+  </Objects>
+</Package>

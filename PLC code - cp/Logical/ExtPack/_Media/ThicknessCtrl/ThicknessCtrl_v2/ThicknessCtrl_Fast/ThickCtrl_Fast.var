@@ -1,0 +1,15 @@
+VAR
+	RTInfo_0 : RTInfo;
+	rPeriode : REAL := 0; (*Cycle time in microseconds. Read just in INIT. NEVER Write over it!!!*)
+	iReasonForMediaInProductDetect : USINT;
+	xProductDetectValuesL1 : ARRAY[0..THICK_MAX_UPDATE_VALUES] OF BOOL;
+	xProductDetectValuesL2 : ARRAY[0..THICK_MAX_UPDATE_VALUES] OF BOOL;
+	xMediaInProductDetectL1 : REFERENCE TO BOOL;
+	xMediaInProductDetectL2 : REFERENCE TO BOOL;
+END_VAR
+VAR RETAIN
+	BeltDriveUnit : DriveUnitMngr;
+END_VAR
+VAR
+	xMountedMedia : BOOL; (*Previously as an input, now ThicknessCtrl reads the value from AnalogCtrl and ArrayCtrl*)
+END_VAR

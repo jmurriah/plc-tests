@@ -1,0 +1,141 @@
+VAR
+	ConnectionHdl_PLC : DWORD;
+	ExecuteConnect_PLC : BOOL;
+	ExecuteGetnamespaceindex_PLC : BOOL;
+	ExecuteMethodGetHandle_PLC : BOOL;
+	genericMethodInput : BOOL;
+	NamespaceIndex_PLC : UINT;
+	ObjectNodeID_PLC : UANodeID;
+	SessionConnectInfo_PLC : UASessionConnectInfo;
+	UA_Connect_PLC : UA_Connect;
+	UA_GetNamespaceIndex_PLC : UA_GetNamespaceIndex;
+	
+	ExecuteMethodCall_getMachConf: BOOL;
+	InputArguments_getMachConf: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getMachConf: DWORD;
+	MethodNodeID_getMachConf: UANodeID;
+	OutputArguments_getMachConf: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getMachConf: UA_MethodCall;
+	UA_MethodGetHandle_getMachConf: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getModuleOk: BOOL;
+	InputArguments_getModuleOk: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getModuleOk: DWORD;
+	MethodNodeID_getModuleOk: UANodeID;
+	OutputArguments_getModuleOk: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getModuleOk: UA_MethodCall;
+	UA_MethodGetHandle_getModuleOk: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getDI_1: BOOL;
+	InputArguments_getDI_1: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getDI_1: DWORD;
+	MethodNodeID_getDI_1: UANodeID;
+	OutputArguments_getDI_1: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getDI_1: UA_MethodCall;
+	UA_MethodGetHandle_getDI_1: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getDO_1: BOOL;
+	InputArguments_getDO_1: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getDO_1: DWORD;
+	MethodNodeID_getDO_1: UANodeID;
+	OutputArguments_getDO_1: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getDO_1: UA_MethodCall;
+	UA_MethodGetHandle_getDO_1: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getAI_1: BOOL;
+	InputArguments_getAI_1: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getAI_1: DWORD;
+	MethodNodeID_getAI_1: UANodeID;
+	OutputArguments_getAI_1: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getAI_1: UA_MethodCall;
+	UA_MethodGetHandle_getAI_1: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getAO_1: BOOL;
+	InputArguments_getAO_1: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getAO_1: DWORD;
+	MethodNodeID_getAO_1: UANodeID;
+	OutputArguments_getAO_1: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getAO_1: UA_MethodCall;
+	UA_MethodGetHandle_getAO_1: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getAT_1: BOOL;
+	InputArguments_getAT_1: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getAT_1: DWORD;
+	MethodNodeID_getAT_1: UANodeID;
+	OutputArguments_getAT_1: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getAT_1: UA_MethodCall;
+	UA_MethodGetHandle_getAT_1: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getDI_2: BOOL;
+	InputArguments_getDI_2: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getDI_2: DWORD;
+	MethodNodeID_getDI_2: UANodeID;
+	OutputArguments_getDI_2: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getDI_2: UA_MethodCall;
+	UA_MethodGetHandle_getDI_2: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getDO_2: BOOL;
+	InputArguments_getDO_2: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getDO_2: DWORD;
+	MethodNodeID_getDO_2: UANodeID;
+	OutputArguments_getDO_2: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getDO_2: UA_MethodCall;
+	UA_MethodGetHandle_getDO_2: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getAI_2: BOOL;
+	InputArguments_getAI_2: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getAI_2: DWORD;
+	MethodNodeID_getAI_2: UANodeID;
+	OutputArguments_getAI_2: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getAI_2: UA_MethodCall;
+	UA_MethodGetHandle_getAI_2: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getAO_2: BOOL;
+	InputArguments_getAO_2: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getAO_2: DWORD;
+	MethodNodeID_getAO_2: UANodeID;
+	OutputArguments_getAO_2: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getAO_2: UA_MethodCall;
+	UA_MethodGetHandle_getAO_2: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getAT_2: BOOL;
+	InputArguments_getAT_2: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getAT_2: DWORD;
+	MethodNodeID_getAT_2: UANodeID;
+	OutputArguments_getAT_2: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getAT_2: UA_MethodCall;
+	UA_MethodGetHandle_getAT_2: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getPhotoCells: BOOL;
+	InputArguments_getPhotoCells: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getPhotoCells: DWORD;
+	MethodNodeID_getPhotoCells: UANodeID;
+	OutputArguments_getPhotoCells: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getPhotoCells: UA_MethodCall;
+	UA_MethodGetHandle_getPhotoCells: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getCuringBar: BOOL;
+	InputArguments_getCuringBar: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getCuringBar: DWORD;
+	MethodNodeID_getCuringBar: UANodeID;
+	OutputArguments_getCuringBar: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getCuringBar: UA_MethodCall;
+	UA_MethodGetHandle_getCuringBar: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getBlock: BOOL;
+	InputArguments_getBlock: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getBlock: DWORD;
+	MethodNodeID_getBlock: UANodeID;
+	OutputArguments_getBlock: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getBlock: UA_MethodCall;
+	UA_MethodGetHandle_getBlock: UA_MethodGetHandle;
+	
+	ExecuteMethodCall_getTransV: BOOL;
+	InputArguments_getTransV: ARRAY[0..9] OF UAMethodArgument;
+	MethodHdl_getTransV: DWORD;
+	MethodNodeID_getTransV: UANodeID;
+	OutputArguments_getTransV: ARRAY[0..9] OF UAMethodArgument;
+	UA_MethodCall_getTransV: UA_MethodCall;
+	UA_MethodGetHandle_getTransV: UA_MethodGetHandle;
+	
+END_VAR

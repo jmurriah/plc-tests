@@ -1,0 +1,28 @@
+VAR
+	iBarsWithJamDevice : USINT;
+	iJamDevicesPerBlock : USINT;
+	iBlockIndex : USINT;
+	iJamDeviceIndex : USINT;
+	iJamSensorIndex : USINT;
+	iFirstJamDevice : USINT;
+	iFirstJamSensor : USINT;
+	iJamDeviceInBlock : USINT;
+	iJamSensorInBlock : USINT;
+	iJamSensorItem : USINT;
+	MachineModelCopy : MachineModel_enum;
+	xChangedSimMachine : BOOL;
+	simMachine_copy : SimMachineType;
+	iIndexBlock : USINT; (*Block Index to use a FOR*)
+	stepperMotor : REFERENCE TO AxisCtrl_typ;
+	xExistsLoopBlock : BOOL;
+	iIndexTrVacc : USINT; (*TransportVacuum Index to use a FOR*)
+	gJamDetectReseted : ARRAY[0..MAX_LAST_JAMDEVICE] OF JamDetect_typ;
+	iChillerIndex : USINT;
+	iIndexInks : USINT;
+	iIndexPlcCar : USINT;
+	iIndexEhdSubsystems : USINT;
+	iIndexJamDevice : USINT;
+	iIndexJamSensor : USINT;
+	xIsBarInstalled : BOOL;
+	iIndexCuringLedLamps : USINT;
+END_VAR

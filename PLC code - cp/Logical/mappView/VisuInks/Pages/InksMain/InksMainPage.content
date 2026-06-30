@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="InksMainPage_Content" height="800" width="1080" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBar1" top="10" left="30" width="505" height="240" zIndex="0" text="Bar 1">
+      <Widgets>
+        <Widget xsi:type="widgets.EFIWidgetLib.InksCtrl01" id="InksCtrl_1" top="-2" left="4" width="480" height="210" zIndex="0" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBar2" top="10" left="555" width="505" height="240" zIndex="1" text="Bar 2">
+      <Widgets>
+        <Widget xsi:type="widgets.EFIWidgetLib.InksCtrl01" id="InksCtrl_2" top="-2" left="4" width="480" height="210" zIndex="0" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBar6" top="510" left="555" width="505" height="240" zIndex="2" text="Bar 6">
+      <Widgets>
+        <Widget xsi:type="widgets.EFIWidgetLib.InksCtrl01" id="InksCtrl_6" top="-2" left="4" width="480" height="210" zIndex="0" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBar4" top="260" left="555" width="505" height="240" zIndex="4" text="Bar 4">
+      <Widgets>
+        <Widget xsi:type="widgets.EFIWidgetLib.InksCtrl01" id="InksCtrl_4" top="-2" left="4" width="480" height="210" zIndex="0" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBar3" top="260" left="30" width="505" height="240" zIndex="5" text="Bar 3">
+      <Widgets>
+        <Widget xsi:type="widgets.EFIWidgetLib.InksCtrl01" id="InksCtrl_3" top="-2" left="4" width="480" height="210" zIndex="0" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="grpBar5" top="510" left="30" width="505" height="240" zIndex="3" text="Bar 5">
+      <Widgets>
+        <Widget xsi:type="widgets.EFIWidgetLib.InksCtrl01" id="InksCtrl_5" top="-2" left="4" width="480" height="210" zIndex="0" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

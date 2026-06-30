@@ -1,0 +1,3 @@
+VAR
+	iSimpleBlockSimIndex : USINT;
+END_VAR

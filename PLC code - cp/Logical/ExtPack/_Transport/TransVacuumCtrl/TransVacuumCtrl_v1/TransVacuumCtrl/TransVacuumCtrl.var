@@ -1,0 +1,52 @@
+VAR
+	dataVacc : REFERENCE TO TransVacuum_typ;
+	AlarmsSummaryReseted : stEFI_AlarmSummary;
+	AlarmsReseted : TransVacuumAlarms_typ;
+	CommandsReseted : TransVacuumCommands_typ;
+	Blower : REFERENCE TO AxisP66_typ;
+	BlowersWatch : ARRAY[1..MAX_LAST_MOTOR_BLOWER] OF AxisP66_typ;
+	ConditionStart_copy : BOOL; (*Storing all previous data*)
+	ConditionStart : BOOL; (*Storing all previous data*)
+	ConditionsStart_copy : ARRAY[1..MAX_LAST_MOTOR_BLOWER] OF BOOL; (*Storing all previous data*)
+	rVacPressure : REAL; (*Pressure measured by the sensor*)
+	rVacPressurePerc : REAL; (*Pressure measured by the sensor in % of MaxSystemVacuum*)
+	xEnablePID : BOOL;
+	xUpdatePID : BOOL;
+	fbPIDPressure : MTBasicsPID;
+	pidParPressure : MTPIDParametersType;
+	StatusCtrl : TransVacuumStatusCtrl;
+	xRunBlowerAuto : BOOL;
+	xRunOutOfProduction : BOOL;
+	xRunBlowerMan : BOOL;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	iReasonSound : UDINT;
+	arxAlrVacuumSensor : AutoResetSound;
+	arxAlrComsBlower : AutoResetSound;
+	arxAlrDriveBlowerError : AutoResetSound;
+	stEventLog : EventLog_typ;
+	tonJunctionAlarm : TON;
+	arxAlrJointSystemPressure : AutoResetSound;
+	arxAlrBlowerCB : AutoResetSound;
+	uiIndex : USINT;
+	StatusCtrl_copy : TransVacuumStatusCtrl;
+	FLP_PresFilterPasLow : MTFilterLowPass;
+	TON_StopBlowersDly : TON; (*Delay to filter fast pause-start transcition*)
+	xLabStartedBlowers : BOOL; (*Blowers started for first time un the laboratory mode*)
+	xAllBlowersAtSpeed : BOOL;
+	xAllBlowersRunning : BOOL;
+	BlowerDirection : MotorDirection_enum;
+	BlowerDirectionsWatch : ARRAY[1..MAX_LAST_MOTOR_BLOWER] OF MotorDirection_enum;
+	tonBlowerNotRunning : ARRAY[1..MAX_LAST_MOTOR_BLOWER] OF TON;
+	iReasonOutOfProduction : UINT;
+	iReasonRunAuto : USINT;
+	xDisableBlower : ARRAY[1..MAX_LAST_MOTOR_BLOWER] OF BOOL;
+	xAllBlowerDisabled : BOOL;
+	tonBlowersRunning : TON;
+	xProductionOrJamRecovery : BOOL;
+	tpEvEvacuateInk : TP;
+	tofNotStartAfterEStop : TOF;
+	iAnyWarning : USINT;
+	tonCheckAlarms : TON;
+	xEnteringPowerOn : BOOL;
+END_VAR

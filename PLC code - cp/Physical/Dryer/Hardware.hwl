@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <TimeStamps>
+    <TimeStamp LogicalPath="Dryer.Hardware.hw" LastWriteTime="11/11/2020 15:14:27" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="8EI4X5MWS10.xxxx-1_BK1" Type="8EI4X5MWS10.xxxx-1" X="182" Y="289" />
+    <Module Name="8EI044HWS10.xxxx-1_BELT" Type="8EI044HWS10.xxxx-1" X="45.1801758" Y="276.018066" />
+    <Module Name="8I66xxxxxxx.0P-xxx" Type="8I66xxxxxxx.0P-xxx" X="605" Y="87" />
+    <Module Name="8I66xxxxxxx.0P-xxx1" Type="8I66xxxxxxx.0P-xxx" X="740" Y="87" />
+    <Module Name="8LSA44.DA060S300-3" Type="8LSA44.DA060S300-3" X="262" Y="358" />
+    <Module Name="X20BB57" Type="X20BB57" X="4" Y="44.8383026" />
+    <Module Name="X20PS9600" Type="X20PS9600" X="29" Y="44.8383026" />
+    <Module Name="X20TB12" Type="X20TB12" X="29" Y="71.8383" />
+    <Module Name="X20CP0483" Type="X20CP0483" X="4" Y="44.8383026" />
+    <Module Name="6PPT50.101E-16B" Type="6PPT50.101E-16B" X="-324" Y="26" />
+    <Module Name="24PortHub" Type="24PortHub" X="-215.731689" Y="206.869827" />
+    <Module Name="OpcUa_any" Type="OpcUa_any" X="605" Y="364.1902" />
+    <Module Name="OpcUa_any1" Type="OpcUa_any" X="-245.1621" Y="358.107849" />
+    <Module Name="X20cHB2880" Type="X20cHB2880" X="-240.731689" Y="462" />
+    <Module Name="0AC808.9" Type="0AC808.9" X="77" Y="67" />
+    <Module Name="24PortHub1" Type="24PortHub" X="483" Y="253" />
+  </Modules>
+  <Links>
+    <Link From="24PortHub" To="6PPT50.101E-16B" FromPort="ETH13" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="-201.731689" Y="231.869827" />
+      <Point X="-201.731689" Y="231.869827" />
+      <Point X="-201.731689" Y="243.869827" />
+      <Point X="-201.731689" Y="255" />
+      <Point X="-234.8" Y="255" />
+      <Point X="-234.8" Y="168" />
+      <Point X="-234.8" Y="163" />
+      <Point X="-234.8" Y="163" />
+    </Link>
+    <Link From="24PortHub" To="OpcUa_any1" FromPort="ETH19" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="-123.731689" Y="231.869827" />
+      <Point X="-123.731689" Y="231.869827" />
+      <Point X="-123.731689" Y="243.869827" />
+      <Point X="-123.731689" Y="415" />
+      <Point X="-211.1621" Y="415" />
+      <Point X="-211.1621" Y="409.107849" />
+      <Point X="-211.1621" Y="402.107849" />
+      <Point X="-211.1621" Y="402.107849" />
+    </Link>
+    <Link From="24PortHub" To="X20cHB2880" FromPort="ETH20" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="-110.731689" Y="231.869827" />
+      <Point X="-110.731689" Y="231.869827" />
+      <Point X="-110.731689" Y="243.869827" />
+      <Point X="-110.731689" Y="537" />
+      <Point X="-214.731689" Y="537" />
+      <Point X="-226.731689" Y="537" />
+      <Point X="-226.731689" Y="537" />
+    </Link>
+    <Link From="8EI4X5MWS10.xxxx-1_BK1" To="8LSA44.DA060S300-3" FromPort="EC1" ToPort="EC" IsRoutedByUser="True">
+      <Point X="207.366135" Y="328.3183" />
+      <Point X="207.366135" Y="328.3183" />
+      <Point X="229.366135" Y="328.3183" />
+      <Point X="283.86615" Y="328.3183" />
+      <Point X="283.86615" Y="357.2079" />
+      <Point X="283.86615" Y="364.2079" />
+      <Point X="283.86615" Y="364.2079" />
+    </Link>
+    <Link From="8EI4X5MWS10.xxxx-1_BK1" To="8LSA44.DA060S300-3" FromPort="MT1" ToPort="MT" IsRoutedByUser="True">
+      <Point X="208.966141" Y="337.6183" />
+      <Point X="208.966141" Y="337.6183" />
+      <Point X="228.966141" Y="337.6183" />
+      <Point X="311.86615" Y="337.6183" />
+      <Point X="311.86615" Y="357.2079" />
+      <Point X="311.86615" Y="364.2079" />
+      <Point X="311.86615" Y="364.2079" />
+    </Link>
+    <Link From="X20CP0483" To="0AC808.9" FromPort="IF3" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="18" Y="117.8383" />
+      <Point X="18" Y="117.8383" />
+      <Point X="3" Y="117.8383" />
+      <Point X="-5" Y="117.8383" />
+      <Point X="-5" Y="35" />
+      <Point X="103" Y="35" />
+      <Point X="103" Y="66" />
+      <Point X="103" Y="78" />
+      <Point X="103" Y="78" />
+    </Link>
+    <Link From="0AC808.9" To="8I66xxxxxxx.0P-xxx" FromPort="ETH7" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="129" Y="91" />
+      <Point X="129" Y="91" />
+      <Point X="129" Y="111" />
+      <Point X="129" Y="195" />
+      <Point X="622" Y="195" />
+      <Point X="622" Y="187" />
+      <Point X="622" Y="179" />
+      <Point X="622" Y="179" />
+    </Link>
+    <Link From="0AC808.9" To="8EI4X5MWS10.xxxx-1_BK1" FromPort="ETH6" ToPort="PLK1" IsRoutedByUser="True">
+      <Point X="116" Y="91" />
+      <Point X="116" Y="91" />
+      <Point X="116" Y="111" />
+      <Point X="116" Y="255.221863" />
+      <Point X="189.7" Y="255.221863" />
+      <Point X="189.7" Y="288.5" />
+      <Point X="189.7" Y="299.5" />
+      <Point X="189.7" Y="299.5" />
+    </Link>
+    <Link From="8EI044HWS10.xxxx-1_BELT" To="0AC808.9" FromPort="PLK1" ToPort="ETH5" IsRoutedByUser="True">
+      <Point X="52.8801765" Y="286.518066" />
+      <Point X="52.8801765" Y="286.518066" />
+      <Point X="52.8801765" Y="275.518066" />
+      <Point X="52.8801765" Y="265" />
+      <Point X="103" Y="265" />
+      <Point X="103" Y="111" />
+      <Point X="103" Y="91" />
+      <Point X="103" Y="91" />
+    </Link>
+    <Link From="OpcUa_any" To="24PortHub1" FromPort="ETH1" ToPort="ETH17" IsRoutedByUser="False">
+      <Point X="639" Y="408.1902" />
+      <Point X="639" Y="408.1902" />
+      <Point X="639" Y="415.1902" />
+      <Point X="639" Y="425" />
+      <Point X="549" Y="425" />
+      <Point X="549" Y="290" />
+      <Point X="549" Y="278" />
+      <Point X="549" Y="278" />
+    </Link>
+    <Link From="X20CP0483" To="24PortHub" FromPort="IF2" ToPort="ETH7" IsRoutedByUser="False">
+      <Point X="18" Y="134.8383" />
+      <Point X="18" Y="134.8383" />
+      <Point X="3" Y="134.8383" />
+      <Point X="-123.731689" Y="134.8383" />
+      <Point X="-123.731689" Y="205.869827" />
+      <Point X="-123.731689" Y="219.869827" />
+      <Point X="-123.731689" Y="219.869827" />
+    </Link>
+    <Link From="24PortHub" To="24PortHub1" FromPort="ETH24" ToPort="ETH3" IsRoutedByUser="False">
+      <Point X="-58.73169" Y="231.869827" />
+      <Point X="-58.73169" Y="231.869827" />
+      <Point X="-44.73169" Y="231.869827" />
+      <Point X="523" Y="231.869827" />
+      <Point X="523" Y="252" />
+      <Point X="523" Y="266" />
+      <Point X="523" Y="266" />
+    </Link>
+    <Link From="8I66xxxxxxx.0P-xxx" To="8I66xxxxxxx.0P-xxx1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="637.4806" Y="179.869827" />
+      <Point X="637.4806" Y="179.869827" />
+      <Point X="637.4806" Y="187.869827" />
+      <Point X="637.4806" Y="197.869827" />
+      <Point X="758.1078" Y="197.869827" />
+      <Point X="758.1078" Y="187.869827" />
+      <Point X="758.1078" Y="179.869827" />
+      <Point X="758.1078" Y="179.869827" />
+    </Link>
+  </Links>
+  <InfoElements>
+    <InfoElementText Id="Textbox_1" X="40.3661346" Y="537.818054" Width="111" Height="57.8462524">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+     Transport</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_2" X="166.087784" Y="492.3183" Width="96.2783661" Height="48.17157">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+    Elevation</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_6" X="572.157349" Y="44.8383026" Width="258.138916" Height="198.031525">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+      Blower J8              Blower J9</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_7" X="-370.8648" Y="358.107849" Width="111" Height="56.0823364">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+     ADPHOS</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_8" X="-370.8648" Y="484" Width="111" Height="56.0823364">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+        GEW</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_9" X="423.728149" Y="-52.31079" Width="443.405884" Height="698.722534">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+    PDC</Text>
+      <Background Color="White" Transparent="True" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_10" X="-380.96936" Y="-53.9296875" Width="783.999268" Height="700.341431">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+    DRYER</Text>
+      <Background Color="White" Transparent="True" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_11" X="710.1742" Y="358.107849" Width="111" Height="57.8462524">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">
+     Main PLC</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+  </InfoElements>
+</BR.AS.HardwareTopology>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">BeltMoving.svg</Object>
+    <Object Type="File">BeltMoving.xcf</Object>
+    <Object Type="File">BeltMoving01.png</Object>
+    <Object Type="File">BeltMoving02.png</Object>
+    <Object Type="File">BeltMoving03.png</Object>
+    <Object Type="File">BeltMoving04.png</Object>
+    <Object Type="File">BeltMoving05.png</Object>
+    <Object Type="File">BeltMoving06.png</Object>
+    <Object Type="File">BeltMoving07.png</Object>
+    <Object Type="File">BeltMoving08.png</Object>
+    <Object Type="File">BeltMoving09.png</Object>
+    <Object Type="File">BeltMoving10.png</Object>
+    <Object Type="File">BeltMoving11.png</Object>
+    <Object Type="File">BeltMoving12.png</Object>
+    <Object Type="File">DiagonalJams.svg</Object>
+    <Object Type="File">LongBeltMoving.svg</Object>
+    <Object Type="File">ShaftMoving.gif</Object>
+    <Object Type="File">ShaftMoving.xcf</Object>
+    <Object Type="File">ShaftMoving01.png</Object>
+    <Object Type="File">ShaftMoving02.png</Object>
+    <Object Type="File">ShaftMoving03.png</Object>
+    <Object Type="File">ShaftMoving04.png</Object>
+    <Object Type="File">ShaftMoving05.png</Object>
+    <Object Type="File">ShaftMoving06.png</Object>
+    <Object Type="File">ShaftMoving07.png</Object>
+    <Object Type="File">ShaftMoving08.png</Object>
+    <Object Type="File">ShaftMoving09.png</Object>
+    <Object Type="File">ShaftMoving10.png</Object>
+    <Object Type="File">ShaftMoving11.png</Object>
+    <Object Type="File">ShaftMoving12.png</Object>
+  </Objects>
+</Package>

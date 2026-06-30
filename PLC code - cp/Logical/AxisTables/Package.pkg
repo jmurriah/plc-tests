@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="DataObject" Language="Ett">AcpErrTxt</Object>
+    <Object Type="DataObject" Language="Ett">acp10etxen</Object>
+    <Object Type="DataObject" Language="Apt" Description="Stepper Motors 3 Lasers config table">SM_a</Object>
+    <Object Type="DataObject" Language="Ax" Description="Stepper Motors 3 Lasers config table">SM_i</Object>
+    <Object Type="DataObject" Language="Apt">BeltP4_a</Object>
+    <Object Type="DataObject" Language="Ax">BeltP4_i</Object>
+    <Object Type="DataObject" Language="Apt">BeltS1400_a</Object>
+    <Object Type="DataObject" Language="Ax">BeltS1400_i</Object>
+    <Object Type="DataObject" Language="Apt">BeltCube_a</Object>
+    <Object Type="DataObject" Language="Ax">BeltCube_i</Object>
+    <Object Type="DataObject" Language="Apt">BeltP5_a</Object>
+    <Object Type="DataObject" Language="Ax">BeltP5_i</Object>
+    <Object Type="DataObject" Language="Apt">BeltShield_a</Object>
+    <Object Type="DataObject" Language="Ax">BeltShield_i</Object>
+    <Object Type="DataObject" Language="Apt">BK1_a</Object>
+    <Object Type="DataObject" Language="Ax">BK1_i</Object>
+    <Object Type="DataObject" Language="Apt">BK_sim_a</Object>
+    <Object Type="DataObject" Language="Apt">NonCrash_a</Object>
+    <Object Type="DataObject" Language="Ax">NonCrash_i</Object>
+    <Object Type="DataObject" Language="Apt">BK1_S1400_a</Object>
+    <Object Type="DataObject" Language="Ax">BK1_S1400_i</Object>
+    <Object Type="DataObject" Language="Apt">BK1_Cube_a</Object>
+    <Object Type="DataObject" Language="Ax">BK1_Cube_i</Object>
+    <Object Type="DataObject" Language="Apt">BeltNozomi2_a</Object>
+    <Object Type="DataObject" Language="Ax">BeltNozomi2_i</Object>
+    <Object Type="DataObject" Language="Apt">BK1_Nozomi2_a</Object>
+    <Object Type="DataObject" Language="Ax">BK1_Nozomi2_i</Object>
+    <Object Type="DataObject" Language="Apt">Belt17000_a</Object>
+    <Object Type="DataObject" Language="Ax">Belt17000_i</Object>
+    <Object Type="DataObject" Language="Apt">BK_17000_a</Object>
+    <Object Type="DataObject" Language="Ax">BK_17000_i</Object>
+  </Objects>
+</Package>

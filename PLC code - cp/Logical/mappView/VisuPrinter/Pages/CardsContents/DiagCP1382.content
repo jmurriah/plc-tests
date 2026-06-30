@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DiagCP1382_2_content" height="500" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lblTitle" top="5" left="5" zIndex="0" text="CPU" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="120" left="100" width="243" height="250" zIndex="1" image="Media/EFI/BrCards/X20CP1382.jpg" />
+  </Widgets>
+</Content>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="CuringContent" height="900" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_Title_L" top="80" left="40" width="160" zIndex="0" text="Parameters:" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_CuringPos_L" top="120" left="40" width="160" height="31" zIndex="1" text="iCuringPosition:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_CuringWin_L" top="160" left="40" width="160" height="31" zIndex="2" text="iCuringWindow:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_CuringAreaWidth_L" top="200" left="40" width="160" height="31" zIndex="3" text="iCuringAreaWidth:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_CuringAreaO1_L" top="240" left="40" width="160" height="31" zIndex="4" text="iCuringAreaOffsetL1:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_CuringAreaO2_L" top="280" left="40" width="160" height="31" zIndex="5" text="iCuringAreaOffsetL2:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_MediaWidth_L" top="320" left="40" width="160" height="31" zIndex="6" text="iMediaWidth:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_Media_O1L" top="360" left="40" width="160" height="31" zIndex="7" text="iMediaOffsetL1:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_Media_O2L" top="399" left="40" width="160" height="34" zIndex="8" text="iMediaOffsetL2:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_DocumentWidth_L" top="439" left="40" width="160" height="34" zIndex="9" text="iDocumentWidth:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_DocumetO1_L" top="480" left="40" width="160" height="31" zIndex="10" text="iDocumetOffsetL1:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_P_DocumetO2_L" top="520" left="40" width="160" height="31" zIndex="11" text="iDocumetOffsetL2:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_S_Title_L" top="579" left="20" width="140" zIndex="12" text="Status:" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_S_State_L" top="619" left="40" width="159" zIndex="13" text="State:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_S_ChillerState_L" top="659" left="40" width="159" zIndex="14" text="ChillerState:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_S_NitroState_L" top="699" left="40" width="159" zIndex="15" text="NitroState:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_S_CuringByStretch_L" top="739" left="40" width="159" zIndex="16" text="xCuringByStretch:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_S_OptimizeCuring_L" top="779" left="40" width="158" zIndex="17" text="xOptimizeCuring:" />
+    <Widget xsi:type="widgets.brease.Label" id="CB_1_L_Title_L" top="20" left="360" width="221" zIndex="18" text="Lamp List:" style="Title1" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_CuringPos_NO" top="120" left="200" width="140" height="31" zIndex="19" unit="{'metric':'CMT','imperial':'CMT','imperial-us':'CMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_CuringWin_NO" top="160" left="200" width="140" height="31" zIndex="20" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_CuringAreaWidth_NO" top="200" left="200" width="140" height="31" zIndex="21" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_CuringAreaO1_NO" top="240" left="200" width="140" height="31" zIndex="22" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_CuringAreaO2_NO" top="280" left="200" width="140" height="31" zIndex="23" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_MediaWidth_NO" top="320" left="200" width="140" height="31" zIndex="24" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_MediaO1_NO" top="360" left="200" width="140" height="29" zIndex="25" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_MediaO2_NO" top="400" left="200" width="140" height="31" zIndex="26" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_DocumentWidth_NO" top="440" left="200" width="140" height="31" zIndex="27" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_DocumetO1_NO" top="480" left="200" width="140" height="31" zIndex="28" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_P_DocumetO2_NO" top="520" left="200" width="140" height="31" zIndex="29" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_S_State_NO" top="619" left="200" width="140" height="31" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_S_ChillerState_NO" top="659" left="200" width="140" height="31" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CB_1_S_NitroState_NO" top="700" left="200" width="140" height="29" zIndex="32" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.Image" id="CB_1_S_CuringByStretchD_I" top="740" left="260" width="21" height="21" zIndex="33" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="CB_1_S_OptimizeCuringD_I" top="781" left="261" width="21" height="21" zIndex="34" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="CB_1_S_CuringByStretchE_I" top="740" left="260" width="21" height="21" zIndex="44" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="CB_1_S_OptimizeCuringE_I" top="781" left="261" width="21" height="21" zIndex="45" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L1_B" top="80" left="370" width="150" height="49" zIndex="35" text="Lamp 1" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L2_B" top="80" left="520" width="150" height="49" zIndex="36" text="Lamp 2" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L3_B" top="80" left="670" width="150" height="49" zIndex="37" text="Lamp 3" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L4_B" top="80" left="820" width="150" height="49" zIndex="38" text="Lamp 4" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L5_B" top="80" left="970" width="150" height="48" zIndex="39" text="Lamp 5" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L6_B" top="80" left="1120" width="150" height="49" zIndex="40" text="Lamp 6" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L7_B" top="80" left="1270" width="150" height="49" zIndex="41" text="Lamp 7" />
+    <Widget xsi:type="widgets.brease.Button" id="CB_1_L8_B" top="80" left="1420" width="150" height="49" zIndex="42" text="Lamp 8" />
+    <Widget xsi:type="widgets.EFIWidgetLib.Lamp_Numeric_Display" id="Lamp_Numeric_Display1" top="340" left="420" width="1153" height="360" zIndex="43" />
+    <Widget xsi:type="widgets.brease.Button" id="CuringBar1_B" top="20" left="40" width="120" zIndex="46" text="Curing Bar 1" />
+    <Widget xsi:type="widgets.brease.Button" id="CuringBar2_B" top="20" left="180" width="120" zIndex="47" text="Curing Bar 2" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="147" left="374" width="1197" height="153" zIndex="48" image="Media/Printer_Realisrtic_images/Curing_Lamp.png" />
+    <Widget xsi:type="widgets.brease.Label" id="BackGroundLamp_L" top="189" left="447" width="1053" height="60" zIndex="49" text="No lamp detected" backColor="rgba(255, 255, 255, 1)" textColor="rgba(255, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Paper" id="SVGLamp_P" top="189" left="447" width="1053" height="60" zIndex="50" maxZoomLevel="100" minZoomLevel="100" borderWidth="0px" />
+  </Widgets>
+</Content>

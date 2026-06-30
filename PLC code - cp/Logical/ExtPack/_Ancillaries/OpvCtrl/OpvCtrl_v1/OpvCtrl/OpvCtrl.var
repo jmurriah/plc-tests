@@ -1,0 +1,33 @@
+VAR
+	OverVarnish : REFERENCE TO Opv_typ;
+	AlarmsReseted : OPVAlarms_typ;
+	ResetCommands : OPVCommands_typ;
+	xEnablePriming : BOOL; (*Active if priming is enabled from SW and from Printer/Line*)
+	tiTimeToEmpty : TIME;
+	tonEmptyBelt : TON;
+	CommsReset : OPVCommsInputs_typ;
+	OutputsReset : OPVOutputs_typ;
+	PhysicalOutputsReset : OPVPhysicalOutputs_typ;
+	iOpvModel : USINT;
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF OPVCtrlStatus_enum;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	rPrevWidth : REAL;
+	rPrevGap : REAL;
+	rPrevThickness : REAL;
+	rPrevLength : REAL;
+	xBoardParametersChanged : BOOL;
+	tof_BoardParametersChanged : TOF;
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	CopyOfWriteData : ARRAY[1..25] OF UINT;
+	tonDisableWrittingOfData : TON;
+	xDisableWriteData : BOOL;
+	ton_CommsError : TON;
+	EraseWriteData : ARRAY[1..25] OF UINT;
+END_VAR

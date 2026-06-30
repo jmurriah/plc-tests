@@ -1,0 +1,147 @@
+VAR
+	xDetectionLampsProcessOn : BOOL;
+	xPowerOnLamps : BOOL;
+	tonRunChiller : TON;
+	rCureBySpeedIntercept : REAL;
+	rCureBySpeedSlope : REAL;
+	tonLampsVoltageRecovery : TON;
+	tonFinishPolling : TON;
+	xRepeated : BOOL;
+	StAnswerAux : STRING[800];
+	StAnswer : STRING[800];
+	StMessage : STRING[80];
+	StGoodAnswer : STRING[800];
+	iAnswerStringPosition : INT;
+	StIndex : STRING[2];
+	BufferRecieve : STRING[255];
+	rLastCuringBarSlmL2 : REAL; (*Fist slm to be enabled in the bar for L2*)
+	iNumLampSLM : UINT;
+	iMinBufferLength : UINT; (*iMinBufferLength to consider valid message from lamp*)
+	CommsCommandsReset : Comms_command_typ;
+	AutoIntensitySetPoint : USINT;
+	rInteger : REAL; (*Integer part, result of a divsion*)
+	xConfigurationFailed : BOOL;
+	rMantissa : REAL; (*Decimal part, result of a division*)
+	pInteger : UDINT; (*Integer part, result of a divsion*)
+	rFirstCuringBarSlmL2 : REAL; (*Fist slm to be enabled in the bar for L1*)
+	iFirstLampSLM : INT;
+	iLastLampSLM : INT;
+	iMirrorSlm : INT;
+	xSendingBuffer : BOOL;
+	rLastCuringBarSlmL1 : REAL; (*Fist slm to be enabled in the bar for L2*)
+	rFirstCuringBarSlmL1 : REAL; (*Fist slm to be enabled in the bar for L1*)
+	iLastCuringBarSlmL2 : UINT; (*Last slm to be enabled in the bar for L2*)
+	iLastCuringBarSlmL1 : UINT; (*Fist slm to be enabled in the bar for L2*)
+	iFirstCuringBarSlmL2 : UINT; (*Last slm to be enabled in the bar for L1*)
+	iFirstCuringBarSlmL1 : UINT; (*Fist slm to be enabled in the bar for L1*)
+	iTotalNumSlms : UINT; (*Number of slm in all the bar. Sum of lamps SLMs*)
+	xCuringLedSlms : ARRAY[0..100] OF BOOL; (*1 Slm = 25mm. Maximum Curing led width would be 2500mm*)
+	xBoardPositionChanged : BOOL;
+	iPreviousWidth : UINT;
+	iPreviousOffsetRegisterL2 : INT;
+	iPreviousOffsetRegisterL1 : INT;
+	xBufferSent : BOOL;
+	xCommsClosed : BOOL;
+	xBufferReadInvalid : BOOL;
+	xReleasingReadBuffer : BOOL;
+	xBufferReadReleased : BOOL;
+	xReleasingSendBuffer : BOOL;
+	xBufferSendReleased : BOOL;
+	ars_AlrWarning : AutoResetSound;
+	ars_AlrStop : AutoResetSound;
+	ars_AlrCritical : AutoResetSound;
+	xClosingComms : BOOL;
+	xCommsOpened : BOOL;
+	xClearingBuffer : BOOL;
+	xBufferCleared : BOOL;
+	xOpeningComms : BOOL;
+	aPreSerialNumbers : ARRAY[1..15] OF STRING[6]; (*Index for running the elements*)
+	iIndexPreSerialNumbers : UINT; (*Index for running the elements*)
+	iDetectedLamp : UINT; (*Index for running the elements*)
+	i : INT;
+	iIndexReadUvOnTimeLamps : UINT; (*Index for running the elements*)
+	iIndexReadTempLamps : UINT; (*Index for running the elements*)
+	iIndexDetectLamps : UINT; (*Index for running the elements*)
+	iIndexCheckSlm : UINT; (*Index for running the elements*)
+	iIndexCheckLamps : UINT; (*Index for running the elements*)
+	iIndexConfigSlm : UINT; (*Index for running the elements*)
+	iIndexEraseReceivedData : UINT; (*Index for running the elements*)
+	iIndexConfigLamps : UINT; (*Index for running the elements*)
+	iIndexEnableLamps : UINT; (*Index for running the elements*)
+	iIndexEnableSlm : UINT; (*Index for running the elements*)
+	xCuringOrder : BOOL; (*General curing order while everything is ready*)
+	tonNitroAlrLowFlow : TON;
+	iLampPosition : INT;
+	iPowerSuppliesQuantity : INT;
+	iLampsQuantity : UINT;
+	errorLampsSLM : UDINT;
+	errorLampsThermal : UDINT;
+	iBoardFinalPosition : INT;
+	iBoardInitPosition : INT;
+	xAnyError : BOOL;
+	xEnableCuring : BOOL;
+	xBufferRead : BOOL;
+	arxLampsSlmNotConfigured : AutoResetSound;
+	arxPowerFailure : AutoResetSound;
+	arxCureSystemFaulted : AutoResetSound;
+	xReadBufferNoInput : BOOL;
+	arxN2HighFlow : AutoResetSound;
+	StatusCtrl : CuringLedStatus_enum;
+	ConfigCtrl : CuringLedConfig_enum;
+	CheckStep : CuringLedCheck_enum;
+	DetectStep : CuringLedDetect_enum;
+	ReadingUvOnTimeStep : CuringLedReadingLampUvTime_enum;
+	ReadingTemperatureStep : CuringLedReadingLampTemp_enum;
+	iIndexPowerSupply : INT; (*Index for running the elements*)
+	iIndexCuringAux : UINT; (*Index for running the elements*)
+	iIndexCuring : UINT; (*Index for running the elements*)
+	arLampThermalFault : AutoResetSound;
+	arLampSLMFault : AutoResetSound;
+	xReadBufferInputError : BOOL;
+	iReasonCritical : UDINT;
+	NitroState : CuringLed_NitrogenStatus_enum;
+	iReasonWarning : UDINT;
+	iReasonStop : UDINT;
+	stEventLog : EventLog_typ;
+	stEventLogCritical : EventLog_typ;
+	stEventLogPsuFailure : EventLog_typ;
+	strAuxEventDesc : STRING[129];
+	AlarmsReseted : CuringLed_Alarms_typ;
+	AlarmsSummaryReseted : stEFI_AlarmSummary;
+	dataChiller : REFERENCE TO StChiller;
+	dataLed : REFERENCE TO CuringLed_typ;
+	send_data : STRING[800];
+	FindInString : STRING[10];
+	xValidStatusReading : BOOL;
+	StSupplySide : STRING[8];
+	iSupplySide : UINT;
+	arxChillerFaulted : AutoResetSound;
+	xSLMStatusRead : BOOL;
+	iAnswerStringLength : INT;
+	xKeepFilling : BOOL;
+	iCheckStatusAttempts : INT;
+	iDetectLampAttempts : INT;
+	OutputsReset : CuringLed_Signals_Out_typ;
+	ResetCommands : CuringLed_Commands_typ;
+	iIndexPreSerialNum : UINT;
+	xFinishPolling : BOOL;
+	ResetManCommands : CuringLed_ManualCommands_typ;
+	iIntensityCureBySpeed : USINT; (*//Setpoint to be used while curing by speed is active*)
+	iIntensityWhileAtSafePosition : USINT := 30; (*//Setpoint to be used while emptying belt to cure media but not cure bar's nozzles*)
+	iMinSpeedWhenBlockAtSafePosition : REAL := 50; (*//Belt speed setpoint from which intensity applied while block is at safe position changes*)
+	StateHistory : ARRAY[0..iHistoryLines] OF enComms_STEPS;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	iIndexHistory : USINT;
+	tonOpenPort : TON;
+	tonPowerOnLamps : TON;
+	xAnyErrorReason : UINT;
+	xAnyParamChanged : UINT;
+	iTotalWidth : INT; (*Sum of curing led bar lamp's widths*)
+	iCenterPosition : INT; (*Curing led bar center position*)
+	tonCheckAlarms : TON;
+	tonStabPsuFailure : ARRAY[0..10] OF TON;
+END_VAR

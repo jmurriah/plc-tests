@@ -1,0 +1,18 @@
+VAR RETAIN
+	gPermanentSN : STRING[80]; (*Serial Number of the machine*)
+	gInksPermanentParBar : ARRAY[0..MAX_LAST_INK] OF stInksBarParams;
+	gPermanentInksParSw : ARRAY[0..MAX_LAST_INK] OF stInksParametersSw;
+	gPermanentMachine : StGeneral_SwParameters;
+	gPermanentBlock : ARRAY[0..MAX_LAST_BLOCK] OF StBlock_SwParameters;
+	gPermanentSwBelt : stBelt_SwParameters;
+	gPermanentSimMachinePar : SimMachineParameters_typ;
+	gPermanentDryer : Dryer_Parameters;
+	gPermanentVersion : plcVersion;
+	gPermanentTrVacuum : ARRAY[0..MAX_LAST_TRANS_VACUUM] OF TransVacuumParametersSw_typ;
+	gPermanentSimpleBlock : SimpleBlock_SwParameters;
+	gPermanentArcLampGew : ArcLampGew_Parameters;
+	gPermanentNirAdphos : NIRAdphos_Parameters;
+	gPermanentCuringLed : ARRAY[0..2] OF CuringLed_Parameters_typ;
+	gPermanentInkBox : InkboxParameters;
+	gPermanentAnalogSensor : stThicknessAnalogPermanent;
+END_VAR

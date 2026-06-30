@@ -1,0 +1,43 @@
+VAR
+	iTimesExecutedErrorState : UINT;
+	iTimesExecuted : UINT;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	StateHistory : ARRAY[0..iHistoryLines] OF BeltStates_enum;
+	iIndexHistory : USINT;
+	iBeltState : BeltStates_enum;
+	AxisBelt : REFERENCE TO AxisCtrl_typ; (*Axis control structure*)
+	stBeltAlarmSummaryReseted : stEFI_AlarmSummary; (*Reset alarm summary structure*)
+	stBeltAlarmsReseted : stBelt_Alarms; (*Reset alarm structure*)
+	T_AlrProtDrive : TON;
+	ars_AlrStop : AutoResetSound;
+	ars_AlrCritical : AutoResetSound;
+	ars_AlrWarning : AutoResetSound;
+	T_SoundBelt : TON;
+	xAnyDriveError : BOOL;
+	xRunBeltOrderAfterSound : BOOL; (*Internal to order belt motor after sound*)
+	Belt : REFERENCE TO stBelt;
+	xRunningState : BOOL;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	stEventLogWarning : EventLog_typ;
+	stEventLogStop : EventLog_typ;
+	stEventLogCritical : EventLog_typ;
+END_VAR
+VAR RETAIN
+	BeltDriveUnit : DriveUnitMngr;
+END_VAR
+VAR
+	tonOvertorqueAlarm : TON;
+	TON_OvertorqueWarning : TON;
+	iReasonWarning : UINT;
+	tonControllerReady : TON;
+	iReasonAnyError : USINT;
+	tonEnableVoltageSag : TON;
+	tpResetAnyDriveAlarm : TP;
+	iReasonAutoAcknowledge : UINT;
+	xAvoidResettingSafetyErrors : BOOL;
+END_VAR

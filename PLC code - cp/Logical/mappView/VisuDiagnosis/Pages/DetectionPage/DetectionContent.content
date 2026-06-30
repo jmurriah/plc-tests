@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DetectionContent" height="900" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Paper" id="Paper1" top="360" left="20" width="1560" height="520" zIndex="0" maxZoomLevel="100" minZoomLevel="100" borderWidth="0px" />
+    <Widget xsi:type="widgets.brease.Label" id="IclaTitle_L" top="40" left="40" zIndex="1" text="Icla:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectionCounterTitle_L" top="40" left="880" width="160" zIndex="2" text="Detection Cunter:" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectA_L" top="100" left="920" width="40" zIndex="3" text="A:" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectB_L" top="140" left="920" width="40" zIndex="4" text="B:" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectC_L" top="180" left="920" width="40" zIndex="5" text="C:" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectD_L" top="100" left="1220" width="40" zIndex="6" text="D:" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectE_L" top="140" left="1220" width="40" zIndex="7" text="E:" />
+    <Widget xsi:type="widgets.brease.Label" id="DetectF_L" top="180" left="1220" width="40" zIndex="8" text="F:" />
+    <Widget xsi:type="widgets.brease.Label" id="ErrorId_L" top="80" left="60" zIndex="9" text="Error Id: " />
+    <Widget xsi:type="widgets.brease.Label" id="CurrentVel_L" top="120" left="440" width="140" zIndex="10" text="Current Velocity:" />
+    <Widget xsi:type="widgets.brease.Label" id="IclaStatur_L" top="80" left="440" zIndex="11" text="Status: " />
+    <Widget xsi:type="widgets.brease.Label" id="CurrentTorque_L" top="160" left="60" width="120" zIndex="12" text="Current Torque: " />
+    <Widget xsi:type="widgets.brease.Label" id="MaxTorque_L" top="160" left="440" width="140" zIndex="13" text="Max Torque: " />
+    <Widget xsi:type="widgets.brease.Button" id="StartCount_B" top="40" left="1100" width="140" zIndex="14" text="Start Count" />
+    <Widget xsi:type="widgets.brease.Button" id="StopCount_B" top="40" left="1260" width="140" zIndex="15" text="Stop Count" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrentVel_NO" top="120" left="600" width="160" height="31" zIndex="16" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" textAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="IclaStatur_NO" top="80" left="600" width="160" height="31" zIndex="17" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="MaxTorque_NO" top="160" left="600" width="160" height="31" zIndex="18" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DetectA_NO" top="100" left="1020" zIndex="19" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DetectB_NO" top="140" left="1020" zIndex="20" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DetectC_NO" top="180" left="1020" zIndex="21" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DetectD_NO" top="100" left="1280" zIndex="22" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DetectE_NO" top="140" left="1280" zIndex="23" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DetectF_NO" top="180" left="1280" zIndex="24" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="ErrorId_NO" top="80" left="220" width="160" height="31" zIndex="25" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="CurrentTorque_NO" top="160" left="220" width="160" height="31" zIndex="26" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+  </Widgets>
+</Content>

@@ -1,0 +1,8 @@
+VAR
+	iBlockIndex : USINT;
+	DryerModelCopy : DryerModel_enum;
+	xChangedSimMachine : BOOL;
+	simMachine_copy : SimMachineType;
+	iIndexBlock : USINT; (*Block Index to use a FOR*)
+	iIndexTrVacc : USINT; (*TransportVacuum Index to use a FOR*)
+END_VAR

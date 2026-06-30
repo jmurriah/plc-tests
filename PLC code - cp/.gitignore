@@ -1,0 +1,8 @@
+/Binaries/
+/Diagnosis/
+/Temp/
+*.set
+*.isopen
+*.xls#
+*.csv#
+debug.log

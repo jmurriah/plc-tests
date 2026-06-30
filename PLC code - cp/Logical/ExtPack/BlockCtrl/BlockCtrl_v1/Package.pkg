@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Block program">BlockCtrl</Object>
+    <Object Type="Program" Language="IEC">InitBlockCtrl</Object>
+    <Object Type="File" Description="Global Block data types">Block.typ</Object>
+    <Object Type="File" Description="Public constants">Block.var</Object>
+    <Object Type="File" Description="Block States graph">BlockHomingProcess.graphml</Object>
+    <Object Type="File" Description="Block States graph">BlockStates.graphml</Object>
+    <Object Type="File" Description="Block package document">Block Docu.txt</Object>
+  </Objects>
+</Package>

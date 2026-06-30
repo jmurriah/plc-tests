@@ -1,0 +1,7 @@
+
+(* TODO: Add your comment here *)
+FUNCTION MILLISECONDS_TO_TIME
+	
+	MILLISECONDS_TO_TIME := UDINT_TO_TIME(iMilliSeconds);
+	
+END_FUNCTION

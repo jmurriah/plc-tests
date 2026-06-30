@@ -1,0 +1,35 @@
+
+#################################################################################
+#################################################################################
+#																				#
+#			GENERAL USE OF 3 PHOTO SENSOR PACKAGE								#
+#																				#
+# 	To use this 3 Photo Sens unit, some general variables are needed:			#
+#																				#
+# 		· data 							as nSensors_Generic		#
+#		· gAxis	(to Control Master Stepper)		as AxisCtrl_typ					#
+#		· gAxis (to control Slave Moptor)	    as AxisCtrl_typ					#
+#																				#
+#																				#
+#	There are some Libraries needed, too:										#
+#		EFILib																	#
+#		Libraries (the Global libraries)										#
+#																				#
+#	And some variables declaration sections:									#
+#		GVars: permanent vars are defined in Global.typ., they are needed.		#
+#		GStructs: StPermanentGeneral is needed, and it's defined inside it.		#
+#																				#
+#																				#
+#################################################################################
+*NOTE: This Package is useless without Analog Thinckness Package to use the outputs of 
+lasers readings [SEA](30/08/19)
+
+#################################################################################
+#################################################################################
+#																				#
+#			¡¡¡IMPORTANT!!!!													#
+# 	Review gAxisCtrl for extra needs about 										#
+# 	Axis and Gear to use them													#
+#																				#
+#################################################################################
+

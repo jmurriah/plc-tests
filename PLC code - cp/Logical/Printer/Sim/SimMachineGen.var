@@ -1,0 +1,4 @@
+VAR
+	gTraySim : ARRAY[0..MAX_LAST_BLOCK] OF stTraySim;
+	gIclaSim : ARRAY[0..MAX_LAST_ICLA_MOTOR] OF stIclaSim;
+END_VAR

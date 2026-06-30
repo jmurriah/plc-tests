@@ -1,0 +1,243 @@
+VAR
+	uiPosTachoCounterPrev : UINT;
+	uiNegTachoCounterPrev : UINT;
+	uiMode1Cycles : UINT;
+	uiMode3Cycles : UINT;
+	uiMode4Cycles : UINT;
+	uiMode5Cycles : UINT;
+	uiMode6Cycles : UINT;
+	uiMode9Cycles : UINT;
+	uiMode10Cycles : UINT;
+	uiMode13Cycles : UINT;
+	TON_AlrVacuum1 : TON;
+	tonInkLevelBelowMinimum : TON;
+	tonInkLevelBelowCloseMinimum : TON;
+	TON_StabSolPid2Pos : TON; (*Vars Pressure Control*)
+	TON_ChangeSPstarting : TON; (*It is a delay to recovery original set point after differential pressures*)
+	TON_CloseSole : TON;
+	tonInkLevelBelowMaximum : TON;
+	TON_AlrTempGauge : TON;
+	TON_HeaterStarts : TON;
+	TON_AlrVacuum2 : TON;
+	TON_OnReverseCappedCycle : TON; (*timer 30 min. It is cylce of reverse cleaning in Idle*)
+	tonInkLevelAboveMaximum : TON;
+	TON_DelayVacuum2Gauge : TON;
+	tonInkLevelAboveMinimum : TON;
+	TON_Stab2 : TON;
+	TON_Stab1 : TON;
+	TON_StabSolPid2Neg : TON;
+	TON_TimeAfterCloseReliefValve : TON;
+	TON_ChangeSPInDelta : TON; (*It is a delay to recovery original set point after differential pressures*) (*stChangeSPstarted : TON; *) (*It is a delay to recovery original set point after differential pressures*)
+	TON_DelayVacuum1Gauge : TON;
+	TON_ExecutionDelay : TON; (*Delay to activate the PID's in order to be sure to have proper configuration*)
+	TON_AlrVacuumDiff2 : TON;
+	TON_StabPsuOk : TON;
+	TON_AlrNegDiff : TON;
+	TON_StabSolPid1Neg : TON;
+	TON_ChangeReverse : TON;
+	TON_AlrDCDiff : TON;
+	TON_AlrCriticalMeniscus2 : TON;
+	TON_AlrNotDifTemp : TON;
+	TON_TimeAlrDCStarting : TON;
+	TON_AlrPosDiff : TON;
+	TON_AlrIncoherTempHeat : TON;
+	TON_AlrDifTemp : TON;
+	TON_AlrVacuumDiff : TON;
+	TON_StabSolPid1Pos : TON;
+	TON_ChangeFillingControl : TON;
+	TON_Reset : TON;
+	TON_OnStateReverseFlow : TON; (*More time than 30 secs because It is coming back on reverse state *)
+	TON_OnReverseCappedFinished : TON; (*timer 60 secs. It is time reverse cleaning in Idle*)
+	TON_TimeExecutingReverseMan : TON;
+	TON_Stopped : TON;
+	TON_PressureReservoirStable : TON;
+	TOF_IgnoreAlarmsCleaning : TOF;
+	tonDrip : TON;
+	parBar : REFERENCE TO stInksBarParams;
+	inks : REFERENCE TO stInks;
+	r_start_inks : R_TRIG;
+	rSlopePumpNeg : REAL;
+	rSPfillingPump : REAL; (*Value directly from Sw*)
+	rPressureCollectorPos1 : REAL; (*REVISAR, sale un mensaje al traducir*)
+	rSlopePumpPos : REAL;
+	rSpeedNegCalc : REAL;
+	rPressureCollectorPos2 : REAL; (*REVISAR, sale un mensaje al traducir*)
+	rPressurePos : REAL;
+	rPressureMen : REAL;
+	rSP_NegPrimStabilizing : REAL;
+	rSP_PosPrimStabilizing : REAL;
+	rTankLevelmm : REAL;
+	rSetPointFillingPump : REAL; (*Vars Temp Control*)
+	rOrderBNegative : REAL;
+	rVoltagePosPump : REAL;
+	rOrderBPositiveStart : REAL;
+	rOrderBPositive : REAL;
+	rSP_Meniscus_PID : REAL;
+	rMeniscusSp : REAL; (*Value directly from Sw*)
+	rMeniscusPV : REAL;
+	rVacuum2B : REAL;
+	rSPTempTank : REAL;
+	rHighPumpLimitNeg : REAL;
+	rHighPumpLimitPos : REAL;
+	rVoltageNegPump : REAL;
+	rInputFilterVacuum2 : REAL;
+	rLowPumpLimitNeg : REAL;
+	parPidPos : REAL;
+	parPidPosCopy : REAL;
+	rInputFilterVacuum1 : REAL;
+	parPidMeniscus : REAL;
+	parPidMeniscusCopy : REAL;
+	rSpeedPosCalc : REAL;
+	parPidTemp : REAL;
+	parPidTempCopy : REAL;
+	rSPtemp : REAL; (*Temperature SetPoint*)
+	rDutyCyclePreTune : REAL;
+	rDutyCycleTempAux : REAL;
+	rTankLevelPercent : REAL;
+	rMeniscusError : REAL; (*Difference between Meniscus SetPint and PresentValue*)
+	rLowPumpLimitPos : REAL;
+	rSP_PressurePos_PID : REAL;
+	rVacuum1B : REAL;
+	pidParTempTank : MTPIDParametersType;
+	pidParTemp : MTPIDParametersType;
+	pidParMeniscus : MTPIDParametersType;
+	pidParPresPos : MTPIDParametersType;
+	fbFilterSpeedNeg : MTFilterMovingAverage;
+	fbFilterMovingPressure2 : MTFilterMovingAverage;
+	fbFilterMovingPressure1 : MTFilterMovingAverage;
+	fbFilterLevelSensor : MTFilterMovingAverage;
+	fbFilterSpeedPos : MTFilterMovingAverage;
+	fbTempTunning : MTBasicsStepTuning;
+	fb_PWM_Temp_Tank : MTBasicsPWM;
+	fb_PWM_Temp : MTBasicsPWM;
+	fb_PID_PresFilling : MTBasicsPID;
+	fb_PID_Temp : MTBasicsPID;
+	fb_PID_Tank_Temp : MTBasicsPID;
+	fb_PID_Pres : MTBasicsPID;
+	iTimeStopping : INT;
+	tiTimePreviousExec : TIME;
+	iTimesExecuted : INT;
+	iBarNumberInBlock : INT;
+	iCloseSoleW : INT;
+	iDiffPulseTachoPos : INT;
+	iDiffPulseTachoNeg : INT;
+	iQuantityUpdatePidMeniscus : INT;
+	iMs : UINT;
+	tiDripTime : TIME;
+	iSamplesVacuum2 : INT := 60;
+	iQuantityUpdatePidPos : INT;
+	iQuantityUpdatePidTemp : INT;
+	iDisablePidW : INT;
+	iStabSoleW : INT;
+	tiDripTimeMax : TIME;
+	iSamplesVacuum1 : INT := 1;
+	iInkPreviousState : inksStateModes := INKS_STOPPED;
+	xAuxSolenoidReverse : BOOL;
+	xPossibleStart : BOOL;
+	t_reset : BOOL;
+	xEnableNegPID : BOOL;
+	xPidTempTunning : BOOL;
+	xAlarmEmptyTank : BOOL;
+	xIgnoreAlarmsInCleaning : BOOL;
+	xIAmInReverse : BOOL;
+	xGoToStarted : BOOL; (*Meniscus is stable enough to go from Starting to Started*)
+	xAnalogTankEmpty : BOOL;
+	xEnablePwmTemp : BOOL;
+	xAuxSolenoidDirect : BOOL;
+	xHoldPos : BOOL; (*holding the PID in the reverse flows*)
+	xAlarmFillTank : BOOL;
+	xDrippingOrder : BOOL;
+	xHoldMeniscus : BOOL;
+	xPrimingStabilized : BOOL;
+	xOutOfCriticalRange : BOOL;
+	AuxiliarSolenoid : BOOL;
+	xModesAlrDC : BOOL;
+	xEnablePosPID : BOOL;
+	xPressureReservoirStable : BOOL;
+	xUpdatePidTemp : BOOL;
+	mode1 : BOOL; (*INKS_STOPPED*)
+	mode3 : BOOL; (*INKS_STARTING*)
+	mode4 : BOOL; (*INKS_STARTED*)
+	mode5 : BOOL; (*INKS_MANUAL_REVERSEFLOW*)
+	mode6 : BOOL; (*INKS_AUTO_REVERSEFLOW*)
+	mode9 : BOOL; (*INKS_STOPPING*)
+	mode10 : BOOL; (*INKS_RUNNING_MANUAL*)
+	mode13 : BOOL; (*INKS_PRIMING*)
+	xStartHeating : BOOL; (*StartTemperature??*)
+	xUpdatePidPos : BOOL;
+	xStartTempPwm : BOOL;
+	xReservoirModeActivated : BOOL;
+	xStartTankHeating : BOOL;
+	xUpdatePidMeniscus : BOOL;
+	blink1s : Blink;
+	ars_1020 : AutoResetSound; (*ars_1020: Auto reset sound for AlrVacuum1*)
+	ars_1021 : AutoResetSound; (*ars_1021: Auto reset sound for AlrVacuum2*)
+	ars_1022 : AutoResetSound;
+	ars_1023 : AutoResetSound;
+	ars_1010 : AutoResetSound;
+	ars_1003 : AutoResetSound;
+	ars_1009 : AutoResetSound;
+	ars_1019 : AutoResetSound; (*Auto resete alarm for refilling tank, it is activated when level is lower than max*)
+	ars_1016 : AutoResetSound; (*ars_1017 : AutoResetSound;*)
+	ars_1013 : AutoResetSound; (*ars_1014 : AutoResetSound;*)
+	ars_1012 : AutoResetSound;
+	ars_1011 : AutoResetSound;
+	ars_1008 : AutoResetSound;
+	ars_1015 : AutoResetSound;
+	ars_1018 : AutoResetSound;
+	ars_1007 : AutoResetSound;
+	ars_1006 : AutoResetSound;
+	ars_1005 : AutoResetSound;
+	ars_1004 : AutoResetSound;
+	ars_1001 : AutoResetSound;
+	ars_1002 : AutoResetSound;
+	ars_1000 : AutoResetSound;
+	TON_AlrTempTankTempSensorError : TON;
+	resetedAlarms : stInksAlarmsList;
+	resetedAlarmsSummary : stEFI_AlarmSummary;
+	resetedOut : stInksSignalsOut;
+	resetedStatus : stInksStatus;
+	stEventLogCritical : EventLog_typ;
+	stStopAlarmsLog : EventLog_typ;
+	stEventLog : EventLog_typ;
+	stEventLogPos : EventLog_typ;
+	stEventLogNeg : EventLog_typ;
+	strAux : STRING[129];
+	xUpdateSpPriming : BOOL;
+	xStateReverseFlow : BOOL := FALSE;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	iReasonWarning : UDINT;
+	xReservoirParamsNeeded : BOOL;
+	iReasonToSound : UDINT;
+	tonAlrNotHeating : TON;
+	TON_AlrDifTempTank : TON;
+	TON_AlrDifTempTank2 : TON;
+	TON_AlrTempTankMax : TON;
+	ars_1017 : AutoResetSound;
+	TON_AlrTempHeaterMax : TON;
+	TON_AlrIncoherTempTank : TON;
+	ars_1024 : AutoResetSound;
+	ars_1025 : AutoResetSound;
+	ars_1026 : AutoResetSound;
+	ars_1027 : AutoResetSound;
+	TON_OverPressureDelay : TON;
+	TON_AlrDifTempExcessiv : TON;
+	TON_AlrNotDifTempExcessiv : TON;
+	rVacuumSensorMax : REAL;
+	iReasonRunning : UINT;
+	iReasonEnableNegPID : USINT;
+	iReasonEnablePosPID : USINT;
+	iReasonRunningAuto : USINT;
+	xRunningAuto : BOOL;
+	RTInfo_0 : RTInfo;
+	rPeriode : REAL;
+	iPeriode : UINT;
+	TON_AlrHeaterOFF : TON;
+	TON_AlrChillerPrintheadsOFF : TON;
+	tonStabInkStartUp : TON; (*Timer to define stable enough to modify the set point*)
+	tonNotStabInkStartUp : TON; (*Timer to define NOT stable enough to modify the set point*)
+	tonUstabInkStartUp : TON; (*Inks unstable so long, so automatic startup is cancelled*)
+	rMeniscusStartUpStep : REAL;
+	xStabMeniscus : BOOL;
+END_VAR

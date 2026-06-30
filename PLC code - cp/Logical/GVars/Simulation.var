@@ -1,0 +1,21 @@
+VAR
+	gSimMachine : SimMachine_typ;
+	gSimChiller : ARRAY[0..MAX_LAST_CHILLER] OF stChillerSim;
+	gSimBlock : ARRAY[0..MAX_LAST_BLOCK] OF SimBlock_typ;
+	gSimSimpleBlock : ARRAY[0..MAX_LAST_SIMPLEBLOCK] OF SimBlock_typ;
+	gSimSarm : Sarm_typ;
+	gSimFeeder : FeederSim_typ;
+	gSimDryerAnc : DryerSimAnc_typ;
+	gSimOverVarnish : PrimerSim_typ;
+	gSimPrimer : PrimerSim_typ;
+	gSimStacker : StackerSim_typ;
+	gSimJamDetect : ARRAY[0..MAX_LAST_JAMDEVICE] OF JamDetectSim_typ;
+	gSimInks : ARRAY[0..MAX_LAST_INK] OF SimInk_typ;
+	gSimSafetyController : SafetyControllerSim_typ;
+	gSimArcLamp : ArcLampSim_typ;
+	gSimNirAdphos : NirAdphosSim_typ;
+	gSimNonCrash : ARRAY[0..MAX_LAST_NON_CRASH] OF SimNonCrash_typ;
+	gSimThickCtrl : SimThickCtrl_typ;
+	gTestsExec : TestExecution;
+	gSimDryer : SimDryer_typ;
+END_VAR

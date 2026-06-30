@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">BeltCtrl</Object>
+    <Object Type="Package">NonCrashCtrl</Object>
+    <Object Type="Package">TransVacuumCtrl</Object>
+    <Object Type="Package">JamDetectCtrl</Object>
+    <Object Type="Package">EdgeHoldDown</Object>
+    <Object Type="Package">PairedIclaMotors</Object>
+    <Object Type="Package">BeltCleaning</Object>
+  </Objects>
+</Package>

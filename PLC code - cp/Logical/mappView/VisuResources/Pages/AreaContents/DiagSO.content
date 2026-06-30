@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DiagSO_content" height="500" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="2" x1="20" x2="580" y1="245" y2="245" />
+    <Widget xsi:type="widgets.EFIWidgetLib.SOCardWidget" id="SOCardWidget1" top="80" left="270" width="100" height="380" zIndex="0" />
+    <Widget xsi:type="widgets.EFIWidgetLib.TextArray02CardDoubWidget" id="TextArray02CardDoubWidget1" top="225" left="20" width="570" zIndex="1" />
+  </Widgets>
+</Content>

@@ -1,0 +1,3 @@
+VAR
+	iIndexNonCrash : USINT;
+END_VAR

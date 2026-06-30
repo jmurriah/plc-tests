@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.5.113 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Machine configurator instructions">ReadmePrinterConfigurator.txt</Object>
+    <Object Type="Program" Language="IEC" Description="Initialize program">Initialize</Object>
+    <Object Type="Program" Language="IEC" Description="Machine configurator">MachineConfigurator</Object>
+    <Object Type="Program" Language="IEC">SavePermanent</Object>
+  </Objects>
+</Package>

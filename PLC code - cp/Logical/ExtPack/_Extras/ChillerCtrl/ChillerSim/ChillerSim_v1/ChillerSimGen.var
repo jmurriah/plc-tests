@@ -1,0 +1,3 @@
+VAR
+	iChillerSimIndex : USINT;
+END_VAR

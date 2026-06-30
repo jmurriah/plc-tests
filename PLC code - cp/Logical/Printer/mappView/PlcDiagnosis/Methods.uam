@@ -1,0 +1,151 @@
+
+OPCUA_METHOD getTransVacuum
+	ARG_INPUT
+		TVIdx : Byte := Vacuum_iTVIdx;
+		BlowerIdx : Byte := Vacuum_iBlowerIdx;
+	END_ARG
+	ARG_OUTPUT
+		BlowerSelected : AxisP66_typ := Vacuum_BlowerSelected;
+		TVSelected : TransVacuum_typ := Vacuum_TVSelected;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getTemp_2
+	ARG_INPUT
+		iCardIndexAT : Byte := Cards_iATIndex_2;
+	END_ARG
+	ARG_OUTPUT
+		ATArray : Int16[1..16] := Cards_aAT_2;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getTemp_1
+	ARG_INPUT
+		iCardIndexAT : Byte := Cards_iATIndex_1;
+	END_ARG
+	ARG_OUTPUT
+		ATArray : Int16[1..16] := Cards_aAT_1;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getPhotoCells
+	ARG_INPUT
+		xStartCount : Boolean := Detect_xStartCount;
+	END_ARG
+	ARG_OUTPUT
+		PhotoCells : nSensors_typ := Detection_PhotoCells;
+		PrintDir : Boolean := Detection_PrintDir;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getMachineConfigPars
+	ARG_INPUT
+		Input : Boolean := genericMethodInput;
+	END_ARG
+	ARG_OUTPUT
+		MachinePt : StGeneral_Parameters := Cards_MachinePt;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getDigitalOutputs_2
+	ARG_INPUT
+		iCardIndexDO : Byte := Cards_iDOIndex_2;
+	END_ARG
+	ARG_OUTPUT
+		DOArray : Boolean[1..16] := Cards_aDO_2;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getDigitalOutputs_1
+	ARG_INPUT
+		iCardIndexDO : Byte := Cards_iDOIndex_1;
+	END_ARG
+	ARG_OUTPUT
+		DOArray : Boolean[1..16] := Cards_aDO_1;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getDigitalInputs_2
+	ARG_INPUT
+		iCardIndexDI : Byte := Cards_iDIIndex_2;
+	END_ARG
+	ARG_OUTPUT
+		DIArray : Boolean[1..16] := Cards_aDI_2;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getDigitalInputs_1
+	ARG_INPUT
+		iCardIndexDI : Byte := Cards_iDIIndex_1;
+	END_ARG
+	ARG_OUTPUT
+		DIArray : Boolean[1..16] := Cards_aDI_1;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getCuringBar
+	ARG_INPUT
+		Index : Byte := CuringBar_BarIndex;
+	END_ARG
+	ARG_OUTPUT
+		CuringBar : CuringLed_typ := CuringBar_VisuBar;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getAnalogOutputs_2
+	ARG_INPUT
+		iCardIndexAO : Byte := Cards_iAOIndex_2;
+	END_ARG
+	ARG_OUTPUT
+		AOArray : Int16[1..16] := Cards_aAO_2;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getCardModuleOk
+	ARG_INPUT
+		Input : Boolean := genericMethodInput;
+	END_ARG
+	ARG_OUTPUT
+		CardsModuleOK : Boolean[0..100] := Cards_Installed;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getBlock
+	ARG_INPUT
+		Slot1Idx : Byte := Block_iSlotIdx1;
+		BlockIdx : Byte := Block_iBlockIdx;
+		Slot2Idx : Byte := Block_iSlotIdx2;
+	END_ARG
+	ARG_OUTPUT
+		BlockSel : StBlock := Block_SelBlock;
+		BlockInputSel : StBlock_Inputs := Block_SelBlockInp;
+		InkSel : stInks := Block_SelInk;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getAnalogOutputs_1
+	ARG_INPUT
+		iCardIndexAO : Byte := Cards_iAOIndex_1;
+	END_ARG
+	ARG_OUTPUT
+		AOArray : Int16[1..16] := Cards_aAO_1;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getAnalogInputs_2
+	ARG_INPUT
+		iCardIndexAI : Byte := Cards_iAIIndex_2;
+	END_ARG
+	ARG_OUTPUT
+		AIArray : Int16[1..16] := Cards_aAI_2;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD getAnalogInputs_1
+	ARG_INPUT
+		iCardIndexAI : Byte := Cards_iAIIndex_1;
+	END_ARG
+	ARG_OUTPUT
+		AIArray : Int16[1..16] := Cards_aAI_1;
+	END_ARG
+END_OPCUA_METHOD

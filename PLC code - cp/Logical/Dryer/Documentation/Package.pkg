@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">DRYER e-drawings 2021-06-03.pdf</Object>
+    <Object Type="File">PDC  e-drawings090221.pdf</Object>
+    <Object Type="File">DryerConection.uap</Object>
+    <Object Type="Package">Sensors</Object>
+  </Objects>
+</Package>

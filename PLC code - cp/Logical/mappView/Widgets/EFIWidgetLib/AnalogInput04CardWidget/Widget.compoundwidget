@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="AnalogInput04CardWidget" width="46" height="374" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="0" width="46" height="374" zIndex="0" image="Media/EFI/BrCards/X20AI8321.jpg" sizeMode="cover" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="numo01" top="130" left="-11" width="70" height="20" zIndex="1" fontSize="12px" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5}}" maxValue="32565" minValue="-32565" showUnit="false" value="0" backColor="rgba(169, 169, 169, 1)" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="numo02" top="190" left="-11" width="70" height="20" zIndex="2" fontSize="12px" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5}}" maxValue="32565" minValue="-32565" showUnit="false" value="0" backColor="rgba(169, 169, 169, 1)" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="numo03" top="250" left="-11" width="70" height="20" zIndex="3" fontSize="12px" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5}}" maxValue="32565" minValue="-32565" showUnit="false" value="0" backColor="rgba(169, 169, 169, 1)" />
+		<Widget xsi:type="widgets.brease.NumericOutput" id="numo04" top="310" left="-11" width="70" height="20" zIndex="4" fontSize="12px" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1,'maximumIntegerDigits':5}}" maxValue="32565" minValue="-32565" showUnit="false" value="0" backColor="rgba(169, 169, 169, 1)" />
+		<Widget xsi:type="widgets.brease.ToggleButton" id="btnViewText" top="20" left="10" width="20" height="20" zIndex="9" image="Media/UI/digi-increase-sel.svg" mouseDownImage="Media/UI/digi-increase.svg" checkedBackColor="rgba(0, 0, 255, 1)"/>
+		<Widget xsi:type="widgets.brease.ImageList" id="imlCardOK" top="65" left="15" width="24" height="24" zIndex="10" imageList="['RedLamp01_On.png', 'GreenLamp01_On.png']" imagePrefix="Media/Lamps/" />
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="PlcCardMapping" type="PlcCardMapping" readOnly="true" >
+			<Description>Input Card Structure</Description>
+			<Mappings>
+				<Mapping widget="numo01" type="Number" property="value" mode="oneWay" memberPath="AInput[1]" mapToNode="false"/>
+				<Mapping widget="numo02" type="Number" property="value" mode="oneWay" memberPath="AInput[2]" mapToNode="false"/>
+				<Mapping widget="numo03" type="Number" property="value" mode="oneWay" memberPath="AInput[3]" mapToNode="false"/>
+				<Mapping widget="numo04" type="Number" property="value" mode="oneWay" memberPath="AInput[4]" mapToNode="false"/>
+				<Mapping widget="imlCardOK" type="Number" property="selectedIndex" mode="oneWay" memberPath="ModuleOk" mapToNode="false"/>
+				<Mapping widget="btnViewText" type="Number" property="value" mode="twoWay" memberPath="ShowTexts" mapToNode="false"/>
+			</Mappings>
+		</Property>
+    
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

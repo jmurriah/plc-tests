@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.5.388?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">cascade.png</Object>
+    <Object Type="File">cooling.png</Object>
+    <Object Type="File">fan.png</Object>
+    <Object Type="File">heat.png</Object>
+    <Object Type="File">heat1.png</Object>
+    <Object Type="File">hydraulic.png</Object>
+    <Object Type="File">lamptest.png</Object>
+    <Object Type="File">pressure.png</Object>
+    <Object Type="File">stop.png</Object>
+  </Objects>
+</Package>

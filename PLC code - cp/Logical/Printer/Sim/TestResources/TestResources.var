@@ -1,0 +1,5 @@
+VAR
+	iIndex : UDINT;
+	iMax : UDINT;
+	rVal : REAL;
+END_VAR

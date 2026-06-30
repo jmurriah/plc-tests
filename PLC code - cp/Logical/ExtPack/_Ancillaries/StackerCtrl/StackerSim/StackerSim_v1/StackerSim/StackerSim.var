@@ -1,0 +1,6 @@
+VAR
+	SimStacker : REFERENCE TO StackerSim_typ;
+	Stacker : REFERENCE TO Stacker_typ;
+	tonReady : TON;
+	tonRun : TON;
+END_VAR

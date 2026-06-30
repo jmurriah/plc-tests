@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Global IO variables">Global_IO.var</Object>
+    <Object Type="File" Description="Global variables">Global.var</Object>
+    <Object Type="File" Description="Global variables">MotionBasis.var</Object>
+    <Object Type="File">Permanents.var</Object>
+    <Object Type="File" Description="Global variables">GlobalComms.var</Object>
+    <Object Type="File">Simulation.var</Object>
+  </Objects>
+</Package>

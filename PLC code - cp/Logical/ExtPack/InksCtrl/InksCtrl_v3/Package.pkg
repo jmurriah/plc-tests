@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Inks Control Program">InksCtrl</Object>
+    <Object Type="Program" Language="IEC" Description="Handling Index">InitInksCtrl</Object>
+    <Object Type="File" Description="Inks Notes">Inks Notes.txt</Object>
+    <Object Type="File" Description="Global Constant Vars">Contants.var</Object>
+    <Object Type="File" Description="Inks Data definition">Inks.typ</Object>
+    <Object Type="File" Description="Global Ink Vars" Private="true">Inks.var</Object>
+    <Object Type="File" Description="Photocell states ctrl">InkHeaterTankSystem.graphml</Object>
+    <Object Type="File" Description="Heater Tank states ctrl">InkHeaterTankProcess.graphml</Object>
+    <Object Type="File">PrimingSystemProcess.graphml</Object>
+    <Object Type="File" Description="How to use it">Inks Docu.txt</Object>
+    <Object Type="File">ActTempToPID.xlsx</Object>
+    <Object Type="File">TemperatureOut.mm</Object>
+    <Object Type="File" Description="Inks package grafcet">InksControl.graphml</Object>
+    <Object Type="File" Description="Inks package actuators behaviour">InksCtrl.md</Object>
+  </Objects>
+</Package>

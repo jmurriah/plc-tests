@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="WidgetLibrary" PackageType="WidgetLibrary" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Widget Library Description">Description.widgetlibrary</Object>
+    <Object Type="Package" Description="Resources">Resources</Object>
+    <Object Type="File">EFIWidgetLib.png</Object>
+    <Object Type="Package">BlockWidget</Object>
+    <Object Type="Package">InksSimpleWidget</Object>
+    <Object Type="Package">InksCtrl01</Object>
+    <Object Type="Package">InputCardWidget</Object>
+    <Object Type="Package">OutputCardWidget</Object>
+    <Object Type="Package">AnalogInput08CardWidget</Object>
+    <Object Type="Package">AnalogInput04CardWidget</Object>
+    <Object Type="Package">AnalogOutput04CardWidget</Object>
+    <Object Type="Package">TempInputCardWidget</Object>
+    <Object Type="Package">TextArray16Widget</Object>
+    <Object Type="Package">TextArray08Widget</Object>
+    <Object Type="Package">TextArray04Widget</Object>
+    <Object Type="Package">TextArray16Card</Object>
+    <Object Type="Package">TextArray12Card</Object>
+    <Object Type="Package">TextArray08Card</Object>
+    <Object Type="Package">TextArray04Card</Object>
+    <Object Type="Package">TextArray02CardDouble</Object>
+    <Object Type="Package">EmbebX1CardWidget</Object>
+    <Object Type="Package">EmbebX2CardWidget</Object>
+    <Object Type="Package">EmbebX3CardWidget</Object>
+    <Object Type="Package">PowerSupplyCardWidget</Object>
+    <Object Type="Package">StepperMotorCardWidget</Object>
+    <Object Type="Package">SafetyCardSCWidget</Object>
+    <Object Type="Package">SafetyCardSIWidget</Object>
+    <Object Type="Package">SafetyCardSOWidget</Object>
+    <Object Type="Package">BusControlCardWidget</Object>
+    <Object Type="Package">AxisP66_StatusWidget</Object>
+    <Object Type="Package">Lamp_numeric_display</Object>
+  </Objects>
+</Package>

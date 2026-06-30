@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="InksMainSide_Content" height="800" width="200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TextOutput" id="txtOutPlcVersion" top="10" left="25" width="150" height="20" zIndex="0" value="PLC v15.2.5.15" textAlign="center" fontSize="12px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton3" top="90" left="15" width="170" height="60" zIndex="1" image="Media/Icons/48x48/Apps/agt_home.png" pageId="InksMain_Page" text="Main" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="35" left="25" width="150" zIndex="2" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="220" left="15" width="170" height="60" zIndex="3" image="Media/Icons/48x48/Apps/kedit.png" pageId="InksDetails_Page" text="Details" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton5" top="350" left="15" width="170" height="60" zIndex="4" image="Media/Icons/48x48/Apps/blower.png" pageId="DryerBlowers_Page" text="Blowers" textAlign="left" fontSize="16px" visible="false" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton6" top="285" left="15" width="170" height="60" zIndex="5" image="Media/Icons/48x48/Apps/kblackbox.png" pageId="InksDiagnosis_Page" text="Diagnosis" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton7" top="480" left="15" width="170" height="60" zIndex="6" image="Media/Icons/48x48/Apps/jabber_Nir.png" pageId="DryerNIR_Page" text="NIR" textAlign="left" fontSize="16px" visible="false" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="btnConfig" top="545" left="15" width="170" height="60" zIndex="7" image="Media/Icons/48x48/Apps/Service%20Manager.png" pageId="InksConfig_Page" text="Setup" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton10" top="415" left="15" width="170" height="60" zIndex="8" image="Media/Icons/48x48/Apps/quick_restart.png" pageId="InksTransport_Page" text="Transport" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListBuzzer" top="655" left="155" width="32" height="32" zIndex="9" imageList="['no_bell.png', 'bell.png']" imagePrefix="Media/Icons/32x32/Actions/" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btnReset" top="730" left="65" width="65" height="55" zIndex="10" image="Media/UI/reset-all.svg" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavButtonAlarms" top="155" left="15" width="170" height="60" zIndex="11" image="Media/Icons/48x48/Apps/alert.png" pageId="InksAlarms_Page" text="Alarms" textAlign="left" fontSize="16px" />
+  </Widgets>
+</Content>

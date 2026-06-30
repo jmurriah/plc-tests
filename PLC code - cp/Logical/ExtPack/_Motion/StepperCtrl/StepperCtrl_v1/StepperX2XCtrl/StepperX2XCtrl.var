@@ -1,0 +1,5 @@
+VAR
+	xInitDone : BOOL := FALSE;
+	pStepperCtrl : REFERENCE TO StepperCtrlX2X_typ; (*Axis control structure (local reference to avoid doing a find & replace)*)
+	oSetPosOld : INT := 0;
+END_VAR

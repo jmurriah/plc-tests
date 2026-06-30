@@ -1,0 +1,32 @@
+VAR
+	Stacker : REFERENCE TO Stacker_typ;
+	AlarmsReseted : StackerAlarms_typ;
+	ResetCommands : StackerCommands_typ;
+	CommsReset : StackerCommsInputs_typ;
+	OutputsReset : StackerOutputs_typ;
+	iStackerModel : USINT;
+	tp_EjectPileStack : TP;
+	tp_EjectRejectStack : TP;
+	tp_CleanBelts : TP;
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF StackerCtrlStatus_enum;
+	rMediaThickness : REAL;
+	iMinStackBoards : INT := 15; (*Number of minimum boards to be stacked, for both modes: heigh and num of boards*)
+	xBeltsAreStopped : BOOL;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR
+VAR
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	CopyOfWriteData : ARRAY[1..25] OF UINT;
+	tonDisableWrittingOfData : TON;
+	xDisableWriteData : BOOL;
+	ton_CommsError : TON;
+	tiTimeToEmpty : TIME;
+	tonEmptyBelt : TON;
+	EraseWriteData : ARRAY[1..25] OF UINT;
+	ton_ControlStopping : TON;
+END_VAR

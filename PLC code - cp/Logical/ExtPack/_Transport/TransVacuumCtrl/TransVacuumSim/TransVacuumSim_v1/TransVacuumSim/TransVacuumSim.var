@@ -1,0 +1,7 @@
+VAR
+	transVacc : REFERENCE TO TransVacuum_typ;
+	pressureSim : SimAnalogProcess;
+	rAParam : REAL := -0.13;
+	rBParam : REAL := -0.005;
+	tofNoVacc : TOF;
+END_VAR

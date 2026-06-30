@@ -1,0 +1,3 @@
+VAR
+	iIndexTransVacuum : USINT;
+END_VAR

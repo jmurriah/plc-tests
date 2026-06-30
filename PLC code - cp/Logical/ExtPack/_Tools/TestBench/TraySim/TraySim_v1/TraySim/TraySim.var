@@ -1,0 +1,9 @@
+VAR
+	trayData : REFERENCE TO stTraySim;
+	ton_ToOut : TON;
+	ton_ToIn : TON;
+	ton_ReboundOut : TON;
+	ton_ReboundIn : TON;
+	xReboundedOut : BOOL;
+	xReboundedIn : BOOL;
+END_VAR

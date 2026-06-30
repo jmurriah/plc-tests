@@ -1,0 +1,19 @@
+VAR
+	SafetyController : REFERENCE TO stSafetyController;
+	DataFromSafety : REFERENCE TO ARRAY[0..20] OF UINT;
+	CommsReset : SafetyControllerCommsInputs_typ;
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	AlarmsReseted : SafetyControllerAlarms_typ;
+	tonAlarmFeeder : TON;
+	tonAlarmPrimer : TON;
+	tonAlarmOverVarnish : TON;
+	tonAlarmDryer : TON;
+	tonAlarmStacker : TON;
+	tonAlarmSarm : TON;
+	iReasonCritical : UINT;
+	ton_CommsError : TON;
+	ResetSafetyOutputs : SafetyControllerOutputs_typ;
+	ResetSafetyInputs : SafetyControllerInputs_typ;
+END_VAR

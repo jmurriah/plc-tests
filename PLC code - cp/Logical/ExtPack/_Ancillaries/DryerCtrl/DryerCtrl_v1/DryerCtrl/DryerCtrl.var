@@ -1,0 +1,15 @@
+VAR
+	Dryer : REFERENCE TO DryerAnc_typ;
+	AlarmsReseted : DryerAlarms_typ;
+	CommandsReseted : DryerCommands_typ;
+	tiTimeToEmpty : TIME;
+	tonEmptyBelt : TON;
+	xStartTransportAndPrepare : BOOL;
+	OutputsReset : DryerOutputs_typ;
+	iDryerModel : USINT;
+	iIndexHistory : USINT;
+	StateHistory : ARRAY[0..iHistoryLines] OF DryerCtrlStatus_enum;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 20;
+END_VAR

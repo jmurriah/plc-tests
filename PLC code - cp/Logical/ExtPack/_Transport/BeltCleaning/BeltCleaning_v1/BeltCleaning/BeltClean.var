@@ -1,0 +1,21 @@
+VAR
+	ResetOutputs : BeltCleanOutputs_typ;
+	ResetCommands : BeltCleanCommands_typ;
+	ResetCommandsSw : BeltCleanCommandsSw_typ;
+	dataBeltClean : REFERENCE TO BeltClean_typ;
+	iReasonStop : UINT;
+	tofCleaningSystemRise : TOF;
+	tonCleanBeltPump : TON;
+	tonCleaningByTime : TON;
+	xEdge1sec : BOOL;
+	ResetAlarms : BeltCleanAlarm_typ;
+	ResetAlSummary : stEFI_AlarmSummary;
+	ton_Cleaning : TON;
+	ton_Drying : TON;
+	ars_AnyAlarm : AutoResetSound;
+	ton_SwCleanRequest : TON;
+	ton_CleanRequest : TON;
+	iTimeElapsed : UDINT;
+	iPieces : UDINT;
+	ton_WaitingToCleanState : TON;
+END_VAR

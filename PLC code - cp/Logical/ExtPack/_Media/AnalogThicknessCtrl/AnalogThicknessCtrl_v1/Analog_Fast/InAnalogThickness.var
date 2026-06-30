@@ -1,0 +1,12 @@
+VAR
+	dingCard : REFERENCE TO PlcCardMapping;
+	rThicknessToMounted : REAL;
+	xMountedMediaDetected : BOOL;
+	xMediaToRejectDetected : BOOL;
+	iMaxSamples : USINT;
+	iHighDingRaw : INT;
+	iIndexSamples : USINT;
+	rVirtualDiscretePosition : REAL;
+	rBarsPosition : REAL;
+	iIndexVirtualSensor : USINT;
+END_VAR

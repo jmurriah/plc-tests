@@ -1,0 +1,7 @@
+VAR
+	SimDryer : REFERENCE TO PrimerSim_typ;
+	Dryer : REFERENCE TO DryerAnc_typ;
+	tonTransport : TON;
+	tonReady : TON;
+	tonDry : TON;
+END_VAR

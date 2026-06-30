@@ -1,0 +1,4 @@
+VAR
+	gIndexStepper : INT := 1;
+	gAxisStepper : ARRAY[0..2] OF StepperCtrlX2X_typ;
+END_VAR

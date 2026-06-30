@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.3.86 SP?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="FUNCTION_BLOCK_CREATE" ID="777" Value="4096" Description="Function block: Create a FB instance" />
+    <Parameter Name="REFERENCE_SWITCH_PARID" ID="944" Value="4096" Description="Digital inputs: Parameter ID for reference switch" />
+    <Group Name="VAR">
+      <Parameter Name="VAR_I4_0+0" ID="4096" Value="1" Description="FB0 VAR I4 variable0" />
+    </Group>
+  </Root>
+</AcoposParameterTable>

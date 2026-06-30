@@ -1,0 +1,11 @@
+VAR
+	Icla : REFERENCE TO stIcla;
+	IclaSim : REFERENCE TO stIclaSim;
+	ncAbsMov : UINT := ncHALT_OK;
+	rMsFromLastExec : REAL;
+	tiLastExec : TIME;
+	rAdvance : REAL;
+	rActPosition : REAL;
+	rSpeed : REAL;
+	iAbsoluteMovementOrders : UINT;
+END_VAR

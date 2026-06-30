@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Reference="true">\Physical\SimDryer\PC_any\mappView\MainEvents\MainPage.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\SimDryer\PC_any\mappView\MainEvents\TestsDialog.eventbinding</Object>
+  </Objects>
+</Package>

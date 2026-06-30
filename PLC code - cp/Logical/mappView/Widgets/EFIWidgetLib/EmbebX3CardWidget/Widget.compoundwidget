@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="X3CardWidget" width="46" height="374" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="0" width="46" height="374" zIndex="0" image="Media/EFI/BrCards/X20X3.jpg" sizeMode="cover" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl01" top="130" left="0" width="20" height="20" zIndex="1" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl02" top="130" left="25" width="20" height="20" zIndex="2" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl03" top="160" left="0" width="20" height="20" zIndex="3" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl04" top="160" left="25" width="20" height="20" zIndex="4" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl05" top="190" left="0" width="20" height="20" zIndex="5" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl06" top="190" left="25" width="20" height="20" zIndex="6" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl07" top="220" left="0" width="20" height="20" zIndex="7" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl08" top="220" left="25" width="20" height="20" zIndex="8" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl09" top="250" left="0" width="20" height="20" zIndex="9" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl10" top="250" left="25" width="20" height="20" zIndex="10" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl11" top="280" left="0" width="20" height="20" zIndex="11" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<Widget xsi:type="widgets.brease.ImageList" id="imgl12" top="280" left="25" width="20" height="20" zIndex="12" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+		<!--Widget xsi:type="widgets.brease.ToggleButton" id="btnViewText" top="20" left="10" width="20" height="20" zIndex="13" image="Media/UI/digi-increase-sel.svg" mouseDownImage="Media/UI/digi-increase.svg" checkedBackColor="rgba(0, 0, 255, 1)"/-->
+	</Widgets>
+	
+	<Properties>
+     
+		<!--Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>-->
+    
+		<!--Structure bindable property:-->
+		<Property xsi:type="StructureBindableProperty" name="PlcCardMapping" type="PlcCardMapping" readOnly="true" >
+			<Description>Input Card Structure</Description>
+			<Mappings>
+				<Mapping widget="imgl01" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[1]" mapToNode="false"/>
+				<Mapping widget="imgl02" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[2]" mapToNode="false"/>
+				<Mapping widget="imgl03" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[3]" mapToNode="false"/>
+				<Mapping widget="imgl04" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[4]" mapToNode="false"/>
+				<Mapping widget="imgl05" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[5]" mapToNode="false"/>
+				<Mapping widget="imgl06" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[6]" mapToNode="false"/>
+				<Mapping widget="imgl07" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[7]" mapToNode="false"/>
+				<Mapping widget="imgl08" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[8]" mapToNode="false"/>
+				<Mapping widget="imgl09" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[9]" mapToNode="false"/>
+				<Mapping widget="imgl10" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[10]" mapToNode="false"/>
+				<Mapping widget="imgl11" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[11]" mapToNode="false"/>
+				<Mapping widget="imgl12" type="Number" property="selectedIndex" mode="oneWay" memberPath="DOutput[12]" mapToNode="false"/>
+				<!--Mapping widget="btnViewText" type="Number" property="value" mode="twoWay" memberPath="ShowTexts" mapToNode="false"/-->
+			</Mappings>
+		</Property>
+    
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

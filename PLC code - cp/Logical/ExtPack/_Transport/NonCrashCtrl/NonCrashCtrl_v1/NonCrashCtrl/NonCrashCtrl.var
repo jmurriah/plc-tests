@@ -1,0 +1,25 @@
+VAR
+	dataNC : REFERENCE TO NonCrash_typ;
+	AlarmsSummaryReseted : stEFI_AlarmSummary;
+	AlarmsReseted : NonCrashAlarms_typ;
+	AxisMotor : REFERENCE TO AxisCtrl_typ;
+	StatusCtrl : NonCrashStatusCtrl := NONCRASH_NOT_INITIALIZED;
+	iReasonStop : UDINT;
+	iReasonCritical : UDINT;
+	arxAlrComsDrive : AutoResetSound;
+	arxAlrDriveError : AutoResetSound;
+	arxAlrOvertorque : AutoResetSound;
+	stEventLog : EventLog_typ;
+	regErrors : UDINT; (*Registered errors to consider*)
+	iTimesExecutedErrorState : UINT;
+	DriveUnitManager : DriveUnitMngr;
+	xRunningState : BOOL;
+	tonOvertorque : TON;
+	arxAlrDiffContact : AutoResetSound;
+	tonAlarmDelay : TON;
+	tonControllerReady : TON;
+	arxAlrControllerNotReady : AutoResetSound;
+	arxAlrPerimeterNotDefined : AutoResetSound;
+	arxAlrGearBoxNotDefined : AutoResetSound;
+	iReasonSound : USINT;
+END_VAR

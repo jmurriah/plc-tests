@@ -1,0 +1,3 @@
+VAR
+	BeltClean : REFERENCE TO BeltClean_typ;
+END_VAR

@@ -1,0 +1,9 @@
+VAR
+	simPresPos : SimAnalogProcess; (*Function block to simulate the positive pressure of the inks*)
+	simPresNeg : SimAnalogProcess; (*Function block to simulate the meniscus of the inks*)
+	simTemp : SimAnalogProcess; (*Function block to simulate the temperature of the inks*)
+	xStarted : BOOL;
+	Inks : REFERENCE TO stInks;
+	tonNotHeating : TON;
+	SimInks : REFERENCE TO SimInk_typ;
+END_VAR

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 32 32"
+   style="enable-background:new 0 0 32 32;"
+   xml:space="preserve"
+   width="32px"
+   height="32px"
+   class="br-symbol-library"
+   sodipodi:docname="Silence.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata10"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs8" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   id="namedview6"
+   showgrid="false"
+   inkscape:zoom="14.75"
+   inkscape:cx="2.2992981"
+   inkscape:cy="10.775728"
+   inkscape:window-x="1912"
+   inkscape:window-y="760"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Ebene_1" />
+<g
+   id="Energy"
+   transform="matrix(-1,0,0,1,32.095948,0)">
+	<path
+   id="Energie_3_"
+   d="m 24.7,13.3 h -6.4 c -0.4,0 -0.6,-0.3 -0.4,-0.6 0,0 2.8,-11.9 2.9,-12.3 C 20.9,0 20.7,0 20.5,0.3 20.2,0.5 7.1,18 7.1,18 6.9,18.3 7,18.8 7.3,18.8 h 6.4 c 0.4,0 0.6,0.1 0.5,0.4 0,0 -2.8,11.9 -2.9,12.4 -0.1,0.5 0.1,0.5 0.3,0.2 0.2,-0.3 13.4,-18 13.4,-18 0.2,-0.3 0.1,-0.5 -0.3,-0.5 z"
+   inkscape:connector-curvature="0" />
+</g>
+<g
+   id="Ebene_1_1_">
+</g>
+<rect
+   style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.04534554;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="rect8460"
+   width="1.9371367"
+   height="32.937897"
+   x="20.880985"
+   y="0.70435846"
+   transform="matrix(1,0,-0.39655946,0.91800904,0,0)" /><rect
+   style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.04534554;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="rect8460-1"
+   width="1.9371367"
+   height="32.937897"
+   x="22.818123"
+   y="0.70435715"
+   transform="matrix(1,0,-0.39655946,0.91800904,0,0)" /></svg>

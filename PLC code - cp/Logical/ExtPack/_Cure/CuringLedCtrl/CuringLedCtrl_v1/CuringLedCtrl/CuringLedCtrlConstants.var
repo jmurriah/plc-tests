@@ -1,0 +1,34 @@
+VAR CONSTANT
+	iSlmWidth : INT := 25;
+	StCmdWrite : STRING[2] := 'w ';
+	StOff : STRING[2] := 'Of';
+	StValueDisableSlm : STRING[2] := ' 0';
+	StValueEnableSlm : STRING[2] := ' 1';
+	iMaxNumLamps : USINT := 16;
+	StCmdEnableSlm : STRING[11] := ' slmenable ';
+	StCheckIntensity : STRING[10] := ' intensity';
+	StCmdRead : STRING[2] := 'r ';
+	StDs : STRING[3] := ' ds';
+	StCheckStatus : STRING[4] := ' son'; (*Check if UV is Enabled. [On = UV enabled, Off = UV disabled]*)
+	StOn : STRING[2] := 'On';
+	StMl : STRING[2] := 'm1';
+	BUSY : UINT := 65535; (*Functionblock BUSY status*)
+	StCmdDisableAll : STRING[9] := ' slmall 0';
+	StCmdEnableAll : STRING[9] := ' slmall 1';
+	rCureBySpeedWhiteIntercept : REAL := 14.84;
+	rCureBySpeedDefaultIntercept : REAL := 0;
+	rCureBySpeedWhiteSlope : REAL := 0.86;
+	rCureBySpeedDefaultSlope : REAL := 1.67;
+	rLampIntensitySlope : REAL := 327.67;
+	StOk : STRING[2] := 'ok';
+	StPoll : STRING[4] := 'poll';
+	StIntensity : STRING[10] := ' intensity';
+	StTemperature : STRING[4] := ' tmp';
+	iMaxNumAttempts : INT := 2;
+	MaxIntensityCuringBySpeed : USINT := 100;
+	MinIntensityCuringBySpeed : USINT := 40;
+END_VAR
+VAR
+	iIntensityAnswerLength : INT := 3;
+	iStatusAnswerLength : INT := 2;
+END_VAR

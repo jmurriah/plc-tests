@@ -1,0 +1,3 @@
+VAR
+	iIndexPairedIclaMotors : USINT;
+END_VAR

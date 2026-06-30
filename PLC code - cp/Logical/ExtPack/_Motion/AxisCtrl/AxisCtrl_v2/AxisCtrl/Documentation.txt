@@ -1,0 +1,260 @@
+ **************************************************************************************************
+ * COPYRIGHT - B&R Spain
+ **************************************************************************************************
+ * Program: AxisCtrl
+ * File: Documentation.txt
+ * Author: B&R Spain
+ * Created: September 19, 2013
+ * Modified: April 28, 2017
+ **************************************************************************************************
+ * Implementation of program AxisCtrl
+ **************************************************************************************************
+ * V 0.03.4
+ **************************************************************************************************
+ 
+ * Requirements
+ **************************************************************************************************
+ 
+ - ACP10 version must be equal or higher than V2.26.0 because before that version the ACP10_MC FBK 
+   errors were not read by the MC_ReadAxisError FBK and therefore a lot of diagnostic information 
+   would be lost in case a previous version would be used.
+ 
+ 
+ * Configuration
+ **************************************************************************************************
+ 
+ - The file References.st must be updated to allow the program to control the desired axis. This is 
+   the only part of the program that needs to be modified if the functionality does not need to be 
+   changed.
+   
+ - It must be noted that the name of the control variable is not used inside the program to avoid 
+   requiring a Find & Replace. The control variable just needs to be specified in the references.st 
+   file.
+ 
+ 
+ * Functionality
+ **************************************************************************************************
+ 
+ - The funtionality is very similar to the SingleAx or Basic one. It basically has some expansions
+   to allow higher flexibility. The interface is quite easy to use. Furthermore, there are some 
+   differences compared to the SingleAx and Basic programs, which are described in the following 
+   chapter.
+   
+ - The control structure is divided in three parts; the commands, the parameters and the status.
+
+ - In addition to the PLCopen state, the control structure provides useful status information like
+   the PowerOn, the HomeOk and the InPosition that reflects if the axis is switched on, if it is  
+   properly homed and if the last commanded discrete movement has reached the target, respectively.
+   The status structure provides information about the ACOPOS digital inputs as well.
+ 
+
+ * Main differences in behaviour compared to the SingleAx and Basic
+ **************************************************************************************************
+ 
+ - In this program, all the valid PLCopen transitions are possible. E.g. While a MoveAbsolute is 
+   performed (DiscreteMotion), a MoveVelocity can be started (ContinuousMotion). This includes as 
+   well performing a MoveAbsolute to a new target while a MoveAbsolute is in process. Not all the 
+   combinations were possible in the SingleAx and Basic programs.
+ 
+ - Instead of a Stop, this program provides a Halt and a QuickStop.
+   - The Halt allows Discrete, Continuous and synchronized movements to be halted (Discrete motion 
+     where the speed is decreased until it becomes zero). This allows a higher flexibility since 
+	 the Halt itself can be aborted by another movement or even a new Halt with other parameters.
+	 This would be not possible if a Stop would be used.
+   - The QuickStop performs a stop with the limit deceleration (Axis init table). The QuickStop can 
+     be thought of a "panic" stop. It has higher priority than any other command except switching 
+	 off the drive. If the QuickStop is set, no movement will be allowed to start. In case any un-
+	 expected error occurrs, the QuickStop should be used to stop the motion.
+	 
+ - The Quickstop and the Power must be reset by the application. This program will never reset them.
+   
+ - In this program, only the real axis errors (i.e. the ones that bring the axis to ErrorStop in 
+   the PLCopen state diagram. E.g. encoder fault) cause the axis to stop. If other errors (e.g. 
+   warnings or ACP10_MC errors (29xxx) occurr), the axis remains in its last state and can be ope-
+   rated as normal. Therefore, the errors can be read (Acknowledged) while the axis is in motion. 
+   However, every error which is reported should be considered by the application and if necessary, 
+   command a QuikStop.
+   
+ - As the PLCopen state diagram states, the Reset command can be used to leave the ErrorStop state
+   directly with no need to acknowledge the errors one by one. To mantain backwards compatibility, 
+   if all errors are acknowledged by the ErrorAcknowledge command, the axis leaves the ErrorStop 
+   state as well.
+   
+ - In this program, the homming mode cannot be specified by the application. Instead, there are 
+   three kind of home commands, which is enough for almost all applications.
+   - The HomeDirect, which assigns a value to the actual position. This command can be used either 
+     in standstill or in disabled state.
+   - The HomeAbsEncoder, which takes into account the absolute encoder to calculate the position. 
+     This command can be used either in standstill or in disabled state. To allow this functionality
+	 a permanent variable must be linked, where the program will store the necessary data for it.
+   - The Home, which performs a home in the way it is defined in the axis parameter table. this is
+     the only home command that can cause the axis to move.
+ 
+ - In this program, there are two kind of Jog commands; a continuous and an incremental one.
+ 
+ - By default, if a command is set, which is not allowed at the time, the program returns an error. 
+   This behaviour can be changed by commenting the corresponding part of the program.
+   
+ - By default, if two or more incoherent commands are set at the same time, the axis ignores and 
+   resets all the commands (exept the QuickStop and the Power). This behaviour can be changed by 
+   commenting the corresponding part of the program.
+ 
+ - This program has been designed to avoid all the known bugs from the SingleAx and Basic programs.
+ 
+ - This program also fixes some ACP10 flaws. E.g. this program does not allow a periodic axis to be 
+   moved if it is not properly homed. This is not prevented by ACP10, and it might lead to very dan-
+   gerous movements where the axis could collide against other machine parts.
+ 
+ - There is a PLCopen state supervisor that makes sure that even if the axis is commanded by an ex-
+   ternal source (e.g. the Test Window), it will always be possible to operate it from the program 
+   side (of course not while the Test is opened in Exclusive mode, but will work after it is closed).
+   However, it is recommended not to move the axis from the Test Window, since the changes that it 
+   does are not monitored by PLCopen FBs. Moving the axis from the test window can cause the next 
+   movements to use speeds and accelerations other than the ones programmed.
+   
+ - The way the program gets access to the axes (ncaccess) makes sure that the program can be trans-
+   fered in any mode (overload, copy or one cycle) and the program will still be able to manage the
+   axis. No warm restart will be required, even after the first transfer.
+ 
+   
+ * Modifications: Recommended way to modify the program
+ **************************************************************************************************
+ 
+  In order to implement changes that require the use of a state machine, it is not always 
+  necessary to expand/modify the main sequence (AxisState state machine). Consider the possibility
+  to use a new state machine specifically for that functionality. It will be much easier to 
+  implement and it will actually make more sense if it is not part of the main sequence. For 
+  instance, this would be the case of a manual brake operation, where the main sequence step does
+  not need to be considered if the higher level application requires to set or release the brake.
+  
+  Depending on the changes to implement there are different strategies to follow:
+ 
+  - If the program must be expanded but the main sequence is not going to be changed, for example
+    in case the ActualTorque must be read, the program can be expanded just by doing as follows:
+	
+    1)  Modify the control structure AxisCtrl_typ or any derivative, and all necessary substructures.
+    2)  Declare all needed FBKs instances and temporary variables.
+    3)  Implement the FBK parameterization and call in the corresponding FBK call section in the 
+        AxisCtrl.st file.
+    4)  Update the status values of the control structure in the last part of the AxisCtrl.st file.
+   
+  - In order to modify the main sequence in an appropiate way, next steps must be followed:
+  
+    1)  Modify the control structure AxisCtrl_typ or any derivative, and all necessary 
+        substructures.
+    2)  Declare all needed FBKs instances and any temporary variable (AxisCtrl.var file). In case
+        of movement FBKS, declare two instances ended in _0 and _1 to allow two consecutive motion
+        commands of the same type.
+    3)  Expand the AxisState_typ enumeration (AxisCtrl.typ file) to include the new required steps.
+        In case of motion states, declare two states ended in _0 and _1 to allow two consecutive 
+        motion commands of the same type.
+    4)  Define all the new necessary actions in the Commands.st file. In case of movement actions,
+        declare two actions ended in _0 and _1 to allow two consecutive motion commands of the
+        same type.
+    5)  Add code to reset all the new commands in the ResetMotionCommands action (Commands.st).
+    6)  Add code to reset all the new FBKs in the ResetExecutes action (Commands.st).
+    7)  Implement the new steps in the CASE of the AxisCtrl.st file by following the same style
+        used in the other steps.
+    8)  Implement the FBK parameterization and call in the corresponding FBK call section in the 
+        AxisCtrl.st file.
+    9)  Add the newly created steps in the CASE of the StateSupervisor.st considering in which 
+        PLCopen state the axis must be for each step, in order to detect any anomaly in the axis
+        state.
+    10) Add the possibility to perform the command (e.g. Move.CyclicPosition) wherever it should
+        be possible (i.e. in every step of the CASE where it should be possible to do so) in the
+	    AxisCtrl.st file. Keep the same style which is used in the other steps.
+    11) In order to detect if any command is commanded when it connot be, add the corresponding
+        code in the COMMAND INCOHERENCE CHECK section in the AxisCtrl.st file.
+    12) In order to detect if two incoherent commands are commanded at the same time, add the
+        corresponding code in the INVALID COMMAND ABORTION section in the AxisCtrl.st file.
+    13) Update the status values of the control structure in the last part of the AxisCtrl.st file
+        if necessary.
+    14) Document all the important behavioural changes of the task in the Documentatioin.txt file.
+   
+   
+ **************************************************************************************************
+ * Revision History
+ **************************************************************************************************
+ * V0.03.4  2017-04-28
+ * (change) Virtual axes exhibit now the same bahviour as real axes (PowerOn status corresponds to 
+ * the Power command and PLCopenState.Disabled and PLCopenState.Standstill status are consistent 
+ * to the Power command).
+ * (change) The Power command is not set to TRUE by the program any more, because there is no need.
+ * (bug fix) PowerOn status was set too early and that could incorrectly lead to error 29207
+ * (bug fix) Some AR version (e.g. F4.03) do not copy the pointer's address when transferring in 
+ * copy mode. The program can work fine now with those AR versions as well.
+ **************************************************************************************************
+ * V0.03.3  2016-07-26
+ * (Bug fix) The battery-backed (EBI) encoder errors were reset in more cases than strictly needed
+ **************************************************************************************************
+ * V0.03.2  2016-07-26
+ * (new) Battery-backed (EBI) encoder errors can be directly acknowledged via the ErrorAcknowledge  
+ * command, for example during the first startup or after the encoder cable has been disconnected. 
+ * Internally, the task writes the ENCOD_COMMAND ParID to reset the econder error when necessary.
+ * It must be noted that it is not possible to recover from a battery-backed (EBI) encoder error 
+ * via the Reset command. Only the ErrorAcknowledge command can recover the situation.
+ * (new) If a battery-backed (EBI) encoder error is detected, the permanent memory that is used by 
+ * the mcHOME_RESTORE_POS is set to be invalid, because the absolute position could be wrong.
+ * (Bug fix) Error message for MC_BR_AutControl was not correct
+ **************************************************************************************************
+ * V0.03.1  2016-02-17
+ * (bug fix) If the axis lost the HomeOK due to an encoder error, the ActualPosition did not change 
+ * to NaN and the workaround introduced in V0.03.0 for the APC10 flaw was not preventing the axis 
+ * to move after an encoder error.
+ * (bug fix) If the axis is not synchronized anymore due to an external abortion (e.g. because it 
+ * was stopped from the Test Window), the InGear and InSynch flag was not reset.
+ * (change) Now the CommandAborted output from the different FBs is used to detect sooner if an 
+ * external agent (e.g the Test Window) is commanding other movements.
+ * (change) If the program was transfered in overload mode while the axis state was not Standstill
+ * or Disabled, the MC_BR_InitEndlessPosition was filling the error FIFO. Now it waits until it 
+ * can be executed and the InitDone remains FALSE until then.
+ **************************************************************************************************
+ * V0.03.0  2016-02-10
+ * (change) If the axis is not properly referenced (HomeOK = FALSE), the ActualPosition shows Not
+ * a Number (NaN) in order to avoid confusions.
+ * (change) Error 50001 has been replaced by error 29207, which provides a more precise description 
+ * with detailed information about the FB which is responsible for it, making it easier to diagnose 
+ * application problems.
+ * (new) If the axis is not properly referenced (HomeOK = FALSE), the axis is not allowed to 
+ * move by the application and error 29205 is reported. This is done because there is an ACP10 flaw 
+ * that allows rotary axes to move even if they are not homed and that could lead to dangerous 
+ * movements that might end colliding against some other machine part.
+ * (new) The Status member ErrorSource has been added so that it is possible to know if the actual  
+ * error message has been reported by ACP10, by PLCopen or by the Task itself.
+ * (new) The MC_BR_InitAutData has been added in the AutCtrl program to be able update the automat
+ * parameters in a faster way after a second StartAutomat command.
+ **************************************************************************************************
+ * V0.02.9  2015-12-24
+ * (new) The member PowerOn has been added to the Status structure so that it is possible to know 
+ * if power is supplied to the axis by just looking at it.
+ **************************************************************************************************
+ * V0.02.8  2015-05-06
+ * (change) If the axis to control is a virtual axis, the Power command is automatically set to 
+ * TRUE by the program so that it will not cause PLCopen conflicts. This is because virtual axes 
+ * cannot be in Disabled state and the state supervisor would try to switch the axis off repeatedly 
+ * until the Power command would be set to TRUE.
+ **************************************************************************************************
+ * V0.02.7  2014-02-18
+ * (new) There is a new sample (CamCtrl) to handle a cam profile coupling. Note that the Move.CamIn
+ * command can only be used while the axis is not in SynchronizedMotion, so that to CamIn a second
+ * time, first a CamOut or another aborting command must be commanded.
+ * (new) There is a new sample (AutCtrl) to handle a cam profile automat coupling. Note that the 
+ * Move.StartAutomat command can be used while the axis is not in SynchronizedMotion to start the
+ * automat, but can be commanded again to update the automat parameters during runtime.
+ * (change) The GearOut did not work correctly.
+ **************************************************************************************************
+ * V0.02.6  2013-12-30
+ * (change) The state supervisor has been changed so that if an exception is found, it takes into 
+ * account the actual state for every cicle, without waiting for any timeout. This was necessary 
+ * when the CNC/robotics was used, because the axis was changed to synchronized motion and back to
+ * standstill by the CNC and then it was not possible to perform any movement before the timeout
+ * expired.
+ **************************************************************************************************
+ * V0.02.5  2013-10-17
+ * (new) There is a new sample (GearCtrl) to handle a gear coupling.
+ * (change) The way to handle the FBK calls has changed to let the user know when the master axis
+ * is not correct.
+ **************************************************************************************************
+ * V0.02.4  2013-09-30
+ * (new) First internally released version.
+ **************************************************************************************************

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.4.50 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">45214359. TempSensor.pdf</Object>
+    <Object Type="File">45214335 Humidity &amp; Temp 4-20mA.pdf</Object>
+    <Object Type="File">45214336. AirTempSensor.pdf</Object>
+    <Object Type="File">45215049. SurfaceTemp.pdf</Object>
+  </Objects>
+</Package>

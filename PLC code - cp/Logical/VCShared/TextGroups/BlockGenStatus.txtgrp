@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.4.92 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="BlockGenStatus">
+  <Property Name="Description" Value="General Status of the Block"/>
+  <Property Name="Index" Value="6"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="132215" Value="Stopping"/>
+    <Text ID="132216" Value="Manual"/>
+    <Text ID="132217" Value="Auto"/>
+    <Text ID="132218" Value="Stopped"/>
+    <Text ID="132229" Value="Undefined"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="132215" Value=""/>
+    <Text ID="132216" Value=""/>
+    <Text ID="132217" Value=""/>
+    <Text ID="132218" Value=""/>
+    <Text ID="132229" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="en-ES">
+    <Text ID="132215" Value=""/>
+    <Text ID="132216" Value=""/>
+    <Text ID="132217" Value=""/>
+    <Text ID="132218" Value=""/>
+    <Text ID="132229" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="zh-CN">
+    <Text ID="132215" Value=""/>
+    <Text ID="132216" Value=""/>
+    <Text ID="132217" Value=""/>
+    <Text ID="132218" Value=""/>
+    <Text ID="132229" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="132215" Value="1"/>
+    <Index ID="132216" Value="2"/>
+    <Index ID="132217" Value="3"/>
+    <Index ID="132218" Value="0"/>
+    <Index ID="132229" Value="255"/>
+  </IndexMap>
+</TextGroup>

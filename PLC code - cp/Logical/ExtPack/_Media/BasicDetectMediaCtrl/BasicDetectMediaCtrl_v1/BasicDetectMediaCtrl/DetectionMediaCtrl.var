@@ -1,0 +1,7 @@
+VAR
+	vData : REFERENCE TO DetectionMedia;
+	StatusReseted : DetectionMedia_Status;
+	AlarmsReseted : DetectionMedia_Alarms;
+	arMountedMedia : AutoResetSound;
+	iReasonSound : UINT;
+END_VAR

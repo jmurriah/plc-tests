@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library SubType="IEC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>EFILib.typ</File>
+    <File Description="Exported constants">Constants.var</File>
+    <File Description="Global Constant variables">Global_Constant.var</File>
+    <File>IclaConstants.var</File>
+    <File Description="Public constants">ThicknessCtrlPublicConst.var</File>
+    <File Description="Global Ink Constant Vars">InksPublicConst.var</File>
+    <File Description="Exported functions and function blocks">FBs.fun</File>
+    <File Description="Gap delay control">FbCleanDelayControl.st</File>
+    <File Description="Speed Motor when enable is true otherwise is zero">MotorSpeedCalculation.st</File>
+    <File Description="Distance in Units motor">MotorDistanceCalculation.st</File>
+    <File>SetCalcVelocity.st</File>
+    <File>GetCalcVelocity.st</File>
+    <File>AutoResetSound.st</File>
+    <File>ComandBoolT.st</File>
+    <File>Blink.st</File>
+    <File>InterfaceNetworkCommands.st</File>
+    <File>BlinkOnOff.st</File>
+    <File>SimAnalogProcess.st</File>
+    <File>DriveUnitMngr.st</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="standard" />
+    <Dependency ObjectName="AsIecCon" />
+  </Dependencies>
+</Library>

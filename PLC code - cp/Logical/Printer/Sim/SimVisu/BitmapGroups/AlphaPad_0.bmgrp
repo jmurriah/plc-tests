@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.3.144 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AlphaPad_0">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="9"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="905" Value="Source[local].Bitmap[AlphaPad_lower_0]"/>
+    <BitmapRef ID="906" Value="Source[local].Bitmap[AlphaPad_lowerPressed_0]"/>
+    <BitmapRef ID="907" Value="Source[local].Bitmap[AlphaPad_upper_0]"/>
+    <BitmapRef ID="909" Value="Source[local].Bitmap[AlphaPad_numeric_0]"/>
+    <BitmapRef ID="915" Value="Source[local].Bitmap[AlphaPad_upperPressed_0]"/>
+    <BitmapRef ID="916" Value="Source[local].Bitmap[AlphaPad_numericPressed_0]"/>
+    <BitmapRef ID="917" Value="Source[local].Bitmap[AlphaPad_numeric2_0]"/>
+    <BitmapRef ID="918" Value="Source[local].Bitmap[AlphaPad_numeric2Pressed_0]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="905" Value="0"/>
+    <Index ID="906" Value="4"/>
+    <Index ID="907" Value="1"/>
+    <Index ID="909" Value="2"/>
+    <Index ID="915" Value="5"/>
+    <Index ID="916" Value="6"/>
+    <Index ID="917" Value="3"/>
+    <Index ID="918" Value="7"/>
+  </IndexMap>
+</BitmapGroup>

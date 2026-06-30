@@ -1,0 +1,11 @@
+VAR
+	Block : REFERENCE TO SimpleBlock;
+	MotorBlock : REFERENCE TO AxisCtrl_typ;
+	SimBlock : REFERENCE TO SimBlock_typ;
+	fbWriteRefSignal : MC_BR_WriteParID;
+	iRefSignalState : USINT;
+	AxisRef : UDINT;
+	StatusNcAccess : UINT;
+	uiValueRef : DINT;
+	TimesExcecHoming : USINT;
+END_VAR

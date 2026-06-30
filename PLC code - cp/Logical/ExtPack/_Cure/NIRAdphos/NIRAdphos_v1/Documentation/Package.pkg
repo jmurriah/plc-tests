@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">101828 EFI Eplan interface.pdf</Object>
+    <Object Type="File">NIR switch on-off timing_error.pdf</Object>
+    <Object Type="File">NIR switch error timing.pdf</Object>
+    <Object Type="File">101828 EFI interface.pdf</Object>
+    <Object Type="File">DB11_HMI_out.pdf</Object>
+    <Object Type="File">DB10_HMI_in.pdf</Object>
+  </Objects>
+</Package>

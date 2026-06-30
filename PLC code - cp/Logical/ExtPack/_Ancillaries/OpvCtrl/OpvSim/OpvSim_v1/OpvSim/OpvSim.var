@@ -1,0 +1,9 @@
+VAR
+	SimOpv : REFERENCE TO OpvSim_typ;
+	Opv : REFERENCE TO Opv_typ;
+	tonTransport : TON;
+	tonReady : TON;
+	tonPrime : TON;
+	tonBeltEmpty : TON;
+	tonDry : TON;
+END_VAR

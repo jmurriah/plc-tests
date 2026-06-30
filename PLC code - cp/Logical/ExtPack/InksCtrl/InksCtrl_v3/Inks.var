@@ -1,0 +1,3 @@
+VAR
+	gIndexInks : UINT := 0;
+END_VAR

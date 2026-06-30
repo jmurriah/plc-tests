@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Library" Language="IEC" Description="Functional blocks">FBs</Object>
+    <Object Type="Library" Language="IEC" Description="Functions">Functions</Object>
+    <Object Type="Library" Language="IEC" Description="Conversion data functions">ConvertFun</Object>
+    <Object Type="File">EFI_General.typ</Object>
+  </Objects>
+</Package>

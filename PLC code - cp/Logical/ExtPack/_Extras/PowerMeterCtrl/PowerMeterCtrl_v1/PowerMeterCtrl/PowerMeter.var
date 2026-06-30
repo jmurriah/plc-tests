@@ -1,0 +1,8 @@
+VAR
+	PowerMeter : REFERENCE TO stPowerMeter;
+	CommsReset : PowerMeterCommsInputs_typ;
+	ModSlaveState : UINT;
+	LastError : UINT;
+	LastErrorBlockNum : UINT;
+	ResetedAlarms : PowerMeterAlarms_typ;
+END_VAR

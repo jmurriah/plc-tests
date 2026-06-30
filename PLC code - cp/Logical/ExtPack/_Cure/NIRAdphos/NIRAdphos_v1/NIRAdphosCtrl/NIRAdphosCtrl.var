@@ -1,0 +1,40 @@
+VAR
+	data : REFERENCE TO NIRAdphos;
+	CurrentState : NIRAdphos_State := NIRADPEW_NOT_INITIALIZED;
+	CurrentState_copy : NIRAdphos_State := NIRADPEW_NOT_INITIALIZED;
+	resetedAlarms : NIRAdphos_Alarms;
+	resetedAlarmsSummary : stEFI_AlarmSummary;
+	xCurrentStateChanged : BOOL;
+	iStatusChanges : UINT;
+	SignalsOutReseted : NIRAdphos_SignalsOut;
+	xAllPowered : UINT;
+	iIndexModule : USINT;
+	iReasonStop : UINT;
+	iReasonCritical : UINT;
+	iAnyAlarm : UINT;
+	iAnyWarning : UINT;
+	stEventLog : EventLog_typ;
+	reasonSound : UINT;
+	arFault : AutoResetSound;
+	arSafety : AutoResetSound;
+	arSurfaceTemp1 : AutoResetSound;
+	arSurfaceTemp2 : AutoResetSound;
+	tonWatchdog : TON;
+	arSurfaceTempSensorError1 : AutoResetSound;
+	arSurfaceTempSensorError2 : AutoResetSound;
+	arAnyBlockedFan : AutoResetSound;
+	arAnyJam : AutoResetSound;
+	xAnyBlockedFan : BOOL;
+	xAnyJam : BOOL;
+	iIndexFan : USINT;
+	iReasonToProcess : USINT;
+	iReasonToStop : USINT;
+	xAnyModuleEnabled : BOOL;
+END_VAR
+VAR CONSTANT
+	iHistoryLines : USINT := 25;
+END_VAR
+VAR
+	StateHistory : ARRAY[0..iHistoryLines] OF NIRAdphos_State;
+	iIndexHistory : USINT;
+END_VAR

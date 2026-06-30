@@ -1,0 +1,4 @@
+
+
+Converted previously genVar by Command
+g_xIgnoraAlarmasPorLimpieza >> data.commands.xIgnoreAlarmsInCleaning

@@ -1,0 +1,280 @@
+TextID,EN,ES,DE,FR,AlarmCode,AlarmSeverity,AlarmVar
+Dryer.Alarm.GenCritical,Dryer Critical Alarm,Alarms Critical General,NoValue,NoValue,10001,1,gDryer.AlSummary.xAlarmCritical
+Dryer.Alarm.GenStop,Dryer Stop Alarm,Alarma Paro General,NoValue,NoValue,10002,1,gDryer.AlSummary.xAlarmStop
+Dryer.Alarm.GenStopDrying,Dryer Stop Drying  Alarm,Alarma Paro Secado General,NoValue,NoValue,10003,1,gDryer.Al.xAlrStopDrying
+Dryer.Alarm.FanBreakers,Fan Breakers error,Fallo Proteccion ventiladores,NoValue,NoValue,10004,1,gDryer.Al.Alarm.xFanBreakers
+Dryer.Alarm.FansPsu,Fan PSU error,Fallo Fuente ventiladores,NoValue,NoValue,10005,1,gDryer.Al.Alarm.xFan24Vdc
+Dryer.Alarm.MainPsu,Main PSU error,Fallo Fuente principal,NoValue,NoValue,10006,1,gDryer.Al.Alarm.xMain24Vdc
+Dryer.Alarm.MountedMedia,Mounted Media,Pieza montada,NoValue,NoValue,10007,1,gDryer.Al.Alarm.xAlarmMountedMedia
+Dryer.Alarm.EstopFront,Emergency Stop Front ,Seta Delantera,NoValue,NoValue,10008,1,gDryer.Al.Alarm.Safety.xEStopFront
+Dryer.Alarm.EstopRear,Emergency Stop Rear ,Seta Trasera Entrada,NoValue,NoValue,10009,1,gDryer.Al.Alarm.Safety.xEStopRear
+Dryer.Alarm.EstopRemote,Emergency Stop Remote,Seta Externa,NoValue,NoValue,10011,1,gDryer.Al.Alarm.Safety.xRemoteEStop
+Dryer.Alarm.WrongPhysConfig,Wrong physical configuration,Configuracion fisica erronea,NoValue,NoValue,10012,1,gDryer.Al.Alarm.xAlrWrongPhysConf
+Dryer.Alarm.OvertorqueBelt,Overtorque in Belt. Break risk,Sobrepar en banda. Riesgo de rotura,NoValue,NoValue,10013,1,gDryer.Al.Alarm.xAlrBeltOvertorque
+Dryer.Alarm.OverTempBeltFast,Overtemp in Belt. Break risk. Fast,Sobretemp en banda. Riesgo de rotura. Rapido,NoValue,NoValue,10014,1,gDryer.Al.Alarm.xAlrBeltOverTempFast
+Dryer.Alarm.OverTempBeltSlow,Overtemp in Belt. Break risk. Slow,Sobretemp en banda. Riesgo de rotura. Lento,NoValue,NoValue,10015,1,gDryer.Al.Alarm.xAlrBeltOverTempSlow
+,,,,,,,
+Dryer.Alarm.FansPsu80,Fan PSU >80%,Fuente ventiladores >80%,NoValue,NoValue,15001,2,gDryer.Al.Warning.xFanBreakersHighLoad
+Dryer.Warning.MountedMediaInside,Mounted Media inside Dryer,Sustrato montado dentro maquina,NoValue,NoValue,15002,2,gDryer.Al.Warning.xMountedMediaInside
+Dryer.Warning.BeltTempSensError,Belt Temp Sensor Error,Error Sensor Temp Banda,NoValue,NoValue,15003,2,gDryer.Al.Warning.xBeltSensorError
+Dryer.Warning.BoardInTempSensError,Board Input Temp Sensor Error,Error Sensor Entrada Sustrato,NoValue,NoValue,15004,2,gDryer.Al.Warning.xBoardInSensorError
+Dryer.Warning.BoardOutTempSensError,Board Output Temp Sensor Error,Error Sensor Salida Sustrato,NoValue,NoValue,15005,2,gDryer.Al.Warning.xBoardOutSensorError
+Dryer.Warning.AirBlowerInTempSensError,Air Blower Temp Input Sensor Error,Error Sensor Aire Entrada,NoValue,NoValue,15006,2,gDryer.Al.Warning.xAirBlowerInputSensorError
+Dryer.Warning.AirBlowerOutTempSensError,Air Blower Temp Output Sensor Error,Error Sensor Aire Salida,NoValue,NoValue,15007,2,gDryer.Al.Warning.xAirBlowerOutputSensorError
+Dryer.Warning.FrontDoorOpened,Front door opened,Porton delantero abierto,NoValue,NoValue,15008,2,gDryer.Al.Warning.xFrontDoorOpened
+Dryer.Warning.RearDoorOpened,Rear door opened,Porton trasero abierto,NoValue,NoValue,15009,2,gDryer.Al.Warning.xRearDoorOpened
+Dryer.Warning.BentMedia,Bent Media detected,Detectado sustrato doblado,NoValue,NoValue,15010,2,gDryer.Al.Warning.xBentMedia
+Dryer.Warning.NotMovementEnabled,Not movement enabled. Safety information,Movimientos no habilitados. Informacion de seguridad,NoValue,NoValue,15011,2,gDryer.Al.Warning.xNotEnabledMovement
+Dryer.Warning.KeyMantenance,Key Mantenance active. No movements,Llave Mantenimiento activa. No Movimientos,NoValue,NoValue,15013,2,gDryer.Al.Warning.xKeyMantenanceActive
+Dryer.Warning.JamLowCrash,Abnormal vibration level detected on NIRs,Vibración anormal detectada en NIRs,NoValue,NoValue,15014,2,gDryer.Al.Warning.xJamLowCrash
+,,,,,,,
+,,,,,,,
+Dryer.Alarm.BeltAnyDriveAlarm,Belt AnyDriveAlarm,Belt AnyDriveAlarm,NoValue,NoValue,30002,1,gBelt.Al.xAnyDriveAlarm
+Dryer.Alarm.BeltAlrPowerBeltError,Belt Drive Power Error,Error potencia servo banda,NoValue,NoValue,30003,1,gBelt.Al.xAlrPowerBeltError
+Dryer.Alarm.BeltAlrComDrive,Belt Drive Communication error,Error comunicacion servo banda,NoValue,NoValue,30004,1,gBelt.Al.xAlrComDrive
+Dryer.Alarm.BeltAlrProtDrive,Belt Drive Protection Error,Proteccion servo banda,NoValue,NoValue,30005,1,gBelt.Al.xAlrProtDrive
+Dryer.Alarm.BeltAlrOverTorque,Belt Motor OverTorque,Sobrepar en motor banda,NoValue,NoValue,30006,1,gBelt.Al.xAlrOverTorque
+Dryer.Alarm.BeltBeltMotorTemp,Belt Motor Temperature,Temp. Motor banda elevada,NoValue,NoValue,30007,1,gBelt.Al.xBeltMotorTemp
+Dryer.Alarm.BeltBeltDriverTemp,Belt Driver Temperature,Temp. Servo banda elevada,NoValue,NoValue,30008,1,gBelt.Al.xBeltDriverTemp
+Dryer.Alarm.BeltNoPerimeter,Not Perimeter defined in Belt,El Perímetro de la banda no está definido,NoValue,NoValue,30009,2,gBelt.Al.xAxisLengthNotDefined
+Dryer.Alarm.BeltNoGearBox,Not GearBox defined in Belt,El Reductor de la banda no está definido,NoValue,NoValue,30010,2,gBelt.Al.xGearBoxNotDefined
+,,,,,,,
+Dryer.Alarm.xWarningOvertoque,Warning Over torque,Aviso sobrepar,NoValue,NoValue,30102,2,gBelt.Al.xWrnOverTorq
+,,,,,,,
+,,,,,,,
+Dryer.Alarm.SblockNotReferenced,Vertical motor not referenced,Motor Vertical no referenciado,NoValue,NoValue,40001,1,gSimpleBlock[1].Al.xAlrBarMtrNoRef
+Dryer.Alarm.SblockNotCommsDrive,Comms Error Vertical motor,Fallo comunicacion Motor Vertical,NoValue,NoValue,40002,1,gSimpleBlock[1].Al.xAlrComBarMtr
+Dryer.Alarm.SblockDriveBreaker,Breaker Vertical motor,Proteccion Motor Vertical,NoValue,NoValue,40003,1,gSimpleBlock[1].Al.xAlrDriveProtection
+Dryer.Alarm.SblockHomeSensorError,Home Sensor Error,Error Sensor referenciado,NoValue,NoValue,40004,1,gSimpleBlock[1].Al.xAlrReferenceIncoherence
+,,,,,,,
+Dryer.Alarm.SblockCheckHomeSensor,Check home sensor,Chequear sensor referenciado,NoValue,NoValue,40051,2,gSimpleBlock[1].Al.xAlrCheckHomingSensor
+Dryer.Alarm.SblockMotorTemp,Overtemperature in vertical motor,Sobretemperatura en Motor Vertical,NoValue,NoValue,40052,2,gSimpleBlock[1].Al.xBarMotorTemp
+Dryer.Alarm.SblockDriveTemp,Overtemperature in vertical drive,Sobretemperatura en Drive Vertical,NoValue,NoValue,40053,2,gSimpleBlock[1].Al.xBarDriverTemp
+,,,,,,,
+Dryer.SimpleBlock.ConfirmHoming,Are you sure to send the homing order?,¿Esta seguro de querer lanzar la orden de referenciado?,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Alarm.VaccSensor,Vacuum sensor error,Error sensor presion,NoValue,NoValue,50001,1,gTransVacuum[1].Alarms.xAlrVacuumSensor
+Dryer.Alarm.VaccBlowerComsInput,Comms Error Blower Vacuum Input,Fallo comunicacion Blower Vacio Entrada,NoValue,NoValue,50051,1,gTransVacuum[1].Alarms.xAlrCommsBlower[1]
+Dryer.Alarm.VaccBlowerComsOutput,Comms Error Blower Vacuum Output,Fallo comunicacion Blower Vacio Salida,NoValue,NoValue,50052,1,gTransVacuum[1].Alarms.xAlrCommsBlower[2]
+Dryer.Alarm.VaccBlowerProtInput,Breaker Blower Vacuum Input,Proteccion Blower Vacio Entrada,NoValue,NoValue,50061,1,gTransVacuum[1].Alarms.xAlrBlowerCB[1]
+Dryer.Alarm.VaccBlowerProtOutput,Breaker Blower Vacuum Output,Proteccion Blower Vacio Salida,NoValue,NoValue,50062,1,gTransVacuum[1].Alarms.xAlrBlowerCB[2]
+Dryer.Alarm.VaccBlowerErrorInput,Error Blower Vacuum Input,Error Blower Vacio Entrada,NoValue,NoValue,50071,1,gTransVacuum[1].Alarms.xAlrBlowerError[1]
+Dryer.Alarm.VaccBlowerErrorOutput,Error Blower Vacuum Output,Error Blower Vacio Salida,NoValue,NoValue,50072,1,gTransVacuum[1].Alarms.xAlrBlowerError[2]
+Dryer.Alarm.VaccBlowerNotRunningInput,Error Blower Input Not running,Blower Vacio Entrada sin mover,NoValue,NoValue,50081,1,gTransVacuum[1].Alarms.xAlrBlowerNotRunning[1]
+Dryer.Alarm.VaccBlowerNotRunningOutput,Error Blower Output Not running,Blower Vacio Salida sin mover,NoValue,NoValue,50082,1,gTransVacuum[1].Alarms.xAlrBlowerNotRunning[2]
+,,,,,,,
+Dryer.Adphos.Power,Adphos Power,Potencia Adphos,NoValue,NoValue,,,
+Dryer.Adphos.Speed,Adphos Speed,Velocidad Adphos,NoValue,NoValue,,,
+Dryer.Alarm.NIRSafetyError,NIR Safety Error,Fallo Seguridad NIR,NoValue,NoValue,60001,1,gNirAdphos.Alarms.xSafetyError
+Dryer.Alarm.NIRFault,NIR Fault,NIR en Fallo,NoValue,NoValue,60002,1,gNirAdphos.Alarms.xFault
+Dryer.Alarm.NIRComsError,NIR Comms Error,Fallo comunicacion NIR,NoValue,NoValue,60003,1,gNirAdphos.Alarms.xCommsError
+,,,,,,,
+Dryer.Alarm.NIRInletHumiditySensError,NIR Humidity Sensor error,Error sensor humedad NIR,NoValue,NoValue,60021,2,gNirAdphos.Alarms.xInletHumiditySensorError
+Dryer.Alarm.NIRInletTempSensError,NIR Temperature Sensor error,Error sensor temperatura NIR,NoValue,NoValue,60022,2,gNirAdphos.Alarms.xInletTempSensorError
+,,,,,,,
+Dryer.Alarm.JamInputNIR1,Jam Input NIR 1,Atasco Frontal NIR 1,NoValue,NoValue,60051,1,gJamDetect[1].Alarms.xAlrJamCrash[1]
+Dryer.Alarm.JamOutputNIR1,Jam Output NIR 1,Atasco Frontal NIR 2,NoValue,NoValue,60052,1,gJamDetect[1].Alarms.xAlrJamCrash[2]
+,,,,,,,
+Dryer.Alarm.JamInputNIR2,Jam Input NIR 2,Atasco Delantero NIR 1,NoValue,NoValue,60061,1,gJamDetect[1].Alarms.xAlrJamCrash[3]
+Dryer.Alarm.JamOutputNIR2,Jam Output NIR 2,Atasco Delantero NIR 2,NoValue,NoValue,60062,1,gJamDetect[1].Alarms.xAlrJamCrash[4]
+,,,,,,,
+Dryer.Alarm.JamRearNIR1,Jam Rear NIR 1,Atasco Trasero NIR 1,NoValue,NoValue,60071,1,gNirAdphos.Alarms.Jam[1].xRear
+Dryer.Alarm.JamRearNIR2,Jam Rear NIR 2,Atasco Trasero NIR 2,NoValue,NoValue,60072,1,gNirAdphos.Alarms.Jam[2].xRear
+,,,,,,,
+Dryer.Alarm.JamMechCrossNIR1,Jam Mech Cross NIR 1,Atasco Frontal Meanico NIR 1,NoValue,NoValue,60081,1,gNirAdphos.Alarms.Jam[1].xMechCross
+Dryer.Alarm.JamMechCrossNIR2,Jam Mech Cross NIR 2,Atasco Frontal Meanico NIR 2,NoValue,NoValue,60082,1,gNirAdphos.Alarms.Jam[2].xMechCross
+,,,,,,,
+Dryer.Alarm.NIRSurfaceTemp1,Max Surface Temp NIR 1,Maxima Temp superficie NIR 1,NoValue,NoValue,60101,2,gNirAdphos.Alarms.xMaxSurfaceTempModule[1]
+Dryer.Alarm.NIRSurfaceTemp2,Max Surface Temp NIR 2,Maxima Temp superficie NIR 2,NoValue,NoValue,60102,2,gNirAdphos.Alarms.xMaxSurfaceTempModule[2]
+,,,,,,,
+Dryer.Alarm.NIRSurfaceTempSensErr1,Surface Temp Sensor error NIR 1,Error Sensor Temp superficie NIR 1,NoValue,NoValue,60111,2,gNirAdphos.Alarms.xSurfaceTempModuleSensorError[1]
+Dryer.Alarm.NIRSurfaceTempSensErr2,Surface Temp Sensor error NIR 2,Error Sensor Temp superficie NIR 2,NoValue,NoValue,60112,2,gNirAdphos.Alarms.xSurfaceTempModuleSensorError[2]
+,,,,,,,
+Dryer.Alarm.BlockedFan1Nir1,Blocked Fan 1 NIR 1,Bloque Ventilador 1 NIR 1,NoValue,NoValue,60201,2,gNirAdphos.Alarms.BlockedFansModule[1].Fan[1]
+Dryer.Alarm.BlockedFan2Nir1,Blocked Fan 2 NIR 1,Bloque Ventilador 2 NIR 1,NoValue,NoValue,60202,2,gNirAdphos.Alarms.BlockedFansModule[1].Fan[2]
+Dryer.Alarm.BlockedFan3Nir1,Blocked Fan 3 NIR 1,Bloque Ventilador 3 NIR 1,NoValue,NoValue,60203,2,gNirAdphos.Alarms.BlockedFansModule[1].Fan[3]
+Dryer.Alarm.BlockedFan4Nir1,Blocked Fan 4 NIR 1,Bloque Ventilador 4 NIR 1,NoValue,NoValue,60204,2,gNirAdphos.Alarms.BlockedFansModule[1].Fan[4]
+,,,,,,,
+Dryer.Alarm.BlockedFan1Nir2,Blocked Fan 1 NIR 2,Bloque Ventilador 1 NIR 2,NoValue,NoValue,60211,2,gNirAdphos.Alarms.BlockedFansModule[2].Fan[2]
+Dryer.Alarm.BlockedFan2Nir2,Blocked Fan 2 NIR 2,Bloque Ventilador 2 NIR 2,NoValue,NoValue,60212,2,gNirAdphos.Alarms.BlockedFansModule[2].Fan[2]
+Dryer.Alarm.BlockedFan3Nir2,Blocked Fan 3 NIR 2,Bloque Ventilador 3 NIR 2,NoValue,NoValue,60213,2,gNirAdphos.Alarms.BlockedFansModule[2].Fan[3]
+Dryer.Alarm.BlockedFan4Nir2,Blocked Fan 4 NIR 2,Bloque Ventilador 4 NIR 2,NoValue,NoValue,60214,2,gNirAdphos.Alarms.BlockedFansModule[2].Fan[4]
+,,,,,,,
+,,,,,,,
+Dryer.Alarm.ArcLampComsError,ArcLamp Comms Error,Fallo comunicacion ArcLamp,NoValue,NoValue,70001,1,gArcLampGew.Alarms.xCommsError
+Dryer.Alarm.ArcLampCredentialsError,ArcLamp Credentials Error,Fallo Credenciales ArcLamp,NoValue,NoValue,70002,1,gArcLampGew.Alarms.Comms.xCredentialsError
+Dryer.Alarm.ArcLampInternalError,ArcLamp Internal Server Error,Fallo Interno Servidor ArcLamp,NoValue,NoValue,70003,1,gArcLampGew.Alarms.Comms.xServerError
+Dryer.Alarm.ArcLampJam,ArcLamp Jam,Atasco ArcLamp,NoValue,NoValue,70004,1,gArcLampGew.Alarms.xJam
+,,,,,,,
+Dryer.Alarm.ArcLampAlarmLamp1,ArcLamp Alarm Lamp 1,ArcLamp Fallo Lampara 1,NoValue,NoValue,70051,1,gArcLampGew.Status.Lamps[1].InAlarm
+Dryer.Alarm.ArcLampAlarmLamp2,ArcLamp Alarm Lamp 2,ArcLamp Fallo Lampara 2,NoValue,NoValue,70052,1,gArcLampGew.Status.Lamps[2].InAlarm
+,,,,,,,
+Dryer.Alarm.CheckMediaExit1,Not detected exit media L1,Pieza no detectada a la salida L1,NoValue,NoValue,80001,1,gThicknessCtrl.Alarms.CheckMedia[1]
+Dryer.Alarm.CheckMediaExit2,Not detected exit media L2,Pieza no detectada a la salida L2,NoValue,NoValue,80002,1,gThicknessCtrl.Alarms.CheckMedia[2]
+,,,,,,,
+,,,,,,,
+Dryer.ArcLampSN,Serial Number,Numer Serie,NoValue,NoValue,,,
+Dryer.ArcLampPin,Pin,Pin,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Alarms.Current,Current Alarms,Alarmas Actuales,NoValue,NoValue,,,
+Alarms.History,Alarms History,Historico Alarmas,NoValue,NoValue,,,
+Alarms.Code,Code,Codigo,NoValue,NoValue,,,
+Alarms.Description,Description,Descripcion,NoValue,NoValue,,,
+Alarms.Timestamp,Date and hour,Fecha y hora,NoValue,NoValue,,,
+Alarms.Severity,Severity,Gravedad,NoValue,NoValue,,,
+Alarms.State,State,Estado,NoValue,NoValue,,,
+Alarms.Mute,Mute,Silenciar,NoValue,NoValue,,,
+Alarms.Reset,Reset,Resetear,NoValue,NoValue,,,
+Alarms.CriticalType,Type,Tipo,NoValue,NoValue,,,
+Alarms.Page,Alarms,Alarmas,NoValue,NoValue,,,
+Inputs.MountedMedia,Mounted Media,Sustrato Montado,NoValue,NoValue,,,
+Inputs.Reset,Reset,Reset,NoValue,NoValue,,,
+Inputs.FanBreak80,Fan Breakers 80%,Protecc. ventiladores 80%,NoValue,NoValue,,,
+Inputs.ArcLampRef,ArcLamp Ref Sensor,Sensor ArcLamp,NoValue,NoValue,,,
+Inputs.24VFansPsuOk,24V Fans PSU OK,Fuente 24V ventiladores OK,NoValue,NoValue,,,
+Inputs.MachConf1,Machine Configuration 1,Configuracion maquina 1,NoValue,NoValue,,,
+Inputs.MachConf2,Machine Configuration 2,Configuracion maquina 2,NoValue,NoValue,,,
+Inputs.MachConf3,Machine Configuration 3,Configuracion maquina 3,NoValue,NoValue,,,
+Inputs.MachConf4,Machine Configuration 4,Configuracion maquina 4,NoValue,NoValue,,,
+Inputs.MachConf5,Machine Configuration 5,Configuracion maquina 5,NoValue,NoValue,,,
+Inputs.MachConf6,Machine Configuration 6,Configuracion maquina 6,NoValue,NoValue,,,
+Inputs.MachConf7,Machine Configuration 7,Configuracion maquina 7,NoValue,NoValue,,,
+Inputs.MachConf8,Machine Configuration 8,Configuracion maquina 8,NoValue,NoValue,,,
+Inputs.MachConf9,Machine Configuration 9,Configuracion maquina 9,NoValue,NoValue,,,
+Inputs.Stop,Stop,Stop,NoValue,NoValue,,,
+Inputs.FanBreakOk,Fan Breakers Ok,Protecc. ventiladores Ok,NoValue,NoValue,,,
+Inputs.SafetyKey,Safety Key,Llave seguridad,NoValue,NoValue,,,
+Inputs.ArcLampCorrLaser,ArcLamp Correction Laser,ArcLamp Laser Correccion,NoValue,NoValue,,,
+Inputs.24VMainPsuOk,24V Main PSU OK,Fuente principal 24V OK,NoValue,NoValue,,,
+Inputs.NirReady,NIR Ready,NIR Listo,NoValue,NoValue,,,
+Inputs.NirError,NIR Error,NIR Error,NoValue,NoValue,,,
+Inputs.NirProcess,NIR Process,NIR En Proceso,NoValue,NoValue,,,
+Inputs.ArclLampReady,ArcLamp Ready,ArcLamp Listo,NoValue,NoValue,,,
+Inputs.ArclLampFault,ArcLamp Fault,ArcLamp Error,NoValue,NoValue,,,
+Inputs.DetectionMediaL1,Media L1. Front,Sustrato. Delantero,NoValue,NoValue,,,
+Inputs.DetectionMediaL2,Media L2. Rear,Sustrato. Trasero,NoValue,NoValue,,,
+Inputs.LockNir1Fan1,Lock Nir1 Fan1,Bloqueo Nir1 Vent1,NoValue,NoValue,,,
+Inputs.LockNir1Fan2,Lock Nir1 Fan2,Bloqueo Nir1 Vent2,NoValue,NoValue,,,
+Inputs.LockNir1Fan3,Lock Nir1 Fan3,Bloqueo Nir1 Vent3,NoValue,NoValue,,,
+Inputs.LockNir1Fan4,Lock Nir1 Fan4,Bloqueo Nir1 Vent4,NoValue,NoValue,,,
+Inputs.LockNir2Fan1,Lock Nir2 Fan1,Bloqueo Nir2 Vent1,NoValue,NoValue,,,
+Inputs.LockNir2Fan2,Lock Nir2 Fan2,Bloqueo Nir2 Vent2,NoValue,NoValue,,,
+Inputs.LockNir2Fan3,Lock Nir2 Fan3,Bloqueo Nir2 Vent3,NoValue,NoValue,,,
+Inputs.LockNir2Fan4,Lock Nir2 Fan4,Bloqueo Nir2 Vent4,NoValue,NoValue,,,
+Inputs.JamNir1Cross,Jam Nir1 Cross,Jamp Nir1 Frontal,NoValue,NoValue,,,
+Inputs.JamNir1Front,Jam Nir1 Front,Jamp Nir1 Delante,NoValue,NoValue,,,
+Inputs.JamNir1Rear,Jam Nir1 Rear,Jamp Nir1 Detras,NoValue,NoValue,,,
+Inputs.JamNir2Cross,Jam Nir2 Cross,Jamp Nir2 Frontal,NoValue,NoValue,,,
+Inputs.JamNir2Front,Jam Nir2 Front,Jamp Nir2 Delante,NoValue,NoValue,,,
+Inputs.JamNir2Rear,Jam Nir2 Rear,Jamp Nir2 Detras,NoValue,NoValue,,,
+Inputs.ArcLampJam,Jam ArcLamp,Jam ArcLamp,NoValue,NoValue,,,
+Outputs.NirOn,NIR ON,NIR ON,NoValue,NoValue,,,
+Outputs.NirProcess,NIR Process,NIR Process,NoValue,NoValue,,,
+Outputs.NirWebBreak,NIR Web break,NIR Web break,NoValue,NoValue,,,
+Outpus.ArcLampImpression,ArcLamp Impression,ArcLamp Imprimir,NoValue,NoValue,,,
+Outputs.LockDoorFront,Lock Front Door,Bloqueo Porton delantero,NoValue,NoValue,,,
+Outputs.LockDoorBack,Lock Back Door,Bloqueo Porton trasero,NoValue,NoValue,,,
+Outputs.ResetFanBreakers,Reset Fan Breakers,Reset Vetilador seccionad.,NoValue,NoValue,,,
+Outputs.ResetHub,Reset Hub,Reset Hub,NoValue,NoValue,,,
+Outputs.ResetSwitch,Reset Switch,Reiniciar Switch,NoValue,NoValue,,,
+Outputs.CriticalError,Critical Error,Error Crítico,NoValue,NoValue,,,
+Outpus.AlarmSound,Alarm Sound,Alarma sonora,NoValue,NoValue,,,
+Outpus.YellowLight,Yellow light,Luz amarilla,NoValue,NoValue,,,
+Outpus.BlueLight,Blue light,Luz azul,NoValue,NoValue,,,
+Outpus.RedLight,Red light,Luz roja,NoValue,NoValue,,,
+Outpus.WhiteLight,White light,Luz blanca,NoValue,NoValue,,,
+Outpus.ResetBlueLight,Reset Blue light,Luz azul reset,NoValue,NoValue,,,
+AnInputs.BoardTempIn,Board Temp In,Temp. Carton entrada,NoValue,NoValue,,,
+AnInputs.BoardTempOut,Board Temp Out,Temp. Carton salida,NoValue,NoValue,,,
+AnInputs.BeltTempOut,Belt Temp Out,Temp. Salida Banda,NoValue,NoValue,,,
+AnInputs.Humidity,Humidity,Humedad,NoValue,NoValue,,,
+AnInputs.VacuumPressure,Vacuum pressure,Presion vacio,NoValue,NoValue,,,
+AnInputs.VacuumTemp2,Vacuum Temperature 2,Temperatura Vacio 2,NoValue,NoValue,,,
+AnInputs.VacuumTemp1,Vacuum Temperature 1,Temperatura Vacio 1,NoValue,NoValue,,,
+AnOuts.SpeedNir,Speed Nir,Velocidad Nir,NoValue,NoValue,,,
+AnOuts.SpeedArcLamp,Speed Arc Lamp,Velocidad Arc Lamp,NoValue,NoValue,,,
+TempInputs.SurfaceNir1,Surface Nir 1,Temp. Superficie Nir 1,NoValue,NoValue,,,
+TempInputs.SurfaceNir2,Surface Nir 2,Temp. Superficie Nir 2,NoValue,NoValue,,,
+,,,,,,,
+Dialog.Confirmation,Confirmation,Confirmacion,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Start,Start,Arrancar,NoValue,NoValue,,,
+Dryer.Lab,Laboratory,Laboratorio,NoValue,NoValue,,,
+Dryer.ByPass,ByPass,ByPass,NoValue,NoValue,,,
+Dryer.Stop,Stop,Parar,NoValue,NoValue,,,
+Dryer.Manual,Manual,Manual,NoValue,NoValue,,,
+Dryer.Auto,Auto,Auto,NoValue,NoValue,,,
+Dryer.Zero,Zero,Cero,NoValue,NoValue,,,
+Dryer.Reset,Reset,Reset,NoValue,NoValue,,,
+Dryer.Versions,Versions,Versiones,NoValue,NoValue,,,
+Dryer.Hardware,Hardware,Hardware,NoValue,NoValue,,,
+Dryer.Interface,Interface,Interfaz,NoValue,NoValue,,,
+Dryer.Software,Software,Software,NoValue,NoValue,,,
+Dryer.HMI,HMI,Terminal,NoValue,NoValue,,,
+Dryer.Thickness,Thickness,Espesor,NoValue,NoValue,,,
+Dryer.Margin,Margin,Margen,NoValue,NoValue,,,
+Dryer.Length,Length,Longitud,NoValue,NoValue,,,
+Dryer.Width,Width,Ancho,NoValue,NoValue,,,
+Dryer.Gap,Gap,Separacion,NoValue,NoValue,,,
+Dryer.Offset,Offset,Desplazamiento,NoValue,NoValue,,,
+Dryer.DocLength,Doc Length,Longitud Doc.,NoValue,NoValue,,,
+Dryer.DocWidth,Doc Width,Ancho Doc.,NoValue,NoValue,,,
+Dryer.DocOffset,Doc Offset,Desplaz. Doc.,NoValue,NoValue,,,
+Dryer.AirConditions,Air Conditions,Estado aire,NoValue,NoValue,,,
+Dryer.Pressure,Pressure,Presion,NoValue,NoValue,,,
+Dryer.DutyCycle,Duty Cycle,Ciclo Trabajo,NoValue,NoValue,,,
+Dryer.Position,Position,Posicion,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Nir.PositionOffset,Position Offset,Ajuste posicion,NoValue,NoValue,,,
+Dryer.Nir.SetPointPower,SetPoint Power,Referencia Potencia,NoValue,NoValue,,,
+Dryer.Nir.Module1,Module 1,Modulo 1,NoValue,NoValue,,,
+Dryer.Nir.Module2,Module 2,Modulo 2,NoValue,NoValue,,,
+Dryer.Nir.EnableModule,Enable Module,Habilitar Modulo,NoValue,NoValue,,,
+Dryer.Nir.Adjust,Power Adjust,Ajuste Potencia,NoValue,NoValue,,,
+Dryer.Nir.Power,Power,Potencia,NoValue,NoValue,,,
+Dryer.Nir.PowerStart,Power Start,Potencia Inicial,NoValue,NoValue,,,
+Dryer.Nir.PowerEnd,Power End,Potencia Final,NoValue,NoValue,,,
+Dryer.Nir.SpeedStart,Speed Start,Velocidad Inicial,NoValue,NoValue,,,
+Dryer.Nir.SpeedEnd,Speed End,Velocidad Final,NoValue,NoValue,,,
+Dryer.Nir.AirTemperature,Air Temperature,Temperatura Aire,NoValue,NoValue,,,
+Dryer.Nir.MediaTemperature,Media Temperature,Temperatura Sustrato,NoValue,NoValue,,,
+Dryer.Nir.WebWidth,Drying width,Ancho secado,NoValue,NoValue,,,
+Dryer.Nir.DocWidth,Dry with image width,Secado con ancho de imagen,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Alamp.EnableLamp,Enable Lamp,Habilitar Lámpara,NoValue,NoValue,,,
+Dryer.Alamp.SerialNumber,Serial Number,Número Serie,NoValue,NoValue,,,
+Dryer.Alamp.Pin,Pin,Pin,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Diag.CommsDevices,Comms Devices,Dispositivos Comunicacion,NoValue,NoValue,,,
+Dryer.Diag.ResetSwitch,Reset Switch,Reset Switch,NoValue,NoValue,,,
+Dryer.Diag.ResetHub,Reset Hub,Reset Hub,NoValue,NoValue,,,
+Dryer.Diag.ResetFanBreaker,Reset Fan Breaker,Reset Proteccion Ventiladores,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Blow.DutyCycleSetPoint,DutyCycle SetPoint,Consigna Velocidad,NoValue,NoValue,,,
+Dryer.Blow.PressureSetPoint,Pressure SetPoint,Consigna Presion,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Dryer.Belt.Perimeter,Perimeter,Perímetro,NoValue,NoValue,,,
+Dryer.Belt.GearBox,GearBox,Reductora,NoValue,NoValue,,,
+Dryer.Belt.Speed,Speed,Velocidad,NoValue,NoValue,,,
+Dryer.Belt.Torque,Torque,Par,NoValue,NoValue,,,
+Dryer.Belt.Error,Error,Error,NoValue,NoValue,,,
+,,,,,,,
+,,,,,,,
+Page.Home,Home,Inicio,NoValue,NoValue,,,
+Page.Diagnosis,Diagnosis,Diagnostico,NoValue,NoValue,,,
+Page.Blowers,Blowers,Ventiladores,NoValue,NoValue,,,
+Page.Belt,Belt,Banda,NoValue,NoValue,,,
+Page.NIR,NIR,NIR,NoValue,NoValue,,,
+Page.ArcLamp,ArcLamp,ArcLamp,NoValue,NoValue,,,
+Page.Sensors,Sensors,Sensores,NoValue,NoValue,,,

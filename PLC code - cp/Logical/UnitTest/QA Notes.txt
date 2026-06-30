@@ -1,0 +1,2 @@
+This is the last folder for QA in the PLC project.
+Below this folder, the QATestPLC repository have to be cloned to work properly

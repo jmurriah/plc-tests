@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">X20DIF371.jpg</Object>
+    <Object Type="File">X20AI8321.jpg</Object>
+    <Object Type="File">X20AO4622.jpg</Object>
+    <Object Type="File">X20AT4222.jpg</Object>
+    <Object Type="File">X20CP0484.jpg</Object>
+    <Object Type="File">X20PS3300.jpg</Object>
+    <Object Type="File">X20CP1382.jpg</Object>
+    <Object Type="File">X20SL8110.jpg</Object>
+    <Object Type="File">X20X1.jpg</Object>
+    <Object Type="File">X20X2.jpg</Object>
+    <Object Type="File">X20X3.jpg</Object>
+    <Object Type="File">X20SM1436.jpg</Object>
+    <Object Type="File">X20SP1130.jpg</Object>
+    <Object Type="File">X20DOF322.jpg</Object>
+    <Object Type="File">X20BC0083.jpg</Object>
+    <Object Type="File">X20AI2636.jpg</Object>
+    <Object Type="File">X20AI4322.png</Object>
+    <Object Type="File">X20AO2622.png</Object>
+    <Object Type="File">X20AT2222.png</Object>
+    <Object Type="File">X20SC0402.png</Object>
+    <Object Type="File">X20SI4100.png</Object>
+    <Object Type="File">X20SO2110.png</Object>
+  </Objects>
+</Package>

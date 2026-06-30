@@ -1,0 +1,829 @@
+{
+	"info": {
+		"_postman_id": "70d60fc3-425e-4128-85bd-50fc9503ec58",
+		"name": "Rhino API - Read/Write",
+		"description": "\n<div class=\"postman-run-button\"\ndata-postman-action=\"collection/import\"\ndata-postman-var-1=\"093ee488d88e49d61b0f\"\ndata-postman-param=\"env%5BLocal%20Simulator%5D=W3sia2V5IjoiYWRkcmVzcyIsInZhbHVlIjoibG9jYWxob3N0IiwiZGVzY3JpcHRpb24iOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InN5c3RlbU51bWJlciIsInZhbHVlIjoiUzExMTExIiwiZGVzY3JpcHRpb24iOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InN5c3RlbVBpbiIsInZhbHVlIjoiMzY2MzkwIiwiZGVzY3JpcHRpb24iOiIiLCJlbmFibGVkIjp0cnVlfV0=\"></div>\n<script type=\"text/javascript\">\n  (function (p,o,s,t,m,a,n) {\n    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });\n    !o.getElementById(s+t) && o.getElementsByTagName(\"head\")[0].appendChild((\n      (n = o.createElement(\"script\")),\n      (n.id = s+t), (n.async = 1), (n.src = m), n\n    ));\n  }(window, document, \"_pm\", \"PostmanRunObject\", \"https://run.pstmn.io/button.js\"));\n</script>\n\n# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/lamps/",
+			"item": [
+				{
+					"name": "/lamps/x/alerts/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/alerts/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"alerts",
+								""
+							]
+						},
+						"description": "Return the list of alerts for the given lamp"
+					},
+					"response": [
+						{
+							"name": "/lamps/x/alerts/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/{{contentType}}",
+										"disabled": false
+									}
+								],
+								"url": {
+									"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/alerts/",
+									"host": [
+										"{{address}}"
+									],
+									"port": "9910",
+									"path": [
+										"api",
+										"lamps",
+										"{{lampNumber}}",
+										"alerts",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"name": "Access-Control-Allow-Origin",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Sep 2018 11:37:30 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-HTTPAPI/2.0",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								}
+							],
+							"cookie": [],
+							"body": "{\"RequestURL\":\"/api/lamps/0/alerts\",\"CurrentDateTime\":\"06/09/2018 11:37:30\",\"ResponseID\":110,\"Success\":true,\"ExecutionTime\":23,\"Lamp1\":{\"NodeAddress\":1,\"AlertCount\":0},\"Lamp2\":{\"NodeAddress\":2,\"AlertCount\":0},\"Lamp3\":{\"NodeAddress\":3,\"AlertCount\":0},\"Lamp4\":{\"NodeAddress\":4,\"AlertCount\":0},\"Lamp5\":{\"NodeAddress\":5,\"AlertCount\":0},\"Lamp6\":{\"NodeAddress\":6,\"AlertCount\":0},\"Lamp7\":{\"NodeAddress\":7,\"AlertCount\":0},\"Lamp8\":{\"NodeAddress\":8,\"AlertCount\":0},\"Lamp9\":{\"NodeAddress\":9,\"AlertCount\":0},\"Lamp10\":{\"NodeAddress\":10,\"AlertCount\":0},\"Lamp11\":{\"NodeAddress\":11,\"AlertCount\":0},\"Lamp12\":{\"NodeAddress\":12,\"AlertCount\":0},\"Lamp13\":{\"NodeAddress\":13,\"AlertCount\":0},\"Lamp14\":{\"NodeAddress\":14,\"AlertCount\":0},\"Lamp15\":{\"NodeAddress\":15,\"AlertCount\":0},\"Lamp16\":{\"NodeAddress\":16,\"AlertCount\":0}}"
+						}
+					]
+				},
+				{
+					"name": "/lamps/x/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								""
+							]
+						},
+						"description": "Return information about the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/counters/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/counters/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"counters",
+								""
+							]
+						},
+						"description": "Returns the lamp counters for the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/powerramping/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/powerramping/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"powerramping",
+								""
+							]
+						},
+						"description": "Returns the speed vs power current settings for power scaling for the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/uv/",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ef40a703-ceb9-430a-840b-ce5606dcc5a5",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/uv/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"uv",
+								""
+							]
+						},
+						"description": "Same as /lamps/x/ but with UV monitoring data added in"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/uv/serials/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/uv/serials/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"uv",
+								"serials",
+								""
+							]
+						},
+						"description": "Returns the serial numbers of the UV monitors attached to the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/powerramping/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "?power={{rampPower}}&speed={{rampSpeed}}"
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/powerramping/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"powerramping",
+								""
+							]
+						},
+						"description": "Sets the speed vs power settings for power scaling for the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/start/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/start/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"start",
+								""
+							]
+						},
+						"description": "Starts the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/stop/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/stop/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"stop",
+								""
+							]
+						},
+						"description": "Stops the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/reset/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/reset/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"reset",
+								""
+							]
+						},
+						"description": "Resets the faults on the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/select/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/select/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"select",
+								""
+							]
+						},
+						"description": "Selects the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/selectstart/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/selectstart/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"selectstart",
+								""
+							]
+						},
+						"description": "Selects and starts the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/selectstop/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/selectstop/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"selectstop",
+								""
+							]
+						},
+						"description": "Selects and stops the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/deselect/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/deselect/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"deselect",
+								""
+							]
+						},
+						"description": "Deselects the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/cool/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/cool/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"cool",
+								""
+							]
+						},
+						"description": "Forces cooling on the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/open/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/deselect/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"deselect",
+								""
+							]
+						},
+						"description": "Opens the shutters on the given lamp"
+					},
+					"response": []
+				},
+				{
+					"name": "/lamps/x/close/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/lamps/{{lampNumber}}/close/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"lamps",
+								"{{lampNumber}}",
+								"close",
+								""
+							]
+						},
+						"description": "Closes the shutters on the given lamp"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/powersupplies/",
+			"item": [
+				{
+					"name": "/powersupplies/x/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/powersupplies/{{lampNumber}}/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"powersupplies",
+								"{{lampNumber}}",
+								""
+							]
+						},
+						"description": "Returns information about the given power supply"
+					},
+					"response": []
+				},
+				{
+					"name": "/powersupplies/x/counters/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/powersupplies/{{lampNumber}}/counters/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"powersupplies",
+								"{{lampNumber}}",
+								"counters",
+								""
+							]
+						},
+						"description": "Returns the power supply counters for the given power supply"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "bdddf083-278e-4994-b8ea-50b919e2941c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "353fcbad-de99-41fb-a5ee-a9a31dad8752",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/uv/",
+			"item": [
+				{
+					"name": "/uv/x/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/uv/{{lampNumber}}/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"uv",
+								"{{lampNumber}}",
+								""
+							]
+						},
+						"description": "Returns the UV monitoring data for the given lamp"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/cassettes/",
+			"item": [
+				{
+					"name": "/cassettes/x/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/{{contentType}}"
+							}
+						],
+						"url": {
+							"raw": "{{address}}:9910/api/cassettes/{{lampNumber}}/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"cassettes",
+								"{{lampNumber}}",
+								""
+							]
+						},
+						"description": "Returns information about the given cassette"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/press/",
+			"item": [
+				{
+					"name": "/press/x/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "?impression={{pressImpression}}&speed={{pressSpeed}}"
+						},
+						"url": {
+							"raw": "{{address}}:9910/api/press/{{lampNumber}}/",
+							"host": [
+								"{{address}}"
+							],
+							"port": "9910",
+							"path": [
+								"api",
+								"press",
+								"{{lampNumber}}",
+								""
+							]
+						},
+						"description": "Set impression and speed for the given lamp"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/system/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/{{contentType}}"
+					}
+				],
+				"url": {
+					"raw": "{{address}}:9910/api/system/",
+					"host": [
+						"{{address}}"
+					],
+					"port": "9910",
+					"path": [
+						"api",
+						"system",
+						""
+					]
+				},
+				"description": "Returns basic information about the system"
+			},
+			"response": []
+		},
+		{
+			"name": "/network/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/{{contentType}}"
+					}
+				],
+				"url": {
+					"raw": "{{address}}:9910/api/network/",
+					"host": [
+						"{{address}}"
+					],
+					"port": "9910",
+					"path": [
+						"api",
+						"network",
+						""
+					]
+				},
+				"description": "Returns network information about the system"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{systemPin}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{systemNumber}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "098b7a09-bf4a-4b0d-984d-25d00c14cffb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e4e773a4-18b6-4a64-8057-e5be38200012",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

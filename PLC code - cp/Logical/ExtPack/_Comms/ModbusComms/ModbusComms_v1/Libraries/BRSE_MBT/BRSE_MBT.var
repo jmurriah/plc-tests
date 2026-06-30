@@ -1,0 +1,10 @@
+VAR CONSTANT
+	BRSE_MBT_MAX_BUFFER : UINT := 261;
+	BRSE_MBT_MAX_CLIENT : USINT := 20;
+	BRSE_MBT_ERR_TOO_MANY_CLIENTS : UINT := 30001;
+	BRSE_MBT_LOG_MAX : UINT := 50;
+	MBT_RECEIVE_TIMEOUT : UDINT := 3000; (*Await response timeout, ms (cycle time=0 --> never timeout)*)
+	BRSE_MBT_RESEND_LIMIT : UINT := 5; (*Number of times to resend before trying to re-establish connection*)
+	BRSE_MBT_RETRY_PERIOD : UINT := 10000; (*If error occurs on TcpOpen or TcpClient, wait this time before retrying. (cycle time assumed 10ms if set to 0)*)
+	BRSE_DISCONNECT_TIMEOUT : TIME := T#60S; (*Disconnects clients after this time without activity*)
+END_VAR

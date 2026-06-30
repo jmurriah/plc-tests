@@ -1,0 +1,7 @@
+VAR
+	T_Mute : TOF;
+	T_Reset : TON;
+	iIndexBlock : USINT;
+	iIndexVac : USINT;
+	iIndexCuringLed : USINT;
+END_VAR

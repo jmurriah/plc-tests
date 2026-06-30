@@ -1,0 +1,3 @@
+VAR
+	iIndexInverter : USINT;
+END_VAR

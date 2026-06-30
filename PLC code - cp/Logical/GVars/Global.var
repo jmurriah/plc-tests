@@ -1,0 +1,62 @@
+VAR
+	iIndexWhiteCuringLedBar : USINT;
+	iIndexColorCuringLedBar : USINT;
+	iIndexPrimerCuringLedBar : USINT;
+	gSafetyController : stSafetyController;
+	gBelt : stBelt;
+	gBeltClean : BeltClean_typ;
+	gBlock : ARRAY[0..MAX_LAST_BLOCK] OF StBlock; (*Logical array of Blocks in the machine. Starts in 0 because it is used in a C program*)
+	gSimpleBlock : ARRAY[0..MAX_LAST_SIMPLEBLOCK] OF SimpleBlock; (*Logical array of Blocks in the machine. Starts in 0 because it is used in a C program*)
+	gBlockInputs : ARRAY[0..MAX_LAST_BLOCK] OF StBlock_Inputs; (*Used for mapping physical inputs block to logical block*)
+	gBlockOutputs : ARRAY[0..MAX_LAST_BLOCK] OF StBlock_Outputs; (*Used for mapping physical outputs block to logical block*)
+	gPowermeters : ARRAY[0..2] OF stPowerMeter;
+	gChiller : ARRAY[0..MAX_LAST_CHILLER] OF StChiller; (*Struct for chiller configuration*)
+	gPlcDiagMC_Pt : StGeneral_Parameters;
+	gTransVacuum : ARRAY[0..MAX_LAST_TRANS_VACUUM] OF TransVacuum_typ;
+	gNonCrash : ARRAY[0..MAX_LAST_NON_CRASH] OF NonCrash_typ;
+	gCuringLed : ARRAY[0..MAX_LAST_CURING_LED] OF CuringLed_typ;
+	gDing : stThicknessAnalog_typ;
+	gOverVarnish : Opv_typ;
+	gPrimer : Primer_typ;
+	gStacker : Stacker_typ;
+	gDryerAnc : DryerAnc_typ;
+	gLine : LineControl_typ;
+	gEventLogLoader : EventLoader;
+	gEventLogManager : EventManager;
+	gInks : ARRAY[0..MAX_LAST_INK] OF stInks; (*Logical array of InkSystems in the machine. Starts in 0 because it is used in a C program*)
+	gInksConstants : stInksConstantsToSw; (*horrible!! Pending to change *)
+	gSarm : Sarm_typ;
+	gFeeder : Feeder_typ;
+	gInksInputs : ARRAY[0..MAX_LAST_INK] OF stInksSignalsIn; (*0 is not used. Just to compile in C*)
+	gInksOutputs : ARRAY[0..MAX_LAST_INK] OF stInksSignalsOut;
+	gJamInputs : ARRAY[0..MAX_LAST_JAMDEVICE] OF JamDetectInputs_typ;
+	gJamOutputs : ARRAY[0..MAX_LAST_JAMDEVICE] OF JamDetectOutputs_typ;
+	gMachine : StGeneral;
+	gDryer : DryerMachine;
+	gNirAdphos : NIRAdphos;
+	gPairedMotors : ARRAY[0..2] OF PairedIclaMotors_typ; (*Paired icla motors structure*)
+	gEdgeHoldDown : EdgeHoldDown_typ; (*Edge hold down structure*)
+	gPhotoCells : nSensors_typ; (*gPhotocells structure*)
+	gPLC : StPLC;
+	gThicknessCtrl : stThicknessCtrl_typ;
+	gBasicDetectMedia : DetectionMedia;
+	gArcLampGew : ArcLampGew;
+	g_xInputSelectMachine : BOOL;
+	gJamDetect : ARRAY[0..MAX_LAST_JAMDEVICE] OF JamDetect_typ;
+	gAirCleaner : StGeneral_AirCleaner;
+	gCamera : StGeneral_Camera;
+	gJamCamera : JamPerBar_typ;
+	gJamPerCuringLed : ARRAY[0..MAX_LAST_CURING_LED] OF JamPerBar_typ;
+	gJamPerInk : ARRAY[0..MAX_LAST_INK] OF JamPerBar_typ;
+	gInkBox : InkBox;
+	gTime : TimeMachine;
+	gInverterSignalsPowerLink : ARRAY[0..MAX_LAST_INVERTER] OF AxisP66_Signals_typ;
+	gInverterSignalsCanOpen : ARRAY[0..MAX_LAST_INVERTER] OF AxisP66_Signals_typ;
+	gInverterSignalsPowerLinkABB : ARRAY[0..MAX_LAST_INVERTER] OF AxisP66_Signals_typ;
+	gPlcCards : ARRAY[0..100] OF PLCCardData;
+	xShowSecondLayout : BOOL := FALSE; (*Show second card block layout in diagnostic screen*)
+	xShowThirdLayout : BOOL := FALSE; (*Show third card block layout in diagnostic screen*)
+	stConfigToShow_Lyout1 : STRING[80] := 'P4_PDC_content'; (* Configuration ID to show in HMI || P4_PDC_content ; SHIELD_Cards_content ; NZ2_Cards_content*)
+	stConfigToShow_Lyout2 : STRING[80] := 'P4_block1_content'; (*Configuration ID to show in HMI || P4_block1_content ; NZ2_Printer_content*)
+	stConfigToShow_Lyout3 : STRING[80] := 'P4_block2_content'; (*Configuration ID to show in HMI || P4_block2_content*)
+END_VAR

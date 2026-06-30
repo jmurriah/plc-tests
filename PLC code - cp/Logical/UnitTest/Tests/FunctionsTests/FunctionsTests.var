@@ -1,0 +1,34 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: FunctionsTests
+ * Author: Jorge Murria
+ ********************************************************************
+ * Local variables of program FunctionsTests
+ * General variables - do not change
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	Testsuite : UtMgrTestSuite := (Name:='FunctionsTests',Description:='Description of the Tests',Type:=utMgrTEST_TYPE_C,MetaInformation:='Some Meta Information can be added here');
+END_VAR
+(*Variables used in the tests*)
+VAR
+	TestMediaTracking : ARRAY[0..iMAXTRACKINGARRAY] OF USINT; (*Matrix with the information about if there is Media in the position. Each position corresponds to a cm. Bit 0: L1 , Bit 1 L2*)
+	TestBoolMediaTracking : ARRAY[0..iMAXTRACKINGARRAY] OF BOOL; (*Matrix with the information about if there is Media in the position. Each position corresponds to a cm. Bit 0: L1 , Bit 1 L2*)
+	xTestMediaDetectionValuesL1 : ARRAY[0..THICK_MAX_UPDATE_VALUES] OF BOOL; (*Matrix with the information about if there is Media in the position. Each position corresponds to a cm. Bit 0: L1 , Bit 1 L2*)
+	iIndexArray : UINT;
+	TestMediaTrackingInside : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA] OF stThicknessCtrl_MediaPosStatus; (*FIFO. Elements enter at the end, and go to First while exiting elements*)
+	MediaConfigReseted : stThicknessCtrl_MediaConfig;
+	IntensityOutput : ARRAY[0..THICKENERGY_MAX_LAMPS] OF INT;
+	EnergyData : stThickCtrl_Energy;
+	iIndexProcess : UINT;
+	iIndexCross : UINT;
+	udResult : UDINT;
+	MediaData : stThicknessCtrl_MediaConfig;
+	NewMediaStack : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA] OF stThicknessCtrl_MediaPosStatus; (*FIFO Stack. Elements enter at the end, and go to First while exiting elements*)
+	MediaEnergyRack : ARRAY[0..THICK_MEDIATRACKING_MAX_MEDIA_x2] OF stThickCtrl_Energy; (*Need the memory area for NewMedia and for MediaInside with full data*)
+	Stack_iTotalNewMedia : UINT;
+	Stack_iTotalNewMediaPos : UINT;
+	EnergyRack_iIndex : USINT; (*Index of the next free rack in array*)
+	Adresses : ARRAY[0..9] OF UDINT;
+END_VAR

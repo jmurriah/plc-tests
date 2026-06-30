@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="DryerMainSide_Content" height="800" width="200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TextOutput" id="txtOutPlcVersion" top="10" left="60" width="135" height="20" zIndex="0" value="PLC v15.200.500.105" fontSize="12px" padding="0px 5px 0px 5px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton3" top="80" left="15" width="170" height="55" zIndex="1" image="Media/UI/home-sel.svg" pageId="DryerMain_Page" text="$IAT/Page.Home" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="35" left="25" width="150" height="25" zIndex="2" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="145" left="15" width="170" height="55" zIndex="3" image="Media/UI/warning.svg" pageId="DryerAlarms_Page" text="$IAT/Alarms.Page" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton5" top="275" left="15" width="170" height="55" zIndex="4" image="Media/UI/fan.svg" pageId="DryerBlowers_Page" text="$IAT/Page.Blowers" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton6" top="210" left="15" width="170" height="55" zIndex="5" image="Media/Icons/48x48/Apps/kblackbox.png" pageId="DryerDiagnosis_Page" text="$IAT/Page.Diagnosis" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton7" top="405" left="15" width="170" height="55" zIndex="6" image="Media/Icons/48x48/Apps/jabber_Nir.png" pageId="DryerNIR_Page" text="$IAT/Page.NIR" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton8" top="470" left="15" width="170" height="55" zIndex="7" image="Media/Icons/48x48/Apps/jabber_UV.png" pageId="DryerArcLamp_Page" text="$IAT/Page.ArcLamp" textAlign="left" fontSize="16px" visible="false" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton9" top="535" left="15" width="170" height="55" zIndex="8" image="Media/Icons/48x48/Apps/Service%20Manager.png" pageId="DryerSensors_Page" text="$IAT/Page.Sensors" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton10" top="340" left="15" width="170" height="55" zIndex="9" image="Media/Icons/48x48/Apps/quick_restart.png" pageId="DryerBelt_Page" text="$IAT/Page.Belt" textAlign="left" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.PushButton" id="btnStart" top="700" left="20" width="65" height="65" zIndex="10" image="Media/UI/start-def.svg" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.PushButton" id="btnStop" top="700" left="110" width="65" height="65" zIndex="11" image="Media/UI/stop-dif.svg" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListBuzzer" top="610" left="155" width="32" height="32" zIndex="12" imageList="['no_bell.png', 'bell.png']" imagePrefix="Media/Icons/32x32/Actions/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListMan" top="0" left="40" width="20" height="20" zIndex="13" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListZero" top="0" left="20" width="20" height="20" zIndex="14" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListAuto" top="0" left="0" width="20" height="20" zIndex="15" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="drpdDryerState" top="770" left="5" width="190" height="25" zIndex="16" dataProvider="[{'value':'0','text':' STOPPED'},{'value':'1','text':' PREPARINGTOMOVE'},{'value':'2','text':' MOVING'},{'value':'3','text':' PREPARING'},{'value':'4','text':' PREPARED'},{'value':'5','text':' STARTING'},{'value':'6','text':' DRYING'},{'value':'7','text':' STOPPING_DRYING'},{'value':'8','text':' STOPPING_TRANSPORT'},{'value':'9','text':' ERROR'}]" selectedValue="0" fontSize="15px" enable="false" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListRunTransport" top="615" left="15" width="25" height="25" zIndex="17" imageList="['BlueLamp01_Off.png', 'BlueLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListPrepare" top="615" left="45" width="25" height="25" zIndex="18" imageList="['YellowLamp01_Off.png', 'YellowLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="imgListStratDrying" top="615" left="75" width="25" height="25" zIndex="19" imageList="['RedLamp01_Off.png', 'RedLamp01_On.png']" imagePrefix="Media/Lamps/" />
+    <Widget xsi:type="widgets.brease.Image" id="imgRemote" top="615" left="105" width="25" height="25" zIndex="20" image="Media/SVGsymbols/Symbols/Remote2.svg" />
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="660" left="40" width="140" zIndex="21" padding="0px 5px 0px 5px" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="660" left="10" width="25" height="25" zIndex="22" image="Media/Icons/32x32/Apps/personal.png" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnLogout" top="660" left="160" width="30" zIndex="23" image="Media/Icons/32x32/Actions/lock.png" />
+  </Widgets>
+</Content>

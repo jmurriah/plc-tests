@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="fan.svg"
+   width="50"
+   height="50"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.8125"
+     inkscape:cx="291.07692"
+     inkscape:cy="158.15385"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+  <path
+     d="m 34.426748,12.496407 c -2.743124,0 -5.282149,0.4414 -7.52528,1.255841 L 28.113364,1.7299643 C 28.218832,0.7104481 27.321384,-0.11864124 26.297961,0.00928657 18.514873,0.98583467 12.496407,7.5785109 12.496407,15.565698 c 0,2.743123 0.4414,5.282148 1.255841,7.525279 L 1.7299643,21.879081 c -1.0195162,-0.105467 -1.84860554,0.791981 -1.72067773,1.815403 0.9765481,7.783089 7.56922433,13.801554 15.55641143,13.801554 2.743123,0 5.282148,-0.441399 7.525279,-1.25584 l -1.211896,12.022283 c -0.102537,1.01854 0.791981,1.848606 1.815403,1.720678 7.783089,-0.976548 13.801554,-7.569224 13.801554,-15.556411 0,-2.743124 -0.441399,-5.282149 -1.25584,-7.52528 l 12.022283,1.211896 c 1.019516,0.102538 1.848606,-0.79198 1.720678,-1.815403 C 49.006611,18.514873 42.413935,12.496407 34.426748,12.496407 Z m -9.430525,15.62477 a 3.1249539,3.1249539 0 1 1 3.124954,-3.124954 3.1249539,3.1249539 0 0 1 -3.124954,3.124954 z"
+     id="path2"
+     style="stroke-width:1" />
+</svg>

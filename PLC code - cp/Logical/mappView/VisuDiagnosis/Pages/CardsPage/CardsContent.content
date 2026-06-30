@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="CardsContent" height="900" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Paper" id="Cards_PDCRack_SVG" top="60" left="40" width="620" height="252" zIndex="0" maxZoomLevel="100" minZoomLevel="100" borderWidth="0px" borderStyle="none" />
+    <Widget xsi:type="widgets.brease.Paper" id="Cards_PLCRack_SVG" top="59" left="680" width="900" height="253" zIndex="1" maxZoomLevel="100" minZoomLevel="100" borderWidth="0px" borderStyle="none" />
+    <Widget xsi:type="widgets.brease.Label" id="Cards_PDCRack_L" top="20" left="20" zIndex="2" text="PDC:" italic="false" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="Cards_PLCRack_L" top="20" left="660" width="100" zIndex="3" text="Printer:" italic="false" style="Title1" />
+	<Widget xsi:type="widgets.brease.Paper" id="Cards_BlueCard_SVG" top="400" left="40" width="700" height="480" zIndex="6" maxZoomLevel="100" minZoomLevel="100" borderWidth="0px" />
+	<Widget xsi:type="widgets.brease.Paper" id="Cards_RedCard_SVG" top="400" left="880" width="682" height="480" zIndex="7" maxZoomLevel="100" minZoomLevel="100" borderWidth="0px" />
+	<Widget xsi:type="widgets.brease.Label" id="Cards_BlueCard_L" top="360" left="300" width="180" zIndex="8" text="Blue arrow card" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="Cards_RedCard_L" top="360" left="1140" width="180" zIndex="9" text="Red arrow card" textColor="rgba(255, 0, 0, 1)" style="Title1" />
+    <Widget xsi:type="widgets.brease.Button" id="Cards_BlueCardB_B" top="360" left="180" zIndex="10" text="Back" />
+    <Widget xsi:type="widgets.brease.Button" id="Cards_BlueCardF_B" top="360" left="500" zIndex="11" text="Forward" />
+    <Widget xsi:type="widgets.brease.Button" id="Cards_RedCardB_B" top="360" left="1020" zIndex="12" text="Back" />
+    <Widget xsi:type="widgets.brease.Button" id="Cards_RedCardF_B" top="360" left="1340" zIndex="13" text="Forward" />
+  </Widgets>
+</Content>

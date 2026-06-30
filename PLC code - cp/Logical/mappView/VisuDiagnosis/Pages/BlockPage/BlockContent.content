@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="BlockContent" height="900" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="Block1_NB" top="20" left="120" zIndex="0" text="Block 1" visible="false" />
+    <Widget xsi:type="widgets.brease.Button" id="Block2_NB" top="20" left="240" zIndex="1" text="Block 2" visible="false" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Block1_GB" top="60" left="20" width="740" height="280" zIndex="2" text="Block 1 - Ink Bars">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Button" id="B1_S1_B" top="91" left="-68" width="220" height="44" zIndex="0" text="Slot 1" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S2_B" top="91" left="-8" width="220" height="44" zIndex="1" text="Slot 2" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S3_B" top="91" left="52" width="220" height="44" zIndex="2" text="Slot 3" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S4_B" top="91" left="112" width="220" height="44" zIndex="3" text="Slot 4" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S5_B" top="91" left="172" width="220" height="44" zIndex="4" text="Slot 5" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S6_B" top="91" left="232" width="220" height="44" zIndex="5" text="Slot 6" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S7_B" top="91" left="292" width="220" height="44" zIndex="6" text="Slot 7" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S8_B" top="91" left="352" width="220" height="44" zIndex="7" text="Slot 8" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S9_B" top="91" left="412" width="220" height="44" zIndex="8" text="Slot 9" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S10_B" top="91" left="472" width="220" height="44" zIndex="9" text="Slot 10" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S11_B" top="91" left="532" width="220" height="44" zIndex="10" text="Slot 11" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B1_S12_B" top="91" left="592" width="220" height="44" zIndex="11" text="Slot 12" rotation="90deg" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="TrayTitle_L" top="60" left="820" width="181" zIndex="3" text="Tray :" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="xSiUnitModuleOk_L" top="100" left="1240" width="140" zIndex="4" text="xSiUnitModuleOk:" />
+    <Widget xsi:type="widgets.brease.Label" id="xAirSupply_L" top="140" left="1240" width="140" zIndex="5" text="xAirSupply:" />
+    <Widget xsi:type="widgets.brease.Label" id="xAirVenturiOK_L" top="180" left="1240" width="140" zIndex="6" text="xAirVenturiOK:" />
+    <Widget xsi:type="widgets.brease.Label" id="xTrayOut_L" top="220" left="1240" width="140" zIndex="7" text="xTrayOut:" />
+    <Widget xsi:type="widgets.brease.Label" id="xIclaSensor_L" top="100" left="840" width="181" zIndex="8" text="xIclaSensor:" />
+    <Widget xsi:type="widgets.brease.Label" id="xVaccAirFlow_L" top="140" left="840" width="181" zIndex="9" text="xVaccAirFlow:" />
+    <Widget xsi:type="widgets.brease.Label" id="xJointSystemPressure_L" top="180" left="840" width="181" zIndex="10" text="xJointSystemPressure:" />
+    <Widget xsi:type="widgets.brease.Label" id="xLowPosition_L" top="220" left="840" width="181" zIndex="11" text="xLowPosition:" />
+    <Widget xsi:type="widgets.brease.Label" id="xHighPosition_L" top="260" left="840" width="181" zIndex="12" text="xHighPosition:" />
+    <Widget xsi:type="widgets.brease.Label" id="MotorTitle_L" top="300" left="820" width="181" zIndex="13" text="Motor :" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="ActPosition_L" top="340" left="840" width="181" zIndex="14" text="ActPosition:" />
+    <Widget xsi:type="widgets.brease.Label" id="iActTorque_L" top="380" left="840" width="181" zIndex="15" text="rActTorque:" />
+    <Widget xsi:type="widgets.brease.Label" id="iActTemp_L" top="420" left="840" width="181" zIndex="16" text="rActTemp:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iActVelocity_L" top="460" left="840" width="181" zIndex="17" text="rActVelocity:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iMaxTorque_L" top="380" left="1240" width="140" zIndex="18" text="rMaxTorque:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iMaxTemp_L" top="420" left="1240" width="140" zIndex="19" text="rMaxTemp:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iMaxVelocity_L" top="460" left="1240" width="140" zIndex="20" text="rMaxVelocity:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="ErrorID_L" top="500" left="840" width="181" zIndex="21" text="ErrorID :" />
+    <Widget xsi:type="widgets.brease.Label" id="iCurrentPosition_L" top="580" left="840" width="181" zIndex="22" text="rCurrentPosition:" />
+    <Widget xsi:type="widgets.brease.Label" id="iSpeed_L" top="620" left="840" width="181" zIndex="23" text="rSpeed:" />
+    <Widget xsi:type="widgets.brease.Label" id="iTorque_L" top="660" left="840" width="181" zIndex="24" text="rTorque :" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iTemp_L" top="700" left="840" width="181" zIndex="25" text="rTemp :" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iMaxSpeedIcla_L" top="620" left="1240" width="140" zIndex="26" text="rMaxSpeed:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iMaxTorqueIcla_L" top="660" left="1240" width="140" zIndex="27" text="rMaxTorque:" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="iMaxTempIcla_L" top="700" left="1240" width="140" zIndex="28" text="rMaxTemp :" textColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="ErrorNumber_L" top="740" left="840" width="181" zIndex="29" text="ErrorNumber:" />
+    <Widget xsi:type="widgets.brease.Image" id="xSiUnitModuleOkD_I" top="100" left="1460" width="21" height="21" zIndex="30" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xAirSupplyD_I" top="140" left="1460" width="21" height="21" zIndex="31" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xAirVenturiOKD_I" top="180" left="1460" width="21" height="21" zIndex="32" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xTrayOutD_I" top="220" left="1460" width="21" height="21" zIndex="33" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xIclaSensorD_I" top="100" left="1100" width="21" height="21" zIndex="34" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xVaccAirFlowD_I" top="140" left="1100" width="21" height="21" zIndex="35" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xJointSystemPressureD_I" top="180" left="1100" width="21" height="21" zIndex="36" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xLowPositionD_I" top="220" left="1100" width="21" height="21" zIndex="37" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xHighPositionD_I" top="260" left="1100" width="21" height="21" zIndex="38" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="xSiUnitModuleOkE_I" top="100" left="1460" width="21" height="21" zIndex="39" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xAirSupplyE_I" top="140" left="1460" width="21" height="21" zIndex="40" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xAirVenturiOKE_I" top="180" left="1460" width="21" height="21" zIndex="41" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xTrayOutE_I" top="220" left="1460" width="21" height="21" zIndex="42" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xIclaSensorE_I" top="100" left="1100" width="21" height="21" zIndex="43" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xVaccAirFlowE_I" top="140" left="1100" width="21" height="21" zIndex="44" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xJointSystemPressureE_I" top="180" left="1100" width="21" height="21" zIndex="45" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xLowPositionE_I" top="220" left="1100" width="21" height="21" zIndex="46" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="xHighPositionE_I" top="260" left="1100" width="21" height="21" zIndex="47" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="ActPosition_NO" top="340" left="1040" width="141" zIndex="48" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iActTorque_NO" top="380" left="1040" width="141" zIndex="49" unit="{'metric':'DN','imperial':'DN','imperial-us':'DN'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iActTemp_NO" top="420" left="1040" width="141" zIndex="50" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iActVelocity_NO" top="460" left="1040" width="141" zIndex="51" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" unitTextAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iMaxTorque_NO" top="380" left="1400" width="141" zIndex="52" unit="{'metric':'DN','imperial':'DN','imperial-us':'DN'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iMaxTemp_NO" top="420" left="1400" width="141" zIndex="53" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iMaxVelocity_NO" top="460" left="1400" width="141" zIndex="54" unit="{'metric':'RPM','imperial':'RPM','imperial-us':'RPM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="ErrorID_NO" top="500" left="1040" width="141" zIndex="55" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="ErrorNumber_NO" top="740" left="1040" width="141" zIndex="56" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iCurrentPosition_NO" top="580" left="1040" width="141" zIndex="57" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iSpeed_NO" top="620" left="1040" width="141" zIndex="58" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iTorque_NO" top="660" left="1040" width="141" zIndex="59" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iTemp_NO" top="700" left="1040" width="141" zIndex="60" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iMaxSpeedIcla_NO" top="620" left="1400" width="141" zIndex="61" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iMaxTorqueIcla_NO" top="660" left="1400" width="141" zIndex="62" unit="{'metric':'NU','imperial':'NU','imperial-us':'NU'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="iMaxTempIcla_NO" top="700" left="1400" width="141" zIndex="63" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="IclaTitle_L" top="540" left="820" width="181" zIndex="64" text="Icla :" style="Title2" />
+    <Widget xsi:type="widgets.brease.Label" id="BlockTitle_L" top="20" left="20" zIndex="65" text="Block:" style="Title1" />
+    <Widget xsi:type="widgets.brease.Label" id="SpTemperature_L" top="380" left="60" width="181" zIndex="66" text="SpTemperature:" />
+    <Widget xsi:type="widgets.brease.Label" id="SpPressureatentry_L" top="380" left="420" width="181" zIndex="67" text="SpPressureAtEntry:" />
+    <Widget xsi:type="widgets.brease.Label" id="Temperature_L" top="420" left="60" width="181" zIndex="68" text="Temperature:" />
+    <Widget xsi:type="widgets.brease.Label" id="Pressureatentry_L" top="420" left="420" width="181" zIndex="69" text="PressureAtEntry:" />
+    <Widget xsi:type="widgets.brease.Label" id="SpMeniscus_L" top="460" left="60" width="181" zIndex="70" text="SpMeniscus:" />
+    <Widget xsi:type="widgets.brease.Label" id="PressureAtExit_L" top="460" left="420" width="181" zIndex="71" text="PressureAtExit:" />
+    <Widget xsi:type="widgets.brease.Label" id="Meniscus_L" top="500" left="60" width="181" zIndex="72" text="Meniscus:" />
+    <Widget xsi:type="widgets.brease.Label" id="DutyCycleTurnPump_L" top="500" left="420" width="181" zIndex="73" text="DutyCycleTurnPump:" />
+    <Widget xsi:type="widgets.brease.Label" id="LowerLimitMeniscus_L" top="540" left="60" width="181" zIndex="74" text="LowerLimitMeniscus:" />
+    <Widget xsi:type="widgets.brease.Label" id="DutyCycleWeirPump_L" top="540" left="420" width="181" zIndex="75" text="DutyCycleWeirPump:" />
+    <Widget xsi:type="widgets.brease.Label" id="TestMode_L" top="620" left="60" width="181" zIndex="76" text="TestMode:" />
+    <Widget xsi:type="widgets.brease.Label" id="MaintenanceMode_L" top="620" left="420" width="181" zIndex="77" text="MaintenanceMode:" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="SpTemperature_NO" top="380" left="240" width="141" zIndex="78" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="SpPressureatentry_NO" top="380" left="640" width="141" zIndex="79" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Temperature_NO" top="420" left="240" width="141" zIndex="80" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Pressureatentry_NO" top="420" left="640" width="141" zIndex="81" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="SpMeniscus_NO" top="460" left="240" width="141" zIndex="82" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="PressureAtExit_NO" top="460" left="640" width="141" zIndex="83" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="Meniscus_NO" top="500" left="240" width="141" zIndex="84" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DutyCyclereTurnPump_NO" top="500" left="640" width="141" zIndex="85" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="LowerLimitMeniscus_NO" top="540" left="240" width="141" zIndex="86" unit="{'metric':'MBR','imperial':'MBR','imperial-us':'MBR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="DutyCycleWeirPump_NO" top="540" left="640" width="141" zIndex="87" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Image" id="TestModeD_I" top="620" left="300" width="21" height="21" zIndex="88" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="MaintenanceModeD_I" top="620" left="700" width="21" height="21" zIndex="89" image="Media/Lamps/RedLamp10_On.png" />
+    <Widget xsi:type="widgets.brease.Image" id="TestModeE_I" top="620" left="300" width="21" height="21" zIndex="90" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Image" id="MaintenanceModeE_I" top="620" left="700" width="21" height="21" zIndex="91" image="Media/Lamps/GreenLamp10_On.png" visible="false" />
+    <Widget xsi:type="widgets.brease.Label" id="InkLevel_L" top="580" left="420" width="180" zIndex="92" text="InkLevel:" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="InkLevel_NO" top="580" left="640" width="140" zIndex="93" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="PrintSlotTitle_L1" top="340" left="40" width="181" zIndex="94" text="Print Slot Selected:" style="Title2" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Block2_GB" top="60" left="20" width="740" height="280" zIndex="95" text="Block 2 - Ink Bars" visible="false">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Button" id="B2_S1_B" top="92" left="-70" width="221" height="43" zIndex="0" text="Slot 1" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S2_B" top="92" left="-10" width="221" height="43" zIndex="1" text="Slot 2" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S3_B" top="92" left="50" width="221" height="43" zIndex="2" text="Slot 3" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S4_B" top="92" left="110" width="221" height="43" zIndex="3" text="Slot 4" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S5_B" top="92" left="170" width="221" height="43" zIndex="4" text="Slot 5" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S6_B" top="92" left="230" width="221" height="43" zIndex="5" text="Slot 6" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S7_B" top="92" left="290" width="221" height="43" zIndex="6" text="Slot 7" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S8_B" top="92" left="350" width="221" height="43" zIndex="7" text="Slot 8" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S9_B" top="92" left="410" width="221" height="43" zIndex="8" text="Slot 9" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S10_B" top="92" left="470" width="221" height="43" zIndex="9" text="Slot 10" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S11_B" top="92" left="530" width="221" height="43" zIndex="10" text="Slot 11" rotation="90deg" />
+        <Widget xsi:type="widgets.brease.Button" id="B2_S12_B" top="92" left="590" width="221" height="43" zIndex="11" text="Slot 12" rotation="90deg" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

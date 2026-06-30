@@ -1,0 +1,5 @@
+VAR
+	iIndexInksSlow : USINT;
+	iIndexPhysicalInksSlow : USINT;
+	inksOutputsReseted : stInksSignalsOut;
+END_VAR

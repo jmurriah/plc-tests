@@ -1,0 +1,5 @@
+VAR
+	SimSafetyController : REFERENCE TO SafetyControllerSim_typ;
+	SafetyController : REFERENCE TO stSafetyController;
+	DataFromSimSafety : REFERENCE TO ARRAY[0..20] OF UINT;
+END_VAR

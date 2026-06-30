@@ -1,0 +1,14 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: ConsentTests
+ * Author: Jorge Murria
+ ********************************************************************
+ * Local variables of program ConsentTests
+ * General variables - do not change
+ ********************************************************************)
+(*Describe the test*)
+VAR
+	Testsuite : UtMgrTestSuite := (Name:='ConsentTests',Description:='Tests related to the Consents',Type:=utMgrTEST_TYPE_C,MetaInformation:='Some Meta Information can be added here');
+END_VAR
+(*Variables used in the tests*)

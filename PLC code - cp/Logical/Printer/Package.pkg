@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">ProgramInitializationAndConf.graphml</Object>
+    <Object Type="Package" Description="Machine configurator">Config</Object>
+    <Object Type="Package" Description="Controller commads to printer">MachineCtrl</Object>
+    <Object Type="Package" Description="Physical inputs assignation">PhysicalMapping</Object>
+    <Object Type="Package" Description="Logical to Physical map">BlockSignalsManager</Object>
+    <Object Type="Package" Description="Inputs and outputs assignation">InksSignals</Object>
+    <Object Type="Package" Description="Communication PC  PLC">Comms</Object>
+    <Object Type="Package">Sim</Object>
+    <Object Type="Package">mappView</Object>
+  </Objects>
+</Package>
