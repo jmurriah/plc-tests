@@ -7,6 +7,7 @@ PROGRAM _INIT
 	
 	//Call variables to avoid unusefull warnings
 	// Simple modification
+	// Another modification
 	GlobalIO; 
 	DeviceComms;
 	Dryer;
