@@ -1083,7 +1083,7 @@
   <Module Name="X20BM11g" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20BM11f" TargetConnector="X2X2" />
   </Module>
-  <Module Name="X20CP0483" Type="X20CP0483" Version="1.6.0.0">
+  <Module Name="X20CP0483" Type="X20CP0483" Version="1.6.1.0">
     <Connection Connector="SL" TargetModule="X20BB57" TargetConnector="SL1" />
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
