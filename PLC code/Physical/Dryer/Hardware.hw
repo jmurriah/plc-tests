@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.12.5.95 FileVersion="4.9"?>
+<?AutomationStudio Version=4.12.9.18 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="0AC808.9" Type="0AC808.9" Version="1.0.0.0">
     <Connection Connector="ETH1" TargetModule="X20CP0483" TargetConnector="IF3">
@@ -1083,7 +1083,7 @@
   <Module Name="X20BM11g" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20BM11f" TargetConnector="X2X2" />
   </Module>
-  <Module Name="X20CP0483" Type="X20CP0483" Version="1.6.1.0">
+  <Module Name="X20CP0483" Type="X20CP0483" Version="1.6.0.0">
     <Connection Connector="SL" TargetModule="X20BB57" TargetConnector="SL1" />
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
