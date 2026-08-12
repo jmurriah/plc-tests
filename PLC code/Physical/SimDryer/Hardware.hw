@@ -15,7 +15,7 @@
       <Parameter ID="DNAConfiguration" Value="manual" />
     </Connector>
   </Module>
-  <Module Name="6PPT50.101E-16B" Type="6PPT50.101E-16B" Version="1.3.8.0">
+  <Module Name="6PPT50.101E-16B" Type="6PPT50.101E-16B" Version="1.4.0.0">
     <Connection Connector="ETH1" TargetModule="24PortHub" TargetConnector="ETH1">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
