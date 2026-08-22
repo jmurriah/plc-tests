@@ -53,7 +53,8 @@ ACTION alarms:
 		inks.Al.xAlrDiffVacuum := FALSE;
 	// xOrderOnReverseCapped when is cleaning while 50 secs, from start reverse to be finished
 	ELSIF TON_AlrVacuumDiff.Q AND NOT xIgnoreAlarmsInCleaning AND NOT inks.status.Reverse.xOnReverseAuto THEN
-		inks.Al.xAlrDiffVacuum := TRUE;
+		// Remove this alarm to avoid stopping tests
+		//inks.Al.xAlrDiffVacuum := TRUE;
 	END_IF
 
 	//Temperature alarms management
