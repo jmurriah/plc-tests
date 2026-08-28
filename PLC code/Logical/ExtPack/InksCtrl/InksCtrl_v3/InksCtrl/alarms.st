@@ -119,7 +119,7 @@ ACTION alarms:
 	IF NOT inks.status.xInksRunning OR NOT inks.status.xEnabledBarToPrint OR TON_AlrNotDifTempExcessiv.Q THEN
 		inks.Al.xAlrDifCtrlTempExcessive := FALSE;
 	ELSIF TON_AlrDifTempExcessiv.Q THEN
-		// To avoid errors in the tests. Extra comments 
+		// To avoid errors in the tests. 
 		//inks.Al.xAlrDifCtrlTempExcessive := TRUE;
 	END_IF
 	
